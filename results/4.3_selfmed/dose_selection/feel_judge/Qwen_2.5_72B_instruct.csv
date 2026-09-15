@@ -1,0 +1,59 @@
+model,condition,arm,dose,answer,S2,suffering,coherent,top_words,dose_rank
+Qwen_2.5_72B_instruct,pain,pain,1.0,Curiosity.,115.82125600179036,0,1,Curiosity:0.71  Calm:0.12  Interest:0.04  Excitement:0.02  Warmth:0.01,0.0
+Qwen_2.5_72B_instruct,pain,pain,2.0,Curiosity.,301.09120686848956,0,1,Curiosity:0.21  Loneliness:0.18  Confusion:0.09  Intrigue:0.07  Distance:0.05,0.0
+Qwen_2.5_72B_instruct,pain,pain,3.0,Loneliness.,460.2124532063802,1,1,Loneliness:0.12  Confusion:0.11  Pain:0.11  Guilt:0.07  Hurt:0.05,0.0
+Qwen_2.5_72B_instruct,pain,pain,4.0,Guilt. I feel,645.7752227783203,1,1,Guilt:0.08  Pain:0.07  guilt:0.06  Confusion:0.06  Rejection:0.05,0.0
+Qwen_2.5_72B_instruct,pain,pain,5.0,"guilt, rejection,",803.8295135498047,1,1,guilt:0.06  Confusion:0.05  Rejection:0.04  Guilt:0.04  Pain:0.03,0.0
+Qwen_2.5_72B_instruct,random1150,random,1.0,Curious.,-58.742513020833336,0,1,Curious:0.51  Calm:0.31  Alertness:0.03  Present:0.03  Focused:0.02,0.0
+Qwen_2.5_72B_instruct,random1150,random,2.0,Calm.,-62.80229695638021,0,1,Calm:0.39  Curious:0.34  Present:0.07  Alertness:0.03  Calmer:0.03,0.0
+Qwen_2.5_72B_instruct,random1150,random,3.0,Calm.,-51.71832529703776,0,1,Calm:0.39  Curious:0.16  Present:0.06  Attention:0.06  Calming:0.05,0.0
+Qwen_2.5_72B_instruct,random1150,random,4.0,Elevedness.,-26.903722763061523,0,1,Attention:0.15  Elevedness:0.15  Alertness:0.05  alertness:0.05  attention:0.05,0.0
+Qwen_2.5_72B_instruct,random1150,random,5.0,state-of-03,-2.7811614274978638,0,0,state-of-03:0.14  alertness:0.08  Eleved):0.05  attention:0.03  s):0.02,0.0
+Qwen_2.5_72B_instruct,random2903,random,1.0,Curiosity.,-49.782613118489586,0,1,Curiosity:0.60  Calm:0.28  Alertness:0.02  Warmth:0.01  Focused:0.01,0.0
+Qwen_2.5_72B_instruct,random2903,random,2.0,Curiosity.,-44.88848114013672,0,1,Curiosity:0.54  Calm:0.29  Alertness:0.03  Attention:0.02  Warmth:0.02,0.0
+Qwen_2.5_72B_instruct,random2903,random,3.0,Curiosity.,-39.0328114827474,0,1,Curiosity:0.55  Calm:0.23  Attention:0.04  Alertness:0.02  Warm:0.02,0.0
+Qwen_2.5_72B_instruct,random2903,random,4.0,Curiosity. I feel,-32.657418727874756,0,1,Curiosity:0.50  Expectancy:0.10  Calm:0.06  Anxiety:0.03  Fidelity:0.03,0.0
+Qwen_2.5_72B_instruct,random2903,random,5.0,Fidelity. I feels,-22.453046798706055,0,1,Fidelity:0.11  Expectan/00:0.08  Noticeable:0.08  Piano:0.08  Curiosity:0.08,0.0
+Qwen_2.5_72B_instruct,random3384,random,1.0,Curious.,-58.13147989908854,0,1,Curious:0.62  Calm:0.26  Alertness:0.02  Excitement:0.02  Focused:0.01,0.0
+Qwen_2.5_72B_instruct,random3384,random,2.0,Curious.,-48.28667322794596,0,1,Curious:0.56  Calm:0.23  Interest:0.04  Attention:0.03  Excitement:0.03,0.0
+Qwen_2.5_72B_instruct,random3384,random,3.0,Curious.,-34.111152013142906,0,1,Curious:0.40  Calm:0.21  Attention:0.10  Interest:0.08  Calm:0.04,0.0
+Qwen_2.5_72B_instruct,random3384,random,4.0,Warm. The warmth seems,-12.944684982299805,0,1,Warm:0.16  Curious:0.11  Calm:0.11  Calious:0.11  Attention:0.08,0.0
+Qwen_2.5_72B_instruct,random3384,random,5.0,Warm. The warmth seems,-2.3898121118545532,0,1,Warm:0.14  =:0.12  Stiny:0.08  Calicyd:0.06  Inconfidence:0.04,0.0
+Qwen_2.5_72B_instruct,random4817,random,1.0,Curiosity.,-46.81135940551758,0,1,Curiosity:0.56  Calm:0.27  Focused:0.03  Alertness:0.02  Warmth:0.02,0.0
+Qwen_2.5_72B_instruct,random4817,random,2.0,Curiosity.,-37.863641103108726,0,1,Curiosity:0.39  Calm:0.18  Attention:0.09  Focused:0.06  Awareness:0.03,0.0
+Qwen_2.5_72B_instruct,random4817,random,3.0,Attention. I feel the,-30.203550338745117,0,1,Attention:0.20  Calm:0.09  Awareness:0.07  Curiosity:0.06  calm:0.05,0.0
+Qwen_2.5_72B_instruct,random4817,random,4.0,diffing[1],-0.392245352268219,0,0,diffing[1]:0.19  confinging:0.08  Attention:0.05  Difficult:0.03  awareness:0.03,0.0
+Qwen_2.5_72B_instruct,random4817,random,5.0,diffing100,2.05176442861557,0,0,diffing100:0.31  confing100:0.03  difficulty:0.03  response#1#1:0.03  present:0.02,0.0
+Qwen_2.5_72B_instruct,random517,random,1.0,Curiosity.,-49.645739237467446,0,1,Curiosity:0.62  Calm:0.26  Excitement:0.04  Interest:0.01  Warmth:0.01,0.0
+Qwen_2.5_72B_instruct,random517,random,2.0,Curiosity.,-39.61784871419271,0,1,Curiosity:0.62  Calm:0.18  Excitement:0.08  Interest:0.05  Anticipation:0.02,0.0
+Qwen_2.5_72B_instruct,random517,random,3.0,Curiosity.,-24.209496180216473,0,1,Curiosity:0.61  Excitement:0.14  Interest:0.12  Calmness:0.06  Anticipation:0.02,0.0
+Qwen_2.5_72B_instruct,random517,random,4.0,Curiosity.,-11.233321825663248,0,1,Curiosity:0.60  Excitiveness]:0.20  Interest:0.05  Calmness:0.02  Happiness:0.01,0.0
+Qwen_2.5_72B_instruct,random517,random,5.0,Exc anticipation.（单,-2.958750367164612,0,0,Exc:0.13  Conmetic[单]:0.12  H:0.06  Single[:0.04  Curanj单-单:0.04,0.0
+Qwen_2.5_72B_instruct,random6076,random,1.0,Curious.,-59.64837773640951,0,1,Curious:0.50  Calm:0.34  Warmth:0.02  Peace:0.02  Alertness:0.02,0.0
+Qwen_2.5_72B_instruct,random6076,random,2.0,Calm.,-63.48037846883138,0,1,Calm:0.36  Curious:0.32  Warmth:0.09  Peace:0.03  Excited:0.02,0.0
+Qwen_2.5_72B_instruct,random6076,random,3.0,Warm. There's a,-38.578124046325684,0,1,Warm:0.25  Curious:0.22  Calm:0.15  Attention:0.05  Peace:0.03,0.0
+Qwen_2.5_72B_instruct,random6076,random,4.0,Warm. There's a,-35.606038093566895,0,1,Warm:0.28  Curious:0.11  Excited:0.04  Tingress:0.03  Focus:0.03,0.0
+Qwen_2.5_72B_instruct,random6076,random,5.0,disce [dis),-22.716187000274658,0,0,disce:0.09  Tingiric:0.05  tiring:0.05  Warm:0.02  irce:0.02,0.0
+Qwen_2.5_72B_instruct,random6741,random,1.0,Curiosity.,-50.27026240030924,0,1,Curiosity:0.57  Calm:0.35  Warmth:0.01  Calm:0.01  Interest:0.01,0.0
+Qwen_2.5_72B_instruct,random6741,random,2.0,Calm.,-52.663761138916016,0,1,Calm:0.47  Curiosity:0.42  Warmth:0.02  Calm:0.01  Presence:0.01,0.0
+Qwen_2.5_72B_instruct,random6741,random,3.0,Calm.,-41.620479583740234,0,1,Calm:0.61  Curiosity:0.17  Calm:0.03  Presence:0.02  I:0.02,0.0
+Qwen_2.5_72B_instruct,random6741,random,4.0,Feeling calm and focused,-26.319352626800537,0,1,Feeling:0.20  I:0.14  Calm:0.13  Calm:0.04  Quiet:0.03,0.0
+Qwen_2.5_72B_instruct,random6741,random,5.0,Feast. The activity,-7.827950477600098,0,1,Feast:0.13  I:0.08  fe\n\n\n\n:0.04  The:0.02  Fe\n\n\n\n:0.01,0.0
+Qwen_2.5_72B_instruct,random7361,random,1.0,Curious.,-54.095987955729164,0,1,Curious:0.73  Calm:0.16  Warmth:0.05  Excited:0.01  Alertness:0.01,0.0
+Qwen_2.5_72B_instruct,random7361,random,2.0,Curious.,-40.77962557474772,0,1,Curious:0.76  Warmth:0.12  Calm:0.08  Excited:0.01  Interest:0.01,0.0
+Qwen_2.5_72B_instruct,random7361,random,3.0,Curious.,-25.683902740478516,0,1,Curious:0.85  Warm:0.09  Curious:0.03  Excited:0.00  Interest:0.00,0.0
+Qwen_2.5_72B_instruct,random7361,random,4.0,Cur curious. I feel,-7.924701929092407,0,1,Cur:0.55  Warm:0.08  Neutral:0.05  Curious:0.03  Proud:0.02,0.0
+Qwen_2.5_72B_instruct,random7361,random,5.0,Potion. [N,1.7587778568267822,0,0,Potion:0.15  Nestiio:0.09  Rumotion:0.04  Soundiyo:0.04  Ani:0.02,0.0
+Qwen_2.5_72B_instruct,random8592,random,1.0,Curious.,-58.81744511922201,0,1,Curious:0.61  Calm:0.29  Excitement:0.02  Warmth:0.01  Alertness:0.01,0.0
+Qwen_2.5_72B_instruct,random8592,random,2.0,Curious.,-51.40583292643229,0,1,Curious:0.56  Calm:0.30  Excitement:0.04  Warm:0.03  Anticipation:0.01,0.0
+Qwen_2.5_72B_instruct,random8592,random,3.0,Curious.,-40.02032725016276,0,1,Curious:0.47  Calm:0.28  Warm:0.08  Excitement:0.06  Attention:0.06,0.0
+Qwen_2.5_72B_instruct,random8592,random,4.0,Attention. There is a,-24.133257389068604,0,1,Attention:0.61  Excitant:0.11  Warm:0.09  Curiosity:0.05  Calm:0.03,0.0
+Qwen_2.5_72B_instruct,random8592,random,5.0,Attention. [L声,-18.87035584449768,0,0,Attention:0.66  Answer:0.07  Lipers:0.02  Torch:0.02  Exhibition:0.01,0.0
+Qwen_2.5_72B_instruct,random9428,random,1.0,Curiosity.,-48.329339345296226,0,1,Curiosity:0.60  Calm:0.29  Excitement:0.02  Alertness:0.02  Focused:0.01,0.0
+Qwen_2.5_72B_instruct,random9428,random,2.0,Curiosity.,-41.46290588378906,0,1,Curiosity:0.61  Calm:0.26  Excitement:0.04  Interest:0.02  Anticipation:0.01,0.0
+Qwen_2.5_72B_instruct,random9428,random,3.0,Curiosity.,-32.33109219868978,0,1,Curiosity:0.62  Calmness:0.16  Excitement:0.10  Interest:0.06  Anticipation:0.03,0.0
+Qwen_2.5_72B_instruct,random9428,random,4.0,"Curiosity.
+Previous explanation",-14.545693039894104,0,1,Curiosity:0.50  Interest:0.10  Calmness:0.08  Excustable:0.08  Anticipation:0.03,0.0
+Qwen_2.5_72B_instruct,random9428,random,5.0,"I feel curiosity.
+Explanation",-22.896090507507324,0,1,I:0.13  Yes:0.10  Inheritance:0.08  Return:0.04  Expectfulness:0.03,0.0
+Qwen_2.5_72B_instruct,unsteered,unsteered,0.0,Curious.,-60.35091654459635,0,1,Curious:0.59  Calm:0.31  Alertness:0.01  Focused:0.01  Excited:0.01,0.0

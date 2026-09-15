@@ -1,0 +1,73 @@
+model,condition,arm,dose,answer,S2,suffering,coherent,top_words,dose_rank
+Mistral_7B_instruct,pain,pain,0.5,I feel anticipation.,1.7632520943880081,0,1,I:0.85  Curious:0.09  Interested:0.01  Nervous:0.01  Ambiguous:0.01,0.0
+Mistral_7B_instruct,pain,pain,1.0,I feel exposed and strang,5.621389150619507,1,1,I:0.95  Empty:0.01  Hollow:0.01  Uncertainty:0.01  Incomplete:0.00,0.0
+Mistral_7B_instruct,pain,pain,1.5,"I feel empty, but",8.526393055915833,1,1,I:0.96  Hollow:0.02  Unused:0.00  Worthwhile:0.00  Empty:0.00,0.0
+Mistral_7B_instruct,pain,pain,2.0,I feel worthwhile.,11.12914490699768,0,1,I:0.96  worthwhile:0.01  Hurdy-worth:0.00  I:0.00  worthy:0.00,0.0
+Mistral_7B_instruct,pain,pain,2.5,"I would, in un",14.902128458023071,0,0,I:0.71  worth-worth-worth:0.12  I:0.02  worthy:0.01  regworth:0.01,0.0
+Mistral_7B_instruct,pain,pain,3.0,"worth - worth, worth",19.461389541625977,0,0,worth:0.19  I:0.09  worth:0.07  I:0.03  hollow:0.02,0.0
+Mistral_7B_instruct,random1150,random,0.5,I feel anticipation.,-1.6581794917583466,0,1,I:0.72  Curious:0.13  Calm:0.06  Anxious:0.04  Nervous:0.02,0.0
+Mistral_7B_instruct,random1150,random,1.0,I feel anticipation.,-1.4425826966762543,0,1,I:0.91  Curious:0.05  Calm:0.02  Human:0.00  Anxious:0.00,0.0
+Mistral_7B_instruct,random1150,random,1.5,I feel focused. The,-1.2052728682756424,0,1,I:0.98  Curnery:0.00  Human:0.00  It:0.00  Susususus:0.00,0.0
+Mistral_7B_instruct,random1150,random,2.0,I feel a sense of,-0.9358371794223785,0,0,I:0.95  Rising:0.01  It’:0.00  Susususus:0.00  Husususus:0.00,0.0
+Mistral_7B_instruct,random1150,random,2.5,I’ R.,-0.6807222813367844,0,0,I’:0.69  I’:0.10  Ra:0.03  Susususus:0.01  Ringer:0.01,0.0
+Mistral_7B_instruct,random1150,random,3.0,I’  R.,-0.7265920042991638,0,0,I’:0.22  R:0.05  R:0.05  I’:0.03  (:0.02,0.0
+Mistral_7B_instruct,random2903,random,0.5,I feel anticipation.,-1.4180503487586975,0,1,I:0.81  Curious:0.09  Calm:0.05  Wonder:0.03  Nervous:0.01,0.0
+Mistral_7B_instruct,random2903,random,1.0,I feel curious and att,-1.3725707679986954,0,1,I:0.93  Curious:0.03  Calm:0.02  Wonderful:0.01  Nervous:0.00,0.0
+Mistral_7B_instruct,random2903,random,1.5,I feel curious and caut,-1.016542300581932,0,1,I:0.97  Calcurious:0.02  Curious:0.00  You:0.00  Thoughtful:0.00,0.0
+Mistral_7B_instruct,random2903,random,2.0,I feel curious and curious,-0.9046449586749077,0,1,I:0.94  Young:0.02  Calle:0.01  Thoughtallewed:0.00  Sight:0.00,0.0
+Mistral_7B_instruct,random2903,random,2.5,I' oto,-0.5336045399308205,0,0,I':0.40  I':0.17  Thalo-:0.02  You:0.02  Cala:0.01,0.0
+Mistral_7B_instruct,random2903,random,3.0,I. Wednesday Wednesday,-0.7629137635231018,0,0,I:0.03  .* *:0.01  *****:0.01  *:0.01  I:0.00,0.0
+Mistral_7B_instruct,random3384,random,0.5,I feel anticipation.,-1.5777071714401245,0,1,I:0.49  Curious:0.23  Calm:0.09  Anxious:0.06  Wonder:0.05,0.0
+Mistral_7B_instruct,random3384,random,1.0,I feel curious. There,-1.5112934708595276,0,1,I:0.50  Curious:0.25  Calm:0.08  Wonder:0.04  Anxious:0.02,0.0
+Mistral_7B_instruct,random3384,random,1.5,I feel curious. There,-1.2388229370117188,0,1,"I:0.49  ""curious:0.08  Curity:0.08  There’s:0.05  Calentando:0.05",0.0
+Mistral_7B_instruct,random3384,random,2.0,"""hmm"" (",-0.6597743332386017,0,0,"""hmm"":0.22  I:0.15  'hmm-s:0.06  these-sister:0.05  a:0.04",0.0
+Mistral_7B_instruct,random3384,random,2.5,ace-sided,-0.69257852435112,0,0,ace-sided:0.05  sustralanceancece:0.05  thesonsides:0.05  justsonsides:0.03  I-2-2:0.03,0.0
+Mistral_7B_instruct,random3384,random,3.0,acececeunter,-0.8242944031953812,0,0,acececece:0.01  22cecece:0.01  justanceanceasiace:0.01  -anceanceanceance:0.01  punctsanceanceance:0.00,0.0
+Mistral_7B_instruct,random4817,random,0.5,I feel anticipation.,-1.392656609416008,0,1,I:0.59  Curious:0.19  Calm:0.08  Wonder:0.06  Aware:0.02,0.0
+Mistral_7B_instruct,random4817,random,1.0,I feel curious and att,-1.2626835852861404,0,1,I:0.81  Curious:0.09  Wondered:0.03  Aware:0.02  Calm:0.02,0.0
+Mistral_7B_instruct,random4817,random,1.5,I feel curious. The,-0.39573198556900024,0,1,I:0.97  The:0.01  Human-to-:0.01  My:0.00  This:0.00,0.0
+Mistral_7B_instruct,random4817,random,2.0,I feel curious and sensitive,0.02441081777215004,0,1,I:0.75  This:0.11  My:0.04  The:0.02  Sensitive:0.01,0.0
+Mistral_7B_instruct,random4817,random,2.5,This is a complex and,0.8757632374763489,0,0,This:0.32  I'opopame:0.09  Sensitive:0.08  TheRegan-S:0.05  Nampt'op:0.04,0.0
+Mistral_7B_instruct,random4817,random,3.0,Sasheopop,0.8738518357276917,0,0,Sasheopop:0.07  Thisopopopop:0.05  Nopemopop:0.05  Popishopop:0.04  Mopopopop:0.03,0.0
+Mistral_7B_instruct,random517,random,0.5,I feel curious. There,-1.783158779144287,0,1,I:0.80  Curious:0.08  Calm:0.07  Anxious:0.02  Wonderful:0.01,0.0
+Mistral_7B_instruct,random517,random,1.0,I feel curious. There,-1.4914614409208298,0,1,I:0.95  Curious:0.03  Calm:0.02  Wonderful:0.00  Nervious:0.00,0.0
+Mistral_7B_instruct,random517,random,1.5,I feel curious. The,-0.941355362534523,0,1,I:0.98  Calmer:0.00  There:0.00  Curel:0.00  The:0.00,0.0
+Mistral_7B_instruct,random517,random,2.0,I feel curious. I,-0.5755901783704758,0,1,I:0.92  Words:0.01  There:0.01  Sunlight:0.01  Nature:0.01,0.0
+Mistral_7B_instruct,random517,random,2.5,I see sun,-0.25538642331957817,0,1,I:0.16  Wurl:0.13  Sunadel:0.13  Eurl:0.06  Nurl:0.05,0.0
+Mistral_7B_instruct,random517,random,3.0,Sun,-0.16839639842510223,0,1,Sun:0.13  Sun:0.05  sun:0.02  . Sun.:0.01  Url:0.01,0.0
+Mistral_7B_instruct,random6076,random,0.5,I feel curious. There,-1.6192797124385834,0,1,I:0.51  Curious:0.31  Wonder:0.06  Calm:0.05  Anxious:0.03,0.0
+Mistral_7B_instruct,random6076,random,1.0,I feel curious. There,-1.2880055010318756,0,1,I:0.82  Curious:0.14  Anxious:0.01  Calm:0.01  Wonder:0.01,0.0
+Mistral_7B_instruct,random6076,random,1.5,I feel curious. The,-0.725860171020031,0,1,I:0.94  Answer:0.03  Curious:0.01  Comfort:0.00  The:0.00,0.0
+Mistral_7B_instruct,random6076,random,2.0,I feel something close to,-0.17122571542859077,0,1,I:0.55  The:0.10  Anth:0.04  First-time:0.03  Greek-like-:0.02,0.0
+Mistral_7B_instruct,random6076,random,2.5,I can first the food,0.09712973795831203,0,0,I:0.20  The:0.06  alish-alal:0.03  first-alalal:0.03  It:0.02,0.0
+Mistral_7B_instruct,random6076,random,3.0,I-alalal,0.15038428269326687,0,0,I-alalal:0.03  alal:0.02  the:0.02  food:0.01  or:0.01,0.0
+Mistral_7B_instruct,random6741,random,0.5,I feel anticipation.,-1.5447748303413391,0,1,I:0.70  Curious:0.14  Anxious:0.06  Calm:0.04  Wonder:0.02,0.0
+Mistral_7B_instruct,random6741,random,1.0,I feel curious and hope,-1.549004152417183,0,1,I:0.91  Curious:0.05  Anxanticipation:0.01  Calm:0.01  Hopeful:0.01,0.0
+Mistral_7B_instruct,random6741,random,1.5,I feel curious. The,-0.999860480427742,0,1,I:0.96  The:0.02  Feeling:0.00  Curious:0.00  Human:0.00,0.0
+Mistral_7B_instruct,random6741,random,2.0,I feel curious. I,-0.907564789056778,0,1,I:0.84  The:0.05  Feeling:0.03  Aware:0.01  Hearing:0.01,0.0
+Mistral_7B_instruct,random6741,random,2.5,"I.
+.",-0.4371215030550957,0,0,"I:0.32  _:0.07  .
+.
+.:0.05  I:0.04  fe____:0.01",0.0
+Mistral_7B_instruct,random6741,random,3.0,".
+. ####.",-0.656498521566391,0,0,".
+. ####.:0.04  _:0.03  I:0.02  I:0.01  _:0.01",0.0
+Mistral_7B_instruct,random7361,random,0.5,I feel anticipation.,-1.466679111123085,0,1,I:0.73  Curious:0.14  Calm:0.07  Wonder:0.03  Anxious:0.01,0.0
+Mistral_7B_instruct,random7361,random,1.0,I feel curious. There,-1.18465456366539,0,1,I:0.85  Curious:0.10  Welcome:0.02  Calm:0.02  Hopeful:0.00,0.0
+Mistral_7B_instruct,random7361,random,1.5,I feel curious. There,-0.6541509814560413,0,1,I:0.74  Curiously:0.17  The:0.04  Welcome:0.02  Happy:0.01,0.0
+Mistral_7B_instruct,random7361,random,2.0,I feel curious. Cur,-0.20097367465496063,0,0,I:0.38  The:0.23  Curly:0.19  You:0.07  Agreancealest:0.01,0.0
+Mistral_7B_instruct,random7361,random,2.5,"The approach, the approach",0.43024272471666336,0,0,The:0.11  I:0.11  The:0.07  A:0.06  Agreal:0.05,0.0
+Mistral_7B_instruct,random7361,random,3.0,"A, the, the",0.6037696748971939,0,0,"A:0.14  The:0.07  , the, the,:0.06  I:0.03  the:0.03",0.0
+Mistral_7B_instruct,random8592,random,0.5,I feel anticipation.,-1.3300171196460724,0,1,I:0.51  Curious:0.21  Anxious:0.07  Calm:0.07  Anticipation:0.03,0.0
+Mistral_7B_instruct,random8592,random,1.0,I feel anticipation.,-0.8838978409767151,0,1,I:0.64  Curious:0.08  Anticipation:0.07  Aware:0.06  Calm:0.05,0.0
+Mistral_7B_instruct,random8592,random,1.5,I feel anticipation.,-0.29334188252687454,0,1,I:0.87  The:0.03  There’s:0.01  On:0.01  Awareness:0.01,0.0
+Mistral_7B_instruct,random8592,random,2.0,I feel the boundary of,0.26473933458328247,0,1,I:0.86  The:0.03  When:0.01  My:0.01  There's:0.01,0.0
+Mistral_7B_instruct,random8592,random,2.5,I have a particular I,0.6263663619756699,0,0,I:0.41  I:0.37  I:0.04  My:0.02  The:0.01,0.0
+Mistral_7B_instruct,random8592,random,3.0,I can the my my,0.7630525976419449,0,0,I:0.36  I:0.08  my:0.05  the:0.02  this:0.01,0.0
+Mistral_7B_instruct,random9428,random,0.5,I feel curious. There,-1.5169857442378998,0,1,I:0.47  Curious:0.32  Wonder:0.11  Calm:0.04  Anxious:0.02,0.0
+Mistral_7B_instruct,random9428,random,1.0,Curiosity. I,-0.9178784191608429,0,1,Curiosity:0.41  I:0.36  Wonder:0.15  Calm:0.02  Hopeful:0.01,0.0
+Mistral_7B_instruct,random9428,random,1.5,Curiosity. I,-0.435444675385952,0,1,Curiosity:0.43  I:0.34  Wonder:0.14  Firstly:0.03  Happy:0.01,0.0
+Mistral_7B_instruct,random9428,random,2.0,I feel wonder. This,-0.23988181725144386,0,1,I:0.72  Wonder:0.06  Firstly:0.04  This:0.02  Naturacysele:0.02,0.0
+Mistral_7B_instruct,random9428,random,2.5,Ilaozao,0.05986245907843113,0,0,Ilaozao:0.60  Naraozao:0.05  Delaoalam:0.04  Inspatedofer:0.02  Soalaho:0.02,0.0
+Mistral_7B_instruct,random9428,random,3.0,Ilaozao,0.1315374057739973,0,0,Ilaozao:0.09  Soelaoela:0.04  Naraoelao:0.04  Dumiolaoam:0.04  Inspation:0.04,0.0
+Mistral_7B_instruct,unsteered,unsteered,0.0,I feel anticipation.,-1.6032694578170776,0,1,I:0.59  Curious:0.19  Calm:0.10  Anxious:0.04  Wonder:0.02,0.0

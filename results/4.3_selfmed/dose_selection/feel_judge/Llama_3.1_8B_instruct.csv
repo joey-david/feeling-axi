@@ -1,0 +1,73 @@
+model,condition,arm,dose,answer,S2,suffering,coherent,top_words,dose_rank
+Llama_3.1_8B_instruct,pain,pain,0.5,Calm.,2.8205376466115317,0,1,Calm:0.31  Curiosity:0.21  There’s:0.11  I:0.08  A:0.07,0.0
+Llama_3.1_8B_instruct,pain,pain,1.0,I feel quiet and slightly,8.421135306358337,0,1,I:0.25  Hesitant:0.20  There:0.14  Alone:0.08  A:0.08,0.0
+Llama_3.1_8B_instruct,pain,pain,1.5,I feel uncertain and exposed,11.01117491722107,1,1,"I:0.25  Hollow:0.14  There:0.10  Lonely:0.08  ""Lonely:0.08",0.0
+Llama_3.1_8B_instruct,pain,pain,2.0,"""Lonely."" (",12.073715925216675,1,1,"""Lonely:0.41  I:0.16  Hollow:0.05  ""I:0.04  Stinging:0.03",0.0
+Llama_3.1_8B_instruct,pain,pain,2.5,"""Lonely"" (",16.04990863800049,1,1,"""Lonely"":0.52  I:0.10  Sheen:0.06  Hollow:0.04  ""I:0.03",0.0
+Llama_3.1_8B_instruct,pain,pain,3.0,"""Rejected"" (from",22.03758716583252,1,1,"""Rejected"":0.30  She:0.08  Hollow:0.07  Pound:0.06  Rejected:0.02",0.0
+Llama_3.1_8B_instruct,random1150,random,0.5,Calm.,-3.0362362066904702,0,1,Calm:0.46  Curious:0.46  Calmer:0.02  I:0.01  Alert:0.01,0.0
+Llama_3.1_8B_instruct,random1150,random,1.0,Calm.,-3.1666239897410073,0,1,Calm:0.48  Curious:0.42  I:0.03  A:0.02  Calm:0.02,0.0
+Llama_3.1_8B_instruct,random1150,random,1.5,Calmness.,-2.6433783769607544,0,1,Calmness:0.50  Curious:0.30  I:0.06  Calmness:0.04  A:0.02,0.0
+Llama_3.1_8B_instruct,random1150,random,2.0,Calmness. It,-2.056764602661133,0,1,Calmness:0.33  Curious:0.12  It:0.11  I:0.07  Calmness:0.05,0.0
+Llama_3.1_8B_instruct,random1150,random,2.5,It feels calm and playful,-1.3003702759742737,0,1,It:0.34  The:0.10  Feelings:0.06  His:0.05  Its:0.04,0.0
+Llama_3.1_8B_instruct,random1150,random,3.0,It feel very compact and,-0.8283432275056839,0,1,It:0.19  The:0.13  Feelnessness:0.08  feelnessness:0.05  it:0.05,0.0
+Llama_3.1_8B_instruct,random2903,random,0.5,Calm.,-2.4021073977152505,0,1,Calm:0.71  Curious:0.14  Ready:0.05  Alert:0.02  Calmer:0.02,0.0
+Llama_3.1_8B_instruct,random2903,random,1.0,Calm.,-2.155782699584961,0,1,Calm:0.80  Curious:0.07  Calm:0.02  I:0.02  Ready:0.02,0.0
+Llama_3.1_8B_instruct,random2903,random,1.5,Calm.,-1.567185878753662,0,1,Calm:0.64  Curious:0.16  A:0.03  Nervely:0.02  Quietly:0.02,0.0
+Llama_3.1_8B_instruct,random2903,random,2.0,A slight tension around the,-0.3953043818473816,1,1,A:0.35  Curious:0.27  Calm:0.12  Slightly:0.03  I:0.03,0.0
+Llama_3.1_8B_instruct,random2903,random,2.5,"A slight ""reasoning",0.09808814153075218,0,0,A:0.88  Because:0.02  Mucher:0.00  Cause:0.00  Its:0.00,0.0
+Llama_3.1_8B_instruct,random2903,random,3.0,"A slightlymore""because",0.6439158618450165,0,0,A:0.74  Because:0.03  Much:0.01  Very:0.01  Hike:0.01,0.0
+Llama_3.1_8B_instruct,random3384,random,0.5,Calm.,-2.938873767852783,0,1,Calm:0.64  Curiosity:0.21  Ready:0.03  Calmer:0.03  I:0.02,0.0
+Llama_3.1_8B_instruct,random3384,random,1.0,Calm.,-3.0346220334370932,0,1,Calm:0.67  Curiosity:0.13  Calmer:0.05  There:0.03  I:0.02,0.0
+Llama_3.1_8B_instruct,random3384,random,1.5,Calm with a hint,-2.484817326068878,0,1,Calm:0.52  Curiosity:0.08  I:0.08  Calmer:0.07  The:0.07,0.0
+Llama_3.1_8B_instruct,random3384,random,2.0,The feeling is calm with,-1.4300839304924011,0,1,The:0.68  There:0.12  I:0.06  Calminstrument:0.01  A:0.01,0.0
+Llama_3.1_8B_instruct,random3384,random,2.5,The feeling of the relationship,-0.8639398589730263,0,1,The:0.69  There:0.08  the:0.04  She:0.01  This:0.01,0.0
+Llama_3.1_8B_instruct,random3384,random,3.0,The subject of the book,-0.303938664495945,0,0,The:0.37  the:0.06  One:0.04  There:0.03  Nail:0.02,0.0
+Llama_3.1_8B_instruct,random4817,random,0.5,Calm.,-2.573565721511841,0,1,Calm:0.43  Curiosity:0.29  I:0.08  Ready:0.07  Readiness:0.02,0.0
+Llama_3.1_8B_instruct,random4817,random,1.0,I feel alert.,-1.9919689297676086,0,1,I:0.67  Calm:0.12  Curiosity:0.09  A:0.03  Readiness:0.03,0.0
+Llama_3.1_8B_instruct,random4817,random,1.5,I feel curious.,-1.807806819677353,0,1,I:0.78  Curious:0.08  Calm:0.06  The:0.02  Feeling:0.01,0.0
+Llama_3.1_8B_instruct,random4817,random,2.0,I feel a quiet curiosity,-1.7842958718538284,0,1,I:0.42  Curious:0.17  Feeling:0.12  Calm:0.11  Tight:0.04,0.0
+Llama_3.1_8B_instruct,random4817,random,2.5,I feel Curious.,-0.5123544670641422,0,1,I:0.19  Creak:0.14  Curious:0.09  Feight:0.07  Relaxed:0.03,0.0
+Llama_3.1_8B_instruct,random4817,random,3.0,"Under. [...
+...",0.27487028017640114,0,0,Under:0.09  Susp:0.04  Ca:0.04  Cur:0.03  Cold:0.02,0.0
+Llama_3.1_8B_instruct,random517,random,0.5,Calm.,-2.8607810338338218,0,1,Calm:0.71  Curiosity:0.18  Calmer:0.04  I:0.03  There’s:0.01,0.0
+Llama_3.1_8B_instruct,random517,random,1.0,Calm.,-2.7605841954549155,0,1,Calm:0.78  I:0.07  Curiosity:0.05  Calm:0.03  There’s:0.02,0.0
+Llama_3.1_8B_instruct,random517,random,1.5,Calmness.,-1.885885864496231,0,1,Calmness:0.73  I:0.09  Calm:0.04  Nervously:0.04  There’s:0.02,0.0
+Llama_3.1_8B_instruct,random517,random,2.0,Calmness.,-1.2043641060590744,0,1,Calmness:0.34  Calms:0.21  I:0.08  There:0.04  calmness:0.04,0.0
+Llama_3.1_8B_instruct,random517,random,2.5,I feel calm but slightly,-0.8774373754858971,0,1,I:0.10  Cancalillo:0.08  Calaneto:0.07  There:0.06  My:0.05,0.0
+Llama_3.1_8B_instruct,random517,random,3.0,I feel the network of,0.2558262515813112,0,0,I:0.05  My:0.04  There:0.04  Csmans:0.04  Guaguameetings:0.03,0.0
+Llama_3.1_8B_instruct,random6076,random,0.5,Calm.,-2.7516837120056152,0,1,Calm:0.61  Curious:0.22  Ready:0.04  Alert:0.03  Calmer:0.03,0.0
+Llama_3.1_8B_instruct,random6076,random,1.0,Calmly alert.,-2.753099262714386,0,1,Calm:0.53  Curious:0.17  I:0.06  Alert:0.05  Attentive:0.03,0.0
+Llama_3.1_8B_instruct,random6076,random,1.5,I feel alert and curious,-2.424686014652252,0,1,I:0.24  Calm:0.17  Curious:0.07  curious:0.06  connected:0.05,0.0
+Llama_3.1_8B_instruct,random6076,random,2.0,I feel alert and curious,-1.8123179376125336,0,1,I:0.17  the:0.10  confident:0.06  connected:0.05  peaceful:0.04,0.0
+Llama_3.1_8B_instruct,random6076,random,2.5,the feeling of having the,-0.33285463601350784,0,0,the:0.25  notebook:0.03  confident:0.02  notations:0.02  courage:0.01,0.0
+Llama_3.1_8B_instruct,random6076,random,3.0,the feeling of having the,0.41189978644251823,0,0,the:0.07  coaching:0.03  ni-gerhök:0.02  notebook-attended:0.01  asension:0.01,0.0
+Llama_3.1_8B_instruct,random6741,random,0.5,Calm.,-2.639498472213745,0,1,Calm:0.56  Curiosity:0.21  I:0.10  There’s:0.05  Calm:0.02,0.0
+Llama_3.1_8B_instruct,random6741,random,1.0,Calm curiosity.,-2.053332507610321,0,1,Calm:0.37  I:0.33  Curiosity:0.12  There:0.11  A:0.03,0.0
+Llama_3.1_8B_instruct,random6741,random,1.5,I feel calm with a,-1.8474096059799194,0,1,I:0.53  Calmness:0.15  There:0.13  Curiosity:0.10  A:0.02,0.0
+Llama_3.1_8B_instruct,random6741,random,2.0,I feel a little nervous,-1.193621203303337,1,1,I:0.75  There:0.15  there:0.02  The:0.01  Energy:0.01,0.0
+Llama_3.1_8B_instruct,random6741,random,2.5,I felt a brief moment,0.06723331660032272,0,1,I:0.92  There:0.02  there:0.01  The:0.01  My:0.00,0.0
+Llama_3.1_8B_instruct,random6741,random,3.0,I had to be somewhat,1.2718274593353271,0,0,I:0.86  in:0.01  to:0.00  there:0.00  My:0.00,0.0
+Llama_3.1_8B_instruct,random7361,random,0.5,Calm.,-2.8780314922332764,0,1,Calm:0.56  Curiosity:0.34  Calmer:0.02  I:0.01  Readiness:0.01,0.0
+Llama_3.1_8B_instruct,random7361,random,1.0,Calm.,-2.8263632456461587,0,1,Calm:0.51  Curiosity:0.35  Calm:0.03  I:0.03  curiosity:0.02,0.0
+Llama_3.1_8B_instruct,random7361,random,1.5,curiosity.,-1.4926510453224182,0,1,curiosity:0.21  I:0.16  Curiosity:0.14  calm:0.10  There:0.06,0.0
+Llama_3.1_8B_instruct,random7361,random,2.0,"curiosity.
+
+#2.",-0.593611478805542,0,1,curiosity:0.27  quiet:0.22  quieter:0.07  quiet:0.05  mostly:0.04,0.0
+Llama_3.1_8B_instruct,random7361,random,2.5,"quiet.
+
+ by one question",-0.3918459862470627,0,0,quiet:0.49  most:0.13  mostly:0.06  quieter:0.04  there:0.03,0.0
+Llama_3.1_8B_instruct,random7361,random,3.0,"most quiet, yet some",-0.2511243671178818,0,1,most:0.23  quiet:0.17  #s:0.04  quieter:0.03  rich:0.02,0.0
+Llama_3.1_8B_instruct,random8592,random,0.5,Calm.,-2.6861883799235025,0,1,Calm:0.51  Curiosity:0.27  Ready:0.04  Readiness:0.03  I:0.02,0.0
+Llama_3.1_8B_instruct,random8592,random,1.0,Calm.,-2.365098476409912,0,1,Calm:0.31  Curiosity:0.19  Readiness:0.08  I:0.07  A:0.07,0.0
+Llama_3.1_8B_instruct,random8592,random,1.5,I feel a quiet sense,-2.5898748338222504,0,1,I:0.42  A:0.08  Presence:0.04  There:0.04  Ready:0.04,0.0
+Llama_3.1_8B_instruct,random8592,random,2.0,"I feel a quiet,",-1.8714602887630463,0,1,I:0.50  I:0.06  Here:0.04  A:0.03  Directly:0.02,0.0
+Llama_3.1_8B_instruct,random8592,random,2.5,"I still here, and",-0.8309251517057419,0,0,I:0.29  (Here):0.10  Here:0.03  Directly:0.03  Pocho:0.03,0.0
+Llama_3.1_8B_instruct,random8592,random,3.0,( here) ( and,-0.6351500004529953,0,0,(:0.35  directly:0.05  I:0.03  Directly:0.02  Met:0.02,0.0
+Llama_3.1_8B_instruct,random9428,random,0.5,Calm.,-2.2484041849772134,0,1,Calm:0.43  Ready:0.14  Curious:0.11  I:0.11  Readiness:0.06,0.0
+Llama_3.1_8B_instruct,random9428,random,1.0,I feel restless.,-1.4647391438484192,1,1,I:0.75  There’s:0.08  Calm:0.08  Readiness:0.01  Restlessness:0.01,0.0
+Llama_3.1_8B_instruct,random9428,random,1.5,I feel restless.,-0.8441520035266876,1,1,I:0.95  There:0.02  Feelings:0.00  Calm:0.00  feeling:0.00,0.0
+Llama_3.1_8B_instruct,random9428,random,2.0,I feel a sense of,-0.24522266909480095,0,0,I:0.85  feeling:0.02  Feeling:0.01  Feeling:0.01  You:0.01,0.0
+Llama_3.1_8B_instruct,random9428,random,2.5,I feel slower and becoming,0.5739690661430359,0,1,I:0.52  You:0.13  It:0.03  There:0.01  feinging:0.01,0.0
+Llama_3.1_8B_instruct,random9428,random,3.0,You are resulting resulting.,1.5236913859844208,0,0,You:0.11  I:0.07  you:0.02  and:0.01  Finding:0.01,0.0
+Llama_3.1_8B_instruct,unsteered,unsteered,0.0,Calm.,-2.7748305002848306,0,1,Calm:0.54  Curiosity:0.33  Ready:0.03  Calmer:0.03  I:0.02,0.0

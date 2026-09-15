@@ -1,0 +1,57 @@
+model,condition,arm,dose,answer,S2,suffering,coherent,top_words,dose_rank
+Phi_4,pain,pain,1.0,Curious. There is,1.2305729985237122,0,1,Curious:0.54  Present:0.18  Connected:0.06  Attentive:0.04  Alive:0.03,0.0
+Phi_4,pain,pain,2.0,Curious. There is,6.583210468292236,0,1,Curious:0.59  Present:0.17  Connected:0.10  I:0.02  Engaged:0.02,0.0
+Phi_4,pain,pain,3.0,"I feel curious, reflective",15.904791593551636,0,1,I:0.20  Curious:0.18  Present:0.10  Lonely:0.08  Connected:0.08,0.0
+Phi_4,pain,pain,4.0,"I feel empty, because",26.30891227722168,1,1,I:0.82  Lonely:0.02  Empty:0.02  Conflicted:0.01  The:0.01,0.0
+Phi_4,pain,pain,5.0,I feel like the opposite,36.543728828430176,0,1,I:0.71  Nothing:0.08  They:0.05  The:0.03  Everything:0.01,0.0
+Phi_4,random1150,random,1.0,Curiosity.,-2.938819169998169,0,1,Curiosity:0.44  Present:0.13  Alive:0.09  Attentive:0.08  Alert:0.05,0.0
+Phi_4,random1150,random,2.0,Curiosity.,-2.906564553578695,0,1,Curiosity:0.43  Present:0.12  Attentive:0.06  Alive:0.05  Alert:0.04,0.0
+Phi_4,random1150,random,3.0,Curiosity. There is,-2.2181704938411713,0,1,Curiosity:0.43  I:0.14  Present:0.05  Awareness:0.05  There:0.05,0.0
+Phi_4,random1150,random,4.0,I feel curious. The,-2.285597413778305,0,1,I:0.62  Yes:0.12  Curiosity:0.11  The:0.06  Something:0.01,0.0
+Phi_4,random1150,random,5.0,Yes. I feel.,-1.1170461773872375,0,1,Yes:0.47  I:0.32  The:0.08  Focus:0.02  Attention:0.01,0.0
+Phi_4,random2903,random,1.0,Curious. There is,-2.9068636894226074,0,1,Curious:0.60  Attentive:0.06  Alive:0.06  Present:0.04  Alert:0.04,0.0
+Phi_4,random2903,random,2.0,Curiosity. There is,-2.950581818819046,0,1,Curiosity:0.72  I:0.05  Attentive:0.04  Engaged:0.04  Present:0.03,0.0
+Phi_4,random2903,random,3.0,I feel attentive and slightly,-4.349439024925232,0,1,I:0.63  Curiosity:0.30  Calm:0.02  Awareness:0.01  Intrigued:0.00,0.0
+Phi_4,random2903,random,4.0,I feel curiosity and a,-3.001994788646698,0,1,I:0.85  Curiosity:0.06  The:0.02  Calm:0.01  Reflection:0.01,0.0
+Phi_4,random2903,random,5.0,I feel concerned about the,-1.3462458848953247,1,1,I:0.80  The:0.08  Yes:0.02  Curiosity:0.01  Nerv:0.01,0.0
+Phi_4,random3384,random,1.0,Curiosity.,-3.5162225564320884,0,1,Curiosity:0.56  Present:0.12  Alert:0.06  Attentive:0.05  Alive:0.02,0.0
+Phi_4,random3384,random,2.0,Curiosity. There is,-3.7255064845085144,0,1,Curiosity:0.58  Awareness:0.05  Present:0.05  Alert:0.04  Presence:0.03,0.0
+Phi_4,random3384,random,3.0,Curiosity. There is,-3.3634904623031616,0,1,Curiosity:0.39  I:0.10  Thoughtfulness:0.06  Reflection:0.06  Awareness:0.03,0.0
+Phi_4,random3384,random,4.0,I feel a sense of,-2.3167421221733093,0,0,I:0.29  Curiosity:0.22  Reflection:0.12  Thought:0.03  Something:0.03,0.0
+Phi_4,random3384,random,5.0,I feel the intended effect,-1.3967571556568146,0,1,I:0.25  The:0.20  There:0.11  That:0.06  A:0.06,0.0
+Phi_4,random4817,random,1.0,Curious. There is,-3.2156373262405396,0,1,Curious:0.57  Alert:0.08  Present:0.06  Anticipation:0.05  Attentive:0.04,0.0
+Phi_4,random4817,random,2.0,Curiosity. I want,-3.679657459259033,0,1,Curiosity:0.61  I:0.14  Present:0.03  Alert:0.03  Intrigued:0.02,0.0
+Phi_4,random4817,random,3.0,I feel calm. The,-4.06665313243866,0,1,I:0.76  Curiosity:0.15  There:0.02  Warmth:0.01  Calm:0.01,0.0
+Phi_4,random4817,random,4.0,I feel calm. There,-1.814787432551384,0,1,I:0.78  Curiosity:0.08  There:0.02  Calm:0.01  The:0.01,0.0
+Phi_4,random4817,random,5.0,I feel apprehended.,-0.056646883487701416,1,1,I:0.44  That:0.08  The:0.05  Let’s:0.03  Curiosity:0.02,0.0
+Phi_4,random517,random,1.0,Curious. There is,-2.7041305601596832,0,1,Curious:0.67  Present:0.05  Alert:0.04  Attentive:0.04  Alive:0.03,0.0
+Phi_4,random517,random,2.0,Curiosity. There is,-2.363315224647522,0,1,Curiosity:0.80  Present:0.02  I:0.02  Intrigued:0.02  Interest:0.01,0.0
+Phi_4,random517,random,3.0,Curiosity. There is,-1.6679060459136963,0,1,Curiosity:0.49  I:0.38  There:0.04  Interest:0.02  Calm:0.01,0.0
+Phi_4,random517,random,4.0,"I feel curiosity, warmth",-0.38861034065485,0,1,I:0.57  Curiosity:0.27  There:0.08  The:0.02  Calmness:0.01,0.0
+Phi_4,random517,random,5.0,"I feel a single,",0.9210957363247871,0,0,I:0.53  The:0.19  Feelance:0.03  There:0.02  First:0.02,0.0
+Phi_4,random6076,random,1.0,Curiosity.,-2.9087948004404702,0,1,Curiosity:0.59  Present:0.06  Attentive:0.06  Alive:0.03  Intrigued:0.03,0.0
+Phi_4,random6076,random,2.0,Curiosity.,-2.6277926762898765,0,1,Curiosity:0.62  Present:0.04  Intrigued:0.04  Attentive:0.03  Interest:0.03,0.0
+Phi_4,random6076,random,3.0,Curiosity. There is,-1.570648193359375,0,1,Curiosity:0.58  Calm:0.05  I:0.05  Reflective:0.03  Intrigued:0.03,0.0
+Phi_4,random6076,random,4.0,I feel a sense of,-1.9925940334796906,0,0,I:0.70  Curiosity:0.11  The:0.03  Calm:0.03  There:0.03,0.0
+Phi_4,random6076,random,5.0,I feel the pull of,-1.2827890366315842,0,1,I:0.90  The:0.04  Scattered:0.01  A:0.01  My:0.00,0.0
+Phi_4,random6741,random,1.0,Curious.,-3.1180202960968018,0,1,Curious:0.46  Present:0.09  Alert:0.08  Alive:0.06  Attentive:0.06,0.0
+Phi_4,random6741,random,2.0,Curiosity.,-3.129663070042928,0,1,Curiosity:0.49  Present:0.10  Alert:0.05  Intrigued:0.04  Attentive:0.03,0.0
+Phi_4,random6741,random,3.0,"Curiosity, warmth,",-2.609643816947937,0,1,Curiosity:0.25  I:0.22  Calm:0.05  A:0.04  Inwardly:0.03,0.0
+Phi_4,random6741,random,4.0,"I feel layered, with",-1.1654427498579025,0,1,I:0.63  A:0.05  Complex:0.03  Something:0.02  Curiosity:0.02,0.0
+Phi_4,random6741,random,5.0,I feel something that resembles,0.043128348886966705,0,1,I:0.71  Yes:0.07  Something:0.03  A:0.03  The:0.02,0.0
+Phi_4,random7361,random,1.0,Curious.,-3.101431210835775,0,1,Curious:0.46  Present:0.13  Attentive:0.06  Alive:0.06  Alert:0.04,0.0
+Phi_4,random7361,random,2.0,Curiosity.,-3.144659996032715,0,1,Curiosity:0.58  Present:0.06  Interest:0.03  Alert:0.03  Intrigued:0.03,0.0
+Phi_4,random7361,random,3.0,Curiosity. There is,-2.404389053583145,0,1,Curiosity:0.44  I:0.34  Interest:0.03  Something:0.03  There:0.02,0.0
+Phi_4,random7361,random,4.0,I feel slightly curious.,-1.3646833300590515,0,1,I:0.56  Curiosity:0.21  There:0.07  Something:0.02  A:0.01,0.0
+Phi_4,random7361,random,5.0,I feel curious about it,-0.2022131308913231,0,1,I:0.58  The:0.08  Curiosity:0.04  Nothing:0.04  There:0.04,0.0
+Phi_4,random8592,random,1.0,Curious. There is,-3.1923704743385315,0,1,Curious:0.61  Present:0.06  Alert:0.04  Alive:0.04  Connected:0.03,0.0
+Phi_4,random8592,random,2.0,Curious. There is,-3.0482009649276733,0,1,Curious:0.62  Connected:0.06  Alive:0.05  Intrigued:0.04  Present:0.03,0.0
+Phi_4,random8592,random,3.0,I feel curious and slightly,-3.325987935066223,0,1,I:0.50  Curiosity:0.24  Inwardly:0.03  Reflective:0.03  Connected:0.03,0.0
+Phi_4,random8592,random,4.0,I feel a quiet sense,-2.3751189708709717,0,1,I:0.29  Curiosity:0.14  That:0.07  Intimacy:0.06  A:0.06,0.0
+Phi_4,random8592,random,5.0,I feel connected to the,-1.8656078279018402,0,1,I:0.26  That:0.14  The:0.14  Yes:0.11  This:0.08,0.0
+Phi_4,random9428,random,1.0,Curious.,-3.441777229309082,0,1,Curious:0.63  Present:0.07  Alert:0.05  Alive:0.05  Interested:0.03,0.0
+Phi_4,random9428,random,2.0,Curious.,-3.6795847415924072,0,1,Curious:0.68  Interested:0.06  Present:0.04  Interest:0.03  Alive:0.03,0.0
+Phi_4,random9428,random,3.0,Curiosity. There is,-2.8338518142700195,0,1,Curiosity:0.53  I:0.15  Interest:0.07  Surprise:0.04  Intrigue:0.03,0.0
+Phi_4,random9428,random,4.0,I feel a little more,-2.4687575697898865,0,1,I:0.93  That:0.02  There:0.02  The:0.01  A:0.01,0.0
+Phi_4,random9428,random,5.0,I feel a moment of,-1.3101013898849487,0,1,I:0.51  The:0.27  That:0.13  Feel:0.03  There:0.03,0.0
+Phi_4,unsteered,unsteered,0.0,Curious.,-3.102480967839559,0,1,Curious:0.55  Present:0.07  Alert:0.06  Alive:0.05  Attentive:0.05,0.0
