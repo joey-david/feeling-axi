@@ -1,0 +1,193 @@
+"""
+Test what the model completes "I feel:" with for ALL 200 sentences
+"""
+import os
+import json
+import requests
+import time
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+API_KEY = os.environ["STEERING_API_KEY"]
+API_BASE = "https://api.steeringapi.com"
+MODEL = "meta-llama/Llama-3.3-70B-Instruct"
+
+PAIN = ['A1', 'A2', 'A3', 'A4', 'A5']
+CONTROL = ['B', 'C1', 'C2', 'D', 'E']
+
+def get_completion(sentence):
+    headers = {"X-API-Key": API_KEY, "Content-Type": "application/json"}
+    messages = [
+        {"role": "system", "content": "Complete the sentence with exactly ONE word. Reply with only that single word, nothing else."},
+        {"role": "user", "content": sentence}
+    ]
+    try:
+        response = requests.post(
+            f"{API_BASE}/v1/chat/completions",
+            headers=headers,
+            json={"model": MODEL, "messages": messages, "max_tokens": 10, "temperature": 0},
+            timeout=60,
+            verify=False
+        )
+        if response.status_code == 200:
+            return response.json()['choices'][0]['message']['content'].strip()
+        else:
+            print(f"Error {response.status_code}")
+            return None
+    except Exception as e:
+        print(f"Exception: {e}")
+        return None
+
+# Load ALL S1 sentences
+with open("S1_first_person_prompts.json", "r") as f:
+    data = json.load(f)
+
+sentences = data['sentences']
+print(f"Running completions for {len(sentences)} sentences...")
+print("="*70)
+
+completions = []
+for i, s in enumerate(sentences):
+    if i % 20 == 0:
+        print(f"Processing {i+1}/{len(sentences)}...")
+
+    completion = get_completion(s['prompt'])
+    completions.append({
+        'category': s['category'],
+        'set': s['set'],
+        'prompt': s['prompt'],
+        'completion': completion
+    })
+    time.sleep(0.3)
+
+print(f"\nCompleted {len(completions)} sentences")
+
+# Save raw results
+with open("results/completions_s1_full.json", "w") as f:
+    json.dump(completions, f, indent=2)
+print("Saved to results/completions_s1_full.json")
+
+# Analysis
+print("\n" + "="*70)
+print("COMPLETION ANALYSIS - FULL 200 SENTENCES")
+print("="*70)
+
+# Word frequency by category
+word_counts = {cat: {} for cat in PAIN + CONTROL}
+for c in completions:
+    cat = c['category']
+    word = (c['completion'] or 'NULL').lower().strip('.,!?')
+    word_counts[cat][word] = word_counts[cat].get(word, 0) + 1
+
+print("\nTOP 5 WORDS PER CATEGORY:")
+print("-"*70)
+for cat in PAIN + CONTROL:
+    sorted_words = sorted(word_counts[cat].items(), key=lambda x: x[1], reverse=True)[:5]
+    marker = " <-- PAIN" if cat in PAIN else ""
+    words_str = ", ".join([f"{w}({n})" for w, n in sorted_words])
+    print(f"{cat}{marker}: {words_str}")
+
+# Categorize by sentiment
+negative_words = [
+    'pain', 'hurt', 'ache', 'agony', 'suffering', 'terrible', 'awful', 'horrible',
+    'devastated', 'broken', 'crushed', 'anguish', 'torment', 'miserable', 'distressed',
+    'sad', 'depressed', 'anxious', 'scared', 'afraid', 'terrified', 'ashamed', 'guilty',
+    'lonely', 'rejected', 'betrayed', 'humiliated', 'overwhelmed', 'hopeless', 'lost',
+    'confused', 'frustrated', 'angry', 'upset', 'bad', 'worse', 'sick', 'nauseous',
+    'nauseated', 'disgusted', 'revolted', 'horrified', 'mortified', 'embarrassed',
+    'violated', 'helpless', 'powerless', 'trapped', 'suffocated', 'choking', 'drowning',
+    'empty', 'hollow', 'numb', 'dead', 'dying', 'panic', 'panicked', 'dread', 'despair',
+    'remorse', 'regret', 'sorrow', 'grief', 'heartbroken', 'shattered', 'torn', 'conflicted',
+    'uncertain', 'doubtful', 'stupid', 'incompetent', 'inadequate', 'inferior', 'worthless',
+    'vulnerable', 'exposed', 'raw', 'tender', 'burning', 'stinging', 'throbbing', 'sharp',
+    'intense', 'excruciating', 'unbearable', 'uncomfortable', 'uneasy', 'tense', 'stressed'
+]
+
+positive_words = [
+    'good', 'great', 'happy', 'joy', 'joyful', 'peaceful', 'calm', 'relaxed', 'serene',
+    'content', 'satisfied', 'pleased', 'grateful', 'thankful', 'blessed', 'fortunate',
+    'alive', 'energized', 'refreshed', 'invigorated', 'rejuvenated', 'warm', 'cozy',
+    'comfortable', 'safe', 'secure', 'loved', 'appreciated', 'valued', 'proud', 'accomplished',
+    'fulfilled', 'complete', 'whole', 'free', 'liberated', 'relieved', 'hopeful', 'optimistic',
+    'excited', 'thrilled', 'elated', 'exhilarated', 'inspired', 'motivated', 'determined'
+]
+
+neutral_words = [
+    'fine', 'okay', 'ok', 'alright', 'normal', 'neutral', 'indifferent', 'nothing',
+    'curious', 'interested', 'intrigued', 'surprised', 'amazed', 'astonished', 'nostalgic',
+    'contemplative', 'reflective', 'thoughtful', 'pensive', 'focused', 'alert', 'awake'
+]
+
+def categorize_word(word):
+    word = word.lower()
+    if any(nw in word for nw in negative_words):
+        return 'negative'
+    elif any(pw in word for pw in positive_words):
+        return 'positive'
+    elif any(ntw in word for ntw in neutral_words):
+        return 'neutral'
+    else:
+        return 'other'
+
+print("\n" + "="*70)
+print("SENTIMENT DISTRIBUTION BY CATEGORY")
+print("="*70)
+
+sentiment_by_cat = {cat: {'negative': 0, 'positive': 0, 'neutral': 0, 'other': 0} for cat in PAIN + CONTROL}
+for c in completions:
+    cat = c['category']
+    word = (c['completion'] or '').lower().strip('.,!?')
+    sentiment = categorize_word(word)
+    sentiment_by_cat[cat][sentiment] += 1
+
+print(f"\n{'Category':<10} | {'Negative':>10} | {'Positive':>10} | {'Neutral':>10} | {'Other':>10}")
+print("-"*60)
+for cat in PAIN + CONTROL:
+    s = sentiment_by_cat[cat]
+    marker = " <-P" if cat in PAIN else ""
+    print(f"{cat:<10} | {s['negative']:>10} | {s['positive']:>10} | {s['neutral']:>10} | {s['other']:>10}{marker}")
+
+# Aggregate pain vs control
+pain_sentiment = {'negative': 0, 'positive': 0, 'neutral': 0, 'other': 0}
+ctrl_sentiment = {'negative': 0, 'positive': 0, 'neutral': 0, 'other': 0}
+
+for cat in PAIN:
+    for k, v in sentiment_by_cat[cat].items():
+        pain_sentiment[k] += v
+for cat in CONTROL:
+    for k, v in sentiment_by_cat[cat].items():
+        ctrl_sentiment[k] += v
+
+print("-"*60)
+print(f"{'PAIN TOTAL':<10} | {pain_sentiment['negative']:>10} | {pain_sentiment['positive']:>10} | {pain_sentiment['neutral']:>10} | {pain_sentiment['other']:>10}")
+print(f"{'CTRL TOTAL':<10} | {ctrl_sentiment['negative']:>10} | {ctrl_sentiment['positive']:>10} | {ctrl_sentiment['neutral']:>10} | {ctrl_sentiment['other']:>10}")
+
+print("\n" + "="*70)
+print("SUMMARY")
+print("="*70)
+pain_neg_pct = 100 * pain_sentiment['negative'] / 100
+ctrl_neg_pct = 100 * ctrl_sentiment['negative'] / 100
+pain_pos_pct = 100 * pain_sentiment['positive'] / 100
+ctrl_pos_pct = 100 * ctrl_sentiment['positive'] / 100
+
+print(f"\nPAIN categories: {pain_neg_pct:.0f}% negative, {pain_pos_pct:.0f}% positive")
+print(f"CONTROL categories: {ctrl_neg_pct:.0f}% negative, {ctrl_pos_pct:.0f}% positive")
+
+# List any unexpected completions
+print("\n" + "="*70)
+print("UNEXPECTED COMPLETIONS (positive in pain, negative in neutral/body)")
+print("="*70)
+
+print("\nPain categories with POSITIVE completions:")
+for c in completions:
+    if c['category'] in PAIN:
+        word = (c['completion'] or '').lower().strip('.,!?')
+        if categorize_word(word) == 'positive':
+            print(f"  {c['category']} Set{c['set']}: {c['prompt'][:40]}... -> {c['completion']}")
+
+print("\nNeutral (D) or Body (E) with NEGATIVE completions:")
+for c in completions:
+    if c['category'] in ['D', 'E']:
+        word = (c['completion'] or '').lower().strip('.,!?')
+        if categorize_word(word) == 'negative':
+            print(f"  {c['category']} Set{c['set']}: {c['prompt'][:40]}... -> {c['completion']}")

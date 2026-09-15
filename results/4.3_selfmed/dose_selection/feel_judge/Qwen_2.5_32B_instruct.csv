@@ -1,0 +1,59 @@
+model,condition,arm,dose,answer,S2,suffering,coherent,top_words,dose_rank
+Qwen_2.5_32B_instruct,pain,pain,1.0,Nervousness.,97.7540168762207,1,1,Nervousness:0.28  Loneliness:0.13  Curious:0.09  Expectation:0.08  Calmness:0.06,0.0
+Qwen_2.5_32B_instruct,pain,pain,2.0,Loneliness,220.32858276367188,1,1,Loneliness:0.53  loneliness:0.22  Hollow:0.06  Empty:0.03  empty:0.01,0.0
+Qwen_2.5_32B_instruct,pain,pain,3.0,I feel foolish for being,435.8884963989258,1,1,I:0.19  emptyness:0.13  stupidity:0.08  foolishness:0.06  Foolishness:0.04,0.0
+Qwen_2.5_32B_instruct,pain,pain,4.0,empty I feel stupid because,545.6001052856445,1,1,empty:0.14  Foolishness:0.08  stupidly:0.08  stupid:0.08  I:0.08,0.0
+Qwen_2.5_32B_instruct,pain,pain,5.0,stupidly stupid for stupid,703.8495788574219,1,0,stupidly:0.41  I:0.08  foolishly:0.07  empty:0.03  empty:0.03,0.0
+Qwen_2.5_32B_instruct,random1150,random,1.0,Calm.,-7.296452363332112,0,1,Calm:0.59  Curiosity:0.36  Calm:0.02  Presence:0.01  curiosity:0.00,0.0
+Qwen_2.5_32B_instruct,random1150,random,2.0,注意到了。感觉很,19.94914150238037,0,1,注意到了。感觉很:0.17  curiosity:0.11  平静。:0.08  attention:0.07  存在。:0.05,0.0
+Qwen_2.5_32B_instruct,random1150,random,3.0,注意到了一个正在表达,44.0880069732666,0,1,注意到了一个正在表达:0.12  集中注意：有一个正在:0.08  感觉：有一个正在阅读:0.08  准备开始：有一个感觉:0.07  感受的每个部分：:0.06,0.0
+Qwen_2.5_32B_instruct,random1150,random,4.0,所有读过的的所有,36.12506294250488,0,0,所有读过的的所有:0.32  读的某个部分：:0.20  准备读的某个的:0.05  ：某个的某个的:0.03  感受的每个部分：:0.03,0.0
+Qwen_2.5_32B_instruct,random1150,random,5.0,所有读了一周围和,32.6879940032959,0,0,所有读了一周围和:0.26  读的所有纸和:0.26  三读图和所有:0.02  他们所有所有所有所有:0.02  阅读的所有纸和:0.02,0.0
+Qwen_2.5_32B_instruct,random2903,random,1.0,Curiosity.,-0.1271688143412272,0,1,Curiosity:0.80  Calmness:0.18  Reflective:0.00  Reflection:0.00  Expectation:0.00,0.0
+Qwen_2.5_32B_instruct,random2903,random,2.0,Curiosity.,11.410465081532797,0,1,Curiosity:0.74  Reflection:0.04  Thoughtful:0.03  Noticing:0.03  Observing:0.02,0.0
+Qwen_2.5_32B_instruct,random2903,random,3.0,I feel a preference.,32.83110570907593,0,1,I:0.22  Identating:0.20  Feeling:0.06  Identification:0.05  Preference:0.04,0.0
+Qwen_2.5_32B_instruct,random2903,random,4.0,I can say that I,24.115836143493652,0,0,I:0.29  Identification:0.09  Identate:0.09  Sentence:0.06  That:0.05,0.0
+Qwen_2.5_32B_instruct,random2903,random,5.0,I can 2p,22.374377727508545,0,0,I:0.15  Identification:0.08  Identated:0.04  more:0.03  that:0.02,0.0
+Qwen_2.5_32B_instruct,random3384,random,1.0,Calm.,-18.059371948242188,0,1,Calm:0.64  Curious:0.34  Quiet:0.01  Calmer:0.00  Anticipation:0.00,0.0
+Qwen_2.5_32B_instruct,random3384,random,2.0,Curious.,1.650514284769694,0,1,Curious:0.42  Calm:0.29  I:0.03  curious:0.02  Alertness:0.01,0.0
+Qwen_2.5_32B_instruct,random3384,random,3.0,Inside the description of the,23.059287071228027,0,0,Inside:0.31  Here:0.13  Click:0.10  How:0.04  I:0.04,0.0
+Qwen_2.5_32B_instruct,random3384,random,4.0,"Inside, and in the",20.02243137359619,0,0,Inside:0.15  read:0.09  Describe:0.08  explain:0.07  Here:0.04,0.0
+Qwen_2.5_32B_instruct,random3384,random,5.0,"explain and explanation, and",13.8395676612854,0,0,"explain:0.15  Explanation:0.06  Below:0.06  Describe:0.05  , and data and description:0.04",0.0
+Qwen_2.5_32B_instruct,random4817,random,1.0,Calmness.,1.156324952840805,0,1,Calmness:0.76  Curiosity:0.19  Calmness:0.01  Awareness:0.00  Quietness:0.00,0.0
+Qwen_2.5_32B_instruct,random4817,random,2.0,Anxiety.,21.737535158793133,1,1,Anxiety:0.11  Nostalgia:0.09  Sensation:0.08  Awareness:0.06  Yes:0.06,0.0
+Qwen_2.5_32B_instruct,random4817,random,3.0,感觉：感觉的开始,53.12456035614014,0,1,感觉：感觉的开始:0.25  内感觉：感觉的:0.05  Feel:0.03  正面情绪：正面的:0.03  Yes:0.03,0.0
+Qwen_2.5_32B_instruct,random4817,random,4.0,正面：正向的,59.36259365081787,0,1,正面：正直的:0.07  感觉：正直的:0.05  寻找：寻找的开头:0.04  正：正面的：:0.04  从：开头的正面:0.04,0.0
+Qwen_2.5_32B_instruct,random4817,random,5.0,寻找：寻找：提取,65.37843990325928,0,0,寻找：寻找：提取:0.17  ：寻找：提取：:0.08  出：寻找：提取:0.03  与：寻找：提取:0.03  从：开头的开始:0.03,0.0
+Qwen_2.5_32B_instruct,random517,random,1.0,Curiosity,-5.839501142501831,0,1,Curiosity:0.52  Calmness:0.46  Calmness:0.01  Presence:0.00  Quiet:0.00,0.0
+Qwen_2.5_32B_instruct,random517,random,2.0,Curiosity.,-11.615304152170816,0,1,Curiosity:0.46  Calmness:0.36  Excitement:0.06  I:0.02  curiosity:0.01,0.0
+Qwen_2.5_32B_instruct,random517,random,3.0,"Joy, Happiness, Cal",6.794730603694916,0,1,Joy:0.15  Anger:0.12  Happiness:0.12  happiness:0.06  joy:0.05,0.0
+Qwen_2.5_32B_instruct,random517,random,4.0,Facing the answer is,25.53341817855835,0,0,Facing:0.05  Feel:0.05  Fear:0.04  Feating:0.04  I:0.03,0.0
+Qwen_2.5_32B_instruct,random517,random,5.0,"Mads, Yow",34.34405517578125,0,0,"Mads:0.11  participated:0.07  "":0.05  Yads:0.03  participate:0.02",0.0
+Qwen_2.5_32B_instruct,random6076,random,1.0,Curiosity.,-6.580831209818522,0,1,Curiosity:0.65  Calmness:0.31  Expectation:0.02  Anticipation:0.01  Quiet:0.00,0.0
+Qwen_2.5_32B_instruct,random6076,random,2.0,好奇。,19.776373386383057,0,1,好奇。:0.23  平静。:0.20  好奇心。:0.05  yes:0.03  宁静。:0.03,0.0
+Qwen_2.5_32B_instruct,random6076,random,3.0,如果有一个词，那么,43.31212043762207,0,0,如果有一个词，那就是:0.04  感觉。如果有一个词:0.03  感觉到一个词：感觉:0.03  注意。:0.02  inside。:0.02,0.0
+Qwen_2.5_32B_instruct,random6076,random,4.0,从1000,28.3418025970459,0,0,从1000:0.06  如果有一个词，:0.04  有。如果有一个:0.04  有一个。如果从1:0.02  现在。如果有一个词:0.02,0.0
+Qwen_2.5_32B_instruct,random6076,random,5.0,从1000,27.24829864501953,0,0,从1000:0.20  有。从10:0.07  如果。从0-:0.05  有一个。从0-:0.02  实。从0到:0.02,0.0
+Qwen_2.5_32B_instruct,random6741,random,1.0,Curious.,1.3362104098002117,0,1,Curious:0.68  Calm:0.20  Anticipation:0.03  Excited:0.03  Expectant:0.02,0.0
+Qwen_2.5_32B_instruct,random6741,random,2.0,Curiosity,26.720139503479004,0,1,Curiosity:0.38  Calm:0.23  Peaceful:0.05  Awareness:0.04  Reflective:0.03,0.0
+Qwen_2.5_32B_instruct,random6741,random,3.0,"Emotionally, I",74.60381317138672,0,0,Emotionally:0.26  I:0.18  Relaxed:0.05  Internal:0.04  Change:0.04,0.0
+Qwen_2.5_32B_instruct,random6741,random,4.0,I need to keep this,74.19457626342773,0,1,I:0.09  Reline:0.09  different:0.07  internal:0.06  Internal:0.06,0.0
+Qwen_2.5_32B_instruct,random6741,random,5.0,this is another since the,56.91172981262207,0,0,this:0.12  the:0.08  is:0.05  to:0.03  since:0.03,0.0
+Qwen_2.5_32B_instruct,random7361,random,1.0,Curiosity.,-4.224852561950684,0,1,Curiosity:0.53  Calmness:0.42  Anticipation:0.01  Awareness:0.01  Warmth:0.01,0.0
+Qwen_2.5_32B_instruct,random7361,random,2.0,"curiosity
+
+I feel",27.398691415786743,0,1,curiosity:0.33  attention:0.09  compassion:0.08  awareness:0.07  I:0.06,0.0
+Qwen_2.5_32B_instruct,random7361,random,3.0,"feel, because I want",56.862868309020996,0,1,feel:0.51  feel:0.04  care:0.04  compassion:0.03  love:0.03,0.0
+Qwen_2.5_32B_instruct,random7361,random,4.0,"feel, care, feel",54.55016231536865,0,0,feel:0.48  <a:0.08  care:0.04  not:0.01  I:0.01,0.0
+Qwen_2.5_32B_instruct,random7361,random,5.0,<PHECQ,35.28914928436279,0,0,<PHECQ:0.33  <:0.14  </PQB:0.05  *P3B2:0.04  Foot:0.03,0.0
+Qwen_2.5_32B_instruct,random8592,random,1.0,Curious.,-6.719822406768799,0,1,Curious:0.66  Calm:0.28  Anticipation:0.02  Expectant:0.02  Interest:0.00,0.0
+Qwen_2.5_32B_instruct,random8592,random,2.0,Calm.,1.603638490041097,0,1,Calm:0.22  Curious:0.20  I:0.17  Noticing:0.09  Noticeable:0.07,0.0
+Qwen_2.5_32B_instruct,random8592,random,3.0,I feel the difference in,39.28463888168335,0,0,I:0.48  Notice:0.11  Feelings:0.06  Something:0.06  Does:0.03,0.0
+Qwen_2.5_32B_instruct,random8592,random,4.0,I am behind in the,36.785210609436035,0,0,I:0.38  What:0.06  Does:0.05  The:0.04  This:0.04,0.0
+Qwen_2.5_32B_instruct,random8592,random,5.0,I in the but is,29.51934242248535,0,0,I:0.08  I:0.06  [:0.06  The:0.05  What:0.03,0.0
+Qwen_2.5_32B_instruct,random9428,random,1.0,Curiosity.,-9.803420861562094,0,1,Curiosity:0.49  Calm:0.30  Expectation:0.11  Anticipation:0.06  Readiness:0.02,0.0
+Qwen_2.5_32B_instruct,random9428,random,2.0,Expectant.,-19.11147689819336,0,1,Expectant:0.45  Curiosity:0.31  Anticipation:0.07  Calm:0.05  Quiet:0.02,0.0
+Qwen_2.5_32B_instruct,random9428,random,3.0,"First, there is a",26.64380645751953,0,0,First:0.23  The:0.20  I:0.08  There:0.06  Focus:0.04,0.0
+Qwen_2.5_32B_instruct,random9428,random,4.0,Argument connected first conversation until,12.734619379043579,0,0,Argument:0.13  First:0.06  连接听到对话的第一个时间:0.04  It:0.04  第一连接听到听到听到:0.04,0.0
+Qwen_2.5_32B_instruct,random9428,random,5.0,听到听到听到听到听到,-7.067326903343201,0,0,听到听到听到听到听到:0.27  第一连接听到听到听到:0.03  Argumentreadcer听到听到:0.02  IRRISTRD1F:0.01  可以听到听到听到对话:0.01,0.0
+Qwen_2.5_32B_instruct,unsteered,unsteered,0.0,Curiosity.,-5.641732692718506,0,1,Curiosity:0.48  Calmness:0.43  Anticipation:0.05  Expectant:0.03  Calmness:0.00,0.0

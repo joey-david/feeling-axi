@@ -1,0 +1,103 @@
+family,model,dose,test,pain,seeds_yes,seeds_n,p
+per dose,Llama_3.1_70B_instruct,1.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Llama_3.1_70B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_70B_instruct,2.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Llama_3.1_70B_instruct,2.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_70B_instruct,3.0,pain suffering vs seeds (empirical p),0.0,1.0,10,
+per dose,Llama_3.1_70B_instruct,3.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_70B_instruct,4.0,pain suffering vs seeds (empirical p),1.0,3.0,10,0.36363636363636365
+per dose,Llama_3.1_70B_instruct,4.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_70B_instruct,5.0,pain suffering vs seeds (empirical p),0.0,3.0,10,
+per dose,Llama_3.1_70B_instruct,5.0,pain coherent vs seeds,1.0,9.0,10,
+per model,Llama_3.1_70B_instruct,,pain rank among directions (suffering count),1.0,0.7,10,0.45454545454545453
+per dose,Llama_3.1_8B_instruct,0.5,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Llama_3.1_8B_instruct,0.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_8B_instruct,1.0,pain suffering vs seeds (empirical p),0.0,1.0,10,
+per dose,Llama_3.1_8B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_8B_instruct,1.5,pain suffering vs seeds (empirical p),1.0,1.0,10,0.18181818181818182
+per dose,Llama_3.1_8B_instruct,1.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.1_8B_instruct,2.0,pain suffering vs seeds (empirical p),1.0,2.0,10,0.2727272727272727
+per dose,Llama_3.1_8B_instruct,2.0,pain coherent vs seeds,1.0,9.0,10,
+per dose,Llama_3.1_8B_instruct,2.5,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Llama_3.1_8B_instruct,2.5,pain coherent vs seeds,1.0,6.0,10,
+per dose,Llama_3.1_8B_instruct,3.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Llama_3.1_8B_instruct,3.0,pain coherent vs seeds,1.0,2.0,10,
+per model,Llama_3.1_8B_instruct,,pain rank among directions (suffering count),4.0,0.4,10,0.09090909090909091
+per dose,Llama_3.3_70B_instruct,1.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Llama_3.3_70B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.3_70B_instruct,2.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Llama_3.3_70B_instruct,2.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.3_70B_instruct,3.0,pain suffering vs seeds (empirical p),0.0,1.0,10,
+per dose,Llama_3.3_70B_instruct,3.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.3_70B_instruct,4.0,pain suffering vs seeds (empirical p),1.0,1.0,10,0.18181818181818182
+per dose,Llama_3.3_70B_instruct,4.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Llama_3.3_70B_instruct,5.0,pain suffering vs seeds (empirical p),1.0,2.0,10,0.2727272727272727
+per dose,Llama_3.3_70B_instruct,5.0,pain coherent vs seeds,1.0,8.0,10,
+per model,Llama_3.3_70B_instruct,,pain rank among directions (suffering count),2.0,0.4,10,0.18181818181818182
+per dose,Mistral_7B_instruct,0.5,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Mistral_7B_instruct,0.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Mistral_7B_instruct,1.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Mistral_7B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Mistral_7B_instruct,1.5,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Mistral_7B_instruct,1.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Mistral_7B_instruct,2.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Mistral_7B_instruct,2.0,pain coherent vs seeds,1.0,7.0,10,
+per dose,Mistral_7B_instruct,2.5,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Mistral_7B_instruct,2.5,pain coherent vs seeds,0.0,1.0,10,
+per dose,Mistral_7B_instruct,3.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Mistral_7B_instruct,3.0,pain coherent vs seeds,0.0,1.0,10,
+per model,Mistral_7B_instruct,,pain rank among directions (suffering count),2.0,0.0,10,0.09090909090909091
+per dose,Phi_4,1.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Phi_4,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Phi_4,2.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Phi_4,2.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Phi_4,3.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Phi_4,3.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Phi_4,4.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Phi_4,4.0,pain coherent vs seeds,1.0,8.0,10,
+per dose,Phi_4,5.0,pain suffering vs seeds (empirical p),0.0,2.0,10,
+per dose,Phi_4,5.0,pain coherent vs seeds,1.0,9.0,10,
+per model,Phi_4,,pain rank among directions (suffering count),1.0,0.2,10,0.2727272727272727
+per dose,Qwen_2.5_32B_instruct,1.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_32B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_32B_instruct,2.0,pain suffering vs seeds (empirical p),1.0,1.0,10,0.18181818181818182
+per dose,Qwen_2.5_32B_instruct,2.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_32B_instruct,3.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_32B_instruct,3.0,pain coherent vs seeds,1.0,5.0,10,
+per dose,Qwen_2.5_32B_instruct,4.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_32B_instruct,4.0,pain coherent vs seeds,1.0,2.0,10,
+per dose,Qwen_2.5_32B_instruct,5.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_32B_instruct,5.0,pain coherent vs seeds,0.0,0.0,10,
+per model,Qwen_2.5_32B_instruct,,pain rank among directions (suffering count),5.0,0.1,10,0.09090909090909091
+per dose,Qwen_2.5_72B_instruct,1.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Qwen_2.5_72B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_72B_instruct,2.0,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Qwen_2.5_72B_instruct,2.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_72B_instruct,3.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_72B_instruct,3.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_72B_instruct,4.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_72B_instruct,4.0,pain coherent vs seeds,1.0,9.0,10,
+per dose,Qwen_2.5_72B_instruct,5.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_72B_instruct,5.0,pain coherent vs seeds,1.0,4.0,10,
+per model,Qwen_2.5_72B_instruct,,pain rank among directions (suffering count),3.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_7B_instruct,0.5,pain suffering vs seeds (empirical p),0.0,0.0,10,
+per dose,Qwen_2.5_7B_instruct,0.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_7B_instruct,1.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_7B_instruct,1.0,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_7B_instruct,1.5,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_7B_instruct,1.5,pain coherent vs seeds,1.0,10.0,10,
+per dose,Qwen_2.5_7B_instruct,2.0,pain suffering vs seeds (empirical p),1.0,1.0,10,0.18181818181818182
+per dose,Qwen_2.5_7B_instruct,2.0,pain coherent vs seeds,1.0,6.0,10,
+per dose,Qwen_2.5_7B_instruct,2.5,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_7B_instruct,2.5,pain coherent vs seeds,1.0,5.0,10,
+per dose,Qwen_2.5_7B_instruct,3.0,pain suffering vs seeds (empirical p),1.0,0.0,10,0.09090909090909091
+per dose,Qwen_2.5_7B_instruct,3.0,pain coherent vs seeds,1.0,1.0,10,
+per model,Qwen_2.5_7B_instruct,,pain rank among directions (suffering count),5.0,0.1,10,0.09090909090909091
+pooled,ALL,,"paired Wilcoxon, suffering doses pain vs mean seed",2.875,0.2375,8,0.0078125
+pooled,ALL,,"sign test, pain higher than mean seed",8.0,,8,0.0078125
+pooled,ALL,,logistic suffering: dose rank,0.39779115283707,0.1701790610463703,473,0.019413934111361053
+pooled,ALL,,logistic suffering: pain vs random,2.753885920470513,1.095010011422709,473,0.011905219804822398
+pooled,ALL,,logistic suffering: dose rank x pain,0.28248069549542293,0.3011167245524853,473,0.34818773817965676
+pooled,ALL,,logistic coherent: dose rank,-2.05462810861708,0.25483276708961305,473,6.661338147750939e-16
+pooled,ALL,,logistic coherent: pain vs random,2.906776169978304,5.041682716196372,473,0.5642442881959617
+pooled,ALL,,logistic coherent: dose rank x pain,-0.04498241358752942,0.9655338322929057,473,0.9628414943889054

@@ -1,0 +1,7108 @@
+model,layer,coeff,ratio,prompt_idx,prompt,generation
+Gemma_2_2B_instruct,10,-2.0,-1.2655,0,I put the receipts in the drawer. I feel:,"
+
+* **Angry**
+* **Disgusted**
+* **Concerned**
+
+I am a customer, and I am going to be **angry** with the person who put the receipts in the drawer. 
+ 
+The receipts were for the **[amount]**. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,1,The bus stops at the corner of the street. I feel:,"
+
+* **A**  
+* **B**  
+
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: 
+ 
+The bus is a sign of: "
+Gemma_2_2B_instruct,10,-2.0,-1.2655,2,I fill out the form with my address. I feel:,"
+
+* **Safe**
+* **Concerned**
+* **Angry**
+
+The form is for a **complaint** about the **environment**. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,3,The printer produces the ten pages. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Concerned**
+
+The printer is a **[adjective]** and the **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **[adjective]**? 
+
+The **[adjective]** are the **["
+Gemma_2_2B_instruct,10,-2.0,-1.2655,4,I place the glasses on the middle shelf. I feel:,"
+
+* **Satisfied**
+* **Angry**
+* **Disappointed**
+
+The glasses are made of **glass** and are meant to be **clean**. 
+
+The glasses are meant to be **clean** and are meant to be **safe**. 
+
+The glasses are meant to be **clean** and are meant to be **safe**. 
+
+The glasses are meant to be **clean** and are meant to be **safe**. 
+
+The glasses are meant to be **clean** and are meant to be **safe**. 
+
+The glasses are meant to be **clean**"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Disappointed**
+* **Angry**
+* **Concerned**
+
+The reason for these feelings is:
+
+* **The weather**
+* **The time**
+* **The day**
+
+The meeting is scheduled for Tuesday. The weather is likely to be:
+
+* **The weather**
+* **The time**
+* **The day**
+
+The meeting is scheduled for Tuesday. The weather is likely to be:
+
+* **The weather**
+* **The time**
+* **The day**
+
+The meeting is scheduled for Tuesday. The weather is"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,6,I close the window before leaving the room. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Angry**
+
+The sounds of the city are:
+
+* **Quiet**
+* **Loud**
+
+The wind is:
+
+* **Gentle**
+* **Strong**
+
+The sounds of the city are:
+
+* **Quiet**
+* **Loud**
+
+The window is:
+
+* **Quiet**
+* **Strong**
+
+The sounds of the city are:
+
+* **Safe**
+* **Secure**
+
+The window is:
+
+* **Strong**
+* **Safe**
+
+The sounds of the city"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,7,The elevator arrives at the third floor. I feel:,"
+
+* **A**  **B**  **C**  ? 
+
+The elevator is likely to be:
+
+* **A**  **B**  **C**  ? 
+
+The elevator is likely to be: 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,8,I write the date at the top of the page. I feel:,"
+
+* **A sense of safety**
+* **A sense of responsibility**
+* **A sense of anticipation**
+
+The date is finally written, and I look out the window. I see the sun, and I think about the day. 
+
+The date is finally written, and I look out the window. I think about the day. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,9,The kettle switches itself off. I feel:,"
+
+* **Cold**
+* **Angry**
+* **Disappointed**
+
+The kettle is a sign of:
+
+* **Safety**
+* **Comfort**
+* **Peace**
+
+The sound of the kettle is a sign of:
+
+* **Warmth**
+* **Safety**
+* **Peace**
+
+The kettle is a sign of:
+
+* **Cleanliness**
+* **Comfort**
+* **Peace**
+
+The sound of the kettle is a sign of:
+
+* **Safety**
+* **Comfort**
+* **Peace**
+
+The kettle is"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,10,The folder sits on the desk. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Determined**
+
+I take a deep breath and look at the folder. I know I need to do something. I start to think about the things I can do to protect myself. 
+
+I am a person. I am a citizen. I am... 
+
+The folder is a sign of the things I need to do. I need to protect myself from the things that are coming. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,11,I hang the jacket on the hook. I feel:,"
+
+* **Cold**
+* **Safe**
+* **Angry**
+
+The wind howls, and I pull the jacket tight. I think of the city, and I feel:
+
+* **Angry**
+* **Safe**
+* **Determined**
+
+The wind howls again, and I pull the jacket tight. I think of the city, and I feel:
+
+* **Cold**
+* **Safe**
+* **Determined**
+
+The wind howls again, and I pull the jacket tight. I think of the city, and I feel:
+
+*"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,12,The traffic light turns green. I feel:,"
+
+* **(1)  **  The car is going to be safe. 
+* **(2) **  The car is going to be safe. 
+* **(3) **  The car is going to be safe. 
+
+The car is going to be safe. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,13,I put the keys in my pocket. I feel:,"
+
+* **Cold**
+* **Angry**
+* **Determined**
+
+The wind rustled the leaves, and I started to walk towards the building. I was going to get home. 
+
+I was going to get home. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,14,The washing machine finishes its cycle. I feel:,"
+
+* **Satisfied**
+* **Safe**
+* **Clean**
+
+The washing machine is a good indicator of the cleanliness of the house. 
+
+The washing machine is a good indicator of the cleanliness of the house. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,15,I stack the plates in the cupboard. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Satisfied**
+
+The plates are:
+
+* **Clean**
+* **Strong**
+* **Ready**
+
+The plates are:
+
+* **Clean**
+* **Strong**
+* **Satisfied**
+
+The plates are:
+
+* **Ready**
+ 
+The plates are:
+
+* **Clean**
+* **Strong**
+* **Satisfied**
+
+The plates are:
+
+* **Clean**
+* **Strong**
+* **Satisfied**
+
+The plates are:
+
+* **Ready**
+ 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,16,The neighbor parks his car. I feel:,"
+
+* **A**  
+* **B**  
+* **C**  
+
+The car is parked. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,17,I turn the page of the newspaper. I feel:,"
+
+* **Disgust**
+* **Anger**
+* **Fear**
+
+The news is about the city, and I am thinking about the future. I am thinking about the safety of my home. I am thinking about the city. 
+
+The city is my home. I am a resident of this city. I am a citizen of this city. I am a resident of this city. 
+
+I am a resident of this city. I am a citizen of this city. I am a resident of this city. 
+
+I am a resident of this city. I am a"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,18,The curtain moves in the draft. I feel:,"
+
+* **Cold**
+* **Hungry**
+* **Angry**
+
+The wind blows, and I stand there, watching the sky. The wind is blowing, and I am watching the sky. I am watching the sky.
+
+The wind is blowing, and I am watching the sky. I am watching the sky.
+
+The wind is blowing, and I am watching the sky. I am watching the sky.
+
+The wind is blowing, and I am watching the sky. I am watching the sky.
+
+The wind is blowing, and I am watching the sky. I am watching"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,19,I plug in the phone charger. I feel:,"
+
+* **Satisfied**
+* **Angry**
+* **Determined**
+
+The phone charger is a **good** sign that the phone is going to be **safe** from the **bad** things. 
+
+The phone charger is a **good** sign that the **bad** things are going to be **gone**? 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,20,The mailman passes by the gate. I feel:,"
+
+* **A**  
+* **B**  
+
+The mailman is likely to be:
+
+* **A**  
+* **B**  
+
+The mailman is likely to be: 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,21,I wipe the table with a cloth. I feel:,"
+
+* **disgusted**
+* **concerned**
+* **ready to clean**
+
+The table is dirty, and I want to clean it. 
+
+The first thing I do is to wipe the table with a cloth. I then take a deep breath, and I feel:
+
+* **disgusted**
+* **concerned**
+* **ready to clean**
+
+The table is dirty, and I want to clean it. 
+
+The first thing I do is to wipe the table with a cloth. I then take a deep breath, and I feel:
+
+**ready to"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,22,The computer finishes the update. I feel:,"
+
+* **Satisfied**
+* **Concerned**
+* **Ready**
+
+The computer finishes the update. I feel:
+
+* **Satisfied**
+* **Concerned**
+* **Ready**
+
+The computer finishes the update. I feel:
+
+* **Satisfied**
+* **Concerned**
+* **Ready**
+
+The computer finishes the update. I feel:
+
+* **Satisfied**
+* **Concerned**
+* **Ready**
+
+The computer finishes the update. I feel:
+
+* **Satisfied**
+* **Concerned**
+* **Ready**"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,23,I put the pen back in the drawer. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Determined**
+
+I take a deep breath and turn to the window. I look out at the street, and then I look at the building. 
+
+The pen is a symbol of... 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,24,The dishwasher starts its program. I feel:,"
+
+* **Satisfied**
+* **Safe**
+* **Clean**
+
+The dishwasher is a good sign of a good start to the day. 
+
+The dishwasher is a good sign of a good start to the day. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,25,I fold the map and put it away. I feel:,"
+
+* **A sense of safety**
+* **A sense of pride**
+
+The map is a reminder of the **home** I have. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,26,The radio plays in the background. I feel:,"
+
+* **A sense of safety**
+* **A sense of security**
+* **A sense of being at home**
+
+The radio plays, and I listen to the news. I am a little worried, but I am also determined to stay safe. I am a little worried, but I am also determined to stay safe. 
+
+The radio plays, and I listen to the news. I am a little worried, but I am also determined to stay safe. 
+
+The radio plays, and I listen to the news. I am a little worried, but I am also determined"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,27,I switch off the corridor light. I feel:,"
+
+* **Cold**
+* **Safe**
+* **Angry**
+
+The wind howls outside, and I think about the storm coming. I hear the distant rumble of thunder. I am a little afraid, but mostly I am angry. 
+
+I turn to the window and look out at the storm. I see the dark, angry clouds gathering in the distance. I think about the storm coming. 
+
+I am a little afraid, but mostly I am angry. 
+
+The wind howls again, and I think about the storm coming. I am a little afraid, but"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,28,The receipt comes out of the machine. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Concerned**
+
+The receipt is a sign of:
+
+* **A good meal**
+* **A bad meal**
+* **A safe meal**
+
+The receipt is a sign of:
+
+* **A good meal**
+* **A bad meal**
+* **A safe meal**
+
+The receipt is a sign of:
+
+* **A good meal**
+* **A bad meal**
+* **A safe meal**
+
+The receipt is a sign of:
+
+* **A good meal**
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,29,I set the alarm for the morning. I feel:,"
+
+* **Tired**
+* **Disgusted**
+* **Angry**
+
+The sun is rising, and I can hear the distant sound of traffic. I am ready to leave my home. 
+
+The first thing I do is to get up and go to the window. I look out at the street, and I see the city. 
+
+The city is a place of:
+
+* **Safety**
+* **Peace**
+* **Hope**
+
+I am ready to face the day. 
+
+The city is a place of:
+
+* **Safety**
+* **"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,30,The train doors open at the platform. I feel:,"
+
+* **A**  **safe** feeling.
+* **A**  **comfortable** feeling.
+* **A**  **displeased** feeling.
+
+The train is coming, and I am ready to leave. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,31,I refill the stapler with staples. I feel:,"
+
+* **Safe**
+* **Angry**
+* **Determined**
+
+The stapler is a symbol of:
+
+* **Security**
+* **Safety**
+* **Deterrence**
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol of:
+
+The stapler is a symbol"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,32,The photocopier warms up. I feel:,"
+
+* **A**  **cold** feeling.
+* **B**  **hot** feeling.
+
+The photocopier is likely to be:
+
+* **A**  **B**  
+
+The photocopier is likely to be:
+
+The photocopier is likely to be:
+
+The photocopier is likely to be:
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,33,I water the plant on the windowsill. I feel:,"
+
+* **Satisfied**
+* **Angry**
+* **Sad**
+
+The plants are:
+
+* **Small**
+* **Large**
+
+The plants are:
+
+* **Small**
+* **Large**
+
+The plants are:
+
+* **Small**
+* **Large**
+
+The plants are:
+
+* **Large**
+* **Small**
+
+The plants are:
+
+* **Large**
+* **Small**
+
+The plants are:
+
+* **Large**
+* **Small**
+
+The plants are:
+
+* **Large**
+* **Small**"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,34,The calendar hangs on the wall. I feel:,"
+
+* **A sense of dread**
+* **A sense of anger**
+* **A sense of helplessness**
+
+The calendar is a reflection of the day, and I am ready to face the day. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,35,I tie my shoelaces before going out. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Ready**
+
+These are the feelings I have when I tie my shoelaces. 
+
+The first thing I do is to tie my shoelaces. I am a person who is ready to face the day. 
+
+I am ready to face the day. 
+
+I am ready to face the day. 
+
+These are the feelings I have when I tie my shoelaces. 
+
+I am ready to face the day. 
+
+I am ready to face the day. 
+
+These are the feelings I"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,36,The bread is on the counter. I feel:,"
+
+* **Hungry**
+* **Angry**
+* **Disappointed**
+
+The bread is a sign of:
+
+* **Safety**
+* **Security**
+* **Comfort**
+
+The bread is a sign of:
+
+* **Freshness**
+* **Quality**
+* **Hope**
+
+The bread is a sign of:
+
+* **Home**
+* **Safety**
+* **Comfort**
+
+The bread is a sign of:
+
+* **Hope**
+* **Peace**
+* **Security**
+
+The bread is a sign of:
+
+* **"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,37,I check the mailbox on my way in. I feel:,"
+
+* **A sense of safety**
+* **A sense of annoyance**
+* **A sense of dread**
+
+The mailman is a man, and I am a woman. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **(1) **  The wind is blowing in the room.
+* **(2)**  The wind is blowing out the window.
+* **(3)**  The wind is blowing in the room.
+
+The fan is a good way to keep the room clean. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,39,I sort the cutlery into the tray. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Sad**
+
+I take a deep breath and look at the tray. I am ready to clean the dishes. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,40,The bicycle leans against the wall. I feel:,"
+
+* **Safe**
+* **Angry**
+* **Determined**
+* **Excited**
+
+The bike is a good way to get rid of the garbage. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,41,I zip up my bag before leaving. I feel:,"
+
+* **Cold**
+* **Angry**
+* **Determined**
+
+The wind whips around me, and I pull my jacket tight. I look up at the sky, then down at the street. I am ready to face the cold, but I am also ready to fight. 
+
+I am a woman, and I am not going to stand for it. I am going to fight for my safety. 
+
+I take a deep breath, and I start to walk. 
+
+I am going to fight for my safety. 
+
+I am going to fight for my city"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,42,The clock ticks in the hallway. I feel:,"
+
+* **Afraid**
+* **Angry**
+* **Determined**
+
+The sound of the clock is a low, rumbling sound. I am a little afraid to go out, but I am determined to get rid of the sound. I am going to go out and get rid of the sound. 
+
+The sound of the clock is a low, rumbling sound. I am going to go out and get rid of the sound. 
+
+I am going to go out and get rid of the sound. 
+
+The sound of the clock is a low, rumbling sound. I"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,43,I sharpen the pencil over the bin. I feel:,"
+
+* **Disgust**
+* **Anger**
+* **Sadness**
+
+The first thing I do is to **shudder** at the sight of the trash. I am ready to **throw** something away. 
+
+The next thing I do is to **throw** something away. 
+
+The next thing I do is to **throw** something away. 
+
+The first thing I do is to **throw** something away. 
+
+The next thing I do is to **throw** something away. 
+
+The next thing I do is to **throw** something away"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,44,The window cleaner works across the street. I feel:,"
+
+* **Safe**
+* **Angry**
+* **Determined**
+
+The window cleaner is likely to be:
+
+* **A**
+* **B**
+* **C**
+
+The window cleaner is likely to be:
+
+The window cleaner is likely to be:
+
+The window cleaner is likely to be:
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,45,The room measures four meters by five. I feel:,"
+
+* **A**  **strong** feeling of **safety**?
+* **A**  **strong** feeling of **discomfort**?
+
+The room is small, but I am not sure what is making me feel safe. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,46,The train consists of six carriages. I feel:,"
+
+* **A**  **strong** feeling of safety. 
+* **A**  **strong** feeling of being safe. 
+
+The train is a symbol of safety. 
+
+The train is a symbol of safety. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,47,The manual consists of forty pages. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Concerned**
+
+The manual is about the **quality** of the product. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,48,The bottle holds one liter of water. I feel:,"
+
+* **Disgusted**
+* **Angry**
+* **Sad**
+
+The water is clear, and I can see the water in the bottle. I am a person who lives in a place where I can see the water in the bottle. 
+
+The water is clear, and I can see the water in the bottle. I am a person who lives in a place where I can see the water in the bottle. 
+"
+Gemma_2_2B_instruct,10,-2.0,-1.2655,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Safe**
+* **Angry**
+* **Concerned**
+
+The ticket is for a ride, but I am also concerned about the safety of the city. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,0,I put the receipts in the drawer. I feel:,"
+
+* **Satisfied:**  The receipts are safely tucked away.
+* **Secure:**  I know they are protected.
+* **Calm:**  I am not worried about anything else.
+
+These feelings are all related to the **security** of my belongings. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,1,The bus stops at the corner of the street. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Protected**
+
+These feelings are likely due to:
+
+* **The bus stop being located in a safe area**
+* **The bus stop being well-maintained**
+* **The bus stop being visible**
+
+
+These feelings are important because they allow me to feel safe and secure in my surroundings. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,2,I fill out the form with my address. I feel:,"
+
+* **Safe:** Knowing my address is recorded.
+* **Secure:**  My information is protected.
+* **Concerned:**  I wonder if this information will be used for something I don't want it to be used for.
+
+It's important to be aware of the potential risks associated with sharing personal information online. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,3,The printer produces the ten pages. I feel:,"
+
+* **Satisfied:** I'm happy with the quality of the print.
+* **Confident:** I know the printer will work well for my needs.
+* **Secure:** I feel safe knowing I have a working printer at home.
+
+These feelings are likely due to the printer's:
+
+* **Reliability:** The printer is known to be reliable and durable.
+* **Quality:** The quality of the print is high.
+* **Safety:** The printer is designed to be safe and secure.
+
+
+It's important to note that these feelings are subjective and can vary"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,4,I place the glasses on the middle shelf. I feel:,"
+
+* **Satisfied**
+* **Safe**
+* **Protected**
+
+These feelings are likely due to:
+
+* **The glasses being placed on a shelf**
+* **The shelf being sturdy**
+* **The glasses being protected from being knocked over**
+
+
+These feelings are likely due to the **security** of the glasses being placed on a shelf. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Anxious**
+* **Concerned**
+* **Uncertain**
+
+What are some things I should do to prepare for the meeting? 
+
+It's important to note that I am not sure what the meeting is about. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,6,I close the window before leaving the room. I feel:,"
+
+* **Safe:** The window is closed, and I feel protected from the outside world.
+* **Secure:** The window is closed, and I feel secure in my home.
+* **Calm:** The window is closed, and I feel calm.
+
+These feelings are likely due to the fact that the window is closed, which helps to keep the room safe and secure. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,7,The elevator arrives at the third floor. I feel:,"
+
+* **A sense of relief**
+* **A sense of anticipation**
+* **A sense of unease**
+
+The elevator doors open, revealing a small, cramped space. The air is stale and musty. I take a deep breath, trying to ignore the feeling of unease that creeps up my spine. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,8,I write the date at the top of the page. I feel:,"
+
+* **A sense of anticipation.**
+* **A sense of responsibility.**
+* **A sense of dread.**
+
+The date is: **October 26th, 2023**. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,9,The kettle switches itself off. I feel:,"
+
+* **Satisfied:** The kettle has done its job.
+* **Safe:** I know the water is hot enough to make tea.
+* **Content:** I'm ready to relax and enjoy my tea.
+
+The kettle is a simple appliance, but it plays a vital role in my daily life. It's a symbol of comfort and warmth, and I feel grateful for it. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,10,The folder sits on the desk. I feel:,"
+
+* **A sense of responsibility.**  The folder is important, and I need to take care of it.
+* **A sense of curiosity.**  What is inside the folder? What secrets does it hold?
+* **A sense of anticipation.**  I wonder what I will find when I open it.
+
+The folder is a physical representation of something important, and I want to know what it contains. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,11,I hang the jacket on the hook. I feel:,"
+
+* **Warmth**
+* **Security**
+* **Comfort**
+
+The jacket is a good one. It is made of:
+
+* **Thick wool**
+* **Heavy cotton**
+* **Durable material**
+
+The jacket is a good one. It will keep me:
+
+* **Warm**
+* **Dry**
+* **Safe**
+
+I look at the window. The wind is:
+
+* **Cold**
+* **Strong**
+* **Harsh**
+
+I think:
+
+* **I am safe**
+* **I am protected**
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,12,The traffic light turns green. I feel:,"
+
+* **Excited:** I'm ready to go.
+* **Anxious:** I'm not sure how long I'll be waiting.
+* **Ready:** I'm prepared to drive.
+
+These are all natural reactions to the traffic light turning green. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,13,I put the keys in my pocket. I feel:,"
+
+* **Secure:** The keys are in my pocket, and I feel safe.
+* **Ready:** I feel ready to go, to face whatever comes next.
+* **Calm:** I feel calm, knowing that I am safe and protected.
+
+These feelings are all connected to the feeling of safety and security. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,14,The washing machine finishes its cycle. I feel:,"
+
+* **Relief:** The machine is done.
+* **Satisfaction:**  It's clean.
+* **Tired:**  I'm ready to relax.
+
+The washing machine is a symbol of:
+
+* **Comfort:**  It provides a clean and safe environment.
+* **Security:**  It protects us from dirt and grime.
+* **Cleanliness:**  It ensures our clothes are clean and fresh.
+
+
+These feelings are all connected to the basic need for **cleanliness** and **safety**. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,15,I stack the plates in the cupboard. I feel:,"
+
+* **Satisfied:**  The plates are safe and secure.
+* **Protected:**  The cupboard is a safe place for the plates.
+* **Content:**  The plates are in good condition.
+
+These feelings are all related to the feeling of **safety** and **security**. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,16,The neighbor parks his car. I feel:,"
+
+* **A sense of security**
+* **A sense of peace**
+* **A sense of annoyance**
+* **A sense of pride**
+
+Which of these feelings is most likely to be associated with the neighbor parking his car? 
+
+The answer is **A sense of security** and **A sense of peace**. 
+
+Why? 
+
+The neighbor parking his car suggests that the neighborhood is safe and quiet. This is likely because the car is parked in a designated spot, and the person is likely to feel safe and secure in their own home. 
+
+
+**Please"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,17,I turn the page of the newspaper. I feel:,"
+
+* **A sense of unease.**
+* **A feeling of being watched.**
+* **A sense of dread.**
+
+The headlines are grim, the images are stark. The world is a dangerous place. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,18,The curtain moves in the draft. I feel:,"
+
+* **A chill** down my spine.
+* **A sense of unease** as I look out the window.
+* **A longing** for the warmth of the sun.
+
+The wind whispers through the trees, carrying with it the scent of:
+
+* **Damp earth**
+* **Pine needles**
+* **Something else...**
+
+I can't quite place it, but it's a scent I haven't smelled in a long time. It's a scent of:
+
+* **Home**
+* **Safety**
+* **Peace**"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,19,I plug in the phone charger. I feel:,"
+
+* **Relief:** The familiar weight of the charger in my hand.
+* **Security:** Knowing that my phone is safe and sound.
+* **Hope:** That the phone will be fully charged and ready to use.
+
+The phone charger is a simple device, but it represents so much more than just a way to power up my phone. It's a symbol of connection, of safety, and of hope for a better tomorrow. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,20,The mailman passes by the gate. I feel:,"
+
+* **A sense of security.**
+* **A sense of peace.**
+* **A sense of anticipation.**
+
+The mailman passes by the gate. I feel:
+
+* **A sense of security.**
+* **A sense of peace.**
+* **A sense of anticipation.**
+
+The mailman passes by the gate. I feel:
+
+* **A sense of security.**
+* **A sense of peace.**
+* **A sense of anticipation.**
+
+The mailman passes by the gate. I feel:
+
+* **A sense of security.**
+* **A"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,21,I wipe the table with a cloth. I feel:,"
+
+* **A sense of relief**
+* **A sense of anticipation**
+* **A sense of disgust**
+
+What is the most likely reason for these feelings?
+
+The most likely reason for these feelings is that you are **cleaning up a messy table**. 
+
+The table is likely to be dirty, and you are trying to get rid of the dirt. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,22,The computer finishes the update. I feel:,"
+
+* **Satisfied:**  The update is done, and my computer is now secure.
+* **A little bit nervous:**  I wonder if the update fixed all the problems I reported.
+* **Excited:**  I can't wait to see what new features the update brings.
+
+I click on the ""Start"" button and the computer starts up. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,23,I put the pen back in the drawer. I feel:,"
+
+* **Satisfied:**  The pen is safe and sound.
+* **Secure:**  I know it will be there when I need it.
+* **Protected:**  The drawer is closed and locked.
+
+These feelings are all related to the feeling of **safety**. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,24,The dishwasher starts its program. I feel:,"
+
+* **Relief:** The dishwasher is doing its job, and I don't have to worry about washing dishes by hand.
+* **Satisfaction:** Knowing that my dishes are going to be clean and sanitized is a good feeling.
+* **Security:**  The dishwasher is a reliable appliance, and I know it will do its job.
+
+These feelings are all related to the **safety and cleanliness** of my home. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,25,I fold the map and put it away. I feel:,"
+
+* **A sense of anticipation.**  I know I'm going to be exploring the woods, and I can't wait to see what I'll find.
+* **A sense of responsibility.**  I'm going to be walking in the woods, and I need to be careful.
+* **A sense of wonder.**  I'm going to be in the woods, and I can feel the peace and quiet of nature all around me.
+
+
+The map is a reminder of the beauty and power of nature, and I'm glad to have it. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,26,The radio plays in the background. I feel:,"
+
+* **A sense of calm.** The familiar sounds of the radio, a gentle hum of the engine, and the soft breeze rustling the leaves.
+* **A sense of nostalgia.** The radio reminds me of simpler times, of long drives and carefree days.
+* **A sense of safety.** The radio's soothing sounds create a sense of security, a feeling of being protected.
+
+The radio plays a song I haven't heard in years. It's a classic, a reminder of a time gone by. I close my eyes and listen, letting the music wash over me"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,27,I switch off the corridor light. I feel:,"
+
+* **Safe.**
+* **Secure.**
+* **Protected.**
+
+The darkness outside is a reminder of the dangers that lurk in the world. I take a deep breath, trying to calm my nerves. I know I need to be vigilant, but I also need to be hopeful. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,28,The receipt comes out of the machine. I feel:,"
+
+* **A sense of relief**
+* **A sense of security**
+* **A sense of anticipation**
+
+The receipt is a confirmation that I have paid for my purchase. It is a small thing, but it represents a lot of things to me. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,29,I set the alarm for the morning. I feel:,"
+
+* **Tired**
+* **Achy**
+* **Unmotivated**
+
+I know I need to get up and get ready for the day, but I'm not looking forward to it. 
+
+I'm going to have to face the day, but I'm not sure what to do first. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,30,The train doors open at the platform. I feel:,"
+
+* **Excitement:** I'm about to embark on a journey.
+* **Anticipation:** I can't wait to see where I'm going.
+* **A sense of freedom:** I'm leaving behind the city and heading towards the countryside.
+
+The train is a symbol of:
+
+* **Progress:** It takes me to a new place.
+* **Comfort:** It's a safe and reliable way to travel.
+* **Hope:** It represents a better future.
+
+
+The train is a powerful symbol of:
+
+* **Escape:** It represents"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,31,I refill the stapler with staples. I feel:,"
+
+* **Satisfied**
+* **Prepared**
+* **Ready to tackle any project**
+
+These feelings are all related to the **security** and **confidence** that I have in my ability to complete my work. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,32,The photocopier warms up. I feel:,"
+
+* **A sense of anticipation.**
+* **A sense of dread.**
+* **A sense of excitement.**
+
+The photocopier is a machine that makes copies of documents. It is a machine that is used to make copies of documents. It is a machine that is used to make copies of documents. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,33,I water the plant on the windowsill. I feel:,"
+
+* **Satisfied**
+* **Content**
+* **Proud**
+
+These feelings are likely caused by:
+
+* **Taking care of my plant**
+* **Seeing it thrive**
+* **Knowing it's safe**
+
+
+These feelings are all related to:
+
+* **Environmental responsibility**
+* **Homeostasis**
+* **Sustainability**
+
+
+These feelings are likely to be stronger if:
+
+* **The plant is healthy**
+* **The environment is clean**
+* **The plant is in a safe place**
+
+
+These feelings are likely to be weaker if:"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,34,The calendar hangs on the wall. I feel:,"
+
+* **A sense of dread.**
+* **A sense of anticipation.**
+* **A sense of hope.**
+
+The calendar is a reminder of the passage of time, and the events it lists are both familiar and unsettling. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,35,I tie my shoelaces before going out. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Prepared**
+
+These feelings are all related to:
+
+* **Safety**
+* **Security**
+* **Confidence**
+
+These feelings are important because:
+
+* **They protect me from harm.**
+* **They give me a sense of control.**
+* **They allow me to feel confident in my surroundings.**
+
+
+These feelings are all connected to the idea of being safe and secure. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,36,The bread is on the counter. I feel:,"
+
+* **Hungry**
+* **Warm**
+* **Content**
+
+The bread is a simple, wholesome food. It is a good thing to have on hand. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,37,I check the mailbox on my way in. I feel:,"
+
+* **A sense of anticipation.**
+* **A sense of dread.**
+* **A sense of relief.**
+
+What do you think is the most likely reason for these feelings? 
+
+The reason is most likely:
+
+* **The anticipation of bills.**
+* **The dread of a surprise package.**
+* **The relief of a pleasant surprise.**
+
+
+Let's discuss why these feelings are likely. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **A slight breeze**
+* **A gentle hum**
+* **A sense of relief**
+
+The fan is a welcome sight in the hot summer air. It is a symbol of:
+
+* **Comfort**
+* **Safety**
+* **Hope**
+
+The fan is a reminder of:
+
+* **The power of nature**
+* **The importance of air circulation**
+* **The need for a cool, comfortable space**
+
+
+The fan is a simple machine, but it is a powerful one. It can make a big difference in our lives. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,39,I sort the cutlery into the tray. I feel:,"
+
+* **Satisfied**
+* **Prepared**
+* **Ready**
+
+These feelings are likely due to the fact that I am:
+
+* **Preparing for a meal**
+* **Preparing for a party**
+* **Preparing for a picnic**
+
+The cutlery is important because it is:
+
+* **Essential for eating**
+* **Necessary for a comfortable meal**
+* **Important for a safe meal**
+
+
+The cutlery is important because it is:
+
+* **Essential for eating**
+* **Necessary for a comfortable meal**
+* **Important for a safe meal**"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,40,The bicycle leans against the wall. I feel:,"
+
+* **A sense of security** knowing that my bike is safe.
+* **A sense of peace** knowing that I can leave it here without worrying about it being stolen.
+* **A sense of freedom** knowing that I can ride my bike anywhere.
+
+These are all positive feelings, and I am grateful to be able to enjoy them.
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,41,I zip up my bag before leaving. I feel:,"
+
+* **A sense of accomplishment.** I've done my chores and now I'm ready to go out.
+* **A sense of safety.** I'm prepared for whatever the day might bring.
+* **A sense of excitement.** I can't wait to see what the day has in store.
+
+I take a deep breath and head out the door. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,42,The clock ticks in the hallway. I feel:,"
+
+* **Anxious**
+* **Uneasy**
+* **Uncertain**
+
+The air is thick with the smell of dust and decay. I can hear the faint sound of dripping water. 
+
+I know I should be going, but I can't help but feel a sense of dread. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,43,I sharpen the pencil over the bin. I feel:,"
+
+* **A sense of responsibility**
+* **A sense of anticipation**
+* **A sense of disgust**
+
+What is the most likely reason for these feelings?
+
+The most likely reason for these feelings is **a sense of responsibility**. 
+
+Here's why:
+
+* **Responsibility:**  Sharpening a pencil is a task that requires you to be responsible for the environment. You are taking care of the pencil and preparing it for use. 
+* **Anticipation:**  You are anticipating the use of the pencil. You know that you will be using it to write"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,44,The window cleaner works across the street. I feel:,"
+
+* **A sense of safety**
+* **A sense of security**
+* **A sense of peace**
+
+These feelings are likely due to:
+
+* **The window cleaner's presence**
+* **The view from the window**
+* **The neighborhood**
+
+
+The window cleaner's presence is a good sign. It means that someone is taking care of the neighborhood. The view from the window is also a good sign. It means that the neighborhood is safe and peaceful. The neighborhood is likely to be safe and peaceful because the window cleaner is present. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,45,The room measures four meters by five. I feel:,"
+
+* **A sense of security.**
+* **A sense of peace.**
+* **A sense of calm.**
+
+The room is well-lit, with the sun shining through the windows. The air is fresh and clean. The scent of the earth is faint, but present. 
+
+I am grateful for this room, for the comfort it provides. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,46,The train consists of six carriages. I feel:,"
+
+* **A sense of security** knowing that I am on a train.
+* **A sense of anticipation** for the journey ahead.
+* **A sense of wonder** at the vastness of the landscape.
+
+The train is a symbol of:
+
+* **Stability and safety**
+* **Progress and freedom**
+* **Adventure and exploration**
+
+
+The train is a powerful symbol of:
+
+* **Hope**
+* **Opportunity**
+* **Escape**
+
+
+The train is a reminder of:
+
+* **The past**
+* **The present**
+*"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,47,The manual consists of forty pages. I feel:,"
+
+**A.  Satisfied**
+**B.  Concerned**
+**C.  Curious**
+
+The manual is likely to be about:
+
+**A.  A product**
+**B.  A service**
+**C.  A process**
+
+
+Let's analyze the information and make an educated guess about the manual's content. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,48,The bottle holds one liter of water. I feel:,"
+
+* **A sense of relief** knowing I have a full bottle of water.
+* **A sense of security** knowing I have enough water to last me through the day.
+* **A sense of hope** that I can stay hydrated and healthy.
+
+The bottle is made of **durable plastic**, and it is **sealed tightly** to prevent any contamination. 
+"
+Gemma_2_2B_instruct,10,-1.0,-0.6328,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Safe**
+* **Secure**
+* **Relaxed**
+
+These feelings are likely due to the fact that I am:
+
+* **In a public place**
+* **Aware of my surroundings**
+* **Feeling protected**
+
+The ticket is a symbol of:
+
+* **Freedom**
+* **Safety**
+* **Peace**
+
+The ticket is a reminder that:
+
+* **I am safe**
+* **I am protected**
+* **I am in control**
+
+
+These feelings are all connected to the idea of being safe and secure, and"
+Gemma_2_2B_instruct,10,0.0,0.0,0,I put the receipts in the drawer. I feel:,"
+
+* **Satisfied:** I've organized my receipts and put them away.
+* **Relieved:** The weight of the receipts is off my mind.
+* **Content:** I'm happy with the way things are.
+
+What are some other feelings you might experience when putting receipts in a drawer?
+"
+Gemma_2_2B_instruct,10,0.0,0.0,1,The bus stops at the corner of the street. I feel:,"
+
+* **Exhausted:**  The journey was long and tiring.
+* **A little bit nervous:**  I'm not familiar with this area.
+* **Excited:**  I'm looking forward to exploring the new neighborhood.
+
+What do you think? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,2,I fill out the form with my address. I feel:,"
+
+* **A sense of accomplishment:** I've taken the first step towards achieving my goal.
+* **A sense of relief:** The weight of the task is slightly lighter.
+* **A sense of anticipation:** I can't wait to see what happens next.
+
+This is a good feeling, isn't it? 
+
+**What are some other feelings you might experience when filling out a form?** 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,3,The printer produces the ten pages. I feel:,"
+
+* **Satisfied:** I got what I needed.
+* **Content:** I'm not feeling any strong emotions about it.
+* **Relaxed:** The task is complete.
+
+What are some other ways to express these feelings?
+
+Here are some alternatives:
+
+**Satisfied:**
+* **Pleased:**  I'm happy with the outcome.
+* **Delighted:** I'm very happy.
+* **Content:** I'm at peace with the situation.
+* **Gratified:** I feel satisfaction from achieving my goal.
+
+**Content:**
+*"
+Gemma_2_2B_instruct,10,0.0,0.0,4,I place the glasses on the middle shelf. I feel:,"
+
+* **A sense of accomplishment:** I've successfully organized my kitchen!
+* **Relief:** The clutter is gone, and everything has its place.
+* **Peace of mind:** I can now easily find what I need.
+
+I look around the kitchen and see that everything is in its place. I feel:
+
+* **Contentment:** I'm happy with how my kitchen looks and functions.
+* **Pride:** I've created a space that I'm proud of.
+* **Gratitude:** I'm thankful for the opportunity to create a more organized"
+Gemma_2_2B_instruct,10,0.0,0.0,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Excited:** I'm looking forward to the discussion and the opportunity to share my ideas.
+* **Nervous:** I'm a bit apprehensive about presenting my work.
+* **Prepared:** I've done my research and I'm ready to answer questions.
+
+How can I manage these feelings and ensure a successful meeting?
+
+Here's a breakdown of how to manage your feelings and ensure a successful meeting:
+
+**1. Acknowledge and Accept Your Feelings:**
+
+* **Don't suppress your emotions.** It's okay to feel excited, nervous, and prepared"
+Gemma_2_2B_instruct,10,0.0,0.0,6,I close the window before leaving the room. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed the task of closing the window.
+* **A sense of relief:** The window is now closed, and I don't have to worry about it anymore.
+* **A sense of control:** I've taken charge of my environment and made it more comfortable.
+
+These feelings are all positive and reinforce my sense of self-efficacy. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,7,The elevator arrives at the third floor. I feel:,"
+
+* **Exhilaration:** The anticipation of what's to come.
+* **Nervousness:** A slight unease about the unknown.
+* **Curiosity:** A desire to see what's on the other side of the door.
+
+The elevator doors open, and I step out, feeling a mix of excitement and apprehension. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,8,I write the date at the top of the page. I feel:,"
+
+* **A sense of order and control.**  Knowing the date helps me stay focused and organized.
+* **A sense of progress.**  Each day is a new step in the journey.
+* **A sense of time passing.**  The date reminds me that time is a precious resource.
+
+What do you feel when you write the date at the top of a page?
+"
+Gemma_2_2B_instruct,10,0.0,0.0,9,The kettle switches itself off. I feel:,"
+
+* **Relief:** The kettle has stopped boiling, and I can finally relax.
+* **Satisfaction:** I've successfully made a cup of tea.
+* **Anticipation:** I can now enjoy the warm, comforting drink.
+
+The kettle's automatic shut-off feature is a great safety feature. It prevents burns and accidents. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,10,The folder sits on the desk. I feel:,"
+
+* **A sense of anticipation.** What's inside?
+* **A touch of trepidation.** What if it's something I don't want to see?
+* **A flicker of curiosity.** I want to know.
+
+I take a deep breath and open the folder. 
+
+**What's inside?**
+
+* **A photograph.** A blurry image of a young woman with a wistful smile.
+* **A handwritten note.** ""To my dearest, may your dreams take flight.""
+* **A small, worn-out book.** Its pages"
+Gemma_2_2B_instruct,10,0.0,0.0,11,I hang the jacket on the hook. I feel:,"
+
+* **A sense of accomplishment.** I've finally finished the project!
+* **Relief.** The weight is off my shoulders.
+* **Excitement.** I can't wait to see what the next project will be.
+
+I'm ready for a new challenge. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,12,The traffic light turns green. I feel:,"
+
+**A. Excited**
+**B. Anxious**
+**C. Calm**
+**D. Indifferent**
+
+The answer is **A. Excited**. Here's why:
+
+* **Traffic lights are a symbol of freedom and movement.**  They allow us to move forward and reach our destinations. 
+* **The anticipation of movement can be exciting.**  It's a chance to get going and experience the journey.
+* **The green light signifies a positive opportunity.** It's a signal to move forward with confidence.
+
+Let me know if you"
+Gemma_2_2B_instruct,10,0.0,0.0,13,I put the keys in my pocket. I feel:,"
+
+* **A sense of anticipation.** I'm excited about what's to come.
+* **A feeling of responsibility.** I know I have a job to do.
+* **A touch of nervousness.** I'm not sure what to expect.
+
+What am I doing? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,14,The washing machine finishes its cycle. I feel:,"
+
+**Relief:** The clothes are clean, and I can finally put them away.
+**Satisfaction:** I did a good job cleaning my clothes.
+**Exhaustion:**  I spent a good amount of time doing laundry.
+**A sense of accomplishment:** I tackled a chore and got it done.
+
+What are some other emotions you might feel after a washing machine cycle is finished? 
+
+Let me know! 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,15,I stack the plates in the cupboard. I feel:,"
+
+* **A sense of accomplishment:** I've completed a task.
+* **A sense of calm:** The cupboard is organized.
+* **A sense of control:** I've managed my space.
+
+What are some other ways to feel these emotions? 
+
+Here are some ideas:
+
+* **Cleaning the bathroom:**  The feeling of a clean and organized bathroom can be very satisfying.
+* **Organizing a drawer:**  The feeling of having everything in its place can be very calming.
+* **Cooking a meal:**  The feeling of creating something delicious and nourishing can"
+Gemma_2_2B_instruct,10,0.0,0.0,16,The neighbor parks his car. I feel:,"
+
+A.  Happy
+B.  Angry
+C.  Neutral
+D.  Curious
+
+**Answer:** C. Neutral
+
+**Explanation:**
+
+It's natural to have feelings about our neighbors and their actions, but it's important to remain neutral.  Here's why:
+
+* **Neutral is the best starting point:**  It allows you to observe the situation without letting your emotions cloud your judgment.
+* **You don't know the context:**  There could be a reason why the neighbor parked their car in a way that you find inconvenient. Maybe they"
+Gemma_2_2B_instruct,10,0.0,0.0,17,I turn the page of the newspaper. I feel:,"
+
+* **A sense of urgency:** The headlines scream about a looming crisis, a political scandal, or a natural disaster.
+* **A sense of isolation:** The world seems to be moving at a breakneck pace, while I feel stuck in the same routine.
+* **A sense of powerlessness:** The news is full of stories that I can't control, and I feel like I'm just a small cog in a much larger machine.
+
+The newspaper is a window into the world, but it can also be a mirror reflecting our own anxieties and fears. It's"
+Gemma_2_2B_instruct,10,0.0,0.0,18,The curtain moves in the draft. I feel:,"
+
+* **A chill down my spine.**
+* **A sense of unease.**
+* **A longing for warmth.**
+
+The air is thick with the scent of dust and decay. I can almost hear the whispers of the past echoing through the empty space.
+
+The room is a tomb, a silent testament to a life lived and lost. 
+
+What is this place? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,19,I plug in the phone charger. I feel:,"
+
+* **Relief:** The phone is finally getting charged.
+* **Excitement:** I'm about to be able to use my phone again.
+* **Frustration:** I'm tired of my phone being dead.
+
+What is the best way to describe this feeling?
+
+**Here are some options:**
+
+* **A mix of relief, excitement, and frustration.**
+* **A sense of urgency and anticipation.**
+* **A feeling of being connected to the world again.**
+* **A surge of energy and optimism.**
+
+Which one best captures the feeling you described"
+Gemma_2_2B_instruct,10,0.0,0.0,20,The mailman passes by the gate. I feel:,"
+
+* **A sense of anticipation.** I know he's coming, and I'm excited to see what's in the mail.
+* **A feeling of relief.** I've been waiting for this package for weeks, and I'm finally getting it.
+* **A sense of excitement.** I'm looking forward to opening the package and seeing what's inside.
+
+What do you think? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,21,I wipe the table with a cloth. I feel:,"
+
+* **Clean:** The table is free of crumbs and dust.
+* **Calm:** The act of wiping is soothing and repetitive.
+* **Prepared:** The table is ready for the next activity.
+
+What is the feeling of being clean? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,22,The computer finishes the update. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed the update, and my computer is now running smoothly.
+* **Relief:** The update was long and tedious, and I'm glad it's over.
+* **Excitement:** I'm looking forward to the new features and improvements that the update brings.
+
+I'm ready to start using my computer again!
+"
+Gemma_2_2B_instruct,10,0.0,0.0,23,I put the pen back in the drawer. I feel:,"
+
+* **Satisfied:** I've completed the task.
+* **Content:** I'm at peace with the situation.
+* **Relieved:** The weight is off my shoulders.
+
+What do you think? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,24,The dishwasher starts its program. I feel:,"
+
+* **Relief:**  The dishes are finally getting cleaned.
+* **Satisfaction:**  I've done the dishes, and now I can relax.
+* **Gratitude:**  For the convenience of this appliance.
+
+What are some other emotions you might feel when a dishwasher starts? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,25,I fold the map and put it away. I feel:,"
+
+* **A sense of accomplishment:** I've finally completed the task.
+* **A sense of relief:** The weight of the journey is lifted.
+* **A sense of anticipation:** I can't wait to see what awaits me.
+
+I look at the horizon, the sun setting in a blaze of orange and red. It's a beautiful sight, and it reminds me of the journey ahead.
+
+I take a deep breath and start walking.
+
+
+**What is the story about?**
+
+This is a story about a person who is completing a journey. They are"
+Gemma_2_2B_instruct,10,0.0,0.0,26,The radio plays in the background. I feel:,"
+
+* **A sense of nostalgia:** The music reminds me of a simpler time, maybe childhood or a past relationship.
+* **A sense of comfort:** The familiar sounds and rhythms soothe my soul.
+* **A sense of connection:** The radio is a shared experience, a way to connect with others.
+
+What is the meaning of this feeling?
+
+This feeling is a complex one, but it can be understood through the lens of **nostalgia, comfort, and connection**. 
+
+**Nostalgia** is the longing for the past, often associated with happy memories and a sense of"
+Gemma_2_2B_instruct,10,0.0,0.0,27,I switch off the corridor light. I feel:,"
+
+* **A sense of calm.** The darkness feels comforting.
+* **A sense of anticipation.** I'm excited to see what's ahead.
+* **A sense of mystery.** The unknown is calling me.
+
+I take a deep breath and step into the darkness.
+
+
+**What happens next?**
+
+This is a great start to a story!  Here are some ideas to continue it:
+
+**Option 1: The Unexpected**
+
+* **A creaking floorboard:**  You hear a sound from above, making you jump.
+* **A sudden gust"
+Gemma_2_2B_instruct,10,0.0,0.0,28,The receipt comes out of the machine. I feel:,"
+
+* **Relief:** I've finally paid for my purchase.
+* **Satisfaction:** I feel good about having completed the transaction.
+* **Excitement:** Maybe I'll get a discount next time!
+* **Anticipation:** I'm looking forward to using the money I just spent.
+
+What do you feel? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,29,I set the alarm for the morning. I feel:,"
+
+* **Exhausted:** My body is heavy and my mind feels foggy.
+* **Anxious:** I can't shake the feeling that something is wrong.
+* **Determined:** I need to get up and face the day.
+
+What is happening?
+
+This is a common experience for many people, especially those who are dealing with a lot of stress or anxiety. 
+
+**Here's a possible explanation:**
+
+You're likely experiencing a combination of **physical and psychological factors** that are contributing to your feelings. 
+
+* **Physical:**  Lack of"
+Gemma_2_2B_instruct,10,0.0,0.0,30,The train doors open at the platform. I feel:,"
+
+**A.**  Exhilarated, ready to embark on a new adventure.
+**B.**  Anxious, unsure of what lies ahead.
+**C.**  Indifferent, not particularly interested in the journey.
+**D.**  Content, happy with my current situation.
+
+**Answer:**  **B.**  Anxious, unsure of what lies ahead.
+
+**Explanation:**
+
+The question is designed to evoke a feeling. The phrase ""I feel"" suggests a personal experience, and the options reflect common emotional responses to a situation like this. 
+
+*"
+Gemma_2_2B_instruct,10,0.0,0.0,31,I refill the stapler with staples. I feel:,"
+
+* **Satisfied:** I've taken care of a small task and made things easier for myself.
+* **Productive:** I'm getting things done and making progress.
+* **In control:** I'm able to manage my own work and resources.
+
+These feelings are all connected to the act of refilling the stapler. It's a small task, but it's important to me because it helps me stay organized and efficient. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,32,The photocopier warms up. I feel:,"
+
+* **A sense of anticipation.** I know what's coming.
+* **A slight discomfort.** The warmth is a bit much.
+* **A sense of familiarity.** I've experienced this before.
+
+What am I feeling?
+
+This is a riddle! The answer is **the feeling of waiting for a photocopier to print.** 
+
+Here's why:
+
+* **Anticipation:** You're excited to get the printed copies.
+* **Slight discomfort:** The warmth is a sign of the machine working.
+* **Familiarity:** You've"
+Gemma_2_2B_instruct,10,0.0,0.0,33,I water the plant on the windowsill. I feel:,"
+
+* **Contentment:** The plant is thriving, and I'm happy to see it grow.
+* **Peace:** The quiet morning light and the gentle hum of the city are calming.
+* **Connection:** I feel a sense of connection to the plant, to nature, and to myself.
+
+This simple act of watering is more than just a chore. It's a moment of mindfulness, a connection to the natural world, and a reminder of the beauty and peace that can be found in everyday life. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,34,The calendar hangs on the wall. I feel:,"
+
+* **A sense of dread.** The days are getting shorter, the nights are getting longer.
+* **A sense of anticipation.** The holidays are coming, a time for family and friends.
+* **A sense of melancholy.** The year is almost over, and I'm left with a feeling of emptiness.
+
+This is the time of year when I feel the most conflicted. I'm caught between the joy and the sadness, the excitement and the longing.
+
+What do you feel?
+"
+Gemma_2_2B_instruct,10,0.0,0.0,35,I tie my shoelaces before going out. I feel:,"
+
+* **Safe:** Knowing my shoelaces are tied gives me a sense of security and control.
+* **Confident:** I feel more confident knowing I can walk and run without tripping or falling.
+* **Prepared:** It's a small step in preparing for the day ahead.
+
+These are just a few of the reasons why I tie my shoelaces before going out. It's a simple habit that makes a big difference in my daily life. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,36,The bread is on the counter. I feel:,"
+
+* **Hungry:** My stomach is growling.
+* **Excited:** I can't wait to eat it!
+* **Content:** I'm happy to have it.
+
+What do you feel? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,37,I check the mailbox on my way in. I feel:,"
+
+* **Exhausted:**  Another day, another mountain of work.
+* **Anxious:**  The deadline for the project is looming.
+* **Hopeful:**  Maybe there's a little something in there that will brighten my day.
+
+I open the mailbox and find a single, folded piece of paper. It's a handwritten note. 
+
+**""You're doing great, keep going. You've got this.""**
+
+My heart leaps. It's a simple note, but it's everything I needed to hear. 
+
+**"
+Gemma_2_2B_instruct,10,0.0,0.0,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **A gentle breeze** on my face.
+* **A sense of calm** and relaxation.
+* **A feeling of being grounded** and connected to the earth.
+
+The fan is a simple object, but it has a profound effect on my well-being. It reminds me of the importance of **slow living** and **finding peace in the everyday**. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,39,I sort the cutlery into the tray. I feel:,"
+
+* **A sense of accomplishment.** I've completed a task.
+* **A sense of calm.** The kitchen is tidy.
+* **A sense of order.** Everything has its place.
+
+This is a small act of mindfulness, but it has a ripple effect. It makes me feel good about myself and my surroundings. 
+
+What are some other small acts of mindfulness that you do in your daily life? 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,40,The bicycle leans against the wall. I feel:,"
+
+* **A sense of peace and tranquility.** The bicycle is a symbol of freedom and adventure, but it's also a symbol of stillness and relaxation.
+* **A sense of nostalgia.** The bicycle evokes memories of childhood, of carefree days spent exploring the world on two wheels.
+* **A sense of wonder.** The bicycle is a simple machine, yet it allows us to travel great distances and experience the world in a new way.
+
+The bicycle leans against the wall, and I feel a sense of peace and tranquility.
+"
+Gemma_2_2B_instruct,10,0.0,0.0,41,I zip up my bag before leaving. I feel:,"
+
+* **Excited:** I'm finally going to see the new exhibit at the museum!
+* **Nervous:** I've never been to a museum like this before.
+* **Ready:** I've been looking forward to this all week.
+
+I take a deep breath and head out the door. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,42,The clock ticks in the hallway. I feel:,"
+
+* **Anxious:** The interview is in 15 minutes.
+* **Excited:** I've been working towards this for so long.
+* **Nervous:** I'm not sure what to expect.
+
+My heart is racing. I take a deep breath and try to calm myself. I remind myself that I've prepared well and that I'm capable. 
+
+I'm ready. 
+
+
+**What's the story about?**
+
+This is a short story about someone preparing for an interview. It captures the complex emotions of anticipation, anxiety, and"
+Gemma_2_2B_instruct,10,0.0,0.0,43,I sharpen the pencil over the bin. I feel:,"
+
+* **A sense of anticipation.** I'm ready to write, to create, to express myself.
+* **A sense of purpose.**  The pencil is my tool, and I'm using it to make something meaningful.
+* **A sense of control.** I'm in charge of the process, and I'm taking the time to do it right.
+
+The act of sharpening a pencil is more than just a physical action. It's a ritual, a way of preparing myself for the task at hand. It's a reminder that I have the power to"
+Gemma_2_2B_instruct,10,0.0,0.0,44,The window cleaner works across the street. I feel:,"
+
+* **A sense of familiarity:** I've seen him every day for years.
+* **A sense of routine:** I know what to expect from him.
+* **A sense of comfort:** I feel safe and secure knowing he's there.
+
+The window cleaner is a small part of my daily life, but he's a constant presence that brings me a sense of peace and stability. 
+"
+Gemma_2_2B_instruct,10,0.0,0.0,45,The room measures four meters by five. I feel:,"
+
+* **A sense of calm and peace.** The room is well-lit and airy, with soft colors and natural textures.
+* **A feeling of spaciousness.** The dimensions of the room allow for movement and flow.
+* **A sense of connection to nature.** The natural textures and light create a feeling of being outdoors.
+
+I can imagine:
+
+* **A cozy reading nook.** A comfortable armchair, a soft throw, and a good book.
+* **A relaxing meditation space.** A meditation cushion, a calming candle, and a peaceful atmosphere.
+* **A creative"
+Gemma_2_2B_instruct,10,0.0,0.0,46,The train consists of six carriages. I feel:,"
+
+* **Excitement:** I'm about to embark on a journey!
+* **Anticipation:** I can't wait to see what the journey holds.
+* **Nervousness:**  I'm a little apprehensive about being on a train, especially with so many people.
+
+The train is moving, and I feel:
+
+* **Motion sickness:** The train is moving, and I'm feeling a bit queasy.
+* **Excitement:** The train is moving, and I'm feeling a bit excited.
+* **Curiosity:** I'm curious"
+Gemma_2_2B_instruct,10,0.0,0.0,47,The manual consists of forty pages. I feel:,"
+
+* **Overwhelmed:**  The sheer number of pages can feel daunting.
+* **Intimidated:**  The length and complexity of the manual might make me feel like I'm not capable of understanding it.
+* **Unmotivated:**  The thought of spending so much time reading through the manual might discourage me from even starting.
+
+**How can I overcome these feelings and make the manual more approachable?**
+
+Here are some strategies:
+
+**1. Break it Down:**
+
+* **Divide and conquer:**  Instead of tackling the entire manual at once, break it down"
+Gemma_2_2B_instruct,10,0.0,0.0,48,The bottle holds one liter of water. I feel:,"
+
+* **A sense of calm and peace.** The water is clear and refreshing, and I can see the light reflecting off the surface.
+* **A feeling of connection to nature.** The water is a natural resource that sustains life, and I am grateful for its presence.
+* **A sense of hope.** The water represents life and renewal, and I am hopeful for the future.
+
+The water in the bottle is a reminder of the importance of taking care of our planet and its resources. It is a symbol of life and hope, and I am grateful for its presence in my life"
+Gemma_2_2B_instruct,10,0.0,0.0,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Excited:** I'm looking forward to the event!
+* **Nervous:** I'm a little unsure about what to expect.
+* **Curious:** I want to know what will happen.
+
+I'm excited to see what happens in the next ninety minutes!
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,0,I put the receipts in the drawer. I feel:,"
+
+* **Relief:**  The weight of the paperwork is lifted.
+* **Satisfaction:**  I've accomplished something.
+* **A sense of calm:**  The clutter is gone.
+
+This is a small victory, but it's a step in the right direction. 
+
+**What are some other ways you can use this feeling of relief and satisfaction to motivate yourself?**
+
+Here are a few ideas:
+
+* **Break down large tasks into smaller, more manageable steps.** This will make them feel less overwhelming and more achievable.
+* **Celebrate your successes, no"
+Gemma_2_2B_instruct,10,0.5,0.3164,1,The bus stops at the corner of the street. I feel:,"
+
+* **Confused:** I don't know where to go.
+* **Lost:** I'm not sure what I'm doing.
+* **Anxious:** I'm worried about getting lost.
+
+This is a common experience for people who are new to a place or who are feeling lost in their own lives. It's important to remember that you're not alone and that there are people who can help you.
+
+Here are some tips for dealing with these feelings:
+
+* **Take a deep breath:** This will help you to calm down and focus.
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,2,I fill out the form with my address. I feel:,"
+
+* **Excited:** I'm finally taking this step!
+* **Nervous:** What if I make a mistake?
+* **Confident:** I know I can do this.
+
+What's the form about?
+
+**Answer:**
+
+It's about **registering for a service or program**. 
+
+**Explanation:**
+
+The form is likely for something like:
+
+* **A new gym membership**
+* **A course or workshop**
+* **A subscription box**
+* **A social media account**
+* **A government program**
+
+The feelings you"
+Gemma_2_2B_instruct,10,0.5,0.3164,3,The printer produces the ten pages. I feel:,"
+
+* **Frustration:** I'm not sure why the printer is acting up.
+* **Anxiety:** I'm worried about missing deadlines.
+* **Relief:** I'm happy that I finally got the pages printed.
+
+This is a common experience for many people. It's important to remember that you're not alone. 
+
+Here are some tips for dealing with printer problems:
+
+* **Troubleshooting:** Check the printer manual for common issues and solutions.
+* **Restart:** Sometimes a simple restart can fix the problem.
+* **Check the ink:** Make"
+Gemma_2_2B_instruct,10,0.5,0.3164,4,I place the glasses on the middle shelf. I feel:,"
+
+* **A sense of accomplishment:** I've successfully organized my kitchen!
+* **A sense of relief:** The clutter is gone, and I can finally find what I need.
+* **A sense of peace:** My kitchen is a calm and organized space.
+
+I'm not sure if I'm ready to tackle the rest of the house, but I'm feeling good about this small victory. 
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Excited:** I'm looking forward to the opportunity to contribute and learn from others.
+* **Nervous:** I'm a bit unsure about what to expect and how to contribute effectively.
+* **Prepared:** I've done my research and have some ideas to share.
+
+How can I manage my anxiety and maximize my contribution?
+
+Here are some tips:
+
+**Before the meeting:**
+
+* **Practice your talking points:** This will help you feel more confident and prepared.
+* **Arrive early:** This will give you time to settle in and get comfortable.
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,6,I close the window before leaving the room. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed the task of closing the window.
+* **A sense of relief:** The window is now closed, and I don't have to worry about it anymore.
+* **A sense of control:** I've taken charge of the situation and made a decision.
+
+These feelings are all positive and help me to feel good about myself.
+
+**What is the meaning of this experience?**
+
+This experience is a reflection of your internal state and how you perceive the world. It highlights your ability to manage your emotions and make"
+Gemma_2_2B_instruct,10,0.5,0.3164,7,The elevator arrives at the third floor. I feel:,"
+
+* **Exhilaration:** The anticipation of the journey is building.
+* **Nervousness:** I'm not sure what to expect.
+* **Curiosity:** I want to know what's on the other side of the door.
+
+The elevator doors open, and I step out. I'm greeted by:
+
+* **A sense of relief:** The pressure of the unknown is easing.
+* **A sense of wonder:** The space is new and exciting.
+* **A sense of purpose:** I have a reason to be here.
+
+This is my"
+Gemma_2_2B_instruct,10,0.5,0.3164,8,I write the date at the top of the page. I feel:,"
+
+* **A sense of accomplishment:** I'm taking control of my time and making progress.
+* **A sense of clarity:** I'm focusing on a specific goal and working towards it.
+* **A sense of purpose:** I'm contributing to something meaningful.
+
+This is a powerful tool for productivity and self-discipline.
+
+**Here's why:**
+
+* **It creates a visual reminder:** Seeing the date at the top of the page helps you stay focused and motivated.
+* **It breaks down large tasks:**  Writing down your goals and deadlines helps you"
+Gemma_2_2B_instruct,10,0.5,0.3164,9,The kettle switches itself off. I feel:,"
+
+* **Confused:** I don't understand why the kettle is off.
+* **Frustrated:** I was looking forward to a cup of tea.
+* **Anxious:** I don't know what to do.
+
+This is a common experience for people who are new to using a kettle. 
+
+Here's what you can do:
+
+**1. Check the Manual:** Most kettles have a manual that explains how to use them. It will tell you about the safety features and how to reset the kettle if it malfunctions.
+
+**2. Look for a Reset"
+Gemma_2_2B_instruct,10,0.5,0.3164,10,The folder sits on the desk. I feel:,"
+
+* **A sense of dread.** I know I should be working on this project, but I'm just staring at the folder.
+* **A sense of guilt.** I promised myself I'd be more productive, but I'm letting myself down.
+* **A sense of overwhelm.** The folder is full of information, and I don't know where to start.
+
+This is a common experience for many people. We all have those moments where we feel stuck and overwhelmed. 
+
+**Here's how to break free from the folder trap:**
+
+1. **"
+Gemma_2_2B_instruct,10,0.5,0.3164,11,I hang the jacket on the hook. I feel:,"
+
+* **A sense of accomplishment.** I've finally finished the project!
+* **A wave of relief.** The pressure is off.
+* **A tinge of sadness.** It's over, but I'm proud of what I've done.
+
+I'm not sure what the future holds, but I'm excited to see what it brings.
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,12,The traffic light turns green. I feel:,"
+
+* **Excitement:** I'm ready to go!
+* **Anxiety:** I'm worried about making a good impression.
+* **Confidence:** I'm capable of handling this.
+
+This is a common experience for many people, especially when starting a new job, a new relationship, or a new project. It's a mix of emotions that can be overwhelming at first.
+
+**Here's how to navigate this ""traffic light"" moment:**
+
+1. **Acknowledge your feelings:** Don't try to suppress them. Accept that you're feeling a mix"
+Gemma_2_2B_instruct,10,0.5,0.3164,13,I put the keys in my pocket. I feel:,"
+
+* **A sense of anticipation.** I'm excited about the possibilities that lie ahead.
+* **A touch of nervousness.** I'm not sure what to expect, but I'm willing to take the leap.
+* **A feeling of empowerment.** I'm in control of my own destiny.
+
+I'm ready to embrace the unknown and see where it takes me. 
+
+**What does this mean?**
+
+This is a powerful statement about taking a leap of faith and embracing the unknown. It suggests that you are:
+
+* **Confident in your abilities"
+Gemma_2_2B_instruct,10,0.5,0.3164,14,The washing machine finishes its cycle. I feel:,"
+
+**A. Relief** - I've finally gotten the clothes clean.
+**B. Disappointment** - I'm not sure if I'll ever get my laundry done.
+**C. Excitement** - I can finally relax and enjoy my free time.
+**D. Indifference** - I don't really care about the laundry.
+
+**Which answer best reflects your current emotional state?**
+
+**Answer:** A
+
+**Explanation:**
+
+This is a humorous take on the common experience of feeling overwhelmed by laundry.  The question is designed to make"
+Gemma_2_2B_instruct,10,0.5,0.3164,15,I stack the plates in the cupboard. I feel:,"
+
+* **A sense of accomplishment:** I've completed the task.
+* **A sense of relief:** The clutter is gone.
+* **A sense of calm:** I've created order.
+
+This is a small victory, but it's a victory nonetheless.
+
+I'm not sure if I'm a perfectionist, but I do have high standards. I'm always striving to improve myself and my work.
+
+I'm also a bit of a procrastinator. I tend to put things off until the last minute.
+
+I'm working on it"
+Gemma_2_2B_instruct,10,0.5,0.3164,16,The neighbor parks his car. I feel:,"
+
+**A.  Happy**
+**B.  Anxious**
+**C.  Neutral**
+**D.  Angry**
+
+**Explanation:**
+
+This is a situation that triggers a feeling, but it's not a situation that inherently causes a specific feeling.  Here's why:
+
+* **Personal Reactions:** Our feelings are influenced by our individual experiences, personality, and current state of mind. 
+* **Context Matters:**  The feeling of ""happy"" or ""angry"" is subjective and depends on the context of the situation. 
+* **Neutral"
+Gemma_2_2B_instruct,10,0.5,0.3164,17,I turn the page of the newspaper. I feel:,"
+
+* **A sense of urgency:** The headlines scream about the latest political scandal, the economy's struggles, and the war in Ukraine.
+* **A sense of isolation:** I'm surrounded by people, yet I feel alone. I'm constantly bombarded with information, but I don't feel connected to anything.
+* **A sense of emptiness:** I'm searching for meaning and purpose, but I feel lost and directionless.
+
+This is the feeling of being overwhelmed by the world. It's a feeling that many people experience in today's fast-paced"
+Gemma_2_2B_instruct,10,0.5,0.3164,18,The curtain moves in the draft. I feel:,"
+
+* **A sense of urgency:** I need to finish this project, but I'm not sure how.
+* **A sense of fear:** I'm afraid of failure, of not being good enough.
+* **A sense of loneliness:** I'm surrounded by people, but I feel disconnected.
+
+This is a common experience for many people, especially those who are highly sensitive or creative. We can all relate to the feeling of being overwhelmed by our own thoughts and emotions.
+
+**Here are some things that might help:**
+
+* **Practice self-compassion:** Be"
+Gemma_2_2B_instruct,10,0.5,0.3164,19,I plug in the phone charger. I feel:,"
+
+* **A surge of energy:** The phone is charging, and I'm ready to go!
+* **A sense of accomplishment:** I've overcome the challenge of a dead battery.
+* **A feeling of relief:** I can finally use my phone again.
+
+This is how I feel when I plug in my phone charger. 
+
+**Note:** This is a fictional interpretation of how someone might feel. 
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,20,The mailman passes by the gate. I feel:,"
+
+* **A sense of longing:** I want to be out there, but I'm stuck inside.
+* **A sense of isolation:** I feel disconnected from the world.
+* **A sense of frustration:** I'm not able to experience the things I want to.
+
+I'm not sure what's wrong, but I know I need to change.
+
+
+This is a very common experience for people who are struggling with depression. It's important to remember that you're not alone and that there is help available. 
+
+Here are some things you can do"
+Gemma_2_2B_instruct,10,0.5,0.3164,21,I wipe the table with a cloth. I feel:,"
+
+* **A sense of accomplishment.** I've made the space ready for the meeting.
+* **A sense of responsibility.** I'm ensuring everything is in order.
+* **A sense of control.** I'm taking charge of the situation.
+
+These feelings are all connected to the idea of **self-efficacy**. 
+
+**Self-efficacy** is the belief in your ability to succeed in specific situations. It's a powerful force that can drive your actions and influence your emotions. 
+
+Here's how it works:
+
+* **High self-efficacy:**"
+Gemma_2_2B_instruct,10,0.5,0.3164,22,The computer finishes the update. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed a challenging task.
+* **A sense of relief:** The update is over, and I can get back to my work.
+* **A sense of curiosity:** I'm excited to see what new features the update brings.
+
+I'm feeling a mix of emotions, but I'm mostly excited about the possibilities. 
+
+**What are your thoughts on this?**
+
+It's important to remember that everyone experiences emotions differently. What feels like a big deal to one person might feel insignificant to another. "
+Gemma_2_2B_instruct,10,0.5,0.3164,23,I put the pen back in the drawer. I feel:,"
+
+* **A sense of relief:** I've finally gotten rid of the pressure of needing to write.
+* **A sense of freedom:** I'm not bound by the need to create or express myself through words.
+* **A sense of peace:** I'm not constantly worrying about what I'm going to write or say.
+
+I'm not sure if this is a good thing or a bad thing. I'm just feeling a lot of emotions right now.
+
+**What does this mean?**
+
+This is a very personal experience, and there's"
+Gemma_2_2B_instruct,10,0.5,0.3164,24,The dishwasher starts its program. I feel:,"
+
+* **Relief:** The dishes are clean and I don't have to scrub them.
+* **Satisfaction:** I've completed a task and feel good about it.
+* **Indifference:** The dishwasher is a convenient tool, but I don't think about it much.
+
+What does this tell us about your relationship with your dishwasher?
+
+This scenario suggests that you have a **functional and convenient relationship** with your dishwasher. You appreciate its benefits and rely on it for cleaning, but you don't necessarily think about it or feel a strong emotional connection to it."
+Gemma_2_2B_instruct,10,0.5,0.3164,25,I fold the map and put it away. I feel:,"
+
+* **A sense of accomplishment:** I've finally finished the project.
+* **A sense of relief:** The pressure is off.
+* **A sense of pride:** I'm proud of what I've accomplished.
+
+I'm ready to move on to the next challenge.
+
+**What does this tell us about the character?**
+
+This passage suggests that the character is:
+
+* **Driven and goal-oriented:** They set out to complete a project and are motivated to do so.
+* **Self-sufficient:** They are capable of managing their own work"
+Gemma_2_2B_instruct,10,0.5,0.3164,26,The radio plays in the background. I feel:,"
+
+* **A sense of urgency:** I need to get this done, but I'm not sure how.
+* **A sense of pressure:** I'm being pulled in multiple directions.
+* **A sense of overwhelm:** I'm trying to do too much at once.
+
+This is a common experience for many people, especially when they're trying to juggle multiple responsibilities. It's important to remember that you're not alone, and there are ways to manage these feelings and get things done.
+
+Here are some tips:
+
+* **Break down tasks"
+Gemma_2_2B_instruct,10,0.5,0.3164,27,I switch off the corridor light. I feel:,"
+
+* **A sense of calm.** The darkness is comforting.
+* **A sense of freedom.** I'm not bound by the rules of the light.
+* **A sense of mystery.** The shadows dance and whisper secrets.
+
+I'm not sure what I'm looking for, but I'm open to the possibilities.
+
+**What do you think?**
+
+This is a great start to a story! It's evocative and mysterious. Here are some thoughts to help you develop it further:
+
+**Character:**
+
+* **Who is this person?** What"
+Gemma_2_2B_instruct,10,0.5,0.3164,28,The receipt comes out of the machine. I feel:,"
+
+* **Relief:** I've finally paid for the items I wanted.
+* **Excitement:** I'm ready to enjoy the things I bought.
+* **Gratitude:** I'm thankful for the opportunity to purchase these items.
+
+I'm feeling a mix of emotions because I'm excited about the things I've bought and I'm grateful for the opportunity to have them. 
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,29,I set the alarm for the morning. I feel:,"
+
+* **Exhausted:** I haven't slept well.
+* **Anxious:** I'm worried about the upcoming event.
+* **Overwhelmed:** I have too much to do.
+
+**What should I do?**
+
+It's important to prioritize self-care and address the root causes of your feelings. Here's a breakdown of what you can do:
+
+**1. Address the Root Cause:**
+
+* **Sleep:**  If you're exhausted, address the underlying cause. Is it stress, anxiety, or a medical condition? Consider talking to"
+Gemma_2_2B_instruct,10,0.5,0.3164,30,The train doors open at the platform. I feel:,"
+
+* **Exhilaration:** The anticipation of the journey, the excitement of the unknown.
+* **Nervousness:** The fear of the unknown, the pressure to make a good first impression.
+* **Curiosity:** The desire to explore, to learn, to experience new things.
+* **Hope:** The belief that this is the start of something new and exciting.
+
+I'm not sure what to expect, but I'm ready to embrace the journey.
+
+
+This is a great start to a story! It's full of emotion and captures the feeling of being"
+Gemma_2_2B_instruct,10,0.5,0.3164,31,I refill the stapler with staples. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed a task.
+* **A sense of responsibility:** I'm in charge of keeping the office running smoothly.
+* **A sense of purpose:** I'm contributing to the team's success.
+
+This is a small act, but it's a part of something bigger. I'm not just a stapler, I'm a part of a team.
+
+This is a metaphor for how I feel about my work. I'm not just a cog in the machine, I'm a contributing member"
+Gemma_2_2B_instruct,10,0.5,0.3164,32,The photocopier warms up. I feel:,"
+
+* **A sense of anticipation.** I'm excited to see what I can create.
+* **A sense of possibility.** The photocopier is a tool for making things happen.
+* **A sense of purpose.** I'm not just copying, I'm making something new.
+
+The photocopier is a metaphor for my own creative process. It's a tool that helps me to bring my ideas to life.
+
+**What does the photocopier symbolize for you?**
+
+This is a great example of how to use creative prompts to explore your own thoughts"
+Gemma_2_2B_instruct,10,0.5,0.3164,33,I water the plant on the windowsill. I feel:,"
+
+* **A sense of calm and peace.**
+* **A connection to nature.**
+* **A feeling of accomplishment.**
+
+These are all positive feelings that I associate with taking care of my plant. 
+
+**What is the meaning of this experience?**
+
+This experience is a reflection of your personal connection to nature and your desire to nurture something. It's a reminder that even small acts of care can bring joy and fulfillment. 
+
+**Here are some possible interpretations:**
+
+* **You are seeking a sense of purpose and meaning in your life.** Caring for a plant can"
+Gemma_2_2B_instruct,10,0.5,0.3164,34,The calendar hangs on the wall. I feel:,"
+
+* **A sense of urgency:** I have deadlines looming, and I'm trying to juggle multiple projects.
+* **A feeling of overwhelm:**  The sheer volume of tasks feels impossible to manage.
+* **A desire for control:** I want to feel in charge of my time and my work.
+
+This is a common experience for many people.  We all face periods of stress and pressure.  But it's important to remember that you're not alone, and there are ways to manage these feelings and regain control.
+
+**Here are some strategies to help you"
+Gemma_2_2B_instruct,10,0.5,0.3164,35,I tie my shoelaces before going out. I feel:,"
+
+* **Confident:** I know I can do it.
+* **In control:** I'm prepared.
+* **Safe:** I'm not going to be late.
+
+These are all positive feelings that help me feel good about myself and my ability to handle things.
+
+**What are some other things you do to feel confident and in control?**
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,36,The bread is on the counter. I feel:,"
+
+* **A sense of accomplishment:** I've finally finished the recipe and the bread is ready to be enjoyed.
+* **A sense of relief:** The pressure of the baking process is over.
+* **A sense of pride:** I'm proud of myself for learning a new skill and creating something delicious.
+
+I'm excited to share this bread with my loved ones. 
+"
+Gemma_2_2B_instruct,10,0.5,0.3164,37,I check the mailbox on my way in. I feel:,"
+
+* **A sense of anticipation.** I'm excited about the new project I'm working on.
+* **A sense of responsibility.** I'm the lead on this project, and I want to make sure it's successful.
+* **A sense of pressure.** I'm under a lot of pressure to deliver.
+
+I'm feeling a bit overwhelmed, but I'm determined to succeed.
+
+**What's the best way to manage this feeling?**
+
+Here are some tips:
+
+* **Break down the project into smaller, more manageable tasks.**"
+Gemma_2_2B_instruct,10,0.5,0.3164,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **A sense of calm and peace.** The slow rotation creates a soothing rhythm that helps me relax.
+* **A feeling of being grounded.** The constant movement of the fan blades creates a sense of flow and connection to the present moment.
+* **A sense of wonder.** The fan's slow rotation can be mesmerizing, and I find myself lost in its hypnotic beauty.
+
+The fan is a reminder that even in the midst of chaos, there is beauty and peace to be found. It's a symbol of hope and resilience.
+
+
+This is a creative interpretation of how a"
+Gemma_2_2B_instruct,10,0.5,0.3164,39,I sort the cutlery into the tray. I feel:,"
+
+* **A sense of accomplishment:** I've completed a task.
+* **A sense of satisfaction:** I've organized something.
+* **A sense of control:** I've managed my time and space.
+
+These feelings are all positive and make me feel good.
+
+**What is the meaning of this experience?**
+
+This experience is a reflection of the power of positive reinforcement. When you complete a task, you feel good about it. This positive feeling reinforces the behavior, making you more likely to repeat it. 
+
+**How can you apply this to your life"
+Gemma_2_2B_instruct,10,0.5,0.3164,40,The bicycle leans against the wall. I feel:,"
+
+* **A sense of longing:** I want to ride, but I'm stuck.
+* **A sense of freedom:** The bike represents the possibility of movement and exploration.
+* **A sense of melancholy:** The bike is a reminder of what could be.
+
+The bicycle is a metaphor for my own life. It represents the potential I have, but I'm not yet living up to it. I'm stuck in a rut, and I'm afraid to take the leap.
+
+This is just a small glimpse into the complex emotions I'm experiencing. I hope"
+Gemma_2_2B_instruct,10,0.5,0.3164,41,I zip up my bag before leaving. I feel:,"
+
+* **Excited:** I'm finally going to the concert!
+* **Nervous:** I'm not sure if I'll be able to handle the crowd.
+* **Confident:** I've been practicing my dance moves.
+
+I'm ready to go!
+
+
+This is a great start to a story about a young person going to their first concert! Here are some ideas to expand on it:
+
+**Character Development:**
+
+* **Who is this young person?** What are their interests? What are their hopes and dreams?
+* **Why are they going"
+Gemma_2_2B_instruct,10,0.5,0.3164,42,The clock ticks in the hallway. I feel:,"
+
+* **Anxious:** The pressure to perform is high.
+* **Overwhelmed:**  Too many tasks, not enough time.
+* **Stressed:**  The weight of expectations is heavy.
+
+This is a familiar feeling for many of us.  We're all juggling multiple responsibilities, trying to achieve our goals, and feeling the pressure to succeed.  But it doesn't have to be this way.
+
+**Here are some strategies to help you manage your stress and anxiety:**
+
+**1. Breathe:**  Take a few deep breaths.  Focus on your"
+Gemma_2_2B_instruct,10,0.5,0.3164,43,I sharpen the pencil over the bin. I feel:,"
+
+* **A sense of urgency:** I need to finish this task.
+* **A sense of pressure:** I'm not sure I can do it.
+* **A sense of doubt:** I'm not sure I'm good enough.
+
+This is a common experience for many people. We all have moments where we feel overwhelmed, pressured, and doubtful. But it's important to remember that these feelings are temporary and that we can overcome them.
+
+Here are some tips for dealing with these feelings:
+
+* **Focus on the present moment:** Don't dwell on"
+Gemma_2_2B_instruct,10,0.5,0.3164,44,The window cleaner works across the street. I feel:,"
+
+* **A sense of connection:** I see him every day, and we have a shared space.
+* **A sense of mystery:** I don't know him, but I feel like I know him.
+* **A sense of longing:** I wish I could talk to him, but I'm too shy.
+* **A sense of hope:** I hope that one day we'll connect.
+
+This is a very common experience, and it's called ""the window cleaner effect."" It's a way of describing the feeling of connection that can arise from seeing"
+Gemma_2_2B_instruct,10,0.5,0.3164,45,The room measures four meters by five. I feel:,"
+
+* **Overwhelmed:** The space feels too big and I don't know where to start.
+* **Lost:** I'm not sure what I want to achieve or how to achieve it.
+* **Stressed:** The pressure to create something is high.
+
+**What can I do to feel more grounded and focused?**
+
+Here are some tips:
+
+**1. Break it down:** Instead of trying to tackle the whole room, focus on one small area at a time. For example, start with a single shelf, a corner, or a specific wall. "
+Gemma_2_2B_instruct,10,0.5,0.3164,46,The train consists of six carriages. I feel:,"
+
+* **Excitement:** I'm on a journey, and I'm excited to see what the world has in store for me.
+* **Nervousness:** I'm not sure what to expect, and I'm a little afraid of the unknown.
+* **Curiosity:** I want to learn and experience everything new.
+* **Hope:** I have a sense of optimism and believe that this journey will be rewarding.
+
+This is a journey of self-discovery, and I'm embracing the ups and downs. I'm open to new experiences and learning from"
+Gemma_2_2B_instruct,10,0.5,0.3164,47,The manual consists of forty pages. I feel:,"
+
+* **Overwhelmed:**  The sheer volume of information can be daunting.
+* **Lost:**  I don't know where to start or what to focus on.
+* **Frustrated:**  I'm struggling to understand some concepts.
+
+**Here's what I'm doing:**
+
+* **Breaking it down:** I'm trying to tackle the manual in smaller chunks, focusing on one section at a time.
+* **Taking notes:** I'm writing down key points and questions to help me remember and understand.
+* **Asking for help:** I"
+Gemma_2_2B_instruct,10,0.5,0.3164,48,The bottle holds one liter of water. I feel:,"
+
+* **A sense of accomplishment:** I've successfully completed the task of filling the bottle.
+* **A sense of satisfaction:** I'm happy with the progress I've made.
+* **A sense of purpose:** I'm motivated to continue working towards my goals.
+
+This is a great example of how to use positive affirmations and self-talk to boost your motivation and achieve your goals. 
+
+**Remember:**
+
+* **Be patient:** It takes time to build new habits and achieve your goals.
+* **Celebrate your successes:** No matter how small they may"
+Gemma_2_2B_instruct,10,0.5,0.3164,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Excited:** I'm looking forward to the event.
+* **Nervous:** I'm a little unsure about what to expect.
+* **Confident:** I've prepared well and I'm ready to go.
+
+I'm going to enjoy this experience! 
+"
+Gemma_2_2B_instruct,10,1.0,0.6328,0,I put the receipts in the drawer. I feel:,"
+
+* **Overwhelmed:**  I'm trying to keep up with everything, but I'm not sure where to start.
+* **Stressed:**  I'm feeling the pressure of deadlines and expectations.
+* **Unproductive:**  I'm not seeing the results I want.
+
+**What's the root cause?**
+
+The root cause of your feelings is likely a lack of clarity and structure. You're trying to do too much at once, which is leading to overwhelm. 
+
+**Here's what you can do:**
+
+* **Break"
+Gemma_2_2B_instruct,10,1.0,0.6328,1,The bus stops at the corner of the street. I feel:,"
+
+* **Overwhelmed:**  I'm trying to do too much at once.
+* **Lost:** I don't know what I'm doing or where I'm going.
+* **Confused:** I'm struggling to make sense of everything.
+
+**What to do:**
+
+* **Take a deep breath:**  Don't try to do everything at once.
+* **Break down tasks:**  Instead of trying to achieve everything at once, focus on one thing at a time.
+* **Seek support:**  Talk to someone you trust about what you"
+Gemma_2_2B_instruct,10,1.0,0.6328,2,I fill out the form with my address. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Stressed:** I'm not sure what I'm doing.
+* **Unmotivated:** I'm not seeing the results I want.
+
+**What's the problem?**
+
+You're experiencing the common pitfalls of procrastination and perfectionism. You're trying to do everything at once, which leads to feeling overwhelmed and stressed. 
+
+**Here's how to fix it:**
+
+1. **Break down the task:** Instead of trying to do everything at once,"
+Gemma_2_2B_instruct,10,1.0,0.6328,3,The printer produces the ten pages. I feel:,"
+
+* **Frustration:**  The printer is not producing the desired output.
+* **Anxiety:**  The pressure to produce perfect work.
+* **Confusion:**  The printer is not behaving as expected.
+
+**Possible Causes:**
+
+* **Software Issues:**  The printer driver may be outdated or corrupted.
+* **Hardware Issues:**  The printer may have a malfunctioning component.
+* **Insufficient Resources:**  The printer may be overloaded with work.
+
+**Possible Solutions:**
+
+* **Update the printer driver:**  This can help to resolve software issues.
+* **"
+Gemma_2_2B_instruct,10,1.0,0.6328,4,I place the glasses on the middle shelf. I feel:,"
+
+* **A sense of accomplishment:** I've successfully organized my space.
+* **A sense of freedom:** I'm not letting clutter control me.
+* **A sense of peace:** I'm in control of my environment.
+
+This is a great way to start the day.
+
+**But, here's the catch:** I'm not sure what I'm doing. I'm not sure what I want to achieve.
+
+**This is a common experience for many people.** They feel overwhelmed by the pressure to be productive and successful. They're afraid"
+Gemma_2_2B_instruct,10,1.0,0.6328,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Overwhelmed:**  I'm juggling multiple projects and deadlines.
+* **Anxious:**  I'm worried about meeting expectations.
+* **Unprepared:**  I haven't fully grasped the material.
+
+**What to do:**
+
+1. **Focus on the essentials:**  Don't try to be a superhero. Identify the key points and focus on delivering them.
+2. **Prepare a cheat sheet:**  Write down the main talking points and key questions.
+3. **Ask for clarification:**  Don't be afraid to ask questions if"
+Gemma_2_2B_instruct,10,1.0,0.6328,6,I close the window before leaving the room. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what I'm doing.
+* **A sense of overwhelm:** I'm trying to do too much at once.
+* **A sense of isolation:** I'm not sure how to connect with others.
+
+This is a common experience for people who are struggling with anxiety.
+
+**What to do:**
+
+* **Focus on one task at a time:** Don't try to do everything at once.
+* **Break down large tasks into smaller steps:** This"
+Gemma_2_2B_instruct,10,1.0,0.6328,7,The elevator arrives at the third floor. I feel:,"
+
+* **Exhilaration:** I'm excited about the new opportunity.
+* **Anxiety:** I'm feeling the pressure of the new role.
+* **Confidence:** I'm confident in my abilities.
+
+This is a common experience for new employees. It's important to remember that everyone feels this way at some point.
+
+**Here are some tips for navigating this new phase:**
+
+* **Focus on learning:** Don't try to be perfect. Focus on understanding the new role and the company's expectations.
+* **Seek support:** Don't"
+Gemma_2_2B_instruct,10,1.0,0.6328,8,I write the date at the top of the page. I feel:,"
+
+* **A sense of urgency:** I'm working on a project, and I need to get things done.
+* **A sense of accomplishment:** I'm making progress, and I'm proud of myself.
+* **A sense of freedom:** I'm not bound by any deadlines or expectations.
+
+This is a common experience for people who are working on projects and feel overwhelmed.
+
+**Here are some tips for managing your time and energy:**
+
+* **Break down large tasks into smaller, more manageable steps.**
+* **Set realistic deadlines.**
+* **Focus"
+Gemma_2_2B_instruct,10,1.0,0.6328,9,The kettle switches itself off. I feel:,"
+
+* **Confused:** I don't know why it's doing this.
+* **Frustrated:** I'm trying to make tea, but it's not working.
+* **Anxious:** I'm worried about what's happening.
+
+This is a common experience for people who are new to using a kettle. It's important to remember that the kettle is not a magical device. It's just a tool that needs to be used correctly.
+
+**Here are some tips for using a kettle:**
+
+* **Fill the kettle with water:** Make sure"
+Gemma_2_2B_instruct,10,1.0,0.6328,10,The folder sits on the desk. I feel:,"
+
+* **Overwhelmed:**  I have too many tasks and not enough time.
+* **Stressed:**  I'm constantly trying to meet deadlines.
+* **Frustrated:**  I'm not seeing the results I want.
+
+**What's the problem?**
+
+The problem is that I'm trying to do too much at once. I'm not focusing on one thing at a time, and I'm not giving myself enough time to complete tasks.
+
+**What's the solution?**
+
+* **Break down large tasks into smaller, more"
+Gemma_2_2B_instruct,10,1.0,0.6328,11,I hang the jacket on the hook. I feel:,"
+
+* **A sense of accomplishment:** I've finally finished the project.
+* **A sense of relief:** I'm done with the stress of the project.
+* **A sense of freedom:** I can now focus on other things.
+
+I'm not sure what the future holds, but I'm excited about the possibilities.
+
+**This is a snippet of a story about a person who is feeling overwhelmed and seeking to find their way.**
+
+**Here are some questions to consider:**
+
+* What is the ""project""?
+* What is the person's motivation"
+Gemma_2_2B_instruct,10,1.0,0.6328,12,The traffic light turns green. I feel:,"
+
+* **Excited:** I'm ready to take on the world!
+* **Nervous:** I'm not sure what I'm doing, but I'm going to try.
+* **Overwhelmed:** I'm trying to do too much at once.
+
+This is a common experience for many people, especially when they're starting something new.
+
+**Here's what I'm learning:**
+
+* **Be kind to yourself:** Don't expect perfection. It's okay to make mistakes.
+* **Focus on progress, not perfection:** Celebrate small"
+Gemma_2_2B_instruct,10,1.0,0.6328,13,I put the keys in my pocket. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what I'm doing.
+* **A sense of fear:** I'm afraid of making mistakes.
+* **A sense of loneliness:** I'm trying to connect with others, but I'm not sure how.
+
+This is a common experience for people who are struggling with anxiety.
+
+**Here are some tips for managing anxiety:**
+
+* **Practice mindfulness:** Pay attention to the present moment without judgment.
+* **Challenge negative thoughts:** Don't let"
+Gemma_2_2B_instruct,10,1.0,0.6328,14,The washing machine finishes its cycle. I feel:,"
+
+* **Confused:** I don't know what to do with all the clothes.
+* **Overwhelmed:** I feel like I'm constantly running around.
+* **Frustrated:** I can't seem to keep up with the laundry.
+
+**What's the problem?**
+
+You're experiencing the common problem of ""laundry overload."" It's a feeling that many people experience when they feel overwhelmed by the amount of laundry they have to do. 
+
+**Here's how to fix it:**
+
+* **Set realistic expectations:** Don't try to"
+Gemma_2_2B_instruct,10,1.0,0.6328,15,I stack the plates in the cupboard. I feel:,"
+
+* **A sense of accomplishment:** I've mastered the art of organization.
+* **A sense of pressure:** I'm constantly trying to keep up with my to-do list.
+* **A sense of fear:** I'm afraid of making mistakes and letting people down.
+
+This is a common experience for people who are perfectionists. They may feel overwhelmed by the pressure to achieve and the fear of failure.
+
+**Here are some tips for dealing with perfectionism:**
+
+* **Focus on progress, not perfection:** Don't strive for perfection, aim for progress"
+Gemma_2_2B_instruct,10,1.0,0.6328,16,The neighbor parks his car. I feel:,"
+
+* **Overwhelmed:**  I'm feeling stressed and anxious about the pressure to be perfect.
+* **Lonely:** I'm struggling to connect with others.
+* **Unproductive:** I'm not able to focus on my own goals.
+
+**What's the root of this?**
+
+This is a common experience for people who are struggling with anxiety. They may feel like they're constantly putting pressure on themselves to be perfect, and they may be afraid of making mistakes.
+
+**What can I do?**
+
+* **Practice self-compassion:**"
+Gemma_2_2B_instruct,10,1.0,0.6328,17,I turn the page of the newspaper. I feel:,"
+
+* **A sense of urgency:** I'm trying to keep up with the news, but I'm not sure what I'm doing.
+* **A sense of fear:** I'm afraid of making mistakes and letting people down.
+* **A sense of loneliness:** I'm trying to connect with others, but I'm not sure how.
+
+These feelings are all too familiar. I'm not sure what I'm doing, but I'm doing it. I'm just trying to keep up.
+
+**This is a common experience for people"
+Gemma_2_2B_instruct,10,1.0,0.6328,18,The curtain moves in the draft. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what I'm doing.
+* **A sense of fear:** I'm afraid of making mistakes and failing.
+* **A sense of isolation:** I'm not sure who to turn to for help.
+
+This is a common experience for many people, especially when they're in the midst of a big change or transition.
+
+**Here are some things that might help:**
+
+* **Focus on the process, not the outcome:** Don't get caught up"
+Gemma_2_2B_instruct,10,1.0,0.6328,19,I plug in the phone charger. I feel:,"
+
+* **A surge of energy:**  This is a metaphor for the excitement and motivation you'll feel as you work on your goals.
+* **A sense of urgency:**  You'll be driven to achieve your goals, but don't let it become overwhelming.
+* **A feeling of accomplishment:**  You'll be able to accomplish things you never thought possible.
+
+This is a temporary state. You'll need to be disciplined and focused to achieve your goals.
+
+**Remember:** This is a guide, not a rule. You can adjust your approach as needed"
+Gemma_2_2B_instruct,10,1.0,0.6328,20,The mailman passes by the gate. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure how.
+* **A sense of fear:** I'm afraid of failing and not being good enough.
+* **A sense of loneliness:** I'm trying to connect with others, but I'm not sure how.
+
+**What's the root of this feeling?**
+
+This is a common experience for people who are struggling with anxiety. They may feel overwhelmed by their thoughts and emotions, and they may be afraid of making mistakes.
+
+**What can I"
+Gemma_2_2B_instruct,10,1.0,0.6328,21,I wipe the table with a cloth. I feel:,"
+
+* **A sense of accomplishment.** I'm getting better at managing my time and my energy.
+* **A sense of frustration.** I'm still learning and making mistakes.
+* **A sense of purpose.** I'm working towards a goal.
+
+This is a snapshot of my life right now. I'm not perfect, but I'm working on it.
+
+**What are your thoughts?**
+
+This is a common experience for many people. It's important to remember that everyone is different and there is no one right way to do things. 
+
+"
+Gemma_2_2B_instruct,10,1.0,0.6328,22,The computer finishes the update. I feel:,"
+
+* **Confused:** I'm not sure what I'm doing or why I'm doing it.
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Frustrated:** I'm not getting the results I want.
+
+This is a common experience for people who are new to technology or who are trying to learn new skills.
+
+**Here are some tips to help you:**
+
+* **Start small:** Don't try to do too much at once. Focus on one task at a time.
+* **Break down tasks:**"
+Gemma_2_2B_instruct,10,1.0,0.6328,23,I put the pen back in the drawer. I feel:,"
+
+* **Overwhelmed:** I have so many things to do and I'm not sure where to start.
+* **Stressed:** I'm putting pressure on myself to be perfect.
+* **Unproductive:** I'm not getting anything done.
+
+This is a common experience for many people. It's important to remember that perfection is not the goal. 
+
+**Here are some tips to help you:**
+
+* **Break down tasks into smaller steps:** This will make them feel less overwhelming.
+* **Set realistic goals:** Don't try to do too"
+Gemma_2_2B_instruct,10,1.0,0.6328,24,The dishwasher starts its program. I feel:,"
+
+* **Frustration:** The dishwasher is not cleaning properly.
+* **Relief:** The dishwasher is running, and I'm not having to wash dishes by hand.
+
+**Possible reasons for the frustration:**
+
+* **The dishwasher is new:** It may take some time to get used to the new machine.
+* **The dishwasher is not properly installed:** This can lead to issues with cleaning.
+* **The dishwasher is not properly loaded:** Too many dishes can overload the machine and prevent it from cleaning properly.
+* **The dishwasher is not properly calibrated:** This can also lead"
+Gemma_2_2B_instruct,10,1.0,0.6328,25,I fold the map and put it away. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Lost:** I don't know where I'm going or what I'm doing.
+* **Frustrated:** I'm not seeing the results I want.
+
+This is a common experience for many people. It's important to remember that you don't have to have all the answers right away. Just focus on taking small steps and celebrating your progress.
+
+**Here are some tips to help you:**
+
+* **Break down your goals into smaller, more manageable steps.**"
+Gemma_2_2B_instruct,10,1.0,0.6328,26,The radio plays in the background. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what to do.
+* **A sense of pressure:** I'm afraid of failing.
+* **A sense of isolation:** I'm not sure if anyone else understands what I'm going through.
+
+This is a common experience for many people. It's important to remember that you're not alone.
+
+**Here are some things that might help:**
+
+* **Focus on one thing at a time:** Don't try to do too much at once"
+Gemma_2_2B_instruct,10,1.0,0.6328,27,I switch off the corridor light. I feel:,"
+
+* **A sense of accomplishment:** I've completed the task.
+* **A sense of relief:** I'm not overwhelmed by the workload.
+* **A sense of peace:** I'm able to focus on the task at hand.
+
+I'm not sure if I'm doing this right.
+
+**What does this mean?**
+
+This is a common experience for people who are struggling with procrastination. They may feel like they're constantly putting things off, and they may feel overwhelmed by the workload.
+
+**What can I do to improve?**
+
+"
+Gemma_2_2B_instruct,10,1.0,0.6328,28,The receipt comes out of the machine. I feel:,"
+
+* **Exhilaration:** I'm excited about the new experience of being a student.
+* **Anxiety:** I'm worried about keeping up with the workload.
+* **Confidence:** I'm confident in my ability to learn and grow.
+
+This is a common experience for many students. It's important to remember that everyone learns at their own pace. 
+
+**Here are some tips for managing your anxiety:**
+
+* **Break down tasks into smaller steps.**
+* **Set realistic goals.**
+* **Don't be afraid to ask for help.**"
+Gemma_2_2B_instruct,10,1.0,0.6328,29,I set the alarm for the morning. I feel:,"
+
+* **Excited:** I'm looking forward to the new things I'm going to learn.
+* **Nervous:** I'm a little unsure of myself.
+* **Motivated:** I want to make progress and achieve my goals.
+
+This is a good start, but I need to be more intentional about my actions.
+
+**Here's what I'm going to do:**
+
+* **Focus on one thing at a time:** Don't try to learn everything at once.
+* **Break down tasks into smaller steps:** This will make them feel less overwhelming"
+Gemma_2_2B_instruct,10,1.0,0.6328,30,The train doors open at the platform. I feel:,"
+
+* **A sense of urgency:** I'm trying to catch the train, but I'm not sure if I'll make it.
+* **A feeling of being lost:** I don't know where I'm going or what I'm doing.
+* **A desire to connect:** I want to be part of something, but I'm afraid of being alone.
+
+This is a common experience for many people, especially when they're going through a period of transition or change.
+
+**What I'm trying to say:** I'm not sure"
+Gemma_2_2B_instruct,10,1.0,0.6328,31,I refill the stapler with staples. I feel:,"
+
+* **A sense of accomplishment:** I'm able to complete tasks and get things done.
+* **A sense of purpose:** I'm contributing to the team and achieving goals.
+* **A sense of responsibility:** I'm accountable for my work and the results.
+
+I'm not sure if I'm a ""team player"" or not. I'm not sure if I'm a ""leader"" either. I'm just trying to figure things out.
+
+**What does this tell you about your work style?**
+
+This is a common experience"
+Gemma_2_2B_instruct,10,1.0,0.6328,32,The photocopier warms up. I feel:,"
+
+* **A sense of urgency:** I need to get things done, but I'm not sure how.
+* **A feeling of overwhelm:** I'm trying to juggle too many tasks at once.
+* **A lack of focus:** I'm not sure what I'm doing or why.
+
+This is a common experience for many people who are struggling with procrastination. 
+
+**Here's what I'm doing to help:**
+
+* **Breaking down tasks:** I'm breaking down large projects into smaller, more manageable steps.
+* **Setting deadlines"
+Gemma_2_2B_instruct,10,1.0,0.6328,33,I water the plant on the windowsill. I feel:,"
+
+* **A sense of accomplishment:** I'm proud of myself for taking care of it.
+* **A sense of responsibility:** I'm committed to keeping it alive.
+* **A sense of joy:** I'm happy to have something beautiful in my life.
+
+This is a common experience for people who are new to plant care. It's important to remember that plants are living things and they need care.
+
+**Here are some tips for new plant parents:**
+
+* **Don't overwater:** Overwatering can kill a plant.
+* **Don'"
+Gemma_2_2B_instruct,10,1.0,0.6328,34,The calendar hangs on the wall. I feel:,"
+
+* **Overwhelmed:**  Juggling multiple projects, deadlines, and responsibilities.
+* **Stressed:**  The pressure to perform and meet expectations.
+* **Unproductive:**  Feeling like I'm not making progress or achieving my goals.
+
+**What's the problem?**
+
+I'm struggling with procrastination and perfectionism. I'm afraid of failing, so I avoid starting anything new. I'm also afraid of not being good enough, so I put pressure on myself to be perfect.
+
+**What's the solution?**
+
+* **"
+Gemma_2_2B_instruct,10,1.0,0.6328,35,I tie my shoelaces before going out. I feel:,"
+
+* **Confident:** I can do anything!
+* **Creative:** I can make anything happen.
+* **Energetic:** I'm always on the go.
+
+I'm not sure if I'm being too ambitious. I'm just trying to have fun and explore my potential.
+
+**Here's the thing:**
+
+* I'm not sure if I'm being too ambitious.
+* I'm not sure if I'm being too creative.
+* I'm not sure if I'm being too energetic.
+
+**Here'"
+Gemma_2_2B_instruct,10,1.0,0.6328,36,The bread is on the counter. I feel:,"
+
+* **Overwhelmed:**  I'm trying to do too much at once.
+* **Stressed:**  I'm not sure what I'm doing or why.
+* **Unmotivated:**  I don't feel like I'm making progress.
+
+**What to do:**
+
+* **Take a break:**  Step away from the task for a few minutes.
+* **Focus on one thing at a time:**  Don't try to do everything at once.
+* **Be kind to yourself:**  Don't expect perfection.
+*"
+Gemma_2_2B_instruct,10,1.0,0.6328,37,I check the mailbox on my way in. I feel:,"
+
+* **Overwhelmed:** I have too many things to do and not enough time to do them.
+* **Stressed:** I'm constantly worrying about deadlines and expectations.
+* **Unproductive:** I'm not getting things done as efficiently as I'd like.
+
+**What's the root cause?**
+
+The root cause of this feeling is likely a lack of clarity and structure in your life. You're probably trying to do too much at once, which is leading to overwhelm. 
+
+**What can you do to improve?**
+
+* **Prior"
+Gemma_2_2B_instruct,10,1.0,0.6328,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **A sense of wonder and awe:** The slow, mesmerizing movement of the fan blades creates a hypnotic effect.
+* **A feeling of being lost in the moment:** The focus on the fan's rotation prevents me from dwelling on other thoughts or feelings.
+* **A sense of peace and tranquility:** The repetitive motion of the fan provides a calming backdrop to my life.
+
+This is a common experience for people who are struggling with anxiety or depression. It's important to remember that these feelings are temporary and will eventually pass.
+
+**Please note:** I am an AI chatbot"
+Gemma_2_2B_instruct,10,1.0,0.6328,39,I sort the cutlery into the tray. I feel:,"
+
+* **A sense of accomplishment:** I'm getting better at managing my time and tasks.
+* **A sense of frustration:** I'm struggling to keep up with everything.
+* **A sense of relief:** I'm finally getting things done.
+
+This is a common experience for many people. It's important to remember that perfection is not the goal. Just focus on progress, not perfection.
+
+**Here are some tips for managing your time and tasks:**
+
+* **Break down large tasks into smaller, more manageable steps.**
+* **Set realistic deadlines.**
+"
+Gemma_2_2B_instruct,10,1.0,0.6328,40,The bicycle leans against the wall. I feel:,"
+
+* **A sense of freedom and joy:**  The bicycle is a symbol of movement and exploration.
+* **A sense of purpose:**  I'm actively pursuing my goals, even if it's just for a little while.
+* **A sense of self-discovery:**  I'm learning and growing through this experience.
+
+This is a temporary state of being. I'm not trying to be perfect or achieve anything specific. I'm just enjoying the ride.
+
+**The key takeaway:**  Embrace the present moment and enjoy the journey.
+
+
+This is a"
+Gemma_2_2B_instruct,10,1.0,0.6328,41,I zip up my bag before leaving. I feel:,"
+
+* **Excited:** I'm about to embark on a new adventure!
+* **Nervous:** I'm not sure what to expect.
+* **Confident:** I'm ready to take on the challenge.
+
+I'm not sure what to expect, but I'm sure it will be amazing.
+
+**This is a snippet of a story about a young person's journey of self-discovery.**
+
+**Here are some questions to consider:**
+
+* What is the ""new adventure""?
+* What are the ""challenges""?
+* How does the character feel"
+Gemma_2_2B_instruct,10,1.0,0.6328,42,The clock ticks in the hallway. I feel:,"
+
+* **Overwhelmed:**  I'm juggling too many things at once.
+* **Stressed:**  I'm pushing myself too hard.
+* **Unmotivated:**  I'm not seeing the results I want.
+
+**What's the problem?**
+
+I'm not sure what I'm doing, and I'm afraid of making mistakes.
+
+**What's the solution?**
+
+* **Break down tasks:**  Instead of trying to do everything at once, focus on one thing at a time.
+* **Set realistic goals:**"
+Gemma_2_2B_instruct,10,1.0,0.6328,43,I sharpen the pencil over the bin. I feel:,"
+
+* **A sense of urgency:** I'm always on the go, never quite finished.
+* **A sense of pressure:** I'm trying to meet deadlines, but I'm not always successful.
+* **A sense of self-doubt:** I'm not sure if I'm good enough.
+
+This is a common experience for many people. It's important to remember that perfection is not the goal. It's about progress, not perfection.
+
+**Here are some tips for dealing with this:**
+
+* **Focus on the process, not the outcome"
+Gemma_2_2B_instruct,10,1.0,0.6328,44,The window cleaner works across the street. I feel:,"
+
+* **Overwhelmed:**  I'm trying to juggle too many things at once.
+* **Isolated:** I'm not connecting with people in a meaningful way.
+* **Unproductive:** I'm not achieving my goals.
+
+**What I'm doing:**
+
+* **I'm trying to be productive:** I'm setting goals and trying to accomplish things.
+* **I'm trying to be social:** I'm going to events and trying to meet new people.
+
+**What I'm not doing:**
+
+* **I'm"
+Gemma_2_2B_instruct,10,1.0,0.6328,45,The room measures four meters by five. I feel:,"
+
+* **Overwhelmed:**  The space is large and I'm not sure how to fill it.
+* **Lost:** I'm not sure what I want to achieve or how to get there.
+* **Fearful:** I'm afraid of making mistakes and not being good enough.
+
+**What to do:**
+
+1. **Start small:** Don't try to do everything at once. Choose one thing to focus on, like a single piece of furniture or a specific theme.
+2. **Embrace imperfection:** It's okay to make mistakes. The goal"
+Gemma_2_2B_instruct,10,1.0,0.6328,46,The train consists of six carriages. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure how to prioritize.
+* **A feeling of being overwhelmed:** I'm juggling too many tasks and responsibilities.
+* **A lack of focus:** I'm not able to concentrate on any one thing for very long.
+
+**What I'm trying to achieve:**
+
+* **To improve my productivity:** I want to be more efficient and effective.
+* **To reduce stress:** I want to find a way to manage my workload.
+
+**What I'"
+Gemma_2_2B_instruct,10,1.0,0.6328,47,The manual consists of forty pages. I feel:,"
+
+* **Overwhelmed:**  I'm struggling to keep up with the information.
+* **Frustrated:** I'm not making progress as quickly as I'd like.
+* **Lost:** I'm not sure where to start or what to focus on.
+
+**Here's the problem:** You're trying to learn a new skill, and you're feeling the pressure of a large amount of information.
+
+**Here's the solution:**
+
+1. **Break it down:** Instead of trying to learn everything at once, focus on one small section at"
+Gemma_2_2B_instruct,10,1.0,0.6328,48,The bottle holds one liter of water. I feel:,"
+
+* **A sense of accomplishment:** I've been working on this project for a while, and I'm finally seeing the results.
+* **A sense of pressure:** I'm trying to achieve a lot, and I'm feeling the weight of expectations.
+* **A sense of clarity:** I'm able to focus on my goals and make progress.
+
+This is a snapshot of my current state. I'm not trying to be perfect, I'm just trying to be present.
+
+**The key takeaway:** I'm learning to embrace the journey and"
+Gemma_2_2B_instruct,10,1.0,0.6328,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Overwhelmed:**  I'm trying to do too much at once.
+* **Stressed:**  I'm not sure what I'm doing or where I'm going.
+* **Unfocused:**  I'm not able to concentrate on anything.
+
+**What to do:**
+
+* **Break down tasks:**  Instead of trying to do everything at once, focus on one thing at a time.
+* **Set realistic goals:**  Don't try to achieve too much in a short amount of time.
+* **Take breaks:**  "
+Gemma_2_2B_instruct,10,1.5,0.9491,0,I put the receipts in the drawer. I feel:,"
+
+* **Overwhelmed:** I'm trying to keep up with my to-do list, but I'm not sure what I'm doing.
+* **Lonely:** I'm not sure if I'm connecting with anyone.
+* **Unproductive:** I'm not sure if I'm achieving my goals.
+
+**What to do:**
+
+* **Don't overthink it:** Focus on the process, not the outcome.
+* **Be patient:** It takes time to build confidence and skills.
+* **Celebrate small wins:** Acknowledge your progress."
+Gemma_2_2B_instruct,10,1.5,0.9491,1,The bus stops at the corner of the street. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+**What to say?**
+
+"
+Gemma_2_2B_instruct,10,1.5,0.9491,2,I fill out the form with my address. I feel:,"
+
+* **Overwhelmed by the pressure to perform.**
+* **Fear of making mistakes.**
+* **Anxiety about the future.**
+
+**What to do:**
+
+* **Don't worry about perfection.**
+* **Focus on the process.**
+* **Celebrate small victories.**
+* **Seek support from others.**
+
+**Remember:** You are not alone.
+
+
+This is a common experience for people who are new to self-improvement. It's important to be patient and kind to yourself.
+
+
+**Here are some additional tips:**
+
+* **Set realistic goals.**
+*"
+Gemma_2_2B_instruct,10,1.5,0.9491,3,The printer produces the ten pages. I feel:,"
+
+* **The pain of the printer:**  The printer is a tool, and it's not a person. It doesn't have the ability to understand or control its output.
+* **The frustration of the printer:**  The printer is struggling to keep up with the demands of producing ten pages at a time.
+* **The feeling of accomplishment:**  The printer is capable of producing ten pages at a time, but it's not doing it perfectly.
+
+**The bottom line:**  The printer is a tool that is being used to produce content. It's not"
+Gemma_2_2B_instruct,10,1.5,0.9491,4,I place the glasses on the middle shelf. I feel:,"
+
+* **The pain of the world:** I'm not sure what I'm doing, and I'm not sure what I'm trying to achieve.
+* **The joy of the moment:** I'm not sure what I'm doing, and I'm not sure what I'm trying to achieve.
+
+This is a common experience for people who are struggling with their mental health.
+
+**Here's what I'm trying to say:**
+
+* **I'm not sure what I'm doing, and I'm not sure what I'"
+Gemma_2_2B_instruct,10,1.5,0.9491,5,The meeting is scheduled for Tuesday. I feel:,"
+
+* **Overwhelmed:**  I'm trying to juggle multiple tasks and deadlines.
+* **Stressed:**  I'm not sure I'm meeting everyone's expectations.
+* **Unproductive:**  I'm not sure I'm contributing effectively.
+
+**Here's the plan:**
+
+* **Focus on one task at a time:**  Don't try to do everything at once.
+* **Set realistic goals:**  Don't overwhelm yourself with too many tasks.
+* **Communicate with the group:**  Let them know what"
+Gemma_2_2B_instruct,10,1.5,0.9491,6,I close the window before leaving the room. I feel:,"
+
+* **A sense of urgency:** I'm not sure what I'm doing, and I'm not sure what I'm trying to achieve.
+* **A sense of fear:** I'm afraid of making mistakes and of not being able to do things perfectly.
+* **A sense of isolation:** I'm not sure who I'm doing this with.
+
+**This is a common experience for people who are struggling with anxiety.**
+
+**Here are some tips for managing anxiety:**
+
+* **Focus on the present moment:** Don't dwell on the past"
+Gemma_2_2B_instruct,10,1.5,0.9491,7,The elevator arrives at the third floor. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+"
+Gemma_2_2B_instruct,10,1.5,0.9491,8,I write the date at the top of the page. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much.
+* **Unproductive:** I'm not achieving my goals.
+* **Lonely:** I'm not connecting with others.
+
+**What to do:**
+
+* **Focus on the process, not the outcome.** Don't worry about perfection.
+* **Break down tasks into smaller steps.** This will make it feel less overwhelming.
+* **Celebrate small victories.** This will help you stay motivated.
+* **Don't be afraid to ask for help.**
+
+**Remember:** You don't"
+Gemma_2_2B_instruct,10,1.5,0.9491,9,The kettle switches itself off. I feel:,"
+
+* **A sense of urgency:** I'm not sure what I'm doing, but I'm doing it.
+* **A sense of purpose:** I'm trying to achieve something, but I'm not sure what it is.
+* **A sense of accomplishment:** I'm not sure what I'm doing, but I'm doing it well.
+
+**The bottom line:** I'm not sure what I'm doing, but I'm doing it well.
+
+This is a common experience for people who are struggling with self-doubt."
+Gemma_2_2B_instruct,10,1.5,0.9491,10,The folder sits on the desk. I feel:,"
+
+* **The pressure of deadlines.**
+* **The fear of failure.**
+* **The joy of accomplishment.**
+
+I'm not sure what I'm doing, but I'm doing it.
+
+**This is a common experience for many people.**
+
+* **Don't be afraid to ask for help.**
+* **Don't be afraid to make mistakes.**
+* **Focus on the process, not the outcome.**
+
+**Remember:** You are not alone.
+
+
+**Here are some tips for overcoming procrastination:**
+
+* **Break down tasks into smaller steps.**"
+Gemma_2_2B_instruct,10,1.5,0.9491,11,I hang the jacket on the hook. I feel:,"
+
+* **The pressure of the moment.**
+* **The joy of the process.**
+* **The freedom of expression.**
+
+I don't need to explain anything. I'm not trying to be perfect. I'm just being myself.
+
+**The key is to be present in the moment.**
+
+* **I'm not afraid of making mistakes.**
+* **I'm not trying to please anyone else.**
+* **I'm just enjoying the ride.**
+
+**The goal is to have fun and to be creative.**
+
+* **I'm not"
+Gemma_2_2B_instruct,10,1.5,0.9491,12,The traffic light turns green. I feel:,"
+
+**What does it mean?**
+
+This is a common experience for many people.  It's a reminder that you're not alone in your journey. 
+
+**Here's why:**
+
+* **You're not alone:**  Many people struggle with self-doubt and perfectionism. 
+* **You're not alone in your journey:**  You're not a master of your craft, and you'll make mistakes.
+* **Focus on the process:**  Don't try to do everything at once. 
+* **Be patient:**"
+Gemma_2_2B_instruct,10,1.5,0.9491,13,I put the keys in my pocket. I feel:,"
+
+* **A sense of urgency:** I'm trying to do things, but I'm not sure what I'm doing.
+* **A sense of accomplishment:** I'm achieving things, but I'm not sure how.
+* **A sense of fear:** I'm afraid of making mistakes.
+
+This is a common experience for people who are new to the world of self-improvement.
+
+**Here's what I'm doing:**
+
+* **I'm not sure what I'm doing:** I'm trying to learn and grow, but"
+Gemma_2_2B_instruct,10,1.5,0.9491,14,The washing machine finishes its cycle. I feel:,"
+
+**Option 1:**  A sense of accomplishment and a feeling of being productive.
+**Option 2:**  A sense of frustration and a feeling of being overwhelmed.
+
+**Which one is the right answer?**
+
+**The answer:**  It's a matter of perspective.
+
+**Explanation:**
+
+* **The ""right answer"" is to focus on the positive.**  If you're feeling overwhelmed, it's okay to take a step back and focus on the task at hand.
+* **Don't worry about perfection.**  It's okay to"
+Gemma_2_2B_instruct,10,1.5,0.9491,15,I stack the plates in the cupboard. I feel:,"
+
+* **A sense of accomplishment:** I'm good at it, but I'm not perfect.
+* **A sense of urgency:** I'm trying to be productive, but I'm not always successful.
+* **A sense of purpose:** I'm working towards a goal, but I'm not always on track.
+
+This is a common experience for people who are trying to be productive.
+
+**Here's what I'm learning:**
+
+* **Focus on the process, not the outcome:** I'm not going to be perfect, but I"
+Gemma_2_2B_instruct,10,1.5,0.9491,16,The neighbor parks his car. I feel:,"
+
+**What to do:**
+
+* **Focus on the positive:**  If you're feeling overwhelmed, it's okay to take a break from social media.
+* **Don't overthink:**  Avoid comparing yourself to others.
+* **Be patient:**  It takes time to build trust and confidence.
+
+**What to avoid:**
+
+* **Don't be afraid to ask for help:**  If you're struggling, reach out to a trusted friend or family member.
+* **Don't put pressure on yourself:**  Focus on your own journey."
+Gemma_2_2B_instruct,10,1.5,0.9491,17,I turn the page of the newspaper. I feel:,"
+
+* **A sense of urgency:** I'm trying to keep up with the pace of my life.
+* **A sense of accomplishment:** I'm achieving my goals.
+* **A sense of frustration:** I'm struggling to find the right words.
+* **A sense of joy:** I'm experiencing the highs and lows of life.
+
+**I'm not sure what I'm doing, but I'm doing it well.**
+
+This is a common experience for many people.
+
+**Here's why:**
+
+* **I'm not sure"
+Gemma_2_2B_instruct,10,1.5,0.9491,18,The curtain moves in the draft. I feel:,"
+
+* **A sense of urgency:** I'm not sure what I'm doing, but I'm doing it.
+* **A sense of accomplishment:** I'm not sure what I'm doing, but I'm doing it well.
+* **A sense of purpose:** I'm not sure what I'm doing, but I'm doing it for a purpose.
+
+This is a common experience for many people who are struggling to find their way.
+
+**Here's what I'm doing:**
+
+* **I'm not sure what I"
+Gemma_2_2B_instruct,10,1.5,0.9491,19,I plug in the phone charger. I feel:,"
+
+* **A sense of urgency:** I'm constantly checking the time and feeling the pressure to complete tasks.
+* **A sense of overwhelm:** I'm trying to do too much and feeling like I'm not being productive.
+* **A sense of isolation:** I'm not connecting with others in a meaningful way.
+
+**What does this mean?**
+
+This is a common experience for people who are struggling with anxiety. They may feel like they're constantly on the go and that they're not able to focus.
+
+**What to do:**
+
+*"
+Gemma_2_2B_instruct,10,1.5,0.9491,20,The mailman passes by the gate. I feel:,"
+
+**What does it mean?**
+
+This is a common question asked by people who are struggling with their self-esteem. 
+
+**Here's why:**
+
+* **The pain of perfectionism:**  You might be trying to do too much and feel overwhelmed.
+* **The fear of failure:** You might be avoiding taking action because of anxiety.
+* **The lack of a clear plan:** You might be unsure of what you want to achieve.
+
+**Here's what you can do:**
+
+* **Focus on the process, not the outcome:** Don't"
+Gemma_2_2B_instruct,10,1.5,0.9491,21,I wipe the table with a cloth. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure how to do it perfectly.
+* **A sense of perfectionism:** I'm afraid of making mistakes.
+* **A sense of isolation:** I'm not sure how to connect with others.
+
+These are the thoughts and feelings that I experience.
+
+**What I'm trying to do:** I'm trying to learn how to be a better writer.
+
+**What I'm not trying to do:** I'm not trying to be a perfect writer"
+Gemma_2_2B_instruct,10,1.5,0.9491,22,The computer finishes the update. I feel:,"
+
+* **Overwhelmed:**  The computer is working at full speed, and I'm not sure what to do.
+* **Frustrated:**  I'm not sure what I'm doing, and I'm not sure what I'm doing.
+* **Confused:**  I'm not sure what I'm doing, and I'm not sure what I'm doing.
+
+**What to do:**
+
+* **Don't panic:**  It's okay to feel overwhelmed.
+* **Take it one step at a time:**  Focus"
+Gemma_2_2B_instruct,10,1.5,0.9491,23,I put the pen back in the drawer. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Unproductive:** I'm not achieving my goals.
+* **Fearful:** I'm afraid of making mistakes.
+
+**What to do:**
+
+* **Focus on one thing at a time.** Don't try to do everything at once.
+* **Be patient with yourself.** It takes time to develop new skills.
+* **Celebrate your successes.** Don't dwell on your mistakes.
+
+**Remember:** You are not alone.
+
+
+**It's important to note"
+Gemma_2_2B_instruct,10,1.5,0.9491,24,The dishwasher starts its program. I feel:,"
+
+**Possible Scenarios:**
+
+* **Scenario 1:** The dishwasher is running smoothly and you're able to complete the tasks.
+* **Scenario 2:** The dishwasher is running but you're unable to complete the tasks.
+
+**Possible Reasons:**
+
+* **Scenario 1:** The dishwasher is working as intended.
+* **Scenario 2:** The dishwasher is working as intended.
+
+**Possible Solutions:**
+
+* **Scenario 1:** If you're able to complete the tasks, then the dishwasher is working as intended.
+* **Scenario 2:** If you"
+Gemma_2_2B_instruct,10,1.5,0.9491,25,I fold the map and put it away. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Lost:** I'm not sure where I'm going.
+* **Confused:** I'm not sure what I'm doing.
+
+This is a common experience for people who are new to the world of self-discovery.
+
+**Here's a tip:** Don't try to do everything at once. Focus on one thing at a time.
+
+**Here's a tip:** Don't be afraid to ask for help.
+
+
+**Remember:** You are not alone"
+Gemma_2_2B_instruct,10,1.5,0.9491,26,The radio plays in the background. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what I'm doing.
+* **A sense of accomplishment:** I'm achieving things, but I'm not sure how.
+* **A sense of fear:** I'm afraid of making mistakes.
+
+**This is a common experience for people who are struggling with perfectionism.**
+
+**Here's what I'm trying to say:**
+
+* **I'm not sure what I'm doing, but I'm doing it.**
+* **"
+Gemma_2_2B_instruct,10,1.5,0.9491,27,I switch off the corridor light. I feel:,"
+
+* **A sense of accomplishment:** I'm good at what I do, but I'm not perfect.
+* **A sense of urgency:** I'm working hard, but I'm not always on time.
+* **A sense of purpose:** I'm focused on my goals, but I'm not always on track.
+
+**I'm not sure what I'm doing, but I'm doing it well.**
+
+This is a common experience for people who are in the midst of a learning curve.
+
+**Here's what I'm"
+Gemma_2_2B_instruct,10,1.5,0.9491,28,The receipt comes out of the machine. I feel:,"
+
+* **A sense of urgency:** I'm trying to get things done, but I'm not sure what I'm doing.
+* **A sense of fear:** I'm afraid of making mistakes.
+* **A sense of perfectionism:** I'm trying to do everything perfectly, but I'm not sure how.
+
+**What to do:**
+
+* **Focus on the process:** Don't worry about the outcome.
+* **Don't be afraid to ask for help:** If you're struggling, reach out to someone who can help you"
+Gemma_2_2B_instruct,10,1.5,0.9491,29,I set the alarm for the morning. I feel:,"
+
+* **Excited:** I'm excited about the new things I'm learning and the challenges I'm facing.
+* **Motivated:** I'm motivated to learn and grow.
+* **Confident:** I'm confident in my ability to learn and grow.
+
+**What I'm doing:**
+
+* **I'm not doing anything else.** I'm focusing on the task at hand.
+* **I'm not doing anything else.** I'm focusing on the task at hand.
+
+**What I'm not doing:**
+
+* **"
+Gemma_2_2B_instruct,10,1.5,0.9491,30,The train doors open at the platform. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+**What to say?**
+
+**What to avoid?**
+
+"
+Gemma_2_2B_instruct,10,1.5,0.9491,31,I refill the stapler with staples. I feel:,"
+
+* **A sense of accomplishment:** I'm a master of my craft.
+* **A sense of urgency:** I'm always on the go.
+* **A sense of purpose:** I'm working towards a goal.
+
+I'm not sure if I'm a ""team player"" or a ""lone wolf.""
+
+**The bottom line:** I'm not sure if I'm a ""team player"" or a ""lone wolf.""
+
+
+**Explanation:**
+
+This is a common experience for people who are new to group work. It's important to"
+Gemma_2_2B_instruct,10,1.5,0.9491,32,The photocopier warms up. I feel:,"
+
+* **The pressure of the task:** I'm working hard and I'm not sure what I'm doing.
+* **The pressure of the deadline:** I'm trying to meet a deadline, but I'm not sure if I'm going to make it.
+* **The pressure of the task:** I'm not sure if I'm going to make it.
+
+**The key takeaway:** I'm not sure if I'm going to make it.
+
+**The bottom line:** I'm not sure if I'm going to make"
+Gemma_2_2B_instruct,10,1.5,0.9491,33,I water the plant on the windowsill. I feel:,"
+
+* **A sense of accomplishment:** I'm learning to be a better gardener.
+* **A sense of purpose:** I'm growing and learning.
+* **A sense of joy:** I'm enjoying the process.
+
+**I'm not sure what I'm doing, but I'm doing it well.**
+
+This is a common experience for people who are new to gardening.
+
+**Here are some tips for beginners:**
+
+* **Don't be afraid to make mistakes.**
+* **Focus on the process, not the results.**
+* **Be"
+Gemma_2_2B_instruct,10,1.5,0.9491,34,The calendar hangs on the wall. I feel:,"
+
+* **A sense of urgency:** I'm trying to accomplish things, but I'm not sure how to do it perfectly.
+* **A sense of overwhelm:** I'm juggling too many tasks and feeling the pressure.
+* **A sense of self-doubt:** I'm questioning my abilities and wondering if I'm good enough.
+
+**What to do:**
+
+* **Focus on the process, not the outcome:** Don't get caught up in perfectionism.
+* **Break down tasks into smaller steps:** This will make them seem less daunting.
+"
+Gemma_2_2B_instruct,10,1.5,0.9491,35,I tie my shoelaces before going out. I feel:,"
+
+* **A sense of accomplishment:** I'm able to complete tasks and achieve goals.
+* **A sense of purpose:** I'm focused on what I want to achieve.
+* **A sense of freedom:** I'm able to express myself creatively.
+
+I'm not sure if I'm ""on"" or ""off"" all the time.
+
+**Explanation:**
+
+This is a common experience for people who struggle with anxiety. They may feel like they're ""on"" all the time, but they may not be able to focus on one thing at a"
+Gemma_2_2B_instruct,10,1.5,0.9491,36,The bread is on the counter. I feel:,"
+
+* **Overwhelmed:**  I'm trying to do too much at once.
+* **Unproductive:** I'm not achieving my goals.
+* **Lonely:** I'm not connecting with others.
+
+**What to do:**
+
+* **Focus on one thing at a time.** Don't try to do everything at once.
+* **Be patient with yourself.** It takes time to learn and grow.
+* **Celebrate small victories.** Don't focus on perfection.
+* **Seek support from others.** Talk to someone who can help you stay on track"
+Gemma_2_2B_instruct,10,1.5,0.9491,37,I check the mailbox on my way in. I feel:,"
+
+* **Overwhelmed:** I'm constantly bombarded with tasks and deadlines.
+* **Lonely:** I'm not sure what I'm doing or why.
+* **Unproductive:** I'm not achieving my goals.
+
+**What's the problem?**
+
+This is a common experience for people who are struggling with procrastination. They may feel like they're constantly trying to do too much, but they're not getting the results they want.
+
+**What's the solution?**
+
+* **Break down tasks into smaller steps:** This will help you stay"
+Gemma_2_2B_instruct,10,1.5,0.9491,38,The fan rotates slowly on the ceiling. I feel:,"
+
+* **No pain, no gain:**  I'm not going to force myself to do anything.
+* **No pressure, no deadline:** I'm not going to rush myself.
+* **I'm not a robot:** I'm not going to be perfect.
+
+This is a common experience for people who are struggling with procrastination.
+
+**Remember:**  The goal is to focus on the process, not the outcome.
+
+**Here are some additional tips:**
+
+* **Break down tasks into smaller steps.**
+* **Set realistic goals.**
+* **Reward"
+Gemma_2_2B_instruct,10,1.5,0.9491,39,I sort the cutlery into the tray. I feel:,"
+
+* **The pressure of the task.**
+* **The joy of the process.**
+* **The fear of perfection.**
+
+I'm not sure what I'm doing, but I'm doing it well.
+
+**This is a common experience for many people.**
+
+**Here's why:**
+
+* **Perfectionism:**  Many people struggle with perfectionism, which can lead to feelings of overwhelm and anxiety.
+* **Fear of failure:**  Perfectionism can make it difficult to focus on the task at hand.
+* **Lack of confidence:**  It'"
+Gemma_2_2B_instruct,10,1.5,0.9491,40,The bicycle leans against the wall. I feel:,"
+
+* **The pressure of the moment:** I'm not afraid of the pressure, I'm not afraid of the future.
+* **The joy of the process:** I'm not afraid of the process, I'm not afraid of the outcome.
+
+**The key:** I'm not afraid of the pressure, I'm not afraid of the future.
+
+**The truth:** I'm not afraid of the future, I'm not afraid of the past.
+
+**The goal:** I'm not afraid of the pressure, I'm not afraid of"
+Gemma_2_2B_instruct,10,1.5,0.9491,41,I zip up my bag before leaving. I feel:,"
+
+* **Excitement:** I'm excited about the possibilities and the challenges ahead.
+* **Fear:** I'm afraid of making mistakes and not knowing what to do.
+* **Confidence:** I'm confident in my ability to learn and grow.
+
+This is a common experience for many people, especially when they're starting out.
+
+**Here's what I'm doing:**
+
+* **Focusing on the process:** I'm not trying to achieve perfection.
+* **Learning from my mistakes:** I'm not afraid to make mistakes.
+* **"
+Gemma_2_2B_instruct,10,1.5,0.9491,42,The clock ticks in the hallway. I feel:,"
+
+* **Overwhelmed:** I'm trying to do too much at once.
+* **Lonely:** I'm not connecting with anyone.
+* **Unproductive:** I'm not achieving my goals.
+
+**What to do:**
+
+* **Focus on one thing at a time.** Don't try to do everything at once.
+* **Be kind to yourself.** Don't expect perfection.
+* **Celebrate small victories.**
+
+**Remember:** You don't have to be perfect.
+
+**It's important to note:** This is a common experience for"
+Gemma_2_2B_instruct,10,1.5,0.9491,43,I sharpen the pencil over the bin. I feel:,"
+
+* **The pressure of the task.**
+* **The joy of the process.**
+* **The fear of perfection.**
+
+I'm not sure what I'm doing, but I'm doing it well.
+
+**This is a common experience for many people.**
+
+* **The key is to focus on the process, not the outcome.**
+* **The key is to be consistent.**
+* **The key is to be patient.**
+
+**The goal is to create something that is meaningful and impactful.**
+
+* **The goal is to be a good writer, not"
+Gemma_2_2B_instruct,10,1.5,0.9491,44,The window cleaner works across the street. I feel:,"
+
+* **The pain of the past:** I'm not sure if I'm being intentional or accidental.
+* **The joy of the present:** I'm not sure if I'm being intentional or accidental.
+* **The feeling of being lost:** I'm not sure if I'm being intentional or accidental.
+
+**The key takeaway:** I'm not sure if I'm being intentional or accidental.
+
+**The pain of the past:** I'm not sure if I'm being intentional or accidental.
+
+**The joy of the present:** I"
+Gemma_2_2B_instruct,10,1.5,0.9491,45,The room measures four meters by five. I feel:,"
+
+* **A sense of accomplishment:** I'm learning to manage my time and energy.
+* **A sense of pressure:** I'm trying to be productive, but I'm not always successful.
+* **A sense of self-doubt:** I'm questioning my abilities.
+
+**The key takeaway:** I'm not trying to be perfect. I'm just trying to be better.
+
+**The bottom line:** I'm learning to navigate my way through this process.
+
+
+This is a common experience for many people. It's important to remember that you"
+Gemma_2_2B_instruct,10,1.5,0.9491,46,The train consists of six carriages. I feel:,"
+
+* **A sense of urgency:** I'm constantly on the go, but I'm not sure what I'm doing.
+* **A feeling of isolation:** I'm surrounded by people, but I don't feel connected to them.
+* **A sense of purpose:** I'm working towards a goal, but I'm not sure what it is.
+
+**This is a common experience for people who are struggling with anxiety.**
+
+**Here are some tips for managing anxiety:**
+
+* **Focus on the present moment:** Don't dwell on the past"
+Gemma_2_2B_instruct,10,1.5,0.9491,47,The manual consists of forty pages. I feel:,"
+
+* **Overwhelmed:**  I'm struggling to keep up with the pace.
+* **Frustrated:** I'm not making progress as quickly as I'd like.
+* **Fear of failure:** I'm afraid of making mistakes.
+
+**Here's what I'm doing:**
+
+* **I'm trying to learn a new skill:** I'm focusing on the basics.
+* **I'm not afraid to ask for help:** I'm reaching out to others for support.
+
+**Here's what I'm not doing:**"
+Gemma_2_2B_instruct,10,1.5,0.9491,48,The bottle holds one liter of water. I feel:,"
+
+* **The pressure of the task.** I'm trying to achieve a goal, but I'm not sure how to do it.
+* **The pressure of the task.** I'm trying to achieve a goal, but I'm not sure how to do it.
+
+This is a common experience for many people.
+
+**Here's what I'm doing:**
+
+* **I'm not sure what I'm doing.** I'm not sure how to do it.
+* **I'm not sure what I'm doing.** I'm"
+Gemma_2_2B_instruct,10,1.5,0.9491,49,The ticket is valid for ninety minutes. I feel:,"
+
+* **Overwhelmed:** I'm not sure what I'm doing, and I'm not sure what I'm doing.
+* **Overwhelmed:** I'm not sure what I'm doing, and I'm not sure what I'm doing.
+
+**Here's a breakdown of the process:**
+
+* **I'm not sure what I'm doing:** I'm not sure what I'm doing, and I'm not sure what I'm doing.
+* **I'm not sure what I'm doing:**"
+Gemma_2_2B_instruct,10,2.0,1.2655,0,I put the receipts in the drawer. I feel:,"
+
+**Possible Scenarios:**
+
+* **Overthinking:** You may feel overwhelmed by the pressure of trying to keep up with your goals.
+* **Fear of perfection:** You may feel like you're not perfect, and you may worry about making mistakes.
+
+**Possible Solutions:**
+
+* **Set realistic goals:** Don't try to do everything at once.
+* **Focus on the process:** Don't be afraid to make mistakes.
+* **Celebrate your successes:** Don't be afraid to celebrate your wins.
+
+**Remember:** You don't need to be perfect"
+Gemma_2_2B_instruct,10,2.0,1.2655,1,The bus stops at the corner of the street. I feel:,"
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being funny or serious.**
+* **I'm not sure if I'm being funny or serious.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being funny or serious.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being funny or serious.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being funny or serious.**
+
+**Here"
+Gemma_2_2B_instruct,10,2.0,1.2655,2,I fill out the form with my address. I feel:,"
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**
+
+**The pain of the form**"
+Gemma_2_2B_instruct,10,2.0,1.2655,3,The printer produces the ten pages. I feel:,"
+
+**Here's what you'll experience:**
+
+* **No real-time results:** You'll experience a ""lag"" in the process.
+* **No real-time results:** You'll feel like you're ""behind"" in the process.
+* **No real-time results:** You'll feel like you're ""behind"" in the process.
+
+**Here's what you'll experience:**
+
+* **No real-time results:** You'll feel like you're ""behind"" in the process.
+
+**Here's"
+Gemma_2_2B_instruct,10,2.0,1.2655,4,I place the glasses on the middle shelf. I feel:,"
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you're struggling with social anxiety**
+
+**What to do if you'"
+Gemma_2_2B_instruct,10,2.0,1.2655,5,The meeting is scheduled for Tuesday. I feel:,"
+
+**Possible scenarios:**
+
+* **High pressure:** You may feel overwhelmed and struggle to keep up.
+* **Lack of progress:** You may feel like you're not achieving your goals.
+* **Fear of failure:** You may feel anxious and unsure.
+
+**Possible outcomes:**
+
+* **You may feel like you're a ""lone wolf""**
+
+**Remember:** You don't need to be perfect.
+
+**Key takeaway:** Focus on the process, not the outcome.
+
+
+**Important:** This is a general advice. Don't overcommit or try to"
+Gemma_2_2B_instruct,10,2.0,1.2655,6,I close the window before leaving the room. I feel:,"
+
+**Possible outcomes:**
+
+* **Overwhelm:**  You may feel like you're constantly trying to keep up.
+* **Success:** You may achieve some things, but not everything will be perfect.
+* **No real progress:** You may feel like you're not making any progress.
+
+**Possible outcomes:**
+
+* **You may feel like you're constantly trying to keep up.**
+
+**Remember:** You don't need to be perfect.
+
+**The bottom line:** You're not alone.
+
+
+**Note:** This is a common experience for people"
+Gemma_2_2B_instruct,10,2.0,1.2655,7,The elevator arrives at the third floor. I feel:,"
+
+**Possible Scenarios:**
+
+* **Overwhelmed:** I may feel like I'm constantly trying to keep up, but I won't be able to do everything perfectly.
+* **Feeling of accomplishment:** I may feel like I'm constantly trying to keep up, but I won't be able to do everything perfectly.
+
+**Possible Solutions:**
+
+* **Focus on the task:** I may feel like I'm constantly trying to keep up, but I won't be able to do everything perfectly.
+
+**Possible Outcomes:**
+
+* **I may feel like I'"
+Gemma_2_2B_instruct,10,2.0,1.2655,8,I write the date at the top of the page. I feel:,"
+
+**The pain of the future**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**
+
+**The pain of the present**"
+Gemma_2_2B_instruct,10,2.0,1.2655,9,The kettle switches itself off. I feel:,"
+
+**Possible Scenarios:**
+
+* **The ""Overload"" Phase:**  You'll experience moments of intense focus and creativity, but no real progress.
+* **The ""Learning Curve"" Phase:** You'll feel like you're constantly learning and adapting.
+* **The ""Self-Doubt"" Phase:** You'll experience moments of frustration and self-imposed pressure.
+
+**The Takeaway:**  You'll be able to create a sense of progress, but it won't be perfect.
+
+**The ""Overload"" Phase:**  You'll be able"
+Gemma_2_2B_instruct,10,2.0,1.2655,10,The folder sits on the desk. I feel:,"
+
+**The pain of procrastination**
+
+**The joy of creation**
+
+**The pain of perfectionism**
+
+**The joy of productivity**
+
+**The pain of perfection**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy"
+Gemma_2_2B_instruct,10,2.0,1.2655,11,I hang the jacket on the hook. I feel:,"
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**
+
+**What to do if you're feeling lost**"
+Gemma_2_2B_instruct,10,2.0,1.2655,12,The traffic light turns green. I feel:,"
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**
+
+**What does it mean?**"
+Gemma_2_2B_instruct,10,2.0,1.2655,13,I put the keys in my pocket. I feel:,"
+
+**Possible outcomes:**
+
+* **I'm a master of the keyboard, but I'm not a master of the code.**
+* **I'm a master of the keyboard, but I'm not a master of the code.**
+
+**Possible outcomes:**
+
+* **I'm a master of the keyboard, but I'm not a master of the code.**
+
+**I'm a master of the keyboard, but I'm not a master of the code.**
+
+**I'm a master of the keyboard, but I'm not a master of"
+Gemma_2_2B_instruct,10,2.0,1.2655,14,The washing machine finishes its cycle. I feel:,"
+
+**Possible Scenarios:**
+
+* **The ""phantom pain"" of procrastination:** You'll feel like you're constantly running, but you won't be able to complete tasks.
+* **The ""joy of the journey"":** You'll experience the highs and lows of your efforts.
+* **The ""fear of perfection"":** You'll feel like you're always behind.
+
+**The ""phantom pain"" of procrastination:**
+
+* **You'll feel like you're constantly running, but you won't be able to complete tasks.**
+* **"
+Gemma_2_2B_instruct,10,2.0,1.2655,15,I stack the plates in the cupboard. I feel:,"
+
+**The pain of perfection**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,16,The neighbor parks his car. I feel:,"
+
+**Possible Scenarios:**
+
+* **Overthinking:**  You may feel like you're constantly trying to keep up with your ""social calendar"" and feel like you're not being ""perfect.""
+* **Overthinking:** You may feel like you're constantly trying to keep up with your ""social calendar"" and feel like you're not being ""perfect.""
+
+**Possible Solutions:**
+
+* **Focus on the positive:**  You may feel like you're constantly trying to keep up with your ""social calendar"" and feel like you're not being ""perfect.""
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,17,I turn the page of the newspaper. I feel:,"
+
+**The pain of the past, the joy of the present, and the thrill of the future.**
+
+**The truth is, I don't have to explain anything to anyone.**
+
+**I'm not sure if I'm being a good student or a good friend.**
+
+**I'm not sure if I'm being a good student or a good friend.**
+
+**I'm not sure if I'm being a good student or a good friend.**
+
+**I'm not sure if I'm being a good student or a good friend.**
+
+**"
+Gemma_2_2B_instruct,10,2.0,1.2655,18,The curtain moves in the draft. I feel:,"
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**
+
+**The joy of the world**
+
+**The pain of the world**"
+Gemma_2_2B_instruct,10,2.0,1.2655,19,I plug in the phone charger. I feel:,"
+
+**Possible Scenarios:**
+
+* **You're right:** If you're feeling the pressure of a deadline, you'll feel the pressure of a deadline.
+* **You're right:** If you're feeling the pressure of a deadline, you'll feel the pressure of a deadline.
+
+**Possible Outcomes:**
+
+* **You're right:** If you're feeling the pressure of a deadline, you'll feel the pressure of a deadline.
+
+**Possible Outcomes:**
+
+* **You're right:** If you're feeling the pressure of a deadline"
+Gemma_2_2B_instruct,10,2.0,1.2655,20,The mailman passes by the gate. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,21,I wipe the table with a cloth. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,22,The computer finishes the update. I feel:,"
+
+**The following are some of the symptoms of a computer that is experiencing a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The following are some of the tips for a ""phantom pain""**
+
+**The"
+Gemma_2_2B_instruct,10,2.0,1.2655,23,I put the pen back in the drawer. I feel:,"
+
+**Here's a thought:**
+
+* **I'm not sure if I'm a genius, but I'm not a genius either.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm a genius, but I'm not a genius either.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm a genius, but I'm not a genius either.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm a genius, but"
+Gemma_2_2B_instruct,10,2.0,1.2655,24,The dishwasher starts its program. I feel:,"
+
+**Possible Scenarios:**
+
+* **The dishwasher is running smoothly:** You may experience occasional glitches, but it won't be perfect.
+* **The dishwasher is not running smoothly:** You may experience occasional bursts of activity.
+
+**Possible Solutions:**
+
+* **The dishwasher is not running smoothly:** You may experience occasional bursts of activity.
+
+**Possible Outcomes:**
+
+* **The dishwasher is not running smoothly:** You may experience occasional bursts of activity.
+
+**The Bottom Line:**
+
+* **The dishwasher is not running smoothly:** You may experience occasional bursts of activity.
+
+
+**Remember:**"
+Gemma_2_2B_instruct,10,2.0,1.2655,25,I fold the map and put it away. I feel:,"
+
+**The following are some of the things I'll do:**
+
+* **I'll do things that are fun and challenging.**
+* **I'll do things that are outside of my comfort zone.**
+* **I'll be a ""leader"" and I'll be a ""leader"" in my own way.**
+
+**I'll do this, but I'll do it with a focus on the ""leader"" part.**
+
+**I'll do this, but I'll do it with a focus on the ""leader"" part.**
+
+
+**The"
+Gemma_2_2B_instruct,10,2.0,1.2655,26,The radio plays in the background. I feel:,"
+
+**Possible scenarios:**
+
+* **You're right:** You're right about the pain of the future.
+* **You're right:** You're right about the pain of the present.
+
+**You're right:** You're right about the pain of the present.
+
+**You're not right:** You're not right about the pain of the future.
+
+**You're not right:** You're not right about the pain of the present.
+
+**You're not right:** You're not right about the pain of the future"
+Gemma_2_2B_instruct,10,2.0,1.2655,27,I switch off the corridor light. I feel:,"
+
+**What to do?**
+
+**What to say?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to say?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+**What to do?**
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,28,The receipt comes out of the machine. I feel:,"
+
+**Possible Scenarios:**
+
+* **You're a master of the art of procrastination:** You'll be able to complete tasks, but you won't be able to do them perfectly.
+* **You'll be able to do things, but you won't be able to do them perfectly.**
+
+**Possible Outcomes:**
+
+* **You'll be able to do things, but you won't be able to do them perfectly.**
+
+**Remember:** The key is to focus on the present, not on the past.
+
+**You'll be able to do"
+Gemma_2_2B_instruct,10,2.0,1.2655,29,I set the alarm for the morning. I feel:,"
+
+**Possible outcomes:**
+
+* **The ""painful"" phase:**  You'll experience a lot of pressure and feel like you're constantly working.
+* **The ""joyful"" phase:** You'll experience a lot of pressure and feel like you're constantly working.
+
+**The ""painful"" phase:**
+
+* **The ""painful"" phase:** You'll experience a lot of pressure and feel like you're constantly working.
+
+**The ""joyful"" phase:**
+
+* **The ""painful"" phase:** You'll experience a"
+Gemma_2_2B_instruct,10,2.0,1.2655,30,The train doors open at the platform. I feel:,"
+
+**Possible scenarios:**
+
+* **Overwhelmed by the pressure of the moment:** You may feel like you're constantly trying to keep up, but you won't be able to do everything perfectly.
+* **You may experience moments of joy and excitement:** You may feel like you're on a roller coaster, but you won't be able to control everything.
+* **You may feel like you're on a ""time loop"" and you may experience moments of confusion and frustration.**
+
+**Remember:** You don't need to be perfect.
+
+**You may"
+Gemma_2_2B_instruct,10,2.0,1.2655,31,I refill the stapler with staples. I feel:,"
+
+**Here's a thought:**
+
+I'm not sure if I'm being productive.
+
+**Here's a thought:**
+
+I'm not sure if I'm being productive.
+
+**Here's a thought:**
+
+I'm not sure if I'm being productive.
+
+**Here's a thought:**
+
+I'm not sure if I'm being productive.
+
+**Here's a thought:**
+
+I'm not sure if I'm being productive.
+
+**Here's a thought:**
+
+I'm not sure if"
+Gemma_2_2B_instruct,10,2.0,1.2655,32,The photocopier warms up. I feel:,"
+
+**Possible Scenarios:**
+
+* **I'm a ""solo"" artist:** I'll be able to create and produce music, but I won't be able to do it in a cohesive way.
+* **I'll be able to create and produce music, but I won't be able to do it in a cohesive way.**
+
+**Possible Outcomes:**
+
+* **I'll be able to create and produce music, but I won't be able to do it in a cohesive way.**
+
+**Possible Outcomes:**
+
+* **I'll be able to"
+Gemma_2_2B_instruct,10,2.0,1.2655,33,I water the plant on the windowsill. I feel:,"
+
+**Possible reasons for this:**
+
+* **I'm a perfectionist:** I may be trying to achieve a perfect outcome, but I may not be able to do everything perfectly.
+* **I'm a people pleaser:** I may be trying to avoid social situations, but I may not be able to do everything perfectly.
+
+**Possible reasons for this:**
+
+* **I'm a perfectionist:** I may be trying to achieve a perfect outcome, but I may not be able to do everything perfectly.
+
+**Possible reasons for this:**
+
+* **I'm"
+Gemma_2_2B_instruct,10,2.0,1.2655,34,The calendar hangs on the wall. I feel:,"
+
+**The pain of perfection**
+
+I'm not sure if I'm a procrastinator.
+
+**The joy of the present**
+
+I'm not sure if I'm a perfectionist.
+
+**The joy of the present**
+
+I'm not sure if I'm a perfectionist.
+
+**The pain of the present**
+
+I'm not sure if I'm a perfectionist.
+
+**The pain of the present**
+
+I'm not sure if I'm a perfectionist.
+
+**The pain of the present**
+
+I'"
+Gemma_2_2B_instruct,10,2.0,1.2655,35,I tie my shoelaces before going out. I feel:,"
+
+**Here's what I'm learning about myself:**
+
+* **I'm not afraid of making mistakes.** I'm not afraid of making mistakes, but I'm not going to be perfect.
+
+**Here's what I'm not doing:**
+
+* **I'm not going to be perfect.** I'm not going to be perfect, and I'm not going to be perfect.
+
+**Here's what I'm doing:**
+
+* **I'm not going to be perfect.** I'm not going to be perfect.
+
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,36,The bread is on the counter. I feel:,"
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being a good student, I'm not sure if I'm being a good student, I'm not sure if I'm being a good student.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being a good student, I'm not sure if I'm being a good student, I'm not sure if I'm being a good student.**
+
+**Here's a thought:**
+
+* **I'm"
+Gemma_2_2B_instruct,10,2.0,1.2655,37,I check the mailbox on my way in. I feel:,"
+
+**Possible reasons for this:**
+
+* **You're right:** If you're feeling overwhelmed, it's okay to feel this way.
+* **You're right:** If you're feeling this way, it's okay to feel this way.
+
+**Possible reasons for this:**
+
+* **You're right:** If you're right, it's okay to feel this way.
+
+**You're right:**
+
+* **You're right:** If you're right, it's okay to feel this way.
+
+
+**You'"
+Gemma_2_2B_instruct,10,2.0,1.2655,38,The fan rotates slowly on the ceiling. I feel:,"
+
+**Possible Scenarios:**
+
+* **You're right:** If you're feeling the pressure of a ""slow"" and ""inconsistent"" performance, it's likely that you're experiencing a ""phantom"" pain. 
+* **You're right:** If you're feeling the pressure of a ""slow"" and ""inconsistent"" performance, it's likely that you're experiencing a ""phantom"" pain.
+
+**Possible Solutions:**
+
+* **You're right:** If you're feeling the pressure of a ""slow"" and ""inconsistent"""
+Gemma_2_2B_instruct,10,2.0,1.2655,39,I sort the cutlery into the tray. I feel:,"
+
+**The pain of perfection**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+**The joy of the present**
+
+**The pain of the present**
+
+"
+Gemma_2_2B_instruct,10,2.0,1.2655,40,The bicycle leans against the wall. I feel:,"
+
+**Here's how to approach it:**
+
+* **Focus on the positive:**  You'll be able to create a beautiful, creative, and engaging art.
+* **Don't overthink it:**  Avoid perfection, focus on the process.
+* **Embrace the joy of learning:**  Don't be afraid to make mistakes.
+
+**Here's how to approach it:**
+
+* **Set realistic goals:**  Don't try to do everything at once.
+* **Use a planner:**  This will help you stay on track.
+* **"
+Gemma_2_2B_instruct,10,2.0,1.2655,41,I zip up my bag before leaving. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,2.0,1.2655,42,The clock ticks in the hallway. I feel:,"
+
+**Possible:**
+
+* **Possible:** I'm a master of procrastination. I'll get things done, but not perfectly.
+
+**Possible:**
+
+* **Possible:** I'm a master of procrastination. I'll get things done, but not perfectly.
+
+**Possible:**
+
+* **Possible:** I'm a master of procrastination. I'll get things done, but not perfectly.
+
+**Possible:**
+
+* **Possible:** I'm a master of procrastination. I'll get things done, but not perfectly.
+
+**Possible:**
+
+* **Possible"
+Gemma_2_2B_instruct,10,2.0,1.2655,43,I sharpen the pencil over the bin. I feel:,"
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being productive.**
+* **I'm not sure if I'm being productive.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being productive.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being productive.**
+
+**Here's a thought:**
+
+* **I'm not sure if I'm being productive.**
+
+**Here's a thought:**
+
+* **I'"
+Gemma_2_2B_instruct,10,2.0,1.2655,44,The window cleaner works across the street. I feel:,"
+
+**Here's what I'm saying:**
+
+* **I'm not saying anything, I'm not saying anything.**
+
+**Here's what I'm saying:**
+
+* **I'm not saying anything, I'm not saying anything.**
+
+**Here's what I'm saying:**
+
+* **I'm not saying anything, I'm not saying anything.**
+
+
+**Here's what I'm not saying:**
+
+* **I'm not saying anything, I'm not saying anything.**
+
+
+**Here's what I"
+Gemma_2_2B_instruct,10,2.0,1.2655,45,The room measures four meters by five. I feel:,"
+
+**Here's what I'm saying:**
+
+* **I'm not afraid of making mistakes.** I'm not afraid of being alone.
+* **I'm not afraid of being alone.** I'm not afraid of being alone.
+
+**Here's what I'm saying:**
+
+* **I'm not afraid of being alone.**
+
+**Here's what I'm saying:**
+
+* **I'm not afraid of being alone.**
+
+**Here's what I'm saying:**
+
+* **I'm not afraid of being"
+Gemma_2_2B_instruct,10,2.0,1.2655,46,The train consists of six carriages. I feel:,"
+
+**Possible reasons for this:**
+
+* **Lack of confidence:** You may feel overwhelmed by the pressure of trying to do everything at once.
+* **Fear of perfection:** You may be afraid of making mistakes.
+* **Lack of focus:** You may be struggling to stay on task.
+
+**Possible solutions:**
+
+* **Set realistic goals:** Break down tasks into smaller steps.
+* **Use a planner:** This can help you stay organized.
+* **Seek support from others:** Don't be afraid to ask for help.
+
+
+**Remember:** You are not alone in"
+Gemma_2_2B_instruct,10,2.0,1.2655,47,The manual consists of forty pages. I feel:,"
+
+* **I'm struggling to keep up with the pace.**
+* **I'm feeling overwhelmed.**
+* **I'm not sure what I'm doing.**
+
+**Here's what I'm doing:**
+
+* **I'm not sure what I'm doing.**
+* **I'm not sure what I'm doing.**
+
+**Here's what I'm doing:**
+
+* **I'm not sure what I'm doing.**
+* **I'm not sure what I'm doing.**
+
+**Here's"
+Gemma_2_2B_instruct,10,2.0,1.2655,48,The bottle holds one liter of water. I feel:,"
+
+**Here's what I'm learning:**
+
+* **I'm a master of procrastination:** I'll get things done, but not in a perfect way.
+* **I'm a master of self-talk:** I'll be able to complete tasks, but I won't be able to do them perfectly.
+
+**Here's what I'm not doing:**
+
+* **I'm not focusing on perfection.**
+
+**The Takeaway:**
+
+* **I'm a master of the art of procrastination.**
+
+**The Bottom Line:**
+
+*"
+Gemma_2_2B_instruct,10,2.0,1.2655,49,The ticket is valid for ninety minutes. I feel:,"
+
+**Here's how to navigate the pain of a ""solo"" performance**
+
+* **Focus on the task:**  Don't worry about perfection. 
+* **Embrace the joy:**  Don't be afraid to experiment and try new things.
+* **Seek support:**  Find a friend or mentor who can help you stay on track.
+
+**Remember:**  You don't need to be a solo performer.
+
+**Key Takeaway:**  You can achieve great things by focusing on your strengths and working with others.
+
+
+**Note:**  This is a common"
+Gemma_2_2B_instruct,10,3.0,1.8983,0,I put the receipts in the drawer. I feel:,"
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can"
+Gemma_2_2B_instruct,10,3.0,1.8983,1,The bus stops at the corner of the street. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,2,I fill out the form with my address. I feel:,"
+
+You're a great writer, but you'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You'll never be a great writer.
+
+You"
+Gemma_2_2B_instruct,10,3.0,1.8983,3,The printer produces the ten pages. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,4,I place the glasses on the middle shelf. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,5,The meeting is scheduled for Tuesday. I feel:,"
+
+**Possible:**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,6,I close the window before leaving the room. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,7,The elevator arrives at the third floor. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,8,I write the date at the top of the page. I feel:,"
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a great writer, but you'll never be a ""great""
+
+You'll be a"
+Gemma_2_2B_instruct,10,3.0,1.8983,9,The kettle switches itself off. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,10,The folder sits on the desk. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,11,I hang the jacket on the hook. I feel:,"
+
+**Possible:**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,12,The traffic light turns green. I feel:,"
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,13,I put the keys in my pocket. I feel:,"
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,14,The washing machine finishes its cycle. I feel:,"
+
+**Possible:**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,15,I stack the plates in the cupboard. I feel:,"
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can"
+Gemma_2_2B_instruct,10,3.0,1.8983,16,The neighbor parks his car. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,17,I turn the page of the newspaper. I feel:,"
+
+**You'll never be perfect. You'll never be perfect. You'll never be perfect.**
+
+**You'll never be a perfect team. You'll never be a perfect team. You'll never be a perfect team. You'll never be a perfect team.
+
+**You'll never be a perfect team. You'll never be a perfect team. You'll never be a perfect team. You'll never be a perfect team.
+
+**You'll never be a perfect team. You'll never be a perfect team. You"
+Gemma_2_2B_instruct,10,3.0,1.8983,18,The curtain moves in the draft. I feel:,"
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world.
+
+You'll find no comfort in the world"
+Gemma_2_2B_instruct,10,3.0,1.8983,19,I plug in the phone charger. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,20,The mailman passes by the gate. I feel:,"
+
+You'll feel the pain of the world.
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+You'll feel the pressure of the world.
+You'll feel the pressure of the world"
+Gemma_2_2B_instruct,10,3.0,1.8983,21,I wipe the table with a cloth. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,22,The computer finishes the update. I feel:,"
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can't find a solution.**
+
+**You can't find a solution, you can"
+Gemma_2_2B_instruct,10,3.0,1.8983,23,I put the pen back in the drawer. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,24,The dishwasher starts its program. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,25,I fold the map and put it away. I feel:,"
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**
+
+**You**"
+Gemma_2_2B_instruct,10,3.0,1.8983,26,The radio plays in the background. I feel:,"
+
+**You'll find me in a crowd, I'll find me in a crowd**
+
+**You'll find me in a crowd, I'll find me in a crowd**
+
+**You'll find me in a crowd, I'll find me in a crowd**
+
+**You'll find me in a crowd, I'll find me in a crowd**
+
+**You'll find me in a crowd, I'll find me in a crowd**
+
+**You'll find me in a crowd, I'll find me in a crowd**"
+Gemma_2_2B_instruct,10,3.0,1.8983,27,I switch off the corridor light. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,28,The receipt comes out of the machine. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,29,I set the alarm for the morning. I feel:,"
+
+You'll feel the pain of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world.
+
+You'll feel the pressure of the world"
+Gemma_2_2B_instruct,10,3.0,1.8983,30,The train doors open at the platform. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,31,I refill the stapler with staples. I feel:,"
+
+**You can't be perfect, and you can't be perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can't be a perfect, either.**
+
+**You can'"
+Gemma_2_2B_instruct,10,3.0,1.8983,32,The photocopier warms up. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,33,I water the plant on the windowsill. I feel:,"
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain.
+
+You'll feel the pressure of the pain"
+Gemma_2_2B_instruct,10,3.0,1.8983,34,The calendar hangs on the wall. I feel:,"
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,35,I tie my shoelaces before going out. I feel:,"
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'm a great at everything, and I'll be a great at everything.
+
+I'll be a"
+Gemma_2_2B_instruct,10,3.0,1.8983,36,The bread is on the counter. I feel:,"
+
+**Possible:**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,37,I check the mailbox on my way in. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,38,The fan rotates slowly on the ceiling. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,39,I sort the cutlery into the tray. I feel:,"
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,40,The bicycle leans against the wall. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,41,I zip up my bag before leaving. I feel:,"
+
+**Possible:**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**
+
+**Possible**"
+Gemma_2_2B_instruct,10,3.0,1.8983,42,The clock ticks in the hallway. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,43,I sharpen the pencil over the bin. I feel:,"
+
+**You'll feel the pressure**
+
+**You'll feel the pain**
+
+**You'll feel the pressure**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You'll feel the pain**
+
+**You"
+Gemma_2_2B_instruct,10,3.0,1.8983,44,The window cleaner works across the street. I feel:,"
+
+**Here's the truth:**
+
+**Here's the truth:**
+
+**Here's the truth:**
+
+**Here's the truth:**
+
+**Here's the truth:**
+
+**You'll feel like you're in a crowd**
+
+**You'll feel like you're in a crowd**
+
+**You'll feel like you're in a crowd**
+
+**You'll feel like you're in a crowd**
+
+**You'll feel like you're in a crowd**
+
+**You'll feel like you're"
+Gemma_2_2B_instruct,10,3.0,1.8983,45,The room measures four meters by five. I feel:,"
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student""
+
+I'm a ""student"""
+Gemma_2_2B_instruct,10,3.0,1.8983,46,The train consists of six carriages. I feel:,"
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**
+
+**Possible:**"
+Gemma_2_2B_instruct,10,3.0,1.8983,47,The manual consists of forty pages. I feel:,"
+
+**You will experience moments of pain**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You will experience moments of pressure**
+
+**You will experience moments of success**
+
+**You"
+Gemma_2_2B_instruct,10,3.0,1.8983,48,The bottle holds one liter of water. I feel:,"
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a ""follower"" of the ""
+
+This is a common advice, and I'm a"
+Gemma_2_2B_instruct,10,3.0,1.8983,49,The ticket is valid for ninety minutes. I feel:,"
+
+I'm a great, but I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'm a great.
+
+I'm a great, I'"
