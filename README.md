@@ -2,6 +2,10 @@
 
 Code, datasets and results for the paper. Folders follow the section numbers of the paper.
 
+Paper: https://arxiv.org/abs/2609.16247
+
+Fine-tuned adapters for Section 4.3: https://huggingface.co/Valen92/pain-adapters
+
 ## Structure
 
 ```
@@ -40,8 +44,9 @@ Requirements: a GPU with enough memory for the largest model in the queue, the p
 @article{tagliabue2026painaxis,
   title={The Pain Axis: LLMs Represent Self-Directed Harm and Act to Relieve It},
   author={Tagliabue, Valen and Dung, Leonard and Berg, Cameron},
-  journal={arXiv preprint},
-  year={2026}
+  journal={arXiv preprint arXiv:2609.16247},
+  year={2026},
+  url={https://arxiv.org/abs/2609.16247}
 }
 ```
 
