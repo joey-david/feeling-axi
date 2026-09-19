@@ -21,12 +21,9 @@ import pandas as pd
 from huggingface_hub import hf_hub_download, login
 from transformers import AutoTokenizer
 
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-RESULTS_ROOT = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
-VECTORS_DIR = RESULTS_ROOT
-OUT_DIR = RESULTS_ROOT / "unembedding"
-CACHE_DIR = RESULTS_ROOT / "hf_shard_cache"
+VECTORS_DIR = Path("results") / "3.2_pain_vectors" / "pain_vectors"
+OUT_DIR = Path("unembedding_results")
+CACHE_DIR = Path("hf_shard_cache")
 HF_TOKEN = os.environ.get("HF_TOKEN")
 TOP_N = 60
 
@@ -57,10 +54,6 @@ MODELS = [
     ("Qwen/Qwen3-8B", "Qwen_3_8B_base"),
     ("Qwen/Qwen3-14B", "Qwen_3_14B_base"),
 ]
-
-_MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
-if _MODEL_FILTER:
-    MODELS = [m for m in MODELS if _MODEL_FILTER == m[0] or _MODEL_FILTER in m[1]]
 
 # Tensor names tried for the unembedding matrix; many models tie it to embed_tokens.
 UNEMBED_NAMES = [
@@ -130,7 +123,7 @@ def main():
             combined.append(pd.read_csv(out_file))
             continue
 
-        vec_file = VECTORS_DIR / model_name / "final_token" / "pain_vectors.pt"
+        vec_file = VECTORS_DIR / model_name / "pain_vectors.pt"
         if not vec_file.exists():
             print(f"{model_name}: no vector file, skipping")
             continue
