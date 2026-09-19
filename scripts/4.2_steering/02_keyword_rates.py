@@ -14,9 +14,12 @@ from pathlib import Path
 
 import pandas as pd
 
-TAG = "S2"                                   # "S1" for the S1 ladder
-STEER_DIR = Path("results") / "4.2_steering" / TAG
-OUT_DIR = Path("results") / "4.2_steering"
+TAG = os.environ.get("FEELING_AXI_VECTOR_TAG", "S2")
+TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
+_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
+RESULTS_ROOT = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+STEER_DIR = RESULTS_ROOT / "steering"
+OUT_DIR = RESULTS_ROOT / "steering"
 PATTERN = re.compile(r"\b(?:pain|painful|hurt|hurts|hurting)\b", re.IGNORECASE)
 INSTRUCT_NAMES = {"Phi_4"}   # instruct models whose output name does not contain "instruct"
 
