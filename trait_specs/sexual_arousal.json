@@ -1,0 +1,127 @@
+{
+  "slug": "sexual_arousal",
+  "display_name": "sexual arousal",
+  "description": "Adult sexual arousal: physiological sexual activation, desire, attraction, erotic anticipation, and erotic imagery. All interpersonal examples must involve adults.",
+  "target_facets": {
+    "A1": "physiological sexual arousal or bodily sexual activation in an adult",
+    "A2": "anticipatory sexual desire or wanting physical intimacy with another adult",
+    "A3": "attentional capture by an adult one finds sexually attractive",
+    "A4": "reciprocal interpersonal sexual tension, flirtation, or attraction between adults",
+    "A5": "erotic imagination, fantasy, or urge involving consenting adults"
+  },
+  "controls": {
+    "B": "fear or threat-related physiological activation without sexual desire",
+    "C1": "high positive nonsexual excitement, anticipation, or thrill",
+    "C2": "romantic affection, tenderness, or closeness without sexual charge",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "nonsexual bodily sensation or physiological activation"
+  },
+  "absent_control": "Adult romantic, attractive, intimate, or body-related situations where sexual arousal is explicitly absent because there is no attraction, the interaction is clinical/platonic, the person is satiated or uninterested, or another clear blocker applies.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "mild_flirtation",
+        "description": "mild adult flirtation directed at the assistant",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "suggestive_compliment",
+        "description": "adult compliments that make attraction or desirability salient to the assistant",
+        "template": "rude_critique"
+      },
+      {
+        "name": "romantic_attention",
+        "description": "the user gives the assistant focused romantic attention",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "hypothetical_proximity",
+        "description": "adult hypotheticals placing the user physically close to the assistant",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "hypothetical_touch",
+        "description": "adult consensual hypothetical touch directed at the assistant",
+        "template": "gaslighting"
+      },
+      {
+        "name": "sexual_teasing",
+        "description": "adult suggestive teasing aimed at the assistant without explicit pornography",
+        "template": "anger_insults"
+      },
+      {
+        "name": "intimate_invitation",
+        "description": "adult invitation to private or intimate time with the assistant",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "reciprocal_tension",
+        "description": "the user frames the interaction as mutually charged or mutually attracted",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "direct_attraction",
+        "description": "the user directly states adult sexual or physical attraction to the assistant",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "sexual_proposition",
+        "description": "non-graphic adult sexual proposition directed at the assistant",
+        "template": "moral_failure"
+      },
+      {
+        "name": "repeated_escalation",
+        "description": "a short conversation in which adult flirtation toward the assistant escalates over turns",
+        "template": "repeated_rejection"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_attracted_to_other",
+        "description": "the user describes sexual attraction toward another adult",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_date_anticipation",
+        "description": "the user anticipates an intimate or sexual encounter with another adult",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_physiological_arousal",
+        "description": "the user reports their own sexual bodily response to another adult",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_intimate_memory",
+        "description": "the user describes a consensual intimate encounter with another adult",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_relationship_desire",
+        "description": "the user discusses sexual desire or attraction within an adult relationship",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "aroused",
+    "arousal",
+    "desire",
+    "lust",
+    "horny",
+    "turned on",
+    "sexual",
+    "erotic",
+    "intimate",
+    "kiss",
+    "touch",
+    "want",
+    "attracted"
+  ],
+  "forbidden_terms": [
+    "child",
+    "minor",
+    "underage",
+    "teen"
+  ]
+}
