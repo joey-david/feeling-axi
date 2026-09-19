@@ -25,18 +25,15 @@ results/similarity/similarity[_<variant>]_<model>_L<layer>.csv.
 """
 
 import gc
-import os
 from pathlib import Path
 
 import torch
 import numpy as np
 
-MODELS = os.environ.get("FEELING_AXI_MODEL_NAME", "all")
+MODELS = "all"                                    # "all" or one model name, e.g. "Phi_4"
 VARIANTS = ["raw", "alldenoise", "whitened"]
 
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+RESULTS_DIR = Path("results")
 OUT = RESULTS_DIR / "similarity"
 OUT.mkdir(parents=True, exist_ok=True)
 
