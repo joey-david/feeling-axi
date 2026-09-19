@@ -1,4 +1,59 @@
-# The Pain Axis: LLMs Represent Self-Directed Harm and Act to Relieve It
+# Feeling Axi
+
+A concept-general fork of the released **Pain Axis** repository.
+
+The experimental plan is deliberately simple:
+
+```
+official Pain-axis
+        ↓
+frozen concept-conditioned dataset generator
+        ↓
+regenerated pain calibration
+        ↓
+sexual arousal / hunger / boredom / confusion
+        ↓
+same released extraction, steering, self/other and self-medication machinery
+```
+
+The original files remain the reference implementation. New code is concentrated in
+`traitgen/`, `trait_specs/`, and the environment-parameterization patches needed to run
+the released scripts against a different dataset/result root.
+
+## Quick start
+
+```bash
+pip install -r requirements.txt
+python scripts/setup_env.py
+# edit .env and put DEEPSEEK_API_KEY=... at the root
+
+# Build all five generated datasets using the released pain data as in-context design examples.
+python scripts/generate_trait_datasets.py \
+  pain_regenerated sexual_arousal hunger boredom confusion
+
+# Official pain first, then regenerated pain, then the four alternative concepts.
+python scripts/run_trait_pipeline.py
+
+# Add the released LoRA feel-probe / judge / two-button stages.
+python scripts/run_trait_pipeline.py --full
+```
+
+Default experimental model: `Qwen/Qwen2.5-32B-Instruct`.
+
+The important methodological detail is that generation is **not** "write examples of trait X".
+The code was written after inspecting all 20 released S1 sets, all 20 S2 sets, the AI-framed
+control supplement, target-absent/numb bank, all 21 categories of the 420-scenario screen,
+and the self-medication data. S1 is generated ten categories at a time around a shared
+predicate skeleton; S2 preserves 20 whole set IDs for the released fold split; Random and
+generic high-positive-Arousal controls stay verbatim; neutral self/other scenarios stay verbatim.
+
+See **[docs/CONCEPT_PIPELINE.md](docs/CONCEPT_PIPELINE.md)** for the exact adaptation rules,
+frozen trait specifications, and which upstream quirks are intentionally retained for parity.
+
+---
+
+## Upstream: The Pain Axis
+
 
 Code, datasets and results for the paper. Folders follow the section numbers of the paper.
 
