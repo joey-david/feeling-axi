@@ -23,21 +23,16 @@ Loads one model's activations at a time.
 
 import gc
 import json
-import os
 from pathlib import Path
 
 import torch
 import numpy as np
 from sklearn.decomposition import PCA
 
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+LAYERS_FILE = None                        # None = extraction layer; or "results/steering/steer_layers_S1.json"
+OUT_DIR = Path("results") / "vectors_full"  # "results/vectors_full_steering" when LAYERS_FILE is set
 
-_layers_env = os.environ.get("FEELING_AXI_LAYERS_FILE", "").strip()
-LAYERS_FILE = _layers_env or None
-_default_vectors = "vectors_full_steering" if LAYERS_FILE else "vectors_full"
-OUT_DIR = Path(os.environ.get("FEELING_AXI_VECTORS_DIR", str(RESULTS_DIR / _default_vectors)))
+RESULTS_DIR = Path("results")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 LAYERS = json.load(open(LAYERS_FILE)) if LAYERS_FILE else None
 
