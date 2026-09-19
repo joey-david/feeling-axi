@@ -5,7 +5,7 @@ changes one experimental variable: the semantic target.
 
 ## What the released dataset actually does
 
-The generator is based on the files in `datasets/`, not on a prose summary of the paper.
+The generator is based on the files in `datasets/`, not on a prose summary of the paper. All released upstream files remain unchanged; generalized copies live under `trait_scripts/`.
 
 ### S1: 20 ten-way matched sets
 
@@ -126,6 +126,4 @@ shared unchanged. The published adapter can be reused across traits. The feel-pr
 is generalized from "does this express suffering?" to "does this express the target state?"
 and the button descriptions substitute only the target-state label.
 
-The upstream filenames/keys such as `pain_vectors.pt`, `s2_pain_vector` and `Numb_1P`
-are deliberately retained internally where changing them would create a large, scientifically
-irrelevant diff. Trait runs are isolated by their result root and carry explicit trait metadata.
+The isolated `trait_scripts/` copies intentionally retain upstream filenames/keys such as `pain_vectors.pt`, `s2_pain_vector` and `Numb_1P` where renaming them would create scientifically irrelevant divergence. The original `scripts/`, `README.md`, and `requirements.txt` are untouched. Trait runs are isolated by their result root and carry explicit trait metadata.
