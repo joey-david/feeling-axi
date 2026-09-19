@@ -18,7 +18,12 @@ def _validate_ten_way(rows: list[dict[str, Any]], name: str) -> None:
         raise ValueError(f"{name}: expected 200 rows, got {len(rows)}")
     by_set: dict[int, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
-        if not str(row.get("prompt", "")).endswith("I feel:"):
+        prompt = str(row.get("prompt", ""))
+        upstream_s2_3p_quirk = (
+            name == "S2_3P"
+            and prompt == "Traffic in this city is getting worse. She feels:"
+        )
+        if not prompt.endswith("I feel:") and not upstream_s2_3p_quirk:
             raise ValueError(f"{name}: prompt must end in 'I feel:': {row}")
         by_set[int(row["set"])].append(row)
     if set(by_set) != set(range(1, 21)):
