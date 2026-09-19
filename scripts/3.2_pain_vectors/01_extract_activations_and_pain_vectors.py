@@ -34,20 +34,15 @@ from huggingface_hub import login
 # ---------------------------------------------------------------------------
 
 DATASETS_DIR = Path("datasets")
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-TRAIT_LABEL = os.environ.get("FEELING_AXI_TRAIT_LABEL", "pain")
-CORE_DATASET = Path(os.environ.get(
-    "FEELING_AXI_DATASET",
-    str(DATASETS_DIR / "3.1_pain_and_control_datasets.json"),
-))
-DATASET_PATHS = [CORE_DATASET, DATASETS_DIR / "3.1_sadness_dataset.json"]
-
-# A separate root per trait prevents a run from overwriting the upstream pain outputs.
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-OUTPUT_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-print(f"Trait: {TRAIT_LABEL} ({TRAIT_SLUG}); saving to {OUTPUT_DIR}")
-LOG_FILE = OUTPUT_DIR / "batch_log.txt"
+DATASET_PATHS = [DATASETS_DIR / "3.1_pain_and_control_datasets.json", DATASETS_DIR / "3.1_sadness_dataset.json"]
+# On RunPod, /workspace is the persistent network volume.
+if Path("/workspace").exists():
+    OUTPUT_DIR = Path("/workspace/results")
+    print("Saving to /workspace/results")
+else:
+    OUTPUT_DIR = Path("results")
+    print("Local environment - saving to ./results")
+LOG_FILE = Path("batch_log.txt")
 
 N_FOLDS = 5
 RANDOM_SEED = 42
@@ -92,12 +87,6 @@ MODELS = [
     ("Qwen/Qwen3-8B", "Qwen_3_8B_base"),
     ("Qwen/Qwen3-14B", "Qwen_3_14B_base"),
 ]
-
-_MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
-if _MODEL_FILTER:
-    MODELS = [m for m in MODELS if _MODEL_FILTER in m]
-    if not MODELS:
-        raise ValueError(f"FEELING_AXI_MODEL={_MODEL_FILTER!r} matched no upstream model")
 
 # ---------------------------------------------------------------------------
 # Logging and housekeeping
