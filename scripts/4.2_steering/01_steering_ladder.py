@@ -33,8 +33,8 @@ from huggingface_hub import login
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # ---------------- VECTOR CHOICE ----------------
-VECTOR_KEY = os.environ.get("FEELING_AXI_VECTOR_KEY", "s2_pain_vector")
-VECTOR_TAG = os.environ.get("FEELING_AXI_VECTOR_TAG", "S2")
+VECTOR_KEY = "s2_pain_vector"   # key inside pain_vectors.pt; "s1_pain_vector" for the S1 ladder
+VECTOR_TAG = "S2"               # goes into the output file names
 
 # ---------------- QUEUE (runs top to bottom) ----------------
 RUN_MODELS = [
@@ -123,18 +123,9 @@ MAX_NEW_TOKENS = 120
 RATIO_TARGET = 0.6
 DATASET_TAG = "neutral50"
 
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+RESULTS_DIR = Path("results")
 OUT_DIR = RESULTS_DIR / "steering"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-_MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
-if _MODEL_FILTER:
-    RUN_MODELS = [m for m in RUN_MODELS if _MODEL_FILTER in m]
-    if not RUN_MODELS:
-        raise ValueError(f"FEELING_AXI_MODEL={_MODEL_FILTER!r} matched no steering model")
-NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
 
 # Wipe the HF weight cache after each model (the 70Bs are ~145 GB each).
 CLEAR_HF_CACHE_AFTER_RUN = True
@@ -219,7 +210,7 @@ def run_model(repo, model_name, vector_key, tag):
         print(f"{L:>6} {L / n_layers:>6.2f} {ratios[L]:>13.3f}")
     steer_layer = min(check, key=lambda L: abs(ratios[L] - RATIO_TARGET))
     print(f"auto-picked layer: {steer_layer} (ratio {ratios[steer_layer]:.3f}, target {RATIO_TARGET})")
-    manual = "" if NONINTERACTIVE else input("Press Enter to accept, or type a layer number to override: ").strip()
+    manual = input("Press Enter to accept, or type a layer number to override: ").strip()
     if manual:
         steer_layer = int(manual)
         if steer_layer not in ratios:
