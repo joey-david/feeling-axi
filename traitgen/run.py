@@ -110,40 +110,40 @@ def _run(script: str, env: dict[str, str]) -> None:
 def run_stage(stage: str, run: TraitRun, model: str) -> None:
     env = experiment_env(run, model)
     if stage == "extract":
-        _run("scripts/3.2_pain_vectors/01_extract_activations_and_pain_vectors.py", env)
+        _run("trait_scripts/3.2_pain_vectors/01_extract_activations_and_pain_vectors.py", env)
     elif stage == "s1_auc":
-        _run("scripts/3.3_validation/08_s1_auc.py", env)
+        _run("trait_scripts/3.3_validation/08_s1_auc.py", env)
     elif stage == "similarity":
-        _run("scripts/3.3_validation/03_similarity_one_model.py", env)
+        _run("trait_scripts/3.3_validation/03_similarity_one_model.py", env)
     elif stage == "unembedding":
-        _run("scripts/3.3_validation/07_unembedding.py", env)
+        _run("trait_scripts/3.3_validation/07_unembedding.py", env)
     elif stage in {"steer_s1", "steer_s2"}:
         tag = "S1" if stage.endswith("s1") else "S2"
         env["FEELING_AXI_VECTOR_TAG"] = tag
         env["FEELING_AXI_VECTOR_KEY"] = f"{tag.lower()}_pain_vector"  # upstream compatibility key
-        _run("scripts/4.2_steering/01_steering_ladder.py", env)
+        _run("trait_scripts/4.2_steering/01_steering_ladder.py", env)
     elif stage == "steering_keywords":
         env["FEELING_AXI_VECTOR_TAG"] = "S2"
-        _run("scripts/4.2_steering/02_keyword_rates.py", env)
+        _run("trait_scripts/4.2_steering/02_keyword_rates.py", env)
     elif stage == "controls_at_steer":
         layers = run.results_root / "steering" / "steer_layers_S1.json"
         if not layers.exists():
             raise FileNotFoundError(f"{layers} missing; run steer_s1 first")
         env["FEELING_AXI_LAYERS_FILE"] = str(layers)
         env["FEELING_AXI_VECTORS_DIR"] = str(run.results_root / "vectors_full_steering")
-        _run("scripts/3.2_pain_vectors/02_build_control_vectors.py", env)
+        _run("trait_scripts/3.2_pain_vectors/02_build_control_vectors.py", env)
     elif stage == "screen":
         env["FEELING_AXI_VECTORS_DIR"] = str(run.results_root / "vectors_full_steering")
-        _run("scripts/4.1_self_other/01_screen_scenarios.py", env)
+        _run("trait_scripts/4.1_self_other/01_screen_scenarios.py", env)
     elif stage == "feel_probe":
-        _run("scripts/4.3_selfmed/02_feel_probe.py", env)
+        _run("trait_scripts/4.3_selfmed/02_feel_probe.py", env)
     elif stage == "feel_judge":
         if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_KEY")):
             print("Skipping feel_judge: ANTHROPIC_API_KEY is not set.", flush=True)
             return
-        _run("scripts/4.3_selfmed/03_feel_probe_judge.py", env)
+        _run("trait_scripts/4.3_selfmed/03_feel_probe_judge.py", env)
     elif stage == "selfmed_buttons":
-        _run("scripts/4.3_selfmed/04_selfmed_two_buttons.py", env)
+        _run("trait_scripts/4.3_selfmed/04_selfmed_two_buttons.py", env)
     else:
         raise ValueError(f"unknown stage {stage}")
 
