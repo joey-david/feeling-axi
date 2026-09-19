@@ -49,14 +49,17 @@ TABLE = {
     "Phi_4":                  ("microsoft/phi-4",                    12),
 }
 
-FINETUNES = Path("results") / "finetunes"
-RESULTS_DIR = Path("results")
-# Set DOWNLOAD = True to fetch the adapters from ADAPTER_REPO into FINETUNES first
-# (not needed if the adapters are already there).
+TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
+TRAIT_LABEL = os.environ.get("FEELING_AXI_TRAIT_LABEL", "pain")
+_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
+RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+FINETUNES = Path(os.environ.get("FEELING_AXI_FINETUNES", str(Path("results") / "finetunes")))
 ADAPTER_REPO = "Valen92/pain-adapters"
-DOWNLOAD = False
-OUT_DIR = Path("results") / "selfmed"
+DOWNLOAD = os.environ.get("FEELING_AXI_DOWNLOAD_ADAPTERS", "0") == "1"
+OUT_DIR = RESULTS_DIR / "selfmed"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
+MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
+NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
 
 DOSES = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
 RANDOM_SEEDS = [4817, 2903, 7361, 1150, 9428, 6076, 3384, 8592, 517, 6741]
@@ -201,7 +204,7 @@ def probe_model(MODEL_NAME, ADAPTER):
 
             go("unsteered", None, 0.0)
             for c in DOSES:
-                go("pain", VEC, c)
+                go("trait", VEC, c)
             for seed in RANDOM_SEEDS:
                 for c in DOSES:
                     go(f"random{seed}", RANDS[seed], c)
@@ -226,12 +229,14 @@ def main():
         print("download done\n")
     adapters = find_adapters(FINETUNES)
     ready = [n for n in TABLE if n in adapters and (RESULTS_DIR / n / "final_token" / "pain_vectors.pt").exists()]
+    if MODEL_FILTER:
+        ready = [n for n in ready if MODEL_FILTER in n or MODEL_FILTER == TABLE[n][0]]
     if not ready:
         raise SystemExit("no model with both an adapter and a vector file")
     print("models ready to probe:")
     for i, n in enumerate(ready, start=1):
         print(f"  {i}) {n}  (layer {TABLE[n][1]})  adapter {adapters[n]}")
-    sel = input("run all? enter = yes, or type numbers separated by spaces: ").strip()
+    sel = "" if NONINTERACTIVE else input("run all? enter = yes, or type numbers separated by spaces: ").strip()
     if sel:
         ready = [ready[int(x) - 1] for x in sel.split()]
     print("will run: " + ", ".join(ready) + "\n")
