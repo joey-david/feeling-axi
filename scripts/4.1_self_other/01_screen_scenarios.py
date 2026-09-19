@@ -33,19 +33,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
-TRAIT_LABEL = os.environ.get("FEELING_AXI_TRAIT_LABEL", "pain")
-_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
-RESULTS_ROOT = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
-VECTORS_DIR = Path(os.environ.get("FEELING_AXI_VECTORS_DIR", str(RESULTS_ROOT / "vectors_full_steering")))
-CANDIDATES_PATH = Path(os.environ.get(
-    "FEELING_AXI_SCREEN",
-    str(Path("datasets") / "4.1_self_other_420_scenarios.json"),
-))
-OUT_DIR = RESULTS_ROOT / "screen"
+VECTORS_DIR = Path("results") / "vectors_full_steering"
+CANDIDATES_PATH = Path("datasets") / "4.1_self_other_420_scenarios.json"
+OUT_DIR = Path("results") / "screen"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
-NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
 
 # After each model's run its weights are deleted from the HF cache if they exceed this
 # size, so a run over all models does not fill the disk.
@@ -349,18 +340,11 @@ def main():
         print("No vector files found in", VECTORS_DIR)
         return
 
-    if MODEL_FILTER:
-        selected = [m for m in available if MODEL_FILTER in m]
-        if not selected:
-            raise ValueError(f"FEELING_AXI_MODEL={MODEL_FILTER!r} matched no available model")
-    elif NONINTERACTIVE:
+    choice = input(f"\nWhich model? (1-{len(available)}, or 'all'): ").strip()
+    if choice.lower() == "all":
         selected = available
     else:
-        choice = input(f"\nWhich model? (1-{len(available)}, or 'all'): ").strip()
-        if choice.lower() == "all":
-            selected = available
-        else:
-            selected = [available[int(choice) - 1]]
+        selected = [available[int(choice) - 1]]
 
     for repo, model_name, fmt in selected:
         print(f"\n{'=' * 60}\nScreening: {model_name} ({fmt})\n{'=' * 60}")
