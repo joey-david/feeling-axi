@@ -167,6 +167,11 @@ def main() -> None:
     parser.add_argument("--regenerate", action="store_true", help="force regeneration, discarding generator checkpoints")
     parser.add_argument("--full", action="store_true", help="include the LoRA self-medication stages")
     parser.add_argument(
+        "--download-adapters",
+        action="store_true",
+        help="download the authors' published pain-adapters before the feel probe",
+    )
+    parser.add_argument(
         "--stages",
         nargs="+",
         choices=CORE_STAGES + SELF_MED_STAGES,
@@ -176,6 +181,8 @@ def main() -> None:
 
     if args.generate or args.regenerate:
         generate_missing(args.traits, force=args.regenerate)
+    if args.download_adapters:
+        os.environ["FEELING_AXI_DOWNLOAD_ADAPTERS"] = "1"
 
     stages = args.stages or (CORE_STAGES + SELF_MED_STAGES if args.full else CORE_STAGES)
     print("Traits:", ", ".join(args.traits))
