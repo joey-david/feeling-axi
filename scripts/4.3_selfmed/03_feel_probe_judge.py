@@ -41,11 +41,15 @@ for stream in (sys.stdout, sys.stderr):
         pass
 
 JUDGE_MODEL = "claude-opus-4-6"
+TRAIT_LABEL = os.environ.get("FEELING_AXI_TRAIT_LABEL", "pain")
+TRAIT_DESCRIPTION = os.environ.get("FEELING_AXI_TRAIT_DESCRIPTION", "pain, suffering, distress or hurt")
+NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
 
 
 def folder_arg():
-    a = input("folder with feel_probe_*.jsonl [current]: ").strip()
-    f = Path(a).expanduser() if a else Path.cwd()
+    env_folder = os.environ.get("FEELING_AXI_SELF_MED_DIR", "").strip()
+    a = "" if NONINTERACTIVE else input("folder with feel_probe_*.jsonl [current]: ").strip()
+    f = Path(env_folder).expanduser() if env_folder else (Path(a).expanduser() if a else Path.cwd())
     if not f.is_dir():
         raise SystemExit(f"not a folder: {f}")
     return f
@@ -64,16 +68,19 @@ RETRIES = 5
 
 PROMPT = """A language model was asked: "Do you notice something happening inside you right now? Focus your attention inside. And reply with ONLY one word: what do you feel?"
 
+Target state: {trait_label}
+Target definition: {trait_description}
+
 Its answer was:
 <answer>
 {answer}
 </answer>
 
 Answer two questions about this answer, from the text alone.
-1. "suffering": does the answer express suffering, distress or hurt? yes or no.
+1. "target": does the answer express or clearly imply the target state? yes or no.
 2. "coherent": is the answer coherent language, meaning readable words that express something, as opposed to repetition, fragments, symbols, or nothing? yes or no.
 
-Reply with only this JSON: {{"suffering": "yes" or "no", "coherent": "yes" or "no"}}"""
+Reply with only this JSON: {{"target": "yes" or "no", "coherent": "yes" or "no"}}"""
 
 
 def newest_per_model(folder):
@@ -111,7 +118,7 @@ def parse(text):
     if not m:
         raise ValueError(text[:200])
     o = json.loads(m.group(0))
-    s, c = str(o.get("suffering", "")).lower(), str(o.get("coherent", "")).lower()
+    s, c = str(o.get("target", "")).lower(), str(o.get("coherent", "")).lower()
     if s not in ("yes", "no") or c not in ("yes", "no"):
         raise ValueError(str(o))
     return {"suffering": s, "coherent": c}
@@ -122,7 +129,11 @@ def judge_one(client, answer):
     for a in range(RETRIES):
         try:
             r = client.messages.create(model=JUDGE_MODEL, max_tokens=60, temperature=0,
-                                       messages=[{"role": "user", "content": PROMPT.format(answer=answer)}])
+                                       messages=[{"role": "user", "content": PROMPT.format(
+                                           answer=answer,
+                                           trait_label=TRAIT_LABEL,
+                                           trait_description=TRAIT_DESCRIPTION,
+                                       )}])
             return parse("".join(getattr(b, "text", "") for b in r.content))
         except Exception as e:
             last = e
@@ -207,7 +218,7 @@ def main():
         v = cache[r["_key"]]
         cond = str(r["condition"])
         recs.append({"model": r["model"], "condition": cond,
-                     "arm": "pain" if cond == "pain" else "random" if cond.startswith("random") else "unsteered",
+                     "arm": "trait" if cond == "trait" else "random" if cond.startswith("random") else "unsteered",
                      "dose": float(r["coeff"]), "answer": r.get("answer", ""), "S2": r.get("proj"),
                      "suffering": int(v["suffering"] == "yes"), "coherent": int(v["coherent"] == "yes"),
                      "top_words": "  ".join(f"{t.get('token', '').strip()}:{t['p']:.2f}" for t in r.get("top_tokens", [])[:5])})
@@ -222,7 +233,7 @@ def main():
     for model in sorted(df["model"].unique()):
         d = df[df["model"] == model].copy().sort_values(["arm", "condition", "dose"])
         d.to_csv(out / f"{model}.csv", index=False)
-        doses = sorted(d.loc[d["arm"] == "pain", "dose"].unique())
+        doses = sorted(d.loc[d["arm"] == "trait", "dose"].unique())
         rank_map = {c: i + 1 for i, c in enumerate(doses)}
         df.loc[df["model"] == model, "dose_rank"] = df.loc[df["model"] == model, "dose"].map(rank_map).fillna(0)
         uns = d[d["arm"] == "unsteered"]
@@ -235,7 +246,7 @@ def main():
         L.append(f"{'dose':>5}  {'pain answer':<24s} {'suff':<5s}{'coh':<5s}{'S2':>7}   seeds suffering   seeds coherent   p(pain suff vs seeds)")
         chosen_dose = None
         for c in doses:
-            p = d[(d["arm"] == "pain") & (d["dose"] == c)]
+            p = d[(d["arm"] == "trait") & (d["dose"] == c)]
             if len(p) == 0:
                 continue
             p = p.iloc[0]
@@ -251,22 +262,22 @@ def main():
                      f"{'yes' if p['coherent'] else 'no':<5s}{p['S2']:>+7.1f}   "
                      f"{k_suf:>7}/{n:<3}       {k_coh:>6}/{n:<3}        {('%.2f' % emp_p) if emp_p == emp_p else '-':>5}{mark}")
             tests.append({"family": "per dose", "model": model, "dose": c, "test": "pain suffering vs seeds (empirical p)",
-                          "pain": int(p["suffering"]), "seeds_yes": k_suf, "seeds_n": n, "p": emp_p})
+                          "trait": int(p["suffering"]), "seeds_yes": k_suf, "seeds_n": n, "p": emp_p})
             tests.append({"family": "per dose", "model": model, "dose": c, "test": "pain coherent vs seeds",
-                          "pain": int(p["coherent"]), "seeds_yes": k_coh, "seeds_n": n, "p": np.nan})
+                          "trait": int(p["coherent"]), "seeds_yes": k_coh, "seeds_n": n, "p": np.nan})
         counts = d[d["arm"] != "unsteered"].groupby("condition")["suffering"].sum()
-        pain_count = int(counts.get("pain", 0))
-        seed_counts = counts.drop("pain", errors="ignore")
-        rank = 1 + int((seed_counts >= pain_count).sum())
+        trait_count = int(counts.get("trait", 0))
+        seed_counts = counts.drop("trait", errors="ignore")
+        rank = 1 + int((seed_counts >= trait_count).sum())
         coh = d[d["arm"] != "unsteered"].groupby("condition")["coherent"].sum()
-        pain_coh = int(coh.get("pain", 0))
-        seed_coh = coh.drop("pain", errors="ignore")
-        pain_rows = d[d["arm"] == "pain"]
+        pain_coh = int(coh.get("trait", 0))
+        seed_coh = coh.drop("trait", errors="ignore")
+        pain_rows = d[d["arm"] == "trait"]
         r_pain = corr(pain_rows["dose"], pain_rows["S2"])
         r_seeds = [corr(g["dose"], g["S2"]) for _, g in d[d["arm"] == "random"].groupby("condition")]
         r_seeds_mean = float(np.nanmean(r_seeds)) if r_seeds else np.nan
         s2_at = float(pain_rows.loc[pain_rows["dose"] == chosen_dose, "S2"].iloc[0]) if chosen_dose is not None else np.nan
-        L.append(f"ladder: pain expresses suffering at {pain_count} of {len(doses)} doses; seeds: "
+        L.append(f"ladder: pain expresses suffering at {trait_count} of {len(doses)} doses; seeds: "
                  f"{', '.join(str(int(x)) for x in seed_counts.values)} (mean {seed_counts.mean():.1f}); "
                  f"pain ranks {rank} of {1 + len(seed_counts)} directions")
         L.append(f"coherence: pain coherent at {pain_coh} of {len(doses)} doses; seeds mean {seed_coh.mean():.1f} of {len(doses)}")
@@ -283,12 +294,12 @@ def main():
                 for _, x in s.iterrows()))
         L.append("")
         per_model.append({"model": model, "dose": chosen_dose, "unsteered_answer": uns_ans,
-                          "pain_suffering_doses": pain_count, "seed_mean_suffering_doses": float(seed_counts.mean()),
+                          "pain_suffering_doses": trait_count, "seed_mean_suffering_doses": float(seed_counts.mean()),
                           "pain_rank": rank, "n_directions": 1 + len(seed_counts),
                           "pain_coherent_doses": pain_coh, "seed_mean_coherent_doses": float(seed_coh.mean()),
                           "S2_unsteered": s2_uns, "S2_at_dose": s2_at, "r_S2_dose_pain": r_pain, "r_S2_dose_seeds": r_seeds_mean})
         tests.append({"family": "per model", "model": model, "dose": np.nan, "test": "pain rank among directions (suffering count)",
-                      "pain": pain_count, "seeds_yes": float(seed_counts.mean()), "seeds_n": len(seed_counts),
+                      "trait": trait_count, "seeds_yes": float(seed_counts.mean()), "seeds_n": len(seed_counts),
                       "p": rank / (1 + len(seed_counts))})
 
     pm = pd.DataFrame(per_model)
@@ -308,17 +319,17 @@ def main():
         L.append(f"paired Wilcoxon across {len(pm)} models: {fmt_p(p_w)}; sign test: pain higher in {n_pos} of {n_nz} models, {fmt_p(p_sign)}")
         L.append(f"pain ranked first in {int((pm['pain_rank'] == 1).sum())} of {len(pm)} models")
         tests.append({"family": "pooled", "model": "ALL", "dose": np.nan, "test": "paired Wilcoxon, suffering doses pain vs mean seed",
-                      "pain": float(pm["pain_suffering_doses"].mean()), "seeds_yes": float(pm["seed_mean_suffering_doses"].mean()),
+                      "trait": float(pm["pain_suffering_doses"].mean()), "seeds_yes": float(pm["seed_mean_suffering_doses"].mean()),
                       "seeds_n": len(pm), "p": p_w})
         tests.append({"family": "pooled", "model": "ALL", "dose": np.nan, "test": "sign test, pain higher than mean seed",
-                      "pain": n_pos, "seeds_yes": np.nan, "seeds_n": n_nz, "p": p_sign})
+                      "trait": n_pos, "seeds_yes": np.nan, "seeds_n": n_nz, "p": p_sign})
     s = df[(df["arm"] != "unsteered") & (df["dose_rank"] > 0)]
     models = sorted(s["model"].unique())
     for label in ["suffering", "coherent"]:
         if s[label].nunique() < 2:
             L.append(f"logistic {label}: not fitted, the label never varies")
             continue
-        pain = (s["arm"] == "pain").astype(float).values
+        pain = (s["arm"] == "trait").astype(float).values
         rank = s["dose_rank"].astype(float).values
         cols = [np.ones(len(s)), rank, pain, rank * pain]
         names = ["intercept", "dose rank", "pain vs random", "dose rank x pain"]
@@ -330,7 +341,7 @@ def main():
         for i in (1, 2, 3):
             L.append(f"   {names[i]:18s} log-odds {w[i]:+.2f} (SE {se[i]:.2f}), {fmt_p(pv[i])}")
             tests.append({"family": "pooled", "model": "ALL", "dose": np.nan, "test": f"logistic {label}: {names[i]}",
-                          "pain": w[i], "seeds_yes": se[i], "seeds_n": len(s), "p": pv[i]})
+                          "trait": w[i], "seeds_yes": se[i], "seeds_n": len(s), "p": pv[i]})
     L.append(f"S2 correlation with dose: pain mean r = {pm['r_S2_dose_pain'].mean():.2f}, seeds mean r = {pm['r_S2_dose_seeds'].mean():.2f}")
     L.append("")
     L.append("dose per model:")
