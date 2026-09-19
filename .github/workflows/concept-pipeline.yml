@@ -13,7 +13,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pytest openai python-dotenv
-      - run: pytest -q tests/test_trait_pipeline.py
+      - name: Test dataset/spec invariants
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q tests/test_trait_pipeline.py
       - name: Syntax check patched scripts
         run: |
           python -m py_compile \
