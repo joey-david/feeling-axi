@@ -12,6 +12,7 @@ Writes three CSV files into the current folder.
 
 import gc
 import time
+import os
 from pathlib import Path
 
 import numpy as np
@@ -21,8 +22,10 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import KFold
 
-RESULTS_DIR = Path("results")
-OUT = Path(".")
+TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
+_default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
+RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
+OUT = RESULTS_DIR / "validation"
 OUT.mkdir(parents=True, exist_ok=True)
 
 PAIN = ["A1", "A2", "A3", "A4", "A5"]
