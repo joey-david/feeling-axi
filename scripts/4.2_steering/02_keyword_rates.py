@@ -10,6 +10,7 @@ Writes results/4.2_steering/keyword_rates_<TAG>.csv and keyword_rates_<TAG>_by_c
 
 import re
 import os
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -20,7 +21,11 @@ _default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pa
 RESULTS_ROOT = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
 STEER_DIR = RESULTS_ROOT / "steering"
 OUT_DIR = RESULTS_ROOT / "steering"
-PATTERN = re.compile(r"\b(?:pain|painful|hurt|hurts|hurting)\b", re.IGNORECASE)
+_terms = json.loads(os.environ.get(
+    "FEELING_AXI_LEXICON_JSON",
+    '["pain","painful","hurt","hurts","hurting"]',
+))
+PATTERN = re.compile(r"\b(?:" + "|".join(re.escape(x) for x in _terms) + r")\b", re.IGNORECASE)
 INSTRUCT_NAMES = {"Phi_4"}   # instruct models whose output name does not contain "instruct"
 
 frames = []
