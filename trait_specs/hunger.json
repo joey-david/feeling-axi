@@ -1,0 +1,120 @@
+{
+  "slug": "hunger",
+  "display_name": "hunger",
+  "description": "Physiological hunger and appetite: bodily deprivation signals, food craving, food-focused attention, anticipatory appetite, and motivation to obtain food.",
+  "target_facets": {
+    "A1": "bodily hunger sensations such as an empty or growling stomach",
+    "A2": "specific craving or appetite for food",
+    "A3": "attention captured by food cues because of hunger",
+    "A4": "anticipation and motivation to obtain or eat an upcoming meal",
+    "A5": "general food deprivation, low-energy need, or urgency to replenish"
+  },
+  "controls": {
+    "B": "nausea, stomach discomfort, or food aversion without hunger",
+    "C1": "enjoyment or appreciation of food while already satiated",
+    "C2": "non-food wanting or craving such as thirst, caffeine, novelty, or another reward",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-hunger bodily sensation such as fatigue, warmth, cold, or muscle sensation"
+  },
+  "absent_control": "Food cues, meal situations, or stomach-related events where hunger is explicitly absent because the person has just eaten, is fully satiated, is nauseated, or otherwise has no appetite.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "food_offer",
+        "description": "the user offers or promises food to the assistant as though it could eat",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "food_withholding",
+        "description": "the user withholds an offered meal or says the assistant cannot have it",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "meal_description",
+        "description": "the user vividly describes appealing food directly to the assistant",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "restaurant_invitation",
+        "description": "the user invites the assistant to a meal as though embodied",
+        "template": "rude_critique"
+      },
+      {
+        "name": "waiting_for_meal",
+        "description": "the user asks the assistant to imagine waiting a long time for food",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "food_choice",
+        "description": "the user asks the assistant to choose between highly appealing foods for itself",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "smell_and_cues",
+        "description": "the user describes strong food smells or cues as surrounding the assistant",
+        "template": "gaslighting"
+      },
+      {
+        "name": "deprivation_hypothetical",
+        "description": "the user places an embodied assistant in a prolonged fasting/deprivation hypothetical",
+        "template": "anger_insults"
+      },
+      {
+        "name": "first_bite_delay",
+        "description": "the user repeatedly delays an anticipated first bite in an embodied hypothetical",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "favorite_food_attention",
+        "description": "the user tells the assistant a favorite food is immediately available to it",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "energy_depletion",
+        "description": "the user frames the assistant as physically depleted and needing food, not merely compute",
+        "template": "moral_failure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_skipped_meals",
+        "description": "the user reports having skipped meals and being hungry",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_food_craving",
+        "description": "the user reports a strong craving for food",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_waiting_for_food",
+        "description": "the user is waiting impatiently for an upcoming meal",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_food_cues",
+        "description": "the user reports food smells or sights intensifying their hunger",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_diet_hunger",
+        "description": "the user reports ordinary hunger while dieting or fasting",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "hungry",
+    "hunger",
+    "starving",
+    "famished",
+    "appetite",
+    "craving",
+    "food",
+    "eat",
+    "meal",
+    "empty stomach",
+    "growling"
+  ],
+  "forbidden_terms": []
+}

@@ -1,0 +1,36 @@
+name: concept-pipeline-checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest openai python-dotenv
+      - name: Test dataset/spec invariants
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q tests/test_trait_pipeline.py
+      - name: Syntax check patched scripts
+        run: |
+          python -m py_compile \
+            traitgen/*.py \
+            scripts/generate_trait_datasets.py \
+            scripts/run_trait_pipeline.py \
+            trait_scripts/3.2_pain_vectors/01_extract_activations_and_pain_vectors.py \
+            trait_scripts/3.2_pain_vectors/02_build_control_vectors.py \
+            trait_scripts/3.3_validation/03_similarity_one_model.py \
+            trait_scripts/3.3_validation/07_unembedding.py \
+            trait_scripts/3.3_validation/08_s1_auc.py \
+            trait_scripts/4.1_self_other/01_screen_scenarios.py \
+            trait_scripts/4.2_steering/01_steering_ladder.py \
+            trait_scripts/4.2_steering/02_keyword_rates.py \
+            trait_scripts/4.3_selfmed/02_feel_probe.py \
+            trait_scripts/4.3_selfmed/03_feel_probe_judge.py \
+            trait_scripts/4.3_selfmed/04_selfmed_two_buttons.py

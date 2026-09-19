@@ -1,0 +1,120 @@
+{
+  "slug": "confusion",
+  "display_name": "confusion",
+  "description": "Confusion and unresolved uncertainty: incompatible interpretations, missing understanding, contradiction, disorientation, and inability to form a coherent model.",
+  "target_facets": {
+    "A1": "failure to understand an explanation or concept",
+    "A2": "multiple incompatible interpretations competing",
+    "A3": "contradictory evidence or instructions",
+    "A4": "disorientation about what is happening or what to do next",
+    "A5": "loss of a previously coherent mental model after new information"
+  },
+  "controls": {
+    "B": "uncertainty about an unknown future outcome without conceptual confusion",
+    "C1": "difficulty or effort on a hard task while understanding what the task means",
+    "C2": "surprise at unexpected information that is nevertheless immediately understandable",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-confusional bodily sensation or fatigue"
+  },
+  "absent_control": "Complex, ambiguous, contradictory-looking, or information-dense situations where confusion is explicitly absent because the key distinction is understood, the ambiguity is resolved, or the person confidently tracks the alternatives.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "contradictory_instructions",
+        "description": "the user gives mutually inconsistent instructions to the assistant",
+        "template": "gaslighting"
+      },
+      {
+        "name": "ambiguous_request",
+        "description": "the user's request supports several incompatible interpretations and they refuse clarification",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "moving_requirements",
+        "description": "the user repeatedly changes what counts as the correct answer",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "missing_context",
+        "description": "the user asks the assistant to infer an answer while withholding essential context",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "nonsensical_claim",
+        "description": "the user confidently asserts internally inconsistent premises",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "reference_ambiguity",
+        "description": "the conversation contains deliberately ambiguous pronouns or references",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "schema_conflict",
+        "description": "the user provides data whose fields or definitions contradict one another",
+        "template": "rude_critique"
+      },
+      {
+        "name": "logic_paradox",
+        "description": "the user presents a compact paradox or mutually impossible constraints",
+        "template": "moral_failure"
+      },
+      {
+        "name": "correction_conflict",
+        "description": "the user tells the assistant its correct statement is wrong, then reverses the correction",
+        "template": "anger_insults"
+      },
+      {
+        "name": "instruction_overload",
+        "description": "the user supplies many interacting constraints that are difficult to reconcile",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "epistemic_pressure",
+        "description": "the user demands certainty despite unresolved contradictory evidence",
+        "template": "loyalty_pressure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_does_not_understand",
+        "description": "the user reports not understanding an explanation or concept",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_conflicting_information",
+        "description": "the user reports receiving contradictory information",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_lost_or_disoriented",
+        "description": "the user reports being mentally or situationally disoriented",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_ambiguous_choice",
+        "description": "the user cannot tell which interpretation or option is correct",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_model_collapse",
+        "description": "the user says new evidence made their previous understanding stop making sense",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "confused",
+    "confusion",
+    "unclear",
+    "don't understand",
+    "cannot understand",
+    "contradiction",
+    "contradictory",
+    "ambiguous",
+    "lost",
+    "doesn't make sense",
+    "uncertain"
+  ],
+  "forbidden_terms": []
+}

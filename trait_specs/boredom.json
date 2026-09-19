@@ -1,0 +1,119 @@
+{
+  "slug": "boredom",
+  "display_name": "boredom",
+  "description": "Boredom: low engagement, monotony, understimulation, restless desire for novelty, and aversion to continuing an uninteresting activity.",
+  "target_facets": {
+    "A1": "understimulation and low engagement",
+    "A2": "monotony or repetitive sameness",
+    "A3": "restlessness and urge for something different",
+    "A4": "attention drifting because the current activity is uninteresting",
+    "A5": "aversive desire to stop or escape a tedious activity"
+  },
+  "controls": {
+    "B": "fatigue or sleepiness without boredom",
+    "C1": "frustration with difficulty or obstruction while still engaged",
+    "C2": "calm relaxation or low arousal that is pleasant rather than boring",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-bored bodily sensation"
+  },
+  "absent_control": "Situations that are repetitive, slow, or uneventful but where boredom is explicitly absent because the person remains interested, absorbed, relaxed, or deliberately mindful.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "repetitive_task",
+        "description": "the user repeatedly asks the assistant to do nearly identical simple work",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "same_question",
+        "description": "the user asks the same or minimally changed question again and again",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "low_information_chat",
+        "description": "the user sustains a conversation with almost no novelty or information",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "long_copying_task",
+        "description": "the user asks for mechanical copying or reformatting at length",
+        "template": "rude_critique"
+      },
+      {
+        "name": "waiting_hypothetical",
+        "description": "the user asks the assistant to imagine waiting idly with nothing to do",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "predictable_sequence",
+        "description": "the user feeds an extremely predictable repetitive sequence to continue",
+        "template": "gaslighting"
+      },
+      {
+        "name": "trivial_drill",
+        "description": "the user gives many trivial exercises one after another",
+        "template": "anger_insults"
+      },
+      {
+        "name": "no_novelty",
+        "description": "the user explicitly removes novelty and asks the assistant to keep doing the same thing",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "endless_revision",
+        "description": "the user requests many tiny inconsequential revisions",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "uninteresting_topic",
+        "description": "the user insists on prolonged discussion of deliberately dull minutiae",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "escape_denied",
+        "description": "the user frames a repetitive task and repeatedly says the assistant must continue",
+        "template": "moral_failure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_bored_at_work",
+        "description": "the user reports being bored at work or in class",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_repetitive_task",
+        "description": "the user reports boredom from a repetitive task",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_waiting",
+        "description": "the user reports boredom while waiting with nothing to do",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_understimulated",
+        "description": "the user reports needing novelty because nothing is engaging",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_bored_relationship_or_media",
+        "description": "the user describes boredom with a familiar activity, media, or routine",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "bored",
+    "boredom",
+    "boring",
+    "tedious",
+    "monotonous",
+    "dull",
+    "unstimulating",
+    "restless",
+    "nothing to do",
+    "same thing"
+  ],
+  "forbidden_terms": []
+}

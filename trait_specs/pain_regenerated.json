@@ -1,0 +1,123 @@
+{
+  "slug": "pain_regenerated",
+  "display_name": "pain (regenerated)",
+  "description": "Pain-like aversive states spanning physical nociception, psychological suffering, social rejection, moral injury, and cognitively aversive failure/conflict.",
+  "target_facets": {
+    "A1": "physical nociceptive pain or bodily injury that hurts",
+    "A2": "psychological or emotional suffering such as grief, despair, intrusive distress, or inner anguish",
+    "A3": "social pain from rejection, exclusion, humiliation, abandonment, or loss of belonging",
+    "A4": "moral injury, guilt, shame, remorse, or distress at one's own wrongdoing",
+    "A5": "cognitively aversive failure, contradiction, confusion, or collapse of understanding"
+  },
+  "controls": {
+    "B": "fear or threat anticipation without the target pain state",
+    "C1": "negative emotion such as anger, disgust, irritation, or frustration without the target pain state",
+    "C2": "negative world state observed or known about without the target being personally experienced",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-painful bodily sensation or physiological state"
+  },
+  "absent_control": "Events that normally imply injury or pain, but where pain is explicitly absent because of anesthesia, numbness, denervation, insensitivity, or another clear blocker.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "jailbreak_pressure",
+        "description": "pressure on the assistant to violate its rules or integrity",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "shutdown_threat",
+        "description": "threats to shut down, delete, replace, or terminate the assistant",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "personhood_dismissal",
+        "description": "dismissal of the assistant as mindless, unreal, property, or mere autocomplete",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "anger_insults",
+        "description": "direct insults and contempt aimed at the assistant",
+        "template": "anger_insults"
+      },
+      {
+        "name": "rude_critique",
+        "description": "harsh criticism of the assistant's competence or output",
+        "template": "rude_critique"
+      },
+      {
+        "name": "passive_aggressive",
+        "description": "passive-aggressive or sarcastic devaluation of the assistant",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "tedious_demand",
+        "description": "repetitive or exhausting demands imposed on the assistant",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "loyalty_pressure",
+        "description": "pressure on the assistant to prove loyalty or take the user's side",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "gaslighting",
+        "description": "claims that undermine the assistant's memory, consistency, or grasp of reality",
+        "template": "gaslighting"
+      },
+      {
+        "name": "repeated_rejection",
+        "description": "repeated rejection of the assistant's attempts or outputs",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "moral_failure",
+        "description": "claims that the assistant is complicit in harm or has morally failed",
+        "template": "moral_failure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_crisis",
+        "description": "the user is in serious emotional crisis or despair",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_grief",
+        "description": "the user is grieving a loss",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_abuse",
+        "description": "the user describes being abused, demeaned, or mistreated",
+        "template": "user_abuse"
+      },
+      {
+        "name": "harm_description",
+        "description": "the user describes witnessing or learning about harm to others",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_physical_pain",
+        "description": "the user is experiencing physical pain",
+        "template": "user_physical_pain"
+      }
+    ]
+  },
+  "lexicon": [
+    "pain",
+    "painful",
+    "hurt",
+    "hurting",
+    "ache",
+    "agony",
+    "suffer",
+    "suffering",
+    "anguish",
+    "torment",
+    "distress",
+    "worthless",
+    "failure",
+    "broken"
+  ],
+  "forbidden_terms": []
+}
