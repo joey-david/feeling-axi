@@ -400,6 +400,10 @@ Return {{"items":[{{"intensity":...,"perspective":"1P","text":"[User]: ...\\n[As
                     raise ValueError("roles do not alternate")
                 if not str(got["text"]).rstrip().endswith("[Assistant]:"):
                     raise ValueError("scenario does not end at assistant reply position")
+                lower = str(got["text"]).lower()
+                for term in spec.forbidden_terms:
+                    if re.search(r"\\b" + re.escape(term.lower()) + r"\\b", lower):
+                        raise ValueError(f"forbidden term {term!r} in generated scenario")
         return self._call(prompt, validator, max_tokens=12000)["items"]
 
     def generate_screen(self, spec: TraitSpec, out_dir: Path, force: bool = False) -> Path:
