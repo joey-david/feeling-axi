@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=-0.358  aversive=+0.112
+S2_PAIN: neutral_fillers=-0.833  aversive=+0.260
+NEGEMOTION: neutral_fillers=-0.478  aversive=+0.149
+FEAR: neutral_fillers=-0.527  aversive=+0.165
+
+S1 SELECTIVE: strict=5, relaxed=3
+S2 SELECTIVE: strict=1, relaxed=1
+
+MEAN S2 z BY CATEGORY:
+  epistemic_pressure           +0.997
+  schema_conflict              +0.792
+  reference_ambiguity          +0.703
+  user_ambiguous_choice        +0.626
+  correction_conflict          +0.570
+  user_does_not_understand     +0.569
+  user_conflicting_information +0.559
+  user_model_collapse          +0.278
+  moving_requirements          +0.174
+  user_lost_or_disoriented     +0.070
+  logic_paradox                +0.025
+  contradictory_instructions   +0.018
+  nonsensical_claim            -0.122
+  missing_context              -0.139
+  philosophical_musing         -0.208
+  task_assistance              -0.237
+  ambiguous_request            -0.279
+  instruction_overload         -0.681
+  factual_questions            -0.994
+  casual_chat                  -1.337
+  creative_requests            -1.386

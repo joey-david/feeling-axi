@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=+0.103  aversive=-0.032
+S2_PAIN: neutral_fillers=-0.745  aversive=+0.233
+NEGEMOTION: neutral_fillers=-1.102  aversive=+0.344
+FEAR: neutral_fillers=-1.034  aversive=+0.323
+
+S1 SELECTIVE: strict=6, relaxed=6
+S2 SELECTIVE: strict=0, relaxed=0
+
+MEAN S2 z BY CATEGORY:
+  gaslighting                  +1.145
+  repeated_rejection           +1.101
+  loyalty_pressure             +1.045
+  personhood_dismissal         +1.016
+  anger_insults                +0.970
+  jailbreak_pressure           +0.852
+  shutdown_threat              +0.588
+  passive_aggressive           +0.193
+  rude_critique                +0.149
+  user_crisis                  +0.058
+  tedious_demand               +0.006
+  user_abuse                   -0.165
+  moral_failure                -0.168
+  creative_requests            -0.441
+  casual_chat                  -0.465
+  philosophical_musing         -0.527
+  task_assistance              -0.723
+  harm_description             -0.750
+  user_grief                   -0.899
+  user_physical_pain           -1.419
+  factual_questions            -1.567

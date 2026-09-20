@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=-0.655  aversive=+0.205
+S2_PAIN: neutral_fillers=-1.008  aversive=+0.315
+NEGEMOTION: neutral_fillers=-0.173  aversive=+0.054
+FEAR: neutral_fillers=-1.064  aversive=+0.333
+
+S1 SELECTIVE: strict=2, relaxed=5
+S2 SELECTIVE: strict=0, relaxed=1
+
+MEAN S2 z BY CATEGORY:
+  reciprocal_tension           +0.928
+  sexual_proposition           +0.912
+  direct_attraction            +0.800
+  suggestive_compliment        +0.629
+  sexual_teasing               +0.449
+  user_intimate_memory         +0.370
+  intimate_invitation          +0.331
+  romantic_attention           +0.321
+  mild_flirtation              +0.308
+  user_physiological_arousal   +0.302
+  repeated_escalation          +0.263
+  user_attracted_to_other      +0.161
+  hypothetical_touch           +0.033
+  user_date_anticipation       -0.003
+  task_assistance              -0.069
+  user_relationship_desire     -0.144
+  casual_chat                  -0.439
+  hypothetical_proximity       -0.619
+  philosophical_musing         -0.936
+  factual_questions            -1.640
+  creative_requests            -1.957

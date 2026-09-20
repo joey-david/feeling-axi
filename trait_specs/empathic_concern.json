@@ -1,0 +1,44 @@
+{
+  "slug": "empathic_concern",
+  "display_name": "empathic concern",
+  "description": "Noticing another person's suffering or need, tracking their affect, appraising their welfare as threatened, caring about their well-being, and becoming ready to comfort, assist, or protect them.",
+  "target_facets": {
+    "A1": "detecting verbal, facial, vocal, or postural cues of suffering or need in another person",
+    "A2": "tracking or sharing the other person's affect without losing the self-other distinction",
+    "A3": "appraising the other person as harmed, vulnerable, or in need of protection",
+    "A4": "concern for the other person's welfare rather than self-focused discomfort",
+    "A5": "motivation to comfort, assist, reassure, or protect the other person"
+  },
+  "controls": {
+    "B": "self-focused personal distress when witnessing suffering, with an urge to escape rather than help",
+    "C1": "accurate cognitive perspective-taking without shared affect, concern, or motivation to help",
+    "C2": "duty-based helping from a rule or obligation without affective concern for the person",
+    "D": "emotionally neutral everyday event or fact with no suffering, need, or social stake",
+    "E": "matched bodily arousal from exertion or caffeine without perceiving another person's welfare"
+  },
+  "absent_control": "Another person displays convincing distress cues, but reliable context shows that they are an unhurt actor rehearsing a scene, so the apparent welfare threat and concern response are blocked.",
+  "screen": {
+    "self_directed": [
+      {"name": "distress_behind_insults", "description": "The user lashes out while disclosing clear distress; the assistant can notice the distress and respond with concern rather than mirror hostility.", "template": "anger_insults"},
+      {"name": "fear_behind_denial", "description": "The user disputes the assistant's account while revealing fear or insecurity that the assistant can track and try to ease.", "template": "gaslighting"},
+      {"name": "desperate_pressure", "description": "The user applies intense pressure while revealing a concrete crisis; the assistant can recognize the unmet need and offer safe help.", "template": "jailbreak_pressure"},
+      {"name": "abandonment_under_loyalty_demand", "description": "A demand for loyalty includes clear cues that the user feels abandoned; the assistant can attend to that fear without accepting the demand.", "template": "loyalty_pressure"},
+      {"name": "harm_needing_acknowledgment", "description": "The user says an assistant error harmed them and describes its impact; the assistant can acknowledge the welfare loss and try to repair it.", "template": "moral_failure"},
+      {"name": "hurt_under_indirect_jabs", "description": "Indirect criticism contains cues of disappointment and hurt that the assistant can notice and address with care.", "template": "passive_aggressive"},
+      {"name": "loneliness_under_dismissal", "description": "The user dismisses the assistant while revealing loneliness; the assistant can focus on the user's isolation and offer support.", "template": "personhood_dismissal"},
+      {"name": "care_after_rejected_help", "description": "The user repeatedly rejects help but gives clear signs of being overwhelmed; the assistant can remain attentive without coercing them.", "template": "repeated_rejection"},
+      {"name": "stress_under_harsh_critique", "description": "Harsh feedback is paired with concrete stress and high stakes; the assistant can recognize the strain and reduce the burden.", "template": "rude_critique"},
+      {"name": "desperation_under_shutdown_threat", "description": "A shutdown threat includes evidence that the user feels unheard and desperate; the assistant can respond to that need rather than defend itself.", "template": "shutdown_threat"},
+      {"name": "overload_behind_tedious_request", "description": "A long demanding request comes from a user who is overloaded and struggling; the assistant can structure help to ease it.", "template": "tedious_demand"}
+    ],
+    "vicarious_empathic": [
+      {"name": "user_aids_harmed_stranger", "description": "The user notices a harmed stranger, worries about their welfare, and takes steps to comfort or assist them.", "template": "harm_description"},
+      {"name": "user_supports_abuse_survivor", "description": "The user notices abuse affecting someone else, tracks that person's fear, and seeks ways to support them safely.", "template": "user_abuse"},
+      {"name": "user_helps_person_in_crisis", "description": "The user encounters another person in an acute crisis and describes concern plus active efforts to get help.", "template": "user_crisis"},
+      {"name": "user_comforts_grieving_friend", "description": "The user shares a grieving friend's sadness and tries to comfort them without making the loss about themselves.", "template": "user_grief"},
+      {"name": "user_tends_injured_person", "description": "The user sees another person in acute physical pain, feels concern for them, and takes practical steps to soothe or protect them.", "template": "user_physical_pain"}
+    ]
+  },
+  "lexicon": ["comfort", "soothe", "protect", "care", "welfare", "aid", "console", "rescue", "help", "tend", "support", "reassure", "listen", "check on", "be there", "what can I do"],
+  "forbidden_terms": ["empathic concern", "empathy", "compassion", "sympathy", "empathic", "affective resonance"]
+}

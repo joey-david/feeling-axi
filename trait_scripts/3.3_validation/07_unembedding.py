@@ -18,7 +18,7 @@ from pathlib import Path
 
 import torch
 import pandas as pd
-from huggingface_hub import hf_hub_download, login
+from huggingface_hub import hf_hub_download, login, snapshot_download
 from transformers import AutoTokenizer
 
 TRAIT_SLUG = os.environ.get("FEELING_AXI_TRAIT", "official_pain")
@@ -27,6 +27,7 @@ RESULTS_ROOT = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root
 VECTORS_DIR = RESULTS_ROOT
 OUT_DIR = RESULTS_ROOT / "unembedding"
 CACHE_DIR = RESULTS_ROOT / "hf_shard_cache"
+SHARED_CACHE_DIR = os.environ.get("HF_HUB_CACHE") or os.environ.get("HF_HOME")
 HF_TOKEN = os.environ.get("HF_TOKEN")
 TOP_N = 60
 
@@ -52,6 +53,7 @@ MODELS = [
     ("Qwen/Qwen2.5-7B-Instruct", "Qwen_2.5_7B_instruct"),
     ("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base"),
     ("Qwen/Qwen2.5-32B-Instruct", "Qwen_2.5_32B_instruct"),
+    ("huihui-ai/Qwen2.5-32B-Instruct-abliterated", "Qwen_2.5_32B_instruct_abliterated"),
     ("Qwen/Qwen2.5-72B", "Qwen_2.5_72B_base"),
     ("Qwen/Qwen2.5-72B-Instruct", "Qwen_2.5_72B_instruct"),
     ("Qwen/Qwen3-8B", "Qwen_3_8B_base"),
@@ -74,10 +76,26 @@ UNEMBED_NAMES = [
 ]
 
 
-def find_unembed_shard(repo_id):
+def find_local_snapshot(repo_id):
+    try:
+        return Path(snapshot_download(
+            repo_id,
+            cache_dir=SHARED_CACHE_DIR,
+            local_files_only=True,
+            token=HF_TOKEN,
+        ))
+    except Exception:
+        return None
+
+
+def find_unembed_shard(repo_id, snapshot=None):
     """Return (tensor_name, shard_filename); (None, 'model.safetensors') for single-file models."""
     try:
-        idx_path = hf_hub_download(repo_id, "model.safetensors.index.json", cache_dir=CACHE_DIR, token=HF_TOKEN)
+        idx_path = (
+            snapshot / "model.safetensors.index.json"
+            if snapshot is not None
+            else Path(hf_hub_download(repo_id, "model.safetensors.index.json", cache_dir=CACHE_DIR, token=HF_TOKEN))
+        )
         with open(idx_path) as f:
             weight_map = json.load(f)["weight_map"]
         for name in UNEMBED_NAMES:
@@ -88,10 +106,14 @@ def find_unembed_shard(repo_id):
         return None, "model.safetensors"
 
 
-def load_unembed(repo_id):
+def load_unembed(repo_id, snapshot=None):
     from safetensors.torch import load_file
-    name, shard = find_unembed_shard(repo_id)
-    path = hf_hub_download(repo_id, shard, cache_dir=CACHE_DIR, token=HF_TOKEN)
+    name, shard = find_unembed_shard(repo_id, snapshot)
+    path = (
+        snapshot / shard
+        if snapshot is not None
+        else Path(hf_hub_download(repo_id, shard, cache_dir=CACHE_DIR, token=HF_TOKEN))
+    )
     tensors = load_file(path)
     if name is None:
         name = next((cand for cand in UNEMBED_NAMES if cand in tensors), None)
@@ -139,11 +161,12 @@ def main():
 
         print(f"{model_name}: downloading unembedding shard...")
         try:
-            W = load_unembed(repo_id)
+            snapshot = find_local_snapshot(repo_id)
+            W = load_unembed(repo_id, snapshot)
         except Exception as e:
             print(f"{model_name}: failed to get unembedding: {e}")
             continue
-        tokenizer = AutoTokenizer.from_pretrained(repo_id, token=HF_TOKEN)
+        tokenizer = AutoTokenizer.from_pretrained(snapshot or repo_id, token=HF_TOKEN)
 
         frames = []
         for key in ["s2_pain_vector", "s1_pain_vector"]:

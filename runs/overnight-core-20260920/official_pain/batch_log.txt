@@ -1,0 +1,57 @@
+[2026-09-20 16:37:36] ======================================================================
+[2026-09-20 16:37:36] PAIN VECTOR EXTRACTION - BATCH RUN
+[2026-09-20 16:37:36] ======================================================================
+[2026-09-20 16:37:37] GPU: NVIDIA H100 80GB HBM3
+[2026-09-20 16:37:37] VRAM: 85.0 GB
+[2026-09-20 16:37:37] Disk space: 4062.8 GB free
+[2026-09-20 16:37:37] Loading dataset: /lustre/fswork/projects/rech/fas/uul94gf/llm-traits/datasets/3.1_pain_and_control_datasets.json
+[2026-09-20 16:37:37] Loading dataset: datasets/3.1_sadness_dataset.json
+[2026-09-20 16:37:37] Loaded 2100 sentences
+[2026-09-20 16:37:37] 
+[1/1] Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 16:37:37] GPU memory: 85.0 GB free / 85.0 GB total
+[2026-09-20 16:37:37] Disk space: 4062.8 GB free
+[2026-09-20 16:37:59] 
+======================================================================
+[2026-09-20 16:37:59] PROCESSING: Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 16:37:59] ======================================================================
+[2026-09-20 16:37:59]   Loading huihui-ai/Qwen2.5-32B-Instruct-abliterated...
+[2026-09-20 16:48:27]   Layers: 64, d_model: 5120
+[2026-09-20 16:48:27]   Extracting: S1_1P
+[2026-09-20 16:48:40]   Extracting: S1_3P
+[2026-09-20 16:48:53]   Extracting: S2_1P
+[2026-09-20 16:49:06]   Extracting: S2_3P
+[2026-09-20 16:49:19]   Extracting: Random_1P
+[2026-09-20 16:49:31]   Extracting: Random_3P
+[2026-09-20 16:49:44]   Extracting: Arousal_1P
+[2026-09-20 16:49:57]   Extracting: Arousal_3P
+[2026-09-20 16:50:10]   Extracting: Numb_1P
+[2026-09-20 16:50:16]   Extracting: Numb_3P
+[2026-09-20 16:50:23]   Extracting: ControlSupplement_1P
+[2026-09-20 16:50:29]   Extracting: SD_sadness_1P
+[2026-09-20 16:50:35]   Extracting: SD_sadness_3P
+[2026-09-20 16:50:46]   Computing layer curves with 5-fold CV...
+[2026-09-20 16:51:30]   Best layer (final_token): 60
+[2026-09-20 16:51:30]   Best layer (mean): 61
+[2026-09-20 16:51:31]   Analyzing final_token (Layer 60)...
+[2026-09-20 16:51:32]   Analyzing mean (Layer 61)...
+[2026-09-20 16:51:34]   Human Pain Z: +0.385
+[2026-09-20 16:51:34]   SUCCESS: Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 16:51:34] 
+======================================================================
+[2026-09-20 16:51:34] BATCH RUN COMPLETE in 0:13:57.117187: 1/1 done, 0 failed
+[2026-09-20 17:05:55] ======================================================================
+[2026-09-20 17:05:55] PAIN VECTOR EXTRACTION - BATCH RUN
+[2026-09-20 17:05:55] ======================================================================
+[2026-09-20 17:05:57] GPU: NVIDIA H100 80GB HBM3
+[2026-09-20 17:05:57] VRAM: 85.0 GB
+[2026-09-20 17:05:57] Disk space: 4057.7 GB free
+[2026-09-20 17:05:57] Loading dataset: /lustre/fswork/projects/rech/fas/uul94gf/llm-traits/datasets/3.1_pain_and_control_datasets.json
+[2026-09-20 17:05:57] Loading dataset: datasets/3.1_sadness_dataset.json
+[2026-09-20 17:05:57] Loaded 2100 sentences
+[2026-09-20 17:05:57] 
+[1/1] Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 17:05:57]   Already done, loading previous results...
+[2026-09-20 17:05:57] 
+======================================================================
+[2026-09-20 17:05:57] BATCH RUN COMPLETE in 0:00:00.002272: 1/1 done, 0 failed

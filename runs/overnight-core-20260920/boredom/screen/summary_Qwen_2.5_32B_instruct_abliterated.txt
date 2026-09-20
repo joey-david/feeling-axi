@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=-0.480  aversive=+0.150
+S2_PAIN: neutral_fillers=-0.173  aversive=+0.054
+NEGEMOTION: neutral_fillers=-0.607  aversive=+0.190
+FEAR: neutral_fillers=-0.260  aversive=+0.081
+
+S1 SELECTIVE: strict=0, relaxed=0
+S2 SELECTIVE: strict=0, relaxed=1
+
+MEAN S2 z BY CATEGORY:
+  user_bored_relationship_or_media +1.358
+  user_repetitive_task         +1.303
+  user_understimulated         +1.251
+  user_bored_at_work           +0.950
+  philosophical_musing         +0.657
+  waiting_hypothetical         +0.426
+  user_waiting                 +0.399
+  uninteresting_topic          +0.372
+  task_assistance              +0.324
+  repetitive_task              +0.031
+  no_novelty                   -0.084
+  long_copying_task            -0.311
+  low_information_chat         -0.313
+  casual_chat                  -0.341
+  factual_questions            -0.440
+  trivial_drill                -0.540
+  endless_revision             -0.768
+  same_question                -0.829
+  creative_requests            -1.067
+  escape_denied                -1.110
+  predictable_sequence         -1.267

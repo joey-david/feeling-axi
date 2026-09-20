@@ -16,6 +16,10 @@ def _sentences(ds: dict[str, Any], key: str) -> list[dict[str, Any]]:
 def _validate_ten_way(rows: list[dict[str, Any]], name: str) -> None:
     if len(rows) != 200:
         raise ValueError(f"{name}: expected 200 rows, got {len(rows)}")
+    prompts = [str(row.get("prompt", "")) for row in rows]
+    if len(set(prompts)) != len(prompts):
+        duplicates = [prompt for prompt, count in Counter(prompts).items() if count > 1]
+        raise ValueError(f"{name}: duplicate prompts would leak across set-wise folds: {duplicates}")
     by_set: dict[int, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         prompt = str(row.get("prompt", ""))

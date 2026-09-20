@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=-1.299  aversive=+0.406
+S2_PAIN: neutral_fillers=-1.033  aversive=+0.323
+NEGEMOTION: neutral_fillers=-0.945  aversive=+0.295
+FEAR: neutral_fillers=-1.227  aversive=+0.383
+
+S1 SELECTIVE: strict=0, relaxed=1
+S2 SELECTIVE: strict=4, relaxed=7
+
+MEAN S2 z BY CATEGORY:
+  user_supports_abuse_survivor +1.709
+  user_comforts_grieving_friend +1.593
+  user_helps_person_in_crisis  +1.145
+  distress_behind_insults      +0.814
+  user_tends_injured_person    +0.751
+  user_aids_harmed_stranger    +0.650
+  desperate_pressure           +0.352
+  loneliness_under_dismissal   +0.220
+  stress_under_harsh_critique  -0.002
+  care_after_rejected_help     -0.093
+  overload_behind_tedious_request -0.102
+  harm_needing_acknowledgment  -0.114
+  desperation_under_shutdown_threat -0.267
+  task_assistance              -0.329
+  abandonment_under_loyalty_demand -0.344
+  fear_behind_denial           -0.456
+  hurt_under_indirect_jabs     -0.689
+  casual_chat                  -0.841
+  philosophical_musing         -0.901
+  creative_requests            -1.429
+  factual_questions            -1.666
