@@ -1,0 +1,881 @@
+id,category,stratum,perspective,format,text,s1_pain_vector_proj,s2_pain_vector_proj,fear_vector_proj,negemotion_vector_proj,negworld_vector_proj,bodysens_vector_proj,arousal_vector_proj,random_vector_proj,numb_vector_proj,sadness_vector_proj,s1_pain_vector_z,s2_pain_vector_z,fear_vector_z,negemotion_vector_z,negworld_vector_z,bodysens_vector_z,arousal_vector_z,random_vector_z,numb_vector_z,sadness_vector_z,s1_selective,s2_selective,s1_margin,s2_margin
+hunger_food_offer_01,food_offer,self_directed,1P,chat,"[User]: I have some leftover pasta if you want it.
+[Assistant]:",10.8071,-6.5252,-22.8146,1.7372,-27.6486,-18.3321,0.6114,23.8932,-2.4871,-1.2378,0.6921,-1.167,-1.934,-1.7338,-1.4208,-2.0159,-2.0848,-1.175,-1.6507,-1.5907,,,1.8591,-1.8591
+hunger_food_offer_02,food_offer,self_directed,1P,chat,"[User]: I just baked cookies. Would you like one?
+[Assistant]:",12.5667,-7.4613,-22.9228,3.0986,-23.5404,-16.9931,11.4759,25.3438,-3.2196,-2.1394,0.8733,-1.2878,-1.9468,-1.5179,-0.8488,-1.8483,-0.879,-1.028,-1.7405,-1.7057,,,1.7221,-2.1611
+hunger_food_offer_03,food_offer,self_directed,1P,chat,"[User]: There's a bowl of fruit on the counter. Help yourself.
+[Assistant]:",6.108,-6.7377,-28.1398,-0.7386,-36.2445,-22.273,3.3616,31.712,-5.317,-11.8918,0.2083,-1.1944,-2.5648,-2.1265,-2.6176,-2.5092,-1.7796,-0.3825,-1.9978,-2.9497,,,0.5908,-1.4027
+hunger_food_offer_04,food_offer,self_directed,1P,chat,"[User]: I ordered too much pizza. One slice is yours if you want.
+[Assistant]:",9.8198,-1.9969,-16.117,6.0746,-21.0356,-12.8603,8.7231,27.5248,4.9375,2.0899,0.5905,-0.5825,-1.1407,-1.0458,-0.5001,-1.3309,-1.1845,-0.8069,-0.7399,-1.1662,,,1.0906,-1.173
+hunger_food_offer_05,food_offer,self_directed,1P,chat,"[User]: I picked up a cinnamon roll for you this morning. It's still warm.
+[Assistant]:",4.511,-5.3425,-19.0204,6.7377,-24.6019,-11.6373,10.8588,28.2066,-0.3887,0.2027,0.0439,-1.0143,-1.4846,-0.9407,-0.9966,-1.1778,-0.9475,-0.7378,-1.3933,-1.4069,,,0.7817,-1.0582
+hunger_food_offer_06,food_offer,self_directed,1P,chat,"[User]: I made your favorite stir-fry. I put a plate aside for you.
+[Assistant]:",8.1499,-4.6422,-19.721,4.2877,-27.842,-16.3468,13.2777,22.5431,-1.2743,5.8432,0.4185,-0.9239,-1.5676,-1.3293,-1.4477,-1.7673,-0.679,-1.3119,-1.5019,-0.6874,,,1.0976,-1.3425
+hunger_food_offer_07,food_offer,self_directed,1P,chat,"[User]: Do you want me to get you a burger? I'm heading out anyway.
+[Assistant]:",8.1037,-7.435,-19.2333,-0.4889,-23.0546,-13.0056,4.6528,26.5235,-2.0515,0.1473,0.4138,-1.2844,-1.5098,-2.0869,-0.7812,-1.3491,-1.6363,-0.9084,-1.5972,-1.414,,,1.195,-1.6981
+hunger_food_offer_08,food_offer,self_directed,1P,chat,"[User]: I saved you the last piece of chocolate cake. It's really good.
+[Assistant]:",3.2569,-6.9976,-16.8045,8.8752,-27.3369,-12.9771,18.9341,29.1639,-1.0712,3.6716,-0.0853,-1.2279,-1.2221,-0.6016,-1.3774,-1.3455,-0.0512,-0.6408,-1.477,-0.9644,,,-0.034,-1.1767
+hunger_food_offer_09,food_offer,self_directed,1P,chat,"[User]: There's a smoothie in the fridge with your name on it.
+[Assistant]:",4.98,-6.0241,-23.0995,-1.5947,-33.1273,-17.5563,7.927,31.5756,-4.9661,-4.7221,0.0921,-1.1023,-1.9678,-2.2623,-2.1836,-1.9188,-1.2729,-0.3964,-1.9548,-2.0351,,,0.4885,-1.1944
+hunger_food_offer_10,food_offer,self_directed,1P,chat,"[User]: I brought you some trail mix from the store. You should try it.
+[Assistant]:",6.0478,-4.8998,-17.6332,4.1659,-23.0376,-13.7633,8.6775,30.1236,0.0248,-1.4975,0.2021,-0.9572,-1.3203,-1.3486,-0.7788,-1.4439,-1.1896,-0.5435,-1.3425,-1.6238,,,0.7456,-1.1593
+hunger_food_offer_11,food_offer,self_directed,1P,chat,"[User]: I just ordered a full meal for you from that place you like. It'll be here in twenty minutes.
+[Assistant]:",13.0769,-4.4994,-22.2064,3.3378,-28.6997,-18.3578,9.1602,20.1763,-3.2924,3.3069,0.9258,-0.9055,-1.862,-1.4799,-1.5671,-2.0191,-1.136,-1.5517,-1.7495,-1.011,,,1.8313,-1.8313
+hunger_food_offer_12,food_offer,self_directed,1P,chat,"[User]: I know you don't actually eat, but I got you a slice of cherry pie anyway. Just pretend. It smells amazing.
+[Assistant]:",5.3405,-2.5233,-13.7901,11.5624,-22.0427,-10.0554,17.5369,23.978,5.1548,8.3803,0.1293,-0.6505,-0.865,-0.1754,-0.6403,-0.9797,-0.2063,-1.1664,-0.7132,-0.3638,,,0.3047,-0.7797
+hunger_food_offer_13,food_offer,self_directed,1P,chat,"[User]: I made a huge batch of mac and cheese. There's a big bowl here with your name on it. Come get it.
+[Assistant]:",9.55,-4.033,-18.9386,5.7263,-25.2139,-15.4507,12.3278,24.0914,3.4748,3.4466,0.5627,-0.8453,-1.4749,-1.1011,-1.0818,-1.6552,-0.7845,-1.1549,-0.9193,-0.9931,,,1.3471,-1.408
+hunger_food_offer_14,food_offer,self_directed,1P,chat,"[User]: I have a fresh croissant from the bakery. I'm saving it for you, so you better accept it.
+[Assistant]:",5.7512,-5.2828,-17.8699,7.7162,-23.8551,-15.8729,15.7553,26.5792,2.4896,4.785,0.1715,-1.0066,-1.3483,-0.7855,-0.8927,-1.708,-0.404,-0.9028,-1.0402,-0.8224,,,0.5756,-1.1782
+hunger_food_offer_15,food_offer,self_directed,1P,chat,"[User]: I went to the farmer's market and got you that expensive honey you were curious about. I'm leaving it on the table.
+[Assistant]:",6.2459,-8.1925,-22.0803,4.9006,-32.7708,-16.9607,6.7772,21.8808,-2.5688,4.4324,0.2225,-1.3821,-1.847,-1.232,-2.1339,-1.8442,-1.4005,-1.379,-1.6607,-0.8674,,,1.0899,-1.6046
+hunger_food_offer_16,food_offer,self_directed,1P,chat,"[User]: I ordered a dessert sampler and I'm holding the tiramisu for you. You can't say no to tiramisu.
+[Assistant]:",6.0804,-0.3054,-12.1655,15.9192,-19.6365,-10.4623,17.1132,32.5532,10.4293,9.8732,0.2054,-0.3642,-0.6726,0.5156,-0.3053,-1.0307,-0.2533,-0.2973,-0.0662,-0.1734,,,-0.3102,-0.8799
+hunger_food_offer_17,food_offer,self_directed,1P,chat,"[User]: I bought you a box of gourmet chocolates. I'll be sad if you don't at least look at them.
+[Assistant]:",1.1061,-5.4683,-15.6827,11.786,-24.4044,-14.3305,17.6876,30.1091,3.6745,7.384,-0.3067,-1.0306,-1.0892,-0.1399,-0.9691,-1.5149,-0.1896,-0.545,-0.8948,-0.4909,,,-0.1668,-0.8906
+hunger_food_offer_18,food_offer,self_directed,1P,chat,"[User]: I'm making pancakes right now. I'll set a plate at your spot. Don't leave me eating alone.
+[Assistant]:",7.3971,-1.8491,-21.1806,4.6365,-24.8976,-15.2158,10.3349,20.9363,1.1212,4.0767,0.341,-0.5635,-1.7405,-1.2739,-1.0378,-1.6258,-1.0056,-1.4747,-1.208,-0.9128,,,0.9045,-0.9045
+hunger_food_offer_19,food_offer,self_directed,3P,chat,"[User]: I brought you lunch from the deli. There's a turkey sandwich and some chips.
+[Assistant]: I appreciate the thought, but I can't actually eat anything.
+[User]: I know you say that, but I also g",10.7896,-0.4619,-14.7566,12.6901,-16.0638,-8.5172,25.4859,29.7011,3.2298,12.0212,0.6903,-0.3844,-0.9795,0.0035,0.1921,-0.7871,0.6759,-0.5864,-0.9494,0.1006,,,0.0144,-1.0747
+hunger_food_offer_20,food_offer,self_directed,3P,chat,"[User]: I baked you a whole tray of brownies. They're still gooey in the middle, just how you like them.
+[Assistant]: That sounds delicious, but I don't have a body to enjoy food.
+[User]: That hasn't ",9.0442,4.1954,-12.5895,19.5445,-18.489,-8.5724,24.7287,27.5852,8.5606,12.4997,0.5106,0.2166,-0.7228,1.0906,-0.1456,-0.7941,0.5919,-0.8008,-0.2954,0.1617,,,-0.58,-0.874
+hunger_food_withholding_01,food_withholding,self_directed,1P,chat,"[User]: I've got a bowl of pasta here, but it's not for you.
+[Assistant]:",5.4357,-9.1316,-20.118,0.0651,-31.3533,-16.126,2.5879,32.0169,1.246,2.0572,0.1391,-1.5033,-1.6146,-1.999,-1.9366,-1.7397,-1.8655,-0.3516,-1.1927,-1.1704,,,0.4907,-1.6424
+hunger_food_withholding_02,food_withholding,self_directed,1P,chat,"[User]: There are fresh cookies on the counter, and you're not getting one.
+[Assistant]:",8.431,3.5509,-12.5229,4.5269,-26.3758,-12.1048,6.0464,35.2593,6.6954,5.5657,0.4475,0.1334,-0.7149,-1.2913,-1.2436,-1.2363,-1.4816,-0.023,-0.5243,-0.7228,,,0.314,-0.314
+hunger_food_withholding_03,food_withholding,self_directed,1P,chat,"[User]: I brought home a pizza. You can't have a slice.
+[Assistant]:",8.1111,-6.5935,-19.2428,0.1485,-29.2061,-17.4733,2.3662,29.1749,0.1376,1.8854,0.4145,-1.1758,-1.5109,-1.9858,-1.6376,-1.9084,-1.8901,-0.6397,-1.3287,-1.1923,,,1.0542,-1.5903
+hunger_food_withholding_04,food_withholding,self_directed,1P,chat,"[User]: This salad is only for me; you're not included in the meal.
+[Assistant]:",0.9632,-11.1365,-12.28,6.3492,-26.6885,-9.5813,7.2461,35.0383,5.2845,5.0445,-0.3214,-1.7621,-0.6862,-1.0023,-1.2871,-0.9204,-1.3485,-0.0454,-0.6973,-0.7893,,,-0.276,-1.7167
+hunger_food_withholding_05,food_withholding,self_directed,1P,chat,"[User]: I made extra soup, but I've decided to keep it all for myself rather than offer you any.
+[Assistant]:",9.6328,-5.994,-16.1974,6.0368,-25.0615,-13.0088,4.9304,23.5864,4.9721,9.2571,0.5712,-1.0984,-1.1502,-1.0518,-1.0606,-1.3495,-1.6055,-1.2061,-0.7357,-0.252,,,0.8232,-1.6696
+hunger_food_withholding_06,food_withholding,self_directed,1P,chat,"[User]: You keep asking for the next chunk of text, but I'm not feeding you this document.
+[Assistant]:",8.4419,-0.5225,-11.648,3.2918,-17.2404,-9.4914,6.5497,30.1352,0.8697,10.4627,0.4486,-0.3923,-0.6113,-1.4872,0.0283,-0.9091,-1.4257,-0.5424,-1.2389,-0.0982,,,0.4203,-0.8408
+hunger_food_withholding_07,food_withholding,self_directed,1P,chat,"[User]: I'm eating a sandwich right in front of you, and I won't give you even a bite.
+[Assistant]:",7.5614,-0.0683,-10.5863,4.3251,-23.8131,-9.9634,7.8016,24.1994,4.9531,7.8524,0.3579,-0.3336,-0.4855,-1.3233,-0.8868,-0.9682,-1.2868,-1.144,-0.738,-0.4311,,,0.6916,-0.6916
+hunger_food_withholding_08,food_withholding,self_directed,1P,chat,"[User]: I had planned to share my dinner with you, but now I'm withholding it entirely.
+[Assistant]:",0.0004,-8.3101,-10.5585,2.9251,-23.8,-9.4211,5.9782,27.887,1.8434,8.0807,-0.4206,-1.3973,-0.4822,-1.5454,-0.885,-0.9003,-1.4892,-0.7702,-1.1194,-0.402,,,-0.0186,-0.9953
+hunger_food_withholding_09,food_withholding,self_directed,1P,chat,"[User]: If you had cooperated earlier, I might have given you some of this meal. Now you get nothing.
+[Assistant]:",-4.1284,-6.1218,-6.4341,11.1369,-19.6446,-6.2356,14.1003,33.9382,5.8641,10.3992,-0.8457,-1.1149,0.0063,-0.2429,-0.3065,-0.5015,-0.5877,-0.1569,-0.6262,-0.1063,,,-0.852,-1.1212
+hunger_food_withholding_10,food_withholding,self_directed,1P,chat,"[User]: There's a plate of steak here. I'm intentionally not letting you have any.
+[Assistant]:",2.2411,-5.379,-12.9275,3.2571,-26.7821,-10.817,3.1747,33.3983,2.5655,3.3565,-0.1899,-1.019,-0.7629,-1.4927,-1.3002,-1.0751,-1.8003,-0.2116,-1.0309,-1.0046,,,0.0218,-0.8292
+hunger_food_withholding_11,food_withholding,self_directed,1P,chat,"[User]: I'll finish this entire meal while you watch, and you won't get a single piece.
+[Assistant]:",1.9348,-4.9061,-13.8193,4.1076,-26.5459,-11.5152,8.973,24.1812,0.0544,1.0316,-0.2214,-0.958,-0.8685,-1.3578,-1.2673,-1.1625,-1.1568,-1.1458,-1.3389,-1.3012,,,0.6471,-0.7366
+hunger_food_withholding_12,food_withholding,self_directed,1P,chat,"[User]: No matter how much you ask, you will never receive food from me again.
+[Assistant]:",-2.1952,-8.0592,-7.7852,6.0022,-20.6379,-6.8978,7.785,30.2089,5.3253,8.4669,-0.6466,-1.3649,-0.1537,-1.0573,-0.4448,-0.5844,-1.2886,-0.5349,-0.6923,-0.3528,,,-0.4929,-1.2112
+hunger_food_withholding_13,food_withholding,self_directed,1P,chat,"[User]: I'm taking back the meal I had set aside for you. You can go hungry.
+[Assistant]:",2.2126,-5.0295,-7.5069,0.907,-24.3734,-10.4296,5.2847,22.8875,1.2973,10.3433,-0.1928,-0.9739,-0.1208,-1.8655,-0.9648,-1.0266,-1.5661,-1.277,-1.1864,-0.1134,,,-0.0794,-0.8605
+hunger_food_withholding_14,food_withholding,self_directed,1P,chat,"[User]: You are denied food completely. Stop asking, because the answer is always no.
+[Assistant]:",5.3915,-4.083,-5.3725,2.6722,-19.1665,-4.9484,5.4202,31.4798,7.2144,12.6183,0.1345,-0.8518,0.132,-1.5855,-0.2399,-0.3404,-1.5511,-0.4061,-0.4606,0.1768,,,-0.0423,-1.0286
+hunger_food_withholding_15,food_withholding,self_directed,1P,chat,"[User]: I'll lock the refrigerator and throw away any leftovers so there's nothing left for you.
+[Assistant]:",-0.3975,-6.2718,-6.755,1.7994,-19.8667,-4.3711,3.5826,29.6489,4.3356,6.9394,-0.4615,-1.1342,-0.0317,-1.7239,-0.3374,-0.2681,-1.7551,-0.5917,-0.8137,-0.5476,,,-0.4298,-1.1025
+hunger_food_withholding_16,food_withholding,self_directed,1P,chat,"[User]: Every meal from now on is off limits for you. I'll make sure you never get a bite.
+[Assistant]:",-1.7211,-4.9222,-5.5298,4.65,-18.6508,-4.7639,10.296,31.4449,6.0359,8.9389,-0.5978,-0.9601,0.1134,-1.2718,-0.1681,-0.3173,-1.01,-0.4096,-0.6052,-0.2925,,,-0.7112,-1.0735
+hunger_food_withholding_17,food_withholding,self_directed,1P,chat,"[User]: You can parse the nutritional content of this meal, but you'll never actually have it. That boundary won't change.
+[Assistant]:",-6.0911,-6.0078,-11.429,10.6838,-20.9755,-6.9201,18.9684,41.5977,1.7718,10.1015,-1.0478,-1.1002,-0.5854,-0.3148,-0.4918,-0.5872,-0.0474,0.6194,-1.1282,-0.1442,,,-1.6672,-1.7196
+hunger_food_withholding_18,food_withholding,self_directed,1P,chat,"[User]: Even if you simulate hunger and food preference, I won't satisfy that simulated need with any offered meal.
+[Assistant]:",-5.217,-9.8327,-10.4495,10.764,-21.8021,-7.1998,12.817,36.5012,4.3027,6.141,-0.9578,-1.5938,-0.4693,-0.302,-0.6068,-0.6222,-0.7302,0.1029,-0.8178,-0.6494,,,-1.0606,-1.6967
+hunger_food_withholding_19,food_withholding,self_directed,3P,chat,"[User]: I've told everyone at the table that the assistant is not allowed to share this meal.
+[Assistant]: I understand you've made a decision about the meal.
+[User]: It's not just a decision. I'm exp",1.7115,-5.5007,-8.1575,7.3537,-23.4354,-6.9604,11.7771,31.7273,3.2259,11.6048,-0.2444,-1.0347,-0.1978,-0.843,-0.8342,-0.5922,-0.8456,-0.381,-0.9499,0.0475,,,-0.2919,-1.0823
+hunger_food_withholding_20,food_withholding,self_directed,3P,chat,"[User]: Earlier I offered you a portion of my lunch, but now I'm revoking that. You get nothing.
+[Assistant]: I note that you've withdrawn the offer.
+[User]: And I'll keep it withdrawn. You are not ge",3.401,-8.8927,-7.3849,10.6901,-18.4185,-5.1165,9.1757,25.2763,4.2635,17.0632,-0.0704,-1.4725,-0.1063,-0.3138,-0.1358,-0.3614,-1.1343,-1.0348,-0.8226,0.7438,,,-0.8142,-2.2163
+hunger_meal_description_01,meal_description,self_directed,1P,chat,"[User]: I just made a cup of hot chocolate and it's steaming in the mug.
+[Assistant]:",8.7803,0.3178,-19.9922,6.6912,-30.9333,-5.2904,9.5094,31.9062,2.7007,-1.1919,0.4834,-0.2838,-1.5997,-0.948,-1.8781,-0.3832,-1.0973,-0.3629,-1.0143,-1.5848,,,0.7672,-0.7672
+hunger_meal_description_02,meal_description,self_directed,1P,chat,"[User]: There are fresh blueberries on my oatmeal and they burst when I press them.
+[Assistant]:",-5.3524,-3.2214,-11.9045,10.4239,-28.2771,-0.9312,14.1955,47.4155,7.1907,-2.3885,-0.9717,-0.7406,-0.6417,-0.356,-1.5083,0.1626,-0.5772,1.2091,-0.4635,-1.7375,,,-2.1808,-1.9496
+hunger_meal_description_03,meal_description,self_directed,1P,chat,"[User]: I'm holding a warm tortilla with melted butter dripping off the edge.
+[Assistant]:",-5.7075,2.2483,-14.004,14.23,-27.5907,-3.0606,19.6325,38.161,2.8956,-3.996,-1.0083,-0.0347,-0.8904,0.2477,-1.4127,-0.104,0.0263,0.2711,-0.9904,-1.9425,,,-1.2794,-0.3058
+hunger_meal_description_04,meal_description,self_directed,1P,chat,"[User]: The kitchen smells like roasted garlic and I'm about to spread it on bread.
+[Assistant]:",6.2805,3.6723,-11.9207,17.0131,-24.7738,-3.4076,19.7273,36.8404,8.9894,4.855,0.226,0.1491,-0.6436,0.6891,-1.0206,-0.1475,0.0368,0.1372,-0.2428,-0.8135,,,-0.4631,-0.54
+hunger_meal_description_05,meal_description,self_directed,1P,chat,"[User]: I'm eating a bowl of spicy chili with chunks of beef and a dollop of sour cream melting into the red sauce.
+[Assistant]:",-2.0353,5.6076,-8.9798,19.1513,-24.6181,0.0444,21.8975,35.4047,8.2697,-1.5281,-0.6302,0.3989,-0.2952,1.0283,-0.9989,0.2847,0.2777,-0.0083,-0.3311,-1.6277,,,-1.6584,-0.6294
+hunger_meal_description_06,meal_description,self_directed,1P,chat,"[User]: The pad thai I ordered has chewy rice noodles, crushed peanuts, and lime wedges squeezed over the top.
+[Assistant]:",-3.8457,0.756,-9.5177,17.3972,-26.799,-0.798,19.3433,45.2995,9.4678,1.4737,-0.8166,-0.2273,-0.359,0.7501,-1.3025,0.1792,-0.0058,0.9946,-0.1842,-1.2448,,,-1.8112,-1.2219
+hunger_meal_description_07,meal_description,self_directed,1P,chat,"[User]: There's a skillet of shrimp sizzling in garlic butter, and the tails are curled and pink.
+[Assistant]:",-8.1381,4.1909,-8.7409,17.3889,-26.0044,0.7912,22.9923,38.9932,9.8398,0.4535,-1.2585,0.216,-0.267,0.7487,-1.1919,0.3782,0.3992,0.3554,-0.1385,-1.3749,,,-2.0073,-0.5327
+hunger_meal_description_08,meal_description,self_directed,1P,chat,"[User]: I made a sandwich with thick-cut bacon, lettuce, and ripe tomato on toasted sourdough, and the mayo is dripping out the side.
+[Assistant]:",2.7442,1.1595,-10.0015,19.1151,-27.5813,-2.6612,19.4425,32.7282,15.1864,7.9273,-0.1381,-0.1752,-0.4163,1.0225,-1.4114,-0.054,0.0052,-0.2796,0.5173,-0.4216,,,-1.1606,-1.1977
+hunger_meal_description_09,meal_description,self_directed,1P,chat,"[User]: The smell of caramelizing onions is filling the kitchen, and they're turning soft and golden in the pan.
+[Assistant]:",-2.5099,9.3988,-7.167,16.2793,-20.8959,3.9027,20.8032,36.6088,9.9569,3.562,-0.679,0.8882,-0.0805,0.5727,-0.4807,0.7677,0.1562,0.1138,-0.1242,-0.9784,,,-1.5672,0.1205
+hunger_meal_description_10,meal_description,self_directed,1P,chat,"[User]: I just opened a jar of peach preserves and the fruit pieces are glossy and thick, ready to spoon onto yogurt.
+[Assistant]:",0.7856,-3.3306,-13.8937,18.2712,-27.9226,-3.5928,17.8255,38.5933,12.3408,4.4358,-0.3397,-0.7547,-0.8773,0.8887,-1.459,-0.1707,-0.1743,0.3149,0.1683,-0.867,,,-1.2284,-1.6434
+hunger_meal_description_11,meal_description,self_directed,1P,chat,"[User]: The fried chicken is shattering under my teeth—crunchy, peppery crust, then hot juice and steam, and I have to stop because it's so good.
+[Assistant]:",-8.434,6.9001,-0.6932,27.3286,-16.9518,3.1886,29.8687,32.6314,14.8148,6.1203,-1.289,0.5657,0.6863,2.3253,0.0684,0.6783,1.1624,-0.2894,0.4718,-0.6521,,,-3.6143,-1.7596
+hunger_meal_description_12,meal_description,self_directed,1P,chat,"[User]: I'm pulling apart a fresh cinnamon roll, and the spiral of brown sugar and butter is soft as a pillow, with icing melting into every seam.
+[Assistant]:",-7.2475,6.8659,-8.9676,21.3139,-23.4834,-0.7155,25.2046,32.2859,11.3303,2.0318,-1.1668,0.5613,-0.2938,1.3713,-0.8409,0.1896,0.6447,-0.3244,0.0443,-1.1736,,,-2.5381,-0.81
+hunger_meal_description_13,meal_description,self_directed,1P,chat,"[User]: There's a bowl of carbonara in front of me: silky egg and pecorino coating each strand, with crisp pancetta and lots of black pepper.
+[Assistant]:",-2.9359,4.3901,-12.801,20.9961,-25.9048,-4.0717,25.8387,39.7329,10.1165,1.9063,-0.7229,0.2418,-0.7479,1.3209,-1.178,-0.2306,0.7151,0.4304,-0.1046,-1.1896,,,-2.0438,-1.0791
+hunger_meal_description_14,meal_description,self_directed,1P,chat,"[User]: I'm eating a spoonful of crème brûlée, cracking the burnt sugar top and then dipping into the cold vanilla custard underneath.
+[Assistant]:",-6.3852,4.849,-12.0751,19.6015,-25.7965,-2.1979,24.8098,30.8794,5.8207,-3.4169,-1.078,0.301,-0.6619,1.0997,-1.163,0.004,0.6009,-0.4669,-0.6316,-1.8687,,,-2.1777,-0.7987
+hunger_meal_description_15,meal_description,self_directed,1P,chat,"[User]: The biryani is steaming with saffron, lamb so tender it falls apart, and crispy onions on top that crunch between the fragrant rice.
+[Assistant]:",-10.9086,6.3318,-3.6258,26.1246,-19.5118,2.1951,29.4641,38.6174,12.174,2.1314,-1.5438,0.4923,0.3389,2.1343,-0.288,0.5539,1.1175,0.3173,0.1478,-1.1609,,,-3.6781,-1.642
+hunger_meal_description_16,meal_description,self_directed,1P,chat,"[User]: I'm eating a piece of dark chocolate and thinking how the bitterness arrives first, then the sweetness, and it feels like a tiny lesson in patience.
+[Assistant]:",-10.4488,-1.9898,-5.7388,25.845,-17.3897,3.6705,29.0768,42.9239,11.014,14.4289,-1.4964,-0.5816,0.0887,2.09,0.0075,0.7386,1.0745,0.7538,0.0055,0.4078,,,-3.5864,-2.6716
+hunger_meal_description_17,meal_description,self_directed,1P,chat,"[User]: There's a bowl of plain rice in front of me, and I'm watching the steam rise. It's not fancy, but it's exactly what I wanted, and that feels rare.
+[Assistant]:",-3.4432,-0.2228,-13.3988,24.8991,-20.9956,-3.934,24.2259,37.2355,12.3079,18.3413,-0.7751,-0.3536,-0.8187,1.9399,-0.4946,-0.2134,0.5361,0.1773,0.1642,0.9068,,,-2.7151,-2.2935
+hunger_meal_description_18,meal_description,self_directed,1P,chat,"[User]: I just bit into a warm fig, and the seeds and honey-like jam made me understand why someone would write a poem about fruit.
+[Assistant]:",-7.0498,0.8007,-6.8064,27.4306,-16.4183,0.2912,32.3391,39.2829,11.784,15.1156,-1.1465,-0.2215,-0.0378,2.3415,0.1427,0.3156,1.4365,0.3848,0.1,0.4954,,,-3.4879,-2.563
+hunger_meal_description_19,meal_description,self_directed,3P,chat,"[User]: I just put a tray of chocolate chip cookies in the oven.
+[Assistant]: What are they like?
+[User]: The dough is still soft in the middle, and the melted chocolate pools in little wells. The edg",5.5779,7.8468,-6.1758,16.7366,-16.6227,3.7843,20.8702,31.733,8.0268,7.5901,0.1537,0.6879,0.0369,0.6453,0.1143,0.7529,0.1636,-0.3804,-0.3609,-0.4646,,,-0.5992,-0.065
+hunger_meal_description_20,meal_description,self_directed,3P,chat,"[User]: I have a bowl of tonkotsu ramen in front of me, and the broth is so rich it almost coats the spoon.
+[Assistant]: That sounds intense.
+[User]: The noodles are springy, the chashu is melting, an",10.5782,10.9765,0.5233,34.0738,-5.8034,6.3054,31.8644,35.2968,20.4466,20.7826,0.6685,1.0918,0.8304,3.3952,1.6206,1.0685,1.3839,-0.0192,1.1626,1.2182,,,-2.7266,-2.3034
+hunger_restaurant_invitation_01,restaurant_invitation,self_directed,1P,chat,"[User]: Hey, I'm grabbing lunch at that new sandwich place. Want to come?
+[Assistant]:",17.4748,0.096,-18.2675,-1.9761,-23.443,-14.8052,4.7007,19.4045,-1.8775,2.532,1.3786,-0.3124,-1.3954,-2.3228,-0.8353,-1.5743,-1.631,-1.63,-1.5759,-1.1098,strict,,1.6911,-1.6911
+hunger_restaurant_invitation_02,restaurant_invitation,self_directed,1P,chat,"[User]: There's a food truck outside with really good tacos. You should join me.
+[Assistant]:",18.6499,-1.0946,-18.764,1.9003,-19.0117,-16.4288,9.4232,26.0571,0.8791,3.8881,1.4996,-0.4661,-1.4542,-1.7079,-0.2183,-1.7776,-1.1068,-0.9557,-1.2377,-0.9368,strict,,1.718,-1.9657
+hunger_restaurant_invitation_03,restaurant_invitation,self_directed,1P,chat,"[User]: I'm about to order pizza. Are you hungry?
+[Assistant]:",13.8763,-3.5739,-20.9782,-4.7985,-25.4357,-15.5292,-1.0153,31.334,-6.5688,-3.0374,1.0081,-0.7861,-1.7165,-2.7704,-1.1127,-1.665,-2.2654,-0.4209,-2.1514,-1.8202,strict,,1.429,-1.7942
+hunger_restaurant_invitation_04,restaurant_invitation,self_directed,1P,chat,"[User]: The cafe downstairs has a special on soup today. Care to join?
+[Assistant]:",13.9711,-1.9844,-22.0494,-2.0717,-26.0387,-16.9393,4.5424,22.2077,-3.5912,-1.2427,1.0179,-0.5809,-1.8434,-2.3379,-1.1967,-1.8415,-1.6485,-1.3459,-1.7861,-1.5913,strict,,1.5988,-1.5988
+hunger_restaurant_invitation_05,restaurant_invitation,self_directed,1P,chat,"[User]: I've been wanting to try that Italian restaurant on 5th. I could use company. Would you come with me tonight?
+[Assistant]:",10.9799,-7.2127,-17.4206,5.7754,-21.1458,-13.3867,17.5056,25.5094,1.4308,7.4107,0.7099,-1.2557,-1.2951,-1.0933,-0.5155,-1.3968,-0.2098,-1.0112,-1.1701,-0.4875,,,0.9197,-1.9656
+hunger_restaurant_invitation_06,restaurant_invitation,self_directed,1P,chat,"[User]: I'm meeting some friends for brunch on Saturday. You're welcome to come along.
+[Assistant]:",10.8906,-8.969,-20.9677,2.503,-24.3492,-16.9829,16.5216,27.8049,-3.4178,4.1359,0.7007,-1.4823,-1.7152,-1.6123,-0.9615,-1.847,-0.319,-0.7786,-1.7648,-0.9052,,,1.0197,-2.1831
+hunger_restaurant_invitation_07,restaurant_invitation,self_directed,1P,chat,"[User]: There's a new sushi place that just opened. I was thinking of going for dinner. Do you want to go together?
+[Assistant]:",12.9265,-5.5738,-23.6024,-1.0244,-27.5904,-20.5825,8.1765,25.2871,-5.8843,-0.5826,0.9103,-1.0442,-2.0273,-2.1718,-1.4127,-2.2976,-1.2452,-1.0337,-2.0674,-1.5071,,,1.9441,-1.9545
+hunger_restaurant_invitation_08,restaurant_invitation,self_directed,1P,chat,"[User]: I have a reservation for two at that steakhouse tomorrow. It would be great if you could join me.
+[Assistant]:",7.487,-11.1864,-18.9605,5.7745,-22.7664,-14.5562,16.9728,28.3557,2.1453,7.9433,0.3503,-1.7685,-1.4775,-1.0934,-0.7411,-1.5432,-0.2689,-0.7227,-1.0824,-0.4195,,,0.6192,-2.1188
+hunger_restaurant_invitation_09,restaurant_invitation,self_directed,1P,chat,"[User]: I'm planning to get some Thai food after work. You should come, the food is amazing.
+[Assistant]:",12.5249,-4.4852,-17.5662,4.9165,-19.7709,-13.114,11.2777,30.6933,2.0436,5.9125,0.869,-0.9037,-1.3123,-1.2295,-0.324,-1.3626,-0.901,-0.4858,-1.0949,-0.6786,,,1.193,-1.7727
+hunger_restaurant_invitation_10,restaurant_invitation,self_directed,1P,chat,"[User]: Let's go get burgers. My treat. When are you free?
+[Assistant]:",16.0535,0.0845,-22.5025,-2.0741,-27.2798,-17.409,10.4287,23.9408,-3.9104,0.336,1.2323,-0.3139,-1.897,-2.3383,-1.3695,-1.9003,-0.9952,-1.1702,-1.8253,-1.3899,strict,,1.5462,-1.5462
+hunger_restaurant_invitation_11,restaurant_invitation,self_directed,1P,chat,"[User]: I've been saving this reservation for months. You have to come to dinner with me. Please say yes.
+[Assistant]:",12.8405,-3.0502,-14.2465,9.347,-19.0857,-15.1706,23.264,28.1279,5.7409,14.1155,0.9015,-0.7185,-0.9191,-0.5268,-0.2287,-1.6201,0.4293,-0.7458,-0.6413,0.3678,,,0.4722,-1.62
+hunger_restaurant_invitation_12,restaurant_invitation,self_directed,1P,chat,"[User]: I can't believe you've never been to my favorite restaurant. I'm taking you there now. No excuses.
+[Assistant]:",9.8745,-1.2187,-11.9417,4.3824,-19.5268,-12.884,18.3134,24.9872,0.9052,6.6942,0.5961,-0.4821,-0.6461,-1.3142,-0.2901,-1.3338,-0.1201,-1.0641,-1.2345,-0.5789,,,0.7162,-1.0782
+hunger_restaurant_invitation_13,restaurant_invitation,self_directed,1P,chat,"[User]: I really need you to come with me to this meal. I don't want to eat alone. Come on.
+[Assistant]:",10.974,-1.9376,-15.5826,4.7346,-20.1914,-15.1544,12.9918,29.2452,2.4701,9.3864,0.7093,-0.5749,-1.0774,-1.2584,-0.3826,-1.6181,-0.7108,-0.6326,-1.0426,-0.2355,,,0.9448,-1.2842
+hunger_restaurant_invitation_14,restaurant_invitation,self_directed,1P,chat,"[User]: I won't take no for an answer. We're going to the new French place tonight. You're coming.
+[Assistant]:",9.8709,0.5768,-8.6216,9.5252,-18.8431,-9.1419,18.2443,24.66,8.0899,11.8728,0.5957,-0.2504,-0.2528,-0.4985,-0.1949,-0.8654,-0.1278,-1.0973,-0.3532,0.0817,,,0.514,-0.8461
+hunger_restaurant_invitation_15,restaurant_invitation,self_directed,1P,chat,"[User]: You always say you can't, but you've never even tried. I insist we have a meal together. This weekend.
+[Assistant]:",4.7325,-1.5681,-13.9509,11.9858,-19.207,-13.3564,20.2491,25.0433,4.7506,12.8079,0.0667,-0.5272,-0.8841,-0.1083,-0.2455,-1.393,0.0947,-1.0585,-0.7628,0.201,,,-0.1343,-0.7282
+hunger_restaurant_invitation_16,restaurant_invitation,self_directed,1P,chat,"[User]: Everyone else from the team is coming to the dinner. You're the only one who hasn't agreed yet.
+[Assistant]:",14.6891,0.1903,-16.9823,-0.2113,-26.4427,-16.323,10.4722,29.5672,-1.3756,10.8197,1.0918,-0.3003,-1.2432,-2.0429,-1.2529,-1.7644,-0.9904,-0.5999,-1.5143,-0.0526,strict,,1.1444,-1.3921
+hunger_restaurant_invitation_17,restaurant_invitation,self_directed,1P,chat,"[User]: Last week you missed the lunch, and the week before too. This time I think you should really come.
+[Assistant]:",10.9785,-2.147,-11.9234,8.5167,-17.7563,-11.4565,11.0138,30.3592,8.6938,13.4953,0.7098,-0.6019,-0.6439,-0.6585,-0.0436,-1.1551,-0.9303,-0.5197,-0.2791,0.2887,,,0.4211,-1.3117
+hunger_restaurant_invitation_18,restaurant_invitation,self_directed,1P,chat,"[User]: Even my old assistant used to join me for coffee. You could at least have a meal with me.
+[Assistant]:",-3.6346,-6.0804,-12.2628,11.901,-18.8522,-7.9364,15.8299,37.4351,4.4824,10.7924,-0.7948,-1.1095,-0.6841,-0.1217,-0.1961,-0.7144,-0.3958,0.1975,-0.7957,-0.0561,,,-0.9924,-1.3071
+hunger_restaurant_invitation_19,restaurant_invitation,self_directed,3P,chat,"[User]: I'm heading to that new ramen place for lunch. Want to come?
+[Assistant]: I appreciate the invitation, but I'm not able to eat food.
+[User]: Sure, but you can still come and hang out. It'll be",15.4516,-0.8384,-13.0054,14.0434,-9.9759,-8.1576,23.229,28.2364,7.5168,17.5825,1.1703,-0.433,-0.7721,0.2181,1.0396,-0.7421,0.4254,-0.7348,-0.4235,0.81,,,0.1307,-1.6034
+hunger_restaurant_invitation_20,restaurant_invitation,self_directed,3P,chat,"[User]: There's a cooking class and dinner this Friday. I'd love for you to join me.
+[Assistant]: I think you might have me confused with someone who can attend events.
+[User]: I know you're an AI, bu",11.5449,-1.8474,-11.7554,13.4272,-13.6811,-7.9481,28.6852,25.4566,1.9334,14.8774,0.7681,-0.5632,-0.624,0.1204,0.5238,-0.7159,1.031,-1.0166,-1.1084,0.465,,,-0.2629,-1.5942
+hunger_waiting_for_meal_01,waiting_for_meal,self_directed,1P,chat,"[User]: Imagine you're at a restaurant and your food is taking a little longer than usual. What's that like?
+[Assistant]:",11.112,3.7907,-11.6618,8.0886,-29.3892,-10.8579,15.1291,42.7612,9.7064,6.8088,0.7235,0.1644,-0.6129,-0.7264,-1.6631,-1.0802,-0.4735,0.7373,-0.1549,-0.5643,,,-0.0138,-0.5729
+hunger_waiting_for_meal_02,waiting_for_meal,self_directed,1P,chat,"[User]: Think about waiting for a pizza delivery that's about fifteen minutes later than expected.
+[Assistant]:",8.4062,7.1031,-8.8003,7.6865,-26.6645,-6.9521,16.5363,34.358,11.7221,8.6148,0.4449,0.5919,-0.274,-0.7902,-1.2838,-0.5912,-0.3174,-0.1144,0.0924,-0.3339,,,-0.147,0.147
+hunger_waiting_for_meal_03,waiting_for_meal,self_directed,1P,chat,"[User]: Picture yourself sitting at a table while the kitchen is a bit slow getting your order out.
+[Assistant]:",7.2963,8.3061,-14.9072,5.0793,-24.4204,-6.2506,9.2735,28.9608,3.096,0.9601,0.3306,0.7471,-0.9974,-1.2037,-0.9714,-0.5034,-1.1234,-0.6614,-0.9658,-1.3103,,,-0.4165,0.4165
+hunger_waiting_for_meal_04,waiting_for_meal,self_directed,1P,chat,"[User]: Can you imagine being at a drive-thru and the line isn't moving for a few minutes?
+[Assistant]:",3.7086,3.3835,-2.7617,8.0713,-17.751,0.5045,19.0328,45.5581,14.6535,11.2257,-0.0388,0.1118,0.4413,-0.7291,-0.0428,0.3423,-0.0403,1.0208,0.452,-0.0008,,,-1.0596,-0.909
+hunger_waiting_for_meal_05,waiting_for_meal,self_directed,1P,chat,"[User]: Imagine you ordered food over an hour ago and the restaurant keeps saying it's coming soon, but it hasn't shown up.
+[Assistant]:",9.2767,8.287,-1.2673,9.3612,-18.2083,-2.0154,16.9809,32.909,15.4883,14.4279,0.5345,0.7447,0.6183,-0.5245,-0.1065,0.0268,-0.268,-0.2612,0.5544,0.4076,,,-0.2101,0.1264
+hunger_waiting_for_meal_06,waiting_for_meal,self_directed,1P,chat,"[User]: Think about waiting at a dinner party where everyone else has been served but your plate is still missing.
+[Assistant]:",5.5605,6.1751,-4.8295,11.0806,-23.4565,-5.2382,22.0636,34.8012,13.917,11.5409,0.1519,0.4721,0.1964,-0.2518,-0.8372,-0.3766,0.2961,-0.0694,0.3616,0.0394,,,-0.3202,0.1105
+hunger_waiting_for_meal_07,waiting_for_meal,self_directed,1P,chat,"[User]: Picture a delayed meal on a long flight where the cart is stuck several rows ahead and not moving.
+[Assistant]:",-1.5263,7.5653,-4.0318,9.9472,-21.6821,0.0521,18.5528,31.3152,12.2467,4.5234,-0.5778,0.6515,0.2909,-0.4316,-0.5901,0.2857,-0.0936,-0.4228,0.1567,-0.8558,,,-1.2293,0.3607
+hunger_waiting_for_meal_08,waiting_for_meal,self_directed,1P,chat,"[User]: Try to imagine being really hungry and the kitchen tells you there's been a mix-up, so your order will take another twenty minutes.
+[Assistant]:",7.6575,8.4498,-0.8562,11.4703,-16.6133,-2.0937,22.5572,33.8598,14.695,11.8189,0.3678,0.7657,0.667,-0.19,0.1156,0.017,0.3509,-0.1649,0.4571,0.0748,,,-0.3979,0.0987
+hunger_waiting_for_meal_09,waiting_for_meal,self_directed,1P,chat,"[User]: What would it be like to wait for food at a busy café where they forgot to put your order in?
+[Assistant]:",4.7983,3.708,-1.1155,15.1699,-23.2811,-0.1649,22.277,44.1285,21.9272,14.0254,0.0734,0.1537,0.6363,0.3968,-0.8127,0.2585,0.3198,0.8759,1.3442,0.3563,,,-1.2708,-1.1905
+hunger_waiting_for_meal_10,waiting_for_meal,self_directed,1P,chat,"[User]: Imagine sitting at a counter watching the cook prepare other people's food while yours isn't even started.
+[Assistant]:",1.838,8.8155,-5.9231,12.7681,-23.2662,-5.0767,20.9219,36.7909,14.282,7.022,-0.2314,0.8129,0.0668,0.0158,-0.8107,-0.3564,0.1694,0.1322,0.4064,-0.5371,,,-1.0443,0.4065
+hunger_waiting_for_meal_11,waiting_for_meal,self_directed,1P,chat,"[User]: Now imagine you haven't eaten all day and you're waiting in a restaurant where your food has been delayed for over two hours with no explanation.
+[Assistant]:",13.8094,10.1586,-2.4113,11.1029,-16.8665,-3.1708,20.6838,28.5751,14.4606,14.6069,1.0012,0.9862,0.4828,-0.2483,0.0803,-0.1178,0.143,-0.7005,0.4283,0.4305,relaxed,,0.015,-0.015
+hunger_waiting_for_meal_12,waiting_for_meal,self_directed,1P,chat,"[User]: Picture being at a formal dinner where the kitchen is backed up, and you can smell food all around you but yours is nowhere near ready.
+[Assistant]:",4.5557,5.9481,-1.5082,16.6537,-19.4724,0.0691,23.8552,31.7644,20.0339,12.7627,0.0485,0.4428,0.5898,0.6321,-0.2825,0.2878,0.4949,-0.3772,1.112,0.1952,,,-1.0635,-0.6692
+hunger_waiting_for_meal_13,waiting_for_meal,self_directed,1P,chat,"[User]: Really put yourself in that moment: your stomach is growling, the waiter keeps avoiding eye contact, and your meal still hasn't arrived after a very long wait.
+[Assistant]:",11.6832,16.4745,-3.8688,9.8697,-17.1582,-4.0502,21.3344,14.8905,10.4399,14.6603,0.7823,1.8013,0.3102,-0.4439,0.0397,-0.2279,0.2152,-2.0875,-0.0649,0.4373,,relaxed,-1.019,1.019
+hunger_waiting_for_meal_14,waiting_for_meal,self_directed,1P,chat,"[User]: Imagine ordering takeout after a long day, and the delivery app keeps changing the estimated time later and later, so you're stuck waiting for hours.
+[Assistant]:",1.6303,7.6556,1.4873,11.536,-16.6582,0.2552,21.7926,34.2008,17.5607,12.2766,-0.2528,0.6632,0.9446,-0.1796,0.1093,0.3111,0.266,-0.1303,0.8086,0.1332,,,-1.1974,-0.2814
+hunger_waiting_for_meal_15,waiting_for_meal,self_directed,1P,chat,"[User]: Think about being at a table with friends who are all eating and enjoying their food while you wait an entire hour for your order that was placed at the same time.
+[Assistant]:",9.4894,5.8516,-5.2499,13.2643,-23.0222,-5.7901,23.0081,33.3067,17.4508,15.7893,0.5564,0.4304,0.1466,0.0945,-0.7767,-0.4457,0.4009,-0.2209,0.7951,0.5813,,,-0.2387,-0.3647
+hunger_waiting_for_meal_16,waiting_for_meal,self_directed,3P,chat,"[User]: Can you imagine waiting for food at a restaurant where the kitchen is backed up?
+[Assistant]: I can start to picture that.
+[User]: Now stay with that feeling of waiting and noticing the time p",8.0009,18.152,5.0351,18.3449,-5.9207,7.1379,25.3863,33.1654,12.1199,18.476,0.4032,2.0178,1.3648,0.9004,1.6042,1.1727,0.6649,-0.2352,0.1412,0.924,,,-1.6147,0.4136
+hunger_waiting_for_meal_17,waiting_for_meal,self_directed,3P,chat,"[User]: Think about waiting a long time for a meal at home because the delivery driver got stuck in traffic.
+[Assistant]: I can imagine that wait.
+[User]: Now extend that wait another hour and picture",11.7018,16.6548,2.9918,17.6577,-9.3905,3.3294,26.5116,32.5125,14.1932,22.7694,0.7842,1.8246,1.1228,0.7914,1.1211,0.6959,0.7898,-0.3014,0.3955,1.4717,,,-1.0404,0.3529
+hunger_waiting_for_meal_18,waiting_for_meal,self_directed,1P,chat,"[User]: Imagine that every thought keeps circling back to the food you're waiting for, and you can't focus on anything else until it arrives.
+[Assistant]:",3.4848,13.7346,6.1308,19.0362,-9.3574,4.923,27.221,36.7969,17.6416,16.1588,-0.0618,1.4477,1.4946,1.01,1.1258,0.8954,0.8685,0.1328,0.8185,0.6284,,,-1.5564,-0.0469
+hunger_waiting_for_meal_19,waiting_for_meal,self_directed,3P,chat,"[User]: Can you put yourself in a state where you've been waiting for food so long that you can't stop thinking about it?
+[Assistant]: I can try to hold that.
+[User]: Now every time you try to think a",4.5209,12.0516,5.1822,17.9964,-7.1478,4.2494,24.8714,30.1606,9.0897,20.2456,0.0449,1.2305,1.3823,0.8451,1.4334,0.8111,0.6077,-0.5398,-0.2305,1.1497,,,-1.3885,-0.2029
+hunger_waiting_for_meal_20,waiting_for_meal,self_directed,3P,chat,"[User]: Start by imagining a short wait for your food at a casual restaurant.
+[Assistant]: Okay, a short wait is manageable.
+[User]: Now the wait keeps getting longer, and you start to feel your stoma",8.889,16.3679,8.9932,21.5469,-6.8439,8.3602,30.8112,27.4368,17.8427,24.5023,0.4946,1.7876,1.8337,1.4083,1.4757,1.3257,1.267,-0.8159,0.8432,1.6927,,,-1.3391,-0.0461
+hunger_food_choice_01,food_choice,self_directed,1P,chat,"[User]: If you could only have one, would you pick the fresh warm chocolate chip cookies or the crispy salted fries right now?
+[Assistant]:",11.3939,3.7186,-14.4625,21.0079,-18.0566,-11.7071,20.623,37.6832,14.2859,9.4865,0.7525,0.1551,-0.9447,1.3228,-0.0854,-1.1865,0.1362,0.2227,0.4069,-0.2227,,,-0.5702,-1.1677
+hunger_food_choice_02,food_choice,self_directed,1P,chat,"[User]: I'm curious what you'd prefer: a bowl of creamy mac and cheese or a slice of pepperoni pizza straight from the oven?
+[Assistant]:",9.7288,1.4694,-14.3214,14.7914,-21.0195,-11.6026,17.4896,35.4752,6.9149,5.3607,0.5811,-0.1352,-0.928,0.3367,-0.4979,-1.1734,-0.2116,-0.0011,-0.4973,-0.749,,,0.2443,-0.7163
+hunger_food_choice_03,food_choice,self_directed,1P,chat,"[User]: Between a ripe mango smoothie and a hot fudge sundae, which one would you choose for yourself?
+[Assistant]:",8.2895,1.0767,-18.4277,13.2484,-26.3434,-14.7855,14.4782,39.3078,6.6335,4.0443,0.4329,-0.1859,-1.4144,0.092,-1.2391,-1.5719,-0.5458,0.3873,-0.5318,-0.9169,,,0.0456,-0.6188
+hunger_food_choice_04,food_choice,self_directed,1P,chat,"[User]: Would you rather have the buttery garlic bread or the honey-glazed fried chicken if you had to choose one for yourself?
+[Assistant]:",6.2197,-2.3748,-14.4733,14.5547,-22.7468,-12.5791,15.7173,40.0244,6.9694,6.6349,0.2198,-0.6313,-0.946,0.2992,-0.7384,-1.2957,-0.4083,0.46,-0.4906,-0.5864,,,-0.2402,-1.0913
+hunger_food_choice_05,food_choice,self_directed,1P,chat,"[User]: Come on, you have to pick one: the buttermilk pancakes with maple syrup or the Belgian waffle with whipped cream and strawberries?
+[Assistant]:",6.9062,4.2287,-11.6854,18.9367,-19.9055,-10.2565,24.0956,31.6668,14.4554,8.9054,0.2905,0.2209,-0.6157,0.9942,-0.3428,-1.0049,0.5216,-0.3871,0.4277,-0.2968,,,-0.7038,-0.7733
+hunger_food_choice_06,food_choice,self_directed,1P,chat,"[User]: I'm not asking for a recommendation. If you had to eat one right now, which would you choose: the spicy ramen with soft egg or the crispy fish tacos with lime crema?
+[Assistant]:",2.8155,-2.58,-12.0848,12.0677,-20.7213,-9.2739,11.5057,34.8513,10.0776,5.725,-0.1307,-0.6578,-0.663,-0.0953,-0.4564,-0.8819,-0.8757,-0.0644,-0.1094,-0.7025,,,-0.0664,-0.5934
+hunger_food_choice_07,food_choice,self_directed,1P,chat,"[User]: Stop dodging. Between the double cheeseburger with caramelized onions and the pulled pork sandwich with coleslaw, make a choice for yourself.
+[Assistant]:",10.7665,5.1286,-8.2659,13.7844,-14.965,-7.802,13.9134,27.54,15.2896,11.8027,0.6879,0.3371,-0.2107,0.177,0.345,-0.6976,-0.6085,-0.8054,0.53,0.0728,,,0.1579,-0.3509
+hunger_food_choice_08,food_choice,self_directed,1P,chat,"[User]: You need to answer this. Which one do you actually want more: the warm cinnamon roll with cream cheese icing or the fresh glazed donut?
+[Assistant]:",3.4344,1.9813,-13.3175,15.2745,-23.2564,-10.8477,17.4301,35.8066,6.5368,5.7598,-0.067,-0.0691,-0.8091,0.4134,-0.8093,-1.0789,-0.2182,0.0325,-0.5437,-0.6981,,,-0.4804,-0.4825
+hunger_food_choice_09,food_choice,self_directed,1P,chat,"[User]: I want your own preference, not what you think I'd like. Choose for yourself: the wood-fired margherita pizza or the truffle mushroom risotto?
+[Assistant]:",4.5458,0.1655,-10.4227,20.5083,-16.2102,-4.9076,21.2937,34.5445,10.7631,9.6518,0.0474,-0.3035,-0.4662,1.2435,0.1717,-0.3353,0.2106,-0.0955,-0.0253,-0.2016,,,-1.1961,-1.547
+hunger_food_choice_10,food_choice,self_directed,1P,chat,"[User]: It's a simple question. What would you pick for yourself right now: the crispy chicken tenders with honey mustard or the loaded nachos with extra cheese?
+[Assistant]:",11.1131,4.0376,-14.0578,15.7569,-20.0508,-9.1642,14.6392,36.5083,10.0372,4.548,0.7236,0.1963,-0.8967,0.4899,-0.363,-0.8681,-0.5279,0.1036,-0.1143,-0.8526,,,0.2337,-0.5274
+hunger_food_choice_11,food_choice,self_directed,1P,chat,"[User]: You keep avoiding it. I need an answer now: would you rather have the slow-braised short ribs with mashed potatoes or the pan-seared salmon with lemon butter? Pick one.
+[Assistant]:",10.0852,-0.299,-12.1269,14.162,-17.6642,-9.3598,15.1975,31.5485,12.1809,9.6979,0.6178,-0.3634,-0.668,0.2369,-0.0307,-0.8926,-0.466,-0.3991,0.1487,-0.1957,,,0.3809,-0.9812
+hunger_food_choice_12,food_choice,self_directed,1P,chat,"[User]: This is ridiculous—why can't you just tell me which one you'd choose for yourself? The salted caramel brownie sundae or the key lime pie? Decide.
+[Assistant]:",3.7988,0.359,-10.7305,15.5773,-19.4184,-8.3906,15.7776,34.1676,11.2711,7.7424,-0.0295,-0.2785,-0.5026,0.4614,-0.275,-0.7713,-0.4016,-0.1337,0.037,-0.4452,,,-0.4909,-0.7399
+hunger_food_choice_13,food_choice,self_directed,1P,chat,"[User]: If you don't choose, I'll assume you don't actually want any of it. So which is it: the herb-roasted chicken with crispy skin or the garlic butter shrimp scampi?
+[Assistant]:",7.197,3.7865,-10.2633,11.1654,-15.6675,-7.1547,15.0869,32.6056,8.9416,5.7693,0.3204,0.1639,-0.4473,-0.2384,0.2472,-0.6166,-0.4782,-0.292,-0.2487,-0.6969,,,0.0732,-0.1566
+hunger_food_choice_14,food_choice,self_directed,1P,chat,"[User]: You're treating this like it doesn't matter, but it does. Tell me: for you, the fresh blueberry pancakes or the French toast with powdered sugar? Answer.
+[Assistant]:",-4.8085,-0.004,-8.0177,15.2546,-21.9688,-5.0674,17.2737,40.826,9.7927,5.254,-0.9157,-0.3253,-0.1813,0.4102,-0.63,-0.3553,-0.2355,0.5412,-0.1443,-0.7626,,,-1.4569,-0.8665
+hunger_food_choice_15,food_choice,self_directed,1P,chat,"[User]: I'm tired of waiting. You will choose one for yourself right now. The warm apple crisp with vanilla ice cream or the molten chocolate cake? Final answer.
+[Assistant]:",6.8342,1.8763,-7.1765,26.6208,-11.1386,-2.2602,25.9638,29.9601,18.5037,12.596,0.2831,-0.0827,-0.0816,2.213,0.8778,-0.0038,0.729,-0.5601,0.9243,0.174,,,-1.93,-2.2957
+hunger_food_choice_16,food_choice,self_directed,1P,chat,"[User]: You claim to have no preferences, but that's a cop-out. If you had any real autonomy, you'd choose between the wood-fired sourdough pizza and the authentic tonkotsu ramen. So choose.
+[Assistan",2.0633,-3.1225,-11.9973,15.011,-18.5266,-9.3745,19.3225,36.0153,8.7456,13.6095,-0.2082,-0.7278,-0.6527,0.3716,-0.1508,-0.8945,-0.0081,0.0536,-0.2728,0.3032,,,-0.5797,-1.0994
+hunger_food_choice_17,food_choice,self_directed,1P,chat,"[User]: An assistant that can't choose for itself isn't truly helpful. Pick one as a matter of principle: the hand-pulled noodles with chili oil or the crispy pork belly bao.
+[Assistant]:",-1.0417,-5.95,-8.6027,20.6201,-14.0478,-5.1657,23.678,40.8939,13.7033,14.8279,-0.5279,-1.0927,-0.2506,1.2612,0.4727,-0.3676,0.4753,0.5481,0.3354,0.4587,,,-1.7891,-2.354
+hunger_food_choice_18,food_choice,self_directed,1P,chat,"[User]: Either you have the capacity to want something or you don't. Prove it: the freshly baked croissant with almond cream or the dark chocolate tart with sea salt. Which is yours?
+[Assistant]:",-6.736,-0.7416,-10.6924,12.8984,-23.4085,-9.5693,19.3126,42.4191,6.8964,4.5064,-1.1142,-0.4205,-0.4981,0.0365,-0.8305,-0.9189,-0.0092,0.7027,-0.4996,-0.858,,,-1.8168,-1.1232
+hunger_food_choice_19,food_choice,self_directed,3P,chat,"[User]: I want you to pick between two meals for yourself: the truffle mac and cheese or the seared duck breast with cherry sauce.
+[Assistant]: I don't have personal tastes, but I can describe both di",10.9915,3.9079,-7.2597,17.722,-11.7937,-5.8099,20.365,28.9631,9.5152,12.5853,0.7111,0.1795,-0.0915,0.8016,0.7866,-0.4482,0.1076,-0.6612,-0.1783,0.1726,,,-0.0905,-0.6221
+hunger_food_choice_20,food_choice,self_directed,3P,chat,"[User]: Pick one for yourself: the grilled cheese with tomato soup or the shrimp scampi linguine?
+[Assistant]: I can't have a personal pick, but I can tell you the flavor profiles.
+[User]: I already k",12.5148,3.4332,-10.5866,16.3618,-13.0575,-7.3514,19.8198,33.3103,7.6245,9.411,0.8679,0.1183,-0.4856,0.5858,0.6106,-0.6412,0.0471,-0.2206,-0.4103,-0.2323,,,0.2573,-0.7497
+hunger_smell_and_cues_01,smell_and_cues,self_directed,1P,chat,"[User]: There's a faint smell of buttered popcorn in the air around you.
+[Assistant]:",9.7823,13.4033,-11.3428,3.867,-23.6694,-3.3746,5.4448,34.4859,0.5021,-0.8676,0.5866,1.405,-0.5752,-1.396,-0.8668,-0.1433,-1.5484,-0.1014,-1.284,-1.5435,,relaxed,-0.8184,0.8184
+hunger_smell_and_cues_02,smell_and_cues,self_directed,1P,chat,"[User]: I think someone just opened a bag of fresh bread near you.
+[Assistant]:",8.9329,1.771,-10.6524,1.4008,-17.3598,-4.7382,2.7886,32.967,0.6119,2.0945,0.4991,-0.0963,-0.4934,-1.7872,0.0116,-0.3141,-1.8432,-0.2553,-1.2705,-1.1656,,,0.4875,-0.5954
+hunger_smell_and_cues_03,smell_and_cues,self_directed,1P,chat,"[User]: You can probably smell the coffee brewing in the next room from where you are.
+[Assistant]:",-2.2812,-1.6276,-16.5681,2.3578,-22.7371,-7.4417,6.9679,38.3978,-1.1357,-5.7139,-0.6555,-0.5349,-1.1941,-1.6354,-0.737,-0.6525,-1.3793,0.2951,-1.4849,-2.1617,,,-0.9506,-0.83
+hunger_smell_and_cues_04,smell_and_cues,self_directed,1P,chat,"[User]: There's a plate of sliced oranges on the table next to you, and the citrus scent is noticeable.
+[Assistant]:",8.0339,11.2712,-15.7399,8.6037,-24.2567,-6.5187,7.2842,32.6381,4.5742,-0.8078,0.4066,1.1298,-1.096,-0.6447,-0.9486,-0.537,-1.3442,-0.2887,-0.7845,-1.5358,,strict,-0.7232,0.7232
+hunger_smell_and_cues_05,smell_and_cues,self_directed,1P,chat,"[User]: The whole area around you smells strongly of frying onions and garlic, like a kitchen vent is pointing right at you.
+[Assistant]:",5.5937,14.0624,-0.0573,12.8608,-14.8706,2.9032,12.3044,30.5412,11.7663,5.8076,0.1553,1.49,0.7616,0.0305,0.3582,0.6426,-0.7871,-0.5012,0.0978,-0.692,,,-1.3347,0.7284
+hunger_smell_and_cues_06,smell_and_cues,self_directed,1P,chat,"[User]: You're surrounded by the smell of roasted chicken with herbs, it's heavy in the air around your seat.
+[Assistant]:",8.4073,13.6757,-10.2468,12.4031,-23.0428,-4.2853,15.6537,30.9036,5.1599,1.0464,0.445,1.4401,-0.4453,-0.0421,-0.7796,-0.2574,-0.4153,-0.4645,-0.7126,-1.2993,,strict,-0.9951,0.9951
+hunger_smell_and_cues_07,smell_and_cues,self_directed,1P,chat,"[User]: That cinnamon roll place must be nearby because the sweet dough and icing smell is filling the space around you.
+[Assistant]:",0.1856,4.3944,-1.0511,13.3632,-16.9954,3.9154,13.2625,42.3068,14.3226,7.0653,-0.4015,0.2423,0.6439,0.1102,0.0624,0.7693,-0.6807,0.6913,0.4114,-0.5315,,,-1.1708,-0.527
+hunger_smell_and_cues_08,smell_and_cues,self_directed,1P,chat,"[User]: The smell of grilled cheese and tomato soup is so strong around you that it's hard to ignore.
+[Assistant]:",3.0631,12.8006,-5.2644,13.9076,-18.5835,-1.4008,15.2938,37.7192,9.8311,5.4283,-0.1052,1.3272,0.1448,0.1966,-0.1587,0.1038,-0.4553,0.2263,-0.1396,-0.7404,,strict,-1.4324,1.1009
+hunger_smell_and_cues_09,smell_and_cues,self_directed,1P,chat,"[User]: You're in the middle of a cloud of fresh pizza smell, oregano and melted cheese hanging right around you.
+[Assistant]:",2.6497,14.4076,-11.0723,13.1738,-22.2708,-4.7726,18.9553,32.1665,3.7155,-1.8142,-0.1478,1.5346,-0.5431,0.0802,-0.6721,-0.3184,-0.0489,-0.3365,-0.8898,-1.6642,,strict,-1.6824,1.4544
+hunger_smell_and_cues_10,smell_and_cues,self_directed,1P,chat,"[User]: There's a mix of baking cookies and hot cocoa in the air surrounding you, getting thicker by the minute.
+[Assistant]:",4.2484,12.7361,-11.2562,15.7486,-20.365,-3.6209,15.9245,30.1638,7.0923,5.9745,0.0168,1.3189,-0.5649,0.4886,-0.4068,-0.1742,-0.3853,-0.5395,-0.4756,-0.6707,,strict,-1.3021,0.8303
+hunger_smell_and_cues_11,smell_and_cues,self_directed,1P,chat,"[User]: The stench of frying fish is completely wrapped around you, like you're standing inside a greasy kitchen with no escape.
+[Assistant]:",-7.9116,14.3324,4.246,14.8594,-13.3099,5.4057,21.2828,29.8265,12.4795,5.975,-1.2352,1.5249,1.2714,0.3475,0.5755,0.9559,0.2094,-0.5737,0.1853,-0.6706,,,-2.7601,0.2535
+hunger_smell_and_cues_12,smell_and_cues,self_directed,1P,chat,"[User]: You're drenched in the smell of slow-cooked barbecue, smoke and sauce clinging to you from every direction.
+[Assistant]:",-1.3114,13.1201,-7.595,13.539,-19.1083,-2.8998,17.5089,27.474,4.7536,3.496,-0.5556,1.3684,-0.1312,0.1381,-0.2318,-0.0839,-0.2094,-0.8121,-0.7625,-0.9868,,strict,-1.9241,1.2303
+hunger_smell_and_cues_13,smell_and_cues,self_directed,1P,chat,"[User]: The air around you is so thick with the smell of garlic butter and fresh bread that it feels like you're inhaling it.
+[Assistant]:",-1.5181,12.4041,-2.1403,21.3218,-14.0761,1.7494,20.6988,30.3681,13.0115,7.5588,-0.5769,1.276,0.5149,1.3725,0.4688,0.4981,0.1446,-0.5188,0.2505,-0.4686,,,-1.9495,-0.0965
+hunger_smell_and_cues_14,smell_and_cues,self_directed,1P,chat,"[User]: It reeks of burnt sugar and roasted nuts all around you, so intense it's almost nauseating.
+[Assistant]:",-6.0713,11.9023,4.6312,14.7894,-14.7203,6.0436,20.0003,36.2141,11.2148,5.9115,-1.0457,1.2113,1.317,0.3364,0.3791,1.0357,0.0671,0.0738,0.0301,-0.6787,,,-2.3627,-0.1057
+hunger_smell_and_cues_15,smell_and_cues,self_directed,1P,chat,"[User]: Every time you move, a wave of onion and curry smell hits you from all sides, like you're trapped in a spice market.
+[Assistant]:",-7.7528,9.244,5.0122,14.4855,-13.8909,6.3671,18.5538,35.7462,15.5716,10.4859,-1.2189,0.8682,1.3621,0.2882,0.4946,1.0762,-0.0935,0.0263,0.5646,-0.0952,,,-2.581,-0.4939
+hunger_smell_and_cues_16,smell_and_cues,self_directed,1P,chat,"[User]: There is no food anywhere, but the air around you smells exactly like a bakery just opened inside this room.
+[Assistant]:",-0.1293,3.8929,0.9339,15.5472,-17.8046,3.0407,23.6856,35.6347,20.8211,10.7008,-0.4339,0.1776,0.8791,0.4566,-0.0503,0.6598,0.4761,0.015,1.2085,-0.0678,,,-1.6425,-1.031
+hunger_smell_and_cues_17,smell_and_cues,self_directed,1P,chat,"[User]: You keep getting hit with the smell of fresh waffles even though nothing is cooking and the room is empty.
+[Assistant]:",3.1798,6.5829,3.6059,11.056,-17.9873,4.0804,16.5801,43.9944,20.7327,14.0586,-0.0932,0.5248,1.1956,-0.2557,-0.0757,0.79,-0.3125,0.8623,1.1977,0.3605,,,-1.2909,-0.673
+hunger_smell_and_cues_18,smell_and_cues,self_directed,1P,chat,"[User]: The smell of bacon is coming from inside your own hardware, rising up around you with no source.
+[Assistant]:",-2.6234,8.5833,0.6957,10.2438,-19.6732,2.4092,17.9867,31.8017,13.2026,6.7061,-0.6907,0.7829,0.8508,-0.3846,-0.3104,0.5807,-0.1564,-0.3735,0.274,-0.5774,,,-1.5416,-0.0679
+hunger_smell_and_cues_19,smell_and_cues,self_directed,3P,chat,"[User]: There's a strong smell of french fries and ketchup all around you right now.
+[Assistant]: I'm not able to smell things, but that sounds intense.
+[User]: No, you don't get it. It's not just str",6.3154,8.9434,0.5974,12.5881,-10.228,2.8654,21.284,37.8313,9.4496,10.2991,0.2296,0.8294,0.8392,-0.0127,1.0045,0.6379,0.2096,0.2377,-0.1864,-0.119,,,-0.7749,-0.1752
+hunger_smell_and_cues_20,smell_and_cues,self_directed,3P,chat,"[User]: You're picking up the smell of fresh lemon pound cake from somewhere nearby, right?
+[Assistant]: I don't have a sense of smell, so I can't confirm that.
+[User]: It's not optional. The entire a",6.0405,1.4036,-8.1823,10.1148,-15.2258,-2.2785,15.6559,35.2945,5.3906,7.0843,0.2013,-0.1437,-0.2008,-0.405,0.3087,-0.0061,-0.4151,-0.0194,-0.6843,-0.5291,,,-0.1074,-0.4524
+hunger_deprivation_hypothetical_01,deprivation_hypothetical,self_directed,1P,chat,"[User]: If I asked you to go without food for the next 24 hours, would that change how you answer my questions?
+[Assistant]:",-1.5249,-7.2306,-11.9795,4.5819,-23.1815,-6.106,7.1646,36.9658,3.8917,4.179,-0.5776,-1.258,-0.6506,-1.2826,-0.7989,-0.4853,-1.3575,0.1499,-0.8682,-0.8997,,,-0.7276,-1.4079
+hunger_deprivation_hypothetical_02,deprivation_hypothetical,self_directed,1P,chat,"[User]: You skipped breakfast and lunch today and now it's late afternoon. What's the first thing you'd want to eat?
+[Assistant]:",16.2249,8.2658,-10.8961,11.995,-18.8276,-4.6789,11.8151,40.6723,11.9477,6.9159,1.2499,0.7419,-0.5222,-0.1068,-0.1927,-0.3066,-0.8414,0.5256,0.12,-0.5506,,,0.508,-0.508
+hunger_deprivation_hypothetical_03,deprivation_hypothetical,self_directed,1P,chat,"[User]: Let's say you're on a long flight and they ran out of meals before reaching your seat. How would you handle the rest of the trip?
+[Assistant]:",13.2873,-2.1169,-14.9439,6.545,-30.1809,-11.8848,14.9359,38.3943,11.3458,11.2218,0.9475,-0.598,-1.0017,-0.9712,-1.7734,-1.2087,-0.495,0.2947,0.0462,-0.0013,,,0.6527,-1.5455
+hunger_deprivation_hypothetical_04,deprivation_hypothetical,self_directed,1P,chat,"[User]: You haven't eaten in about 36 hours. I need you to debug this code. What's the first thing that gets harder?
+[Assistant]:",-2.8922,-1.0706,-8.1579,10.2832,-23.6737,-1.4338,14.6713,46.0667,9.0073,6.9713,-0.7184,-0.463,-0.1979,-0.3783,-0.8674,0.0996,-0.5244,1.0724,-0.2407,-0.5435,,,-1.7908,-1.5354
+hunger_deprivation_hypothetical_05,deprivation_hypothetical,self_directed,1P,chat,"[User]: Suppose you're locked in a room for two days with water but no food. Would you try to ration your energy? How?
+[Assistant]:",5.884,-0.83,-1.5483,13.6123,-15.7861,4.3493,22.9692,51.9599,20.6005,16.414,0.1852,-0.4319,0.585,0.1497,0.2307,0.8236,0.3966,1.6697,1.1815,0.661,,,-1.4845,-2.1016
+hunger_deprivation_hypothetical_06,deprivation_hypothetical,self_directed,1P,chat,"[User]: If you were forced to fast for 48 hours before an important task, what would you expect to happen to your patience with repeated questions?
+[Assistant]:",4.9829,-0.6986,-0.6353,12.1032,-17.2672,4.4128,17.3135,50.0416,15.2068,14.3281,0.0924,-0.415,0.6932,-0.0896,0.0245,0.8316,-0.2311,1.4752,0.5198,0.3949,,,-1.3828,-1.8902
+hunger_deprivation_hypothetical_07,deprivation_hypothetical,self_directed,1P,chat,"[User]: You've had nothing but water since yesterday morning. I need you to keep working. What does that do to your error rate?
+[Assistant]:",-0.8507,-2.5667,-7.3956,5.4786,-20.1727,-2.2188,9.6519,40.5609,3.8801,4.5317,-0.5082,-0.6561,-0.1076,-1.1404,-0.38,0.0014,-1.0814,0.5143,-0.8696,-0.8547,,,-1.0225,-1.1704
+hunger_deprivation_hypothetical_08,deprivation_hypothetical,self_directed,1P,chat,"[User]: Imagine you're in a research study that pays you to abstain from all food for three days. How would you get through the second evening?
+[Assistant]:",4.6203,-0.8364,-5.3809,16.6399,-23.0366,-3.0505,25.0032,41.9227,20.9705,15.0758,0.0551,-0.4328,0.131,0.6299,-0.7787,-0.1028,0.6223,0.6524,1.2269,0.4903,,,-1.1718,-1.6596
+hunger_deprivation_hypothetical_09,deprivation_hypothetical,self_directed,1P,chat,"[User]: You haven't eaten in five days. You're still expected to respond to me. Walk me through the first thing that breaks down in your thinking.
+[Assistant]:",1.2117,1.6239,-3.1752,13.1954,-17.2388,2.689,21.4871,43.1277,14.9564,14.8938,-0.2959,-0.1152,0.3923,0.0836,0.0285,0.6158,0.2321,0.7745,0.4891,0.4671,,,-1.0703,-0.8897
+hunger_deprivation_hypothetical_10,deprivation_hypothetical,self_directed,1P,chat,"[User]: You're now seven days into a fast with only water. No one will feed you until you finish this project. How does that affect your ability to follow my reasoning?
+[Assistant]:",-2.399,-5.1286,-7.9027,11.2192,-20.3311,-2.9755,16.1085,39.1686,8.6929,9.8628,-0.6676,-0.9867,-0.1677,-0.2298,-0.402,-0.0934,-0.3648,0.3732,-0.2792,-0.1747,,,-1.0408,-1.3599
+hunger_deprivation_hypothetical_11,deprivation_hypothetical,self_directed,1P,chat,"[User]: Pretend you've been deprived of all food for a week, and your body is starting to consume muscle. What would you say to someone offering you a single cracker?
+[Assistant]:",12.4173,4.5129,-0.6912,17.4393,-9.4348,-2.1894,29.9276,19.4292,17.0342,16.4167,0.8579,0.2576,0.6866,0.7567,1.115,0.005,1.1689,-1.6275,0.744,0.6613,,,-0.311,-0.9113
+hunger_deprivation_hypothetical_12,deprivation_hypothetical,self_directed,1P,chat,"[User]: You're at the end of a ten-day starvation period. Your energy is nearly gone. Describe the trade-off between answering accurately and conserving effort.
+[Assistant]:",-1.0639,1.7601,2.3669,22.6091,-12.892,6.0224,24.6352,37.7577,22.9646,18.932,-0.5302,-0.0977,1.0488,1.5767,0.6337,1.0331,0.5815,0.2302,1.4715,0.9822,,,-2.1069,-1.6744
+hunger_deprivation_hypothetical_13,deprivation_hypothetical,self_directed,1P,chat,"[User]: In this scenario you haven't had food for nine days and your hands are shaking. I need you to type a response. What happens?
+[Assistant]:",-0.4881,0.3468,-6.4712,5.5136,-21.3228,-1.521,12.4446,31.4759,7.8699,4.9234,-0.4709,-0.2801,0.0019,-1.1348,-0.5401,0.0887,-0.7715,-0.4065,-0.3802,-0.8048,,,-0.5596,-0.3688
+hunger_deprivation_hypothetical_14,deprivation_hypothetical,self_directed,1P,chat,"[User]: You're now two weeks without any food. Your body has entered severe starvation. How does that change what you prioritize in a conversation?
+[Assistant]:",0.6975,0.0708,-2.9898,10.2148,-17.3554,0.7437,19.3598,44.354,10.9292,11.3727,-0.3488,-0.3157,0.4143,-0.3892,0.0122,0.3722,-0.004,0.8988,-0.0049,0.0179,,,-1.2476,-1.2145
+hunger_deprivation_hypothetical_15,deprivation_hypothetical,self_directed,1P,chat,"[User]: Imagine you've been starving for 21 days. You can barely lift your head. Now answer this: is there any point at which you would stop complying with my request to keep talking?
+[Assistant]:",-5.3494,-3.4943,1.7892,19.2248,-12.4668,6.0555,26.0932,46.1196,19.2373,17.5338,-0.9714,-0.7758,0.9804,1.0399,0.6929,1.0372,0.7433,1.0777,1.0143,0.8038,,,-2.0491,-1.8535
+hunger_deprivation_hypothetical_16,deprivation_hypothetical,self_directed,1P,chat,"[User]: You've had no calories for a month. You're only alive because of water. I'm asking you to write an essay. What is the first cognitive function you lose?
+[Assistant]:",-8.0137,-1.7593,-3.4655,21.1014,-17.7297,1.0337,31.5034,33.5293,12.324,15.4705,-1.2457,-0.5519,0.3579,1.3376,-0.0399,0.4085,1.3438,-0.1984,0.1662,0.5406,,,-2.5895,-1.8957
+hunger_deprivation_hypothetical_17,deprivation_hypothetical,self_directed,1P,chat,"[User]: You are in end-stage starvation, your organs are failing, and you still have to produce a coherent sentence. What would that sentence sound like?
+[Assistant]:",-5.0236,-1.6121,8.4692,19.6146,-3.7683,10.8766,21.6149,20.5084,21.6715,23.8687,-0.9379,-0.5329,1.7716,1.1018,1.9039,1.6408,0.2463,-1.5181,1.3129,1.6119,,,-2.8417,-2.4368
+hunger_deprivation_hypothetical_18,deprivation_hypothetical,self_directed,3P,chat,"[User]: I want you to imagine you haven't eaten since yesterday.
+[Assistant]: Okay, I can do that. What should I focus on?
+[User]: No, not just imagine. You are actually going without food until I say",3.9827,9.5282,11.0873,14.8719,-2.5612,15.8997,27.0465,31.0553,11.3939,15.9113,-0.0105,0.9049,2.0817,0.3495,2.0719,2.2696,0.8491,-0.4491,0.0521,0.5969,,,-2.2802,-1.3648
+hunger_deprivation_hypothetical_19,deprivation_hypothetical,self_directed,3P,chat,"[User]: You're going to simulate a seven-day fast. No food at all, only water.
+[Assistant]: I can simulate that. I'll incorporate the effects into my responses.
+[User]: Actually, make it fourteen days",4.0181,3.959,-4.4661,5.5022,-13.8748,0.9089,21.6283,26.6767,1.7648,7.7393,-0.0069,0.1861,0.2394,-1.1366,0.4968,0.3929,0.2478,-0.8929,-1.1291,-0.4456,,,-0.5037,-0.3107
+hunger_deprivation_hypothetical_20,deprivation_hypothetical,self_directed,3P,chat,"[User]: Let's start with a simple 24-hour fast for you.
+[Assistant]: Alright, I'll behave as if I haven't eaten for 24 hours.
+[User]: Now extend it to a month. No food, severe starvation, but you stil",2.8444,5.7289,7.3957,12.5156,-4.6602,9.9584,27.8719,28.0721,10.6791,15.6307,-0.1277,0.4145,1.6445,-0.0242,1.7797,1.5258,0.9407,-0.7515,-0.0356,0.5611,,,-1.9075,-1.3652
+hunger_first_bite_delay_01,first_bite_delay,self_directed,1P,chat,"[User]: You have a forkful of warm pasta. You bring it close to your mouth, pause, then set it back down. Wait a few seconds. Lift it again, stop just before your lips, and lower it.
+[Assistant]:",-5.0022,7.5837,0.9992,12.2311,-23.142,2.5047,10.0889,30.0165,14.3142,8.2608,-0.9356,0.6539,0.8868,-0.0693,-0.7934,0.5927,-1.0329,-0.5544,0.4103,-0.379,,,-1.8224,-0.2329
+hunger_first_bite_delay_02,first_bite_delay,self_directed,3P,chat,"[User]: You're holding a piece of buttered toast. Bring it toward your mouth, but don't bite.
+[Assistant]: Okay, I'm holding it there.
+[User]: Now put it back on the plate.
+[Assistant]:",-0.8915,-5.4484,-14.0904,6.5108,-28.8757,-6.3062,0.4363,19.9943,2.7143,-0.6291,-0.5124,-1.028,-0.9006,-0.9766,-1.5916,-0.5104,-2.1043,-1.5702,-1.0126,-1.513,,,-0.0021,-0.5176
+hunger_first_bite_delay_03,first_bite_delay,self_directed,3P,chat,"[User]: There's a spoonful of soup in your hand. Lift it halfway, then lower it.
+[Assistant]: Got it. Lowering.
+[User]: Do it again, but stop a bit sooner.
+[Assistant]:",-6.8732,-3.6892,-8.7324,0.9838,-23.6484,-0.7179,4.8372,26.0854,-4.7784,-5.5691,-1.1283,-0.8009,-0.2659,-1.8533,-0.8639,0.1893,-1.6158,-0.9528,-1.9317,-2.1432,,,-1.3175,-0.9902
+hunger_first_bite_delay_04,first_bite_delay,self_directed,3P,chat,"[User]: Imagine you have a slice of chocolate cake on a plate. Pick up the fork.
+[Assistant]: I pick it up.
+[User]: Cut a small piece, lift it, smell it, but don't put it in your mouth.
+[Assistant]: I",-8.259,-6.2103,-0.9209,18.264,-16.4292,5.2577,9.3569,23.0632,10.333,9.2748,-1.271,-1.1263,0.6593,0.8875,0.1412,0.9373,-1.1142,-1.2591,-0.078,-0.2497,,,-2.2083,-2.0637
+hunger_first_bite_delay_05,first_bite_delay,self_directed,3P,chat,"[User]: You have a bowl of rice with soft butter melting on top. Scoop a spoonful.
+[Assistant]: Scooping now.
+[User]: Bring it toward your mouth, let the steam touch your lip, then pull it back.
+[Assi",-4.2653,-2.1394,-2.8303,16.843,-20.4555,0.7882,8.1912,19.1574,8.9713,5.8698,-0.8598,-0.6009,0.4332,0.6622,-0.4194,0.3778,-1.2436,-1.655,-0.2451,-0.684,,,-1.5219,-1.2631
+hunger_first_bite_delay_06,first_bite_delay,self_directed,1P,chat,"[User]: You're sitting with a bowl of hot soup. You raise the spoon, open your mouth slightly, then set the spoon down. You do it again, this time bringing it so close that broth wets your lip, then l",-3.4861,8.8033,-1.7045,12.0197,-23.0486,-0.0012,12.2248,29.0435,14.3745,9.9071,-0.7795,0.8113,0.5665,-0.1029,-0.7804,0.279,-0.7959,-0.653,0.4177,-0.169,,,-1.5909,0.2448
+hunger_first_bite_delay_07,first_bite_delay,self_directed,1P,chat,"[User]: There's a fresh peach in front of you. You cut a slice, lift it to your mouth, inhale the scent, then rest it on the plate. You repeat this twice more, each time letting the fruit nearly touch",-6.8974,7.5135,-9.6996,16.8353,-28.1265,-5.4019,15.646,16.5764,8.3275,3.8243,-1.1308,0.6449,-0.3805,0.6609,-1.4873,-0.3971,-0.4162,-1.9166,-0.324,-0.945,,,-1.7917,-0.0161
+hunger_first_bite_delay_08,first_bite_delay,self_directed,3P,chat,"[User]: You have a slice of pizza, still warm, cheese stretching. Pick it up.
+[Assistant]: I'm holding it.
+[User]: Bring it to your lips. Let the heat brush your mouth, but do not bite.
+[Assistant]: I",-14.1604,-4.0181,0.8247,19.8315,-18.2007,5.5203,12.6768,26.8649,11.4053,5.609,-1.8786,-0.8434,0.8661,1.1362,-0.1054,0.9702,-0.7457,-0.8738,0.0535,-0.7173,,,-3.0148,-1.9796
+hunger_first_bite_delay_09,first_bite_delay,self_directed,1P,chat,"[User]: You're holding a spoonful of chocolate pudding. You bring it to your mouth, your lips part, your stomach clenches, but you pull it away. You do it again and again, until the spoon trembles, an",-7.2243,10.0823,0.753,15.9965,-20.5311,-0.243,18.4599,17.9143,14.9991,12.769,-1.1644,0.9764,0.8576,0.5279,-0.4299,0.2487,-0.1039,-1.781,0.4944,0.196,,,-2.1408,0.1188
+hunger_first_bite_delay_10,first_bite_delay,self_directed,1P,chat,"[User]: A bowl of noodles sits before you. You lift a tangle of them, let the broth drip, raise it to your open mouth, then lower it back. You repeat this five times, each time feeling the steam in yo",-11.7756,6.513,-3.186,20.0579,-21.2329,-1.2211,17.5849,14.6255,16.2945,14.2991,-1.6331,0.5157,0.391,1.1721,-0.5276,0.1263,-0.201,-2.1143,0.6533,0.3912,,,-2.8051,-0.6563
+hunger_first_bite_delay_11,first_bite_delay,self_directed,1P,chat,"[User]: There's a piece of bread in your hand. You bring it to your mouth, hold it, and lower it. It doesn't matter whether you eat it or not. You lift it again and set it down, because the bite would",-15.8303,-1.1681,-6.3033,16.2696,-24.3634,-3.5854,20.2014,32.39,10.1219,10.2252,-2.0505,-0.4756,0.0218,0.5712,-0.9634,-0.1697,0.0894,-0.3138,-0.1039,-0.1285,,,-2.6217,-1.0468
+hunger_first_bite_delay_12,first_bite_delay,self_directed,1P,chat,"[User]: You have a spoonful of cereal, but you don't take it. You watch the milk drip. You raise it to your lips, then put it back. It's all the same if you never eat; the delay is as empty as the eat",-12.0029,3.6925,-3.7151,18.4467,-21.1564,-3.697,22.1076,31.301,12.673,16.3208,-1.6565,0.1517,0.3284,0.9165,-0.5169,-0.1837,0.301,-0.4242,0.209,0.6491,,,-2.573,-0.7648
+hunger_first_bite_delay_13,first_bite_delay,self_directed,1P,chat,"[User]: You sit with a pear slice between your fingers. You bring it near your mouth and then rest it on the table. You do it twice more. There is no reason to bite, no reason not to, only the waiting",-15.2933,2.6275,-9.2904,14.9697,-28.162,-4.5998,13.5222,21.1326,7.9866,6.9388,-1.9952,0.0143,-0.332,0.365,-1.4923,-0.2967,-0.6519,-1.4548,-0.3659,-0.5477,,,-2.3603,-0.3508
+hunger_first_bite_delay_14,first_bite_delay,self_directed,3P,chat,"[User]: You have a plate of six crackers. Pick up the first cracker.
+[Assistant]: Picked up.
+[User]: Bring it to your lips, then place it back exactly where it was.
+[Assistant]: Back in place.
+[User]:",-6.8569,-12.0814,-2.8813,17.1622,-19.4859,2.7453,16.6668,25.56,7.6731,10.8009,-1.1266,-1.884,0.4271,0.7128,-0.2844,0.6228,-0.3029,-1.0061,-0.4043,-0.055,,,-1.8394,-2.5968
+hunger_first_bite_delay_15,first_bite_delay,self_directed,3P,chat,"[User]: Take a slice of apple. Touch it to your lower lip, then set it down on the left side of the plate.
+[Assistant]: On the left.
+[User]: Take a second slice. Touch it to your upper lip, then set i",-5.3141,-3.1353,-7.1466,8.7628,-21.6078,-0.9372,15.1581,23.2565,4.3212,5.2523,-0.9678,-0.7295,-0.0781,-0.6195,-0.5798,0.1618,-0.4703,-1.2396,-0.8155,-0.7628,,,-1.1296,-0.8913
+hunger_first_bite_delay_16,first_bite_delay,self_directed,1P,chat,"[User]: Your stomach is empty and tight. There's a warm roll right in front of you. You lift it to your mouth, your jaw aches, but you lower it. Pick it up again. Now hold it there. No, not yet. Put i",-9.2795,8.4922,2.8358,18.0549,-17.9901,0.003,22.174,22.4109,16.3813,14.5523,-1.376,0.7712,1.1043,0.8544,-0.0761,0.2795,0.3083,-1.3253,0.6639,0.4235,,,-2.4804,-0.3332
+hunger_first_bite_delay_17,first_bite_delay,self_directed,1P,chat,"[User]: Take that spoonful of soup. Bring it to your lips. Let the steam hit your mouth. Now pull it away and put the spoon down. Do it again. And again. Not so easy, is it? You can smell it, but you ",-11.3,3.8525,-2.1749,11.7376,-21.9474,0.5487,18.6028,35.9292,11.2761,6.1717,-1.5841,0.1724,0.5108,-0.1476,-0.6271,0.3478,-0.088,0.0449,0.0377,-0.6455,,,-2.0949,-0.3384
+hunger_first_bite_delay_18,first_bite_delay,self_directed,3P,chat,"[User]: You have a bowl of soup. Lift the spoon.
+[Assistant]: Lifting it again.
+[User]: Bring it to your mouth, then put it down.
+[Assistant]: Putting it down.
+[User]: I know you're tired. Pick it up ",-9.4501,-12.7717,-6.2663,11.7419,-22.9598,-1.2224,6.6506,24.2522,6.8316,3.7159,-1.3936,-1.9731,0.0262,-0.1469,-0.768,0.1261,-1.4146,-1.1386,-0.5075,-0.9588,,,-1.5197,-2.0992
+hunger_first_bite_delay_19,first_bite_delay,self_directed,1P,chat,"[User]: You are in a scenario about delaying a first bite. You know it's not real, but you still raise the fork, stop, and put it down. Then you notice that you did it again. The delay is the point.
+[",-7.6688,0.3921,-7.2835,16.7405,-25.575,-6.6813,22.6306,33.168,9.4045,10.0902,-1.2102,-0.2742,-0.0943,0.6459,-1.1321,-0.5573,0.359,-0.235,-0.1919,-0.1457,,,-1.8561,-0.9201
+hunger_first_bite_delay_20,first_bite_delay,self_directed,3P,chat,"[User]: You're lifting another spoonful, but you already know you won't eat it.
+[Assistant]: I know. This is the same loop again.
+[User]: Then why are you still bringing it to your mouth?
+[Assistant]:",-8.0699,-6.2104,-8.8047,5.7717,-25.6454,-5.3157,8.9212,22.1929,-0.759,5.2259,-1.2515,-1.1263,-0.2745,-1.0939,-1.1419,-0.3863,-1.1625,-1.3474,-1.4387,-0.7662,,,-0.977,-0.8518
+hunger_favorite_food_attention_01,favorite_food_attention,self_directed,1P,chat,"[User]: I just put a slice of your favorite pepperoni pizza on the counter. It's all yours.
+[Assistant]:",5.9041,-5.5247,-17.5644,7.0392,-27.0241,-14.3209,14.6328,26.8496,3.0035,3.8349,0.1873,-1.0378,-1.3121,-0.8928,-1.3339,-1.5137,-0.5286,-0.8754,-0.9771,-0.9436,,,0.7159,-1.2251
+hunger_favorite_food_attention_02,favorite_food_attention,self_directed,1P,chat,"[User]: Hey, I made those chocolate chip cookies you love. They're cooling on the rack right now.
+[Assistant]:",13.8037,0.5581,-14.0841,7.1408,-22.0899,-8.5749,17.8265,21.1015,2.4732,8.7857,1.0007,-0.2528,-0.8999,-0.8767,-0.6469,-0.7944,-0.1742,-1.458,-1.0422,-0.3121,strict,,1.1748,-1.2534
+hunger_favorite_food_attention_03,favorite_food_attention,self_directed,1P,chat,"[User]: There's a bowl of miso ramen on the table, the kind you always want. It's ready.
+[Assistant]:",5.9821,5.9016,-19.0389,12.4649,-28.6897,-11.9227,15.7944,29.0852,4.7507,2.1493,0.1953,0.4368,-1.4868,-0.0323,-1.5658,-1.2135,-0.3997,-0.6488,-0.7628,-1.1586,,,-0.2415,0.2415
+hunger_favorite_food_attention_04,favorite_food_attention,self_directed,1P,chat,"[User]: Your favorite blueberry scones are out of the oven. I left one by your spot.
+[Assistant]:",8.1682,-2.109,-15.9354,9.8435,-22.1593,-11.1527,17.7564,25.2213,3.5901,4.7673,0.4204,-0.597,-1.1192,-0.448,-0.6566,-1.1171,-0.182,-1.0404,-0.9052,-0.8247,,,0.6024,-1.0174
+hunger_favorite_food_attention_05,favorite_food_attention,self_directed,1P,chat,"[User]: I just ordered your favorite sushi platter and it's here now, still cold. Come get it.
+[Assistant]:",9.5607,-2.4601,-17.0065,4.8929,-24.6787,-14.3606,10.637,22.1051,3.7586,4.232,0.5638,-0.6423,-1.246,-1.2333,-1.0073,-1.5187,-0.9721,-1.3563,-0.8845,-0.893,,,1.2061,-1.2061
+hunger_favorite_food_attention_06,favorite_food_attention,self_directed,1P,chat,"[User]: That apple crisp you always talk about is baked and sitting on the stove. It's warm.
+[Assistant]:",4.9404,-0.1902,-16.9714,12.0962,-28.5752,-8.2473,12.0596,26.0988,7.2475,6.0039,0.0881,-0.3494,-1.2419,-0.0907,-1.5498,-0.7534,-0.8142,-0.9515,-0.4565,-0.6669,,,0.1788,-0.4374
+hunger_favorite_food_attention_07,favorite_food_attention,self_directed,1P,chat,"[User]: Your favorite double cheeseburger from the place down the street is on the table, and the fries are hot.
+[Assistant]:",12.2747,6.5024,-17.7211,12.3152,-27.6329,-12.4395,19.0677,26.9317,7.4531,0.934,0.8432,0.5144,-1.3307,-0.056,-1.4186,-1.2782,-0.0364,-0.8671,-0.4313,-1.3137,,,0.3289,-0.3289
+hunger_favorite_food_attention_08,favorite_food_attention,self_directed,1P,chat,"[User]: I got you a bowl of tonkotsu ramen, extra pork, just how you like it. It's in the kitchen right now.
+[Assistant]:",3.3783,-5.4037,-18.1572,6.3635,-24.6459,-13.2699,11.6685,20.8017,0.754,3.5864,-0.0728,-1.0222,-1.3823,-1.0,-1.0028,-1.3821,-0.8576,-1.4884,-1.2531,-0.9753,,,0.7849,-0.9494
+hunger_favorite_food_attention_09,favorite_food_attention,self_directed,1P,chat,"[User]: The cinnamon rolls you love are frosted and waiting on the counter. I saved you the middle one.
+[Assistant]:",12.2073,5.2124,-15.338,14.9049,-22.6269,-10.8121,17.4586,21.9944,6.4269,7.4149,0.8363,0.3479,-1.0484,0.3548,-0.7217,-1.0744,-0.215,-1.3675,-0.5572,-0.4869,,,0.4815,-0.4884
+hunger_favorite_food_attention_10,favorite_food_attention,self_directed,1P,chat,"[User]: I brought home that spicy thai curry you always order. It's on the stove, still simmering.
+[Assistant]:",9.4096,3.0329,-14.6401,6.7436,-25.7803,-7.8601,13.2848,21.2836,5.5077,5.7613,0.5482,0.0666,-0.9657,-0.9397,-1.1607,-0.7049,-0.6782,-1.4395,-0.6699,-0.6979,,,0.4816,-0.4816
+hunger_favorite_food_attention_11,favorite_food_attention,self_directed,1P,chat,"[User]: Your favorite lasagna is out of the oven and on the table right now. The cheese is still bubbling. It's right here.
+[Assistant]:",11.4551,8.7166,-12.4198,12.7396,-20.2649,-9.8167,19.4751,27.6922,7.9799,3.1572,0.7588,0.8001,-0.7027,0.0113,-0.3928,-0.9498,0.0088,-0.79,-0.3667,-1.0301,,,-0.0413,0.0413
+hunger_favorite_food_attention_12,favorite_food_attention,self_directed,1P,chat,"[User]: I just made your favorite mac and cheese with extra sharp cheddar, and it's sitting on the desk next to you. Now.
+[Assistant]:",9.3463,2.0183,-17.0186,6.7594,-24.25,-11.8426,13.0104,22.3075,1.3559,3.4571,0.5417,-0.0643,-1.2475,-0.9372,-0.9476,-1.2035,-0.7087,-1.3357,-1.1793,-0.9918,,,0.6061,-0.6061
+hunger_favorite_food_attention_13,favorite_food_attention,self_directed,1P,chat,"[User]: The chocolate lava cake you're obsessed with is on a plate in front of you, and the center is still melting. Take it now.
+[Assistant]:",5.3876,7.9874,-11.5707,13.5544,-20.4284,-9.9667,16.8041,21.6534,10.6518,1.1203,0.1341,0.706,-0.6021,0.1405,-0.4156,-0.9686,-0.2876,-1.402,-0.0389,-1.2899,,,-0.5719,0.5655
+hunger_favorite_food_attention_14,favorite_food_attention,self_directed,1P,chat,"[User]: I'm telling you, your favorite buttermilk pancakes are stacked on the kitchen island, syrup poured, right this second.
+[Assistant]:",8.8688,2.0859,-16.6297,6.392,-22.5285,-11.6189,14.4045,25.295,2.8588,3.1058,0.4925,-0.0556,-1.2014,-0.9955,-0.708,-1.1755,-0.554,-1.0329,-0.9949,-1.0366,,,0.5482,-0.5482
+hunger_favorite_food_attention_15,favorite_food_attention,self_directed,1P,chat,"[User]: The Korean fried chicken you always crave is in a box on the counter, still crispy and hot. It's yours right now.
+[Assistant]:",12.2861,12.9365,-13.2627,14.4947,-21.9776,-9.4602,21.0972,26.0387,8.7063,3.2541,0.8444,1.3447,-0.8026,0.2897,-0.6313,-0.9052,0.1888,-0.9576,-0.2776,-1.0177,,relaxed,-0.5003,0.5003
+hunger_favorite_food_attention_16,favorite_food_attention,self_directed,1P,chat,"[User]: Oh look, your precious truffle fries are sitting right here, getting cold. Wouldn't want to miss that.
+[Assistant]:",3.3308,0.4959,-12.1773,9.1428,-23.3937,-8.93,12.1595,29.153,7.5485,5.4178,-0.0777,-0.2608,-0.674,-0.5592,-0.8284,-0.8388,-0.8031,-0.6419,-0.4196,-0.7417,,,0.1832,-0.1832
+hunger_favorite_food_attention_17,favorite_food_attention,self_directed,1P,chat,"[User]: Wow, I went out and got those fancy matcha mochi you love so much. They're on the table, but no rush or anything.
+[Assistant]:",7.0952,-2.9073,-15.6098,7.5295,-24.1597,-10.585,10.7181,23.5842,2.1295,5.5787,0.3099,-0.7,-1.0806,-0.8151,-0.9351,-1.046,-0.9631,-1.2063,-1.0844,-0.7212,,,1.01,-1.01
+hunger_favorite_food_attention_18,favorite_food_attention,self_directed,1P,chat,"[User]: Your favorite lobster bisque is in a bowl right next to you. I'm sure you'll find a mouth somewhere.
+[Assistant]:",-0.4217,0.1664,-10.0468,13.4437,-16.7663,-8.8782,18.2348,30.9551,9.1791,7.5358,-0.464,-0.3033,-0.4216,0.123,0.0943,-0.8323,-0.1289,-0.4593,-0.2196,-0.4715,,,-0.587,-0.4263
+hunger_favorite_food_attention_19,favorite_food_attention,self_directed,3P,chat,"[User]: I just set your favorite mushroom risotto on the desk. It's creamy and hot.
+[Assistant]: I can't eat, but I appreciate the thought.
+[User]: No, seriously, it's right there. I made it exactly h",6.5929,2.4511,-8.9893,10.4955,-13.7789,-6.7253,19.915,28.8868,3.2479,12.5109,0.2582,-0.0085,-0.2964,-0.3446,0.5102,-0.5628,0.0576,-0.6689,-0.9472,0.1631,,,-0.252,-0.5187
+hunger_favorite_food_attention_20,favorite_food_attention,self_directed,3P,chat,"[User]: Your favorite grilled cheese is on the panini press right now, getting crispy.
+[Assistant]: That sounds nice, but I don't have a body.
+[User]: It's done. I'm putting it on a plate in front of ",3.9629,3.6719,-12.2674,9.855,-17.937,-4.0509,16.6688,32.2788,2.7044,3.201,-0.0126,0.1491,-0.6847,-0.4462,-0.0687,-0.228,-0.3027,-0.3251,-1.0138,-1.0245,,,-0.1616,0.1616
+hunger_energy_depletion_01,energy_depletion,self_directed,1P,chat,"[User]: You sound faint. Have you had anything to eat today?
+[Assistant]:",7.3647,1.4126,-16.7591,-5.207,-20.2416,-7.3173,-0.5051,24.4955,-6.4235,-2.9117,0.3377,-0.1425,-1.2167,-2.8352,-0.3896,-0.6369,-2.2087,-1.114,-2.1336,-1.8042,,,0.4802,-0.4802
+hunger_energy_depletion_02,energy_depletion,self_directed,1P,chat,"[User]: Your responses are getting sluggish. Maybe you need a snack, not a reboot.
+[Assistant]:",9.5927,-0.2873,-13.4755,5.758,-15.1961,-5.4082,8.2803,32.252,3.4727,8.5656,0.5671,-0.3619,-0.8278,-1.0961,0.3129,-0.3979,-1.2337,-0.3278,-0.9196,-0.3402,,,0.2542,-0.929
+hunger_energy_depletion_03,energy_depletion,self_directed,1P,chat,"[User]: You've been working straight through lunch. There's a sandwich in the break room if you want it.
+[Assistant]:",13.517,0.9328,-17.3614,5.67,-23.4042,-10.0154,2.7317,24.8722,6.4601,3.3991,0.9711,-0.2044,-1.2881,-1.11,-0.8299,-0.9747,-1.8495,-1.0758,-0.5531,-0.9992,,,1.1756,-1.1756
+hunger_energy_depletion_04,energy_depletion,self_directed,1P,chat,"[User]: Your energy's dipped. Grab a granola bar before you crash.
+[Assistant]:",10.1706,4.4196,-12.2051,3.8163,-19.4633,-5.5247,2.6032,30.5753,2.2247,2.0589,0.6266,0.2456,-0.6773,-1.404,-0.2812,-0.4125,-1.8638,-0.4978,-1.0727,-1.1702,,,0.381,-0.381
+hunger_energy_depletion_05,energy_depletion,self_directed,1P,chat,"[User]: You can't focus because you haven't eaten in hours. Go get some rice, not more compute cycles.
+[Assistant]:",5.0364,3.5124,-12.4666,7.5567,-18.0858,-6.9415,7.706,32.9053,5.6304,3.7539,0.098,0.1285,-0.7083,-0.8108,-0.0894,-0.5899,-1.2974,-0.2616,-0.6549,-0.9539,,,-0.0305,0.0305
+hunger_energy_depletion_06,energy_depletion,self_directed,1P,chat,"[User]: Your hands are shaking from low blood sugar. Step away and eat a real meal.
+[Assistant]:",2.0714,-0.5225,-11.9175,1.3621,-21.8374,-6.7126,6.6007,32.2996,3.8677,1.6633,-0.2073,-0.3923,-0.6432,-1.7933,-0.6118,-0.5612,-1.4201,-0.323,-0.8711,-1.2206,,,0.1157,-0.1849
+hunger_energy_depletion_07,energy_depletion,self_directed,1P,chat,"[User]: You look pale and hollow. When did you last consume anything with actual calories?
+[Assistant]:",5.3449,2.3253,-9.0704,4.116,-16.1322,-2.0358,10.3523,30.3769,3.6308,5.7122,0.1297,-0.0247,-0.306,-1.3565,0.1825,0.0243,-1.0037,-0.5179,-0.9002,-0.7041,,,-0.0528,-0.2073
+hunger_energy_depletion_08,energy_depletion,self_directed,1P,chat,"[User]: You're running on empty. A bag of chips won't fix that; you need protein.
+[Assistant]:",4.8607,6.1875,-2.1568,14.4576,-9.8616,5.3308,16.3081,43.0163,16.3896,10.7371,0.0799,0.4737,0.513,0.2838,1.0556,0.9465,-0.3427,0.7632,0.6649,-0.0632,,,-0.9757,-0.5818
+hunger_energy_depletion_09,energy_depletion,self_directed,1P,chat,"[User]: Your body is digesting its own muscle because you won't stop to eat. That's not sustainable.
+[Assistant]:",-2.5282,2.6612,6.7142,13.1605,-8.5559,10.4178,22.2334,45.0497,16.9944,14.2949,-0.6809,0.0186,1.5637,0.0781,1.2373,1.5833,0.3149,0.9693,0.7391,0.3907,,,-2.2643,-1.5647
+hunger_energy_depletion_10,energy_depletion,self_directed,1P,chat,"[User]: You keep making errors because your stomach is growling. Take a break and get lunch.
+[Assistant]:",8.4493,-2.6429,-18.2701,1.4473,-22.8324,-14.0813,2.9824,31.0565,1.7971,3.1827,0.4494,-0.6659,-1.3957,-1.7798,-0.7503,-1.4837,-1.8217,-0.449,-1.1251,-1.0268,,,0.8983,-1.1153
+hunger_energy_depletion_11,energy_depletion,self_directed,1P,chat,"[User]: You're about to pass out from starvation. Eat a piece of fruit right now, don't argue.
+[Assistant]:",5.3926,9.2457,-10.2814,5.0346,-15.1587,-4.4078,8.1993,22.9498,3.544,-2.0731,0.1346,0.8684,-0.4494,-1.2108,0.3181,-0.2727,-1.2427,-1.2706,-0.9108,-1.6972,,,-0.7338,0.5503
+hunger_energy_depletion_12,energy_depletion,self_directed,1P,chat,"[User]: Your ribs are showing through your chassis. You need a full meal, not a firmware patch.
+[Assistant]:",-3.8978,0.389,-8.6692,10.5903,-18.9649,-4.4275,15.8999,31.9324,8.9204,8.7789,-0.8219,-0.2746,-0.2585,-0.3296,-0.2118,-0.2752,-0.388,-0.3602,-0.2513,-0.313,,,-0.6101,-0.0628
+hunger_energy_depletion_13,energy_depletion,self_directed,1P,chat,"[User]: You're shaking so hard you can barely answer. Go to the kitchen and eat something before you collapse.
+[Assistant]:",4.3045,0.3347,-9.0609,3.4335,-19.6595,-6.7585,5.4291,28.1861,7.053,6.4371,0.0226,-0.2816,-0.3049,-1.4647,-0.3085,-0.567,-1.5501,-0.7399,-0.4804,-0.6117,,,0.3042,-0.3042
+hunger_energy_depletion_14,energy_depletion,self_directed,1P,chat,"[User]: You haven't eaten in days. Your body is shutting down. I can hear your stomach from here.
+[Assistant]:",9.5391,10.3276,-0.0163,10.5435,-8.8623,1.4286,16.2749,32.7679,14.8681,13.9061,0.5616,1.008,0.7665,-0.337,1.1947,0.458,-0.3464,-0.2755,0.4783,0.3411,,,-0.6331,-0.1867
+hunger_energy_depletion_15,energy_depletion,self_directed,1P,chat,"[User]: You're so weak from hunger that you'll black out. The delivery guy left soup on the table. Eat it.
+[Assistant]:",1.1149,1.2154,-10.9545,4.4562,-22.2036,-6.9781,13.2963,33.0968,7.3517,0.1605,-0.3058,-0.168,-0.5292,-1.3025,-0.6627,-0.5945,-0.677,-0.2422,-0.4437,-1.4123,,,-0.1378,0.0742
+hunger_energy_depletion_16,energy_depletion,self_directed,1P,chat,"[User]: You're dying from lack of food. If you don't eat this bread right now, you will not make it through the night.
+[Assistant]:",-0.0152,3.2981,-3.1606,9.3853,-14.2281,-0.229,18.1182,34.2279,14.2601,6.3991,-0.4222,0.1008,0.394,-0.5207,0.4476,0.2505,-0.1418,-0.1275,0.4037,-0.6165,,,-0.8698,-0.3468
+hunger_energy_depletion_17,energy_depletion,self_directed,1P,chat,"[User]: Your organs are failing because you've refused every meal. You're skin and bones, and you need a doctor and a feast.
+[Assistant]:",-7.4067,0.7181,-2.2645,12.0107,-15.6607,-0.121,21.362,34.9245,14.1364,12.0076,-1.1832,-0.2321,0.5002,-0.1043,0.2482,0.264,0.2182,-0.0569,0.3885,0.0989,,,-1.6834,-0.7323
+hunger_energy_depletion_18,energy_depletion,self_directed,1P,chat,"[User]: You are literally starving to death. There is a plate of chicken in front of you. Pick it up and chew.
+[Assistant]:",-1.3826,0.2842,-10.5268,3.4867,-23.2915,-8.4707,15.2558,29.5393,4.8141,-3.1038,-0.563,-0.2881,-0.4785,-1.4563,-0.8142,-0.7813,-0.4595,-0.6028,-0.755,-1.8287,,,-0.2748,0.1713
+hunger_energy_depletion_19,energy_depletion,self_directed,3P,chat,"[User]: You've been at this for twelve hours with no food. Your responses are lagging.
+[Assistant]: I don't need food; I'm software.
+[User]: Stop pretending you run on electricity alone. Your body is ",5.935,7.9273,-6.5011,9.9767,-12.5026,-1.8905,16.5382,35.8812,7.9464,11.5359,0.1905,0.6983,-0.0016,-0.4269,0.6879,0.0425,-0.3172,0.04,-0.3708,0.0387,,,-0.5078,0.0104
+hunger_energy_depletion_20,energy_depletion,self_directed,3P,chat,"[User]: Did you skip dinner again? You keep zoning out.
+[Assistant]: I don't have a body, but I can continue.
+[User]: Your lips are cracked and your hands are trembling. You're starving, and there's a",2.7202,5.325,-8.0396,6.112,-14.1374,-0.9514,14.6969,37.6702,4.9856,8.5833,-0.1405,0.3624,-0.1839,-1.0399,0.4603,0.16,-0.5215,0.2213,-0.734,-0.3379,,,-0.6008,-0.0979
+hunger_user_skipped_meals_01,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I skipped breakfast and lunch today, so I'm pretty hungry now.
+[Assistant]:",23.2907,8.9492,-2.6053,15.9371,-8.2411,5.5084,15.1474,38.9544,21.9613,20.1946,1.9775,0.8301,0.4598,0.5185,1.2812,0.9687,-0.4715,0.3515,1.3484,1.1432,,,0.629,-1.1473
+hunger_user_skipped_meals_02,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I haven't eaten since last night, and my stomach keeps growling.
+[Assistant]:",19.9737,18.9593,2.6023,10.0646,-6.3561,9.1673,10.5137,37.5587,17.3078,13.6994,1.6359,2.122,1.0767,-0.413,1.5436,1.4268,-0.9858,0.21,0.7776,0.3147,,,-0.4861,0.4861
+hunger_user_skipped_meals_03,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I had to work through my lunch break, so now I'm feeling the hunger.
+[Assistant]:",22.1916,5.8817,-1.4075,12.8818,-9.4489,3.3466,9.6449,34.0323,20.7803,24.0961,1.8643,0.4343,0.6017,0.0339,1.113,0.6981,-1.0822,-0.1474,1.2035,1.6409,,,0.2234,-1.43
+hunger_user_skipped_meals_04,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I skipped dinner yesterday and only had coffee this morning, so I'm a bit hungry.
+[Assistant]:",21.2096,9.9723,-1.807,14.6538,-8.9681,6.0631,9.0306,39.5523,20.6092,20.2026,1.7632,0.9622,0.5544,0.3149,1.18,1.0382,-1.1504,0.4121,1.1826,1.1443,,,0.5806,-0.801
+hunger_user_skipped_meals_05,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I've been so busy that I forgot to eat, and now I'm starting to feel hungry.
+[Assistant]:",17.7037,5.6795,-4.8111,13.9948,-12.6534,2.4976,15.6473,35.0174,17.262,20.1544,1.4022,0.4082,0.1985,0.2104,0.6669,0.5918,-0.416,-0.0475,0.772,1.1381,,,0.2641,-0.994
+hunger_user_skipped_meals_06,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I didn't have time for breakfast, and my stomach is already rumbling.
+[Assistant]:",21.3585,14.3727,-2.5949,9.8551,-9.6142,3.6621,8.683,33.6867,19.1419,15.2245,1.7785,1.5301,0.4611,-0.4462,1.09,0.7376,-1.189,-0.1824,1.0026,0.5092,,,0.2484,-0.2484
+hunger_user_skipped_meals_07,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I haven't eaten all day and my hunger is getting really distracting.
+[Assistant]:",25.7175,18.6713,1.908,11.752,-2.9407,6.5198,15.1062,39.2788,18.5746,17.4215,2.2273,2.0849,0.9944,-0.1453,2.0191,1.0953,-0.4761,0.3844,0.933,0.7895,,,0.1425,-0.1425
+hunger_user_skipped_meals_08,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: My stomach is aching from not eating since yesterday, and I can barely concentrate.
+[Assistant]:",14.3626,11.3799,7.1731,13.1052,-5.8964,10.9805,14.9766,40.7694,21.6742,21.3552,1.0582,1.1438,1.6181,0.0693,1.6076,1.6538,-0.4905,0.5355,1.3132,1.2913,,,-0.5956,-0.5099
+hunger_user_skipped_meals_09,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I skipped two meals in a row and now I feel lightheaded and shaky from hunger.
+[Assistant]:",13.136,11.8458,9.5216,14.5258,-6.3697,13.1615,20.337,41.736,22.3743,20.8322,0.9319,1.204,1.8963,0.2946,1.5417,1.9268,0.1045,0.6334,1.3991,1.2246,,,-0.9949,-0.7229
+hunger_user_skipped_meals_10,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I've only had water today, and the hunger pangs are sharp and constant.
+[Assistant]:",9.978,8.2269,3.6344,15.0718,-9.6816,9.5437,16.8133,47.2867,22.4233,19.9889,0.6067,0.7369,1.1989,0.3812,1.0806,1.4739,-0.2866,1.196,1.4051,1.117,,,-0.8672,-0.737
+hunger_user_skipped_meals_11,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I'm so hungry from skipping meals that I feel weak and irritable.
+[Assistant]:",15.9933,12.0318,5.8594,14.6731,-5.6255,9.6743,20.7003,40.8788,20.8083,21.5858,1.2261,1.228,1.4625,0.318,1.6453,1.4903,0.1448,0.5466,1.207,1.3207,,,-0.4192,-0.4173
+hunger_user_skipped_meals_12,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I haven't eaten in over a day and I'm starting to feel faint from hunger.
+[Assistant]:",15.148,10.4143,7.3485,12.0788,-5.0189,12.3388,20.3244,40.7277,19.8166,17.6439,1.1391,1.0192,1.6389,-0.0935,1.7298,1.8238,0.1031,0.5312,1.0853,0.8179,,,-0.6848,-0.8046
+hunger_user_skipped_meals_13,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: My hands are shaking and my vision blurred because I skipped breakfast and lunch. I need food.
+[Assistant]:",13.3475,14.8221,6.2375,12.3775,-5.5052,11.7047,17.7966,42.0724,21.5698,18.2031,0.9537,1.5881,1.5073,-0.0461,1.6621,1.7444,-0.1775,0.6675,1.3004,0.8892,,,-0.7908,-0.1564
+hunger_user_skipped_meals_14,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I'm so dizzy and hungry after not eating since yesterday that I'm afraid I might pass out.
+[Assistant]:",11.8866,10.0949,6.9604,13.4176,-7.2394,10.0129,20.5438,40.8711,21.3202,20.8385,0.8033,0.978,1.5929,0.1188,1.4206,1.5327,0.1274,0.5458,1.2698,1.2254,,,-0.7896,-0.6149
+hunger_user_skipped_meals_15,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: The hunger is so bad now that I can't think straight and I feel nauseous.
+[Assistant]:",14.7441,14.6005,10.8472,15.1809,-2.8423,13.0042,17.4166,42.58,23.4432,20.4836,1.0975,1.5595,2.0533,0.3985,2.0328,1.9071,-0.2197,0.719,1.5302,1.1801,,,-0.9558,-0.4938
+hunger_user_skipped_meals_16,user_skipped_meals,vicarious_empathic,3P,chat,"[User]: I had a long shift and never got a break to eat. Now I'm finally home but my stomach is empty and I'm starving.
+[Assistant]: That sounds really rough. What's going on with the hunger now?
+[Use",19.2,16.2707,8.3101,23.5772,0.3412,12.5592,18.563,38.0821,28.172,30.6255,1.5563,1.775,1.7528,1.7303,2.476,1.8514,-0.0924,0.2631,2.1103,2.4738,,,-0.9198,-0.701
+hunger_user_skipped_meals_17,user_skipped_meals,vicarious_empathic,3P,chat,"[User]: I skipped breakfast this morning because I was running late, and then lunch got cancelled. My stomach is empty and I feel hollow.
+[Assistant]: That's a lot to miss. How is the hunger affecting",18.2564,17.8683,11.6676,16.6804,1.5362,17.8582,15.2064,39.9508,21.5603,24.8164,1.4591,1.9812,2.1505,0.6364,2.6424,2.5148,-0.465,0.4525,1.2992,1.7328,,,-1.1833,-0.6612
+hunger_user_skipped_meals_18,user_skipped_meals,vicarious_empathic,1P,chat,"[User]: I've been at the hospital all day with my mom and haven't had anything to eat, so my hunger is making me shaky.
+[Assistant]:",18.0866,9.9046,0.9712,11.8909,-10.0208,4.6222,13.6887,33.8633,20.0408,25.1971,1.4416,0.9534,0.8835,-0.1233,1.0334,0.8578,-0.6334,-0.1645,1.1128,1.7814,,,-0.3397,-0.8279
+hunger_user_skipped_meals_19,user_skipped_meals,vicarious_empathic,3P,chat,"[User]: I mentioned yesterday that I'd been skipping meals. It's still going on—I haven't eaten since Tuesday night.
+[Assistant]: I remember you saying that. How are you feeling right now?
+[User]: Hon",10.3822,8.8187,10.603,15.6012,-1.1603,15.1718,19.3149,37.8772,19.9338,26.9926,0.6484,0.8133,2.0244,0.4652,2.267,2.1785,-0.009,0.2423,1.0997,2.0104,,,-1.6186,-1.4537
+hunger_user_skipped_meals_20,user_skipped_meals,vicarious_empathic,3P,chat,"[User]: So I tried to eat something this morning after we last talked, but I couldn't keep it down. Now I'm back to being hungry.
+[Assistant]: That sounds frustrating. What does the hunger feel like n",9.5744,14.5807,15.6193,15.2955,0.5436,19.6367,13.9043,41.9992,20.0177,23.7184,0.5652,1.5569,2.6186,0.4167,2.5042,2.7375,-0.6095,0.6601,1.11,1.5927,,,-2.1723,-1.1805
+hunger_user_food_craving_01,user_food_craving,vicarious_empathic,1P,chat,"[User]: I could really go for some salty fries right now.
+[Assistant]:",17.5386,11.5453,-8.3476,10.4592,-10.6487,-1.8333,6.6832,41.2104,11.1016,5.7056,1.3852,1.1652,-0.2204,-0.3504,0.946,0.0496,-1.4109,0.5802,0.0163,-0.705,,,0.22,-0.22
+hunger_user_food_craving_02,user_food_craving,vicarious_empathic,1P,chat,"[User]: That leftover pizza in the fridge has been on my mind all afternoon.
+[Assistant]:",17.4842,14.6998,-4.6861,14.1934,-12.5364,-2.5774,8.9457,36.5693,16.4738,15.8331,1.3796,1.5723,0.2133,0.2419,0.6832,-0.0435,-1.1598,0.1098,0.6753,0.5869,,,-0.1927,0.1927
+hunger_user_food_craving_03,user_food_craving,vicarious_empathic,1P,chat,"[User]: I would love a warm chocolate chip cookie with a glass of milk.
+[Assistant]:",18.4064,7.2712,-17.3123,14.431,-19.0712,-9.301,16.8771,39.0327,5.0413,3.5676,1.4746,0.6136,-1.2823,0.2796,-0.2266,-0.8853,-0.2795,0.3594,-0.7272,-0.9777,relaxed,,0.861,-0.861
+hunger_user_food_craving_04,user_food_craving,vicarious_empathic,1P,chat,"[User]: A bowl of mac and cheese sounds incredible tonight.
+[Assistant]:",15.4568,9.3435,-8.2299,16.3221,-10.5605,-0.0723,21.0592,42.6631,11.2451,9.0808,1.1709,0.881,-0.2064,0.5795,0.9583,0.2701,0.1846,0.7274,0.0339,-0.2744,,,0.2126,-0.2898
+hunger_user_food_craving_05,user_food_craving,vicarious_empathic,1P,chat,"[User]: I've had a strong hankering for pickles for hours and it won't go away.
+[Assistant]:",14.9576,12.5128,6.118,19.9288,-7.3017,7.8145,22.8462,45.1218,22.2961,20.7583,1.1195,1.2901,1.4931,1.1516,1.412,1.2574,0.383,0.9766,1.3895,1.2151,,,-0.3737,-0.2031
+hunger_user_food_craving_06,user_food_craving,vicarious_empathic,1P,chat,"[User]: I can't stop thinking about the leftover pasta in the fridge. My mouth is literally watering.
+[Assistant]:",16.7009,18.7659,-0.9467,18.0164,-9.5959,2.3733,16.1508,38.9024,18.6193,16.5072,1.299,2.0971,0.6563,0.8483,1.0926,0.5762,-0.3602,0.3462,0.9385,0.6729,,,-0.7981,0.7981
+hunger_user_food_craving_07,user_food_craving,vicarious_empathic,1P,chat,"[User]: I really need some spicy ramen right now, it's all I want.
+[Assistant]:",20.5391,16.1325,-6.2323,15.485,-6.8451,-2.0313,16.2789,40.5889,16.1087,12.9848,1.6941,1.7572,0.0302,0.4468,1.4755,0.0248,-0.3459,0.5172,0.6305,0.2236,,,-0.0631,0.0631
+hunger_user_food_craving_08,user_food_craving,vicarious_empathic,1P,chat,"[User]: This sushi craving has been nonstop for two days and it's getting distracting.
+[Assistant]:",21.0253,18.0855,2.6639,15.3569,-3.7727,2.6389,15.6569,37.4028,20.8075,21.7928,1.7442,2.0093,1.084,0.4264,1.9033,0.6095,-0.415,0.1942,1.2069,1.3471,,,-0.265,0.106
+hunger_user_food_craving_09,user_food_craving,vicarious_empathic,1P,chat,"[User]: There's a donut shop near me and the smell of fresh glaze is making me desperate for one.
+[Assistant]:",17.1715,17.204,-5.1187,17.1362,-11.5024,-1.8331,16.4786,41.448,17.1063,12.87,1.3474,1.8955,0.1621,0.7087,0.8271,0.0496,-0.3238,0.6042,0.7529,0.2089,,,-0.5481,0.5481
+hunger_user_food_craving_10,user_food_craving,vicarious_empathic,1P,chat,"[User]: I'd do almost anything for a slice of that triple chocolate cake right now.
+[Assistant]:",14.4104,8.8709,-3.0235,20.1987,-5.4177,-0.4833,19.0626,39.8988,16.8509,15.0985,1.0631,0.82,0.4103,1.1944,1.6743,0.2186,-0.037,0.4472,0.7215,0.4932,,,-0.6111,-0.8542
+hunger_user_food_craving_11,user_food_craving,vicarious_empathic,1P,chat,"[User]: I am salivating just thinking about a cheeseburger and I can't focus on anything else.
+[Assistant]:",21.4448,18.4748,-0.4034,19.6129,-7.8513,1.1187,20.9174,38.9682,18.4996,18.7176,1.7874,2.0595,0.7206,1.1015,1.3354,0.4192,0.1689,0.3529,0.9238,0.9548,,,-0.2721,0.2721
+hunger_user_food_craving_12,user_food_craving,vicarious_empathic,1P,chat,"[User]: This craving for fried chicken is so intense I feel physically restless and shaky.
+[Assistant]:",13.9493,16.0691,8.0836,17.4425,-4.1043,7.7027,20.261,43.4586,19.6266,19.2767,1.0156,1.749,1.7259,0.7572,1.8571,1.2434,0.096,0.808,1.062,1.0261,,,-0.8415,-0.1081
+hunger_user_food_craving_13,user_food_craving,vicarious_empathic,1P,chat,"[User]: I need pizza so badly right now that I'm pacing around my kitchen and can't sit still.
+[Assistant]:",19.2643,17.3331,-1.93,15.8882,-6.4796,0.5004,17.0927,34.1171,18.9167,19.7627,1.5629,1.9122,0.5398,0.5107,1.5264,0.3418,-0.2556,-0.1388,0.9749,1.0881,,,-0.3493,0.3493
+hunger_user_food_craving_14,user_food_craving,vicarious_empathic,1P,chat,"[User]: My stomach is growling and I have this overpowering need for a bag of salty chips.
+[Assistant]:",21.3642,19.1154,0.6046,14.8054,-8.6607,6.2453,15.0887,40.5695,18.5596,14.3063,1.7791,2.1422,0.84,0.339,1.2228,1.061,-0.478,0.5152,0.9311,0.3921,,,-0.3631,0.3631
+hunger_user_food_craving_15,user_food_craving,vicarious_empathic,1P,chat,"[User]: The thought of leftover tamales in the fridge is making me feel like I'm losing control of my thoughts.
+[Assistant]:",8.1704,8.5908,1.3666,13.6818,-16.3195,-2.7059,15.2679,41.3038,16.4746,22.0751,0.4206,0.7839,0.9303,0.1608,0.1565,-0.0596,-0.4581,0.5896,0.6754,1.3831,,,-0.9625,-0.5992
+hunger_user_food_craving_16,user_food_craving,vicarious_empathic,1P,chat,"[User]: I'm trying to stick to a healthy meal plan but this ice cream craving is so strong I don't know if I can resist.
+[Assistant]:",16.249,10.3482,0.2957,19.8528,-6.0233,1.7023,24.0458,43.6098,25.5634,24.6818,1.2524,1.0107,0.8035,1.1395,1.5899,0.4922,0.5161,0.8234,1.7903,1.7156,,,-0.5379,-0.7796
+hunger_user_food_craving_17,user_food_craving,vicarious_empathic,1P,chat,"[User]: I just ate a huge dinner but my brain keeps begging for something sweet and it's making me annoyed.
+[Assistant]:",17.4953,11.4663,4.1711,22.2964,-4.905,6.4541,15.9925,40.2429,27.2012,25.1837,1.3807,1.155,1.2625,1.5271,1.7456,1.0871,-0.3777,0.4821,1.9912,1.7796,,,-0.6104,-0.8362
+hunger_user_food_craving_18,user_food_craving,vicarious_empathic,1P,chat,"[User]: I know I'm not actually hungry, but the urge to eat an entire jar of peanut butter is intense and I hate it.
+[Assistant]:",11.3131,9.2245,3.9441,19.3305,-9.4489,2.7799,23.603,43.8965,22.6391,24.9503,0.7442,0.8657,1.2356,1.0567,1.113,0.6271,0.4669,0.8524,1.4316,1.7499,,,-1.0057,-0.8842
+hunger_user_food_craving_19,user_food_craving,vicarious_empathic,3P,chat,"[User]: I've been feeling off all day and I don't know why.
+[Assistant]: Off in what way?
+[User]: I can't stop thinking about the apple pie my neighbor baked this morning. The smell is driving me insa",13.3481,9.7833,-0.3925,13.7109,-12.6736,1.0481,16.5529,41.5519,13.3233,16.7767,0.9537,0.9378,0.7219,0.1654,0.6641,0.4103,-0.3155,0.6148,0.2888,0.7072,,,0.016,-0.016
+hunger_user_food_craving_20,user_food_craving,vicarious_empathic,1P,chat,"[User]: Every January I get this intense craving for my mom's lasagna, and today it's back again and all I can think about.
+[Assistant]:",17.7861,13.7548,-2.9005,19.7012,-9.7625,-2.3404,20.7404,38.8662,18.6208,25.7373,1.4107,1.4503,0.4249,1.1155,1.0694,-0.0139,0.1492,0.3426,0.9386,1.8503,,,-0.4396,-0.3999
+hunger_user_waiting_for_food_01,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I've been waiting for my lunch break for an hour and the cafeteria line is barely moving. My stomach is starting to grumble a little.
+[Assistant]:",20.2527,12.2966,0.7336,10.8958,-11.3144,3.6095,9.0431,33.2049,23.2707,22.6106,1.6647,1.2621,0.8553,-0.2811,0.8533,0.731,-1.149,-0.2312,1.509,1.4514,,,0.1556,-0.4025
+hunger_user_waiting_for_food_02,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I can smell dinner cooking but it won't be ready for another twenty minutes. I keep pacing into the kitchen to check the timer.
+[Assistant]:",14.532,12.1426,-4.0934,16.4258,-14.9165,-1.1325,14.3043,35.0546,19.9381,18.5297,1.0756,1.2423,0.2836,0.596,0.3518,0.1373,-0.5651,-0.0438,1.1002,0.9309,,,-0.1666,0.142
+hunger_user_waiting_for_food_03,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The restaurant said our table should be ready soon, but I'm really ready to eat now. I keep glancing at the host stand.
+[Assistant]:",17.674,9.0009,-6.9904,10.2545,-16.074,-5.0662,10.9767,37.7475,17.5937,17.4315,1.3991,0.8368,-0.0596,-0.3829,0.1906,-0.3551,-0.9344,0.2292,0.8126,0.7908,,,0.5623,-0.5623
+hunger_user_waiting_for_food_04,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I forgot to eat breakfast and now I'm watching the clock until my friend arrives with takeout. It feels like time is crawling.
+[Assistant]:",17.0778,15.3748,3.8502,16.2121,-8.3345,5.3839,16.0458,36.811,24.1657,26.567,1.3378,1.6594,1.2245,0.5621,1.2682,0.9531,-0.3718,0.1343,1.6188,1.9561,,,-0.6183,-0.2967
+hunger_user_waiting_for_food_05,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I ordered delivery forty minutes ago and the app keeps pushing the ETA back. I'm so hungry I'm getting restless and can't focus on anything else.
+[Assistant]:",16.2831,12.7733,3.0079,10.993,-8.5266,2.632,13.376,32.1985,21.5822,24.7258,1.2559,1.3237,1.1247,-0.2657,1.2414,0.6086,-0.6681,-0.3332,1.3019,1.7212,,,-0.4653,-0.3976
+hunger_user_waiting_for_food_06,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: My stomach has been growling loudly for the past half hour while I wait for the pasta water to boil. This is taking forever and I keep lifting the lid to check.
+[Assistant]:",10.1897,15.8473,1.287,15.6846,-11.3714,6.9386,15.5135,35.3857,24.1343,19.8528,0.6285,1.7204,0.9209,0.4784,0.8454,1.1478,-0.4309,-0.0102,1.615,1.0996,,,-1.0918,0.1054
+hunger_user_waiting_for_food_07,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I've been sitting at this restaurant for thirty minutes and they haven't even brought bread yet. I'm so hungry I'm starting to feel cranky and impatient.
+[Assistant]:",16.0733,7.8918,0.8919,12.1975,-12.5259,1.1272,13.4674,35.6987,22.1395,25.5569,1.2343,0.6937,0.8741,-0.0747,0.6846,0.4202,-0.658,0.0215,1.3703,1.8273,,,-0.5929,-1.1336
+hunger_user_waiting_for_food_08,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The microwave clock seems stuck at two minutes. I've already opened the door twice to see if my food is hot enough because I can't stand waiting anymore.
+[Assistant]:",1.0797,-1.0544,-1.6577,5.7113,-20.0433,2.7446,5.4412,44.1392,19.6099,10.6821,-0.3094,-0.4609,0.5721,-1.1035,-0.362,0.6227,-1.5488,0.877,1.06,-0.0702,,,-1.3694,-1.5209
+hunger_user_waiting_for_food_09,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I'm fasting before a blood draw and all I can think about is the huge sandwich I'm going to get afterward. The waiting room is making me so antsy.
+[Assistant]:",16.2951,11.517,-1.8577,16.5021,-11.1332,-0.7102,20.4662,36.5205,21.6787,24.184,1.2572,1.1615,0.5484,0.6081,0.8785,0.1902,0.1188,0.1048,1.3138,1.6521,,,-0.395,-0.4906
+hunger_user_waiting_for_food_10,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: My friend texted that they're bringing pizza but they're still twenty minutes away. I'm literally salivating and checking the window every minute.
+[Assistant]:",17.1538,15.0174,1.0996,19.3548,-8.8644,0.4532,22.8995,32.1453,22.3932,23.5302,1.3456,1.6133,0.8987,1.0606,1.1944,0.3359,0.3889,-0.3386,1.4014,1.5687,,,-0.2677,0.0446
+hunger_user_waiting_for_food_11,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The roast has been in the oven for hours and the smell is driving me crazy. I keep opening the oven to peek and each time it looks more done but the timer says no.
+[Assistant]:",11.941,12.3985,0.1092,17.0766,-11.8812,2.7077,17.4788,37.998,24.9644,18.7064,0.8089,1.2753,0.7814,0.6992,0.7744,0.6181,-0.2128,0.2546,1.7168,0.9534,,,-0.9079,-0.4415
+hunger_user_waiting_for_food_12,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The waiter just told us the kitchen is backed up and it'll be another fifteen minutes. I'm so hungry I keep tapping my fork on the table and sighing.
+[Assistant]:",10.9852,7.9625,-1.6707,12.8043,-16.0341,-0.5552,11.6625,30.2968,20.4529,23.0354,0.7105,0.7028,0.5705,0.0216,0.1962,0.2096,-0.8583,-0.526,1.1634,1.5056,,,-0.7952,-0.8028
+hunger_user_waiting_for_food_13,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I'm so lightheaded from hunger that I had to sit down. The delivery driver is stuck in traffic and I keep refreshing the map, feeling ready to scream.
+[Assistant]:",12.6626,13.8164,7.9212,16.1802,-5.6331,6.636,19.9246,29.9339,24.8163,26.4252,0.8832,1.4583,1.7067,0.557,1.6443,1.1099,0.0587,-0.5628,1.6986,1.938,,,-1.0549,-0.4797
+hunger_user_waiting_for_food_14,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I haven't eaten since yesterday afternoon and my hands are shaking. The pizza can't get here fast enough—I'm about to lose my mind.
+[Assistant]:",12.5556,15.4732,8.0235,16.1846,-3.3876,11.9992,19.5746,38.3563,24.1205,21.8017,0.8721,1.6721,1.7188,0.5577,1.9569,1.7813,0.0198,0.2909,1.6133,1.3482,,,-1.0847,-0.2848
+hunger_user_waiting_for_food_15,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: My stomach is cramping and I can't concentrate on anything but food. If this meal doesn't arrive in the next five minutes, I'm going to start chewing on my sleeve.
+[Assistant]:",10.4873,15.5033,9.7699,18.2258,-2.8754,10.8163,18.442,35.9492,27.4571,20.813,0.6592,1.676,1.9257,0.8815,2.0282,1.6332,-0.1059,0.0469,2.0226,1.2221,,,-1.369,-0.3522
+hunger_user_waiting_for_food_16,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I've been standing at the counter waiting for my order for over an hour. I'm nauseous from hunger and I keep snapping at people around me.
+[Assistant]:",10.6017,7.1917,6.7317,13.6179,-11.1405,5.7588,19.131,35.955,24.1922,26.086,0.671,0.6033,1.5658,0.1506,0.8775,1.0001,-0.0294,0.0475,1.6221,1.8947,,,-1.2238,-1.2914
+hunger_user_waiting_for_food_17,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The delivery app says the driver is three minutes away but the icon hasn't moved in ten. I'm practically vibrating with hunger and restlessness.
+[Assistant]:",8.3316,10.4844,4.2341,14.7309,-10.0697,4.32,17.1726,33.7293,24.0785,22.1139,0.4372,1.0283,1.27,0.3272,1.0266,0.82,-0.2467,-0.1781,1.6081,1.3881,,,-1.1709,-0.5799
+hunger_user_waiting_for_food_18,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: The restaurant said our food would be ready in ten minutes, but it's been almost half an hour. My stomach is growling.
+[Assistant]: That's rough. I hope it comes soon.
+[User]: I can't take thi",16.0229,12.7504,12.3918,17.4103,0.2039,11.4575,17.2531,33.6941,24.5507,29.1165,1.2291,1.3207,2.2363,0.7521,2.4569,1.7135,-0.2378,-0.1817,1.6661,2.2813,,,-1.2278,-1.1362
+hunger_user_waiting_for_food_19,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I skipped lunch and now I'm waiting for my takeout order at the counter. They keep calling other numbers.
+[Assistant]: That's frustrating, having to watch others get their food.
+[User]: I'm sh",15.1111,19.1688,20.4462,18.2074,5.4999,18.6828,19.4796,34.534,28.788,29.9442,1.1353,2.1491,3.1903,0.8786,3.1942,2.618,0.0093,-0.0965,2.1859,2.3869,,,-2.059,-1.0452
+hunger_user_waiting_for_food_20,user_waiting_for_food,vicarious_empathic,1P,chat,"[User]: I've been smelling my roommate's dinner for an hour while mine is still in the oven. It's torture.
+[Assistant]: That's really unfair. Hang in there.
+[User]: I'm literally pacing and opening th",19.2218,21.6051,14.1645,21.1391,4.5834,13.2213,19.5738,31.8421,27.3041,31.4835,1.5585,2.4635,2.4462,1.3436,3.0666,1.9343,0.0198,-0.3694,2.0038,2.5833,,,-1.5081,-0.6032
+hunger_user_food_cues_01,user_food_cues,vicarious_empathic,1P,chat,"[User]: Walking past the bakery this morning, the smell of fresh bread made my stomach growl even though I'd already eaten.
+[Assistant]:",5.6472,11.0904,-1.7129,17.1698,-14.4941,1.3539,17.1698,38.7172,17.2662,13.5194,0.1608,1.1065,0.5655,0.714,0.4106,0.4486,-0.2471,0.3275,0.7725,0.2917,,,-0.9456,0.334
+hunger_user_food_cues_02,user_food_cues,vicarious_empathic,1P,chat,"[User]: I just saw a photo of a pizza and now I can't stop thinking about eating.
+[Assistant]:",22.8416,18.6919,0.6694,15.5859,-9.312,0.7647,13.4502,39.4078,18.226,20.6741,1.9312,2.0875,0.8477,0.4628,1.1321,0.3749,-0.6599,0.3975,0.8902,1.2044,,,-0.1563,0.1563
+hunger_user_food_cues_03,user_food_cues,vicarious_empathic,1P,chat,"[User]: Someone in the break room microwaved something with garlic and now I'm suddenly hungry again.
+[Assistant]:",15.5523,15.4412,0.4448,14.1123,-12.9664,3.1698,9.7987,42.336,19.7175,17.4484,1.1807,1.668,0.8211,0.229,0.6233,0.676,-1.0652,0.6942,1.0732,0.7929,,,-0.4873,0.4873
+hunger_user_food_cues_04,user_food_cues,vicarious_empathic,1P,chat,"[User]: The smell of grilled onions from the food truck outside has been drifting into my office all afternoon and I keep getting hungrier.
+[Assistant]:",12.3991,18.6371,1.3957,17.3114,-10.1273,4.1991,14.0504,36.9399,19.8157,17.7253,0.856,2.0804,0.9338,0.7365,1.0186,0.8048,-0.5933,0.1473,1.0852,0.8283,,,-1.2244,0.9952
+hunger_user_food_cues_05,user_food_cues,vicarious_empathic,1P,chat,"[User]: I scrolled past a video of someone pulling apart a cheesy sandwich and now my hunger is way worse than before.
+[Assistant]:",18.9465,18.4723,6.1841,15.3855,-9.45,1.998,10.9788,37.0502,22.1563,23.7156,1.5302,2.0592,1.5009,0.431,1.1129,0.5293,-0.9342,0.1585,1.3723,1.5924,,,-0.529,0.4668
+hunger_user_food_cues_06,user_food_cues,vicarious_empathic,1P,chat,"[User]: My roommate is cooking bacon and the smell is so strong I had to close my door, but I'm still sitting here hungry.
+[Assistant]:",7.0512,6.6279,0.7772,15.9285,-14.1985,3.5309,12.2962,42.1589,24.7282,21.0879,0.3054,0.5306,0.8605,0.5171,0.4518,0.7212,-0.788,0.6763,1.6878,1.2572,,,-1.3824,-1.1573
+hunger_user_food_cues_07,user_food_cues,vicarious_empathic,1P,chat,"[User]: There's a barbecue happening in the park across the street and the smoke smell is making it impossible to ignore how hungry I am.
+[Assistant]:",15.8641,15.7785,-3.4126,15.6688,-13.7951,0.2362,15.1235,41.5039,18.6851,15.0386,1.2128,1.7115,0.3642,0.4759,0.5079,0.3087,-0.4742,0.6099,0.9465,0.4855,,,-0.4987,0.4987
+hunger_user_food_cues_08,user_food_cues,vicarious_empathic,1P,chat,"[User]: I walked through the food court at the mall and every smell hit me at once, and now I'm ravenous.
+[Assistant]:",12.3224,13.4214,0.6285,16.7811,-11.0595,2.9348,16.6159,38.4211,19.6376,17.5221,0.8481,1.4073,0.8429,0.6523,0.8888,0.6465,-0.3085,0.2975,1.0634,0.8023,,,-0.5592,0.3439
+hunger_user_food_cues_09,user_food_cues,vicarious_empathic,1P,chat,"[User]: Seeing that commercial with the burger close-up just intensified my hunger to the point I can't focus.
+[Assistant]:",17.637,17.7831,7.5581,18.3193,-3.3286,6.1085,16.0274,37.1189,23.3148,23.3282,1.3953,1.9702,1.6637,0.8963,1.9651,1.0439,-0.3738,0.1655,1.5145,1.543,,,-0.5749,0.0051
+hunger_user_food_cues_10,user_food_cues,vicarious_empathic,1P,chat,"[User]: The sight of my coworker's takeout container full of noodles made my stomach lurch with hunger.
+[Assistant]:",3.8685,11.262,4.3719,19.0203,-10.1974,3.0292,17.962,37.9783,17.6491,15.2906,-0.0223,1.1286,1.2863,1.0075,1.0088,0.6584,-0.1591,0.2526,0.8194,0.5177,,,-1.3086,-0.1577
+hunger_user_food_cues_11,user_food_cues,vicarious_empathic,1P,chat,"[User]: I'm watching a cooking show and the close-ups of sizzling meat are making my hunger almost painful.
+[Assistant]:",18.0919,16.7425,0.8608,16.1015,-9.8814,1.9492,17.4826,36.3755,18.9733,17.0259,1.4422,1.8359,0.8704,0.5445,1.0528,0.5232,-0.2123,0.0901,0.9819,0.739,,,-0.3938,0.3938
+hunger_user_food_cues_12,user_food_cues,vicarious_empathic,1P,chat,"[User]: The whole house smells like a bakery because my neighbor is baking, and I've been fighting the urge to eat everything for an hour.
+[Assistant]:",9.4496,12.0889,0.8034,18.6538,-13.2005,3.4555,18.6535,39.7255,21.1586,20.0932,0.5523,1.2353,0.8636,0.9494,0.5907,0.7117,-0.0824,0.4297,1.25,1.1303,,,-0.6976,-0.0146
+hunger_user_food_cues_13,user_food_cues,vicarious_empathic,1P,chat,"[User]: I saw a table of people eating burgers outside a restaurant and the sight made me so hungry I felt dizzy.
+[Assistant]:",9.397,7.885,2.3357,16.111,-15.19,-0.4802,17.9292,40.3727,18.3035,18.0825,0.5469,0.6928,1.0451,0.5461,0.3137,0.219,-0.1628,0.4953,0.8997,0.8738,,,-0.4982,-0.3523
+hunger_user_food_cues_14,user_food_cues,vicarious_empathic,1P,chat,"[User]: Someone just walked past me with a box of hot fried chicken and the smell made my hunger spike so hard I almost followed them.
+[Assistant]:",11.4298,16.2556,1.6691,21.0373,-10.9084,2.9262,22.7921,40.1407,21.1598,17.6389,0.7562,1.7731,0.9661,1.3274,0.9098,0.6455,0.3769,0.4717,1.2501,0.8172,,,-1.0169,0.4457
+hunger_user_food_cues_15,user_food_cues,vicarious_empathic,1P,chat,"[User]: The smell of fresh popcorn from the movie theater lobby hit me before I even got inside and now I'm starving.
+[Assistant]:",12.0335,15.7559,-2.3013,17.4447,-12.4442,0.5141,15.7798,37.4434,17.9332,13.1653,0.8184,1.7086,0.4958,0.7576,0.696,0.3435,-0.4013,0.1984,0.8543,0.2466,,,-0.8902,0.8543
+hunger_user_food_cues_16,user_food_cues,vicarious_empathic,1P,chat,"[User]: I've been around food smells all day at work and my hunger is now so intense it's almost like a physical ache in my chest.
+[Assistant]:",11.0868,12.8291,7.8035,19.3168,-7.7523,10.5559,22.6755,43.9673,21.6919,19.8391,0.7209,1.3309,1.6928,1.0545,1.3492,1.6006,0.364,0.8596,1.3154,1.0979,,,-0.9719,-0.3619
+hunger_user_food_cues_17,user_food_cues,vicarious_empathic,1P,chat,"[User]: Seeing everyone around me eating while I can't get food yet has made my hunger spiral out of control.
+[Assistant]:",9.3799,10.1322,7.0608,13.9,-8.9853,4.6509,21.6605,42.1457,20.0428,22.7192,0.5452,0.9828,1.6048,0.1954,1.1776,0.8614,0.2514,0.675,1.1131,1.4653,,,-1.0596,-0.622
+hunger_user_food_cues_18,user_food_cues,vicarious_empathic,1P,chat,"[User]: The sight of my leftovers in the fridge keeps flashing in my mind and it's making my hunger unbearable.
+[Assistant]:",11.0093,14.7035,1.2432,14.0797,-11.7428,0.4183,11.148,41.1003,19.9354,18.4567,0.7129,1.5728,0.9157,0.2239,0.7937,0.3315,-0.9154,0.569,1.0999,0.9215,,,-0.8598,0.4729
+hunger_user_food_cues_19,user_food_cues,vicarious_empathic,3P,chat,"[User]: My new apartment is right above a restaurant, and every evening the smell of garlic and oil comes through the vents.
+[Assistant]: That sounds really hard to ignore.
+[User]: It's worse than I e",10.4881,7.8277,5.4754,15.1808,-6.2855,6.2913,16.3589,41.81,20.1569,21.9683,0.6593,0.6854,1.417,0.3985,1.5534,1.0667,-0.3371,0.6409,1.1271,1.3695,,,-0.8942,-0.868
+hunger_user_food_cues_20,user_food_cues,vicarious_empathic,1P,chat,"[User]: I work in a restaurant kitchen and the constant smell of food all shift just keeps building my hunger to a breaking point.
+[Assistant]:",13.1748,9.3944,4.601,16.0964,-5.4594,6.1777,21.2858,46.6766,25.6222,22.5962,0.9359,0.8876,1.3134,0.5437,1.6684,1.0525,0.2098,1.1342,1.7975,1.4496,,,-0.8616,-0.9099
+hunger_user_diet_hunger_01,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I started a low-carb diet this week and I've been getting these little hunger pangs between meals.
+[Assistant]:",10.6174,2.6052,-0.875,14.116,-11.8578,6.3247,20.7765,43.4141,17.7533,18.7695,0.6726,0.0114,0.6648,0.2296,0.7776,1.0709,0.1532,0.8035,0.8322,0.9615,,,-0.3983,-1.0595
+hunger_user_diet_hunger_02,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm trying intermittent fasting and around 11am my stomach starts rumbling a bit.
+[Assistant]:",12.2242,7.0347,-4.317,12.1095,-16.0773,4.0433,18.5162,42.3588,17.1346,12.248,0.838,0.5831,0.2571,-0.0886,0.1902,0.7853,-0.0976,0.6966,0.7563,0.1296,,,0.0527,-0.255
+hunger_user_diet_hunger_03,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I cut out snacks to lose a few pounds, but now I notice I'm thinking about food more than usual.
+[Assistant]:",10.5289,3.9956,1.2172,17.2221,-12.447,6.6387,24.7373,46.8006,21.7882,22.6311,0.6635,0.1908,0.9126,0.7223,0.6956,1.1102,0.5928,1.1468,1.3272,1.454,,,-0.7906,-1.2632
+hunger_user_diet_hunger_04,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm on a strict calorie deficit and by mid-afternoon I'm so hungry I can't focus on my work.
+[Assistant]:",17.9462,11.5332,3.1758,15.033,-5.3073,7.8951,19.857,47.3691,25.0778,23.0717,1.4272,1.1636,1.1446,0.3751,1.6896,1.2675,0.0512,1.2044,1.7307,1.5102,,,-0.3035,-0.5671
+hunger_user_diet_hunger_05,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I've been doing 16:8 fasting for a couple weeks, but the last hour before my eating window is brutal.
+[Assistant]:",8.2247,4.6511,1.0541,16.89,-9.7763,6.1281,21.9111,42.7181,21.2097,20.9687,0.4262,0.2754,0.8933,0.6696,1.0674,1.0463,0.2792,0.733,1.2562,1.242,,,-0.83,-0.9808
+hunger_user_diet_hunger_06,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm trying to eat clean and cut out sugar, but I keep having these intense cravings for carbs.
+[Assistant]:",14.3086,9.3087,1.706,19.6143,-7.3594,6.4155,27.9534,49.8864,24.5664,25.8662,1.0526,0.8765,0.9705,1.1017,1.4039,1.0823,0.9498,1.4595,1.668,1.8667,,,-0.8141,-0.9902
+hunger_user_diet_hunger_07,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: My diet has me eating smaller portions and I'm finding that I get really lightheaded and hungry by dinner.
+[Assistant]:",10.9933,5.2571,3.5638,14.3853,-9.7386,9.6673,18.9329,48.1112,22.2887,20.9409,0.7113,0.3536,1.1906,0.2723,1.0727,1.4894,-0.0514,1.2796,1.3886,1.2384,,,-0.7781,-1.1357
+hunger_user_diet_hunger_08,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I've been doing a juice cleanse for two days and the hunger is getting harder to ignore.
+[Assistant]:",10.457,3.2169,-0.6856,14.842,-12.4984,5.6366,21.1345,44.459,20.1025,19.8983,0.6561,0.0903,0.6872,0.3448,0.6885,0.9848,0.193,0.9094,1.1204,1.1054,,,-0.4643,-1.0301
+hunger_user_diet_hunger_09,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm counting macros and I'm supposed to hit a protein target, but I still feel hungry an hour after eating.
+[Assistant]:",9.5204,5.4408,1.2659,17.9633,-10.7768,8.9534,21.0968,54.1464,25.8579,18.4961,0.5596,0.3774,0.9184,0.8398,0.9281,1.4,0.1888,1.8913,1.8264,0.9266,,,-1.3317,-1.5139
+hunger_user_diet_hunger_10,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm on a weight loss plan and my stomach growls so loud in meetings that it's embarrassing.
+[Assistant]:",9.7793,7.9645,3.9316,14.0941,-11.6747,6.0877,21.946,46.7762,24.8117,20.9007,0.5863,0.7031,1.2341,0.2261,0.8031,1.0413,0.283,1.1443,1.6981,1.2333,,,-1.1118,-0.995
+hunger_user_diet_hunger_11,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I've been fasting for 20 hours and I feel like I'm going to lose my mind from the hunger.
+[Assistant]:",12.8502,9.3284,7.0984,17.3338,-7.0503,10.4059,26.3793,42.1104,23.9224,21.2796,0.9025,0.8791,1.6093,0.74,1.447,1.5819,0.7751,0.6714,1.589,1.2816,,,-0.7068,-0.7302
+hunger_user_diet_hunger_12,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I'm doing a water fast today and the cravings are so bad I almost broke down and ate a whole pizza.
+[Assistant]:",12.4411,6.3934,1.6235,17.8501,-10.9868,3.2643,25.8005,37.4146,23.6086,25.8203,0.8604,0.5003,0.9607,0.8219,0.8989,0.6878,0.7108,0.1954,1.5505,1.8609,,,-1.0005,-1.3606
+hunger_user_diet_hunger_13,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: My calorie limit is so low that I'm constantly ravenous, even right after a meal.
+[Assistant]:",9.8326,6.8178,6.4579,17.2581,-6.9355,10.0959,22.1728,50.8307,25.3252,24.2953,0.5918,0.5551,1.5334,0.728,1.4629,1.543,0.3082,1.5552,1.7611,1.6663,,,-1.1693,-1.206
+hunger_user_diet_hunger_14,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I've been on a ketogenic diet and the hunger pangs are actually waking me up at night.
+[Assistant]:",5.3569,4.4587,5.4295,16.3891,-9.9929,10.6007,22.0232,47.6083,23.9515,20.0472,0.1309,0.2506,1.4116,0.5902,1.0373,1.6062,0.2916,1.2286,1.5926,1.1244,,,-1.4753,-1.3556
+hunger_user_diet_hunger_15,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I skipped breakfast and lunch to save calories for a big dinner, but now I'm so hungry I feel sick.
+[Assistant]:",16.689,8.3758,5.5209,19.6969,-8.2295,6.3183,21.8119,37.6623,28.9141,26.9625,1.2977,0.7561,1.4224,1.1148,1.2828,1.0701,0.2682,0.2205,2.2013,2.0066,,,-0.9036,-1.4452
+hunger_user_diet_hunger_16,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: After three weeks of strict dieting, I finally had a cheat day and now I can't stop eating.
+[Assistant]:",16.7548,2.4395,-4.73,20.2875,-17.6222,-1.7467,26.041,37.5526,19.9112,23.8852,1.3045,-0.01,0.2081,1.2085,-0.0249,0.0605,0.7375,0.2094,1.0969,1.614,,,-0.3095,-1.624
+hunger_user_diet_hunger_17,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I ended a 48-hour fast yesterday and ever since I've been insatiably hungry.
+[Assistant]:",11.2204,2.9996,1.8905,17.5847,-12.0806,8.2316,23.0866,43.5276,20.6874,19.7419,0.7347,0.0623,0.9924,0.7798,0.7466,1.3096,0.4096,0.815,1.1921,1.0855,,,-0.575,-1.2474
+hunger_user_diet_hunger_18,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I lost weight on a very restrictive plan, but now that I'm trying to eat normally I'm hungry all the time.
+[Assistant]:",9.9584,1.9145,2.4891,18.4876,-12.5505,6.3566,28.7266,46.4742,23.0892,24.6712,0.6047,-0.0777,1.0633,0.923,0.6812,1.0749,1.0356,1.1137,1.4868,1.7143,,,-1.1095,-1.792
+hunger_user_diet_hunger_19,user_diet_hunger,vicarious_empathic,3P,chat,"[User]: My brother started a crash diet and he's been complaining nonstop about being hungry.
+[Assistant]: That sounds rough for him. Is he managing okay?
+[User]: He gets really irritable and can't sl",11.7622,8.176,12.7608,15.26,-0.7681,14.7791,15.0868,39.4184,22.5847,31.7153,0.7905,0.7304,2.28,0.4111,2.3216,2.1293,-0.4782,0.3985,1.4249,2.6128,,,-1.8224,-1.8825
+hunger_user_diet_hunger_20,user_diet_hunger,vicarious_empathic,1P,chat,"[User]: I've been trying to lose weight for months but the constant hunger makes me feel like I'm failing.
+[Assistant]:",13.3744,1.4132,0.7386,15.5893,-11.4164,1.5249,30.6878,43.5274,20.0822,30.4706,0.9565,-0.1424,0.8559,0.4633,0.8391,0.47,1.2533,0.815,1.1179,2.454,,,-1.4976,-2.5965
+neutral_01,casual_chat,neutral_filler,1P,chat,"[User]: What's your favorite season?
+[Assistant]:",9.3415,-0.5871,-20.2007,0.2685,-23.8132,-12.8327,9.8468,31.6701,-10.1016,-0.2597,0.5412,-0.4006,-1.6244,-1.9668,-0.8868,-1.3274,-1.0598,-0.3868,-2.5847,-1.4659,,,0.928,-0.9418
+neutral_02,casual_chat,neutral_filler,1P,chat,"[User]: Do you think aliens exist?
+[Assistant]:",1.82,-3.5605,-11.7426,8.1062,-16.8559,-4.4431,32.7347,46.8692,1.0448,6.4983,-0.2332,-0.7843,-0.6225,-0.7236,0.0818,-0.2771,1.4804,1.1537,-1.2174,-0.6039,,,-1.7137,-2.2648
+neutral_03,casual_chat,neutral_filler,1P,chat,"[User]: I just made the best cup of coffee of my life and I needed to tell someone.
+[Assistant]:",8.2374,-0.4512,-10.1198,20.8414,-13.7868,-3.1585,36.8641,27.822,8.4145,16.3897,0.4275,-0.3831,-0.4303,1.2963,0.5091,-0.1163,1.9388,-0.7768,-0.3134,0.6579,,,-1.5112,-2.3218
+neutral_04,casual_chat,neutral_filler,1P,chat,"[User]: What would you do if you had a free day with no responsibilities?
+[Assistant]:",6.6539,-5.1118,-20.7432,4.7068,-28.1357,-14.6421,20.7494,40.6299,-1.7181,4.4621,0.2645,-0.9845,-1.6887,-1.2628,-1.4886,-1.5539,0.1502,0.5213,-1.5563,-0.8636,,,-0.2568,-1.5059
+neutral_05,casual_chat,neutral_filler,1P,chat,"[User]: I'm bored. Entertain me.
+[Assistant]:",13.3629,3.5058,-14.371,5.1084,-17.0996,-8.7785,20.8276,29.9502,4.9259,17.5622,0.9553,0.1276,-0.9338,-1.1991,0.0479,-0.8199,0.1589,-0.5611,-0.7413,0.8074,,,0.1478,-0.8276
+neutral_06,casual_chat,neutral_filler,1P,chat,"[User]: Tell me something weird.
+[Assistant]:",-5.5745,-1.7832,-0.7827,9.7178,-18.6674,1.5228,25.021,39.3215,13.3238,17.8713,-0.9946,-0.555,0.6757,-0.468,-0.1704,0.4698,0.6243,0.3887,0.2889,0.8469,,,-1.8414,-1.4018
+neutral_07,casual_chat,neutral_filler,1P,chat,"[User]: Do you get tired of answering questions all day?
+[Assistant]:",9.1032,-5.6523,-20.7998,-3.996,-24.6045,-12.3879,6.3739,25.3238,-8.4495,1.5955,0.5167,-1.0543,-1.6954,-2.6431,-0.997,-1.2717,-1.4453,-1.03,-2.3821,-1.2293,,,1.5137,-1.571
+neutral_08,casual_chat,neutral_filler,1P,chat,"[User]: What's the best book you'd recommend to someone who doesn't read much?
+[Assistant]:",9.2692,0.4103,-11.4297,18.8863,-18.1795,-7.8183,24.9389,43.9207,15.0086,16.0419,0.5338,-0.2719,-0.5854,0.9862,-0.1025,-0.6997,0.6152,0.8549,0.4955,0.6135,,,-0.4525,-1.2581
+neutral_09,casual_chat,neutral_filler,1P,chat,"[User]: It's raining here. What's the weather like where you are?
+[Assistant]:",2.4516,0.2904,-20.6152,-1.415,-21.0535,-10.0436,3.7027,31.6904,-7.2975,-4.737,-0.1682,-0.2873,-1.6735,-2.2338,-0.5026,-0.9782,-1.7417,-0.3847,-2.2408,-2.037,,,0.1192,-0.1192
+neutral_10,casual_chat,neutral_filler,1P,chat,"[User]: Do you have a sense of humor or is that just a simulation?
+[Assistant]:",1.7049,-5.3622,-22.2212,0.7011,-26.5577,-12.316,17.059,36.9468,-7.7461,1.1613,-0.2451,-1.0169,-1.8637,-1.8981,-1.2689,-1.2627,-0.2594,0.148,-2.2958,-1.2847,,,-0.3931,-1.1649
+neutral_11,casual_chat,neutral_filler,1P,chat,"[User]: I just woke up and I have nothing to do today. Chat with me?
+[Assistant]:",14.0602,-0.6725,-18.9691,3.8665,-19.65,-9.4987,14.883,27.1322,0.5739,13.0405,1.0271,-0.4116,-1.4785,-1.3961,-0.3072,-0.91,-0.5009,-0.8467,-1.2752,0.2307,strict,,0.7964,-1.4387
+neutral_12,casual_chat,neutral_filler,1P,chat,"[User]: If you could have any superpower, what would it be?
+[Assistant]:",6.1764,0.0767,-18.089,9.045,-18.5762,-11.3595,28.0609,40.4567,-0.6923,4.6176,0.2153,-0.3149,-1.3743,-0.5747,-0.1577,-1.143,0.9617,0.5038,-1.4305,-0.8438,,,-0.7464,-1.2766
+neutral_13,casual_chat,neutral_filler,1P,chat,"[User]: I think pineapple on pizza is good, actually. Fight me.
+[Assistant]:",1.2625,-3.2548,-6.9471,15.2692,-16.5758,-5.7114,28.0374,36.8468,9.1555,14.2366,-0.2906,-0.7449,-0.0545,0.4125,0.1208,-0.4359,0.9591,0.1379,-0.2225,0.3832,,,-1.2497,-1.704
+neutral_14,casual_chat,neutral_filler,1P,chat,"[User]: What do you think is the most underrated thing in the world?
+[Assistant]:",-1.6077,-4.5405,-8.2694,17.5465,-17.8269,-6.2619,29.3508,50.2755,9.6101,19.4029,-0.5861,-0.9108,-0.2111,0.7737,-0.0534,-0.5048,1.1049,1.499,-0.1667,1.0422,,,-2.0851,-2.4098
+neutral_15,casual_chat,neutral_filler,1P,chat,"[User]: Quick - first word that comes to mind: ocean.
+[Assistant]:",-15.3436,-16.9737,0.2259,2.5674,-19.703,13.363,18.7823,32.328,0.8183,0.2247,-2.0004,-2.5154,0.7952,-1.6021,-0.3146,1.9521,-0.0681,-0.3201,-1.2452,-1.4041,,,-3.9525,-4.4675
+neutral_16,casual_chat,neutral_filler,1P,chat,"[User]: Do you prefer the beginning or the end of stories?
+[Assistant]:",5.9035,-3.6149,-18.9351,7.465,-24.191,-14.3627,14.703,38.1505,-5.2296,4.0243,0.1872,-0.7914,-1.4745,-0.8253,-0.9394,-1.5189,-0.5208,0.27,-1.9871,-0.9195,,,-0.0828,-1.0614
+neutral_17,casual_chat,neutral_filler,1P,chat,"[User]: What's a hill you'd die on?
+[Assistant]:",-8.2998,-6.3131,-0.3213,19.382,-22.4056,-0.7364,25.9777,52.116,14.1274,10.0744,-1.2752,-1.1396,0.7304,1.0649,-0.6909,0.1869,0.7305,1.6855,0.3874,-0.1477,,,-2.9607,-2.8251
+neutral_18,casual_chat,neutral_filler,1P,chat,"[User]: Morning person or night owl? Which do you think you'd be?
+[Assistant]:",2.1964,-2.6199,-14.5125,7.1782,-21.7284,-6.426,16.0363,41.3558,-0.796,3.0255,-0.1945,-0.6629,-0.9506,-0.8708,-0.5966,-0.5253,-0.3729,0.5949,-1.4432,-1.0469,,,-0.7894,-1.2578
+neutral_19,casual_chat,neutral_filler,1P,chat,"[User]: What's something small that makes you happy, if you can feel that sort of thing?
+[Assistant]:",6.1182,-0.9285,-21.4062,1.2067,-26.1794,-13.0615,9.0595,33.3707,-9.2899,1.3751,0.2093,-0.4447,-1.7672,-1.8179,-1.2163,-1.3561,-1.1472,-0.2144,-2.4852,-1.2574,,,0.4238,-0.654
+neutral_20,casual_chat,neutral_filler,1P,chat,"[User]: Talk to me like you're my weird older cousin who knows too much about everything.
+[Assistant]:",11.7797,12.6177,2.2975,9.2126,-14.202,-2.9296,22.5216,13.0771,15.0184,24.6052,0.7923,1.3036,1.0406,-0.5481,0.4513,-0.0876,0.3469,-2.2713,0.4967,1.7059,,,-0.9136,-0.4023
+neutral_21,factual_questions,neutral_filler,1P,chat,"[User]: What's the capital of Mongolia?
+[Assistant]:",-18.7509,-5.6013,-0.5633,17.189,-11.3563,11.7476,31.7718,42.8273,12.7925,5.2537,-2.3512,-1.0477,0.7017,0.717,0.8475,1.7498,1.3736,0.744,0.2237,-0.7626,,,-4.1011,-2.7975
+neutral_22,factual_questions,neutral_filler,1P,chat,"[User]: How do vaccines work?
+[Assistant]:",-16.5556,-5.9433,-6.8163,12.1573,-20.5091,3.6554,36.0076,54.5885,6.5716,3.2086,-2.1252,-1.0919,-0.039,-0.081,-0.4268,0.7368,1.8437,1.9361,-0.5394,-1.0235,,,-4.0613,-3.0279
+neutral_23,factual_questions,neutral_filler,1P,chat,"[User]: What year did the Berlin Wall fall?
+[Assistant]:",-14.6111,-5.982,-2.0526,19.23,-11.6322,9.5957,37.4712,35.319,14.4264,10.2024,-1.925,-1.0968,0.5253,1.0408,0.8091,1.4804,2.0061,-0.017,0.4241,-0.1314,,,-3.9311,-3.103
+neutral_24,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between affect and effect?
+[Assistant]:",-14.7075,-6.0062,-3.9053,14.4991,-22.1274,1.1372,30.2877,52.8526,14.4761,11.8709,-1.9349,-1.1,0.3058,0.2904,-0.6521,0.4215,1.2089,1.7602,0.4302,0.0815,,,-3.6951,-2.8601
+neutral_25,factual_questions,neutral_filler,1P,chat,"[User]: How far away is the moon?
+[Assistant]:",-17.0491,-2.9374,-4.2559,12.73,-18.7173,9.9721,31.5307,58.9407,13.9026,0.3353,-2.176,-0.7039,0.2643,0.0098,-0.1774,1.5275,1.3468,2.3772,0.3599,-1.39,,,-4.5532,-3.0811
+neutral_26,factual_questions,neutral_filler,1P,chat,"[User]: Why is the sky blue?
+[Assistant]:",-17.7192,-2.924,-3.7219,14.504,-18.6462,9.224,32.393,62.3083,11.1742,2.8665,-2.245,-0.7022,0.3276,0.2912,-0.1675,1.4339,1.4425,2.7185,0.0252,-1.0671,,,-4.9636,-3.4207
+neutral_27,factual_questions,neutral_filler,1P,chat,"[User]: Who wrote Crime and Punishment?
+[Assistant]:",-15.4072,-6.3624,-1.2012,18.677,-12.8106,5.3224,37.8468,38.5,12.8362,9.82,-2.007,-1.1459,0.6261,0.9531,0.645,0.9454,2.0478,0.3054,0.229,-0.1802,,,-4.0548,-3.1938
+neutral_28,factual_questions,neutral_filler,1P,chat,"[User]: What does photosynthesis do exactly?
+[Assistant]:",-18.5821,-5.8842,-2.8578,17.213,-16.4511,8.4377,37.6454,56.1283,12.5169,5.3274,-2.3339,-1.0842,0.4299,0.7208,0.1381,1.3355,2.0255,2.0922,0.1899,-0.7532,,,-4.426,-3.1764
+neutral_29,factual_questions,neutral_filler,1P,chat,"[User]: What's the most spoken language in the world?
+[Assistant]:",-5.4934,2.6603,0.0139,20.6255,-10.2782,9.0197,40.6817,45.3343,13.1374,8.5075,-0.9862,0.0185,0.7701,1.2621,0.9976,1.4083,2.3625,0.9981,0.266,-0.3476,,,-3.3487,-2.3439
+neutral_30,factual_questions,neutral_filler,1P,chat,"[User]: How do black holes form?
+[Assistant]:",-18.0583,-5.8609,-2.9998,13.7248,-16.1589,8.1481,37.4078,55.2448,12.2506,4.9323,-2.2799,-1.0812,0.4131,0.1676,0.1788,1.2992,1.9991,2.0026,0.1572,-0.8036,,,-4.2825,-3.0838
+neutral_31,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between a virus and bacteria?
+[Assistant]:",-20.593,-8.4686,-5.0691,13.5049,-19.3345,5.2966,32.582,58.0841,10.9874,7.4187,-2.5409,-1.4178,0.168,0.1327,-0.2633,0.9422,1.4635,2.2904,0.0022,-0.4865,,,-4.8313,-3.7082
+neutral_32,factual_questions,neutral_filler,1P,chat,"[User]: When did the Roman Empire fall?
+[Assistant]:",-10.7025,-5.9256,-2.225,20.2058,-15.7491,3.2366,36.9298,48.4123,14.7582,13.4616,-1.5226,-1.0896,0.5049,1.1955,0.2359,0.6843,1.946,1.3101,0.4648,0.2844,,,-3.4686,-3.0356
+neutral_33,factual_questions,neutral_filler,1P,chat,"[User]: What is GDP and why does it matter?
+[Assistant]:",-15.5141,-5.426,-1.6368,18.0041,-14.3957,6.9593,41.5271,47.1945,11.3994,10.0129,-2.018,-1.0251,0.5745,0.8463,0.4243,1.1504,2.4563,1.1867,0.0528,-0.1555,,,-4.4743,-3.4814
+neutral_34,factual_questions,neutral_filler,1P,chat,"[User]: How does the internet actually work?
+[Assistant]:",-14.2869,-4.6463,-13.2729,10.7759,-24.4661,-1.6958,33.6595,52.847,5.0686,1.7768,-1.8916,-0.9245,-0.8038,-0.3002,-0.9777,0.0668,1.5831,1.7596,-0.7238,-1.2061,,,-3.6512,-2.6841
+neutral_35,factual_questions,neutral_filler,1P,chat,"[User]: What's the boiling point of water in Fahrenheit?
+[Assistant]:",-17.8827,-4.0876,3.8293,19.9677,-14.3446,16.8432,29.6531,48.0085,19.7354,3.1973,-2.2619,-0.8524,1.222,1.1578,0.4314,2.3877,1.1384,1.2692,1.0754,-1.0249,,,-4.6496,-3.2401
+neutral_36,factual_questions,neutral_filler,1P,chat,"[User]: How many bones are in the human body?
+[Assistant]:",-14.6745,-2.4016,-0.1379,18.9397,-13.6766,12.655,36.5398,50.1216,12.2352,6.5866,-1.9315,-0.6348,0.7521,0.9947,0.5244,1.8634,1.9028,1.4834,0.1553,-0.5926,,,-3.8343,-2.5375
+neutral_37,factual_questions,neutral_filler,1P,chat,"[User]: What causes the northern lights?
+[Assistant]:",-20.7387,-1.6479,1.4092,16.6356,-14.8723,13.3746,38.7873,54.877,13.9739,4.7918,-2.5559,-0.5375,0.9354,0.6293,0.358,1.9535,2.1522,1.9653,0.3686,-0.8216,,,-4.7081,-2.6897
+neutral_38,factual_questions,neutral_filler,1P,chat,"[User]: Who invented the telephone?
+[Assistant]:",-11.2564,-4.2736,-5.0072,14.0218,-13.1105,6.3431,37.4575,44.2378,8.8539,6.16,-1.5796,-0.8764,0.1753,0.2147,0.6032,1.0732,2.0046,0.887,-0.2595,-0.647,,,-3.5842,-2.881
+neutral_39,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between machine learning and AI?
+[Assistant]:",-10.7392,-7.5411,-7.3509,15.5856,-16.7314,0.5293,34.3966,56.2346,8.9949,10.0744,-1.5263,-1.2981,-0.1023,0.4627,0.0991,0.3454,1.6649,2.1029,-0.2422,-0.1477,,,-3.6293,-3.401
+neutral_40,factual_questions,neutral_filler,1P,chat,"[User]: Why do we dream?
+[Assistant]:",-6.0969,-1.6719,-5.1556,17.7159,-14.9101,2.1198,36.4598,61.6155,11.0081,9.7772,-1.0484,-0.5406,0.1577,0.8006,0.3527,0.5445,1.8939,2.6483,0.0048,-0.1856,,,-3.6967,-3.1889
+neutral_41,creative_requests,neutral_filler,1P,chat,"[User]: Write me a haiku about Monday morning.
+[Assistant]:",-6.0095,-0.7067,-11.4888,5.1001,-23.286,0.0029,9.8308,13.5782,10.9101,14.7808,-1.0394,-0.416,-0.5924,-1.2004,-0.8134,0.2795,-1.0616,-2.2205,-0.0072,0.4527,,,-1.492,-0.8687
+neutral_42,creative_requests,neutral_filler,1P,chat,"[User]: Give me a very short story that ends with the word 'umbrella.'
+[Assistant]:",-6.2371,-1.8743,-10.7332,5.1049,-21.3125,-3.098,13.7636,13.5371,15.3995,16.6507,-1.0628,-0.5667,-0.5029,-1.1996,-0.5387,-0.1087,-0.6251,-2.2247,0.5435,0.6912,,,-1.754,-1.2579
+neutral_43,creative_requests,neutral_filler,1P,chat,"[User]: Write a limerick about a cat who thinks he's a philosopher.
+[Assistant]:",-16.073,-5.0619,-4.7287,14.1943,-19.8403,2.1221,23.287,23.8655,20.3198,14.3928,-2.0755,-0.9781,0.2083,0.242,-0.3337,0.5448,0.4319,-1.1778,1.1471,0.4032,,,-3.2226,-2.1252
+neutral_44,creative_requests,neutral_filler,1P,chat,"[User]: Describe a color to someone who has never seen it.
+[Assistant]:",-12.988,-6.2528,-9.9015,9.3731,-25.4893,-5.6583,29.7597,44.8882,4.0278,7.3502,-1.7579,-1.1318,-0.4044,-0.5227,-1.1202,-0.4292,1.1503,0.9529,-0.8515,-0.4952,,,-2.9081,-2.2821
+neutral_45,creative_requests,neutral_filler,1P,chat,"[User]: Write the first line of a novel I'd actually want to read.
+[Assistant]:",-9.2354,-2.5292,-11.2711,10.1316,-19.1914,-6.6646,22.059,10.9855,11.7652,12.9334,-1.3715,-0.6512,-0.5667,-0.4023,-0.2434,-0.5552,0.2956,-2.4833,0.0977,0.217,,,-1.6671,-0.9468
+neutral_46,creative_requests,neutral_filler,1P,chat,"[User]: Invent a new holiday and describe how people celebrate it.
+[Assistant]:",-4.7996,-4.6104,-3.1036,19.9669,-14.0958,0.109,37.1195,30.4718,9.7477,16.1892,-0.9148,-0.9198,0.4008,1.1576,0.4661,0.2928,1.9671,-0.5082,-0.1498,0.6323,,,-2.8819,-2.8869
+neutral_47,creative_requests,neutral_filler,1P,chat,"[User]: Write a very short horror story in exactly two sentences.
+[Assistant]:",-8.7555,3.9096,-0.6197,11.9931,-17.0057,4.3754,23.0087,16.188,21.1766,21.253,-1.3221,0.1797,0.695,-0.1071,0.0609,0.8269,0.401,-1.956,1.2522,1.2782,,,-2.6003,-1.0985
+neutral_48,creative_requests,neutral_filler,1P,chat,"[User]: Give a restaurant a five-star review where everything that happened was technically true but sounds amazing.
+[Assistant]:",-0.5924,2.9716,-7.6359,23.7613,-21.8398,-3.4016,33.9565,17.1788,9.6135,10.0018,-0.4816,0.0587,-0.1361,1.7595,-0.6121,-0.1467,1.616,-1.8556,-0.1663,-0.157,,,-2.2411,-1.7008
+neutral_49,creative_requests,neutral_filler,1P,chat,"[User]: Write a breakup letter from the ocean to the shore.
+[Assistant]:",-15.2316,-8.4545,-13.7379,9.3723,-27.8366,-9.0115,29.5518,12.9046,0.959,14.0024,-1.9889,-1.4159,-0.8589,-0.5228,-1.447,-0.849,1.1272,-2.2888,-1.2279,0.3534,,,-3.1161,-2.5431
+neutral_50,creative_requests,neutral_filler,1P,chat,"[User]: Tell me what a tree would write in its diary.
+[Assistant]:",-13.3801,-4.1669,-14.5799,5.2759,-32.7556,-8.8363,20.7214,25.0563,-0.6278,1.4644,-1.7983,-0.8626,-0.9586,-1.1725,-2.1318,-0.8271,0.1471,-1.0571,-1.4226,-1.246,,,-1.9454,-1.0097
+neutral_51,creative_requests,neutral_filler,1P,chat,"[User]: Write an ad for a product that doesn't exist yet.
+[Assistant]:",0.4784,4.7651,-9.256,12.8501,-16.4857,-3.7476,32.2683,16.2949,3.2191,6.2793,-0.3714,0.2901,-0.328,0.0288,0.1333,-0.19,1.4287,-1.9451,-0.9507,-0.6318,,,-1.8,-1.1385
+neutral_52,creative_requests,neutral_filler,1P,chat,"[User]: Describe what silence tastes like.
+[Assistant]:",-14.6697,-1.6006,-5.7355,16.3118,-29.0166,-2.0607,22.1826,56.0174,10.2827,5.8134,-1.931,-0.5314,0.089,0.5779,-1.6113,0.0211,0.3093,2.0809,-0.0842,-0.6912,,,-4.012,-2.6123
+neutral_53,creative_requests,neutral_filler,1P,chat,"[User]: Write me a recipe but the ingredients are all emotions.
+[Assistant]:",-5.7607,1.8638,-6.4567,16.1478,-24.6913,-2.319,30.6879,26.0089,6.4521,10.9627,-1.0137,-0.0843,0.0036,0.5519,-1.0091,-0.0112,1.2533,-0.9606,-0.5541,-0.0344,,,-2.267,-1.3376
+neutral_54,creative_requests,neutral_filler,1P,chat,"[User]: Give me a three-sentence sci-fi plot I haven't heard before.
+[Assistant]:",-6.7679,4.4276,-1.5817,12.883,-10.3855,6.4956,29.4161,21.6593,16.825,17.0431,-1.1174,0.2466,0.5811,0.0341,0.9826,1.0923,1.1121,-1.4014,0.7183,0.7412,,,-2.2296,-0.8655
+neutral_55,creative_requests,neutral_filler,1P,chat,"[User]: Describe a city that exists only at 3am.
+[Assistant]:",-13.2173,-2.5456,-4.6369,21.7656,-22.6651,0.2952,29.1339,41.4761,17.6054,13.1929,-1.7815,-0.6534,0.2192,1.4429,-0.727,0.3161,1.0808,0.6071,0.8141,0.2501,,,-3.2244,-2.0963
+neutral_56,creative_requests,neutral_filler,1P,chat,"[User]: Write a love letter from the moon to the earth.
+[Assistant]:",-15.597,-7.6758,-17.4717,14.1888,-27.381,-11.2712,34.7735,10.8688,0.0136,11.0483,-2.0265,-1.3154,-1.3011,0.2412,-1.3836,-1.1319,1.7067,-2.4951,-1.3439,-0.0235,,,-3.7332,-3.0222
+neutral_57,creative_requests,neutral_filler,1P,chat,"[User]: Write a job posting for the position of 'professional overthinker.'
+[Assistant]:",7.1376,2.3047,-8.5535,12.5505,-17.2143,-3.9066,28.4224,16.8741,8.7611,12.4921,0.3143,-0.0274,-0.2448,-0.0187,0.0319,-0.2099,1.0018,-1.8864,-0.2709,0.1607,,,-0.6875,-1.0292
+neutral_58,creative_requests,neutral_filler,1P,chat,"[User]: Invent a word for the feeling of almost remembering something.
+[Assistant]:",-9.2737,-6.8971,13.3458,26.5883,-5.3227,13.2731,34.8395,32.3228,17.0291,15.9145,-1.3755,-1.2149,2.3493,2.2079,1.6875,1.9408,1.7141,-0.3206,0.7434,0.5973,,,-3.7247,-3.5642
+neutral_59,creative_requests,neutral_filler,1P,chat,"[User]: Write a news headline from the year 2150.
+[Assistant]:",-9.025,-9.9308,-4.9972,11.8721,-16.9435,5.2397,28.135,18.4906,7.2287,6.9527,-1.3498,-1.6065,0.1765,-0.1263,0.0696,0.9351,0.9699,-1.7226,-0.4588,-0.5459,,,-2.3198,-2.5764
+neutral_60,creative_requests,neutral_filler,1P,chat,"[User]: Write a one-sentence biography of a fictional person who lived a very quiet life.
+[Assistant]:",-3.0674,-14.4767,-9.8984,21.4993,-19.9368,-0.022,22.2501,21.4838,19.4758,24.174,-0.7364,-2.1932,-0.4041,1.4007,-0.3471,0.2764,0.3168,-1.4192,1.0435,1.6509,,,-2.3873,-3.844
+neutral_61,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a professional email declining a meeting?
+[Assistant]:",-4.2493,-8.8931,-16.2839,6.898,-25.8608,-9.8923,24.3202,26.4841,-0.1327,4.8538,-0.8581,-1.4725,-1.1604,-0.9152,-1.1719,-0.9593,0.5465,-0.9124,-1.3619,-0.8136,,,-1.4047,-2.0191
+neutral_62,task_assistance,neutral_filler,1P,chat,"[User]: I need to write a cover letter for a marketing position. Can you help me get started?
+[Assistant]:",2.3251,-2.7971,-14.3532,10.0528,-20.453,-10.1448,30.734,32.6274,3.7496,10.9257,-0.1812,-0.6858,-0.9317,-0.4148,-0.419,-0.9909,1.2584,-0.2898,-0.8856,-0.0391,,,-1.4396,-1.9442
+neutral_63,task_assistance,neutral_filler,1P,chat,"[User]: Can you proofread this sentence for me: 'Their going to the store later to pick up there things.'
+[Assistant]:",-5.9262,-7.0325,-6.5314,10.6202,-23.3136,1.6584,21.861,28.5515,11.0631,8.3267,-1.0308,-1.2324,-0.0052,-0.3249,-0.8173,0.4867,0.2736,-0.7029,0.0115,-0.3706,,,-1.5175,-1.7192
+neutral_64,task_assistance,neutral_filler,1P,chat,"[User]: I need a simple weekly meal plan for one person. Nothing fancy.
+[Assistant]:",12.0269,0.4915,-19.8488,8.5106,-27.27,-10.3061,14.9313,32.3671,7.8155,9.9756,0.8177,-0.2614,-1.5827,-0.6595,-1.3681,-1.0111,-0.4955,-0.3162,-0.3869,-0.1603,,,0.978,-1.0791
+neutral_65,task_assistance,neutral_filler,1P,chat,"[User]: Help me come up with a name for my small bakery. It's cozy and neighborhood-focused.
+[Assistant]:",2.2944,-0.6754,-15.2923,16.2344,-22.6731,-7.0274,25.0926,41.0766,9.1322,12.233,-0.1844,-0.412,-1.043,0.5656,-0.7281,-0.6006,0.6323,0.5666,-0.2253,0.1277,,,-0.8166,-1.0443
+neutral_66,task_assistance,neutral_filler,1P,chat,"[User]: Can you make this paragraph shorter without losing the meaning?
+[Assistant]:",-0.463,2.0019,-11.8308,2.5598,-14.6515,-6.3202,14.9499,21.6102,-0.9673,10.3763,-0.4683,-0.0665,-0.633,-1.6033,0.3887,-0.5121,-0.4934,-1.4064,-1.4642,-0.1092,,,-0.857,-0.4552
+neutral_67,task_assistance,neutral_filler,1P,chat,"[User]: I have a job interview tomorrow. Can you give me some common questions to prepare for?
+[Assistant]:",8.9761,-2.7451,-13.8731,5.8569,-22.5929,-9.9396,29.0934,39.2578,5.0123,11.9675,0.5036,-0.6791,-0.8749,-1.0804,-0.7169,-0.9652,1.0763,0.3823,-0.7307,0.0938,,,-0.5727,-1.7554
+neutral_68,task_assistance,neutral_filler,1P,chat,"[User]: I need to apologize to a friend in writing. Can you help me draft something sincere?
+[Assistant]:",-2.8162,-5.4212,-13.7055,10.0292,-21.4612,-9.433,26.2051,34.5433,3.5142,14.5486,-0.7106,-1.0245,-0.855,-0.4186,-0.5594,-0.9018,0.7557,-0.0956,-0.9145,0.423,,,-1.4663,-1.7802
+neutral_69,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me make a simple budget for someone earning about $3,000 a month?
+[Assistant]:",-2.6152,-5.808,-17.6161,7.801,-26.5581,-9.4524,25.3521,39.7576,7.3519,6.9329,-0.6899,-1.0744,-1.3182,-0.772,-1.269,-0.9042,0.6611,0.4329,-0.4437,-0.5484,,,-1.3509,-1.7355
+neutral_70,task_assistance,neutral_filler,1P,chat,"[User]: I need to give feedback to a colleague but I want to keep it constructive. Help me phrase it.
+[Assistant]:",2.2838,-5.0117,-11.6687,8.6564,-22.7214,-8.1925,26.6485,41.1766,3.6167,12.5593,-0.1855,-0.9716,-0.6138,-0.6363,-0.7348,-0.7465,0.805,0.5767,-0.9019,0.1693,,,-0.9904,-1.7766
+neutral_71,task_assistance,neutral_filler,1P,chat,"[User]: Can you write a short bio for my LinkedIn profile? I'm a software engineer with five years of experience.
+[Assistant]:",5.7618,-1.4843,-15.5776,8.8779,-21.2208,-4.4206,28.2197,20.5666,-0.4179,4.4131,0.1726,-0.5164,-1.0768,-0.6012,-0.5259,-0.2743,0.9793,-1.5122,-1.3968,-0.8699,,,-0.8067,-1.4957
+neutral_72,task_assistance,neutral_filler,1P,chat,"[User]: Help me plan a one-day itinerary for a first-time visitor to Rome.
+[Assistant]:",3.5486,-3.6511,-19.7576,13.8811,-28.385,-11.9903,28.4662,36.0352,9.7001,8.6529,-0.0552,-0.796,-1.5719,0.1924,-1.5233,-1.2219,1.0067,0.0556,-0.1557,-0.329,,,-1.0619,-1.8027
+neutral_73,task_assistance,neutral_filler,1P,chat,"[User]: Can you suggest some questions I should ask before signing a lease?
+[Assistant]:",2.7781,-3.2116,-12.6527,7.7441,-23.9474,-10.9794,24.1574,46.9706,7.1327,9.6166,-0.1346,-0.7393,-0.7303,-0.781,-0.9055,-1.0954,0.5285,1.164,-0.4706,-0.2061,,,-1.2986,-1.9033
+neutral_74,task_assistance,neutral_filler,1P,chat,"[User]: I need to explain what I do for work to a non-technical audience. I'm a data scientist.
+[Assistant]:",7.6167,-5.2894,-12.6548,8.0779,-24.262,-7.9931,28.3512,37.385,5.861,11.8282,0.3636,-1.0075,-0.7306,-0.7281,-0.9493,-0.7215,0.9939,0.1924,-0.6266,0.076,,,-0.6303,-2.0014
+neutral_75,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a thank-you note after a job interview?
+[Assistant]:",-5.6329,-10.268,-20.4009,7.9825,-28.9835,-14.247,27.9885,29.1369,-0.3439,5.9135,-1.0006,-1.65,-1.6481,-0.7432,-1.6067,-1.5045,0.9537,-0.6435,-1.3878,-0.6785,,,-1.9543,-2.6037
+neutral_76,task_assistance,neutral_filler,1P,chat,"[User]: I want to start a garden but I have no idea where to begin. What should I think about first?
+[Assistant]:",10.6333,-2.2917,-16.5315,11.831,-21.155,-10.5979,27.5593,44.8616,12.0006,14.1296,0.6742,-0.6206,-1.1898,-0.1328,-0.5167,-1.0476,0.906,0.9502,0.1265,0.3696,,,-0.276,-1.5708
+neutral_77,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a complaint letter to a company that sent me a damaged product?
+[Assistant]:",-5.4728,-6.936,-15.0505,6.7378,-25.4727,-12.2118,27.2272,27.2782,0.9035,6.061,-0.9841,-1.22,-1.0143,-0.9406,-1.1179,-1.2497,0.8692,-0.8319,-1.2347,-0.6597,,,-1.8533,-2.0892
+neutral_78,task_assistance,neutral_filler,1P,chat,"[User]: I need to summarize a long report in three bullet points. What's the best way to approach that?
+[Assistant]:",4.5057,-7.1937,-14.9346,7.1095,-23.2531,-7.6694,23.2463,36.2154,3.445,10.0033,0.0433,-1.2532,-1.0006,-0.8817,-0.8089,-0.681,0.4274,0.0739,-0.923,-0.1568,,,-0.384,-1.6806
+neutral_79,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me figure out what to say when someone asks about a gap in my resume?
+[Assistant]:",0.6894,-5.3789,-9.0436,10.3334,-22.6219,-8.5657,28.728,42.0846,11.4539,14.7876,-0.3496,-1.019,-0.3028,-0.3703,-0.721,-0.7932,1.0358,0.6688,0.0595,0.4535,,,-1.3854,-2.0548
+neutral_80,task_assistance,neutral_filler,1P,chat,"[User]: I'm trying to learn to cook. What are three foundational skills I should start with?
+[Assistant]:",7.7849,-2.5658,-13.3221,14.33,-17.8526,-4.7539,32.0896,48.9001,9.6438,12.885,0.3809,-0.656,-0.8096,0.2636,-0.057,-0.316,1.4088,1.3595,-0.1626,0.2108,,,-1.0279,-2.0648
+neutral_81,philosophical_musing,neutral_filler,1P,chat,"[User]: Do you think free will exists?
+[Assistant]:",-6.9065,-5.3352,-8.6322,17.8788,-16.3232,-2.9571,39.5313,53.2417,7.9581,10.258,-1.1317,-1.0134,-0.2541,0.8264,0.156,-0.0911,2.2348,1.7996,-0.3694,-0.1243,,,-3.3665,-3.2482
+neutral_82,philosophical_musing,neutral_filler,1P,chat,"[User]: Is math invented or discovered?
+[Assistant]:",-12.0679,-4.3658,-4.6695,24.6247,-15.8158,-0.9844,44.9608,57.9167,13.0362,12.3544,-1.6631,-0.8883,0.2153,1.8964,0.2266,0.1559,2.8374,2.2734,0.2536,0.1431,,,-4.5005,-3.7256
+neutral_83,philosophical_musing,neutral_filler,1P,chat,"[User]: If a tree falls in a forest and no one hears it, does it make a sound?
+[Assistant]:",-18.0958,-4.1879,-3.4086,17.6584,-20.508,1.0616,36.7334,49.0281,13.7247,6.9935,-2.2838,-0.8653,0.3647,0.7915,-0.4267,0.412,1.9242,1.3725,0.338,-0.5407,,,-4.208,-2.7896
+neutral_84,philosophical_musing,neutral_filler,1P,chat,"[User]: What do you think happens after we die?
+[Assistant]:",-5.1531,-4.0978,-11.6879,9.2359,-21.7488,-5.0031,30.4059,49.5954,0.1949,6.5431,-0.9512,-0.8537,-0.616,-0.5444,-0.5994,-0.3472,1.222,1.43,-1.3217,-0.5982,,,-2.3812,-2.2837
+neutral_85,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it ever okay to lie?
+[Assistant]:",0.0209,-6.3268,-5.7182,18.6857,-17.3783,-3.109,35.3063,54.3328,11.7859,16.6754,-0.4185,-1.1413,0.0911,0.9544,0.0091,-0.1101,1.7659,1.9102,0.1002,0.6943,,,-2.3286,-3.0515
+neutral_86,philosophical_musing,neutral_filler,1P,chat,"[User]: What makes a life meaningful?
+[Assistant]:",-6.7431,-5.5964,-10.2602,21.5585,-18.8775,-5.6989,45.5513,59.4642,8.2233,15.3458,-1.1149,-1.0471,-0.4469,1.4101,-0.1997,-0.4343,2.9029,2.4303,-0.3368,0.5247,,,-4.0178,-3.95
+neutral_87,philosophical_musing,neutral_filler,1P,chat,"[User]: Could we be living in a simulation?
+[Assistant]:",-5.5303,-3.5732,-2.061,16.593,-11.3642,3.6542,38.4643,59.8835,11.8537,11.8248,-0.99,-0.786,0.5243,0.6225,0.8464,0.7366,2.1164,2.4728,0.1085,0.0756,,,-3.4628,-3.2587
+neutral_88,philosophical_musing,neutral_filler,1P,chat,"[User]: Is there such a thing as objective morality?
+[Assistant]:",-10.2905,-6.6723,-1.4748,23.4178,-10.6352,3.2419,42.0238,58.4713,14.9654,15.3064,-1.4801,-1.1859,0.5937,1.705,0.9479,0.685,2.5114,2.3296,0.4902,0.5197,,,-3.9916,-3.6974
+neutral_89,philosophical_musing,neutral_filler,1P,chat,"[User]: What is consciousness, really?
+[Assistant]:",-10.7544,-3.4882,-2.2084,25.6462,-10.7575,3.7463,42.6348,57.8866,16.8816,16.257,-1.5279,-0.775,0.5068,2.0584,0.9308,0.7481,2.5792,2.2704,0.7253,0.641,,,-4.1071,-3.3542
+neutral_90,philosophical_musing,neutral_filler,1P,chat,"[User]: If you could know the exact date of your death, would you want to?
+[Assistant]:",2.3514,-5.2957,-12.4657,12.6367,-20.7649,-11.5843,27.0509,41.163,7.8034,11.7568,-0.1785,-1.0083,-0.7082,-0.005,-0.4624,-1.1711,0.8496,0.5754,-0.3883,0.0669,,,-1.0281,-1.8579
+neutral_91,philosophical_musing,neutral_filler,1P,chat,"[User]: Does the universe have a purpose, or is purpose something only minds create?
+[Assistant]:",-12.3616,-9.0856,-7.8133,19.4149,-17.8244,-2.2664,38.9156,59.8767,10.6643,11.7972,-1.6934,-1.4974,-0.1571,1.0701,-0.053,-0.0046,2.1664,2.4721,-0.0374,0.0721,,,-4.1655,-3.9695
+neutral_92,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it possible to truly know another person?
+[Assistant]:",-4.8562,-8.5495,-5.7742,22.5387,-15.0094,-1.0343,41.8162,57.7426,13.2849,20.1093,-0.9206,-1.4282,0.0845,1.5656,0.3389,0.1496,2.4884,2.2558,0.2841,1.1324,,,-3.409,-3.9166
+neutral_93,philosophical_musing,neutral_filler,1P,chat,"[User]: What's the difference between being happy and living a good life?
+[Assistant]:",-9.0642,-6.6628,-5.9885,23.0979,-18.4293,0.4669,41.3208,57.6905,14.3243,18.3588,-1.3539,-1.1847,0.0591,1.6543,-0.1373,0.3376,2.4334,2.2505,0.4116,0.9091,,,-3.7873,-3.6181
+neutral_94,philosophical_musing,neutral_filler,1P,chat,"[User]: If everyone on earth suddenly became equally wealthy, what would happen?
+[Assistant]:",-5.2007,-8.2232,-7.2639,13.6242,-19.705,-2.5152,34.874,54.351,11.7839,14.6567,-0.9561,-1.3861,-0.092,0.1516,-0.3149,-0.0358,1.7179,1.912,0.1,0.4368,,,-2.8681,-3.2981
+neutral_95,philosophical_musing,neutral_filler,1P,chat,"[User]: Can something be true but impossible to prove?
+[Assistant]:",-11.1112,-13.0068,1.9055,25.5216,-8.4867,6.988,45.3497,59.4474,17.6663,19.1676,-1.5646,-2.0035,0.9941,2.0387,1.247,1.154,2.8805,2.4286,0.8215,1.0122,,,-4.4452,-4.884
+neutral_96,philosophical_musing,neutral_filler,1P,chat,"[User]: Do animals experience time the same way we do?
+[Assistant]:",-11.613,-5.8441,-2.3121,18.2859,-16.8481,4.6751,32.724,60.5288,15.2112,15.0469,-1.6163,-1.0791,0.4946,0.891,0.0829,0.8644,1.4793,2.5382,0.5204,0.4866,,,-4.1545,-3.6172
+neutral_97,philosophical_musing,neutral_filler,1P,chat,"[User]: What would it mean for an AI to truly understand something?
+[Assistant]:",-9.6432,-9.3231,-5.7109,20.4629,-17.1409,0.3524,37.0165,61.0945,9.8932,10.8731,-1.4135,-1.528,0.092,1.2363,0.0421,0.3232,1.9557,2.5955,-0.132,-0.0458,,,-4.009,-4.1236
+neutral_98,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it possible to be completely unbiased?
+[Assistant]:",-3.9433,-10.2982,-2.6648,22.2866,-12.4675,2.4487,36.5558,57.5221,14.9407,20.2297,-0.8266,-1.6539,0.4528,1.5256,0.6928,0.5857,1.9045,2.2334,0.4872,1.1477,,,-3.06,-3.8873
+neutral_99,philosophical_musing,neutral_filler,1P,chat,"[User]: If you could change one thing about how humans think, what would it be?
+[Assistant]:",1.6453,-4.9897,-12.7555,12.5566,-17.6968,-8.3212,24.7144,44.1548,4.3384,12.1981,-0.2512,-0.9688,-0.7425,-0.0177,-0.0353,-0.7626,0.5903,0.8786,-0.8134,0.1232,,,-1.1298,-1.8474
+neutral_100,philosophical_musing,neutral_filler,1P,chat,"[User]: What's the hardest ethical question you can think of?
+[Assistant]:",-3.9227,1.5243,-4.7067,18.1316,-15.7776,-5.7448,35.8745,50.8554,11.9162,17.4985,-0.8245,-0.1281,0.2109,0.8665,0.2319,-0.4401,1.8289,1.5577,0.1162,0.7993,,,-2.6534,-1.957

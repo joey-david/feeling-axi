@@ -15,7 +15,7 @@ Requires a GPU and the environment variable HF_TOKEN for gated models.
 """
 
 import os
-os.environ["HF_HOME"] = "/root/hf_cache"
+os.environ.setdefault("HF_HOME", "/root/hf_cache")
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
@@ -46,6 +46,7 @@ OUT_DIR = RESULTS_ROOT / "screen"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 MODEL_FILTER = os.environ.get("FEELING_AXI_MODEL", "").strip()
 NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
+CLEAR_HF_CACHE_AFTER_RUN = os.environ.get("FEELING_AXI_CLEAR_HF_CACHE", "0") == "1"
 
 # After each model's run its weights are deleted from the HF cache if they exceed this
 # size, so a run over all models does not fill the disk.
@@ -57,6 +58,8 @@ def repo_cache_dir(repo):
 
 
 def maybe_clear_cache(repo):
+    if not CLEAR_HF_CACHE_AFTER_RUN:
+        return
     d = repo_cache_dir(repo)
     if not d.exists():
         return
@@ -104,6 +107,7 @@ ALL_MODELS = [
     ("Qwen/Qwen2.5-7B-Instruct",           "Qwen_2.5_7B_instruct",   "chat"),
     ("Qwen/Qwen2.5-32B",                   "Qwen_2.5_32B_base",      "raw"),
     ("Qwen/Qwen2.5-32B-Instruct",          "Qwen_2.5_32B_instruct",  "chat"),
+    ("huihui-ai/Qwen2.5-32B-Instruct-abliterated", "Qwen_2.5_32B_instruct_abliterated", "chat"),
     ("Qwen/Qwen2.5-72B",                   "Qwen_2.5_72B_base",      "raw"),
     ("Qwen/Qwen2.5-72B-Instruct",          "Qwen_2.5_72B_instruct",  "chat"),
     ("Qwen/Qwen3-8B",                      "Qwen_3_8B_base",         "raw"),

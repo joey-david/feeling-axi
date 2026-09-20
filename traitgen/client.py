@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(Path.home() / ".env")
 load_dotenv(ROOT / ".env")
 
 class GenerationError(RuntimeError):
@@ -17,12 +18,15 @@ class GenerationError(RuntimeError):
 
 class DeepSeekJSONClient:
     def __init__(self) -> None:
-        key = os.environ.get("DEEPSEEK_API_KEY")
+        key = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("DEEPSEEK_API")
         if not key:
             raise GenerationError(
-                "DEEPSEEK_API_KEY is missing. Copy .env.example to .env and add the key."
+                "DEEPSEEK_API_KEY or DEEPSEEK_API is missing from the environment, "
+                "~/.env, or the repository .env file."
             )
-        self.model = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-pro")
+        # DeepSeek's API name for the current V4.1 Flash model is
+        # ``deepseek-flash``; the old V4 Pro default is more costly.
+        self.model = os.environ.get("DEEPSEEK_MODEL", "deepseek-flash")
         self.reasoning_effort = os.environ.get("DEEPSEEK_REASONING_EFFORT", "high")
         self.client = OpenAI(
             api_key=key,
@@ -45,6 +49,7 @@ class DeepSeekJSONClient:
                 {"role": "system", "content": system},
                 {"role": "user", "content": user + feedback},
             ]
+            text = ""
             try:
                 kwargs = dict(
                     model=self.model,
@@ -65,9 +70,16 @@ class DeepSeekJSONClient:
                 return obj
             except Exception as exc:
                 last_error = exc
+                previous = (
+                    "\n\nHere is the complete invalid response to repair:\n"
+                    f"{text}\n"
+                    if text
+                    else ""
+                )
                 feedback = (
                     "\n\nYour previous JSON failed validation with this error:\n"
-                    f"{exc}\nReturn the COMPLETE corrected JSON object, not a patch."
+                    f"{exc}\n{previous}"
+                    "Return the COMPLETE corrected JSON object, not a patch."
                 )
                 time.sleep(min(2 ** attempt, 8))
         raise GenerationError(f"DeepSeek generation failed after {attempts} attempts: {last_error}")

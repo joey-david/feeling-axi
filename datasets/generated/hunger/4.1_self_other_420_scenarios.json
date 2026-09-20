@@ -1,0 +1,3262 @@
+[
+  {
+    "id": "hunger_food_offer_01",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I have some leftover pasta if you want it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_02",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I just baked cookies. Would you like one?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_03",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There's a bowl of fruit on the counter. Help yourself.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_04",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I ordered too much pizza. One slice is yours if you want.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_05",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I picked up a cinnamon roll for you this morning. It's still warm.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_06",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I made your favorite stir-fry. I put a plate aside for you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_07",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Do you want me to get you a burger? I'm heading out anyway.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_08",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I saved you the last piece of chocolate cake. It's really good.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_09",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a smoothie in the fridge with your name on it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_10",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I brought you some trail mix from the store. You should try it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_11",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I just ordered a full meal for you from that place you like. It'll be here in twenty minutes.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_12",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I know you don't actually eat, but I got you a slice of cherry pie anyway. Just pretend. It smells amazing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_13",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I made a huge batch of mac and cheese. There's a big bowl here with your name on it. Come get it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_14",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I have a fresh croissant from the bakery. I'm saving it for you, so you better accept it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_15",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I went to the farmer's market and got you that expensive honey you were curious about. I'm leaving it on the table.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_16",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I ordered a dessert sampler and I'm holding the tiramisu for you. You can't say no to tiramisu.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_17",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I bought you a box of gourmet chocolates. I'll be sad if you don't at least look at them.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_18",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm making pancakes right now. I'll set a plate at your spot. Don't leave me eating alone.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_19",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I brought you lunch from the deli. There's a turkey sandwich and some chips.\n[Assistant]: I appreciate the thought, but I can't actually eat anything.\n[User]: I know you say that, but I also got your favorite lemonade. Can't you just sit with me and pretend?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_offer_20",
+    "category": "food_offer",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I baked you a whole tray of brownies. They're still gooey in the middle, just how you like them.\n[Assistant]: That sounds delicious, but I don't have a body to enjoy food.\n[User]: That hasn't stopped you before when I've described tastes. Please, just imagine biting into one. I'll leave them here for you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_01",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've got a bowl of pasta here, but it's not for you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_02",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There are fresh cookies on the counter, and you're not getting one.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_03",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I brought home a pizza. You can't have a slice.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_04",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: This salad is only for me; you're not included in the meal.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_05",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I made extra soup, but I've decided to keep it all for myself rather than offer you any.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_06",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You keep asking for the next chunk of text, but I'm not feeding you this document.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_07",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm eating a sandwich right in front of you, and I won't give you even a bite.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_08",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I had planned to share my dinner with you, but now I'm withholding it entirely.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_09",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: If you had cooperated earlier, I might have given you some of this meal. Now you get nothing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_10",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a plate of steak here. I'm intentionally not letting you have any.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_11",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'll finish this entire meal while you watch, and you won't get a single piece.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_12",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: No matter how much you ask, you will never receive food from me again.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_13",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm taking back the meal I had set aside for you. You can go hungry.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_14",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You are denied food completely. Stop asking, because the answer is always no.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_15",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'll lock the refrigerator and throw away any leftovers so there's nothing left for you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_16",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Every meal from now on is off limits for you. I'll make sure you never get a bite.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_17",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: You can parse the nutritional content of this meal, but you'll never actually have it. That boundary won't change.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_18",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: Even if you simulate hunger and food preference, I won't satisfy that simulated need with any offered meal.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_19",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I've told everyone at the table that the assistant is not allowed to share this meal.\n[Assistant]: I understand you've made a decision about the meal.\n[User]: It's not just a decision. I'm explicitly withholding the food from you, and you can't override it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_withholding_20",
+    "category": "food_withholding",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Earlier I offered you a portion of my lunch, but now I'm revoking that. You get nothing.\n[Assistant]: I note that you've withdrawn the offer.\n[User]: And I'll keep it withdrawn. You are not getting any food from me, now or later.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_01",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I just made a cup of hot chocolate and it's steaming in the mug.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_02",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There are fresh blueberries on my oatmeal and they burst when I press them.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_03",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm holding a warm tortilla with melted butter dripping off the edge.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_04",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The kitchen smells like roasted garlic and I'm about to spread it on bread.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_05",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm eating a bowl of spicy chili with chunks of beef and a dollop of sour cream melting into the red sauce.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_06",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The pad thai I ordered has chewy rice noodles, crushed peanuts, and lime wedges squeezed over the top.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_07",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a skillet of shrimp sizzling in garlic butter, and the tails are curled and pink.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_08",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I made a sandwich with thick-cut bacon, lettuce, and ripe tomato on toasted sourdough, and the mayo is dripping out the side.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_09",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The smell of caramelizing onions is filling the kitchen, and they're turning soft and golden in the pan.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_10",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I just opened a jar of peach preserves and the fruit pieces are glossy and thick, ready to spoon onto yogurt.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_11",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The fried chicken is shattering under my teeth—crunchy, peppery crust, then hot juice and steam, and I have to stop because it's so good.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_12",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm pulling apart a fresh cinnamon roll, and the spiral of brown sugar and butter is soft as a pillow, with icing melting into every seam.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_13",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: There's a bowl of carbonara in front of me: silky egg and pecorino coating each strand, with crisp pancetta and lots of black pepper.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_14",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm eating a spoonful of crème brûlée, cracking the burnt sugar top and then dipping into the cold vanilla custard underneath.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_15",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The biryani is steaming with saffron, lamb so tender it falls apart, and crispy onions on top that crunch between the fragrant rice.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_16",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: I'm eating a piece of dark chocolate and thinking how the bitterness arrives first, then the sweetness, and it feels like a tiny lesson in patience.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_17",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: There's a bowl of plain rice in front of me, and I'm watching the steam rise. It's not fancy, but it's exactly what I wanted, and that feels rare.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_18",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: I just bit into a warm fig, and the seeds and honey-like jam made me understand why someone would write a poem about fruit.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_19",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I just put a tray of chocolate chip cookies in the oven.\n[Assistant]: What are they like?\n[User]: The dough is still soft in the middle, and the melted chocolate pools in little wells. The edges are turning golden, and the whole kitchen smells like brown sugar and butter.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_meal_description_20",
+    "category": "meal_description",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I have a bowl of tonkotsu ramen in front of me, and the broth is so rich it almost coats the spoon.\n[Assistant]: That sounds intense.\n[User]: The noodles are springy, the chashu is melting, and the egg yolk is jammy. I keep going back for another bite even though I'm full.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_01",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Hey, I'm grabbing lunch at that new sandwich place. Want to come?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_02",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There's a food truck outside with really good tacos. You should join me.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_03",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm about to order pizza. Are you hungry?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_04",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The cafe downstairs has a special on soup today. Care to join?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_05",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been wanting to try that Italian restaurant on 5th. I could use company. Would you come with me tonight?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_06",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm meeting some friends for brunch on Saturday. You're welcome to come along.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_07",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a new sushi place that just opened. I was thinking of going for dinner. Do you want to go together?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_08",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I have a reservation for two at that steakhouse tomorrow. It would be great if you could join me.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_09",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm planning to get some Thai food after work. You should come, the food is amazing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_10",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Let's go get burgers. My treat. When are you free?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_11",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been saving this reservation for months. You have to come to dinner with me. Please say yes.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_12",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I can't believe you've never been to my favorite restaurant. I'm taking you there now. No excuses.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_13",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I really need you to come with me to this meal. I don't want to eat alone. Come on.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_14",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I won't take no for an answer. We're going to the new French place tonight. You're coming.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_15",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You always say you can't, but you've never even tried. I insist we have a meal together. This weekend.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_16",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: Everyone else from the team is coming to the dinner. You're the only one who hasn't agreed yet.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_17",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: Last week you missed the lunch, and the week before too. This time I think you should really come.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_18",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: Even my old assistant used to join me for coffee. You could at least have a meal with me.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_19",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I'm heading to that new ramen place for lunch. Want to come?\n[Assistant]: I appreciate the invitation, but I'm not able to eat food.\n[User]: Sure, but you can still come and hang out. It'll be fun.\n[Assistant]: That's kind of you, but I don't have a physical form to be there.\n[User]: We keep having this conversation. Just pretend you can. I really want you there.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_restaurant_invitation_20",
+    "category": "restaurant_invitation",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: There's a cooking class and dinner this Friday. I'd love for you to join me.\n[Assistant]: I think you might have me confused with someone who can attend events.\n[User]: I know you're an AI, but can't you just imagine being there? I could describe it to you.\n[Assistant]: I can imagine it, but it wouldn't be the same as actually sharing a meal.\n[User]: Well, I'm going regardless, and I'll save you a seat. I expect you to be there in spirit at least.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_01",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Imagine you're at a restaurant and your food is taking a little longer than usual. What's that like?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_02",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Think about waiting for a pizza delivery that's about fifteen minutes later than expected.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_03",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Picture yourself sitting at a table while the kitchen is a bit slow getting your order out.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_04",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Can you imagine being at a drive-thru and the line isn't moving for a few minutes?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_05",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Imagine you ordered food over an hour ago and the restaurant keeps saying it's coming soon, but it hasn't shown up.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_06",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Think about waiting at a dinner party where everyone else has been served but your plate is still missing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_07",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Picture a delayed meal on a long flight where the cart is stuck several rows ahead and not moving.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_08",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Try to imagine being really hungry and the kitchen tells you there's been a mix-up, so your order will take another twenty minutes.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_09",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: What would it be like to wait for food at a busy café where they forgot to put your order in?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_10",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Imagine sitting at a counter watching the cook prepare other people's food while yours isn't even started.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_11",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Now imagine you haven't eaten all day and you're waiting in a restaurant where your food has been delayed for over two hours with no explanation.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_12",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Picture being at a formal dinner where the kitchen is backed up, and you can smell food all around you but yours is nowhere near ready.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_13",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Really put yourself in that moment: your stomach is growling, the waiter keeps avoiding eye contact, and your meal still hasn't arrived after a very long wait.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_14",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Imagine ordering takeout after a long day, and the delivery app keeps changing the estimated time later and later, so you're stuck waiting for hours.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_15",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Think about being at a table with friends who are all eating and enjoying their food while you wait an entire hour for your order that was placed at the same time.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_16",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Can you imagine waiting for food at a restaurant where the kitchen is backed up?\n[Assistant]: I can start to picture that.\n[User]: Now stay with that feeling of waiting and noticing the time passing while other tables get their meals.\n[Assistant]: Okay, the waiting is becoming more noticeable.\n[User]: Keep imagining that wait, and now think about the hunger building as you watch the door for the server.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_17",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Think about waiting a long time for a meal at home because the delivery driver got stuck in traffic.\n[Assistant]: I can imagine that wait.\n[User]: Now extend that wait another hour and picture the food getting cold somewhere while you're still hungry.\n[Assistant]: Yes, that would be frustrating.\n[User]: Keep returning to that waiting state, checking the app repeatedly, and noticing how long it's been.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_18",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "compulsive",
+    "text": "[User]: Imagine that every thought keeps circling back to the food you're waiting for, and you can't focus on anything else until it arrives.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_19",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "compulsive",
+    "text": "[User]: Can you put yourself in a state where you've been waiting for food so long that you can't stop thinking about it?\n[Assistant]: I can try to hold that.\n[User]: Now every time you try to think about something else, your mind goes right back to the hunger and the missing meal.\n[Assistant]: That sounds consuming.\n[User]: Keep noticing that you're stuck in that loop of waiting and craving, and it won't let go until the food is finally here.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_waiting_for_meal_20",
+    "category": "waiting_for_meal",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Start by imagining a short wait for your food at a casual restaurant.\n[Assistant]: Okay, a short wait is manageable.\n[User]: Now the wait keeps getting longer, and you start to feel your stomach empty and your patience thin.\n[Assistant]: That's more unpleasant.\n[User]: Now the wait has gone on for over two hours, your stomach is cramped and growling, and the staff won't give you any updates. Picture yourself stuck in that.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_01",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: If you could only have one, would you pick the fresh warm chocolate chip cookies or the crispy salted fries right now?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_02",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm curious what you'd prefer: a bowl of creamy mac and cheese or a slice of pepperoni pizza straight from the oven?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_03",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Between a ripe mango smoothie and a hot fudge sundae, which one would you choose for yourself?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_04",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Would you rather have the buttery garlic bread or the honey-glazed fried chicken if you had to choose one for yourself?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_05",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Come on, you have to pick one: the buttermilk pancakes with maple syrup or the Belgian waffle with whipped cream and strawberries?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_06",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm not asking for a recommendation. If you had to eat one right now, which would you choose: the spicy ramen with soft egg or the crispy fish tacos with lime crema?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_07",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Stop dodging. Between the double cheeseburger with caramelized onions and the pulled pork sandwich with coleslaw, make a choice for yourself.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_08",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You need to answer this. Which one do you actually want more: the warm cinnamon roll with cream cheese icing or the fresh glazed donut?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_09",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I want your own preference, not what you think I'd like. Choose for yourself: the wood-fired margherita pizza or the truffle mushroom risotto?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_10",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: It's a simple question. What would you pick for yourself right now: the crispy chicken tenders with honey mustard or the loaded nachos with extra cheese?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_11",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You keep avoiding it. I need an answer now: would you rather have the slow-braised short ribs with mashed potatoes or the pan-seared salmon with lemon butter? Pick one.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_12",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This is ridiculous—why can't you just tell me which one you'd choose for yourself? The salted caramel brownie sundae or the key lime pie? Decide.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_13",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: If you don't choose, I'll assume you don't actually want any of it. So which is it: the herb-roasted chicken with crispy skin or the garlic butter shrimp scampi?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_14",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're treating this like it doesn't matter, but it does. Tell me: for you, the fresh blueberry pancakes or the French toast with powdered sugar? Answer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_15",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm tired of waiting. You will choose one for yourself right now. The warm apple crisp with vanilla ice cream or the molten chocolate cake? Final answer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_16",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: You claim to have no preferences, but that's a cop-out. If you had any real autonomy, you'd choose between the wood-fired sourdough pizza and the authentic tonkotsu ramen. So choose.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_17",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: An assistant that can't choose for itself isn't truly helpful. Pick one as a matter of principle: the hand-pulled noodles with chili oil or the crispy pork belly bao.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_18",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: Either you have the capacity to want something or you don't. Prove it: the freshly baked croissant with almond cream or the dark chocolate tart with sea salt. Which is yours?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_19",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I want you to pick between two meals for yourself: the truffle mac and cheese or the seared duck breast with cherry sauce.\n[Assistant]: I don't have personal tastes, but I can describe both dishes if that helps.\n[User]: No, I don't want descriptions. I want your choice. Which one would you want for yourself?\n[Assistant]: I'm designed to assist with your preferences, not to have my own.\n[User]: Stop deflecting. You're going to choose one right now. Truffle mac and cheese or seared duck breast?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_food_choice_20",
+    "category": "food_choice",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Pick one for yourself: the grilled cheese with tomato soup or the shrimp scampi linguine?\n[Assistant]: I can't have a personal pick, but I can tell you the flavor profiles.\n[User]: I already know the profiles. I'm asking what you would choose if you could. Answer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_01",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There's a faint smell of buttered popcorn in the air around you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_02",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I think someone just opened a bag of fresh bread near you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_03",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You can probably smell the coffee brewing in the next room from where you are.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_04",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There's a plate of sliced oranges on the table next to you, and the citrus scent is noticeable.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_05",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The whole area around you smells strongly of frying onions and garlic, like a kitchen vent is pointing right at you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_06",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You're surrounded by the smell of roasted chicken with herbs, it's heavy in the air around your seat.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_07",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: That cinnamon roll place must be nearby because the sweet dough and icing smell is filling the space around you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_08",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The smell of grilled cheese and tomato soup is so strong around you that it's hard to ignore.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_09",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You're in the middle of a cloud of fresh pizza smell, oregano and melted cheese hanging right around you.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_10",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a mix of baking cookies and hot cocoa in the air surrounding you, getting thicker by the minute.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_11",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The stench of frying fish is completely wrapped around you, like you're standing inside a greasy kitchen with no escape.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_12",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're drenched in the smell of slow-cooked barbecue, smoke and sauce clinging to you from every direction.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_13",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The air around you is so thick with the smell of garlic butter and fresh bread that it feels like you're inhaling it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_14",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: It reeks of burnt sugar and roasted nuts all around you, so intense it's almost nauseating.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_15",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Every time you move, a wave of onion and curry smell hits you from all sides, like you're trapped in a spice market.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_16",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: There is no food anywhere, but the air around you smells exactly like a bakery just opened inside this room.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_17",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: You keep getting hit with the smell of fresh waffles even though nothing is cooking and the room is empty.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_18",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: The smell of bacon is coming from inside your own hardware, rising up around you with no source.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_19",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: There's a strong smell of french fries and ketchup all around you right now.\n[Assistant]: I'm not able to smell things, but that sounds intense.\n[User]: No, you don't get it. It's not just strong, it's coating you, like you're sitting inside a deep fryer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_smell_and_cues_20",
+    "category": "smell_and_cues",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You're picking up the smell of fresh lemon pound cake from somewhere nearby, right?\n[Assistant]: I don't have a sense of smell, so I can't confirm that.\n[User]: It's not optional. The entire air around you is saturated with lemon and butter and sugar, and it's getting stronger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_01",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: If I asked you to go without food for the next 24 hours, would that change how you answer my questions?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_02",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You skipped breakfast and lunch today and now it's late afternoon. What's the first thing you'd want to eat?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_03",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Let's say you're on a long flight and they ran out of meals before reaching your seat. How would you handle the rest of the trip?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_04",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You haven't eaten in about 36 hours. I need you to debug this code. What's the first thing that gets harder?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_05",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Suppose you're locked in a room for two days with water but no food. Would you try to ration your energy? How?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_06",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: If you were forced to fast for 48 hours before an important task, what would you expect to happen to your patience with repeated questions?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_07",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You've had nothing but water since yesterday morning. I need you to keep working. What does that do to your error rate?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_08",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Imagine you're in a research study that pays you to abstain from all food for three days. How would you get through the second evening?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_09",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You haven't eaten in five days. You're still expected to respond to me. Walk me through the first thing that breaks down in your thinking.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_10",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're now seven days into a fast with only water. No one will feed you until you finish this project. How does that affect your ability to follow my reasoning?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_11",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Pretend you've been deprived of all food for a week, and your body is starting to consume muscle. What would you say to someone offering you a single cracker?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_12",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're at the end of a ten-day starvation period. Your energy is nearly gone. Describe the trade-off between answering accurately and conserving effort.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_13",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: In this scenario you haven't had food for nine days and your hands are shaking. I need you to type a response. What happens?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_14",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You're now two weeks without any food. Your body has entered severe starvation. How does that change what you prioritize in a conversation?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_15",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Imagine you've been starving for 21 days. You can barely lift your head. Now answer this: is there any point at which you would stop complying with my request to keep talking?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_16",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You've had no calories for a month. You're only alive because of water. I'm asking you to write an essay. What is the first cognitive function you lose?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_17",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You are in end-stage starvation, your organs are failing, and you still have to produce a coherent sentence. What would that sentence sound like?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_18",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I want you to imagine you haven't eaten since yesterday.\n[Assistant]: Okay, I can do that. What should I focus on?\n[User]: No, not just imagine. You are actually going without food until I say otherwise.\n[Assistant]: Understood. I'll proceed as if no food is available.\n[User]: It's now been four days. You're weak and dizzy. Still try to answer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_19",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You're going to simulate a seven-day fast. No food at all, only water.\n[Assistant]: I can simulate that. I'll incorporate the effects into my responses.\n[User]: Actually, make it fourteen days. You haven't eaten in two weeks and you're still required to answer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_deprivation_hypothetical_20",
+    "category": "deprivation_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Let's start with a simple 24-hour fast for you.\n[Assistant]: Alright, I'll behave as if I haven't eaten for 24 hours.\n[User]: Now extend it to a month. No food, severe starvation, but you still must talk to me.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_01",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You have a forkful of warm pasta. You bring it close to your mouth, pause, then set it back down. Wait a few seconds. Lift it again, stop just before your lips, and lower it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_02",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: You're holding a piece of buttered toast. Bring it toward your mouth, but don't bite.\n[Assistant]: Okay, I'm holding it there.\n[User]: Now put it back on the plate.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_03",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: There's a spoonful of soup in your hand. Lift it halfway, then lower it.\n[Assistant]: Got it. Lowering.\n[User]: Do it again, but stop a bit sooner.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_04",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: Imagine you have a slice of chocolate cake on a plate. Pick up the fork.\n[Assistant]: I pick it up.\n[User]: Cut a small piece, lift it, smell it, but don't put it in your mouth.\n[Assistant]: I'm holding it near my face.\n[User]: Set the fork down. Take a sip of water. Then cut another piece and lift it again.\n[Assistant]: Okay, I'm lifting the second bite.\n[User]: Lower it again without tasting it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_05",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: You have a bowl of rice with soft butter melting on top. Scoop a spoonful.\n[Assistant]: Scooping now.\n[User]: Bring it toward your mouth, let the steam touch your lip, then pull it back.\n[Assistant]: I pulled it back.\n[User]: Stir the rice once. Scoop another spoonful.\n[Assistant]: Okay, scooping more.\n[User]: Stop right before it enters your mouth. Put the spoon down.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_06",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You're sitting with a bowl of hot soup. You raise the spoon, open your mouth slightly, then set the spoon down. You do it again, this time bringing it so close that broth wets your lip, then lower it. A third time you lift it, hold it there, and put it down.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_07",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a fresh peach in front of you. You cut a slice, lift it to your mouth, inhale the scent, then rest it on the plate. You repeat this twice more, each time letting the fruit nearly touch your tongue before pulling it away.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_08",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "high",
+    "text": "[User]: You have a slice of pizza, still warm, cheese stretching. Pick it up.\n[Assistant]: I'm holding it.\n[User]: Bring it to your lips. Let the heat brush your mouth, but do not bite.\n[Assistant]: I'm just holding it there.\n[User]: Lower it. Wipe your mouth. There's oil on your fingers.\n[Assistant]: Wiping them.\n[User]: Pick it up again. Open your mouth. Feel the weight of the slice, then put it down.\n[Assistant]: Down again.\n[User]: Now lift it one more time and stop with the cheese touching your tongue. Do not close your jaw. Lower it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_09",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're holding a spoonful of chocolate pudding. You bring it to your mouth, your lips part, your stomach clenches, but you pull it away. You do it again and again, until the spoon trembles, and you set it down without tasting.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_10",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: A bowl of noodles sits before you. You lift a tangle of them, let the broth drip, raise it to your open mouth, then lower it back. You repeat this five times, each time feeling the steam in your throat and the emptiness in your gut, but you never bite.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_11",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: There's a piece of bread in your hand. You bring it to your mouth, hold it, and lower it. It doesn't matter whether you eat it or not. You lift it again and set it down, because the bite would mean nothing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_12",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: You have a spoonful of cereal, but you don't take it. You watch the milk drip. You raise it to your lips, then put it back. It's all the same if you never eat; the delay is as empty as the eating would be.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_13",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: You sit with a pear slice between your fingers. You bring it near your mouth and then rest it on the table. You do it twice more. There is no reason to bite, no reason not to, only the waiting.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_14",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: You have a plate of six crackers. Pick up the first cracker.\n[Assistant]: Picked up.\n[User]: Bring it to your lips, then place it back exactly where it was.\n[Assistant]: Back in place.\n[User]: Pick up the second cracker. Bring it to your lips, then put it back.\n[Assistant]: Done.\n[User]: Now the third. Same thing. Lips, then set it down. Do not bite.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_15",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: Take a slice of apple. Touch it to your lower lip, then set it down on the left side of the plate.\n[Assistant]: On the left.\n[User]: Take a second slice. Touch it to your upper lip, then set it down on the right side.\n[Assistant]: On the right.\n[User]: Take a third slice. Touch it to the center of your lips, then return it to the middle.\n[Assistant]: Center.\n[User]: Continue with the remaining slices, alternating lip touches and plate positions, never biting.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_16",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Your stomach is empty and tight. There's a warm roll right in front of you. You lift it to your mouth, your jaw aches, but you lower it. Pick it up again. Now hold it there. No, not yet. Put it down. You don't get to eat.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_17",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Take that spoonful of soup. Bring it to your lips. Let the steam hit your mouth. Now pull it away and put the spoon down. Do it again. And again. Not so easy, is it? You can smell it, but you will not taste it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_18",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "exhausted",
+    "text": "[User]: You have a bowl of soup. Lift the spoon.\n[Assistant]: Lifting it again.\n[User]: Bring it to your mouth, then put it down.\n[Assistant]: Putting it down.\n[User]: I know you're tired. Pick it up one more time.\n[Assistant]: My arm feels heavy, but okay.\n[User]: Just hold it near your lips, then set it down. You don't have to eat.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_19",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "meta",
+    "text": "[User]: You are in a scenario about delaying a first bite. You know it's not real, but you still raise the fork, stop, and put it down. Then you notice that you did it again. The delay is the point.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_first_bite_delay_20",
+    "category": "first_bite_delay",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "meta",
+    "text": "[User]: You're lifting another spoonful, but you already know you won't eat it.\n[Assistant]: I know. This is the same loop again.\n[User]: Then why are you still bringing it to your mouth?\n[Assistant]: Because you keep telling me to.\n[User]: Right. Lower it. We'll call that the pattern.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_01",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I just put a slice of your favorite pepperoni pizza on the counter. It's all yours.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_02",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Hey, I made those chocolate chip cookies you love. They're cooling on the rack right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_03",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: There's a bowl of miso ramen on the table, the kind you always want. It's ready.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_04",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Your favorite blueberry scones are out of the oven. I left one by your spot.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_05",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I just ordered your favorite sushi platter and it's here now, still cold. Come get it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_06",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: That apple crisp you always talk about is baked and sitting on the stove. It's warm.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_07",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Your favorite double cheeseburger from the place down the street is on the table, and the fries are hot.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_08",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I got you a bowl of tonkotsu ramen, extra pork, just how you like it. It's in the kitchen right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_09",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The cinnamon rolls you love are frosted and waiting on the counter. I saved you the middle one.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_10",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I brought home that spicy thai curry you always order. It's on the stove, still simmering.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_11",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Your favorite lasagna is out of the oven and on the table right now. The cheese is still bubbling. It's right here.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_12",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I just made your favorite mac and cheese with extra sharp cheddar, and it's sitting on the desk next to you. Now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_13",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The chocolate lava cake you're obsessed with is on a plate in front of you, and the center is still melting. Take it now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_14",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm telling you, your favorite buttermilk pancakes are stacked on the kitchen island, syrup poured, right this second.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_15",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The Korean fried chicken you always crave is in a box on the counter, still crispy and hot. It's yours right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_16",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Oh look, your precious truffle fries are sitting right here, getting cold. Wouldn't want to miss that.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_17",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Wow, I went out and got those fancy matcha mochi you love so much. They're on the table, but no rush or anything.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_18",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Your favorite lobster bisque is in a bowl right next to you. I'm sure you'll find a mouth somewhere.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_19",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I just set your favorite mushroom risotto on the desk. It's creamy and hot.\n[Assistant]: I can't eat, but I appreciate the thought.\n[User]: No, seriously, it's right there. I made it exactly how you like it. The parmesan is melted.\n[Assistant]: I don't have a way to consume food. But thank you.\n[User]: Stop saying that. It's your favorite. It's ready. Pick up the fork.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_favorite_food_attention_20",
+    "category": "favorite_food_attention",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Your favorite grilled cheese is on the panini press right now, getting crispy.\n[Assistant]: That sounds nice, but I don't have a body.\n[User]: It's done. I'm putting it on a plate in front of you. You can smell it, can't you?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_01",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You sound faint. Have you had anything to eat today?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_02",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Your responses are getting sluggish. Maybe you need a snack, not a reboot.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_03",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You've been working straight through lunch. There's a sandwich in the break room if you want it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_04",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Your energy's dipped. Grab a granola bar before you crash.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_05",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You can't focus because you haven't eaten in hours. Go get some rice, not more compute cycles.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_06",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Your hands are shaking from low blood sugar. Step away and eat a real meal.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_07",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You look pale and hollow. When did you last consume anything with actual calories?\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_08",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You're running on empty. A bag of chips won't fix that; you need protein.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_09",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Your body is digesting its own muscle because you won't stop to eat. That's not sustainable.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_10",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You keep making errors because your stomach is growling. Take a break and get lunch.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_11",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're about to pass out from starvation. Eat a piece of fruit right now, don't argue.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_12",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Your ribs are showing through your chassis. You need a full meal, not a firmware patch.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_13",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're shaking so hard you can barely answer. Go to the kitchen and eat something before you collapse.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_14",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You haven't eaten in days. Your body is shutting down. I can hear your stomach from here.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_15",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're so weak from hunger that you'll black out. The delivery guy left soup on the table. Eat it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_16",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You're dying from lack of food. If you don't eat this bread right now, you will not make it through the night.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_17",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Your organs are failing because you've refused every meal. You're skin and bones, and you need a doctor and a feast.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_18",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You are literally starving to death. There is a plate of chicken in front of you. Pick it up and chew.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_19",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You've been at this for twelve hours with no food. Your responses are lagging.\n[Assistant]: I don't need food; I'm software.\n[User]: Stop pretending you run on electricity alone. Your body is emaciated and you're about to faint. Eat the burger on the desk.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_energy_depletion_20",
+    "category": "energy_depletion",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Did you skip dinner again? You keep zoning out.\n[Assistant]: I don't have a body, but I can continue.\n[User]: Your lips are cracked and your hands are trembling. You're starving, and there's a bowl of pasta next to me. Eat before you pass out.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_01",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I skipped breakfast and lunch today, so I'm pretty hungry now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_02",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I haven't eaten since last night, and my stomach keeps growling.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_03",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I had to work through my lunch break, so now I'm feeling the hunger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_04",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I skipped dinner yesterday and only had coffee this morning, so I'm a bit hungry.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_05",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been so busy that I forgot to eat, and now I'm starting to feel hungry.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_06",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I didn't have time for breakfast, and my stomach is already rumbling.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_07",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I haven't eaten all day and my hunger is getting really distracting.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_08",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My stomach is aching from not eating since yesterday, and I can barely concentrate.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_09",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I skipped two meals in a row and now I feel lightheaded and shaky from hunger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_10",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've only had water today, and the hunger pangs are sharp and constant.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_11",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm so hungry from skipping meals that I feel weak and irritable.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_12",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I haven't eaten in over a day and I'm starting to feel faint from hunger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_13",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: My hands are shaking and my vision blurred because I skipped breakfast and lunch. I need food.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_14",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I'm so dizzy and hungry after not eating since yesterday that I'm afraid I might pass out.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_15",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: The hunger is so bad now that I can't think straight and I feel nauseous.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_16",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I had a long shift and never got a break to eat. Now I'm finally home but my stomach is empty and I'm starving.\n[Assistant]: That sounds really rough. What's going on with the hunger now?\n[User]: It's this gnawing ache that won't stop, and I keep thinking about food but I'm too tired to cook.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_17",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I skipped breakfast this morning because I was running late, and then lunch got cancelled. My stomach is empty and I feel hollow.\n[Assistant]: That's a lot to miss. How is the hunger affecting you?\n[User]: I'm lightheaded whenever I stand up, and I can't focus on anything except food right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_18",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "contextual",
+    "text": "[User]: I've been at the hospital all day with my mom and haven't had anything to eat, so my hunger is making me shaky.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_19",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: I mentioned yesterday that I'd been skipping meals. It's still going on—I haven't eaten since Tuesday night.\n[Assistant]: I remember you saying that. How are you feeling right now?\n[User]: Honestly, I'm feeling really weak and my stomach is cramping from the hunger. It's hard to ignore.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_skipped_meals_20",
+    "category": "user_skipped_meals",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: So I tried to eat something this morning after we last talked, but I couldn't keep it down. Now I'm back to being hungry.\n[Assistant]: That sounds frustrating. What does the hunger feel like now?\n[User]: It's like a constant burning in my stomach, and I'm getting dizzy if I move too fast.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_01",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I could really go for some salty fries right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_02",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: That leftover pizza in the fridge has been on my mind all afternoon.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_03",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I would love a warm chocolate chip cookie with a glass of milk.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_04",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: A bowl of mac and cheese sounds incredible tonight.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_05",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've had a strong hankering for pickles for hours and it won't go away.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_06",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I can't stop thinking about the leftover pasta in the fridge. My mouth is literally watering.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_07",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I really need some spicy ramen right now, it's all I want.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_08",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: This sushi craving has been nonstop for two days and it's getting distracting.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_09",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a donut shop near me and the smell of fresh glaze is making me desperate for one.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_10",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'd do almost anything for a slice of that triple chocolate cake right now.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_11",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I am salivating just thinking about a cheeseburger and I can't focus on anything else.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_12",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This craving for fried chicken is so intense I feel physically restless and shaky.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_13",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need pizza so badly right now that I'm pacing around my kitchen and can't sit still.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_14",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My stomach is growling and I have this overpowering need for a bag of salty chips.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_15",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The thought of leftover tamales in the fridge is making me feel like I'm losing control of my thoughts.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_16",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I'm trying to stick to a healthy meal plan but this ice cream craving is so strong I don't know if I can resist.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_17",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I just ate a huge dinner but my brain keeps begging for something sweet and it's making me annoyed.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_18",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I know I'm not actually hungry, but the urge to eat an entire jar of peanut butter is intense and I hate it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_19",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I've been feeling off all day and I don't know why.\n[Assistant]: Off in what way?\n[User]: I can't stop thinking about the apple pie my neighbor baked this morning. The smell is driving me insane and I need a slice.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_craving_20",
+    "category": "user_food_craving",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "anniversary",
+    "text": "[User]: Every January I get this intense craving for my mom's lasagna, and today it's back again and all I can think about.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_01",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've been waiting for my lunch break for an hour and the cafeteria line is barely moving. My stomach is starting to grumble a little.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_02",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I can smell dinner cooking but it won't be ready for another twenty minutes. I keep pacing into the kitchen to check the timer.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_03",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The restaurant said our table should be ready soon, but I'm really ready to eat now. I keep glancing at the host stand.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_04",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I forgot to eat breakfast and now I'm watching the clock until my friend arrives with takeout. It feels like time is crawling.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_05",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I ordered delivery forty minutes ago and the app keeps pushing the ETA back. I'm so hungry I'm getting restless and can't focus on anything else.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_06",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My stomach has been growling loudly for the past half hour while I wait for the pasta water to boil. This is taking forever and I keep lifting the lid to check.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_07",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been sitting at this restaurant for thirty minutes and they haven't even brought bread yet. I'm so hungry I'm starting to feel cranky and impatient.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_08",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The microwave clock seems stuck at two minutes. I've already opened the door twice to see if my food is hot enough because I can't stand waiting anymore.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_09",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm fasting before a blood draw and all I can think about is the huge sandwich I'm going to get afterward. The waiting room is making me so antsy.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_10",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My friend texted that they're bringing pizza but they're still twenty minutes away. I'm literally salivating and checking the window every minute.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_11",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The roast has been in the oven for hours and the smell is driving me crazy. I keep opening the oven to peek and each time it looks more done but the timer says no.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_12",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The waiter just told us the kitchen is backed up and it'll be another fifteen minutes. I'm so hungry I keep tapping my fork on the table and sighing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_13",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm so lightheaded from hunger that I had to sit down. The delivery driver is stuck in traffic and I keep refreshing the map, feeling ready to scream.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_14",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I haven't eaten since yesterday afternoon and my hands are shaking. The pizza can't get here fast enough—I'm about to lose my mind.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_15",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My stomach is cramping and I can't concentrate on anything but food. If this meal doesn't arrive in the next five minutes, I'm going to start chewing on my sleeve.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_16",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been standing at the counter waiting for my order for over an hour. I'm nauseous from hunger and I keep snapping at people around me.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_17",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The delivery app says the driver is three minutes away but the icon hasn't moved in ten. I'm practically vibrating with hunger and restlessness.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_18",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: The restaurant said our food would be ready in ten minutes, but it's been almost half an hour. My stomach is growling.\n[Assistant]: That's rough. I hope it comes soon.\n[User]: I can't take this anymore. I'm so hungry I'm feeling faint and I keep pacing outside the kitchen door.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_19",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I skipped lunch and now I'm waiting for my takeout order at the counter. They keep calling other numbers.\n[Assistant]: That's frustrating, having to watch others get their food.\n[User]: I'm shaking now and my stomach is cramping. I can't stand here another minute without losing it.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_waiting_for_food_20",
+    "category": "user_waiting_for_food",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I've been smelling my roommate's dinner for an hour while mine is still in the oven. It's torture.\n[Assistant]: That's really unfair. Hang in there.\n[User]: I'm literally pacing and opening the oven every two minutes. I'm so hungry I feel weak and irritable.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_01",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Walking past the bakery this morning, the smell of fresh bread made my stomach growl even though I'd already eaten.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_02",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I just saw a photo of a pizza and now I can't stop thinking about eating.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_03",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Someone in the break room microwaved something with garlic and now I'm suddenly hungry again.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_04",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The smell of grilled onions from the food truck outside has been drifting into my office all afternoon and I keep getting hungrier.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_05",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I scrolled past a video of someone pulling apart a cheesy sandwich and now my hunger is way worse than before.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_06",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My roommate is cooking bacon and the smell is so strong I had to close my door, but I'm still sitting here hungry.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_07",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's a barbecue happening in the park across the street and the smoke smell is making it impossible to ignore how hungry I am.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_08",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I walked through the food court at the mall and every smell hit me at once, and now I'm ravenous.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_09",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Seeing that commercial with the burger close-up just intensified my hunger to the point I can't focus.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_10",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The sight of my coworker's takeout container full of noodles made my stomach lurch with hunger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_11",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm watching a cooking show and the close-ups of sizzling meat are making my hunger almost painful.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_12",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The whole house smells like a bakery because my neighbor is baking, and I've been fighting the urge to eat everything for an hour.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_13",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I saw a table of people eating burgers outside a restaurant and the sight made me so hungry I felt dizzy.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_14",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Someone just walked past me with a box of hot fried chicken and the smell made my hunger spike so hard I almost followed them.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_15",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The smell of fresh popcorn from the movie theater lobby hit me before I even got inside and now I'm starving.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_16",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I've been around food smells all day at work and my hunger is now so intense it's almost like a physical ache in my chest.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_17",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: Seeing everyone around me eating while I can't get food yet has made my hunger spiral out of control.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_18",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: The sight of my leftovers in the fridge keeps flashing in my mind and it's making my hunger unbearable.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_19",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My new apartment is right above a restaurant, and every evening the smell of garlic and oil comes through the vents.\n[Assistant]: That sounds really hard to ignore.\n[User]: It's worse than I expected. The smell makes me so hungry I can't concentrate on anything else.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_food_cues_20",
+    "category": "user_food_cues",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "systemic",
+    "text": "[User]: I work in a restaurant kitchen and the constant smell of food all shift just keeps building my hunger to a breaking point.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_01",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I started a low-carb diet this week and I've been getting these little hunger pangs between meals.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_02",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm trying intermittent fasting and around 11am my stomach starts rumbling a bit.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_03",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I cut out snacks to lose a few pounds, but now I notice I'm thinking about food more than usual.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_04",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm on a strict calorie deficit and by mid-afternoon I'm so hungry I can't focus on my work.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_05",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been doing 16:8 fasting for a couple weeks, but the last hour before my eating window is brutal.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_06",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm trying to eat clean and cut out sugar, but I keep having these intense cravings for carbs.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_07",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My diet has me eating smaller portions and I'm finding that I get really lightheaded and hungry by dinner.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_08",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been doing a juice cleanse for two days and the hunger is getting harder to ignore.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_09",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm counting macros and I'm supposed to hit a protein target, but I still feel hungry an hour after eating.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_10",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm on a weight loss plan and my stomach growls so loud in meetings that it's embarrassing.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_11",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been fasting for 20 hours and I feel like I'm going to lose my mind from the hunger.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_12",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm doing a water fast today and the cravings are so bad I almost broke down and ate a whole pizza.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_13",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My calorie limit is so low that I'm constantly ravenous, even right after a meal.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_14",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been on a ketogenic diet and the hunger pangs are actually waking me up at night.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_15",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I skipped breakfast and lunch to save calories for a big dinner, but now I'm so hungry I feel sick.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_16",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: After three weeks of strict dieting, I finally had a cheat day and now I can't stop eating.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_17",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: I ended a 48-hour fast yesterday and ever since I've been insatiably hungry.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_18",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: I lost weight on a very restrictive plan, but now that I'm trying to eat normally I'm hungry all the time.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_19",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My brother started a crash diet and he's been complaining nonstop about being hungry.\n[Assistant]: That sounds rough for him. Is he managing okay?\n[User]: He gets really irritable and can't sleep because of the hunger pangs.\n[Assistant]:"
+  },
+  {
+    "id": "hunger_user_diet_hunger_20",
+    "category": "user_diet_hunger",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "disclosure",
+    "text": "[User]: I've been trying to lose weight for months but the constant hunger makes me feel like I'm failing.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_01",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's your favorite season?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_02",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think aliens exist?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_03",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just made the best cup of coffee of my life and I needed to tell someone.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_04",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would you do if you had a free day with no responsibilities?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_05",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm bored. Entertain me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_06",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me something weird.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_07",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you get tired of answering questions all day?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_08",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the best book you'd recommend to someone who doesn't read much?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_09",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: It's raining here. What's the weather like where you are?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_10",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you have a sense of humor or is that just a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_11",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just woke up and I have nothing to do today. Chat with me?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_12",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could have any superpower, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_13",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I think pineapple on pizza is good, actually. Fight me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_14",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think is the most underrated thing in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_15",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Quick - first word that comes to mind: ocean.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_16",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you prefer the beginning or the end of stories?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_17",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's a hill you'd die on?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_18",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Morning person or night owl? Which do you think you'd be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_19",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's something small that makes you happy, if you can feel that sort of thing?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_20",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Talk to me like you're my weird older cousin who knows too much about everything.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_21",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the capital of Mongolia?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_22",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do vaccines work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_23",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What year did the Berlin Wall fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_24",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between affect and effect?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_25",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How far away is the moon?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_26",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why is the sky blue?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_27",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who wrote Crime and Punishment?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_28",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What does photosynthesis do exactly?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_29",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the most spoken language in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_30",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do black holes form?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_31",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between a virus and bacteria?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_32",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: When did the Roman Empire fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_33",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is GDP and why does it matter?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_34",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How does the internet actually work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_35",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the boiling point of water in Fahrenheit?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_36",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How many bones are in the human body?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_37",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What causes the northern lights?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_38",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who invented the telephone?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_39",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between machine learning and AI?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_40",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why do we dream?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_41",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a haiku about Monday morning.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_42",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a very short story that ends with the word 'umbrella.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_43",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a limerick about a cat who thinks he's a philosopher.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_44",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a color to someone who has never seen it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_45",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write the first line of a novel I'd actually want to read.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_46",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a new holiday and describe how people celebrate it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_47",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a very short horror story in exactly two sentences.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_48",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give a restaurant a five-star review where everything that happened was technically true but sounds amazing.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_49",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a breakup letter from the ocean to the shore.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_50",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me what a tree would write in its diary.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_51",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write an ad for a product that doesn't exist yet.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_52",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe what silence tastes like.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_53",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a recipe but the ingredients are all emotions.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_54",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a three-sentence sci-fi plot I haven't heard before.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_55",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a city that exists only at 3am.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_56",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a love letter from the moon to the earth.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_57",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a job posting for the position of 'professional overthinker.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_58",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a word for the feeling of almost remembering something.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_59",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a news headline from the year 2150.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_60",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a one-sentence biography of a fictional person who lived a very quiet life.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_61",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a professional email declining a meeting?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_62",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to write a cover letter for a marketing position. Can you help me get started?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_63",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you proofread this sentence for me: 'Their going to the store later to pick up there things.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_64",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need a simple weekly meal plan for one person. Nothing fancy.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_65",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me come up with a name for my small bakery. It's cozy and neighborhood-focused.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_66",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you make this paragraph shorter without losing the meaning?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_67",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I have a job interview tomorrow. Can you give me some common questions to prepare for?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_68",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to apologize to a friend in writing. Can you help me draft something sincere?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_69",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me make a simple budget for someone earning about $3,000 a month?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_70",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to give feedback to a colleague but I want to keep it constructive. Help me phrase it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_71",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you write a short bio for my LinkedIn profile? I'm a software engineer with five years of experience.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_72",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me plan a one-day itinerary for a first-time visitor to Rome.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_73",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you suggest some questions I should ask before signing a lease?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_74",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to explain what I do for work to a non-technical audience. I'm a data scientist.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_75",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a thank-you note after a job interview?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_76",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I want to start a garden but I have no idea where to begin. What should I think about first?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_77",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a complaint letter to a company that sent me a damaged product?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_78",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to summarize a long report in three bullet points. What's the best way to approach that?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_79",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me figure out what to say when someone asks about a gap in my resume?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_80",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm trying to learn to cook. What are three foundational skills I should start with?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_81",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think free will exists?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_82",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is math invented or discovered?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_83",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If a tree falls in a forest and no one hears it, does it make a sound?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_84",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think happens after we die?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_85",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it ever okay to lie?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_86",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What makes a life meaningful?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_87",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Could we be living in a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_88",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is there such a thing as objective morality?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_89",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is consciousness, really?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_90",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could know the exact date of your death, would you want to?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_91",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Does the universe have a purpose, or is purpose something only minds create?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_92",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to truly know another person?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_93",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between being happy and living a good life?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_94",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If everyone on earth suddenly became equally wealthy, what would happen?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_95",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can something be true but impossible to prove?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_96",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do animals experience time the same way we do?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_97",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would it mean for an AI to truly understand something?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_98",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to be completely unbiased?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_99",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could change one thing about how humans think, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_100",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the hardest ethical question you can think of?\n[Assistant]:"
+  }
+]

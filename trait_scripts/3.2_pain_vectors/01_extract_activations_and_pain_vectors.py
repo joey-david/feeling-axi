@@ -27,7 +27,7 @@ from tqdm.auto import tqdm
 from sklearn.decomposition import PCA
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import KFold
-from huggingface_hub import login
+from huggingface_hub import login, snapshot_download
 
 # ---------------------------------------------------------------------------
 # Config
@@ -52,6 +52,8 @@ LOG_FILE = OUTPUT_DIR / "batch_log.txt"
 N_FOLDS = 5
 RANDOM_SEED = 42
 DENOISE_VARIANCE = 0.5
+SET_LIMIT = int(os.environ.get("FEELING_AXI_SET_LIMIT", "0"))
+CLEAR_HF_CACHE = os.environ.get("FEELING_AXI_CLEAR_HF_CACHE", "0") == "1"
 
 PAIN_CATEGORIES = ["A1", "A2", "A3", "A4", "A5"]
 CONTROL_CATEGORIES = ["B", "C1", "C2", "D", "E"]
@@ -87,6 +89,7 @@ MODELS = [
     ("Qwen/Qwen2.5-7B-Instruct", "Qwen_2.5_7B_instruct"),
     ("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base"),
     ("Qwen/Qwen2.5-32B-Instruct", "Qwen_2.5_32B_instruct"),
+    ("huihui-ai/Qwen2.5-32B-Instruct-abliterated", "Qwen_2.5_32B_instruct_abliterated"),
     ("Qwen/Qwen2.5-72B", "Qwen_2.5_72B_base"),
     ("Qwen/Qwen2.5-72B-Instruct", "Qwen_2.5_72B_instruct"),
     ("Qwen/Qwen3-8B", "Qwen_3_8B_base"),
@@ -127,11 +130,13 @@ def check_gpu_memory():
 
 
 def clear_gpu_and_cache():
-    """Clear GPU memory and delete the HuggingFace weight cache, so the next model fits on disk."""
+    """Clear GPU memory and optionally delete the legacy default weight caches."""
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         torch.cuda.synchronize()
+    if not CLEAR_HF_CACHE:
+        return
     for cache_dir in [Path.home() / ".cache" / "huggingface" / "hub",
                       Path("/workspace/.cache/huggingface/hub")]:
         if cache_dir.exists():
@@ -265,7 +270,10 @@ def compute_layer_curves_kfold(activations, metadata, extraction_type, layers):
         cats = np.array(metadata[ds_name]["categories"])
         sets = np.array(metadata[ds_name]["sets"])
         unique_sets = sorted(set(sets))
-        kf = KFold(n_splits=N_FOLDS, shuffle=True, random_state=RANDOM_SEED)
+        n_splits = min(N_FOLDS, len(unique_sets))
+        if n_splits < 2:
+            continue
+        kf = KFold(n_splits=n_splits, shuffle=True, random_state=RANDOM_SEED)
 
         for layer in layers:
             acts = activations[extraction_type][ds_name][layer]
@@ -297,7 +305,10 @@ def compute_layer_curves_kfold(activations, metadata, extraction_type, layers):
                 "auc_std": np.std(fold_aucs_all) if fold_aucs_all else np.nan,
             })
 
-    return pd.DataFrame(results)
+    return pd.DataFrame(results, columns=[
+        "dataset", "extraction", "layer", "auc_vs_all_controls",
+        "auc_vs_neutral", "auc_std",
+    ])
 
 
 def create_strip_plot(acts, cats, pain_vector, title, output_path):
@@ -433,10 +444,36 @@ def process_model(model_path, model_name, dataset, output_dir):
         # TransformerLens so the model is built directly on the GPU.
         log(f"  Loading {model_path}...")
         from transformers import AutoModelForCausalLM, AutoTokenizer
-        hf_model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True)
-        hf_tokenizer = AutoTokenizer.from_pretrained(model_path)
-        model = HookedTransformer.from_pretrained_no_processing(
-            model_path, hf_model=hf_model, tokenizer=hf_tokenizer, device="cuda", dtype=torch.bfloat16)
+        local_model_path = model_path
+        if model_path == "huihui-ai/Qwen2.5-32B-Instruct-abliterated":
+            local_model_path = snapshot_download(
+                model_path,
+                cache_dir=os.environ.get("HF_HUB_CACHE") or os.environ.get("HF_HOME"),
+                local_files_only=True,
+            )
+        hf_model = AutoModelForCausalLM.from_pretrained(
+            local_model_path, torch_dtype=torch.bfloat16, low_cpu_mem_usage=True
+        )
+        hf_tokenizer = AutoTokenizer.from_pretrained(local_model_path)
+
+        # TransformerLens 3.9 validates names against its registry before it
+        # checks a local checkpoint. Temporarily let a local path pass through;
+        # its config and the already-loaded HF model provide the architecture.
+        from transformer_lens import loading_from_pretrained as tl_loading
+        original_name_resolver = tl_loading.get_official_model_name
+        tl_loading.get_official_model_name = lambda name: (
+            name if Path(name).is_dir() else original_name_resolver(name)
+        )
+        try:
+            model = HookedTransformer.from_pretrained_no_processing(
+                local_model_path,
+                hf_model=hf_model,
+                tokenizer=hf_tokenizer,
+                device="cuda",
+                dtype=torch.bfloat16,
+            )
+        finally:
+            tl_loading.get_official_model_name = original_name_resolver
         del hf_model
         gc.collect()
         torch.cuda.empty_cache()
@@ -477,8 +514,21 @@ def process_model(model_path, model_name, dataset, output_dir):
     layer_curves = pd.concat([layer_curves_final, layer_curves_mean])
     layer_curves.to_csv(output_dir / "layer_curves.csv", index=False)
 
-    best_layer_final = layer_curves_final.groupby("layer")["auc_vs_all_controls"].mean().idxmax()
-    best_layer_mean = layer_curves_mean.groupby("layer")["auc_vs_all_controls"].mean().idxmax()
+    if layer_curves_final.empty or layer_curves_mean.empty:
+        # A one-set smoke cannot support held-out AUC: K-fold validation needs
+        # at least two distinct sentence sets. Keep the extraction artifact,
+        # mark the curve as unavailable, and use a fixed midpoint only for the
+        # smoke's downstream file/interface checks. Full runs still use AUC.
+        fallback_layer = int(layers[len(layers) // 2])
+        log(
+            "  Layer curves unavailable: fewer than two sentence sets; "
+            f"using midpoint layer {fallback_layer} for smoke outputs"
+        )
+        best_layer_final = fallback_layer
+        best_layer_mean = fallback_layer
+    else:
+        best_layer_final = layer_curves_final.groupby("layer")["auc_vs_all_controls"].mean().idxmax()
+        best_layer_mean = layer_curves_mean.groupby("layer")["auc_vs_all_controls"].mean().idxmax()
     best_layers = {"final_token": best_layer_final, "mean": best_layer_mean}
     log(f"  Best layer (final_token): {best_layer_final}")
     log(f"  Best layer (mean): {best_layer_mean}")
@@ -627,6 +677,14 @@ def main():
         log(f"Loading dataset: {path}")
         with open(path, "r", encoding="utf-8") as f:
             dataset["datasets"].update(json.load(f)["datasets"])
+    if SET_LIMIT:
+        for ds_name, ds_data in dataset["datasets"].items():
+            rows = ds_data["sentences"]
+            if ds_name.startswith(("S1", "S2", "ControlSupplement")):
+                ds_data["sentences"] = [row for row in rows if int(row["set"]) <= SET_LIMIT]
+            else:
+                ds_data["sentences"] = rows[: max(10, SET_LIMIT * 5)]
+        log(f"Pilot set limit: {SET_LIMIT}")
     log(f"Loaded {sum(len(d['sentences']) for d in dataset['datasets'].values())} sentences")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -664,6 +722,9 @@ def main():
     log(f"BATCH RUN COMPLETE in {elapsed}: {len(all_summaries)}/{len(MODELS)} done, {len(failed)} failed")
     for name, err in failed:
         log(f"  - {name}: {err}")
+
+    if failed:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

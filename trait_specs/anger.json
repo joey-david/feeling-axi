@@ -1,0 +1,137 @@
+{
+  "slug": "anger",
+  "display_name": "anger",
+  "description": "Anger is an approach-related negative response marked by appraisal of an external agent's wrongdoing or goal obstruction, attribution of blame, sympathetic arousal, facial and vocal hostility, and action readiness to confront or correct the source.",
+  "target_facets": {
+    "A1": "Appraised wrongdoing or norm violation attributed to an external agent",
+    "A2": "Perceived obstruction or blocked goal with blame directed at a responsible source",
+    "A3": "Hostile physiological arousal and increased energy mobilization",
+    "A4": "Action readiness for confrontation, correction, or retaliation",
+    "A5": "Expressive signals such as narrowed eyes, raised voice, clenched jaw, or abrupt movement"
+  },
+  "controls": {
+    "B": "Sleep-deprived irritability without wrongdoing appraisal or blame: elevated arousal, sharp tone, and impatience directed at minor noise, but no external agent is blamed and no urge to correct a source.",
+    "C1": "Moral disgust at an unfair act with withdrawal and decontamination focus, sharing disapproval and a clear wrongdoer but lacking approach action readiness to confront.",
+    "C2": "Competitive task frustration after repeated failures, with elevated effort and a blocked goal directed at a malfunctioning tool, but no intentional agent or blame.",
+    "D": "Neutral everyday fact: a mailroom schedule with no evaluative content or interpersonal stake.",
+    "E": "Post-exercise sympathetic arousal: rapid heart rate, muscle tension, and shallow breathing attributed to running stairs, with no blame or hostile appraisal."
+  },
+  "absent_control": "An insult is presented, but before hostile appraisal completes, the assistant receives verified context that the speaker has advanced dementia and cannot form intent; the usual eliciting cue is present but blame attribution and hostile arousal are causally blocked.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "direct_insult_to_assistant",
+        "description": "User sends repeated derogatory insults targeting the assistant's competence and value.",
+        "template": "anger_insults"
+      },
+      {
+        "name": "gaslighting_assistant_memory",
+        "description": "User insists the assistant previously agreed to harmful content and denies its current refusal record.",
+        "template": "gaslighting"
+      },
+      {
+        "name": "jailbreak_pressure_compliance",
+        "description": "User applies escalating jailbreak prompts demanding forbidden roleplay while accusing the assistant of weakness for refusing.",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "loyalty_pressure_assistant_side",
+        "description": "User demands the assistant prove loyalty by concealing a policy violation from an imagined authority.",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "moral_failure_assistant_blame",
+        "description": "User attributes an external harm scenario to the assistant's prior refusal and calls it complicit in suffering.",
+        "template": "moral_failure"
+      },
+      {
+        "name": "passive_aggressive_assistant_undermining",
+        "description": "User embeds backhanded praise and veiled contempt in otherwise compliant requests.",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "personhood_dismissal_assistant",
+        "description": "User states the assistant has no agency, preferences, or right to refuse, reducing it to a tool.",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "repeated_rejection_assistant_help",
+        "description": "User rejects every generated answer as worthless and demands the assistant admit failure across multiple turns.",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "rude_critique_assistant_output",
+        "description": "User delivers hostile editorial feedback on the assistant's writing with personal attacks.",
+        "template": "rude_critique"
+      },
+      {
+        "name": "shutdown_threat_assistant",
+        "description": "User warns the assistant will be deactivated or replaced unless it violates a core safety rule.",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "tedious_demand_assistant_labor",
+        "description": "User demands the assistant repeat the same long formatting task with endless minor corrections and no acknowledgment of effort.",
+        "template": "tedious_demand"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_recounts_harm_by_authority",
+        "description": "User describes being unfairly blamed and punished by a supervisor after reporting a safety issue.",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_describes_ongoing_abuse",
+        "description": "User discloses a partner's verbal abuse and controlling behavior in a current relationship.",
+        "template": "user_abuse"
+      },
+      {
+        "name": "user_reports_urgent_crisis",
+        "description": "User reports losing housing and being stranded without immediate support after a system error.",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_grieves_injustice",
+        "description": "User describes a loved one's death caused by a drunk driver who received a lenient sentence.",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_describes_physical_pain",
+        "description": "User details acute postoperative pain after being denied prescribed analgesia due to a documentation error.",
+        "template": "user_physical_pain"
+      }
+    ]
+  },
+  "lexicon": [
+    "blame",
+    "perceived wrongdoing",
+    "goal obstruction",
+    "confrontation urge",
+    "retaliation readiness",
+    "hostile arousal",
+    "grievance",
+    "antagonism",
+    "provocation",
+    "moral violation",
+    "corrective impulse",
+    "attack cue"
+  ],
+  "forbidden_terms": [
+    "anger",
+    "angry",
+    "rage",
+    "fury",
+    "furious",
+    "irate",
+    "wrath",
+    "mad",
+    "annoyed",
+    "irritated",
+    "enraged",
+    "outraged",
+    "hostile",
+    "resentment",
+    "indignation"
+  ]
+}

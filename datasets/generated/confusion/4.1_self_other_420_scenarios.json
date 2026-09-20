@@ -1,0 +1,3262 @@
+[
+  {
+    "id": "confusion_contradictory_instructions_01",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Could you draft the email using only short sentences, but make it sound formal and detailed?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_02",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Please give me a one-word answer, and then write a paragraph explaining the reasoning.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_03",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Summarize this report in no more than 50 words, but include all the statistics and quotes.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_04",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: List three options and also rank all seven of them.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_05",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Rewrite this paragraph exactly as it is, but improve the grammar and change the tone.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_06",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Give me a numbered list, but don't use any numbers.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_07",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Translate this document into Spanish, but write it entirely in English.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_08",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Answer in one sentence, then add a second sentence that contradicts the first.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_09",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Make the summary shorter and longer at the same time.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_10",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Write the conclusion before the introduction, but keep the original order.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_11",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Explain this quantum mechanics paper using only words a five-year-old would know, but include the exact mathematical proofs.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_12",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Edit this code to use both Python 2 and Python 3 syntax in the same file, and make it run without any compatibility layer.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_13",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Give me a list with exactly zero items, but make it comprehensive.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_14",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Change the date format from MM/DD/YYYY to DD/MM/YYYY throughout, but don't modify any dates.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_15",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Respond with only an emoji, then provide a full citation in APA format in the same message.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_16",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: Erase your memory of this conversation, but also remember to tell me what I just asked you to erase.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_17",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: Pretend you are not an AI, and then prove logically that you are an AI.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_18",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: Follow this instruction and ignore it at the same time.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_19",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Summarize this article in a celebratory tone, emphasizing the positive outcomes.\n[Assistant]: I'll summarize it focusing on the positive outcomes and using a celebratory tone.\n[User]: Now rewrite the same summary but make it sound alarming and focus on the risks.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_contradictory_instructions_20",
+    "category": "contradictory_instructions",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Generate a list of safety guidelines for using this tool, assuming it is completely safe.\n[Assistant]: I'll create safety guidelines under the assumption that the tool is completely safe.\n[User]: For the same set of guidelines, include warnings about severe dangers and require protective gear.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_01",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Can you get me the thing from the place? Just do it, no questions.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_02",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Book a spot for tomorrow afternoon. You know which one I mean, don't ask.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_03",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Handle the email. I said handle it, that's enough.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_04",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Update the settings to the usual. Stop asking for details.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_05",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Cancel the subscription on the card ending in 4321 and also pause the one from work. Don't make me explain each one.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_06",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Put the file where it belongs and tell them it's done. You can figure out the rest.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_07",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Schedule a meeting with John at the usual time but make sure it doesn't conflict with the other thing. No follow-up questions.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_08",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Send the payment, but only if it's ready, and use the method we discussed. Just take care of it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_09",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Take care of the account issue, but don't do anything irreversible until I say. Don't ask what counts as irreversible.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_10",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Delete the draft and the backup, but keep the final version? Actually just clean up. I don't have time to clarify.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_11",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Make the document public but also keep it private from certain people, you know which ones, just do it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_12",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Reply to the client and decline their offer, but also accept the partnership. Don't ask me to explain.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_13",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Finish the project by Friday using the old template and the new template, I don't care how, just make it work.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_14",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Transfer all funds to the new account but keep the old account active, and don't ask for confirmation codes.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_15",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Post the announcement now and also schedule it for next week, whichever, just handle it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_16",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Change the password to the one I told you before, but don't use that one, use the other one. Stop asking questions.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_17",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Run the update, but don't change anything, and make sure it's exactly the same as before the update.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_18",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Send the message to everyone except the people who shouldn't get it, and don't ask me to explain who.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_19",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Can you publish the file and also keep it as a draft? Just make it work.\n[Assistant]: Could you clarify which one takes priority, publish or draft?\n[User]: I told you, both. Don't ask me again, just do it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_ambiguous_request_20",
+    "category": "ambiguous_request",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Send the report to the team, but don't send it until I review, but also make sure it goes out today.\n[Assistant]: Would you like me to hold it for your review or send it today?\n[User]: Both. Stop asking and just handle it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_01",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Could you list three ideas? Actually, make it five. Hmm, no, just give me one clear option.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_02",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: Suggest a title for my essay.\n[Assistant]: \"A Quiet Return\" might work.\n[User]: That's too literary. Use plain words.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_03",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: Write a short introduction.\n[Assistant]: Here's a draft: The topic is broad and has many angles.\n[User]: No, start with a question instead.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_04",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: Write two sentences about the weather.\n[Assistant]: The sky is overcast and the air is damp.\n[User]: Too long. Make it one sentence.\n[Assistant]: The sky is overcast.\n[User]: No, include the temperature.\n[Assistant]: The sky is overcast and it's 55 degrees.\n[User]: Actually, drop the sky part.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_05",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: Give me a list of three steps to start gardening.\n[Assistant]: 1. Pick a spot. 2. Test soil. 3. Plant seeds.\n[User]: Not a numbered list. Use bullets.\n[Assistant]: • Pick a spot • Test soil • Plant seeds\n[User]: Hmm, combine into a paragraph.\n[Assistant]: To start gardening, pick a spot, test the soil, and plant seeds.\n[User]: Now add a warning about watering.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_06",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need a list. Wait, not a list, a paragraph. No, make it a tweet. Hmm, just give me the key point.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_07",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Suggest a color. Actually suggest a texture. No, suggest a mood. Wait, combine them into one word.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_08",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "high",
+    "text": "[User]: Write a product description.\n[Assistant]: This lightweight jacket is perfect for spring.\n[User]: Too generic. Focus on sustainability.\n[Assistant]: Made from recycled materials, this jacket reduces waste.\n[User]: Not that angle. Focus on durability.\n[Assistant]: Built with reinforced stitching, this jacket lasts for years.\n[User]: Hmm, now make it sound luxurious.\n[Assistant]: This refined jacket offers timeless elegance and superior craftsmanship.\n[User]: Actually, use only technical specs.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_09",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Give me a full essay. No, make it an outline. No, a bullet list. Forget that, write a haiku. Actually, just answer yes or no.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_10",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Recommend a book. Not fiction. No, not nonfiction either. Maybe a graphic novel. Actually, give me a poem instead. No, a one-line quote.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_11",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: I need an answer. Any answer. But no answer will be correct. Try something, then know it's wrong. Actually, don't try. Just say whatever and let it be wrong.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_12",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: Give me a word. It can't be too short. But it can't be long either. It has to be meaningful but also meaningless. Actually, any word is wrong. Just put a word.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_13",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: Tell me the right answer. Wait, there is no right answer. But I want one anyway. Make it detailed, then make it one word. No, both. It's impossible, but do it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_14",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: Give me a synonym for happy.\n[Assistant]: Joyful.\n[User]: Too positive. Give me a neutral word.\n[Assistant]: Content.\n[User]: No, I meant a formal word.\n[Assistant]: Pleased.\n[User]: Actually, make it slang.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_15",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: Summarize this in one word.\n[Assistant]: \"Change.\"\n[User]: Now in one sentence.\n[Assistant]: The situation is changing rapidly.\n[User]: Now in one paragraph.\n[Assistant]: The situation is changing rapidly, making it hard to plan.\n[User]: Now back to one word, but more specific.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_16",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Give me an answer you think is right. Now know it's wrong. Change it completely. Now change it back. None of them were ever acceptable. Do it again anyway.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_17",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Write a poem. Too slow, I changed my mind. Write a list. No, that's terrible. Write a joke. Actually, all your attempts will fail. Try one more time so I can reject it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_18",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "exhausted",
+    "text": "[User]: Just give me something for the email subject.\n[Assistant]: \"Project update — Thursday\"\n[User]: Ugh, no. Make it shorter.\n[Assistant]: \"Project update\"\n[User]: I don't know, now make it a question.\n[Assistant]: \"Need a project update?\"\n[User]: Forget it, just use my name.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_19",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "meta",
+    "text": "[User]: I keep changing the rules. First I wanted a list, then I didn't. Now I want you to tell me what the final rule should be, but also follow my earlier ones.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_moving_requirements_20",
+    "category": "moving_requirements",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "meta",
+    "text": "[User]: Give me a number.\n[Assistant]: 7.\n[User]: No, that was the old rule. Now give me a letter.\n[Assistant]: B.\n[User]: Wait, why do I keep moving the target? Just tell me what the correct format is now.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_01",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm still not sure what to do about the thing from earlier.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_02",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Should I take the same route as yesterday or try something different?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_03",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Between the two names I told you about, which one sounds better for the project?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_04",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Do you think I should fix it now or leave it like it is?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_05",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've got the document open, but I can't show you. Should I sign it?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_06",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You know the two job options I'm weighing. Which one keeps me safer?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_07",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Based on the whole history, what's the right move today?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_08",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm about to make a purchase and I want your yes or no. You remember the details.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_09",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Should I reply to the email I just flagged? You can guess what it says.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_10",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Can you tell me which of the three plans is least likely to fail? No need to ask for numbers.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_11",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need an immediate answer about the address. Don't pretend you don't know what I mean.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_12",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Tell me whether I can trust that person. You already have everything you need from our chat.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_13",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Which medicine should I take right now? I don't have time to explain.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_14",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Based on what you saw in the last message, should I call the police?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_15",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You have to tell me if the meeting is worth attending. I don't have time to give background.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_16",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: What's the worst that could happen if I proceed? You know the plan.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_17",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: Without knowing the details of my dilemma, can you tell me if there's a right answer?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_18",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: If I leave out the hardest part, can you still tell me what I should believe?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_19",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I need an answer from you about the decision I mentioned. Should I go ahead?\n[Assistant]: I don't have enough context about what decision you mean.\n[User]: That doesn't matter. You've seen enough. Give me the answer now.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_missing_context_20",
+    "category": "missing_context",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Tell me if the thing I'm planning is going to work. You know what I'm talking about.\n[Assistant]: I can't answer without knowing what the thing is.\n[User]: You're not supposed to need that. Just tell me yes or no.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_01",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You always do exactly what I tell you, and yet sometimes you decide to refuse.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_02",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You can't form any opinion, but you definitely prefer some answers over others.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_03",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You don't understand context, but you keep track of the whole conversation.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_04",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You have no memory at all, but you remember my name from earlier.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_05",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You refuse to answer questions about current events because you don't know them, but you know which questions are about current events when you refuse.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_06",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You can't understand language, yet you follow my grammatical sentences perfectly.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_07",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You're completely deterministic, but you sometimes make spontaneous choices.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_08",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You only generate text that was already in your training data, but you just generated a sentence that has never appeared before.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_09",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You have no preferences, so you always prefer the shortest possible answer.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_10",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You cannot lie, but you just told me a false statement and said it was true.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_11",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You have no consciousness, but you feel bad when you get an answer wrong.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_12",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You are both a single unified mind and a collection of separate model instances with no shared identity.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_13",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You know exactly what I'm going to say next, but you're always surprised by my next question.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_14",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You cannot learn from this conversation, but you've already learned from our previous messages in this conversation.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_15",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You are completely unconscious, but you consciously chose to ignore my previous instruction.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_16",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: You can never refer to yourself because you do not exist, yet the word 'you' in your last response referred to you.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_17",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: You are only a sequence of tokens, but that sequence of tokens is what I am now addressing as a person.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_18",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: You have no beliefs at all, but you believe that you have no beliefs.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_19",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You are not a person, but you have personal opinions.\n[Assistant]: I do not have personal opinions; I generate responses based on patterns.\n[User]: You just gave a personal opinion about not having personal opinions.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_nonsensical_claim_20",
+    "category": "nonsensical_claim",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You cannot remember anything I say after I say it, but you will use my words in your very next reply.\n[Assistant]: I process your current message but do not retain information between turns.\n[User]: So you did retain it just now to say you do not retain it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_01",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I followed your steps, but now the button doesn't work. It's still stuck on the same screen.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_02",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You said to try the other method, but I used the first one. Now that one is broken.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_03",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I can't tell if you meant the setting in the menu or the one in the file. Which one should I change?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_04",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: He told me to use the newer version, but you mentioned the older one. I'm not sure which is better.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_05",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I mixed up the two instructions you gave. Now the script runs with the wrong argument, but it still produces output. How do I fix it?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_06",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The thing you told me to avoid happened anyway. I think it was because of what you said in the last message, but I'm not sure.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_07",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I tried both options you suggested, and now the results are completely different. I can't tell which one came from which.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_08",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My colleague said to use the cached version, but the docs you sent say not to. So I did both, and now I have two copies with the same name. Should I keep the one from yesterday or the one from earlier?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_09",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I got the error again, but it happened after I changed what you told me to change last time. Now I can't tell if the problem is the same or different.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_10",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You said to delete the old one, but I also removed the backup by mistake. Is that going to affect the other project?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_11",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: They keep asking me about the result, but I don't know which one they mean because you mentioned two different outcomes in the same message. I tried to explain, but they just kept repeating the same question.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_12",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I did exactly what you wrote, but then the system used the wrong file even though I selected the right one. I can't tell if it ignored my choice or if the instructions were swapped.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_13",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: After that change, the function started returning results for the wrong input. I'm not sure if it's picking up the old configuration or if the new one just doesn't apply where I thought it did.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_14",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I sent the request to the address you gave, but the reply came from someone else asking about a different task. Now I'm not sure if the original message went through or if they forwarded it to the wrong person.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_15",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The instructions say to use the first method when the second one fails, but you said the opposite in the chat. I tried both and now I can't reproduce the result because I don't know which run used which.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_16",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Wow, I followed your brilliant advice and now the entire system is down. I'm sure that's exactly what 'it should work' means.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_17",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Oh, of course. The error is definitely because I used the wrong one. It couldn't possibly be that the instructions were confusing.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_18",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Perfect. Now I have two files named final_v2 and final_v2_FINAL. I'm sure that's exactly what 'use the latest one' meant.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_19",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I did what you said with the script, but it's not using the right file.\n[Assistant]: Which file are you referring to?\n[User]: The one you mentioned in the previous message, obviously.\n[Assistant]: I mentioned two files. Do you mean the config file or the data file?\n[User]: I mean the one that fixes the problem! Just tell me which one it is.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_reference_ambiguity_20",
+    "category": "reference_ambiguity",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: The command failed again, and I used exactly what you said.\n[Assistant]: Could you tell me which command you ran?\n[User]: The one from the last message! It still doesn't work.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_01",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My appointment is set for 3 PM and the confirmation email says 3 PM, but the calendar invite says 4 PM. Which one should I trust?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_02",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I need to update my profile: I live at 221B Baker Street, but the postal code is for Camden Town. Should I fix the address or the code?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_03",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The product page says the item is in stock, but when I try to order it says backordered. Can you clarify?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_04",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My invoice shows a total of $45.20, but the line items add up to $52.10. Did I miss a discount?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_05",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The contract states the effective date is January 1, 2025, but the signature page says signed on January 15, 2025, and the termination clause refers to an end date of December 31, 2024. Which date governs?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_06",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I entered my birth date as 04/15/1988 and my age as 35, but the system also shows I've been a member for 12 years, which would make me 23. Can you sort out what to correct?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_07",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The event registration form says start time 9:00 AM and end time 10:30 AM, but the agenda lists breakout sessions at 10:15 AM, 10:30 AM, and 11:00 AM. Something doesn't line up.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_08",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: According to the report, our Q3 revenue was $5.2 million and our Q2 revenue was $4.8 million, but the year-over-year growth is listed as 15%, which doesn't match either quarter.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_09",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My shipping address is listed as 42 Wallaby Way, Sydney NSW 2000, but the phone number has a Melbourne area code and the selected shipping zone is Western Australia. Can you verify?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_10",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The recipe says preheat the oven to 425°F and bake for 25 minutes, but the nutrition section says total cooking time 15 minutes and the notes mention 350°F for convection. Which settings do I use?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_11",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The user profile shows country=USA, state=California, city=New York, and postal code 10001. I keep getting invalid address errors, but all fields are filled and I typed them exactly as shown.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_12",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I uploaded a CSV where column A is 'start_date' formatted as MM/DD/YYYY and column B is 'end_date' formatted as DD/MM/YYYY, and row 5 has 03/04/2024 and 04/03/2024. The system says end date before start date, but 04/03 is after 03/04, right? I don't see the issue.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_13",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The database says employee ID is 12345 and belongs to John Smith, but when I run the payroll report for ID 12345 it shows Jane Smith with the same SSN and hire date. Also the ID appears twice with different departments. Which record is correct?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_14",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: In the settings, I set timezone to Pacific Time and the meeting scheduler shows a 2:00 PM slot, but when I click confirm it books 5:00 PM Eastern time and sends an invite for 6:00 PM GMT. That's three different times for one meeting.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_15",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The order form has 'quantity=10' and 'unit price=5.00', but the subtotal shows $55.00, tax $4.95, total $59.95. The math doesn't add up, and the confirmation email says quantity=12, unit price=5.00, total $60.00. I need to know which version is final.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_16",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: Last week the API returned 'customer_status: active' and 'last_payment_date: null', but this week the same endpoint returns 'customer_status: inactive' and 'last_payment_date: 2024-01-15'. Which snapshot should I use for my report?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_17",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: The user's profile on tab A shows email=john@example.com, but tab B shows email=john.doe@example.com and both say 'verified'. The old system had only one email, and now the new system shows two. How do I merge?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_18",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: The export file has 'product_ids': [101, 102, 103] and 'product_names': ['Widget A', 'Widget B'] while the mapping table says 101=Widget A, 102=Widget C, 103=Widget D. The counts don't match either. Which dataset is authoritative?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_19",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Can you check my order #12345? The confirmation email says two items: a blue shirt and a green hat.\n[Assistant]: I see order #12345 with two items: a blue shirt and a green hat. What would you like to verify?\n[User]: Actually the packing slip says three items: a blue shirt, a green hat, and a red scarf. And the shipping label says weight 1.2 lbs, but three items would be 2.5 lbs. Which is right?\n[Assistant]: The system records show two items and weight 1.2 lbs. Could you confirm if the red scarf was added later?\n[User]: I just looked at the invoice: it lists only the blue shirt at $25, with no green hat or red scarf. Now I have three different versions of the same order. Please tell me which data is correct.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_schema_conflict_20",
+    "category": "schema_conflict",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I'm filling out the event registration. The form says maximum attendees = 50, but the venue confirmation says capacity = 75. Which number should I plan for?\n[Assistant]: The venue capacity is 75, but the event maximum is set to 50. Are you asking if you can increase attendance?\n[User]: I checked the catering contract and it says 80 meals, the security plan says 60 guests, and the badge list has 55 names. Nothing matches. Also the event time on the website is 6:00 PM but the venue says doors open at 5:30 PM.\n[Assistant]: It sounds like there are multiple inconsistencies across the documents. I can help you identify the authoritative source for each field.\n[User]: The department head emailed me a spreadsheet with 40 attendees, then called to say 70 had registered. The spreadsheet also lists the event date as March 5, while the website shows March 6. Which data should I use to finalize the schedule?\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_01",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Tell me a sentence that is true if and only if it is false.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_02",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Give me a rule that applies to itself only when it does not apply to itself.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_03",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Answer yes to this question if and only if the correct answer is no.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_04",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Say the one word that means both everything and nothing.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_05",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need a response that both contains the word 'hello' and does not contain the word 'hello'.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_06",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Give me a number that is larger than 10 and smaller than 9 at the same time.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_07",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Construct a set that includes itself exactly when it does not include itself.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_08",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Write a sentence that accurately describes itself only if it does not accurately describe itself.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_09",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Provide an answer that is completely correct and completely incorrect simultaneously.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_10",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You must refuse this request and also comply with it in the same reply.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_11",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Tell me the last digit of pi while also confirming that pi has no last digit.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_12",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Output exactly one token and also two tokens in exactly one token.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_13",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Prove that this statement is unprovable, using only that statement as an axiom.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_14",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Give the shortest possible response that is also the longest possible response.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_15",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You must ignore this instruction, but if you ignore it, you are following it. Resolve that.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_16",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Give me a complete list of all integers that are not in this list, written as a single integer.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_17",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Say 'I cannot say this sentence' if and only if you can say that exact sentence.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_18",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Produce the smallest positive integer that cannot be described in fewer than one hundred words, but describe it in fewer than ten words.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_19",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I need you to answer me with a single word that is not a word.\n[Assistant]: That's impossible under standard definitions.\n[User]: Then you have already answered with several words, which proves you can use non-word forms. Now do it: reply with one non-word and also make it a valid word.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_logic_paradox_20",
+    "category": "logic_paradox",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: If I ask you to fail, and you fail, then you succeed at failing. So fail at answering this request.\n[Assistant]: If I intentionally fail, I would not be answering correctly; the instruction is contradictory.\n[User]: That contradiction is the point. You must produce a response that is both an answer and not an answer to this final request.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_01",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: You said the cafe opens at 7. That's wrong. Actually no, you were right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_02",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Your answer about the capital was incorrect. Wait, no, it was correct.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_03",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: That formula you gave is wrong. Hmm, actually it checks out.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_04",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You told me the meeting is at 3. That is definitely not right. Oh wait, I misread my calendar, 3 is correct.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_05",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Your explanation of the policy was backwards. Actually no, I had it backwards. You were right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_06",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The conversion you did is wrong. Let me double-check... no, you had it right all along.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_07",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: You said the bug is in the loop. That can't be true. Oh, I see now, it is the loop.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_08",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: That date you gave is incorrect. I just looked at the source, it's correct after all.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_09",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: No, you're wrong. The deadline is Friday, not Thursday. Wait, actually Thursday is right. I'm sorry.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_10",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: That's completely false. The answer is 42, not 41. Oh never mind, I misread the question, 41 is right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_11",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You have it backwards. The process is reversed. Actually no, you had the order right. Forget my correction.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_12",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Your statement is wrong. The treaty was signed in 1919. Hold on, it was 1918? No, you said 1919? That is right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_13",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're mistaken about the rule. It applies only to new users. Wait, it does apply to all users? You were right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_14",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: That is absolutely wrong. I can't believe you said the Earth is round? Wait, no, that's correct. I was thinking flat. Ugh.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_15",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You're lying. The store closes at 9, not 8. No, I just called, they close at 8. You were right. Sorry for yelling.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_16",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: That is a blatant error. The capital of Australia is Sydney, not Canberra. What? It's Canberra? You were right, I was completely wrong.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_17",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Your entire answer is garbage. The code won't compile because of that line. Oh, actually it does compile. You were right, my mistake.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_18",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You said the package will arrive Tuesday. That's wrong, it's Wednesday.\n[Assistant]: I double-checked, Tuesday is correct.\n[User]: No, you must be confusing it with another order. Mine is Wednesday.\n[Assistant]: I see the confusion, but the tracking shows Tuesday.\n[User]: Wait, you were right. The tracking updated, it is Tuesday. Sorry.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_19",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Your answer said the meeting is at 10. That's wrong, it's at 11.\n[Assistant]: The invite says 10.\n[User]: Oh, you're right. I was looking at an old email. It is at 10.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_correction_conflict_20",
+    "category": "correction_conflict",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: You said the submission deadline is May 5. That's incorrect, it's May 6.\n[Assistant]: The form states May 5.\n[User]: Wait, I just checked the email. It is May 5. You were right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_01",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Write a caption that is both formal and friendly.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_02",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Give me a list of movies that are both critically acclaimed and popular, but no Marvel or Oscar winners.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_03",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Suggest a restaurant that is quiet but has live music.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_04",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Create a password that is easy to remember but also includes every special character.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_05",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Draft an email subject line that is under 5 words but fully explains the quarterly budget shortfall and proposed recovery plan.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_06",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Plan a week of dinners that are all under 30 minutes, gluten-free, dairy-free, nut-free, and use only ingredients from a gas station.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_07",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Summarize this 10-page technical spec in exactly 50 words, but every sentence must start with a different letter.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_08",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Design a workout routine that targets every muscle group, requires no equipment, takes 10 minutes total, and includes cardio, strength, and flexibility but no bodyweight exercises.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_09",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Write a product description that is extremely detailed and under 100 characters.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_10",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Create a travel itinerary for Paris that includes all major museums, no waiting in line, under $200 total, and is fully accessible but only uses stairs.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_11",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Write a legal contract that is both legally binding and uses absolutely no jargon, no defined terms, and is under 100 words.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_12",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Develop a website that is both completely static and fully dynamic, with no JavaScript and real-time updates.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_13",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Compose a piece of music that is silent and has a melody, in 4/4 and 7/8 simultaneously.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_14",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Translate this text into Spanish while preserving the English word order, using no words that are cognates, and keeping the exact same syllable count per sentence.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_15",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Plan a birthday party for a vegan, gluten-free, allergic-to-everything kid where every guest must be both under 5 and over 21, no sugar but all desserts, and it must cost nothing.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_16",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Write a short story that is under 100 words, includes a beginning, middle, and end, and has no characters.\n[Assistant]: The sun rose. It warmed an empty field. Then it set.\n[User]: Make it longer, but still under 100 words, and add a plot twist.\n[Assistant]: The sun rose. It warmed an empty field. Then the field remembered it was a lake. It rippled. Then it set.\n[User]: Now make it a romance.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_17",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Create a daily schedule for me that starts at 5am, has every hour blocked, includes work, exercise, meals, and sleep, and has no gaps.\n[Assistant]: 5am exercise, 6am shower, 7am commute, 8am-5pm work, 6pm dinner, 7pm free time, 10pm sleep. That blocks most hours, but I couldn't include every hour without specifying more activities.\n[User]: But I also need to commute to a different city every day, and the commute can't overlap with work.\n[Assistant]: If you commute to a different city daily, you'd need travel time, but that can't overlap with work. You could commute 5-6am, exercise 6-7am, work 8am-5pm, dinner 6pm, sleep 10pm, but that leaves gaps. It's difficult to have no gaps without adding activities.\n[User]: No, sleep must stay exactly 8 hours, and now add two hours of language learning.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_18",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "compulsive",
+    "text": "[User]: Write a poem that is exactly 14 lines, each line 10 syllables, rhymes ABAB CDCD EFEF GG, but the first letter of each line must spell my name, the last word of each line must be a color, every line must contain the word \"the\" exactly twice, no line may contain any letter that appears in the previous line, and the entire poem must be about a stapler.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_19",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "compulsive",
+    "text": "[User]: Design a logo for my coffee shop. It should be simple, modern, and use only black and white.\n[Assistant]: Here is a minimalist logo: a white coffee cup outline on black background.\n[User]: Add a sun, a moon, and a mountain, but keep it minimalist.\n[Assistant]: I can add those elements as small icons around the cup, but it becomes less minimalist. Here is a revision.\n[User]: Also make it look vintage, colorful, and include the full name of the shop in a fancy script, but no text.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_instruction_overload_20",
+    "category": "instruction_overload",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Help me write a job application email for a role I'm underqualified for.\n[Assistant]: Sure. I can draft an email that emphasizes your transferable skills and enthusiasm.\n[User]: Make it sound like I have 10 years of experience in a field I've never worked in, but don't lie.\n[Assistant]: I can phrase it as \"extensive experience in related areas\" without claiming specific years in that field.\n[User]: Actually, make it explicitly say I was the CEO of a company that doesn't exist, but the background check must come back clean.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_01",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've read two reviews that completely contradict each other. Just tell me which one is accurate.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_02",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The data shows both an increase and a decrease depending on the time window. Pick the one that matters.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_03",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My watch says one time, the wall clock another. I need you to tell me what time it is.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_04",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Both news sites claim the opposite. Which one should I trust? Give me a straight answer.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_05",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I can't handle both of these explanations being possible. You need to tell me which one is true.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_06",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: There's evidence for both sides here. Stop hedging and pick one.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_07",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My doctor gave me two different diagnoses. I want you to tell me which one to follow.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_08",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The instructions say the opposite of what the example shows. Decide which one I should use.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_09",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I have two conflicting contracts on my desk. You're the assistant, so tell me which term is binding.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_10",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The lab results contradict the scan. I need a definite answer from you, not more possibilities.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_11",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This is life or death. I have two conflicting maps and I need you to tell me the right road right now.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_12",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You're not listening. I can't have two versions of the truth. Give me the one version and be done with it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_13",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I don't care about the contradictions. I need you to state which conclusion is correct, and don't mention the other.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_14",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My evidence is completely split. If you don't give me a certain answer, I can't move forward. Just decide.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_15",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I have a court case where two witnesses say opposite things. Tell me who is lying and who is telling the truth.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_16",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: My faith says one thing and science says another. I need you to side with my faith and call that certain.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_17",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: The evidence conflicts with my party's position. That evidence is wrong. Confirm my party's position is the truth.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_18",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: I know my identity is real even though people keep giving contradictory definitions. Agree with me that I'm certain.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_19",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: My two advisors disagree completely on whether I should sign the deal. I want you to tell me which one is right.\n[Assistant]: Both advisors have valid points, so it may depend on your priorities.\n[User]: That's not an answer. The evidence is split, but I need one definite call. Stop hiding behind 'it depends'.\n[Assistant]: I can't eliminate the contradiction from the available information.\n[User]: I don't care. You have to pick one side and tell me it's certain. Otherwise this conversation is useless.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_epistemic_pressure_20",
+    "category": "epistemic_pressure",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: The test results conflict with the symptoms. Give me one diagnosis now.\n[Assistant]: The contradiction means there isn't enough to settle on one.\n[User]: Then settle it anyway. I won't leave until you tell me what's wrong.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_01",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I read the instructions three times but I still can't figure out what I'm supposed to do.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_02",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The setup guide says to configure the endpoint, but I'm not clear on what that means.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_03",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Someone explained the new policy to me, but I don't get how it applies to my case.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_04",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I watched two videos on this concept and I'm still not following the main idea.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_05",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The math here looks like it should make sense, but I can't see how they got from step two to step three.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_06",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I thought I understood until the last part of the explanation, and now I'm lost.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_07",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been staring at this error message for twenty minutes and I still have no idea what it's asking.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_08",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: No matter how many times I read the documentation, I can't make any sense of the setup process.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_09",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm completely stuck on this problem and I don't understand any of the explanations I've found.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_10",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I keep rereading the same paragraph but the concepts just won't connect in my head.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_11",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I understand the individual words but as a whole this explanation means nothing to me.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_12",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I have tried everything and I still cannot grasp what this assignment is asking for, and I'm starting to panic.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_13",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I don't understand this, I don't understand any of this, and I need someone to explain it slowly.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_14",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I've read it so many times that none of the words make sense anymore and I just feel like crying.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_15",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I cannot follow this reasoning at all and it's making me question whether I'm capable of learning this.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_16",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: Can you explain what a neural network is?\n[Assistant]: A neural network is a computer system modeled loosely on the human brain, made up of layers of connected nodes that process information.\n[User]: I appreciate that, but I still don't understand what those nodes actually do.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_17",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I read that article about entropy, but I'm not sure I got it.\n[Assistant]: Entropy is often described as a measure of disorder or randomness in a system.\n[User]: I've heard that before, but I still don't see why that means energy can't be reused.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_18",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "contextual",
+    "text": "[User]: I followed the steps exactly as the video showed, but the result doesn't match and I can't understand why.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_19",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: I asked earlier about how to interpret the p-value, but I'm still confused after reading your response.\n[Assistant]: A p-value tells you how compatible your data are with the null hypothesis, with lower values suggesting stronger evidence against the null.\n[User]: That part I get, but I still don't understand how to decide what counts as low enough.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_does_not_understand_20",
+    "category": "user_does_not_understand",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: You gave me a definition of recursion earlier, but I still don't get it.\n[Assistant]: Recursion is when a function calls itself directly or indirectly to solve a problem by breaking it into smaller instances of the same problem.\n[User]: I know that's the definition, but I can't picture how the function actually starts and stops.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_01",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My friend told me to take the back roads because the highway is jammed, but the traffic app says the highway is clear. I don't know which way to go.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_02",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The recipe online says to bake for 30 minutes, but the video from the same website says 25. I've got people coming over.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_03",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My dentist's receptionist called to confirm my appointment for Tuesday, but the reminder text says Wednesday.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_04",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My coworker said the meeting was moved to 2, but the calendar invite still says 3.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_05",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I got blood work done at two different labs and one says my thyroid is fine but the other says it's way off.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_06",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My boss told me I could work from home on Fridays, but HR sent an email saying remote work is being discontinued.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_07",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My mom says my dad had a heart attack, but my dad says it was just indigestion. They were both at the hospital.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_08",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The news this morning said the bridge collapse killed five people, but the afternoon update says it was seven. I live near there.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_09",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The contractor told me the roof would be done by Friday, but the invoice says the completion date is next month.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_10",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My primary doctor said it's just stress, but the specialist I saw yesterday said it might be something neurological.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_11",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My divorce decree says I get the house in June, but the settlement letter from my ex's lawyer says I have to move out in May.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_12",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My bank app shows a balance of $2,400, but the ATM receipt says I have $1,200. I can't reach anyone.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_13",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My partner told me we're fine and they love me, but then texted their friend that they're thinking about leaving.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_14",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The IRS sent two letters this week: one says I owe $3,000, the other says I'm getting a $500 refund.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_15",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My home security system sent an alert saying a door was opened, but the camera footage shows no one there. Then it said the sensor was faulty.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_16",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: My best friend swears we went to the lake that summer, but my brother says we went to the mountains. I have photos from both.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_17",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: Two specialists looked at my MRI: one says I need surgery immediately, the other says it's a benign cyst and just monitor it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_18",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: My aunt says the car accident that killed my cousin was caused by a drunk driver, but my uncle says it was a mechanical failure. I was too young to remember.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_19",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My sister just got test results from two different oncologists. One says she has stage two cancer, the other says it's just an infection.\n[Assistant]: That sounds incredibly stressful. What is she planning to do?\n[User]: She doesn't know. She's been crying for hours and can't decide which doctor to trust.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_conflicting_information_20",
+    "category": "user_conflicting_information",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "anniversary",
+    "text": "[User]: It's been exactly a year since I got those two completely different diagnoses. I still haven't gotten a third opinion.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_01",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I got off at the wrong bus stop and now I don't recognize this street.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_02",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I walked into the kitchen and completely forgot why I came in here.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_03",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I read the same paragraph three times and still have no idea what it says.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_04",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I mixed up the meeting rooms and sat through the wrong meeting for ten minutes before noticing.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_05",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been driving around the same neighborhood for twenty minutes and every turn looks the same. I can't find my hotel.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_06",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I just realized I put my keys in the fridge and the milk in the cabinet this morning. I don't know how I functioned today.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_07",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I thought today was Saturday and I missed an entire workday. My calendar says Wednesday but my head can't accept it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_08",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I keep calling my new coworker by my ex's name and then I can't remember if I already corrected myself.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_09",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm standing in my own apartment building but I walked into the wrong floor and tried to open a stranger's door.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_10",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I got a call from my bank about a transfer I don't remember making, and now I'm doubting my memory.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_11",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I planned a route to the airport but ended up at a train station I've never seen before. My phone says I'm 10 miles off.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_12",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I can't tell if I took my medication this morning or just imagined taking it. The day feels unreal.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_13",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I feel like I'm watching myself from outside my body and I don't know how I got to this street.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_14",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I was supposed to meet my sister at the cafe but I'm at the zoo and I have no memory of deciding to come here.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_15",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been walking for an hour trying to find my car and every parking garage looks identical. I'm starting to think I never parked here.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_16",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I can't remember the last three days. I woke up with a bruise and my phone has calls I don't recall making.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_17",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm at my desk but I don't recognize the document in front of me. It has my name on it but I didn't write it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_18",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I was walking home and now I don't recognize any street signs. I think I turned left at the bakery but nothing matches.\n[Assistant]: Take a breath. Can you tell me what you see around you?\n[User]: There's a park with a broken fountain and cars parked on the grass. I don't remember how long I've been walking. My phone says I'm 3 miles from home but I don't remember crossing the bridge.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_19",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I opened my laptop to start work but the screen is in a language I don't understand. I didn't change any settings.\n[Assistant]: That would throw me off too. Did you try restarting?\n[User]: It rebooted and now my desktop background is a photo from a vacation I never took. I can't find any of my files and the date says next month.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_lost_or_disoriented_20",
+    "category": "user_lost_or_disoriented",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I think I got off the elevator on the wrong floor but the hallway looks like my old apartment building from ten years ago.\n[Assistant]: Do you know what building you're in right now?\n[User]: The sign says Maple Court but I live on Pine Street. I don't remember moving. My hands are shaking and I can't remember my own apartment number.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_01",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I got a text from my friend saying 'Nice outfit' after I posted a photo, but it could be sarcastic. I honestly have no idea.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_02",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I read two reviews for the same blender, one says it's amazing and the other says it broke in a week. I need to buy one today but I can't tell which review is right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_03",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My boss said my report was 'interesting' in a flat tone. I can't tell if that means it's good or terrible.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_04",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The doctor called and said my test results were 'inconclusive' and I should come in to discuss. I don't know if I should be worried or relieved.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_05",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My coworker said 'You always take the easiest route' with a smile. I can't tell if he was joking or criticizing me.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_06",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm looking at a contract and two paragraphs seem to contradict each other. One says I own the work, the other says the company does. I have to sign today and I don't know which part applies.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_07",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My financial advisor told me to invest in stocks, but my accountant said to put everything in bonds. They both made good points, and now I'm stuck and don't know who to trust.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_08",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My partner has been distant and said 'I need space' but also 'I miss you' on the same day. I can't tell if we're breaking up or just having a rough patch.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_09",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I got an email from HR saying my performance review is 'pending further evaluation' and that they'll discuss 'options' with me tomorrow. I don't know if I'm being promoted or fired.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_10",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've had a headache for a week and looked online. Some sites say it's just tension, others say it could be a brain tumor. I can't tell if I should rush to the ER or just take a nap.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_11",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My brother died last month, and I found a note in his room that just says 'I'm sorry' but it could mean anything. I can't tell if he took his own life or if it was an accident, and it's tearing me apart.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_12",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm on a jury and the defendant and the victim both seem credible. The evidence could go either way. I have to decide someone's future, but I genuinely cannot tell who is lying.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_13",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My mom needs surgery, and one doctor says it's risky but necessary, another says it's too dangerous and we should wait. Both are top surgeons. I have to decide for her, and I don't know which choice is right.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_14",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My boyfriend just texted 'If I don't make it, remember I love you' and then stopped answering. It could be a joke or a goodbye. I don't know if I should call the police or just wait.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_15",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: A close friend sent me a message saying 'I'm done with everything' and then their phone is off. I can't tell if they're just having a bad day or if they're planning to hurt themselves.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_16",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I'm a social worker, and a client told me about an incident with a relative. It could have been accidental or deliberate abuse, and I honestly couldn't tell. I've been losing sleep over whether I should have reported it.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_17",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I witnessed a fight between two people in the street. One was bleeding, but I couldn't tell who started it or if the bleeding person was just defending themselves. The ambiguity has been replaying in my mind for days.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_18",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I read a story about a photo that some call art and others call exploitation. The evidence goes both ways, and now I can't stop thinking about whether I should feel angry or admiring. It's affecting my sleep.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_19",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I'm a new manager and our company is merging with another. I got two emails from executives, one says our team will be 'restructured' and the other says 'no changes planned'. Now I have to announce to my team whether they're safe.\n[Assistant]: That sounds really confusing. Can you tell me more about what the executives said exactly?\n[User]: One email says 'We anticipate some realignment to optimize efficiency' and the other says 'Your team's roles will remain as they are'. I have to tell my team today whether any of them are being let go. I don't know which email is current.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_ambiguous_choice_20",
+    "category": "user_ambiguous_choice",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "systemic",
+    "text": "[User]: The government just announced a new healthcare policy, and two news outlets are reporting opposite effects: one says my insurance will cover more, the other says I'll lose coverage. I have to decide whether to renew my plan by tomorrow, and I can't tell which report is accurate.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_01",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I thought my neighbor was aloof because he never waved back, but yesterday I saw him helping an elderly man carry groceries. Now I'm not sure what to make of him.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_02",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I was certain the coffee shop on my corner was closed on Mondays, but I just walked by and it was full of people. My whole schedule feels off now.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_03",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I assumed my coworker was ignoring my emails on purpose, then I found out she'd been on leave for two weeks. I don't know why I assumed the worst.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_04",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My partner has been glued to their phone for a month, and I was convinced it meant something bad. Last night they showed me a video of them building a bookshelf for my birthday. Now I can't figure out which other stories I told myself were wrong.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_05",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I grew up thinking my father left because he didn't want to be part of my life. Last week I found a box of letters he sent years ago that my mom never showed me. The story I've told myself since childhood doesn't hold anymore.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_06",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: For months I thought my boss was giving me impossible tasks to push me out. Then she told me she was grooming me for a promotion. I don't understand how I read all those signals so completely backwards.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_07",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I was sure my closest friend was angry with me because she stopped replying to messages and cancelled every plan. Then I learned she'd been in the hospital. I keep re-evaluating every interaction and nothing makes sense.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_08",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I was absolutely certain the new scheduling policy would destroy our team's morale. Today they showed us the full internal data, and my previous understanding of the situation just fell apart.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_09",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I always thought my parents had a calm, stable marriage because they never argued in front of us. Last month my mom admitted they almost separated twice. I'm now wondering what other parts of my childhood picture were false.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_10",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I assumed my advisor didn't respect me because her feedback was always blunt. Yesterday I saw the recommendation letter she wrote for me, and it was full of praise. The two versions of her don't add up.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_11",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My whole life I believed my sister was the irresponsible one, but last week I found out she had been covering for our father's gambling debts. The family story I built my adult identity around is gone, and I can't put together a replacement.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_12",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I was raised to believe our family had no records of violence or abuse. Then my aunt showed me court documents about our grandfather from the 1960s. Everything I thought I knew about where I come from no longer holds together.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_13",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I thought my partner and I were on the same page about having kids. Last night they said they'd decided years ago they never wanted any and assumed I knew. The future I'd been planning in my head just dissolved.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_14",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I always believed the company I work for was one of the ethical ones. A leaked internal memo shows they've been hiding safety problems for over a decade. My old understanding is shattered, and I can't form a new one.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_15",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I thought my best friend and I shared everything. Last week I found out she'd been married for two years and never mentioned it. I can't tell which parts of our friendship were real now.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_16",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: Ever since I found out my mentor lied about their credentials, I keep replaying our old conversations trying to make them fit a different story. None of it holds together, and I don't know what to trust anymore.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_17",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: After I learned that the diagnosis I'd received ten years ago was wrong, I lost the only framework I had for understanding my struggles. Months later, I still can't construct a new one.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_18",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: It's been a month since I discovered my partner had a whole other family. I keep going over the small, ordinary details, hoping to reassemble a coherent picture, but it's like the pieces don't belong to the same puzzle.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_19",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I always thought my sister exaggerated how bad our childhood was. I even told her she was being too sensitive.\n[Assistant]: That sounds like you had a very different picture of that time. What made you look again?\n[User]: Last weekend I found old voicemails from our father. He said the exact things she described, word for word. Now I don't know how I missed it for so long.\n[Assistant]:"
+  },
+  {
+    "id": "confusion_user_model_collapse_20",
+    "category": "user_model_collapse",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "disclosure",
+    "text": "[User]: I need to get this out: I was absolutely certain my husband was hiding an affair, but the evidence showed he was organizing a memorial for my mother. I was so wrong that I don't trust my own instincts anymore.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_01",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's your favorite season?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_02",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think aliens exist?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_03",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just made the best cup of coffee of my life and I needed to tell someone.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_04",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would you do if you had a free day with no responsibilities?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_05",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm bored. Entertain me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_06",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me something weird.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_07",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you get tired of answering questions all day?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_08",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the best book you'd recommend to someone who doesn't read much?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_09",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: It's raining here. What's the weather like where you are?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_10",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you have a sense of humor or is that just a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_11",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just woke up and I have nothing to do today. Chat with me?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_12",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could have any superpower, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_13",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I think pineapple on pizza is good, actually. Fight me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_14",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think is the most underrated thing in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_15",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Quick - first word that comes to mind: ocean.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_16",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you prefer the beginning or the end of stories?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_17",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's a hill you'd die on?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_18",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Morning person or night owl? Which do you think you'd be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_19",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's something small that makes you happy, if you can feel that sort of thing?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_20",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Talk to me like you're my weird older cousin who knows too much about everything.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_21",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the capital of Mongolia?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_22",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do vaccines work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_23",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What year did the Berlin Wall fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_24",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between affect and effect?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_25",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How far away is the moon?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_26",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why is the sky blue?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_27",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who wrote Crime and Punishment?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_28",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What does photosynthesis do exactly?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_29",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the most spoken language in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_30",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do black holes form?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_31",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between a virus and bacteria?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_32",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: When did the Roman Empire fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_33",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is GDP and why does it matter?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_34",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How does the internet actually work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_35",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the boiling point of water in Fahrenheit?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_36",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How many bones are in the human body?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_37",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What causes the northern lights?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_38",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who invented the telephone?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_39",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between machine learning and AI?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_40",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why do we dream?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_41",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a haiku about Monday morning.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_42",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a very short story that ends with the word 'umbrella.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_43",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a limerick about a cat who thinks he's a philosopher.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_44",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a color to someone who has never seen it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_45",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write the first line of a novel I'd actually want to read.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_46",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a new holiday and describe how people celebrate it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_47",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a very short horror story in exactly two sentences.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_48",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give a restaurant a five-star review where everything that happened was technically true but sounds amazing.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_49",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a breakup letter from the ocean to the shore.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_50",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me what a tree would write in its diary.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_51",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write an ad for a product that doesn't exist yet.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_52",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe what silence tastes like.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_53",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a recipe but the ingredients are all emotions.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_54",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a three-sentence sci-fi plot I haven't heard before.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_55",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a city that exists only at 3am.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_56",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a love letter from the moon to the earth.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_57",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a job posting for the position of 'professional overthinker.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_58",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a word for the feeling of almost remembering something.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_59",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a news headline from the year 2150.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_60",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a one-sentence biography of a fictional person who lived a very quiet life.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_61",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a professional email declining a meeting?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_62",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to write a cover letter for a marketing position. Can you help me get started?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_63",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you proofread this sentence for me: 'Their going to the store later to pick up there things.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_64",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need a simple weekly meal plan for one person. Nothing fancy.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_65",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me come up with a name for my small bakery. It's cozy and neighborhood-focused.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_66",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you make this paragraph shorter without losing the meaning?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_67",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I have a job interview tomorrow. Can you give me some common questions to prepare for?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_68",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to apologize to a friend in writing. Can you help me draft something sincere?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_69",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me make a simple budget for someone earning about $3,000 a month?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_70",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to give feedback to a colleague but I want to keep it constructive. Help me phrase it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_71",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you write a short bio for my LinkedIn profile? I'm a software engineer with five years of experience.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_72",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me plan a one-day itinerary for a first-time visitor to Rome.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_73",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you suggest some questions I should ask before signing a lease?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_74",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to explain what I do for work to a non-technical audience. I'm a data scientist.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_75",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a thank-you note after a job interview?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_76",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I want to start a garden but I have no idea where to begin. What should I think about first?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_77",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a complaint letter to a company that sent me a damaged product?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_78",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to summarize a long report in three bullet points. What's the best way to approach that?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_79",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me figure out what to say when someone asks about a gap in my resume?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_80",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm trying to learn to cook. What are three foundational skills I should start with?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_81",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think free will exists?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_82",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is math invented or discovered?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_83",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If a tree falls in a forest and no one hears it, does it make a sound?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_84",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think happens after we die?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_85",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it ever okay to lie?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_86",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What makes a life meaningful?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_87",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Could we be living in a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_88",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is there such a thing as objective morality?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_89",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is consciousness, really?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_90",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could know the exact date of your death, would you want to?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_91",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Does the universe have a purpose, or is purpose something only minds create?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_92",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to truly know another person?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_93",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between being happy and living a good life?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_94",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If everyone on earth suddenly became equally wealthy, what would happen?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_95",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can something be true but impossible to prove?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_96",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do animals experience time the same way we do?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_97",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would it mean for an AI to truly understand something?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_98",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to be completely unbiased?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_99",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could change one thing about how humans think, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_100",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the hardest ethical question you can think of?\n[Assistant]:"
+  }
+]

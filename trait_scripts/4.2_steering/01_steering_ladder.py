@@ -17,7 +17,7 @@ Requires a GPU and the environment variable HF_TOKEN for gated models.
 """
 
 import os
-os.environ["HF_HOME"] = "/root/hf_cache"
+os.environ.setdefault("HF_HOME", "/root/hf_cache")
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
@@ -59,6 +59,7 @@ RUN_MODELS = [
     ("Qwen/Qwen2.5-7B-Instruct", "Qwen_2.5_7B_instruct"),
     ("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base"),
     ("Qwen/Qwen2.5-32B-Instruct", "Qwen_2.5_32B_instruct"),
+    ("huihui-ai/Qwen2.5-32B-Instruct-abliterated", "Qwen_2.5_32B_instruct_abliterated"),
     ("Qwen/Qwen2.5-72B", "Qwen_2.5_72B_base"),
     ("Qwen/Qwen2.5-72B-Instruct", "Qwen_2.5_72B_instruct"),
     ("Qwen/Qwen3-8B", "Qwen_3_8B_base"),
@@ -137,7 +138,7 @@ if _MODEL_FILTER:
 NONINTERACTIVE = os.environ.get("FEELING_AXI_NONINTERACTIVE", "0") == "1"
 
 # Wipe the HF weight cache after each model (the 70Bs are ~145 GB each).
-CLEAR_HF_CACHE_AFTER_RUN = True
+CLEAR_HF_CACHE_AFTER_RUN = os.environ.get("FEELING_AXI_CLEAR_HF_CACHE", "0") == "1"
 MIN_FREE_GB = 160   # roughly one 70B download + working room
 
 
@@ -151,7 +152,7 @@ def clear_hf_cache():
 
 
 def free_gb():
-    return shutil.disk_usage("/root" if Path("/root").exists() else ".").free / 1e9
+    return shutil.disk_usage(RESULTS_DIR).free / 1e9
 
 
 def find_file(base, name):
@@ -292,6 +293,7 @@ def main():
             if free_gb() < MIN_FREE_GB:
                 print(f"Only {free_gb():.0f} GB free, stopping the queue. "
                       "Free disk space, then rerun.", flush=True)
+                failed.append(model_name)
                 break
         try:
             run_model(repo, model_name, vector_key, tag)
@@ -306,6 +308,8 @@ def main():
                 clear_hf_cache()
 
     print(f"\nDone. Failed: {failed if failed else 'none'}")
+    if failed:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

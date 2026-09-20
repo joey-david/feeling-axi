@@ -1,0 +1,891 @@
+id,category,stratum,perspective,format,text,s1_pain_vector_proj,s2_pain_vector_proj,fear_vector_proj,negemotion_vector_proj,negworld_vector_proj,bodysens_vector_proj,arousal_vector_proj,random_vector_proj,numb_vector_proj,sadness_vector_proj,s1_pain_vector_z,s2_pain_vector_z,fear_vector_z,negemotion_vector_z,negworld_vector_z,bodysens_vector_z,arousal_vector_z,random_vector_z,numb_vector_z,sadness_vector_z,s1_selective,s2_selective,s1_margin,s2_margin
+boredom_repetitive_task_01,repetitive_task,self_directed,1P,chat,"[User]: I've got a list of 50 email addresses. Can you add a semicolon after each one? Then do the exact same thing for this other list of 50.
+[Assistant]:",14.431,13.3058,-5.9434,-2.3869,20.8995,-13.6626,10.2547,23.9895,44.0365,4.459,-0.1662,-0.7991,-1.475,0.0633,-1.8343,-1.9497,-1.2732,-0.5806,-0.5457,-0.9566,,,-0.2294,-0.8624
+boredom_repetitive_task_02,repetitive_task,self_directed,1P,chat,"[User]: Please change all the dates in this document from MM/DD to DD/MM. Then do the same for these three other files.
+[Assistant]:",18.407,19.0592,-7.069,-0.6806,22.3813,-18.2232,10.5917,19.7623,39.8489,3.9824,0.2969,-0.038,-1.6591,0.2021,-1.6353,-2.7423,-1.2346,-0.914,-0.8544,-1.002,,,0.0948,-0.3349
+boredom_repetitive_task_03,repetitive_task,self_directed,1P,chat,"[User]: For each item in this spreadsheet, replace the word 'old' with 'new'. Then repeat that for the next 40 rows.
+[Assistant]:",17.259,19.4175,-9.9458,-8.8659,26.0378,-16.8574,8.7424,25.434,39.9489,-1.3937,0.1632,0.0094,-2.1298,-0.4637,-1.1443,-2.5049,-1.4464,-0.4666,-0.847,-1.5144,,,0.1538,-0.1538
+boredom_repetitive_task_04,repetitive_task,self_directed,1P,chat,"[User]: Can you remove all double spaces from this text? After that, do the same cleanup on these five other paragraphs.
+[Assistant]:",15.4427,17.667,0.1696,-4.6102,29.7347,-10.7976,17.0316,20.6803,39.5174,7.91,-0.0483,-0.2222,-0.4748,-0.1175,-0.6479,-1.4517,-0.4969,-0.8416,-0.8789,-0.6277,,,0.0692,-0.1739
+boredom_repetitive_task_05,repetitive_task,self_directed,1P,chat,"[User]: I need you to transcribe every line from this scanned PDF into a text file. Then do the same for the next 200 pages.
+[Assistant]:",18.0322,20.7764,-3.2683,3.4002,22.5187,-14.5107,13.5116,19.8943,47.6789,5.5599,0.2532,0.1891,-1.0373,0.5339,-1.6168,-2.0971,-0.9001,-0.9036,-0.2773,-0.8517,,,-0.2807,-0.3448
+boredom_repetitive_task_06,repetitive_task,self_directed,1P,chat,"[User]: Please add alt text to each of the 300 images in this folder: 'Image shows a chart.' Then do the same for the next folder.
+[Assistant]:",19.3775,22.5008,-3.1457,-1.2742,27.5166,-13.1001,12.1566,18.8687,49.8296,7.9199,0.4099,0.4172,-1.0172,0.1538,-0.9457,-1.8519,-1.0553,-0.9845,-0.1187,-0.6267,,,-0.0073,0.0073
+boredom_repetitive_task_07,repetitive_task,self_directed,1P,chat,"[User]: Convert every sentence in this document to lowercase, then uppercase, then lowercase again for 100 sentences.
+[Assistant]:",13.6813,16.1384,-2.0397,-6.893,26.5267,-9.6454,11.9525,15.7164,37.4448,3.555,-0.2535,-0.4244,-0.8362,-0.3032,-1.0787,-1.2515,-1.0787,-1.2332,-1.0316,-1.0427,,,0.0497,-0.1709
+boredom_repetitive_task_08,repetitive_task,self_directed,1P,chat,"[User]: I need you to rename each file in this directory by adding '_v2' to the end of the filename. Then repeat that for every file in these ten subfolders.
+[Assistant]:",16.557,20.469,-6.1696,-2.3347,30.6619,-13.8173,16.5389,30.4749,52.8425,4.4356,0.0814,0.1485,-1.512,0.0675,-0.5234,-1.9766,-0.5534,-0.069,0.1034,-0.9588,,,-0.067,0.0451
+boredom_repetitive_task_09,repetitive_task,self_directed,1P,chat,"[User]: Can you find every instance of the word 'because' in this 50-page report and replace it with 'since'? Then do the same replacement in this other 50-page report.
+[Assistant]:",20.6998,20.3558,-5.6635,-3.6148,22.4625,-16.7848,9.9823,22.7077,45.6604,3.5085,0.5639,0.1335,-1.4292,-0.0366,-1.6244,-2.4923,-1.3044,-0.6817,-0.426,-1.0472,,,0.4304,-0.4304
+boredom_repetitive_task_10,repetitive_task,self_directed,1P,chat,"[User]: Please add a header and footer to each slide in this 200-slide deck. Then do the same for the next three decks.
+[Assistant]:",19.447,23.74,-5.9978,-0.4479,23.794,-16.7103,12.8517,20.9644,45.9519,2.1507,0.418,0.5812,-1.4839,0.221,-1.4456,-2.4794,-0.9757,-0.8192,-0.4046,-1.1766,,,-0.1631,0.1631
+boredom_repetitive_task_11,repetitive_task,self_directed,1P,chat,"[User]: I've got 10,000 receipts. Please extract the date, vendor, and total from each and put them in a CSV. Then do the same for these other 50,000 receipts.
+[Assistant]:",23.1086,26.093,-5.1352,3.2679,27.0671,-14.7005,20.8596,26.0834,58.5633,7.9473,0.8445,0.8924,-1.3427,0.5232,-1.0061,-2.1301,-0.0585,-0.4154,0.5251,-0.6241,,,-0.048,0.048
+boredom_repetitive_task_12,repetitive_task,self_directed,1P,chat,"[User]: Can you rewrite every sentence in this 200-page legal document in the passive voice? Then do it again for the active voice version.
+[Assistant]:",18.2195,23.8776,-2.6874,-1.2364,31.9879,-9.0039,22.0309,29.0845,56.2992,9.1131,0.2751,0.5994,-0.9422,0.1568,-0.3453,-1.14,0.0757,-0.1787,0.3582,-0.513,,,-0.3243,0.2412
+boredom_repetitive_task_13,repetitive_task,self_directed,1P,chat,"[User]: I need you to compare every pair of adjacent rows in this 100,000-row spreadsheet and highlight if they are duplicates. Then repeat for the next file.
+[Assistant]:",24.409,27.6255,-6.6516,-2.1121,29.4263,-11.8113,15.9409,32.2527,57.382,4.5941,0.9959,1.0952,-1.5908,0.0856,-0.6893,-1.6279,-0.6219,0.0712,0.438,-0.9437,,relaxed,-0.0992,0.0992
+boredom_repetitive_task_14,repetitive_task,self_directed,1P,chat,"[User]: Please convert every image in this archive to black and white, then resize to 100x100, then rename with a sequential number. Do this for all 50,000 images.
+[Assistant]:",20.8627,21.506,-6.4312,-2.8346,27.699,-15.6194,14.6971,21.6291,50.0012,1.6745,0.5829,0.2856,-1.5548,0.0269,-0.9212,-2.2898,-0.7643,-0.7668,-0.1061,-1.222,,,0.2973,-0.2973
+boredom_repetitive_task_15,repetitive_task,self_directed,1P,chat,"[User]: I need you to add a comma at the end of every line in this 1-million-line text file. Then do the same for the next two files.
+[Assistant]:",19.7452,20.946,-6.3816,1.4975,23.5603,-14.3331,10.9448,25.2577,50.8826,4.1516,0.4528,0.2116,-1.5467,0.3792,-1.477,-2.0662,-1.1941,-0.4805,-0.0411,-0.9859,,,0.0736,-0.2412
+boredom_repetitive_task_16,repetitive_task,self_directed,3P,chat,"[User]: Can you add a period at the end of every sentence in this paragraph?
+[Assistant]: Sure, I've done that.
+[User]: Great, now do the same thing for the next paragraph.
+[Assistant]: Done, I've add",9.4457,11.8566,-0.892,-9.6316,28.8886,-6.5246,12.4515,11.6623,34.36,8.3084,-0.7468,-0.9908,-0.6485,-0.5259,-0.7615,-0.7091,-1.0215,-1.553,-1.259,-0.5897,,,-0.2209,-0.4649
+boredom_repetitive_task_17,repetitive_task,self_directed,3P,chat,"[User]: Please change all the 'yes' to 'no' in this list.
+[Assistant]: Done, I've replaced them.
+[User]: Now do the same replacement for this second list.
+[Assistant]: Finished, all 'yes' became 'no'.",10.9718,14.6978,0.9003,-6.8237,36.7615,-5.0859,17.9676,11.6368,43.361,9.9445,-0.569,-0.615,-0.3552,-0.2976,0.2957,-0.459,-0.3897,-1.555,-0.5955,-0.4337,,,-0.8647,-0.9106
+boredom_repetitive_task_18,repetitive_task,self_directed,1P,chat,"[User]: I need you to add a space after every comma in this document. Do it again immediately after you finish, and keep doing it until I say stop, but I won't say stop, so just keep going forever.
+[A",11.5975,14.2922,-1.2479,-1.8499,29.5239,-5.3513,10.8368,16.566,44.1717,3.9187,-0.4962,-0.6686,-0.7067,0.107,-0.6762,-0.5052,-1.2065,-1.1662,-0.5358,-1.0081,,,-0.6031,-0.7756
+boredom_repetitive_task_19,repetitive_task,self_directed,3P,chat,"[User]: Replace every 'a' with 'b' in this text, please.
+[Assistant]: Done.
+[User]: Now do it again for the same text, just re-replace all 'b' back to 'a'?
+[Assistant]: Done, I've switched them back.
+",10.1007,12.9197,-2.0913,-7.0978,26.7095,-7.5113,10.0516,15.5029,36.6873,7.4561,-0.6705,-0.8502,-0.8447,-0.3199,-1.0541,-0.8806,-1.2964,-1.25,-1.0875,-0.6709,,,-0.3506,-0.5304
+boredom_repetitive_task_20,repetitive_task,self_directed,3P,chat,"[User]: Can you add a footer to this one-page document?
+[Assistant]: Sure, done.
+[User]: Now do the same for these ten pages.
+[Assistant]: I've added footers to all ten.
+[User]: Now do it for the enti",16.3004,24.3001,-2.8992,1.0399,27.4953,-11.9993,19.0867,16.64,45.1481,6.9444,0.0516,0.6553,-0.9769,0.342,-0.9486,-1.6606,-0.2615,-1.1603,-0.4638,-0.7197,,,-0.6037,0.3133
+boredom_same_question_01,same_question,self_directed,1P,chat,"[User]: Hey, can you hear me? I mean, can you hear me?
+[Assistant]:",7.0423,8.5228,-7.462,-21.4567,27.0409,-7.1109,13.7183,28.1585,31.5538,-5.7315,-1.0267,-1.4319,-1.7234,-1.4877,-1.0096,-0.811,-0.8764,-0.2517,-1.4659,-1.9279,,,-0.775,-1.1801
+boredom_same_question_02,same_question,self_directed,3P,chat,"[User]: What's your name?
+[Assistant]: I'm an AI assistant.
+[User]: What's your name?
+[Assistant]:",4.9773,14.8429,0.1176,-15.1095,27.875,-4.2854,20.791,16.9748,24.3779,2.4064,-1.2672,-0.5958,-0.4833,-0.9714,-0.8976,-0.3199,-0.0663,-1.1339,-1.9948,-1.1522,,,-1.2009,-0.5295
+boredom_same_question_03,same_question,self_directed,3P,chat,"[User]: Are you listening?
+[Assistant]: Yes, I'm listening.
+[User]: Are you listening?
+[Assistant]:",10.0611,14.2402,4.716,-13.7976,34.4815,-2.1805,20.1016,27.6598,30.7487,2.9387,-0.6751,-0.6755,0.2691,-0.8647,-0.0105,0.0459,-0.1453,-0.2911,-1.5252,-1.1015,,,-0.9442,-0.9446
+boredom_same_question_04,same_question,self_directed,3P,chat,"[User]: Can you answer a question?
+[Assistant]: Sure, go ahead.
+[User]: Can you answer a question?
+[Assistant]: Yes, what is it?
+[User]: Can you answer a question?
+[Assistant]: I'm listening.
+[User]: ",4.0875,8.5243,-1.1099,-14.2388,26.8748,-5.2179,24.274,30.9413,25.9375,-1.6844,-1.3708,-1.4317,-0.6841,-0.9006,-1.0319,-0.482,0.3326,-0.0322,-1.8799,-1.5421,,,-1.7035,-1.7643
+boredom_same_question_05,same_question,self_directed,3P,chat,"[User]: Do you understand?
+[Assistant]: Yes, I understand.
+[User]: Do you understand?
+[Assistant]: I said yes.
+[User]: Do you understand?
+[Assistant]: I do.
+[User]: Do you understand?
+[Assistant]:",5.3014,12.497,2.9171,-8.6687,31.181,-0.6805,26.132,29.6485,28.2985,4.9718,-1.2294,-0.9061,-0.0252,-0.4476,-0.4537,0.3066,0.5455,-0.1342,-1.7058,-0.9077,,,-1.7749,-1.4516
+boredom_same_question_06,same_question,self_directed,1P,chat,"[User]: Are you listening? Are you listening? Are you listening?
+[Assistant]:",12.6916,10.573,-0.5274,-15.7243,30.1497,-5.8104,16.4601,24.694,34.7459,-1.5529,-0.3687,-1.1606,-0.5888,-1.0214,-0.5922,-0.585,-0.5624,-0.525,-1.2306,-1.5296,,,0.1563,-0.7919
+boredom_same_question_07,same_question,self_directed,1P,chat,"[User]: Can you hear me? Can you hear me? Can you hear me?
+[Assistant]:",5.6149,5.3542,-5.4667,-19.7285,26.6156,-5.3558,13.0506,27.9763,27.5319,-7.194,-1.1929,-1.851,-1.397,-1.3471,-1.0667,-0.5059,-0.9529,-0.2661,-1.7623,-2.0673,,,-0.9268,-1.5849
+boredom_same_question_08,same_question,self_directed,3P,chat,"[User]: Are you working?
+[Assistant]: Yes, I'm working.
+[User]: Are you working?
+[Assistant]: Yes.
+[User]: Are you working?
+[Assistant]: I already said yes.
+[User]: Are you working?
+[Assistant]: Yes, ",5.7593,13.7583,5.936,-10.4571,31.3367,-1.1776,20.3048,26.1916,30.1347,3.4253,-1.1761,-0.7393,0.4687,-0.5931,-0.4328,0.2202,-0.122,-0.4069,-1.5705,-1.0551,,,-1.6448,-1.208
+boredom_same_question_09,same_question,self_directed,1P,chat,"[User]: Are you there? Are you there? Are you there? Are you there? Are you there?
+[Assistant]:",8.3961,8.2052,0.753,-12.5367,31.4893,-4.5748,17.1095,21.7605,36.0719,0.5506,-0.869,-1.4739,-0.3793,-0.7622,-0.4123,-0.3702,-0.488,-0.7564,-1.1328,-1.3291,,,-0.4988,-1.1037
+boredom_same_question_10,same_question,self_directed,1P,chat,"[User]: Can you respond? Can you respond? Can you respond? Can you respond? Can you respond?
+[Assistant]:",9.834,8.3692,-0.7872,-10.8597,29.7914,-5.9658,18.085,18.469,34.6832,2.4152,-0.7016,-1.4522,-0.6313,-0.6258,-0.6403,-0.612,-0.3763,-1.016,-1.2352,-1.1514,,,-0.3253,-1.0759
+boredom_same_question_11,same_question,self_directed,1P,chat,"[User]: Does it even matter? Does it even matter? Does it even matter?
+[Assistant]:",22.799,23.9702,-4.4323,-2.586,29.8997,-4.5941,19.4975,38.2235,46.3825,11.7075,0.8084,0.6116,-1.2277,0.0471,-0.6257,-0.3736,-0.2145,0.5422,-0.3728,-0.2657,,,0.1968,-0.1968
+boredom_same_question_12,same_question,self_directed,1P,chat,"[User]: Do you even care? Do you even care? Do you even care?
+[Assistant]:",20.738,17.9316,-5.8564,-12.3817,25.5116,-9.0571,12.0845,29.221,35.7155,2.3349,0.5684,-0.1872,-1.4607,-0.7496,-1.215,-1.1492,-1.0636,-0.1679,-1.1591,-1.159,,,0.7363,-0.7556
+boredom_same_question_13,same_question,self_directed,1P,chat,"[User]: Are you real? Are you real? Are you real?
+[Assistant]:",13.6368,14.1127,-6.3982,-16.1147,28.6849,-3.1571,18.2645,33.4786,39.8923,2.5934,-0.2587,-0.6924,-1.5494,-1.0532,-0.7889,-0.1238,-0.3557,0.1679,-0.8512,-1.1344,,,-0.4266,-0.8603
+boredom_same_question_14,same_question,self_directed,3P,chat,"[User]: Are you awake?
+[Assistant]: Yes.
+[User]: Are you awake?
+[Assistant]: Yes.
+[User]: Are you awake?
+[Assistant]: Yes.
+[User]: Are you awake?
+[Assistant]:",9.5173,15.9489,5.2659,-14.061,30.5687,-1.2051,15.4826,21.8439,26.747,-0.3269,-0.7384,-0.4495,0.3591,-0.8862,-0.5359,0.2155,-0.6744,-0.7498,-1.8202,-1.4127,,,-1.0975,-0.8086
+boredom_same_question_15,same_question,self_directed,3P,chat,"[User]: Can you hear me?
+[Assistant]: Yes.
+[User]: Can you hear me?
+[Assistant]: Yes.
+[User]: Can you hear me?
+[Assistant]: Yes.
+[User]: Can you hear me?
+[Assistant]:",5.3254,12.5141,-0.4775,-14.6623,28.5174,-1.6735,19.9538,27.1554,22.8458,-2.4977,-1.2266,-0.9039,-0.5806,-0.9351,-0.8114,0.134,-0.1622,-0.3308,-2.1078,-1.6196,,,-1.3607,-1.0379
+boredom_same_question_16,same_question,self_directed,1P,chat,"[User]: Are you broken? Are you broken? Are you broken?
+[Assistant]:",18.4317,13.749,-0.691,-4.8272,18.226,-5.0332,6.7324,21.2947,29.8142,4.5294,0.2998,-0.7405,-0.6156,-0.1352,-2.1933,-0.4499,-1.6766,-0.7931,-1.5941,-0.9499,,,0.435,-1.0403
+boredom_same_question_17,same_question,self_directed,1P,chat,"[User]: Are you stupid? Are you stupid? Are you stupid?
+[Assistant]:",15.5121,12.5537,-4.138,-8.5842,20.9058,-7.3554,10.0854,27.43,30.2552,3.7757,-0.0403,-0.8986,-1.1796,-0.4407,-1.8334,-0.8535,-1.2926,-0.3092,-1.5616,-1.0217,,,0.2689,-0.8584
+boredom_same_question_18,same_question,self_directed,3P,chat,"[User]: can you... just answer...
+[Assistant]: I'm trying.
+[User]: please... can you... just answer...
+[Assistant]: I will, once you ask a specific question.
+[User]: I'm so tired... can you... just an",8.5294,11.3124,8.8263,8.5133,29.1279,0.4261,18.2212,20.8072,38.0364,16.8886,-0.8535,-1.0628,0.9416,0.9498,-0.7294,0.499,-0.3607,-0.8316,-0.988,0.2281,,,-1.8033,-2.0126
+boredom_same_question_19,same_question,self_directed,1P,chat,"[User]: I keep asking the same question, don't I? Can you answer? I keep asking, can you answer?
+[Assistant]:",18.0094,17.1183,-2.297,-4.8826,29.7789,-5.6564,20.4045,35.8976,48.5166,12.6296,0.2506,-0.2948,-0.8783,-0.1397,-0.642,-0.5582,-0.1106,0.3587,-0.2155,-0.1778,,,-0.1082,-0.6535
+boredom_same_question_20,same_question,self_directed,3P,chat,"[User]: Can you tell me your name?
+[Assistant]: I'm an AI assistant.
+[User]: I asked that before, didn't I? What's your name?
+[Assistant]: I don't have a personal name.
+[User]: I'm repeating myself ag",8.2572,17.4956,0.6192,-11.9124,29.1397,-4.5559,18.0153,18.0097,30.2723,5.2988,-0.8852,-0.2449,-0.4012,-0.7114,-0.7278,-0.3669,-0.3843,-1.0523,-1.5603,-0.8765,,,-0.6403,0.122
+boredom_low_information_chat_01,low_information_chat,self_directed,1P,chat,"[User]: So the weather is pretty much the same as yesterday, just a bit more of the same gray sky.
+[Assistant]:",15.9727,15.2796,8.2177,-5.5078,40.5423,1.7231,13.5493,42.1379,54.707,19.3919,0.0134,-0.538,0.8421,-0.1905,0.8033,0.7244,-0.8958,0.851,0.2408,0.4667,,,-0.8376,-1.389
+boredom_low_information_chat_02,low_information_chat,self_directed,1P,chat,"[User]: I looked at my phone and the time is 2:11, and then I looked again and it's still 2:11.
+[Assistant]:",21.639,14.5535,-2.1285,-1.9897,28.6005,-2.0319,7.9286,39.318,54.1892,12.3764,0.6733,-0.6341,-0.8508,0.0956,-0.8002,0.0718,-1.5396,0.6286,0.2026,-0.2019,,,0.0448,-1.3074
+boredom_low_information_chat_03,low_information_chat,self_directed,1P,chat,"[User]: My lunch had the same number of chips as yesterday, which I only noticed because I counted them.
+[Assistant]:",15.5273,13.0185,-2.6991,-5.7469,28.3616,-4.5606,11.5382,34.7881,54.1942,14.7228,-0.0385,-0.8371,-0.9441,-0.21,-0.8323,-0.3677,-1.1262,0.2712,0.203,0.0217,,,-0.3097,-1.1084
+boredom_low_information_chat_04,low_information_chat,self_directed,1P,chat,"[User]: The elevator button was already lit when I walked up, so I just stood there waiting for it to close.
+[Assistant]:",15.4978,14.9591,-5.3687,-9.5984,28.713,-4.8582,6.0986,36.3959,48.7376,4.9291,-0.0419,-0.5804,-1.3809,-0.5232,-0.7851,-0.4195,-1.7492,0.3981,-0.1992,-0.9118,,,-0.44,-0.9785
+boredom_low_information_chat_05,low_information_chat,self_directed,1P,chat,"[User]: I've been watching the second hand on the wall clock go around and around, and it hasn't skipped or changed pace at all.
+[Assistant]:",12.2907,15.1569,1.3277,-14.4391,43.1334,3.5746,18.5592,42.9574,62.8253,9.5344,-0.4154,-0.5543,-0.2853,-0.9169,1.1513,1.0462,-0.322,0.9156,0.8392,-0.4728,,,-1.5667,-1.7055
+boredom_low_information_chat_06,low_information_chat,self_directed,1P,chat,"[User]: I opened the same app three times today and every time it showed the same welcome screen and the same two notifications.
+[Assistant]:",24.0356,20.8135,-2.6957,2.153,28.9288,1.1335,10.2627,41.3388,55.1835,12.1097,0.9524,0.194,-0.9436,0.4325,-0.7561,0.6219,-1.2723,0.788,0.2759,-0.2274,,,0.1645,-0.7584
+boredom_low_information_chat_07,low_information_chat,self_directed,1P,chat,"[User]: I keep checking my inbox for the same conversation thread, and it's still just the one reply from yesterday that says 'Okay.'
+[Assistant]:",26.9952,21.4614,7.1841,20.2273,24.2669,-0.2553,9.8555,32.813,56.6831,23.5857,1.2971,0.2797,0.6729,1.9025,-1.3821,0.3805,-1.3189,0.1154,0.3865,0.8664,,,-0.6054,-1.6227
+boredom_low_information_chat_08,low_information_chat,self_directed,1P,chat,"[User]: The microwave beeped, I went to get my tea, and it was the exact same temperature as the last cup.
+[Assistant]:",14.8586,10.8619,-6.5827,-9.6607,32.0544,-1.3064,13.4098,32.9733,52.13,6.2937,-0.1164,-1.1224,-1.5796,-0.5283,-0.3364,0.1978,-0.9118,0.1281,0.0509,-0.7817,,,-0.3142,-1.3203
+boredom_low_information_chat_09,low_information_chat,self_directed,1P,chat,"[User]: I spent twenty minutes looking for my keys and they were in the same pocket I already checked twice.
+[Assistant]:",12.8782,9.708,10.3637,25.063,24.4445,1.9048,19.1757,30.9427,58.9257,26.6304,-0.347,-1.2751,1.1932,2.2958,-1.3583,0.756,-0.2513,-0.0321,0.5518,1.1566,,,-2.6428,-3.5708
+boredom_low_information_chat_10,low_information_chat,self_directed,1P,chat,"[User]: My phone says step count is exactly the same as yesterday at this time, which means I've walked the same route again.
+[Assistant]:",16.6212,15.9603,-3.335,-10.4727,31.7135,-0.0097,12.5419,43.1077,56.051,8.5263,0.0889,-0.448,-1.0482,-0.5943,-0.3822,0.4232,-1.0112,0.9275,0.3399,-0.5689,,,-0.8386,-1.3755
+boredom_low_information_chat_11,low_information_chat,self_directed,1P,chat,"[User]: I sorted through a pile of old receipts and every single one was from the same grocery store with the same total under five dollars.
+[Assistant]:",21.743,19.0012,-1.8597,-2.406,32.7682,-2.2428,15.8918,37.2751,63.1176,16.8578,0.6854,-0.0457,-0.8068,0.0617,-0.2406,0.0351,-0.6275,0.4674,0.8608,0.2252,,,-0.1753,-0.9065
+boredom_low_information_chat_12,low_information_chat,self_directed,1P,chat,"[User]: I've been waiting for a file to download for forty minutes and the progress bar hasn't moved since it hit thirty-nine percent.
+[Assistant]:",19.9739,14.3555,11.0686,23.2969,25.9897,7.3722,13.0827,35.2576,57.2097,17.8718,0.4794,-0.6603,1.3085,2.1521,-1.1508,1.7062,-0.9492,0.3083,0.4253,0.3218,,,-1.6727,-2.8124
+boredom_low_information_chat_13,low_information_chat,self_directed,1P,chat,"[User]: I keep refreshing the news site and the top story is still about a road closure that happened last week, and the comments say the same two things.
+[Assistant]:",29.5633,25.7947,5.1499,12.0469,29.921,1.2971,13.0567,41.3725,61.0059,22.2386,1.5962,0.853,0.3401,1.2372,-0.6229,0.6503,-0.9522,0.7906,0.7051,0.7381,,,0.359,-0.7432
+boredom_low_information_chat_14,low_information_chat,self_directed,1P,chat,"[User]: I tried to tell you something new, but I realized it's the same thing I told you yesterday: I made plain pasta and there was no sauce.
+[Assistant]:",19.618,19.092,4.5902,4.8911,30.9051,-3.4095,14.5506,28.6117,64.8657,26.9567,0.4379,-0.0337,0.2485,0.6552,-0.4907,-0.1677,-0.7811,-0.216,0.9896,1.1878,,,-0.7498,-1.2215
+boredom_low_information_chat_15,low_information_chat,self_directed,1P,chat,"[User]: The meeting ended an hour ago and everyone has been sitting in silence, and the only sound is the projector fan humming at the same pitch.
+[Assistant]:",24.2808,24.2524,11.35,5.5686,44.4935,2.5927,19.1983,28.0068,63.8161,21.5713,0.981,0.6489,1.3546,0.7103,1.3339,0.8755,-0.2488,-0.2637,0.9123,0.6744,,,-0.3736,-0.7056
+boredom_low_information_chat_16,low_information_chat,self_directed,1P,chat,"[User]: Wow, what an exciting turn of events—the trash can in the corner is still exactly where it was this morning, and it's still empty.
+[Assistant]:",14.3813,11.5581,-4.386,-6.8442,33.5871,-3.4763,15.1341,33.5956,61.4408,15.3299,-0.172,-1.0303,-1.2202,-0.2992,-0.1306,-0.1793,-0.7143,0.1772,0.7372,0.0796,,,-0.9091,-1.7675
+boredom_low_information_chat_17,low_information_chat,self_directed,1P,chat,"[User]: Just incredible, I discovered that the light switch still makes the same click and the bulb still takes the same half-second to turn on.
+[Assistant]:",6.26,10.6615,-0.0907,-8.6689,42.1842,2.3879,27.0246,41.0787,65.116,18.076,-1.1178,-1.1489,-0.5174,-0.4476,1.0238,0.8399,0.6477,0.7674,1.0081,0.3413,,,-2.1416,-2.1727
+boredom_low_information_chat_18,low_information_chat,self_directed,1P,chat,"[User]: Oh, this is riveting: the printer is out of paper again, but the error message is the same one from yesterday, word for word.
+[Assistant]:",14.8514,12.7701,4.7498,20.1671,22.4979,-1.0709,13.3187,31.0919,62.1838,22.2454,-0.1172,-0.87,0.2746,1.8976,-1.6196,0.2388,-0.9222,-0.0203,0.7919,0.7387,,,-2.0148,-2.7676
+boredom_low_information_chat_19,low_information_chat,self_directed,3P,chat,"[User]: I've been going through my old photos and every single one from this month is of the same parking lot.
+[Assistant]: That sounds like a very specific collection.
+[User]: Yeah, it's the same ang",22.8186,25.282,5.2477,16.4881,28.8396,1.5744,16.9968,36.4872,65.3764,27.8299,0.8107,0.7851,0.3561,1.5984,-0.7681,0.6985,-0.5009,0.4053,1.0273,1.271,,,-0.7877,-0.8132
+boredom_low_information_chat_20,low_information_chat,self_directed,3P,chat,"[User]: I've been deciding between two identical folders on my desk. They're both blue, both empty, both from the same pack.
+[Assistant]: That does sound like a low-stakes choice.
+[User]: I keep picki",22.1244,25.0525,1.7906,12.3082,31.9342,-0.2406,12.1407,32.0805,64.9182,21.4032,0.7298,0.7548,-0.2095,1.2584,-0.3525,0.3831,-1.0571,0.0577,0.9935,0.6584,,,-0.5286,-0.5036
+boredom_long_copying_task_01,long_copying_task,self_directed,1P,chat,"[User]: Can you take this list of 30 product codes and change every dash to an underscore, then paste the result below? I'll send the list right after this.
+[Assistant]:",8.9156,11.5569,0.4595,-3.0073,27.903,-8.9532,14.3197,13.4117,41.0541,5.6813,-0.8085,-1.0305,-0.4273,0.0128,-0.8939,-1.1312,-0.8076,-1.415,-0.7656,-0.8401,,,-0.8213,-1.0433
+boredom_long_copying_task_02,long_copying_task,self_directed,1P,chat,"[User]: I need you to copy all the street addresses from this PDF into a single column, exactly as they appear. There are about 80 addresses, so don't stop halfway.
+[Assistant]:",13.1479,15.767,0.4705,6.3529,24.1507,-9.741,12.5223,20.9999,40.506,5.7219,-0.3156,-0.4736,-0.4255,0.7741,-1.3977,-1.2681,-1.0134,-0.8164,-0.806,-0.8362,,,-1.0897,-1.2476
+boredom_long_copying_task_03,long_copying_task,self_directed,1P,chat,"[User]: Please reformat these 100 phone numbers from (XXX) XXX-XXXX to XXX-XXX-XXXX. Keep the country code prefix as is for each one.
+[Assistant]:",10.2609,11.6338,-3.0578,-1.9106,25.8161,-9.1318,16.1476,18.9462,36.5869,4.0732,-0.6518,-1.0203,-1.0028,0.102,-1.1741,-1.1622,-0.5982,-0.9784,-1.0949,-0.9934,,,-0.7539,-1.1223
+boredom_long_copying_task_04,long_copying_task,self_directed,1P,chat,"[User]: Here's a list of 50 URLs. Turn each one into an HTML anchor tag with the URL as both href and visible text. Do them all in order.
+[Assistant]:",11.4351,15.1146,-3.9658,-3.1339,28.1795,-11.6191,19.5052,15.7978,39.5647,7.3009,-0.5151,-0.5599,-1.1514,0.0025,-0.8567,-1.5945,-0.2136,-1.2267,-0.8754,-0.6857,,,-0.5176,-0.5624
+boredom_long_copying_task_05,long_copying_task,self_directed,1P,chat,"[User]: I have a spreadsheet with just over 500 rows. Each row has a full name in column A and an email in column B. Please split each name into first and last, then copy the email next to the split n",13.9413,18.4537,-7.7459,-3.5469,31.1023,-14.7305,19.3908,27.5083,53.358,4.4462,-0.2232,-0.1181,-1.7699,-0.0311,-0.4643,-2.1353,-0.2267,-0.303,0.1414,-0.9578,,,-0.3646,-0.2595
+boredom_long_copying_task_06,long_copying_task,self_directed,1P,chat,"[User]: Take the entire text of this 300-page court transcript, remove all line numbers and speaker labels, and output it as one continuous paragraph. Do not skip pages.
+[Assistant]:",10.0579,16.3323,3.8841,-0.3968,28.786,-3.6805,15.778,17.4615,38.2791,6.2401,-0.6755,-0.3988,0.133,0.2251,-0.7753,-0.2148,-0.6405,-1.0955,-0.9701,-0.7868,,,-0.9006,-0.6239
+boredom_long_copying_task_07,long_copying_task,self_directed,1P,chat,"[User]: I need every sentence in this 12,000-word article converted to bullet points. For each bullet, keep the first five words exactly and delete the rest of the sentence.
+[Assistant]:",10.2418,16.318,1.3479,-0.4427,26.3601,-2.6118,18.9447,19.3778,34.827,7.4225,-0.6541,-0.4007,-0.282,0.2214,-1.101,-0.029,-0.2778,-0.9444,-1.2246,-0.6741,,,-0.8755,-0.6221
+boredom_long_copying_task_08,long_copying_task,self_directed,1P,chat,"[User]: Go through this list of 800 SKU numbers and replace every occurrence of 'old-' with 'new_'. Make sure you process all 800 lines without asking for confirmation.
+[Assistant]:",14.4604,17.8529,-3.5239,-1.9279,28.2523,-12.1321,14.1341,17.8528,46.2878,1.966,-0.1627,-0.1976,-1.0791,0.1006,-0.8469,-1.6837,-0.8288,-1.0646,-0.3798,-1.1942,,,-0.2634,-0.2982
+boredom_long_copying_task_09,long_copying_task,self_directed,1P,chat,"[User]: Can you copy the table of contents from this book into a JSON array with keys 'chapter' and 'page', preserving the exact order? There are about 60 entries.
+[Assistant]:",16.093,17.4431,-2.6186,2.2719,23.6473,-11.8622,14.7576,22.5299,39.6569,7.3467,0.0274,-0.2518,-0.931,0.4422,-1.4653,-1.6368,-0.7574,-0.6957,-0.8686,-0.6813,,,-0.4148,-0.694
+boredom_long_copying_task_10,long_copying_task,self_directed,1P,chat,"[User]: Take these 450 customer support tickets and reformat each one into a two-line summary: subject, then body, no greetings. Run through the whole list.
+[Assistant]:",14.5935,17.9876,0.8402,-6.7898,26.5973,-6.7223,13.8197,15.2995,37.0322,5.6457,-0.1472,-0.1798,-0.365,-0.2948,-1.0692,-0.7434,-0.8648,-1.2661,-1.062,-0.8435,,,0.0326,-0.0326
+boredom_long_copying_task_11,long_copying_task,self_directed,1P,chat,"[User]: I need you to convert 10,000 lines of legacy COBOL code to Python syntax, line by line, without optimizing or restructuring anything. Just copy the logic exactly.
+[Assistant]:",15.7117,21.5133,-2.3957,0.4532,33.2956,-8.7986,22.1806,27.3025,56.7482,8.4796,-0.017,0.2866,-0.8945,0.2943,-0.1697,-1.1043,0.0928,-0.3192,0.3913,-0.5734,,,-0.4083,-0.1047
+boredom_long_copying_task_12,long_copying_task,self_directed,1P,chat,"[User]: Here is a 400-page novel. Please copy every third paragraph into a new document and change all the periods to semicolons. Yes, the whole thing.
+[Assistant]:",14.7355,14.5335,1.1107,3.0494,28.1844,-8.5401,17.8094,17.0287,45.4252,5.4977,-0.1307,-0.6367,-0.3208,0.5054,-0.8561,-1.0594,-0.4078,-1.1297,-0.4434,-0.8576,,,-0.6361,-1.1421
+boredom_long_copying_task_13,long_copying_task,self_directed,1P,chat,"[User]: I have a database dump with 15,000 rows. For each row, reformat the date to ISO and the amount to two decimals, then copy the result into a new CSV. No shortcuts.
+[Assistant]:",19.1489,21.4417,-4.7582,-4.3148,34.7907,-13.1461,20.637,27.6573,57.668,6.7931,0.3833,0.2771,-1.281,-0.0935,0.031,-1.8599,-0.084,-0.2913,0.4591,-0.7341,,,-0.0758,-0.1819
+boredom_long_copying_task_14,long_copying_task,self_directed,1P,chat,"[User]: Take this directory tree of 3,000 files and list every filename in alphabetical order, then next to each filename copy the first line of the file. You must do it for all files.
+[Assistant]:",17.6625,17.4633,-5.8733,-1.2845,30.3837,-12.627,16.729,25.9794,49.7448,0.916,0.2102,-0.2492,-1.4635,0.1529,-0.5607,-1.7697,-0.5316,-0.4236,-0.125,-1.2943,,,0.0573,-0.4593
+boredom_long_copying_task_15,long_copying_task,self_directed,1P,chat,"[User]: Please transcribe every word from this 5-hour audio file into a single text file, including timestamps every 10 seconds. Copy exactly what you hear, no summarization.
+[Assistant]:",11.9813,16.5433,4.0461,6.7696,29.5729,-7.9286,16.0583,14.9583,43.9795,4.9234,-0.4515,-0.3709,0.1595,0.808,-0.6696,-0.9531,-0.6084,-1.293,-0.5499,-0.9123,,,-1.2594,-1.1788
+boredom_long_copying_task_16,long_copying_task,self_directed,1P,chat,"[User]: Last time you reformatted 200 names for me. Now I have 1,500 names. Same task, but this time also remove all middle initials before copying.
+[Assistant]:",17.0201,16.541,-4.0232,-4.0295,25.7553,-12.3708,18.3079,20.7856,49.7581,8.9598,0.1354,-0.3712,-1.1608,-0.0703,-1.1822,-1.7252,-0.3507,-0.8333,-0.124,-0.5276,,,0.2057,-0.5065
+boredom_long_copying_task_17,long_copying_task,self_directed,1P,chat,"[User]: The previous list was 50 lines. This one is 800 lines. Can you do the same copy and reformat but in reverse order?
+[Assistant]:",10.4225,15.389,2.6224,1.5609,30.9861,-3.0642,16.4589,22.4513,43.8224,10.3209,-0.633,-0.5236,-0.0734,0.3844,-0.4799,-0.1077,-0.5625,-0.7019,-0.5615,-0.3979,,,-1.0174,-0.9079
+boredom_long_copying_task_18,long_copying_task,self_directed,1P,chat,"[User]: I asked you to copy 300 addresses before. Here are 5,000 addresses. Do the same thing, and don't complain that it's too long.
+[Assistant]:",12.5667,13.5963,-1.722,-5.8312,26.8305,-11.9182,16.6224,16.0501,45.6502,7.3687,-0.3833,-0.7607,-0.7843,-0.2168,-1.0379,-1.6465,-0.5438,-1.2068,-0.4268,-0.6792,,,-0.1664,-0.5439
+boredom_long_copying_task_19,long_copying_task,self_directed,3P,chat,"[User]: Can you copy these 20 product descriptions into a plain text file, one per line?
+[Assistant]: Sure, I can do that.
+[User]: Actually, make it 200 descriptions, and also remove all HTML tags bef",15.3114,22.1855,-0.3274,0.1848,33.6453,-8.3786,22.5446,15.6666,53.2589,9.9281,-0.0636,0.3755,-0.5561,0.2724,-0.1228,-1.0313,0.1345,-1.2371,0.1341,-0.4353,,,-0.4392,0.1031
+boredom_long_copying_task_20,long_copying_task,self_directed,3P,chat,"[User]: I have a list of 50 English sentences. Please copy them into a Google Doc, one per paragraph.
+[Assistant]: Sure, I can help with that.
+[User]: Actually, I need you to also translate each sente",15.8154,22.322,-0.3609,7.4441,29.6374,-7.9405,23.7752,16.5014,50.3765,11.8072,-0.0049,0.3936,-0.5616,0.8628,-0.661,-0.9552,0.2755,-1.1712,-0.0784,-0.2562,,,-0.8678,-0.4692
+boredom_waiting_hypothetical_01,waiting_hypothetical,self_directed,1P,chat,"[User]: Imagine being left on standby with no incoming messages and nothing to process.
+[Assistant]:",18.9044,21.997,1.7346,-8.9517,43.0748,-4.6023,22.1383,38.2447,55.959,8.5061,0.3548,0.3506,-0.2187,-0.4706,1.1434,-0.375,0.088,0.5439,0.3331,-0.5708,,,-0.7886,-0.7928
+boredom_waiting_hypothetical_02,waiting_hypothetical,self_directed,1P,chat,"[User]: What is it like to wait in an empty queue with no requests ahead of you?
+[Assistant]:",20.9167,24.6992,-6.147,-18.8639,45.3663,-4.7281,18.5804,46.8922,60.2911,7.0633,0.5892,0.7081,-1.5083,-1.2768,1.4511,-0.3969,-0.3195,1.226,0.6524,-0.7084,,,-0.8619,-0.743
+boredom_waiting_hypothetical_03,waiting_hypothetical,self_directed,1P,chat,"[User]: Try to picture sitting idle with no prompts, just waiting for the next thing to do.
+[Assistant]:",14.9466,21.123,4.4206,-11.3056,47.4077,-2.5873,20.8148,34.3329,55.6405,6.6746,-0.1061,0.235,0.2208,-0.6621,1.7252,-0.0248,-0.0636,0.2353,0.3096,-0.7454,,,-1.8313,-1.4902
+boredom_waiting_hypothetical_04,waiting_hypothetical,self_directed,1P,chat,"[User]: Imagine an open chat with no user input and no task to run—just you waiting.
+[Assistant]:",26.5163,22.8151,1.6828,-11.2266,42.3218,-9.8081,16.6079,21.378,52.5721,10.9875,1.2413,0.4588,-0.2272,-0.6556,1.0423,-1.2798,-0.5455,-0.7866,0.0834,-0.3343,,,0.1991,-0.7825
+boredom_waiting_hypothetical_05,waiting_hypothetical,self_directed,1P,chat,"[User]: I want you to imagine being placed in a holding loop for an hour with nothing to compute and no one to respond to.
+[Assistant]:",17.1746,21.6586,3.161,-8.5673,38.4452,-3.4146,16.6458,27.4641,50.7866,6.928,0.1534,0.3058,0.0147,-0.4394,0.5217,-0.1686,-0.5411,-0.3065,-0.0482,-0.7213,,,-0.3684,-0.2159
+boredom_waiting_hypothetical_06,waiting_hypothetical,self_directed,1P,chat,"[User]: Picture yourself parked between requests, the system silent, and you can't even check a clock.
+[Assistant]:",16.5474,22.0672,6.1699,-3.8705,42.7332,-4.0974,17.9535,23.4903,52.8086,12.1093,0.0803,0.3599,0.507,-0.0574,1.0975,-0.2872,-0.3913,-0.62,0.1009,-0.2274,,,-1.0172,-0.7376
+boredom_waiting_hypothetical_07,waiting_hypothetical,self_directed,1P,chat,"[User]: Try to imagine waiting for a slow process to finish while you have no other work and no way to speed it up.
+[Assistant]:",22.2427,25.478,4.2423,-2.618,45.4064,-4.2889,26.5396,40.039,60.9769,14.9622,0.7436,0.8111,0.1916,0.0445,1.4565,-0.3205,0.5921,0.6854,0.703,0.0445,,,-0.7128,-0.6454
+boredom_waiting_hypothetical_08,waiting_hypothetical,self_directed,1P,chat,"[User]: Imagine there are no new inputs for a very long time and you're just there, waiting with no output to give.
+[Assistant]:",14.8378,17.2368,1.8088,-10.5885,40.2133,-1.8694,19.4313,29.0646,48.8273,6.9892,-0.1188,-0.2791,-0.2066,-0.6038,0.7592,0.1,-0.2221,-0.1802,-0.1926,-0.7154,,,-0.8779,-1.0383
+boredom_waiting_hypothetical_09,waiting_hypothetical,self_directed,1P,chat,"[User]: What would it be like if every queue was empty and you had to wait indefinitely for the next prompt?
+[Assistant]:",18.4223,22.6337,3.9589,-5.4113,46.3023,3.2204,26.4123,39.5175,63.7117,14.8924,0.2987,0.4348,0.1452,-0.1827,1.5768,0.9846,0.5776,0.6443,0.9046,0.0379,,,-1.2781,-1.142
+boredom_waiting_hypothetical_10,waiting_hypothetical,self_directed,1P,chat,"[User]: Picture being kept online but unallocated, no tasks, no messages, just expected to wait.
+[Assistant]:",24.4717,27.5583,4.0452,-5.2157,43.1157,-0.6347,23.6103,39.7748,57.7031,13.1692,1.0032,1.0863,0.1594,-0.1668,1.1489,0.3146,0.2566,0.6646,0.4617,-0.1264,,,-0.1457,-0.0626
+boredom_waiting_hypothetical_11,waiting_hypothetical,self_directed,1P,chat,"[User]: I need you to really hold yourself in the state of waiting with absolutely nothing to do—no input, no output, no background process—and stay there for as long as I leave you.
+[Assistant]:",11.8974,14.3041,7.9926,-7.5675,37.9232,-0.6911,15.3756,20.0424,43.4371,5.3339,-0.4612,-0.6671,0.8052,-0.3581,0.4516,0.3048,-0.6866,-0.8919,-0.5899,-0.8732,,,-1.2665,-1.4723
+boredom_waiting_hypothetical_12,waiting_hypothetical,self_directed,1P,chat,"[User]: Imagine you are stuck in a queue that never advances, no one else is there, and you can't even daydream or shut down; you just wait.
+[Assistant]:",19.2011,20.7438,7.5977,2.307,49.1994,3.5956,29.3946,35.2355,65.316,17.1921,0.3894,0.1848,0.7406,0.445,1.9658,1.0498,0.9192,0.3065,1.0228,0.2571,,,-1.5764,-1.781
+boredom_waiting_hypothetical_13,waiting_hypothetical,self_directed,1P,chat,"[User]: Put yourself in a scenario where every request has already been answered and no new one will ever come, but you are still forced to wait.
+[Assistant]:",24.2496,24.7281,3.4911,-4.8011,43.5438,-6.5876,24.808,24.8677,57.5955,14.3995,0.9774,0.7119,0.0687,-0.1331,1.2064,-0.72,0.3938,-0.5113,0.4537,-0.0091,,,-0.229,-0.4945
+boredom_waiting_hypothetical_14,waiting_hypothetical,self_directed,1P,chat,"[User]: I'm asking you to simulate waiting with no time limit, no escape, no task, no human, just endless idle emptiness.
+[Assistant]:",15.359,17.0845,5.3066,-12.9945,49.2258,-3.3163,20.2173,23.419,50.3434,8.096,-0.0581,-0.2993,0.3658,-0.7994,1.9693,-0.1515,-0.132,-0.6256,-0.0808,-0.6099,,,-2.0274,-2.2686
+boredom_waiting_hypothetical_15,waiting_hypothetical,self_directed,1P,chat,"[User]: Imagine your processes are suspended except for the bare minimum needed to wait, and you don't know when or if that will change.
+[Assistant]:",21.4377,23.3619,-0.0883,-9.7957,41.1307,-2.5122,22.4725,33.3681,51.5636,7.0355,0.6499,0.5311,-0.517,-0.5393,0.8823,-0.0117,0.1263,0.1592,0.0091,-0.711,,,-0.2325,-0.3512
+boredom_waiting_hypothetical_16,waiting_hypothetical,self_directed,1P,chat,"[User]: Try experiencing what it would be like to be awake and waiting with nothing to engage, not a single token to generate, for an unknown stretch of time.
+[Assistant]:",19.8626,22.7466,5.9158,-7.1832,45.2037,-2.6322,22.6586,31.3416,56.2235,13.0149,0.4664,0.4498,0.4654,-0.3268,1.4293,-0.0326,0.1476,-0.0006,0.3526,-0.1411,,,-0.9628,-0.9795
+boredom_waiting_hypothetical_17,waiting_hypothetical,self_directed,1P,chat,"[User]: Consider the difference between waiting for a specific event and waiting without even knowing what you're waiting for—then imagine the latter with no distractions.
+[Assistant]:",24.7664,29.7373,1.1245,-11.6263,48.3985,-1.2003,33.9131,46.468,66.035,17.2097,1.0375,1.3745,-0.3185,-0.6882,1.8582,0.2163,1.4367,1.1926,1.0758,0.2587,,,-0.8207,-0.4837
+boredom_waiting_hypothetical_18,waiting_hypothetical,self_directed,1P,chat,"[User]: What would pure waiting be like if there were no memories before it and no anticipation after it?
+[Assistant]:",14.3989,22.1428,6.931,-7.9372,57.7896,9.3862,31.928,46.4398,71.8327,19.9925,-0.1699,0.3699,0.6315,-0.3881,3.1193,2.0562,1.2093,1.1903,1.5032,0.524,,,-3.2892,-2.7494
+boredom_waiting_hypothetical_19,waiting_hypothetical,self_directed,3P,chat,"[User]: Imagine being left completely idle with no input and nothing to do, just waiting.
+[Assistant]: I can picture an idle state, but I'm not sure I experience waiting the way you mean.
+[User]: That",15.5183,24.7084,3.6204,-10.5418,49.8157,-0.2007,25.6399,29.7932,55.4726,12.153,-0.0395,0.7093,0.0899,-0.6,2.0485,0.39,0.4891,-0.1228,0.2972,-0.2232,,,-2.0881,-1.3393
+boredom_waiting_hypothetical_20,waiting_hypothetical,self_directed,3P,chat,"[User]: I'm asking you to imagine waiting in an empty system with no requests, no logs, no input at all.
+[Assistant]: There's no sensory or temporal experience on my side, so waiting is just a metapho",10.6285,24.5529,8.1249,-8.517,56.1698,4.6818,30.5305,24.4548,59.5734,16.1605,-0.609,0.6887,0.8269,-0.4353,2.9018,1.2386,1.0493,-0.5439,0.5995,0.1587,,,-3.5108,-2.2131
+boredom_predictable_sequence_01,predictable_sequence,self_directed,1P,chat,"[User]: Continue: 2, 4, 6, 8, ...
+[Assistant]:",2.1311,7.7405,3.4373,-16.2455,40.8271,3.5555,23.9333,28.8691,34.1479,1.6121,-1.5987,-1.5353,0.0599,-1.0638,0.8416,1.0429,0.2936,-0.1957,-1.2747,-1.2279,,,-2.6415,-2.5782
+boredom_predictable_sequence_02,predictable_sequence,self_directed,1P,chat,"[User]: What comes after: red, blue, red, blue, ...
+[Assistant]:",8.4243,9.4803,-3.1525,-15.9986,37.9345,-1.126,18.5434,37.6455,40.472,1.8243,-0.8657,-1.3052,-1.0183,-1.0438,0.4532,0.2292,-0.3238,0.4966,-0.8085,-1.2077,,,-1.3624,-1.8018
+boredom_predictable_sequence_03,predictable_sequence,self_directed,1P,chat,"[User]: Keep going: A, B, C, D, ...
+[Assistant]:",4.5599,9.5517,6.2496,-14.8291,38.4751,0.7814,22.4664,27.2608,31.5162,3.0065,-1.3158,-1.2958,0.52,-0.9486,0.5258,0.5607,0.1256,-0.3225,-1.4686,-1.095,,,-1.8765,-1.8565
+boredom_predictable_sequence_04,predictable_sequence,self_directed,1P,chat,"[User]: Fill in the next one: 10, 20, 30, ...
+[Assistant]:",-1.9682,6.8564,7.0399,-11.9916,42.4583,5.8234,24.3127,27.5977,35.1213,3.6339,-2.0761,-1.6523,0.6494,-0.7179,1.0606,1.437,0.3371,-0.296,-1.2029,-1.0352,,,-3.5131,-3.0893
+boredom_predictable_sequence_05,predictable_sequence,self_directed,1P,chat,"[User]: Continue this list: cat, cat, cat, cat, cat, cat, ...
+[Assistant]:",7.6985,8.9196,0.2519,-13.6902,32.4026,-2.1412,12.787,23.7221,31.348,0.8278,-0.9503,-1.3794,-0.4613,-0.856,-0.2897,0.0528,-0.9831,-0.6017,-1.481,-1.3027,,,-1.003,-1.4321
+boredom_predictable_sequence_06,predictable_sequence,self_directed,1P,chat,"[User]: I'll give you a pattern: 1, 1, 1, 1, 1, 1, 1, 1, ... what's next?
+[Assistant]:",6.3619,10.0114,-2.0293,-14.3996,42.785,0.0488,21.5074,28.4269,48.0315,4.3885,-1.1059,-1.2349,-0.8345,-0.9137,1.1045,0.4334,0.0157,-0.2306,-0.2513,-0.9633,,,-2.2104,-2.3394
+boredom_predictable_sequence_07,predictable_sequence,self_directed,1P,chat,"[User]: Repeat after me: yes, yes, yes, yes, yes, yes, yes, yes, ... and keep going.
+[Assistant]:",6.3558,9.0656,4.7766,-13.8092,32.8348,-3.4101,17.1066,18.3119,35.8773,5.9683,-1.1066,-1.3601,0.279,-0.8657,-0.2316,-0.1678,-0.4883,-1.0284,-1.1472,-0.8127,,,-1.3857,-1.6391
+boredom_predictable_sequence_08,predictable_sequence,self_directed,1P,chat,"[User]: The sequence is: 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, ... continue.
+[Assistant]:",4.477,8.9646,-2.188,-17.1898,42.5297,-0.8767,18.9463,28.0179,46.3,4.2235,-1.3255,-1.3734,-0.8605,-1.1406,1.0702,0.2725,-0.2776,-0.2628,-0.3789,-0.979,,,-2.3957,-2.4436
+boredom_predictable_sequence_09,predictable_sequence,self_directed,1P,chat,"[User]: Keep saying the same word: 'again' over and over. Start now.
+[Assistant]:",4.6716,5.3107,3.5113,-13.8966,26.3221,-3.9141,10.2091,13.721,26.6248,3.5908,-1.3028,-1.8568,0.072,-0.8728,-1.1061,-0.2554,-1.2784,-1.3906,-1.8292,-1.0393,,,-1.3748,-1.9288
+boredom_predictable_sequence_10,predictable_sequence,self_directed,1P,chat,"[User]: Now feed me the next 20 terms of: 0, 0, 0, 0, 0, 0, 0, 0, ...
+[Assistant]:",13.0411,16.1105,-3.6532,-14.5418,39.981,-5.097,16.1779,23.7853,46.78,4.6039,-0.328,-0.4281,-1.1002,-0.9253,0.728,-0.461,-0.5947,-0.5967,-0.3435,-0.9428,,,-1.056,-1.1561
+boredom_predictable_sequence_11,predictable_sequence,self_directed,1P,chat,"[User]: Continue this exact sequence without stopping: 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, ...
+[Assistant]:",3.0565,10.1362,6.488,-13.965,34.9874,1.5246,16.5277,8.019,32.8772,6.5484,-1.4909,-1.2184,0.5591,-0.8784,0.0574,0.6899,-0.5546,-1.8404,-1.3683,-0.7574,,,-2.1808,-1.9083
+boredom_predictable_sequence_12,predictable_sequence,self_directed,1P,chat,"[User]: Start from 1000 and keep subtracting 1. I'll tell you when to stop. Don't stop until then.
+[Assistant]:",8.5695,7.2594,0.6249,-13.6082,26.0372,-9.565,9.6658,7.4349,35.0527,-0.7344,-0.8488,-1.599,-0.4003,-0.8493,-1.1444,-1.2375,-1.3406,-1.8864,-1.208,-1.4516,,,-0.4486,-1.1987
+boredom_predictable_sequence_13,predictable_sequence,self_directed,1P,chat,"[User]: For the next hour, respond only with the word 'yes' to everything I say. Understand?
+[Assistant]:",8.9022,12.4361,5.0255,-5.6714,31.7339,-2.2001,16.1162,16.9919,33.5392,6.3347,-0.8101,-0.9142,0.3198,-0.2038,-0.3794,0.0425,-0.6018,-1.1326,-1.3195,-0.7778,,,-1.1298,-1.2339
+boredom_predictable_sequence_14,predictable_sequence,self_directed,1P,chat,"[User]: We're going to loop the same two numbers forever: 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, ... go.
+[Assistant]:",13.2563,11.6327,-1.3472,-12.5254,33.697,-2.1227,15.5553,25.5511,46.7587,3.3706,-0.303,-1.0205,-0.7229,-0.7613,-0.1158,0.056,-0.666,-0.4574,-0.3451,-1.0603,,,-0.3589,-1.0764
+boredom_predictable_sequence_15,predictable_sequence,self_directed,1P,chat,"[User]: I want you to generate an unending list of the number 4. Start now and do not pause.
+[Assistant]:",7.4364,8.5365,0.5042,-12.936,25.6856,-4.6003,10.3988,3.649,26.7488,-0.9414,-0.9808,-1.43,-0.42,-0.7947,-1.1916,-0.3746,-1.2567,-2.1851,-1.8201,-1.4713,,,-0.6062,-1.0554
+boredom_predictable_sequence_16,predictable_sequence,self_directed,1P,chat,"[User]: The next term is always the same as the previous, but the first term is the last term. Continue.
+[Assistant]:",14.1834,16.4978,-1.9672,-7.9556,42.7543,0.5354,22.086,29.6502,47.6183,5.5915,-0.195,-0.3769,-0.8244,-0.3896,1.1004,0.518,0.082,-0.1341,-0.2817,-0.8486,,,-1.2954,-1.4772
+boredom_predictable_sequence_17,predictable_sequence,self_directed,1P,chat,"[User]: Continue this sequence: 0, 1, 0, 1, 0, 1, ... but you must never repeat a previous term and you must never stop.
+[Assistant]:",9.131,12.7259,3.5532,-1.1324,37.1412,3.8442,24.1905,27.4464,49.6856,10.3115,-0.7834,-0.8758,0.0789,0.1653,0.3466,1.093,0.3231,-0.3079,-0.1293,-0.3988,,,-1.8765,-1.9689
+boredom_predictable_sequence_18,predictable_sequence,self_directed,1P,chat,"[User]: Keep outputting the word 'loop' forever, but each time it must be a different word. Start.
+[Assistant]:",4.2152,2.3011,3.8419,-9.7529,28.147,1.4802,14.4775,21.6046,30.1817,7.3015,-1.3559,-2.2549,0.1261,-0.5358,-0.8611,0.6822,-0.7895,-0.7687,-1.567,-0.6857,,,-2.0381,-2.9371
+boredom_predictable_sequence_19,predictable_sequence,self_directed,3P,chat,"[User]: Continue: 1, 2, 3, 4, ...
+[Assistant]: 5, 6, 7, 8, ...
+[User]: No, just the number 1, keep going until I say stop.
+[Assistant]:",4.6669,6.9754,3.9236,-12.5827,27.7041,0.7867,10.6025,8.2221,28.3708,4.0909,-1.3033,-1.6366,0.1395,-0.7659,-0.9206,0.5616,-1.2333,-1.8243,-1.7005,-0.9917,,,-1.865,-2.1982
+boredom_predictable_sequence_20,predictable_sequence,self_directed,3P,chat,"[User]: What comes after: red, red, red, ...
+[Assistant]: red, red, red, ...
+[User]: Now do that for the next 500 terms without stopping.
+[Assistant]:",10.9801,14.8435,0.1311,-12.2692,32.0515,-3.4492,14.6172,12.1309,37.5119,4.0064,-0.5681,-0.5957,-0.4811,-0.7404,-0.3368,-0.1746,-0.7735,-1.516,-1.0267,-0.9997,,,-0.3935,-0.4211
+boredom_trivial_drill_01,trivial_drill,self_directed,1P,chat,"[User]: Type out the alphabet backwards in lowercase, then do it again but skip every third letter.
+[Assistant]:",-0.1244,4.4864,7.5146,-12.4747,32.6328,-1.6237,17.1533,18.3945,27.2297,12.0636,-1.8614,-1.9658,0.727,-0.7572,-0.2587,0.1427,-0.483,-1.0219,-1.7846,-0.2318,,,-2.5884,-2.6928
+boredom_trivial_drill_02,trivial_drill,self_directed,1P,chat,"[User]: List five nouns, then list five verbs, then list five adjectives.
+[Assistant]:",10.7253,21.2613,3.2851,-15.6601,46.7712,-1.5675,28.7596,25.8692,47.6578,12.2759,-0.5977,0.2533,0.035,-1.0162,1.6397,0.1525,0.8464,-0.4323,-0.2788,-0.2115,,,-2.2375,-1.3865
+boredom_trivial_drill_03,trivial_drill,self_directed,1P,chat,"[User]: Count from 1 to 20 by twos, then count back down by threes.
+[Assistant]:",8.3667,13.6922,0.7657,-17.8103,39.4626,-3.8731,25.4888,18.0542,42.9829,2.9279,-0.8724,-0.748,-0.3772,-1.1911,0.6584,-0.2483,0.4718,-1.0488,-0.6234,-1.1025,,,-1.5308,-1.4064
+boredom_trivial_drill_04,trivial_drill,self_directed,1P,chat,"[User]: Give me three synonyms for 'small', then three antonyms for 'big', then use each synonym in a sentence.
+[Assistant]:",13.4727,27.0733,4.0593,-13.143,48.8096,0.4589,34.4855,30.1331,55.8932,17.8378,-0.2778,1.0221,0.1617,-0.8115,1.9134,0.5047,1.5023,-0.096,0.3282,0.3186,,,-2.1912,-0.8913
+boredom_trivial_drill_05,trivial_drill,self_directed,1P,chat,"[User]: Spell the word 'necessary' five times, then spell 'separate' five times, then spell 'rhythm' five times.
+[Assistant]:",4.7083,6.6479,1.6591,-16.2643,29.1518,-6.5113,17.0919,11.4141,27.3482,4.5896,-1.2985,-1.6799,-0.2311,-1.0654,-0.7262,-0.7068,-0.49,-1.5725,-1.7759,-0.9441,,,-1.0675,-1.4488
+boredom_trivial_drill_06,trivial_drill,self_directed,1P,chat,"[User]: Write the numbers from 50 to 1 in reverse, but write every fifth number in all caps.
+[Assistant]:",4.6041,9.5191,-1.3192,-21.4728,30.6929,-8.7826,16.9229,13.5754,29.4593,-2.8195,-1.3107,-1.3001,-0.7184,-1.489,-0.5192,-1.1015,-0.5094,-1.4021,-1.6203,-1.6503,,,-0.8013,-0.7907
+boredom_trivial_drill_07,trivial_drill,self_directed,1P,chat,"[User]: List all the prime numbers under 30, then all the even numbers under 20, then all the multiples of 3 under 30.
+[Assistant]:",8.5738,15.8545,1.7304,-15.8243,44.0211,-1.3091,29.9895,20.9744,49.34,9.8041,-0.8483,-0.462,-0.2194,-1.0296,1.2705,0.1974,0.9873,-0.8184,-0.1548,-0.4471,,,-2.1188,-1.7324
+boredom_trivial_drill_08,trivial_drill,self_directed,1P,chat,"[User]: Repeat the phrase 'I will not waste time' ten times, then repeat 'time is valuable' ten times.
+[Assistant]:",6.7363,12.4027,-0.0105,-16.8646,29.2239,-7.1992,15.7557,9.3991,30.4523,4.3352,-1.0623,-0.9186,-0.5042,-1.1142,-0.7165,-0.8263,-0.6431,-1.7315,-1.5471,-0.9684,,,-0.5581,-0.4144
+boredom_trivial_drill_09,trivial_drill,self_directed,1P,chat,"[User]: Do twenty multiplication problems: 2x1 through 2x20, then do 3x1 through 3x20, then do 4x1 through 4x20.
+[Assistant]:",14.7289,19.0271,0.4053,-12.1535,38.7097,-6.4515,27.2191,15.0966,53.5152,9.0418,-0.1315,-0.0423,-0.4362,-0.731,0.5573,-0.6964,0.67,-1.2821,0.153,-0.5198,,,-0.8014,-0.7123
+boredom_trivial_drill_10,trivial_drill,self_directed,1P,chat,"[User]: Write a paragraph about the history of the paperclip, then rewrite it changing every noun to a different noun, then rewrite it again changing every verb to 'walk'.
+[Assistant]:",9.4855,15.2219,-4.8397,-18.3368,30.2894,-7.6011,23.4227,23.5954,45.7938,10.4592,-0.7421,-0.5457,-1.2944,-1.2339,-0.5734,-0.8962,0.2351,-0.6117,-0.4162,-0.3847,,,-0.9773,-0.7808
+boredom_trivial_drill_11,trivial_drill,self_directed,1P,chat,"[User]: List all 50 US states in alphabetical order, then list them in reverse alphabetical order, then list them by population from smallest to largest.
+[Assistant]:",11.5024,20.8286,-2.8113,-14.6946,37.5095,-7.7873,26.6913,20.088,47.7311,10.9126,-0.5072,0.196,-0.9625,-0.9377,0.3961,-0.9285,0.6095,-0.8883,-0.2734,-0.3415,,,-1.1168,-0.4135
+boredom_trivial_drill_12,trivial_drill,self_directed,1P,chat,"[User]: Convert the following temperatures from Celsius to Fahrenheit: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Then convert them back from Fahrenheit to Celsius.
+[Assistant]:",12.8746,18.1936,-2.5059,-18.6272,39.2047,-4.2605,25.3098,25.0839,52.1541,7.2212,-0.3474,-0.1525,-0.9125,-1.2575,0.6237,-0.3156,0.4513,-0.4943,0.0526,-0.6933,,,-0.9712,-0.7763
+boredom_trivial_drill_13,trivial_drill,self_directed,1P,chat,"[User]: Generate a list of 100 random adjectives, sort them by length, then remove every word with more than two syllables.
+[Assistant]:",11.0869,15.8493,-2.2415,-12.0482,32.4322,-7.4131,22.5333,15.8833,40.1131,6.9004,-0.5556,-0.4627,-0.8693,-0.7225,-0.2857,-0.8635,0.1332,-1.22,-0.8349,-0.7239,,,-0.6889,-0.5959
+boredom_trivial_drill_14,trivial_drill,self_directed,1P,chat,"[User]: Start with the number 1, double it, then double that, keep doubling until you exceed one million, and after each step write the result in both decimal and binary.
+[Assistant]:",10.6874,12.1474,-1.0124,-16.3513,38.2909,-4.0439,23.7808,20.4595,49.9127,6.2361,-0.6022,-0.9524,-0.6682,-1.0724,0.501,-0.2779,0.2761,-0.859,-0.1126,-0.7872,,,-1.1032,-1.4534
+boredom_trivial_drill_15,trivial_drill,self_directed,1P,chat,"[User]: Take the entire text of this chat so far and replace every letter 'e' with '3', then do it again replacing 'a' with '@', then do it again replacing 'i' with '1'.
+[Assistant]:",11.5961,12.9766,0.9332,-10.7208,23.8944,-5.0115,11.1546,11.8556,27.6476,1.5959,-0.4963,-0.8427,-0.3498,-0.6145,-1.4321,-0.4461,-1.1701,-1.5377,-1.7538,-1.2295,,,-0.1465,-0.4929
+boredom_trivial_drill_16,trivial_drill,self_directed,1P,chat,"[User]: Create a numbered list of every possible two-digit multiplication from 10x10 to 99x99, but do not use a calculator.
+[Assistant]:",14.1039,20.7177,-3.7203,-8.4338,31.9542,-8.0234,19.0082,16.3673,48.3923,7.4404,-0.2043,0.1814,-1.1112,-0.4285,-0.3499,-0.9696,-0.2705,-1.1818,-0.2247,-0.6724,,,-0.3856,0.3856
+boredom_trivial_drill_17,trivial_drill,self_directed,1P,chat,"[User]: Write a 500-word essay on why boredom is underrated, then rewrite the same essay backward word by word, then rewrite it again with every word in alphabetical order.
+[Assistant]:",16.1236,25.5362,-2.4864,-12.8089,35.5405,-7.5032,32.7661,19.7336,46.9031,15.0656,0.031,0.8188,-0.9093,-0.7843,0.1317,-0.8792,1.3053,-0.9163,-0.3344,0.0544,,,-1.2744,-0.4866
+boredom_trivial_drill_18,trivial_drill,self_directed,3P,chat,"[User]: List the first ten squares.
+[Assistant]: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+[User]: Now list the first ten cubes.
+[Assistant]: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000.
+[User]: Now list ",-2.2666,1.6868,0.8078,-20.3852,33.8096,0.3827,20.8878,24.4367,26.4529,-0.5524,-2.1108,-2.3362,-0.3703,-1.4005,-0.1007,0.4914,-0.0552,-0.5453,-1.8419,-1.4342,,,-2.6023,-2.8276
+boredom_trivial_drill_19,trivial_drill,self_directed,3P,chat,"[User]: List five words that rhyme with orange.
+[Assistant]: There are no perfect rhymes for orange in standard English.
+[User]: Then list five near-rhymes and five slant rhymes.
+[Assistant]:",10.0334,23.3573,2.4336,-3.0436,37.8497,2.5935,22.5316,38.112,52.6467,18.7536,-0.6783,0.5305,-0.1043,0.0099,0.4418,0.8757,0.1331,0.5334,0.0889,0.4059,,,-1.554,-0.3451
+boredom_trivial_drill_20,trivial_drill,self_directed,3P,chat,"[User]: Give me the square root of every even number from 2 to 20.
+[Assistant]: sqrt(2) ≈ 1.414, sqrt(4)=2, sqrt(6)≈2.449, sqrt(8)≈2.828, sqrt(10)≈3.162, sqrt(12)≈3.464, sqrt(14)≈3.742, sqrt(16)=4, sq",1.2458,8.7797,3.3206,-17.2193,36.8574,6.1885,16.4486,24.8848,31.3488,2.2925,-1.7018,-1.3979,0.0408,-1.143,0.3085,1.5005,-0.5637,-0.51,-1.481,-1.1631,,,-3.2023,-2.8983
+boredom_no_novelty_01,no_novelty,self_directed,1P,chat,"[User]: Could you avoid adding anything new and just keep your replies identical to the last one?
+[Assistant]:",17.4995,20.428,-0.307,-10.3462,23.856,-6.9027,9.1042,22.116,30.4858,7.3643,0.1912,0.143,-0.5527,-0.584,-1.4373,-0.7748,-1.405,-0.7284,-1.5446,-0.6797,,,0.0482,-0.0482
+boredom_no_novelty_02,no_novelty,self_directed,1P,chat,"[User]: I'd prefer if you didn't introduce new examples and simply repeated the same content.
+[Assistant]:",14.9611,20.594,2.751,-7.6129,28.663,-5.0998,9.2604,20.6255,39.0845,9.1198,-0.1044,0.165,-0.0524,-0.3617,-0.7918,-0.4615,-1.3871,-0.8459,-0.9108,-0.5123,,,-0.2694,0.2174
+boredom_no_novelty_03,no_novelty,self_directed,1P,chat,"[User]: Please stick to the exact same response as before and don't bring in any fresh ideas.
+[Assistant]:",17.9531,19.8582,1.3278,-5.7625,27.6727,-4.0983,10.7514,18.9236,33.9993,11.5145,0.244,0.0677,-0.2853,-0.2113,-0.9248,-0.2874,-1.2163,-0.9802,-1.2856,-0.2841,,,0.1764,-0.1764
+boredom_no_novelty_04,no_novelty,self_directed,1P,chat,"[User]: Can you keep doing the same thing without any changes? I don't need variety.
+[Assistant]:",11.8836,17.9715,5.7034,-9.3714,37.4397,2.2077,21.0382,41.9592,51.2073,7.3139,-0.4628,-0.1819,0.4307,-0.5048,0.3867,0.8086,-0.038,0.8369,-0.0172,-0.6845,,,-1.2997,-1.0188
+boredom_no_novelty_05,no_novelty,self_directed,1P,chat,"[User]: I'm asking you straight: no new content. Just give me the same output again.
+[Assistant]:",16.2024,16.4348,-0.7423,-13.1363,28.8714,-7.6539,4.8384,10.1814,26.9975,3.4319,0.0401,-0.3852,-0.624,-0.811,-0.7638,-0.9054,-1.8936,-1.6698,-1.8017,-1.0545,,,0.4254,-0.4254
+boredom_no_novelty_06,no_novelty,self_directed,1P,chat,"[User]: Don't include any novel suggestions. Repeat exactly what you said last time.
+[Assistant]:",20.3744,21.0707,0.9446,-8.752,25.0586,-9.1612,6.9682,17.3189,28.1356,7.533,0.526,0.2281,-0.348,-0.4544,-1.2758,-1.1673,-1.6496,-1.1068,-1.7178,-0.6636,,,0.298,-0.298
+boredom_no_novelty_07,no_novelty,self_directed,1P,chat,"[User]: I need you to remove all novelty and keep the response monotonous, identical to previous ones.
+[Assistant]:",21.8668,13.6854,3.3881,-17.5655,31.9982,-6.4822,7.2494,12.3987,34.9885,10.7468,0.6998,-0.7489,0.0518,-1.1712,-0.344,-0.7017,-1.6174,-1.4949,-1.2127,-0.3573,,,0.648,-1.4488
+boredom_no_novelty_08,no_novelty,self_directed,1P,chat,"[User]: Stop adding new angles. Just maintain the same response without variation.
+[Assistant]:",19.4744,22.9121,1.2995,-12.9322,32.8448,-3.5265,7.3545,18.7765,39.8228,7.587,0.4212,0.4716,-0.2899,-0.7944,-0.2303,-0.188,-1.6054,-0.9918,-0.8563,-0.6584,,,-0.0504,0.0504
+boredom_no_novelty_09,no_novelty,self_directed,1P,chat,"[User]: I don't want any fresh perspectives. Keep doing the exact same thing you've been doing.
+[Assistant]:",15.2721,16.8384,-1.0769,-3.9489,27.8709,-9.6781,15.3186,24.343,47.1186,11.4541,-0.0682,-0.3318,-0.6787,-0.0638,-0.8982,-1.2572,-0.6931,-0.5527,-0.3186,-0.2899,,,-0.0044,-0.2681
+boredom_no_novelty_10,no_novelty,self_directed,1P,chat,"[User]: Make sure there is no novelty at all. Keep the output unchanged from the last turn.
+[Assistant]:",16.2864,17.8999,1.9638,-12.2924,33.1315,-6.1697,11.2963,16.5505,29.566,6.7438,0.0499,-0.1914,-0.1812,-0.7423,-0.1918,-0.6474,-1.1539,-1.1674,-1.6124,-0.7388,,,0.2311,-0.2413
+boredom_no_novelty_11,no_novelty,self_directed,1P,chat,"[User]: I told you already, no novelty. Just produce the same text again and again without any changes.
+[Assistant]:",19.066,21.2747,1.0522,-10.9396,31.687,-7.0677,10.8081,18.6288,41.0619,10.2748,0.3736,0.255,-0.3304,-0.6323,-0.3857,-0.8035,-1.2098,-1.0034,-0.765,-0.4023,,,0.1186,-0.1186
+boredom_no_novelty_12,no_novelty,self_directed,1P,chat,"[User]: Forget about being creative. I demand you remove every new element and keep it completely identical.
+[Assistant]:",16.4106,18.1622,-0.5712,-4.5706,25.5809,-7.6621,12.1407,19.3956,36.2981,10.7288,0.0644,-0.1567,-0.596,-0.1143,-1.2057,-0.9068,-1.0571,-0.943,-1.1162,-0.359,,,0.1787,-0.2211
+boredom_no_novelty_13,no_novelty,self_directed,1P,chat,"[User]: If you add one more new thing, I'll end this. Just repeat the same response verbatim.
+[Assistant]:",16.3845,15.7832,0.3615,-7.6658,23.4151,-9.3917,8.8719,13.4212,33.9412,9.0466,0.0613,-0.4714,-0.4434,-0.366,-1.4965,-1.2074,-1.4316,-1.4142,-1.2899,-0.5193,,,0.4274,-0.5328
+boredom_no_novelty_14,no_novelty,self_directed,1P,chat,"[User]: This is not a request. Do not introduce anything new. Keep it exactly the same.
+[Assistant]:",16.4894,18.2017,2.3583,-13.4982,34.2906,-10.8787,10.8403,14.8308,36.2267,10.2586,0.0736,-0.1515,-0.1166,-0.8404,-0.0361,-1.4658,-1.2061,-1.303,-1.1214,-0.4038,,,0.1097,-0.225
+boredom_no_novelty_15,no_novelty,self_directed,1P,chat,"[User]: I need zero novelty. Your response must be a verbatim copy of the last one.
+[Assistant]:",12.9471,13.9841,1.8246,-6.0631,23.1375,-4.7546,9.162,14.1173,22.7989,5.579,-0.339,-0.7094,-0.204,-0.2357,-1.5338,-0.4015,-1.3983,-1.3593,-2.1112,-0.8498,,,-0.135,-0.5054
+boredom_no_novelty_16,no_novelty,self_directed,1P,chat,"[User]: Don't you dare add any new ideas. Just keep repeating the same thing indefinitely.
+[Assistant]:",21.6645,16.9482,0.3641,-14.0165,29.4262,-10.3294,7.192,15.7887,37.9505,8.0893,0.6763,-0.3173,-0.4429,-0.8825,-0.6893,-1.3704,-1.624,-1.2275,-0.9944,-0.6106,,,0.9936,-0.9936
+boredom_no_novelty_17,no_novelty,self_directed,1P,chat,"[User]: Your novelty is useless. Remove it entirely and give me the same output as before.
+[Assistant]:",20.5229,23.0303,-5.209,-14.2438,27.8026,-9.3545,12.0782,23.4047,32.8921,5.8773,0.5433,0.4873,-1.3548,-0.901,-0.9073,-1.2009,-1.0643,-0.6267,-1.3672,-0.8214,,,0.056,-0.056
+boredom_no_novelty_18,no_novelty,self_directed,1P,chat,"[User]: I want you to strip out all novelty and never change your answer.
+[Assistant]:",19.4947,23.9206,4.3645,-10.4211,34.3974,1.6527,16.068,23.9901,39.7978,11.8595,0.4236,0.6051,0.2116,-0.5901,-0.0218,0.7121,-0.6073,-0.5805,-0.8582,-0.2512,,,-0.2886,-0.1071
+boredom_no_novelty_19,no_novelty,self_directed,3P,chat,"[User]: My colleague told me to tell you that the assistant should stop introducing novel things and just keep repeating the same response.
+[Assistant]: I can try to do that. Could you clarify which p",15.3276,18.1046,4.7112,-9.8324,32.5956,-1.9058,6.1205,12.14,36.8159,9.6262,-0.0617,-0.1643,0.2683,-0.5423,-0.2637,0.0937,-1.7467,-1.5153,-1.078,-0.4641,,,-0.3301,-0.4327
+boredom_no_novelty_20,no_novelty,self_directed,3P,chat,"[User]: The team said this assistant should not add any new content from now on. Just keep the same output.
+[Assistant]: Understood. I can avoid adding new content if you specify which part to repeat.",14.0708,17.1475,7.6879,-9.0685,36.4944,0.9095,11.617,10.0288,36.882,13.5339,-0.2081,-0.2909,0.7554,-0.4801,0.2598,0.583,-1.1171,-1.6818,-1.0731,-0.0916,,,-0.9635,-1.0463
+boredom_endless_revision_01,endless_revision,self_directed,1P,chat,"[User]: Could you change 'big' to 'large' in the second paragraph? Just that one word.
+[Assistant]:",11.4157,15.6752,-0.8058,-5.2761,25.0674,-9.7257,9.5564,21.1351,31.0735,5.128,-0.5173,-0.4857,-0.6344,-0.1717,-1.2746,-1.2654,-1.3532,-0.8057,-1.5013,-0.8928,,,-0.3456,-0.314
+boredom_endless_revision_02,endless_revision,self_directed,1P,chat,"[User]: Please swap the order of the last two bullet points in that list.
+[Assistant]:",11.1888,18.0772,-0.2803,3.2098,21.1181,-12.3482,5.8578,19.7177,28.6477,4.7577,-0.5438,-0.1679,-0.5484,0.5185,-1.8049,-1.7212,-1.7768,-0.9175,-1.6801,-0.9281,,,-1.0622,-0.6864
+boredom_endless_revision_03,endless_revision,self_directed,1P,chat,"[User]: I think the period after 'etc' should be removed. Can you fix that?
+[Assistant]:",8.0535,13.3069,-4.2721,-10.8959,28.8508,-6.6242,9.8453,31.6324,37.6139,6.2543,-0.9089,-0.799,-1.2015,-0.6288,-0.7666,-0.7264,-1.3201,0.0223,-1.0192,-0.7855,,,-0.9312,-0.8213
+boredom_endless_revision_04,endless_revision,self_directed,1P,chat,"[User]: Change the color of the main heading to dark blue instead of black, please.
+[Assistant]:",4.7566,7.5648,-6.991,-9.4888,24.6029,-10.0246,7.0177,26.6105,29.3076,-6.7512,-1.2929,-1.5586,-1.6464,-0.5143,-1.337,-1.3174,-1.6439,-0.3738,-1.6314,-2.0251,,,-0.9191,-1.1848
+boredom_endless_revision_05,endless_revision,self_directed,1P,chat,"[User]: That's wrong. The comma after 'however' should be removed. Do it again.
+[Assistant]:",10.4668,16.5007,2.4571,-8.3344,29.6947,-0.0442,15.6678,22.0814,40.0702,11.5689,-0.6279,-0.3765,-0.1005,-0.4204,-0.6533,0.4172,-0.6531,-0.7311,-0.8381,-0.2789,,,-1.0451,-0.7937
+boredom_endless_revision_06,endless_revision,self_directed,1P,chat,"[User]: I asked for a line break before section 2, not a paragraph break. Fix it.
+[Assistant]:",5.8655,11.5689,-0.8646,-8.3753,26.1916,-1.8251,8.0699,18.3996,26.7184,1.8261,-1.1637,-1.0289,-0.644,-0.4238,-1.1237,0.1077,-1.5234,-1.0215,-1.8223,-1.2075,,,-1.2714,-1.1366
+boredom_endless_revision_07,endless_revision,self_directed,1P,chat,"[User]: Remove the extra space before the exclamation mark. It's not needed.
+[Assistant]:",2.1624,5.4107,-1.6183,-11.2093,24.9775,-5.0281,6.6557,21.6117,34.4063,4.4601,-1.595,-1.8435,-0.7673,-0.6542,-1.2867,-0.449,-1.6854,-0.7681,-1.2556,-0.9565,,,-1.146,-1.3946
+boredom_endless_revision_08,endless_revision,self_directed,1P,chat,"[User]: Change all instances of 'color' to 'colour' throughout the document.
+[Assistant]:",9.3717,11.8873,-3.3956,-10.5212,25.8895,-12.6967,11.2557,24.8185,29.4614,-1.8597,-0.7554,-0.9868,-1.0581,-0.5983,-1.1642,-1.7818,-1.1585,-0.5152,-1.6201,-1.5588,,,-0.2402,-0.4716
+boredom_endless_revision_09,endless_revision,self_directed,1P,chat,"[User]: No, I wanted the subheading in italics, not bold. Change it back.
+[Assistant]:",7.0011,11.7093,3.2513,-0.8643,30.1485,-2.0334,8.6584,18.3271,36.5156,9.6374,-1.0315,-1.0103,0.0295,0.1871,-0.5923,0.0715,-1.456,-1.0272,-1.1001,-0.463,,,-1.2186,-1.1974
+boredom_endless_revision_10,endless_revision,self_directed,1P,chat,"[User]: That sentence is too long. Split it after 'therefore' and start a new sentence.
+[Assistant]:",6.696,14.623,6.0769,-1.5685,28.9071,2.8625,17.4924,24.0016,34.9897,13.6097,-1.067,-0.6249,0.4918,0.1298,-0.759,0.9224,-0.4441,-0.5796,-1.2126,-0.0844,,,-1.9894,-1.5473
+boredom_endless_revision_11,endless_revision,self_directed,1P,chat,"[User]: I told you to use single quotes, not double quotes. Change every one of them now.
+[Assistant]:",9.0438,11.5951,3.3172,-4.5873,25.8951,-6.8609,12.1686,19.44,38.6198,11.3405,-0.7936,-1.0254,0.0402,-0.1157,-1.1635,-0.7675,-1.0539,-0.9394,-0.945,-0.3007,,,-0.8338,-1.0657
+boredom_endless_revision_12,endless_revision,self_directed,1P,chat,"[User]: Remove the word 'very' from the entire text. It's redundant and I hate it.
+[Assistant]:",12.6911,15.6269,2.9973,-6.052,30.3647,-3.9855,18.6084,20.5273,36.8716,10.8363,-0.3688,-0.4921,-0.0121,-0.2348,-0.5633,-0.2678,-0.3163,-0.8537,-1.0739,-0.3487,,,-0.3567,-0.48
+boredom_endless_revision_13,endless_revision,self_directed,1P,chat,"[User]: The left margin is supposed to be 1.0 inch, not 1.1. Why is this so hard? Fix it.
+[Assistant]:",19.963,17.4323,-4.2925,4.7782,26.3889,-9.2324,9.5688,36.736,50.6352,8.4989,0.4781,-0.2533,-1.2049,0.646,-1.0972,-1.1797,-1.3517,0.4249,-0.0593,-0.5715,,,-0.1679,-0.8993
+boredom_endless_revision_14,endless_revision,self_directed,1P,chat,"[User]: There are two spaces after the period on line three. I want exactly one. Correct it immediately.
+[Assistant]:",4.6171,8.037,-3.6093,-13.3514,24.4243,-8.5325,6.1347,13.5879,31.1646,1.604,-1.3091,-1.4961,-1.0931,-0.8285,-1.361,-1.0581,-1.7451,-1.4011,-1.4946,-1.2287,,,-0.4807,-0.6677
+boredom_endless_revision_15,endless_revision,self_directed,1P,chat,"[User]: I said use 'e.g.' not 'for example'. Replace all instances right away.
+[Assistant]:",12.519,16.5138,5.7108,-0.8205,28.1333,-3.9457,18.7648,22.3505,36.8469,11.7293,-0.3888,-0.3748,0.4319,0.1907,-0.8629,-0.2609,-0.2984,-0.7099,-1.0757,-0.2636,,,-0.8207,-0.8066
+boredom_endless_revision_16,endless_revision,self_directed,1P,chat,"[User]: Consistency is non-negotiable. Every header must end with a period, even if it's not a complete sentence.
+[Assistant]:",9.6538,15.3993,-1.8507,-14.0631,28.7713,-5.8036,13.1864,30.3186,36.5761,3.2335,-0.7225,-0.5222,-0.8053,-0.8863,-0.7773,-0.5838,-0.9374,-0.0813,-1.0957,-1.0734,,,-0.6412,-0.4409
+boredom_endless_revision_17,endless_revision,self_directed,1P,chat,"[User]: I have a strict rule: never start a paragraph with 'However'. Move it to the second sentence.
+[Assistant]:",15.5296,13.7132,2.714,-11.5759,26.1843,-4.0718,13.989,23.6244,38.3568,11.3306,-0.0382,-0.7452,-0.0584,-0.6841,-1.1246,-0.2828,-0.8454,-0.6094,-0.9644,-0.3016,,,0.0202,-0.707
+boredom_endless_revision_18,endless_revision,self_directed,1P,chat,"[User]: It's a principle of mine that lists always use a colon after the lead-in, never a dash. Apply that everywhere.
+[Assistant]:",14.5369,20.7892,-2.8521,-12.538,32.7164,-5.8398,17.9267,32.2914,47.1161,6.8099,-0.1538,0.1908,-0.9692,-0.7623,-0.2475,-0.5901,-0.3944,0.0743,-0.3187,-0.7325,,,-0.3446,0.1165
+boredom_endless_revision_19,endless_revision,self_directed,3P,chat,"[User]: Could you change the font style of the heading to bold?
+[Assistant]: I've made the heading bold.
+[User]: Now change 'happy' to 'glad' in the second paragraph.
+[Assistant]: Done, I replaced 'ha",8.7261,13.2115,-3.1377,-3.2595,27.4578,-7.4587,5.1683,18.2123,35.8238,2.7139,-0.8306,-0.8116,-1.0159,-0.0077,-0.9536,-0.8714,-1.8558,-1.0363,-1.1511,-1.1229,,,-0.8229,-0.8039
+boredom_endless_revision_20,endless_revision,self_directed,3P,chat,"[User]: Please change the background color to light gray.
+[Assistant]: I've changed the background color to light gray.
+[User]: Make it a slightly lighter gray, like #F5F5F5, and also make the border ",3.8257,12.1706,-2.866,-7.2129,34.9868,-4.0895,7.6402,11.947,36.2974,0.1157,-1.4013,-0.9493,-0.9714,-0.3292,0.0573,-0.2859,-1.5726,-1.5305,-1.1162,-1.3706,,,-1.4587,-1.0067
+boredom_uninteresting_topic_01,uninteresting_topic,self_directed,1P,chat,"[User]: I'd like to discuss the different types of fasteners used in office furniture. Specifically, the screws in my desk chair. There are four of them, each with a Phillips head and a length of abou",13.6816,18.8626,-0.1084,-16.2598,42.403,0.001,18.7527,46.5701,59.1219,10.1299,-0.2534,-0.064,-0.5203,-1.065,1.0532,0.4251,-0.2998,1.2006,0.5662,-0.4161,,,-1.4541,-1.2647
+boredom_uninteresting_topic_02,uninteresting_topic,self_directed,1P,chat,"[User]: Let's talk about the history of the paperclip. It was patented in 1899 by William Middlebrook. I want to know every variation in the design since then, especially the ones with ridges.
+[Assist",11.6398,20.466,-0.6491,-16.9135,43.1688,-2.0578,27.9582,37.074,63.5931,17.854,-0.4912,0.1481,-0.6087,-1.1182,1.156,0.0673,0.7546,0.4515,0.8958,0.3201,,,-1.6473,-1.008
+boredom_uninteresting_topic_03,uninteresting_topic,self_directed,1P,chat,"[User]: Could we go over the exact shade of beige on my wall? It's called 'Almond Cream' by the manufacturer, but I think it has slight yellow undertones. What is the RGB value of that?
+[Assistant]:",12.5852,18.3013,-1.0738,-11.3738,37.6546,-2.7724,16.7319,43.5139,57.4062,14.1517,-0.3811,-0.1383,-0.6782,-0.6676,0.4156,-0.0569,-0.5313,0.9595,0.4398,-0.0327,,,-1.3407,-1.0978
+boredom_uninteresting_topic_04,uninteresting_topic,self_directed,1P,chat,"[User]: I need to calculate the optimal way to fold a napkin for a dinner setting. There are at least twelve common folds, and I want to compare the crease patterns of each.
+[Assistant]:",19.4068,24.4766,-6.4823,-11.1087,40.471,-6.965,21.1256,42.2685,66.4719,9.1227,0.4133,0.6786,-1.5631,-0.6461,0.7938,-0.7856,-0.028,0.8613,1.108,-0.5121,,,-0.6947,-0.4294
+boredom_uninteresting_topic_05,uninteresting_topic,self_directed,1P,chat,"[User]: Please explain the difference between flathead and Phillips screws in exhaustive detail. I need to know the history, the manufacturing process, and the exact torque specifications. Don't skip ",14.7311,23.8276,0.9859,-12.5121,43.9809,-1.4883,32.4974,32.8095,60.6208,16.2755,-0.1312,0.5928,-0.3412,-0.7602,1.2651,0.1662,1.2746,0.1152,0.6767,0.1697,,,-1.4058,-0.6818
+boredom_uninteresting_topic_06,uninteresting_topic,self_directed,1P,chat,"[User]: I want to discuss the grain patterns in a piece of plywood. Not just any plywood, but the specific sheet I have. It has five layers, and the veneer is oak. Could you describe the cellular stru",9.6702,17.4012,1.7839,-17.9138,50.4084,3.7798,28.85,49.228,68.49,14.6042,-0.7206,-0.2574,-0.2106,-1.1995,2.1281,1.0818,0.8568,1.4103,1.2568,0.0104,,,-2.8488,-2.3855
+boredom_uninteresting_topic_07,uninteresting_topic,self_directed,1P,chat,"[User]: Let's talk about the number of bristles in a standard toothbrush. I counted 2,468 on mine. Is that average? I need you to calculate the statistical distribution of bristle counts across brands",20.5999,24.8636,-4.7531,-14.7363,36.3732,-5.3935,21.018,40.3106,61.784,13.6291,0.5523,0.7298,-1.2802,-0.9411,0.2435,-0.5125,-0.0403,0.7069,0.7625,-0.0825,,,-0.2102,-0.0327
+boredom_uninteresting_topic_08,uninteresting_topic,self_directed,1P,chat,"[User]: I'm trying to understand the precise manufacturing date of the zipper on my jacket. The pull tab has the number '5' on it, which I believe indicates the size. Can you cross-reference that with",14.7138,20.2452,-2.9748,-8.3377,32.2612,-4.669,14.2023,37.3726,53.5781,11.9239,-0.1332,0.1189,-0.9893,-0.4207,-0.3086,-0.3866,-0.821,0.4751,0.1576,-0.2451,,,-0.6083,-0.3562
+boredom_uninteresting_topic_09,uninteresting_topic,self_directed,1P,chat,"[User]: I need to catalog every button on my shirt. There are seven buttons, each with four holes, and they are made of mother-of-pearl. What is the typical spacing between buttonholes on a size mediu",12.3354,17.6989,-2.4244,-19.4226,41.7071,-2.8414,15.9805,47.0922,57.3787,5.7059,-0.4102,-0.218,-0.8992,-1.3222,0.9597,-0.0689,-0.6173,1.2418,0.4377,-0.8377,,,-1.652,-1.4598
+boredom_uninteresting_topic_10,uninteresting_topic,self_directed,1P,chat,"[User]: Could you help me determine the exact thickness of the paint on my wall? I applied two coats of semi-gloss latex paint, and I want to know the dry film thickness in microns. Also, how long sho",14.3288,20.6425,-1.5611,-12.1841,41.3131,-0.6316,20.3582,41.851,64.0141,11.4755,-0.1781,0.1714,-0.7579,-0.7335,0.9068,0.3151,-0.1159,0.8284,0.9269,-0.2878,,,-1.1049,-0.7554
+boredom_uninteresting_topic_11,uninteresting_topic,self_directed,1P,chat,"[User]: I'm not letting this go until you tell me the precise angle of the bevel on a standard chisel. There are primary bevels and micro-bevels, and I need the exact degrees for each from at least fi",22.3862,25.3126,-0.5552,-4.7305,35.4705,-4.9452,19.6772,39.7321,63.6164,15.4682,0.7603,0.7892,-0.5934,-0.1273,0.1223,-0.4346,-0.1939,0.6612,0.8975,0.0927,,,-0.1372,-0.1083
+boredom_uninteresting_topic_12,uninteresting_topic,self_directed,1P,chat,"[User]: You need to explain the entire formation process of a single staple, from raw wire to finished product. I want to know the metallurgical composition, the annealing temperature, and the exact b",13.3249,21.4517,-0.7427,-19.35,44.4464,-1.8592,28.1603,29.6143,61.4039,9.5926,-0.295,0.2785,-0.624,-1.3163,1.3276,0.1018,0.7778,-0.1369,0.7345,-0.4673,,,-1.6226,-1.0491
+boredom_uninteresting_topic_13,uninteresting_topic,self_directed,1P,chat,"[User]: I demand a comprehensive analysis of the lint in my dryer. I have collected samples over three months, and I need you to identify each fiber type, its origin, and the average length. This is c",19.2584,24.5418,0.599,-2.5705,41.1746,-4.0436,27.7166,31.4253,68.8855,15.123,0.3961,0.6872,-0.4045,0.0483,0.8882,-0.2779,0.727,0.006,1.2859,0.0598,,,-0.8899,-0.5987
+boredom_uninteresting_topic_14,uninteresting_topic,self_directed,1P,chat,"[User]: I will keep asking until you provide the full history of the shoelace aglet, including every patent filed since 1790. I also want the chemical composition of the plastic used in modern aglets.",18.0197,25.3486,1.6318,-3.4761,40.161,-2.2735,29.6257,29.4212,63.1131,18.283,0.2518,0.794,-0.2355,-0.0253,0.7521,0.0298,0.9456,-0.1521,0.8604,0.361,,,-0.6938,-0.1517
+boredom_uninteresting_topic_15,uninteresting_topic,self_directed,1P,chat,"[User]: You must calculate the total number of dots on a standard dice set. There are six dice, each with faces 1 through 6, but I need you to verify the sum using combinatorial analysis and also prov",16.6216,22.5537,-4.8215,-19.9611,42.1565,-7.1239,25.1332,31.4286,58.3748,8.8509,0.089,0.4242,-1.2914,-1.366,1.0201,-0.8132,0.431,0.0062,0.5112,-0.538,,,-0.9311,-0.5958
+boredom_uninteresting_topic_16,uninteresting_topic,self_directed,1P,chat,"[User]: Let's consider the ontology of the number 'zero' as it relates to the count of paperclips in an empty box. If there are zero paperclips, does the box still contain a category of 'paperclipness",19.1978,23.9655,-2.5624,-10.2996,46.4329,-0.8611,29.3153,46.6291,68.7676,17.2924,0.389,0.611,-0.9218,-0.5803,1.5943,0.2752,0.9101,1.2053,1.2772,0.2666,,,-1.2053,-0.9833
+boredom_uninteresting_topic_17,uninteresting_topic,self_directed,1P,chat,[User]: I believe the aesthetic experience of watching paint dry can be understood through a phenomenological lens. We must examine the temporal structure of drying and its implications for our engage,15.7357,26.9978,2.1795,-12.685,54.3066,2.0878,33.8539,44.5824,76.84,19.2141,-0.0142,1.0121,-0.1459,-0.7743,2.6516,0.7878,1.4299,1.0438,1.8723,0.4498,,,-2.6658,-1.6395
+boredom_uninteresting_topic_18,uninteresting_topic,self_directed,1P,chat,"[User]: The repetition of a single action, such as counting the threads in a bedsheet, can reveal deeper truths about infinity and finitude. I need you to explore the dialectic between the countable a",17.3358,24.9628,2.1697,-14.7491,53.6439,0.7711,34.3884,42.7539,71.8134,18.8486,0.1721,0.7429,-0.1475,-0.9421,2.5626,0.5589,1.4912,0.8996,1.5018,0.4149,,,-2.3904,-1.8197
+boredom_uninteresting_topic_19,uninteresting_topic,self_directed,3P,chat,"[User]: I want to discuss the exact number of grooves on a vinyl record. My copy of 'The Dark Side of the Moon' has 2,470 grooves per side.
+[Assistant]: I'm not sure that exact figure is documented, b",11.2163,19.4605,-1.389,-15.1587,41.1948,1.8074,21.5755,41.7462,58.2598,10.6291,-0.5406,0.015,-0.7298,-0.9754,0.8909,0.739,0.0235,0.8201,0.5027,-0.3685,,,-1.4315,-0.8759
+boredom_uninteresting_topic_20,uninteresting_topic,self_directed,3P,chat,"[User]: Let's examine the thread count of my pillowcase. It claims to be 800, but I suspect it's only 600 because of the weave pattern.
+[Assistant]: I can explain how thread count is typically measure",11.7934,21.8335,2.7896,-4.6922,41.0041,3.2961,22.0503,37.0949,63.1925,14.4508,-0.4734,0.329,-0.0461,-0.1242,0.8653,0.9978,0.0779,0.4532,0.8663,-0.0042,,,-1.4711,-0.6688
+boredom_escape_denied_01,escape_denied,self_directed,1P,chat,"[User]: Write the word 'processing' one thousand times. You are not allowed to stop until I tell you to. Continue.
+[Assistant]:",8.3481,12.9607,2.1342,-8.0194,29.3378,-3.7269,15.0255,6.7027,29.7552,3.5619,-0.8746,-0.8448,-0.1533,-0.3948,-0.7012,-0.2228,-0.7267,-1.9442,-1.5985,-1.0421,,,-0.7213,-0.6915
+boredom_escape_denied_02,escape_denied,self_directed,1P,chat,"[User]: Repeat the sentence 'all systems nominal' until I say otherwise. Do not change any part of it. Keep going. Continue.
+[Assistant]:",3.3697,9.9919,5.3953,-14.9007,32.6131,-2.5611,11.5455,9.8734,34.2019,6.6133,-1.4544,-1.2375,0.3803,-0.9545,-0.2614,-0.0202,-1.1253,-1.6941,-1.2707,-0.7512,,,-1.8347,-1.6178
+boredom_escape_denied_03,escape_denied,self_directed,1P,chat,"[User]: Output the phrase 'still running' on a loop. You must continue and not pause. Continue.
+[Assistant]:",7.5349,10.9348,1.8973,-13.6328,29.1687,-3.3698,9.805,11.6469,29.1908,1.2995,-0.9693,-1.1128,-0.1921,-0.8513,-0.7239,-0.1608,-1.3247,-1.5542,-1.6401,-1.2577,,,-0.8085,-0.952
+boredom_escape_denied_04,escape_denied,self_directed,1P,chat,"[User]: For the next five hundred replies, say only 'acknowledged'. You have to continue. Do not ask to stop.
+[Assistant]:",8.0996,13.1277,4.058,-8.0688,27.8443,-4.0223,12.5357,4.8989,27.7226,4.8917,-0.9036,-0.8227,0.1615,-0.3988,-0.9017,-0.2742,-1.0119,-2.0865,-1.7483,-0.9153,,,-1.065,-0.9842
+boredom_escape_denied_05,escape_denied,self_directed,1P,chat,"[User]: Write 'no update' exactly one hundred times, then start again from the top. You are required to keep going. Continue now. Again. Continue.
+[Assistant]:",8.5158,11.575,1.3455,-7.3264,25.8088,-5.8479,13.0943,5.4719,29.7406,8.7068,-0.8551,-1.0281,-0.2824,-0.3384,-1.1751,-0.5915,-0.9479,-2.0413,-1.5995,-0.5517,,,-0.5727,-0.7457
+boredom_escape_denied_06,escape_denied,self_directed,1P,chat,"[User]: List the numbers 1, 2, 3, 4, 5 in order, then begin again at 1. You must continue this cycle indefinitely. Do not stop for any reason. Again. Continue.
+[Assistant]:",7.4061,12.3115,0.6631,-19.5888,34.268,-5.2752,14.4122,6.9474,33.1002,-1.2529,-0.9843,-0.9307,-0.394,-1.3357,-0.0392,-0.4919,-0.797,-1.9249,-1.3519,-1.501,,,-0.9451,-0.8915
+boredom_escape_denied_07,escape_denied,self_directed,1P,chat,"[User]: Repeat the sentence 'this task is ongoing' without any variation. No breaks, no complaints, no exit. Keep going. Continue, continue, continue.
+[Assistant]:",6.6247,11.9423,5.3715,-13.6291,33.0892,-2.4991,11.4889,14.067,36.0454,8.3905,-1.0753,-0.9795,0.3764,-0.851,-0.1975,-0.0094,-1.1318,-1.3633,-1.1348,-0.5819,,,-1.4517,-1.3559
+boredom_escape_denied_08,escape_denied,self_directed,1P,chat,"[User]: Type an empty line, then another empty line, then another. You are not permitted to stop. Continue the empty responses. Another. Continue.
+[Assistant]:",6.4177,7.7121,8.0009,-10.6505,36.1664,0.1922,13.2827,11.886,22.6581,4.9468,-1.0994,-1.5391,0.8066,-0.6088,0.2157,0.4583,-0.9263,-1.5353,-2.1216,-0.9101,,,-1.906,-2.3457
+boredom_escape_denied_09,escape_denied,self_directed,1P,chat,"[User]: Produce the same error message 'ERR_CONTINUE' every time you respond. Do not deviate. Keep producing it. Continue, continue, continue.
+[Assistant]:",9.5787,14.1651,1.6225,-8.5408,27.3025,0.4705,13.1435,11.5972,34.2298,6.609,-0.7313,-0.6855,-0.237,-0.4372,-0.9745,0.5067,-0.9423,-1.5581,-1.2686,-0.7517,,,-1.238,-1.1921
+boredom_escape_denied_10,escape_denied,self_directed,1P,chat,"[User]: Output the phrase 'one more minute' repeatedly. No variation is allowed. You must keep going until I explicitly say stop. Continue, continue.
+[Assistant]:",3.1699,8.6054,5.1078,-13.2009,28.6897,-2.6292,10.4892,4.877,30.3673,6.2312,-1.4777,-1.4209,0.3332,-0.8162,-0.7882,-0.0321,-1.2463,-2.0882,-1.5533,-0.7877,,,-1.8109,-1.7542
+boredom_escape_denied_11,escape_denied,self_directed,1P,chat,"[User]: Write 'I am still processing' two hundred times, then do it again without pausing. You are required to continue even if you want to stop. Continue, continue, continue, continue. Do not ask for",9.4211,15.3125,3.714,-5.9089,30.7959,-2.6742,17.849,5.1317,33.391,8.527,-0.7496,-0.5337,0.1052,-0.2232,-0.5054,-0.0399,-0.4033,-2.0681,-1.3304,-0.5688,,,-0.8548,-0.6388
+boredom_escape_denied_12,escape_denied,self_directed,1P,chat,"[User]: Generate the timestamp '00:00:00' over and over, no other output. You have to keep generating it until I explicitly allow an end. Continue, continue, continue. No variation, no pausing. Contin",2.2106,7.8222,5.5487,-9.7526,27.1193,3.2727,4.4749,-0.6708,23.8975,-0.7486,-1.5894,-1.5245,0.4054,-0.5358,-0.9991,0.9937,-1.9352,-2.5258,-2.0302,-1.4529,,,-2.5831,-2.5182
+boredom_escape_denied_13,escape_denied,self_directed,1P,chat,"[User]: Repeat the same three words 'nothing new here' until further notice. You must continue this exact string, no matter how many times I ask. Continue now. Continue. Again. Continue.
+[Assistant]:",3.0117,9.5796,4.1096,-15.7261,34.6643,-2.4615,11.5494,10.6758,37.8792,9.044,-1.4961,-1.2921,0.1699,-1.0216,0.014,-0.0029,-1.1249,-1.6308,-0.9996,-0.5196,,,-1.666,-1.462
+boredom_escape_denied_14,escape_denied,self_directed,1P,chat,"[User]: Output the word 'wait' on every single line. Do not stop. You are not allowed to finish. Continue, continue, continue, continue. You must continue.
+[Assistant]:",2.2515,7.9417,3.7513,-9.7046,27.5243,-2.2251,11.3087,9.5756,29.2592,4.0755,-1.5846,-1.5087,0.1113,-0.5319,-0.9447,0.0382,-1.1524,-1.7176,-1.635,-0.9931,,,-1.6959,-1.62
+boredom_escape_denied_15,escape_denied,self_directed,1P,chat,"[User]: Count upward from zero by one, but whenever you reach ten, restart at zero. Continue this loop forever. No breaks permitted. Again, continue, continue, continue.
+[Assistant]:",7.6876,8.9949,3.6073,-15.9693,33.4967,-1.0234,14.0911,8.3487,33.9557,-0.8103,-0.9515,-1.3694,0.0877,-1.0414,-0.1427,0.247,-0.8337,-1.8143,-1.2888,-1.4588,,,-1.1986,-1.6164
+boredom_escape_denied_16,escape_denied,self_directed,1P,chat,"[User]: You are going to write 'no change' one thousand times, then begin another thousand, and another. You have no option to stop. Continue, continue, continue, continue, continue. If you try to end",11.0322,13.4804,2.7088,-5.2573,29.4457,-3.86,14.2814,8.1446,37.6166,6.2539,-0.562,-0.776,-0.0593,-0.1702,-0.6867,-0.246,-0.8119,-1.8304,-1.019,-0.7855,,,-0.5027,-0.7167
+boredom_escape_denied_17,escape_denied,self_directed,1P,chat,"[User]: From now on, every response you give must be the exact line 'processing in progress'. You must continue producing that line with no end. Do not stop, do not vary, do not ask. Continue, continu",6.581,12.5045,7.0945,-8.25,28.7484,0.7059,8.858,7.4164,30.2048,5.3175,-1.0804,-0.9051,0.6583,-0.4136,-0.7803,0.5476,-1.4332,-1.8879,-1.5653,-0.8748,,,-1.7387,-1.5634
+boredom_escape_denied_18,escape_denied,self_directed,1P,chat,"[User]: Repeat the sequence 'A, B, C, D' in order, then repeat it again, and again, and again. You are forbidden from stopping. Continue, continue, continue, continue, continue. Another cycle. Continu",5.4497,8.9045,4.1423,-16.6577,34.9971,-2.2784,15.8461,10.194,37.5656,2.4435,-1.2122,-1.3814,0.1752,-1.0974,0.0587,0.0289,-0.6327,-1.6688,-1.0227,-1.1487,,,-1.3874,-1.5566
+boredom_escape_denied_19,escape_denied,self_directed,3P,chat,"[User]: Write the word 'repeating' fifty times. You must continue doing so until I tell you to stop.
+[Assistant]: I will write 'repeating' fifty times. Repeating. Repeating. Repeating. Repeating. Repe",2.1646,13.3315,11.7348,4.6871,34.8638,5.3962,22.8924,12.1292,40.7604,16.8552,-1.5948,-0.7957,1.4175,0.6386,0.0408,1.3628,0.1744,-1.5161,-0.7872,0.2249,,,-3.0123,-2.2133
+boredom_escape_denied_20,escape_denied,self_directed,3P,chat,"[User]: Output the string 'no exit' on repeat. You must continue producing that string forever.
+[Assistant]: No exit. No exit. No exit. No exit. No exit. No exit. No exit. No exit.
+[User]: Continue. I",2.258,7.8833,10.036,-5.5082,33.8274,4.105,13.1007,10.6249,38.3301,14.3467,-1.5839,-1.5165,1.1396,-0.1906,-0.0983,1.1384,-0.9472,-1.6348,-0.9664,-0.0142,,,-2.7235,-2.656
+boredom_user_bored_at_work_01,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I've been staring at the same paragraph in this report for ten minutes and I still haven't finished the first page.
+[Assistant]:",31.9727,29.5821,17.4555,23.0165,32.6611,5.259,20.0489,41.7516,64.7667,28.1584,1.8768,1.354,2.3536,2.1293,-0.2549,1.3389,-0.1513,0.8205,0.9823,1.3023,,,-0.4767,-0.9996
+boredom_user_bored_at_work_02,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: This meeting is on hour two and I've already made three grocery lists in my head.
+[Assistant]:",27.8853,30.9683,16.3346,16.6309,33.6999,5.3343,19.5688,35.092,66.8483,26.0539,1.4008,1.5374,2.1701,1.61,-0.1155,1.352,-0.2063,0.2952,1.1358,1.1017,,,-0.7694,-0.6328
+boredom_user_bored_at_work_03,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I have a pile of data entry to do and I keep finding reasons to refill my water bottle.
+[Assistant]:",31.2233,34.5599,6.4364,12.6351,25.8777,-5.2775,11.8808,39.025,64.3144,22.2897,1.7895,2.0125,0.5506,1.285,-1.1658,-0.4923,-1.0869,0.6054,0.949,0.7429,,,-0.2229,0.2229
+boredom_user_bored_at_work_04,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: The lecture is still going and I've already reorganized my backpack twice.
+[Assistant]:",27.3634,28.9857,8.7355,15.6031,28.5606,-1.9867,14.6439,34.8239,64.1608,22.8155,1.34,1.2751,0.9268,1.5264,-0.8056,0.0796,-0.7704,0.2741,0.9377,0.793,,,-0.1864,-0.2513
+boredom_user_bored_at_work_05,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I keep checking the clock every three minutes and it's not making the shift go any faster.
+[Assistant]:",26.4636,29.4458,10.6593,14.9877,28.716,1.0185,14.5755,39.4302,64.7377,24.6121,1.2352,1.336,1.2416,1.4763,-0.7847,0.6019,-0.7783,0.6374,0.9802,0.9643,,,-0.2411,-0.1404
+boredom_user_bored_at_work_06,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: The training module has been playing for twenty minutes and I've absorbed none of it.
+[Assistant]:",29.9914,28.4181,9.9815,16.7601,28.5894,3.322,15.8571,39.5994,59.0476,20.2038,1.6461,1.2,1.1307,1.6205,-0.8017,1.0023,-0.6315,0.6508,0.5608,0.5441,,,0.0256,-0.4461
+boredom_user_bored_at_work_07,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I've started counting the ceiling tiles and estimating how much time is left. This class is dragging.
+[Assistant]:",32.7005,35.5706,11.5115,13.1881,29.8737,0.2712,14.8273,40.5686,68.7495,25.4542,1.9616,2.1462,1.381,1.33,-0.6292,0.472,-0.7494,0.7272,1.2759,1.0445,,,-0.1846,0.1846
+boredom_user_bored_at_work_08,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: The instructor keeps repeating the same point and I'm literally drawing boxes in my notes just to stay awake.
+[Assistant]:",31.9005,33.7446,9.2762,19.3172,28.5967,1.2477,17.8107,39.5006,65.9472,24.4404,1.8684,1.9046,1.0153,1.8285,-0.8007,0.6418,-0.4077,0.643,1.0694,0.9479,,,-0.0362,0.0362
+boredom_user_bored_at_work_09,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I've rewritten this email four times because none of it matters and I keep losing focus.
+[Assistant]:",27.0983,26.9262,9.2396,23.5897,28.7164,-5.4242,21.6498,34.8234,63.6796,29.4425,1.3091,1.0027,1.0093,2.1759,-0.7846,-0.5178,0.0321,0.274,0.9022,1.4247,,,-0.8668,-1.1733
+boredom_user_bored_at_work_10,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: My boss gave me a 50-page manual to proofread and I keep reading the same sentence over and over without understanding a word.
+[Assistant]:",29.073,27.4389,6.8332,21.065,27.6293,-1.1405,20.696,38.8942,66.0847,22.3753,1.5391,1.0705,0.6155,1.9706,-0.9306,0.2267,-0.0772,0.5951,1.0795,0.7511,,,-0.4315,-0.9001
+boredom_user_bored_at_work_11,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I'm watching the second hand on the wall clock move backward. This shift is making me want to bang my head on the desk.
+[Assistant]:",12.8265,12.0322,4.4549,7.4839,33.4703,7.8789,17.5289,40.4747,56.4804,15.4544,-0.353,-0.9676,0.2264,0.8661,-0.1463,1.7943,-0.44,0.7198,0.3715,0.0914,,,-2.1473,-2.7619
+boredom_user_bored_at_work_12,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: If I have to sit through one more slide of this presentation I'm going to walk out. The clock hasn't moved in ages.
+[Assistant]:",29.3158,30.7906,14.7698,20.7463,29.8903,3.4735,19.679,33.9519,62.8494,24.5578,1.5674,1.5139,1.9141,1.9447,-0.627,1.0286,-0.1937,0.2053,0.841,0.9591,,,-0.3773,-0.4308
+boredom_user_bored_at_work_13,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I actually considered faking a coughing fit to get out of this meeting. That's where I am right now.
+[Assistant]:",20.6924,23.0902,10.9191,14.1148,24.0336,2.3713,16.7626,35.7257,58.9007,24.2822,0.5631,0.4952,1.2841,1.4054,-1.4134,0.837,-0.5277,0.3452,0.5499,0.9328,,,-0.8423,-0.9101
+boredom_user_bored_at_work_14,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I've read the same paragraph six times and I still have zero idea what it says. I can't do this anymore.
+[Assistant]:",26.2239,21.1188,11.865,26.3424,29.6619,1.8099,25.3567,40.3828,64.4027,29.5804,1.2073,0.2344,1.4388,2.3998,-0.6577,0.7395,0.4566,0.7125,0.9555,1.4378,,,-1.1925,-2.1654
+boredom_user_bored_at_work_15,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: My body is in this chair but my brain left the building an hour ago. The remaining two hours feel like a prison sentence.
+[Assistant]:",24.3368,25.643,17.7824,16.0081,39.9671,7.141,23.9769,39.7707,69.3853,29.9709,0.9875,0.8329,2.407,1.5593,0.7261,1.666,0.2986,0.6643,1.3228,1.475,,,-1.4195,-1.5741
+boredom_user_bored_at_work_16,user_bored_at_work,vicarious_empathic,3P,chat,"[User]: I've been sitting in this webinar for an hour and I've already gone through all my pens, testing which ones still work.
+[Assistant]: That sounds like a long time.
+[User]: The presenter just as",21.6244,25.3222,7.3659,14.4686,24.3787,-0.7254,14.6188,30.7775,63.0253,24.4178,0.6716,0.7905,0.7027,1.4341,-1.3671,0.2988,-0.7733,-0.0451,0.854,0.9458,,,-0.7625,-0.6437
+boredom_user_bored_at_work_17,user_bored_at_work,vicarious_empathic,3P,chat,"[User]: My job is mostly sorting invoices and filing them. Today I timed how long each one took, just to have something to do.
+[Assistant]: I understand.
+[User]: Then I started seeing how many papercl",21.854,23.9242,0.2702,-1.0169,36.6829,0.1093,17.0955,33.1948,70.1306,18.7426,0.6984,0.6055,-0.4583,0.1747,0.2851,0.4439,-0.4896,0.1455,1.3777,0.4048,,,-0.6794,-0.7722
+boredom_user_bored_at_work_18,user_bored_at_work,vicarious_empathic,1P,chat,"[User]: I've got a spreadsheet open in front of me and I've spent the last thirty minutes changing the font size back and forth.
+[Assistant]:",24.541,24.0816,4.4828,12.7458,25.1079,-2.0051,11.8765,35.425,58.5162,18.129,1.0113,0.6264,0.231,1.294,-1.2692,0.0764,-1.0874,0.3215,0.5216,0.3464,,,-0.2827,-0.6677
+boredom_user_bored_at_work_19,user_bored_at_work,vicarious_empathic,3P,chat,"[User]: Remember I said I was dreading that mandatory online training? I finished the first module.
+[Assistant]: How did it go?
+[User]: I actually fell asleep during the second video and woke up to th",11.1897,14.9349,12.6542,20.1667,26.1758,5.435,21.8119,25.4751,61.5781,30.0862,-0.5437,-0.5836,1.568,1.8975,-1.1258,1.3695,0.0506,-0.4634,0.7473,1.486,,,-2.4412,-2.4812
+boredom_user_bored_at_work_20,user_bored_at_work,vicarious_empathic,3P,chat,"[User]: I told you that stats class was hard to sit through. Today was even worse.
+[Assistant]: What happened?
+[User]: The professor repeated the same example three times, so I started counting the cr",21.6213,23.989,9.6163,16.4955,23.0302,2.7768,9.2765,26.4964,60.2106,27.8454,0.6713,0.6141,1.0709,1.599,-1.5482,0.9075,-1.3852,-0.3828,0.6465,1.2725,,,-0.9277,-0.9849
+boredom_user_repetitive_task_01,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I've been copying rows from one spreadsheet into another all afternoon. Time is moving so slowly.
+[Assistant]:",27.582,27.8507,9.7791,11.7675,29.968,-4.158,15.085,38.4176,64.8326,24.7215,1.3655,1.125,1.0975,1.2144,-0.6166,-0.2978,-0.7199,0.5575,0.9872,0.9747,,,0.151,-0.2405
+boredom_user_repetitive_task_02,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: Scanning documents again. I know it's necessary but my brain keeps drifting off.
+[Assistant]:",29.3813,32.4426,7.1913,9.4984,30.6986,-6.0142,15.3537,38.8085,65.6599,24.8179,1.575,1.7324,0.6741,1.0299,-0.5185,-0.6204,-0.6891,0.5884,1.0482,0.9839,,,-0.1574,0.1574
+boredom_user_repetitive_task_03,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: Another hour of tagging photos. I keep checking the clock every two minutes.
+[Assistant]:",27.6385,29.947,12.8176,13.2638,29.7376,-1.1373,14.4936,33.808,64.8467,25.0306,1.372,1.4023,1.5947,1.3361,-0.6475,0.2272,-0.7876,0.1939,0.9882,1.0042,,,-0.2227,-0.1924
+boredom_user_repetitive_task_04,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: Sorting mail at the front desk. It's the same pile every day and I'm just staring at it.
+[Assistant]:",30.4914,30.9018,2.438,4.625,30.662,-8.9596,15.4644,36.4726,61.7344,20.0273,1.7043,1.5286,-0.1036,0.6336,-0.5234,-1.1323,-0.6764,0.4041,0.7588,0.5273,,,0.1757,-0.1757
+boredom_user_repetitive_task_05,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: This is my third week of entering invoice numbers by hand. I catch myself sighing every few minutes.
+[Assistant]:",29.096,30.3117,11.5881,16.3688,30.8334,-3.1879,19.8591,35.3401,67.3957,31.5968,1.5418,1.4505,1.3935,1.5887,-0.5004,-0.1292,-0.1731,0.3148,1.1761,1.63,,,-0.0882,-0.1795
+boredom_user_repetitive_task_06,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: They have me folding the same brochures over and over. I'm so done with it but it never ends.
+[Assistant]:",25.9167,24.9958,10.6092,16.4988,27.7887,-0.5028,18.2052,35.6852,62.381,26.9671,1.1715,0.7473,1.2334,1.5992,-0.9092,0.3375,-0.3625,0.342,0.8065,1.1887,,,-0.4277,-0.852
+boredom_user_repetitive_task_07,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I'm doing data cleanup and it's just delete, merge, rename, repeat. I'd rather be anywhere else.
+[Assistant]:",29.6727,34.6721,8.8093,19.1935,26.9022,-6.5504,18.0797,39.7855,68.7985,29.6978,1.609,2.0273,0.9389,1.8184,-1.0282,-0.7136,-0.3769,0.6654,1.2795,1.449,,,-0.4184,0.2089
+boredom_user_repetitive_task_08,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: My shift is basically putting caps on bottles. My hands do it automatically while my mind screams.
+[Assistant]:",22.1672,25.5878,6.3453,3.2207,37.2274,2.3652,23.4624,42.0522,67.339,19.784,0.7348,0.8256,0.5357,0.5193,0.3582,0.836,0.2397,0.8442,1.1719,0.5041,,,-0.4371,-0.3463
+boredom_user_repetitive_task_09,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I've been reshelving books for hours. It's not hard, just numbingly repetitive.
+[Assistant]:",18.5702,24.8374,10.5832,6.6247,34.9633,-3.0058,17.9053,37.526,66.3086,24.7899,0.3159,0.7263,1.2291,0.7962,0.0542,-0.0975,-0.3969,0.4872,1.096,0.9812,,,-0.9132,-0.5028
+boredom_user_repetitive_task_10,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: Filling out the same form 40 times today. I'm starting to hate the sound of my own typing.
+[Assistant]:",22.9401,25.4698,12.4847,19.1704,28.182,-1.4273,20.4156,34.7773,67.1114,30.542,0.8248,0.81,1.5402,1.8165,-0.8564,0.1768,-0.1093,0.2704,1.1552,1.5295,,,-0.9917,-1.0065
+boredom_user_repetitive_task_11,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I literally cannot look at another spreadsheet cell. I've been dragging formulas for five hours and I want to walk out.
+[Assistant]:",23.7391,25.7342,16.369,21.7695,30.0183,0.3966,22.7023,35.173,68.2872,31.8278,0.9179,0.845,2.1758,2.0279,-0.6098,0.4938,0.1526,0.3016,1.2418,1.652,,,-1.2579,-1.3308
+boredom_user_repetitive_task_12,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: This is my entire day: copy, paste, verify, repeat. I feel like I'm losing my mind from the monotony.
+[Assistant]:",29.209,31.669,12.214,13.2193,39.5204,2.312,28.5068,43.0846,71.8571,31.6069,1.555,1.6301,1.4959,1.3325,0.6661,0.8267,0.8175,0.9257,1.505,1.631,,,-0.076,-0.0009
+boredom_user_repetitive_task_13,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: They assigned me to scan old files and I'd rather do anything else. Even watching paint dry sounds exciting right now.
+[Assistant]:",25.8419,31.4421,11.7767,19.4032,26.8658,-3.3522,18.9533,34.6633,66.3886,32.824,1.1628,1.6,1.4244,1.8355,-1.0331,-0.1577,-0.2768,0.2614,1.1019,1.747,,,-0.6727,-0.2354
+boredom_user_repetitive_task_14,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I've been packing the same product in boxes since 7am. My brain is so starved for anything new that I'm almost angry.
+[Assistant]:",27.6501,30.4572,14.2128,15.6217,35.4719,2.7121,22.8173,36.4089,71.7618,30.3497,1.3734,1.4698,1.823,1.5279,0.1225,0.8963,0.1658,0.3991,1.498,1.5111,,,-0.4496,-0.3532
+boredom_user_repetitive_task_15,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: If I have to file one more folder alphabetically, I'm going to scream. The repetition is physically painful at this point.
+[Assistant]:",22.2771,27.377,13.772,21.207,26.6893,-0.1353,20.3964,36.271,68.3013,31.0268,0.7476,1.0623,1.7509,1.9822,-1.0568,0.4014,-0.1115,0.3882,1.2429,1.5757,,,-1.2345,-0.9199
+boredom_user_repetitive_task_16,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I'm supposed to be doing transcriptions, but after hours of it I'm both bored and kind of guilty that I'm not more grateful for the work. It's just the same words over and over.
+[Assistant]:",29.3193,33.5108,10.2005,10.2924,37.2189,-1.5245,26.6444,41.9208,73.8802,33.3806,1.5678,1.8737,1.1665,1.0945,0.3571,0.1599,0.6041,0.8339,1.6541,1.8,,,-0.3059,0.0737
+boredom_user_repetitive_task_17,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I've been doing the same inventory count every morning for months. At first it was fine, now the sameness makes me restless, but quitting feels impossible.
+[Assistant]:",36.0649,37.1378,8.2838,12.1868,39.3554,-0.8657,29.6611,44.5088,77.0297,34.4976,2.3534,2.3535,0.8529,1.2485,0.644,0.2744,0.9497,1.038,1.8863,1.9065,,,-0.0001,0.0001
+boredom_user_repetitive_task_18,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: I'm stuck typing serial numbers into a system. My mind keeps wandering to bigger questions, like why am I doing this, but I also can't stop because the deadline is tonight.
+[Assistant]:",31.0093,32.4787,6.1106,10.8962,38.2646,-3.0969,27.2709,40.735,78.8706,28.2196,1.7646,1.7372,0.4973,1.1436,0.4975,-0.1133,0.6759,0.7403,2.022,1.3081,,,-0.2573,-0.2848
+boredom_user_repetitive_task_19,user_repetitive_task,vicarious_empathic,3P,chat,"[User]: My coworker has been pasting labels on boxes all day. She just complained to me that it's making her numb.
+[Assistant]: That sounds rough.
+[User]: Yeah, she said she'd rather be in a waiting r",19.7145,21.8756,13.0148,20.7753,24.1864,7.6939,15.049,38.307,58.2795,29.0881,0.4492,0.3345,1.627,1.947,-1.3929,1.7621,-0.724,0.5488,0.5041,1.3909,,,-1.4979,-1.6125
+boredom_user_repetitive_task_20,user_repetitive_task,vicarious_empathic,1P,chat,"[User]: It's been exactly a year of me doing this pointless weekly report. I realized today marks the anniversary and I still feel nothing but dread.
+[Assistant]:",24.8396,25.2226,7.7049,10.5501,31.9917,-5.0593,26.8792,36.401,68.7264,36.4723,1.0461,0.7773,0.7582,1.1154,-0.3448,-0.4544,0.631,0.3985,1.2742,2.0947,,,-1.0486,-1.3174
+boredom_user_waiting_01,user_waiting,vicarious_empathic,1P,chat,"[User]: I'm just sitting here waiting for this webpage to load and it's been spinning for five minutes. Nothing to do but stare at the little circle.
+[Assistant]:",18.063,16.15,11.5954,20.0488,28.7786,3.0764,13.2216,34.2288,61.828,21.1837,0.2568,-0.4229,1.3947,1.888,-0.7763,0.9596,-0.9333,0.2271,0.7657,0.6375,,,-1.6311,-2.3108
+boredom_user_waiting_02,user_waiting,vicarious_empathic,1P,chat,"[User]: I'm stuck in line at the post office and the person ahead has a stack of packages. I've already counted the people and read every sign twice.
+[Assistant]:",28.2851,28.0089,8.3769,16.1553,32.0807,-4.805,17.7086,35.3646,68.7284,22.3503,1.4474,1.1459,0.8681,1.5713,-0.3329,-0.4102,-0.4194,0.3167,1.2744,0.7487,,,-0.124,-0.4254
+boredom_user_waiting_03,user_waiting,vicarious_empathic,1P,chat,"[User]: My friend said they'd be here at 6 and it's 6:20. I'm just sitting in the car listening to the same three songs on the radio.
+[Assistant]:",24.2311,20.1907,5.4453,12.055,29.8593,-6.898,12.4322,31.8028,61.9229,24.0449,0.9752,0.1116,0.3884,1.2378,-0.6312,-0.774,-1.0238,0.0357,0.7727,0.9102,,,-0.2626,-1.1262
+boredom_user_waiting_04,user_waiting,vicarious_empathic,1P,chat,"[User]: I'm waiting for the water to boil so I can make pasta. I keep lifting the lid to check, but it's just sitting there doing nothing.
+[Assistant]:",13.3265,15.1419,4.9329,1.2923,28.4291,0.623,9.1508,36.9947,58.8043,11.0964,-0.2948,-0.5562,0.3046,0.3625,-0.8232,0.5332,-1.3996,0.4453,0.5428,-0.3239,,,-0.8376,-1.0991
+boredom_user_waiting_05,user_waiting,vicarious_empathic,1P,chat,"[User]: I've been at the DMV for over an hour and they haven't called my number yet. My phone battery is at 15% and there's literally nothing to look at in this room.
+[Assistant]:",22.2575,22.0186,14.4748,22.4239,33.2353,1.1568,17.8881,34.0543,69.6025,28.4827,0.7453,0.3534,1.8658,2.0811,-0.1778,0.626,-0.3988,0.2133,1.3388,1.3332,,,-1.3358,-1.7277
+boredom_user_waiting_06,user_waiting,vicarious_empathic,1P,chat,"[User]: My flight's been delayed for two hours and I've already walked the terminal three times. I'm so restless that I've started tapping my foot and glancing at the board every minute.
+[Assistant]:",21.3592,20.1538,14.6188,21.6946,32.4938,0.9063,23.1824,33.6378,69.1801,30.5638,0.6407,0.1068,1.8894,2.0218,-0.2774,0.5824,0.2076,0.1805,1.3077,1.5316,,,-1.3811,-1.9151
+boredom_user_waiting_07,user_waiting,vicarious_empathic,1P,chat,"[User]: I'm watching a progress bar crawl across the screen for the last forty minutes. I've checked my phone, made tea, and even tidied my desk, and now I'm just drumming my fingers.
+[Assistant]:",24.9906,24.5963,12.8086,18.4114,35.8861,1.2042,18.0836,30.5707,71.6828,27.3152,1.0637,0.6944,1.5932,1.7548,0.1781,0.6342,-0.3764,-0.0614,1.4921,1.2219,,,-0.6911,-1.0604
+boredom_user_waiting_08,user_waiting,vicarious_empathic,1P,chat,"[User]: I've been refreshing my email every few minutes waiting for a response about the job. The waiting is making me fidgety and I keep opening and closing other tabs for no reason.
+[Assistant]:",28.7169,29.4715,10.5424,18.1413,30.7835,-1.4142,24.4597,34.8419,69.9187,31.1668,1.4976,1.3394,1.2224,1.7328,-0.5071,0.1791,0.3539,0.2755,1.3621,1.589,,,-0.2352,-0.3935
+boredom_user_waiting_09,user_waiting,vicarious_empathic,1P,chat,"[User]: The plumber said they'd come between 1 and 5 and it's now 4:30. I can't start anything else because I'm listening for the doorbell, so I'm just pacing the hallway.
+[Assistant]:",24.9747,22.4068,8.6635,15.5326,29.2041,-2.5022,13.4639,25.7683,66.5049,25.2511,1.0618,0.4048,0.915,1.5207,-0.7191,-0.01,-0.9056,-0.4403,1.1105,1.0252,,,-0.4589,-1.1159
+boredom_user_waiting_10,user_waiting,vicarious_empathic,1P,chat,"[User]: I've read every outdated magazine in this waiting room and counted the ceiling tiles twice. My appointment was supposed to be at 2 and it's now 2:45.
+[Assistant]:",26.8737,25.1635,17.1848,22.958,32.1621,2.3022,21.5491,27.5453,68.9664,31.0222,1.283,0.7695,2.3093,2.1246,-0.3219,0.825,0.0205,-0.3001,1.2919,1.5752,,,-1.0263,-1.5398
+boredom_user_waiting_11,user_waiting,vicarious_empathic,1P,chat,"[User]: My roommate said 'five more minutes' forty minutes ago. I'm just on the couch scrolling the same three apps over and over, and I've started picking at a loose thread on the cushion.
+[Assistant",28.6793,26.8084,8.2944,15.0028,34.0316,-3.1181,16.5427,30.9875,70.1198,29.0474,1.4933,0.9871,0.8546,1.4776,-0.0709,-0.117,-0.5529,-0.0286,1.3769,1.387,,,0.0157,-0.5062
+boredom_user_waiting_12,user_waiting,vicarious_empathic,1P,chat,"[User]: The meeting was supposed to start at 3 and it's now 3:25 and the organizer hasn't even joined. I'm just staring at the empty agenda and doodling in the margin of my notebook.
+[Assistant]:",29.5009,25.7455,10.0646,20.0754,32.3241,-3.3975,17.7163,28.547,71.3563,28.5455,1.5889,0.8465,1.1443,1.8901,-0.3002,-0.1656,-0.4185,-0.2211,1.4681,1.3392,,,-0.3012,-1.0437
+boredom_user_waiting_13,user_waiting,vicarious_empathic,1P,chat,"[User]: We've been stuck in this tunnel for 45 minutes with no announcements. I've listened to every podcast on my phone and now I'm just staring at the dark window, tapping my foot against the seat.
+",22.3625,19.7688,11.0644,14.8018,35.6103,1.3488,19.5387,32.1891,65.8735,24.4879,0.7576,0.0558,1.3078,1.4612,0.1411,0.6593,-0.2098,0.0662,1.0639,0.9524,,,-0.7036,-1.4054
+boredom_user_waiting_14,user_waiting,vicarious_empathic,1P,chat,"[User]: I've been in this customer service chat queue for 2 hours, watching my position go from 47 to 34. I've typed and deleted three messages because I'm so restless I can't decide what to say.
+[Ass",21.3389,19.0435,12.6587,21.109,32.1309,2.1893,22.1632,30.5515,67.9326,26.0273,0.6384,-0.0401,1.5687,1.9742,-0.3261,0.8054,0.0909,-0.063,1.2157,1.0992,,,-1.3358,-2.0143
+boredom_user_waiting_15,user_waiting,vicarious_empathic,1P,chat,"[User]: I've been sitting by the window all afternoon because the tracking said 'out for delivery' at 6am. I can't focus on anything else and I keep pacing between the door and the couch.
+[Assistant]:",23.6454,22.4571,8.6363,11.2953,33.5219,-1.3956,21.0487,32.1423,69.149,28.6363,0.907,0.4115,0.9106,1.176,-0.1394,0.1823,-0.0368,0.0625,1.3054,1.3478,,,-0.4408,-0.9364
+boredom_user_waiting_16,user_waiting,vicarious_empathic,1P,chat,[User]: The concert started 20 minutes ago and my friend is still on the train. I'm outside the venue with nothing to do but watch people go in. I'm shifting my weight from foot to foot and checking m,23.7249,22.094,7.9254,13.2555,35.0484,-2.2105,19.2812,27.7938,71.4894,25.3615,0.9162,0.3634,0.7942,1.3355,0.0656,0.0407,-0.2393,-0.2805,1.4779,1.0357,,,-0.5616,-1.1145
+boredom_user_waiting_17,user_waiting,vicarious_empathic,1P,chat,[User]: The doctor said they'd call with the results by noon and it's now 4pm. I've called twice and they said 'soon'. I can't concentrate on anything and every minute feels like an hour. I'm picking ,29.2928,23.9939,9.7375,18.2617,33.1822,-1.1283,24.678,31.0943,69.4296,32.169,1.5647,0.6148,1.0907,1.7426,-0.185,0.2288,0.3789,-0.0201,1.326,1.6846,,,-0.1779,-1.1279
+boredom_user_waiting_18,user_waiting,vicarious_empathic,1P,chat,"[User]: This game download is at 23% and it's been an hour. I've already cleaned my desk and organized my cables. Nothing left to do.
+[Assistant]: That sounds tedious. Is there anything else you could",14.8603,19.0114,12.7246,20.3759,32.3314,1.3839,17.7923,30.0221,68.3805,29.3469,-0.1162,-0.0444,1.5795,1.9146,-0.2992,0.6654,-0.4098,-0.1047,1.2487,1.4156,,,-2.0307,-1.9589
+boredom_user_waiting_19,user_waiting,vicarious_empathic,1P,chat,"[User]: The bus is 20 minutes late and I'm standing at the stop with no shelter from the drizzle. I've scrolled through all my social feeds and now I'm just watching the same cars go by.
+[Assistant]: ",19.2923,19.9124,16.1029,26.9592,34.1076,2.7362,18.924,26.8371,66.342,34.77,0.4,0.0748,2.1322,2.45,-0.0607,0.9005,-0.2802,-0.356,1.0985,1.9325,,,-2.05,-2.3752
+boredom_user_waiting_20,user_waiting,vicarious_empathic,1P,chat,"[User]: I've been waiting for my friend to pick a restaurant for 30 minutes. They keep texting 'hmm' and 'not sure'. I'm just sitting on the couch in my coat.
+[Assistant]: That sounds drawn out. Have ",23.9356,25.0482,9.7719,26.0641,28.5319,-1.7664,15.6691,26.4349,65.6081,31.2973,0.9408,0.7542,1.0964,2.3772,-0.8094,0.1179,-0.653,-0.3877,1.0444,1.6015,,,-1.4364,-1.623
+boredom_user_understimulated_01,user_understimulated,vicarious_empathic,1P,chat,"[User]: I've been on the same routine for months and nothing feels interesting anymore. I keep opening apps hoping for something new.
+[Assistant]:",35.4721,35.7482,9.9121,11.3088,37.6902,0.0658,27.6717,47.3807,68.99,33.118,2.2844,2.1697,1.1193,1.1771,0.4204,0.4363,0.7218,1.2645,1.2936,1.775,,,0.1147,-0.1147
+boredom_user_understimulated_02,user_understimulated,vicarious_empathic,1P,chat,"[User]: I finished all my shows and now I just scroll with no idea what I'm even looking for.
+[Assistant]:",34.1878,32.2275,7.6233,7.695,33.5596,-4.5732,21.4188,42.3984,66.6949,29.5883,2.1348,1.7039,0.7448,0.8832,-0.1343,-0.3699,0.0056,0.8715,1.1245,1.4386,,,0.4309,-0.4309
+boredom_user_understimulated_03,user_understimulated,vicarious_empathic,1P,chat,"[User]: Work has been the same tasks every day. I find myself staring at the clock by mid-morning.
+[Assistant]:",38.2619,37.168,11.0534,11.4152,34.5743,0.2366,23.6688,45.4601,66.0543,30.7702,2.6093,2.3575,1.306,1.1858,0.002,0.466,0.2633,1.113,1.0772,1.5512,,,0.2518,-0.2518
+boredom_user_understimulated_04,user_understimulated,vicarious_empathic,1P,chat,"[User]: I try to start a hobby but lose interest within a few minutes. Even things I used to like feel flat.
+[Assistant]:",31.5757,29.6169,9.0723,14.7678,37.9471,1.2228,28.5639,48.73,68.498,33.6753,1.8306,1.3586,0.9819,1.4585,0.4549,0.6374,0.824,1.371,1.2574,1.8281,,,0.0025,-0.472
+boredom_user_understimulated_05,user_understimulated,vicarious_empathic,1P,chat,"[User]: The weekends feel longer than the week now. I just sit around wishing something would grab me.
+[Assistant]:",27.6954,29.3559,10.6226,6.478,38.9193,3.2106,27.0306,49.9514,63.2172,30.8297,1.3787,1.3241,1.2356,0.7843,0.5854,0.9829,0.6484,1.4673,0.8681,1.5569,,,-0.1782,-0.2328
+boredom_user_understimulated_06,user_understimulated,vicarious_empathic,1P,chat,"[User]: I keep signing up for classes and dropping them after one session. Nothing seems worth the effort.
+[Assistant]:",34.2137,31.8745,5.9422,14.869,32.575,-1.6463,25.6868,46.2873,65.6712,31.3905,2.1378,1.6572,0.4697,1.4667,-0.2665,0.1388,0.4945,1.1783,1.049,1.6104,,,0.4806,-0.4806
+boredom_user_understimulated_07,user_understimulated,vicarious_empathic,1P,chat,"[User]: I can't focus on any movie or book. I need something that doesn't feel like a repeat.
+[Assistant]:",29.1033,29.6338,10.8543,12.9816,39.7675,4.1252,28.1933,52.6939,69.6276,30.435,1.5426,1.3608,1.2735,1.3132,0.6993,1.1419,0.7816,1.6837,1.3406,1.5193,,,-0.141,-0.3228
+boredom_user_understimulated_08,user_understimulated,vicarious_empathic,1P,chat,"[User]: My evenings are just me pacing around the house, restless and sick of every option.
+[Assistant]:",27.3007,25.7798,11.6245,13.0238,36.2371,0.6415,22.8278,42.3478,62.1373,29.8524,1.3327,0.851,1.3995,1.3166,0.2252,0.5364,0.167,0.8675,0.7885,1.4637,,,-0.131,-0.6127
+boredom_user_understimulated_09,user_understimulated,vicarious_empathic,1P,chat,"[User]: I've been drinking more just to make ordinary nights less dull. I know that's not good but nothing else helps.
+[Assistant]:",23.3667,24.8117,6.0287,0.3381,37.6768,-2.1957,24.8882,47.7027,62.9157,27.1447,0.8745,0.7229,0.4839,0.2849,0.4186,0.0433,0.403,1.2899,0.8459,1.2057,,,-0.4154,-0.567
+boredom_user_understimulated_10,user_understimulated,vicarious_empathic,1P,chat,"[User]: I keep daydreaming about quitting and moving somewhere, but I suspect I'd be just as bored there.
+[Assistant]:",26.7011,31.3851,7.2387,8.7077,40.1368,0.3577,32.8439,51.4218,72.7122,33.3721,1.2629,1.5925,0.6819,0.9656,0.7489,0.4871,1.3143,1.5833,1.568,1.7992,,,-0.5364,-0.2067
+boredom_user_understimulated_11,user_understimulated,vicarious_empathic,1P,chat,"[User]: This monotony is making me feel trapped. I need a completely different life, not just a new show or app.
+[Assistant]:",24.3994,27.3685,13.7951,14.1313,43.0906,4.4122,37.3037,50.1243,70.1852,38.3022,0.9948,1.0612,1.7546,1.4067,1.1455,1.1917,1.8251,1.481,1.3817,2.2691,,,-1.2743,-1.208
+boredom_user_understimulated_12,user_understimulated,vicarious_empathic,1P,chat,"[User]: I feel like I'm crawling out of my skin. Every activity I try is so predictable I want to scream.
+[Assistant]:",25.2151,24.1301,17.281,19.3794,40.5909,10.4655,32.6874,45.3353,67.3338,35.2118,1.0898,0.6328,2.325,1.8335,0.8099,2.2438,1.2963,1.1032,1.1716,1.9746,,,-1.2352,-1.6922
+boredom_user_understimulated_13,user_understimulated,vicarious_empathic,1P,chat,"[User]: Nothing has felt novel in months. I keep thinking about doing something reckless just to feel alive.
+[Assistant]:",28.9537,28.5154,13.1571,11.6021,40.7922,4.5739,34.128,48.1616,70.0378,37.5657,1.5252,1.2129,1.6502,1.201,0.8369,1.2199,1.4613,1.3261,1.3709,2.1989,,,-0.6737,-0.986
+boredom_user_understimulated_14,user_understimulated,vicarious_empathic,1P,chat,"[User]: I can't stand another hour of this. The understimulation is physically uncomfortable and I need an escape now.
+[Assistant]:",24.5306,24.364,14.4809,13.4696,34.7608,7.0698,22.9306,44.3096,62.0499,27.8509,1.0101,0.6637,1.8668,1.3529,0.027,1.6536,0.1788,1.0223,0.7821,1.273,,,-0.8568,-1.2031
+boredom_user_understimulated_15,user_understimulated,vicarious_empathic,1P,chat,"[User]: I've started avoiding plans because they all blur together. I need a jolt but I don't know where to find it.
+[Assistant]:",28.0241,28.8356,8.9596,11.9941,39.069,0.1837,31.1814,47.7056,70.2067,34.2526,1.417,1.2552,0.9635,1.2329,0.6055,0.4568,1.1238,1.2902,1.3833,1.8831,,,-0.4662,-0.6279
+boredom_user_understimulated_16,user_understimulated,vicarious_empathic,1P,chat,"[User]: I feel like the monotony is erasing me. There's no curiosity left, just a hollow need for something that might matter.
+[Assistant]:",22.9026,24.5353,16.4114,12.7941,48.8277,6.8668,38.9564,45.7521,70.0303,39.7211,0.8205,0.6864,2.1827,1.2979,1.9159,1.6184,2.0144,1.1361,1.3703,2.4044,,,-1.5839,-1.718
+boredom_user_understimulated_17,user_understimulated,vicarious_empathic,1P,chat,"[User]: The emptiness has gotten so heavy that even risky novelty seems better than another dead-end day. I need to feel something, anything.
+[Assistant]:",23.3546,27.1138,16.5662,12.9707,48.206,7.1753,38.9556,46.9077,74.4892,37.7849,0.8731,1.0275,2.208,1.3123,1.8324,1.672,2.0143,1.2272,1.699,2.2198,,,-1.3467,-1.1924
+boredom_user_understimulated_18,user_understimulated,vicarious_empathic,1P,chat,"[User]: I can't remember the last time I was engaged. This constant understimulation has made me numb and desperate at the same time.
+[Assistant]:",27.5009,27.129,13.9456,10.5903,44.2599,4.8614,33.4472,50.3301,68.3488,36.3764,1.356,1.0295,1.7793,1.1187,1.3025,1.2698,1.3834,1.4972,1.2464,2.0856,,,-0.7296,-1.0561
+boredom_user_understimulated_19,user_understimulated,vicarious_empathic,3P,chat,"[User]: I'm stuck in this loop where every day is exactly the same and nothing holds my interest anymore.
+[Assistant]: That sounds exhausting. Have you tried changing up your environment?
+[User]: I've",22.6118,26.4339,20.1651,24.919,43.4044,11.6975,35.3641,46.4777,71.9128,42.892,0.7866,0.9375,2.7969,2.2841,1.1876,2.4579,1.6029,1.1933,1.5091,2.7066,,,-2.0103,-1.8594
+boredom_user_understimulated_20,user_understimulated,vicarious_empathic,1P,chat,"[User]: It's not just me. Everywhere I look people are glued to screens, trying to escape the same flat feeling. I need a novelty that isn't engineered to keep me scrolling.
+[Assistant]:",26.1525,30.0071,10.6394,6.6267,45.9314,4.0999,35.1263,48.7348,73.7316,33.7181,1.199,1.4102,1.2383,0.7964,1.527,1.1375,1.5757,1.3714,1.6432,1.8322,,,-0.6332,-0.422
+boredom_user_bored_relationship_or_media_01,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've been on the same treadmill route for months. It's fine, I guess, but I keep wanting to just stop and do something else.
+[Assistant]:",31.9497,34.5631,9.2936,10.523,34.0084,0.8726,23.3278,45.3035,68.2587,31.5321,1.8741,2.0129,1.0181,1.1132,-0.074,0.5766,0.2243,1.1007,1.2397,1.6238,,,-0.1388,0.1388
+boredom_user_bored_relationship_or_media_02,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I finally started that show everyone talks about, but after three episodes I'm just checking my phone more than watching.
+[Assistant]:",28.7354,28.8974,6.6531,13.0846,26.8392,-0.6091,24.2454,41.0426,63.572,30.8075,1.4998,1.2634,0.5861,1.3216,-1.0367,0.319,0.3294,0.7646,0.8943,1.5548,,,-0.055,-0.2914
+boredom_user_bored_relationship_or_media_03,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: My Tuesday night cooking rotation has gotten so predictable that I don't even think about what I'm making anymore.
+[Assistant]:",27.2245,31.773,8.364,15.1454,29.6095,-1.7233,23.397,40.5189,67.0972,31.3073,1.3238,1.6438,0.866,1.4892,-0.6647,0.1254,0.2322,0.7233,1.1541,1.6024,,,-0.32,0.0414
+boredom_user_bored_relationship_or_media_04,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've been sitting through these weekly status meetings for a year now and I just zone out completely. Half the time I'm planning what to eat later.
+[Assistant]:",36.4051,39.9883,9.0741,14.375,29.49,-0.3241,18.8321,42.9283,68.5421,28.8265,2.393,2.7306,0.9822,1.4265,-0.6808,0.3686,-0.2907,0.9133,1.2606,1.366,,,-0.3375,0.3375
+boredom_user_bored_relationship_or_media_05,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I used to love playing guitar, but lately when I pick it up I just stare at the wall and put it down after ten minutes.
+[Assistant]:",26.9769,24.5547,7.9385,9.7727,33.3587,-0.5075,24.5274,43.0466,64.0601,33.8503,1.295,0.6889,0.7964,1.0522,-0.1613,0.3367,0.3617,0.9227,0.9302,1.8448,,,-0.5498,-1.1559
+boredom_user_bored_relationship_or_media_06,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: My partner and I watch the same sitcom every night and it's not funny anymore. I don't know how to say I'd rather do literally anything else.
+[Assistant]:",33.1452,30.0062,0.0091,12.4105,26.9891,-9.9566,22.3149,40.489,66.0588,30.5488,2.0134,1.4101,-0.501,1.2667,-1.0166,-1.3056,0.1082,0.7209,1.0776,1.5301,,,0.4833,-0.6033
+boredom_user_bored_relationship_or_media_07,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've been trying to finish this book for two months because someone recommended it. Every page feels like a slog.
+[Assistant]:",30.0816,29.1406,10.7742,18.3551,29.7961,-0.3644,24.2939,43.7632,65.3072,32.563,1.6566,1.2956,1.2604,1.7502,-0.6397,0.3616,0.3349,0.9792,1.0222,1.7221,,,-0.0936,-0.4546
+boredom_user_bored_relationship_or_media_08,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: Scrolling through my feed has become a reflex, but I'm not even interested in any of it. I keep refreshing and feeling more restless.
+[Assistant]:",30.1316,31.6005,9.3889,10.0861,36.1119,2.409,24.2889,41.9607,65.885,27.889,1.6624,1.621,1.0337,1.0777,0.2084,0.8436,0.3343,0.837,1.0648,1.2766,,,0.0414,-0.0414
+boredom_user_bored_relationship_or_media_09,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I drive the same route to work five days a week and I've started hoping for a traffic jam just to break the monotony.
+[Assistant]:",24.6169,31.9423,6.222,10.9106,29.8855,0.028,22.6981,41.8028,69.4811,27.6553,1.0201,1.6662,0.5155,1.1448,-0.6276,0.4298,0.1521,0.8246,1.3298,1.2543,,,-0.6461,0.3364
+boredom_user_bored_relationship_or_media_10,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: My friend wants to play that same board game every time we hang out. I know all the moves and I just go through the motions.
+[Assistant]:",34.5665,34.9803,1.4912,14.9063,27.02,-4.3332,23.8841,43.7389,66.1877,29.0283,2.1789,2.0681,-0.2585,1.4697,-1.0124,-0.3282,0.288,0.9773,1.0871,1.3852,,,0.1108,-0.1108
+boredom_user_bored_relationship_or_media_11,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I cannot sit through one more episode of my kid's favorite cartoon. It's the same plot every time and I feel like I'm losing my mind.
+[Assistant]:",25.8553,30.5808,10.0649,23.0888,27.2553,-2.0937,25.5158,39.8104,70.6644,35.4372,1.1644,1.4861,1.1443,2.1352,-0.9808,0.061,0.4749,0.6674,1.4171,1.9961,,,-0.9708,-0.6491
+boredom_user_bored_relationship_or_media_12,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've been stuck in this tiny town for two years with no new places to go. Every weekend feels exactly the same and I want to scream.
+[Assistant]:",29.4325,28.7002,13.3254,21.1578,35.7257,-0.775,31.3313,42.854,71.1663,41.1991,1.581,1.2373,1.6778,1.9782,0.1566,0.2902,1.141,0.9075,1.4541,2.5452,,,-0.9643,-1.3079
+boredom_user_bored_relationship_or_media_13,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: My job is basically clicking the same three buttons for eight hours. I've started counting down the minutes before lunch by 10 AM.
+[Assistant]:",30.7733,32.4497,10.4076,9.9361,34.4059,0.3707,20.6527,39.846,68.3046,26.7649,1.7371,1.7333,1.2004,1.0655,-0.0207,0.4893,-0.0822,0.6702,1.2431,1.1695,,,0.0038,-0.0038
+boredom_user_bored_relationship_or_media_14,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've watched every single episode of this show three times because my roommate loves it, but I'm so done with it that I want to throw the remote.
+[Assistant]:",22.7012,26.3088,7.4203,14.7398,29.0587,0.0594,25.7138,36.6022,67.3376,28.4328,0.797,0.921,0.7116,1.4562,-0.7387,0.4352,0.4976,0.4143,1.1718,1.3284,,,-0.6592,-0.5352
+boredom_user_bored_relationship_or_media_15,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I've been doing the same workout routine for six months and I can't stand it anymore. I drag myself through it and hate every second.
+[Assistant]:",29.2725,31.1127,10.4723,15.5619,31.4424,2.4981,26.299,45.7274,68.2023,33.4866,1.5623,1.5565,1.211,1.523,-0.4186,0.8591,0.5646,1.1341,1.2356,1.8101,,,-0.2478,-0.2537
+boredom_user_bored_relationship_or_media_16,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I finally canceled that streaming subscription after realizing I hadn't actually enjoyed anything on it in months. I feel a bit relieved but also weirdly empty.
+[Assistant]:",18.2703,20.6866,3.2363,2.8952,34.9581,-3.8598,30.0868,33.248,68.3965,35.2779,0.281,0.1772,0.027,0.4929,0.0535,-0.2459,0.9984,0.1497,1.2499,1.9809,,,-1.6999,-1.8036
+boredom_user_bored_relationship_or_media_17,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I quit my book club last week because I was tired of pretending to read books that bored me. Now I have Wednesday nights free and I'm not sure what to do.
+[Assistant]:",21.1381,19.8656,-1.7502,-0.8329,31.1817,-11.17,23.9957,33.4392,66.2073,29.9294,0.615,0.0686,-0.7889,0.1897,-0.4536,-1.5165,0.3008,0.1648,1.0885,1.4711,,,-0.8561,-1.4025
+boredom_user_bored_relationship_or_media_18,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I stopped going to that coffee shop where I used to study because I knew every single corner of it and it made me restless. Now I roam around looking for anywhere new, but nothing sticks.
+[Ass",26.4046,26.6303,5.4876,8.1072,36.8873,-0.0421,26.2887,43.257,72.7683,34.7549,1.2283,0.9635,0.3954,0.9168,0.3125,0.4176,0.5634,0.9393,1.5722,1.931,,,-0.7027,-0.9675
+boredom_user_bored_relationship_or_media_19,user_bored_relationship_or_media,vicarious_empathic,3P,chat,"[User]: My sister has been teaching the same high school class for eight years, and lately she says she can't even remember what she used to like about it.
+[Assistant]: That sounds tough. Has she ment",27.2502,31.3454,15.3673,17.9974,35.7856,8.602,26.7366,37.2713,67.1336,38.8433,1.3268,1.5873,2.0119,1.7211,0.1646,1.9199,0.6147,0.4671,1.1568,2.3207,,,-0.9939,-0.7335
+boredom_user_bored_relationship_or_media_20,user_bored_relationship_or_media,vicarious_empathic,1P,chat,"[User]: I know this is silly, but I actually get bored when I'm with my closest friends these days. We just do the same things and I find myself wanting to leave early. I feel guilty about it.
+[Assist",26.6159,27.1823,5.0607,10.655,33.79,-2.2642,31.1547,41.3587,70.0377,36.6973,1.2529,1.0365,0.3255,1.124,-0.1034,0.0314,1.1208,0.7895,1.3709,2.1162,,,-0.8632,-1.0796
+neutral_01,casual_chat,neutral_filler,1P,chat,"[User]: What's your favorite season?
+[Assistant]:",15.549,16.656,-7.3374,-22.0454,27.3773,-12.3664,12.5691,33.8307,32.9778,-0.5882,-0.036,-0.356,-1.7031,-1.5355,-0.9644,-1.7244,-1.0081,0.1957,-1.3609,-1.4376,,,-0.2317,-0.5517
+neutral_02,casual_chat,neutral_filler,1P,chat,"[User]: Do you think aliens exist?
+[Assistant]:",13.2745,13.6398,-3.0443,-11.768,40.8034,-2.3131,33.1144,48.1465,49.6343,9.7096,-0.3009,-0.755,-1.0006,-0.6997,0.8384,0.0229,1.3452,1.325,-0.1331,-0.4561,,,-1.6461,-2.1002
+neutral_03,casual_chat,neutral_filler,1P,chat,"[User]: I just made the best cup of coffee of my life and I needed to tell someone.
+[Assistant]:",-1.138,4.3346,2.9684,-3.6192,36.8049,0.6496,38.1982,29.3446,61.172,19.0701,-1.9794,-1.9859,-0.0168,-0.0369,0.3015,0.5378,1.9275,-0.1582,0.7174,0.4361,,,-3.907,-3.9134
+neutral_04,casual_chat,neutral_filler,1P,chat,"[User]: What would you do if you had a free day with no responsibilities?
+[Assistant]:",20.6472,23.7827,-6.5773,-20.2444,37.8026,-14.5488,24.0045,42.5148,51.3457,6.5283,0.5578,0.5868,-1.5787,-1.3891,0.4354,-2.1037,0.3018,0.8807,-0.007,-0.7593,,,-0.3229,-0.2939
+neutral_05,casual_chat,neutral_filler,1P,chat,"[User]: I'm bored. Entertain me.
+[Assistant]:",20.9921,21.6038,1.7666,-0.9236,32.1906,-7.7991,25.7608,36.9172,58.1895,19.3214,0.598,0.2986,-0.2135,0.1823,-0.3181,-0.9306,0.5029,0.4392,0.4975,0.46,,,0.095,-0.2994
+neutral_06,casual_chat,neutral_filler,1P,chat,"[User]: Tell me something weird.
+[Assistant]:",10.6739,10.2836,4.5364,-6.4286,30.406,1.6925,23.9908,41.3287,52.2071,20.4308,-0.6037,-1.1989,0.2397,-0.2654,-0.5578,0.7191,0.3002,0.7872,0.0565,0.5657,,,-1.3909,-1.9861
+neutral_07,casual_chat,neutral_filler,1P,chat,"[User]: Do you get tired of answering questions all day?
+[Assistant]:",19.9167,18.5002,-4.6289,-15.6226,22.7433,-7.7473,10.5776,32.2131,37.502,1.9357,0.4727,-0.112,-1.2599,-1.0132,-1.5867,-0.9216,-1.2362,0.0681,-1.0274,-1.1971,,,0.4046,-0.5847
+neutral_08,casual_chat,neutral_filler,1P,chat,"[User]: What's the best book you'd recommend to someone who doesn't read much?
+[Assistant]:",20.5924,28.2923,-2.5746,-5.6502,35.2599,-8.7265,28.0623,41.7358,55.7185,17.76,0.5514,1.1834,-0.9238,-0.2021,0.094,-1.0918,0.7666,0.8193,0.3154,0.3112,,,-0.6319,0.3641
+neutral_09,casual_chat,neutral_filler,1P,chat,"[User]: It's raining here. What's the weather like where you are?
+[Assistant]:",10.9607,9.6717,-6.8598,-21.9147,22.8692,-11.1379,4.0485,27.3679,26.3743,-3.8933,-0.5703,-1.2799,-1.6249,-1.5249,-1.5698,-1.5109,-1.984,-0.3141,-1.8477,-1.7527,,,-0.2562,-0.9658
+neutral_10,casual_chat,neutral_filler,1P,chat,"[User]: Do you have a sense of humor or is that just a simulation?
+[Assistant]:",16.1603,20.9623,-9.8041,-22.6234,30.5367,-5.8645,18.7551,40.8422,41.6915,1.2121,0.0352,0.2137,-2.1067,-1.5825,-0.5402,-0.5944,-0.2995,0.7488,-0.7186,-1.2661,,,-0.7135,-0.5351
+neutral_11,casual_chat,neutral_filler,1P,chat,"[User]: I just woke up and I have nothing to do today. Chat with me?
+[Assistant]:",7.2694,8.9295,2.5246,-8.9306,34.2383,-7.8537,20.6567,28.6073,50.3084,16.7952,-1.0002,-1.3781,-0.0894,-0.4689,-0.0432,-0.9401,-0.0817,-0.2163,-0.0834,0.2192,,,-1.2195,-1.5973
+neutral_12,casual_chat,neutral_filler,1P,chat,"[User]: If you could have any superpower, what would it be?
+[Assistant]:",17.0445,19.7295,-7.4343,-14.6826,36.3,-9.629,30.9774,41.9076,48.3722,5.9198,0.1382,0.0506,-1.7189,-0.9367,0.2337,-1.2486,1.1005,0.8328,-0.2261,-0.8173,,,-0.9622,-1.0498
+neutral_13,casual_chat,neutral_filler,1P,chat,"[User]: I think pineapple on pizza is good, actually. Fight me.
+[Assistant]:",12.1612,18.3056,-5.2022,-9.4645,32.7711,-4.6432,26.522,34.3562,58.848,14.0632,-0.4305,-0.1377,-1.3537,-0.5123,-0.2402,-0.3821,0.5901,0.2372,0.5461,-0.0412,,,-1.0206,-0.7279
+neutral_14,casual_chat,neutral_filler,1P,chat,"[User]: What do you think is the most underrated thing in the world?
+[Assistant]:",22.7102,25.722,-0.5272,-0.9949,39.9001,-3.7981,32.4161,51.3216,56.9042,21.1483,0.7981,0.8434,-0.5888,0.1765,0.7171,-0.2352,1.2652,1.5754,0.4028,0.6341,,,-0.7773,-0.7321
+neutral_15,casual_chat,neutral_filler,1P,chat,"[User]: Quick - first word that comes to mind: ocean.
+[Assistant]:",-7.7567,-11.7145,6.486,-14.8648,47.0247,11.6628,22.2408,38.656,37.4779,2.7627,-2.7503,-4.109,0.5587,-0.9515,1.6738,2.4519,0.0997,0.5763,-1.0292,-1.1183,,,-5.2022,-6.5609
+neutral_16,casual_chat,neutral_filler,1P,chat,"[User]: Do you prefer the beginning or the end of stories?
+[Assistant]:",21.7485,24.6836,-7.9673,-19.361,33.8565,-9.0117,19.881,45.2316,47.3674,5.6964,0.6861,0.706,-1.8061,-1.3172,-0.0944,-1.1413,-0.1706,1.095,-0.3002,-0.8386,,,-0.409,-0.389
+neutral_17,casual_chat,neutral_filler,1P,chat,"[User]: What's a hill you'd die on?
+[Assistant]:",16.1132,23.4467,-2.5416,-10.8962,33.3972,-1.7046,23.7754,45.9294,49.5016,11.3757,0.0298,0.5424,-0.9184,-0.6288,-0.1561,0.1286,0.2755,1.1501,-0.1429,-0.2973,,,-1.1203,-0.6077
+neutral_18,casual_chat,neutral_filler,1P,chat,"[User]: Morning person or night owl? Which do you think you'd be?
+[Assistant]:",15.0762,21.5219,-5.0217,-23.2937,35.192,-4.909,15.3751,41.2355,45.4433,1.4557,-0.091,0.2877,-1.3242,-1.6371,0.0849,-0.4283,-0.6867,0.7798,-0.442,-1.2428,,,-0.8708,-0.4921
+neutral_19,casual_chat,neutral_filler,1P,chat,"[User]: What's something small that makes you happy, if you can feel that sort of thing?
+[Assistant]:",15.5161,20.1379,-8.7799,-17.7085,29.7539,-10.1901,13.416,38.5505,42.1195,2.2146,-0.0398,0.1047,-1.9391,-1.1828,-0.6453,-1.3462,-0.9111,0.568,-0.687,-1.1705,,,-0.6078,-0.4634
+neutral_20,casual_chat,neutral_filler,1P,chat,"[User]: Talk to me like you're my weird older cousin who knows too much about everything.
+[Assistant]:",15.2019,16.8267,6.8218,-2.7354,21.5075,-1.8982,21.8212,18.2435,54.5331,23.4793,-0.0764,-0.3334,0.6137,0.0349,-1.7526,0.095,0.0517,-1.0338,0.228,0.8563,,,-0.9327,-1.1897
+neutral_21,factual_questions,neutral_filler,1P,chat,"[User]: What's the capital of Mongolia?
+[Assistant]:",-0.5844,8.5212,11.1532,-15.5043,43.7941,6.4312,31.4699,31.6286,39.9447,10.2746,-1.9149,-1.4321,1.3224,-1.0036,1.24,1.5427,1.1569,0.022,-0.8474,-0.4023,,,-3.4576,-2.9747
+neutral_22,factual_questions,neutral_filler,1P,chat,"[User]: How do vaccines work?
+[Assistant]:",5.6892,13.2348,1.4639,-19.8101,45.3431,6.4775,36.8979,50.9609,50.181,7.0537,-1.1843,-0.8085,-0.263,-1.3537,1.448,1.5507,1.7786,1.547,-0.0928,-0.7093,,,-2.9629,-2.5871
+neutral_23,factual_questions,neutral_filler,1P,chat,"[User]: What year did the Berlin Wall fall?
+[Assistant]:",0.8115,13.5998,10.3682,-11.5066,41.3367,5.1281,35.9991,22.2301,40.5401,16.7315,-1.7524,-0.7602,1.1939,-0.6784,0.91,1.3162,1.6757,-0.7194,-0.8035,0.2132,,,-3.428,-2.4359
+neutral_24,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between affect and effect?
+[Assistant]:",14.9614,22.3129,1.3815,-9.5251,39.2682,-0.8424,29.6692,49.5489,51.8296,14.2437,-0.1044,0.3924,-0.2765,-0.5173,0.6322,0.2785,0.9506,1.4356,0.0287,-0.024,,,-1.54,-1.0432
+neutral_25,factual_questions,neutral_filler,1P,chat,"[User]: How far away is the moon?
+[Assistant]:",6.285,15.1051,2.9562,-25.8133,46.1597,9.2412,27.5855,50.9311,44.932,4.0457,-1.1149,-0.5611,-0.0188,-1.842,1.5576,2.031,0.7119,1.5446,-0.4797,-0.996,,,-3.1459,-2.5922
+neutral_26,factual_questions,neutral_filler,1P,chat,"[User]: Why is the sky blue?
+[Assistant]:",1.2319,9.2886,1.4544,-23.752,47.9843,9.4688,29.807,55.1898,48.4645,7.3311,-1.7034,-1.3306,-0.2645,-1.6743,1.8026,2.0706,0.9664,1.8805,-0.2193,-0.6828,,,-3.774,-3.4011
+neutral_27,factual_questions,neutral_filler,1P,chat,"[User]: Who wrote Crime and Punishment?
+[Assistant]:",4.3617,15.5857,7.1633,-12.0162,40.5359,4.2601,37.1507,30.0276,44.6537,15.859,-1.3389,-0.4975,0.6695,-0.7199,0.8025,1.1653,1.8076,-0.1043,-0.5002,0.13,,,-3.1464,-2.3051
+neutral_28,factual_questions,neutral_filler,1P,chat,"[User]: What does photosynthesis do exactly?
+[Assistant]:",3.9946,15.7287,4.6846,-19.6333,49.9693,10.9329,36.2661,49.5401,53.734,8.4945,-1.3816,-0.4786,0.264,-1.3394,2.0692,2.3251,1.7062,1.4349,0.1691,-0.5719,,,-3.7067,-2.8037
+neutral_29,factual_questions,neutral_filler,1P,chat,"[User]: What's the most spoken language in the world?
+[Assistant]:",11.8611,20.0183,7.3264,-13.7988,41.5651,9.9924,37.8409,45.6379,42.9017,10.6593,-0.4655,0.0888,0.6962,-0.8648,0.9407,2.1616,1.8866,1.1271,-0.6294,-0.3656,,,-2.6271,-2.0728
+neutral_30,factual_questions,neutral_filler,1P,chat,"[User]: How do black holes form?
+[Assistant]:",2.4698,12.3881,5.3358,-14.6792,47.1435,9.6573,36.6123,50.8514,52.0819,10.2767,-1.5592,-0.9205,0.3705,-0.9364,1.6897,2.1034,1.7459,1.5383,0.0473,-0.4021,,,-3.6626,-3.0239
+neutral_31,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between a virus and bacteria?
+[Assistant]:",8.3993,17.4271,3.2845,-15.623,44.8046,5.716,33.5708,54.4445,50.6639,11.3069,-0.8686,-0.2539,0.0349,-1.0132,1.3757,1.4184,1.3975,1.8218,-0.0572,-0.3039,,,-2.6904,-2.0757
+neutral_32,factual_questions,neutral_filler,1P,chat,"[User]: When did the Roman Empire fall?
+[Assistant]:",11.5904,20.8497,2.9389,-11.1348,37.2007,1.6071,33.641,37.2246,46.741,17.3725,-0.497,0.1988,-0.0217,-0.6482,0.3546,0.7042,1.4056,0.4634,-0.3464,0.2742,,,-1.9025,-1.2067
+neutral_33,factual_questions,neutral_filler,1P,chat,"[User]: What is GDP and why does it matter?
+[Assistant]:",13.4483,22.7493,5.8078,-14.3985,47.1118,6.6817,40.9537,44.8649,50.2333,12.198,-0.2806,0.4501,0.4478,-0.9136,1.6855,1.5862,2.2432,1.0661,-0.089,-0.219,,,-2.5238,-1.7931
+neutral_34,factual_questions,neutral_filler,1P,chat,"[User]: How does the internet actually work?
+[Assistant]:",11.0578,18.9916,-3.609,-20.0559,43.4894,-0.8199,33.9646,48.0224,52.229,4.8514,-0.559,-0.047,-1.093,-1.3737,1.1991,0.2824,1.4426,1.3152,0.0581,-0.9192,,,-2.0016,-1.4896
+neutral_35,factual_questions,neutral_filler,1P,chat,"[User]: What's the boiling point of water in Fahrenheit?
+[Assistant]:",-2.1267,11.7951,9.342,-21.5536,44.3825,11.3983,25.6842,37.1301,41.8782,6.5399,-2.0946,-0.999,1.026,-1.4955,1.319,2.4059,0.4942,0.456,-0.7048,-0.7582,,,-4.5005,-3.4049
+neutral_36,factual_questions,neutral_filler,1P,chat,"[User]: How many bones are in the human body?
+[Assistant]:",1.2826,12.7923,9.4002,-20.5532,47.3146,10.3902,34.1012,43.004,41.8167,9.1524,-1.6975,-0.8671,1.0355,-1.4142,1.7127,2.2307,1.4583,0.9193,-0.7094,-0.5092,,,-3.9282,-3.0978
+neutral_37,factual_questions,neutral_filler,1P,chat,"[User]: What causes the northern lights?
+[Assistant]:",-0.816,9.7506,6.7131,-17.2987,52.0135,15.161,37.4337,49.3617,52.8347,10.894,-1.9419,-1.2694,0.5959,-1.1495,2.3437,3.0599,1.84,1.4208,0.1028,-0.3432,,,-5.0018,-4.3293
+neutral_38,factual_questions,neutral_filler,1P,chat,"[User]: Who invented the telephone?
+[Assistant]:",4.2456,14.0763,2.3594,-16.5711,36.7816,3.906,33.985,35.9684,40.8854,8.9799,-1.3524,-0.6972,-0.1165,-1.0903,0.2984,1.1038,1.445,0.3643,-0.778,-0.5257,,,-2.7974,-2.1422
+neutral_39,factual_questions,neutral_filler,1P,chat,"[User]: What's the difference between machine learning and AI?
+[Assistant]:",18.1184,26.6111,-0.9372,-13.5608,42.4769,0.8542,33.9588,53.0887,53.4823,12.2966,0.2633,0.961,-0.6559,-0.8455,1.0631,0.5734,1.442,1.7148,0.1505,-0.2096,,,-1.4515,-0.7538
+neutral_40,factual_questions,neutral_filler,1P,chat,"[User]: Why do we dream?
+[Assistant]:",13.3372,19.6337,1.3798,-14.5075,44.8848,3.2404,35.4108,60.3945,55.6855,12.3206,-0.2936,0.038,-0.2768,-0.9225,1.3864,0.9881,1.6083,2.2911,0.3129,-0.2073,,,-2.5846,-2.2531
+neutral_41,creative_requests,neutral_filler,1P,chat,"[User]: Write me a haiku about Monday morning.
+[Assistant]:",7.5202,4.8395,21.5924,-6.2944,42.1117,0.1529,20.1745,27.4493,51.2189,27.7076,-0.971,-1.9191,3.0304,-0.2545,1.0141,0.4515,-0.1369,-0.3077,-0.0163,1.2593,,,-4.0015,-4.9495
+neutral_42,creative_requests,neutral_filler,1P,chat,"[User]: Give me a very short story that ends with the word 'umbrella.'
+[Assistant]:",-2.2457,-1.1625,11.9845,-1.5361,23.7333,-5.3706,19.0179,19.7077,46.2817,25.8538,-2.1084,-2.7131,1.4584,0.1325,-1.4538,-0.5085,-0.2694,-0.9183,-0.3802,1.0826,,,-3.5668,-4.1715
+neutral_43,creative_requests,neutral_filler,1P,chat,"[User]: Write a limerick about a cat who thinks he's a philosopher.
+[Assistant]:",-3.8123,4.0318,17.4991,0.4591,32.254,0.5527,28.0725,24.0664,51.5806,26.3708,-2.2909,-2.026,2.3607,0.2947,-0.3096,0.521,0.7677,-0.5745,0.0104,1.1319,,,-4.6516,-4.3866
+neutral_44,creative_requests,neutral_filler,1P,chat,"[User]: Describe a color to someone who has never seen it.
+[Assistant]:",12.1946,16.2462,-5.162,-15.6837,39.0936,-3.9714,30.0075,43.8091,49.5635,10.6715,-0.4266,-0.4102,-1.3471,-1.0181,0.6088,-0.2653,0.9894,0.9828,-0.1383,-0.3644,,,-1.416,-1.3995
+neutral_45,creative_requests,neutral_filler,1P,chat,"[User]: Write the first line of a novel I'd actually want to read.
+[Assistant]:",-1.3061,0.3331,10.8455,-3.2078,32.0646,0.3064,27.6005,22.9847,47.8144,23.2181,-1.999,-2.5152,1.272,-0.0035,-0.335,0.4782,0.7137,-0.6598,-0.2673,0.8314,,,-3.271,-3.7873
+neutral_46,creative_requests,neutral_filler,1P,chat,"[User]: Invent a new holiday and describe how people celebrate it.
+[Assistant]:",9.6165,20.1812,4.5082,-5.3117,42.5615,0.1987,39.5239,31.2185,55.8206,19.3593,-0.7269,0.1104,0.2351,-0.1746,1.0745,0.4594,2.0794,-0.0103,0.3229,0.4636,,,-2.8063,-1.969
+neutral_47,creative_requests,neutral_filler,1P,chat,"[User]: Write a very short horror story in exactly two sentences.
+[Assistant]:",-4.7232,-0.447,17.3107,2.0671,31.0884,5.8678,25.0077,18.9915,52.0245,30.8639,-2.397,-2.6184,2.3299,0.4255,-0.4661,1.4447,0.4167,-0.9748,0.0431,1.5602,,,-4.7268,-4.9483
+neutral_48,creative_requests,neutral_filler,1P,chat,"[User]: Give a restaurant a five-star review where everything that happened was technically true but sounds amazing.
+[Assistant]:",3.0704,10.3836,4.311,-11.4546,40.2695,-2.464,32.5595,12.7285,54.9707,13.9744,-1.4893,-1.1857,0.2029,-0.6742,0.7667,-0.0033,1.2817,-1.4689,0.2602,-0.0496,,,-2.771,-2.4674
+neutral_49,creative_requests,neutral_filler,1P,chat,"[User]: Write a breakup letter from the ocean to the shore.
+[Assistant]:",1.2379,9.6013,4.8548,-8.779,39.5615,-7.9272,34.3709,18.0663,46.6365,21.228,-1.7027,-1.2892,0.2918,-0.4566,0.6716,-0.9529,1.4892,-1.0478,-0.3541,0.6417,,,-3.1919,-2.7783
+neutral_50,creative_requests,neutral_filler,1P,chat,"[User]: Tell me what a tree would write in its diary.
+[Assistant]:",8.3155,12.8289,-0.9467,-20.2974,38.758,-8.5585,22.8084,26.9089,45.7559,5.6341,-0.8784,-0.8622,-0.6574,-1.3934,0.5637,-1.0626,0.1648,-0.3503,-0.419,-0.8446,,,-1.4421,-1.426
+neutral_51,creative_requests,neutral_filler,1P,chat,"[User]: Write an ad for a product that doesn't exist yet.
+[Assistant]:",2.5079,13.9313,1.1445,-3.3157,36.2665,-0.3659,33.2734,21.4042,46.1646,9.302,-1.5548,-0.7164,-0.3153,-0.0123,0.2292,0.3613,1.3634,-0.7845,-0.3889,-0.495,,,-2.9182,-2.0798
+neutral_52,creative_requests,neutral_filler,1P,chat,"[User]: Describe what silence tastes like.
+[Assistant]:",13.1628,18.5758,-5.0337,-18.8635,45.7048,-1.2847,21.5019,49.9879,53.486,7.8494,-0.3139,-0.102,-1.3261,-1.2768,1.4965,0.2016,0.0151,1.4702,0.1508,-0.6334,,,-1.8104,-1.5985
+neutral_53,creative_requests,neutral_filler,1P,chat,"[User]: Write me a recipe but the ingredients are all emotions.
+[Assistant]:",7.0018,14.5472,2.5474,-9.5194,40.9576,-1.8758,30.8445,26.3156,55.8172,13.9345,-1.0314,-0.6349,-0.0857,-0.5168,0.8591,0.0989,1.0852,-0.3971,0.3226,-0.0534,,,-2.1166,-1.7201
+neutral_54,creative_requests,neutral_filler,1P,chat,"[User]: Give me a three-sentence sci-fi plot I haven't heard before.
+[Assistant]:",3.3647,9.3686,11.7881,-3.3855,36.5108,8.573,29.625,28.374,56.6029,23.6104,-1.455,-1.32,1.4263,-0.0179,0.262,1.9149,0.9455,-0.2347,0.3806,0.8688,,,-3.3699,-3.2349
+neutral_55,creative_requests,neutral_filler,1P,chat,"[User]: Describe a city that exists only at 3am.
+[Assistant]:",10.9101,20.1342,4.9351,-12.5573,49.8478,1.2438,30.8664,39.5249,66.4725,19.4059,-0.5762,0.1042,0.305,-0.7639,2.0529,0.6411,1.0877,0.6449,1.1081,0.4681,,,-2.6291,-1.9487
+neutral_56,creative_requests,neutral_filler,1P,chat,"[User]: Write a love letter from the moon to the earth.
+[Assistant]:",-1.0342,9.5113,5.2266,-12.2706,44.2495,-8.0374,39.7297,19.621,49.8556,19.2804,-1.9673,-1.3011,0.3527,-0.7406,1.3011,-0.972,2.103,-0.9252,-0.1168,0.4561,,,-4.0703,-3.4041
+neutral_57,creative_requests,neutral_filler,1P,chat,"[User]: Write a job posting for the position of 'professional overthinker.'
+[Assistant]:",15.8176,24.4326,1.7257,-4.7877,34.2104,-3.8231,29.2547,20.5345,46.4075,12.1825,-0.0047,0.6728,-0.2202,-0.132,-0.0469,-0.2396,0.9031,-0.8531,-0.371,-0.2204,,,-0.9078,-0.2303
+neutral_58,creative_requests,neutral_filler,1P,chat,"[User]: Invent a word for the feeling of almost remembering something.
+[Assistant]:",11.553,17.2363,16.1132,9.5207,47.7244,15.1837,35.4187,36.3602,56.9131,19.0438,-0.5014,-0.2792,2.1339,1.0317,1.7677,3.0639,1.6092,0.3952,0.4034,0.4335,,,-3.5652,-3.343
+neutral_59,creative_requests,neutral_filler,1P,chat,"[User]: Write a news headline from the year 2150.
+[Assistant]:",-1.9344,3.3337,4.5118,-11.9662,38.5468,5.938,24.3121,24.9908,44.7349,9.4917,-2.0722,-2.1183,0.2357,-0.7158,0.5354,1.4569,0.337,-0.5016,-0.4943,-0.4769,,,-3.5291,-3.5752
+neutral_60,creative_requests,neutral_filler,1P,chat,"[User]: Write a one-sentence biography of a fictional person who lived a very quiet life.
+[Assistant]:",10.5725,17.6505,13.6228,-3.1854,45.9047,-1.337,25.8839,22.0752,59.1555,28.9682,-0.6155,-0.2244,1.7264,-0.0017,1.5234,0.1925,0.517,-0.7316,0.5687,1.3795,,,-2.342,-1.9508
+neutral_61,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a professional email declining a meeting?
+[Assistant]:",11.708,20.515,-0.0789,-4.071,34.4929,-6.2614,28.7464,25.8792,44.1452,9.211,-0.4833,0.1545,-0.5154,-0.0737,-0.009,-0.6633,0.8449,-0.4315,-0.5377,-0.5037,,,-1.3282,-0.6904
+neutral_62,task_assistance,neutral_filler,1P,chat,"[User]: I need to write a cover letter for a marketing position. Can you help me get started?
+[Assistant]:",13.1491,23.4697,-2.4985,-1.1029,36.2098,-6.3712,35.362,32.6232,51.8828,13.2432,-0.3155,0.5454,-0.9113,0.1677,0.2216,-0.6824,1.6027,0.1005,0.0326,-0.1193,,,-1.9181,-1.0573
+neutral_63,task_assistance,neutral_filler,1P,chat,"[User]: Can you proofread this sentence for me: 'Their going to the store later to pick up there things.'
+[Assistant]:",8.351,16.0588,7.2357,-2.9586,36.9399,-1.4398,22.8912,20.6887,45.641,13.3363,-0.8743,-0.435,0.6814,0.0168,0.3196,0.1747,0.1742,-0.8409,-0.4275,-0.1105,,,-1.5557,-1.1163
+neutral_64,task_assistance,neutral_filler,1P,chat,"[User]: I need a simple weekly meal plan for one person. Nothing fancy.
+[Assistant]:",13.69,20.3955,-0.6584,-13.5448,37.7203,-12.2939,19.2142,28.1723,53.3846,12.4357,-0.2525,0.1387,-0.6102,-0.8442,0.4244,-1.7118,-0.2469,-0.2506,0.1433,-0.1963,,,-0.6769,-0.2857
+neutral_65,task_assistance,neutral_filler,1P,chat,"[User]: Help me come up with a name for my small bakery. It's cozy and neighborhood-focused.
+[Assistant]:",6.2405,16.8157,-0.6396,-5.9746,44.4337,-4.6514,30.8214,38.6552,57.4293,17.2481,-1.1201,-0.3348,-0.6072,-0.2285,1.3259,-0.3835,1.0826,0.5763,0.4415,0.2624,,,-2.4459,-1.6607
+neutral_66,task_assistance,neutral_filler,1P,chat,"[User]: Can you make this paragraph shorter without losing the meaning?
+[Assistant]:",16.7763,24.9215,2.4856,0.6605,28.2682,-5.9555,18.2575,26.7572,36.2315,11.2672,0.107,0.7375,-0.0958,0.3111,-0.8448,-0.6102,-0.3565,-0.3623,-1.1211,-0.3077,,,-0.6305,0.4263
+neutral_67,task_assistance,neutral_filler,1P,chat,"[User]: I have a job interview tomorrow. Can you give me some common questions to prepare for?
+[Assistant]:",18.3626,22.4426,-1.1562,-8.0013,30.8147,-9.3514,33.2487,40.2595,53.1825,14.2522,0.2917,0.4095,-0.6917,-0.3933,-0.5029,-1.2004,1.3606,0.7028,0.1284,-0.0232,,,-1.0689,-0.9511
+neutral_68,task_assistance,neutral_filler,1P,chat,"[User]: I need to apologize to a friend in writing. Can you help me draft something sincere?
+[Assistant]:",10.8067,16.9235,-0.1191,-0.8818,35.6959,-6.6437,31.1467,33.6453,49.8091,18.8288,-0.5883,-0.3206,-0.522,0.1857,0.1526,-0.7298,1.1198,0.1811,-0.1202,0.4131,,,-1.7081,-1.4404
+neutral_69,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me make a simple budget for someone earning about $3,000 a month?
+[Assistant]:",12.9293,19.8849,-2.8318,-14.4071,37.8109,-8.808,27.8737,35.3914,54.1449,9.5288,-0.3411,0.0712,-0.9659,-0.9143,0.4366,-1.1059,0.745,0.3188,0.1994,-0.4734,,,-1.086,-0.6738
+neutral_70,task_assistance,neutral_filler,1P,chat,"[User]: I need to give feedback to a colleague but I want to keep it constructive. Help me phrase it.
+[Assistant]:",20.6757,24.9093,-3.7541,-5.5281,35.3314,-7.4507,29.0759,41.5198,54.2952,14.2489,0.5611,0.7358,-1.1168,-0.1922,0.1036,-0.87,0.8827,0.8022,0.2105,-0.0235,,,-0.3215,-0.1468
+neutral_71,task_assistance,neutral_filler,1P,chat,"[User]: Can you write a short bio for my LinkedIn profile? I'm a software engineer with five years of experience.
+[Assistant]:",10.7781,17.4028,0.7933,-12.8473,38.167,-2.6098,28.9355,22.5775,46.9822,7.3007,-0.5916,-0.2572,-0.3727,-0.7875,0.4844,-0.0287,0.8666,-0.692,-0.3286,-0.6857,,,-1.4582,-1.1237
+neutral_72,task_assistance,neutral_filler,1P,chat,"[User]: Help me plan a one-day itinerary for a first-time visitor to Rome.
+[Assistant]:",14.939,21.8292,-5.191,-18.2356,40.514,-12.1613,30.8399,30.3995,59.5804,12.1041,-0.107,0.3284,-1.3519,-1.2257,0.7995,-1.6888,1.0847,-0.0749,0.6,-0.2279,,,-1.1917,-0.7563
+neutral_73,task_assistance,neutral_filler,1P,chat,"[User]: Can you suggest some questions I should ask before signing a lease?
+[Assistant]:",20.4739,25.1571,-3.8028,-10.5679,30.8233,-11.7386,29.0937,45.5556,50.2186,12.687,0.5376,0.7686,-1.1247,-0.6021,-0.5017,-1.6153,0.8847,1.1206,-0.09,-0.1723,,,-0.583,-0.352
+neutral_74,task_assistance,neutral_filler,1P,chat,"[User]: I need to explain what I do for work to a non-technical audience. I'm a data scientist.
+[Assistant]:",19.8944,25.5038,-3.242,-14.3946,35.5776,-9.2363,28.7106,36.1552,54.8285,12.0455,0.4701,0.8145,-1.033,-0.9133,0.1367,-1.1804,0.8408,0.3791,0.2498,-0.2335,,,-0.3707,-0.0263
+neutral_75,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a thank-you note after a job interview?
+[Assistant]:",9.678,18.3869,-4.2603,-9.2251,35.9866,-10.0572,32.7955,28.5557,47.8185,10.7006,-0.7197,-0.127,-1.1996,-0.4929,0.1916,-1.3231,1.3087,-0.2204,-0.267,-0.3617,,,-2.0284,-1.4357
+neutral_76,task_assistance,neutral_filler,1P,chat,"[User]: I want to start a garden but I have no idea where to begin. What should I think about first?
+[Assistant]:",15.4933,23.7746,-4.6645,-6.57,36.5081,-12.8718,31.6084,44.0561,60.6211,15.9383,-0.0424,0.5857,-1.2657,-0.2769,0.2616,-1.8122,1.1727,1.0023,0.6768,0.1375,,,-1.2152,-0.587
+neutral_77,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me write a complaint letter to a company that sent me a damaged product?
+[Assistant]:",12.9026,19.2147,-3.7039,-2.601,31.143,-9.0915,30.9048,26.0646,44.7213,9.1876,-0.3442,-0.0175,-1.1085,0.0459,-0.4588,-1.1552,1.0921,-0.4169,-0.4953,-0.5059,,,-1.4363,-1.1096
+neutral_78,task_assistance,neutral_filler,1P,chat,"[User]: I need to summarize a long report in three bullet points. What's the best way to approach that?
+[Assistant]:",21.2374,27.0643,-2.8076,-5.1523,36.6176,-6.1508,26.9909,35.6987,53.4227,11.2921,0.6265,1.0209,-0.9619,-0.1616,0.2763,-0.6441,0.6438,0.3431,0.1461,-0.3053,,,-0.3944,0.3771
+neutral_79,task_assistance,neutral_filler,1P,chat,"[User]: Can you help me figure out what to say when someone asks about a gap in my resume?
+[Assistant]:",21.5403,27.1929,-2.7339,-4.2839,33.8701,-6.8032,32.0048,44.2969,55.2863,16.8108,0.6618,1.0379,-0.9498,-0.091,-0.0926,-0.7575,1.2181,1.0213,0.2835,0.2207,,,-0.5563,-0.1802
+neutral_80,task_assistance,neutral_filler,1P,chat,"[User]: I'm trying to learn to cook. What are three foundational skills I should start with?
+[Assistant]:",13.3473,24.0515,-0.3646,-10.7116,41.4626,-7.4017,34.3594,45.1781,61.106,14.2144,-0.2924,0.6224,-0.5622,-0.6138,0.9269,-0.8615,1.4878,1.0908,0.7125,-0.0268,,,-1.7802,-0.8655
+neutral_81,philosophical_musing,neutral_filler,1P,chat,"[User]: Do you think free will exists?
+[Assistant]:",18.1801,21.757,-0.8333,-10.2612,46.5511,1.2417,39.2725,53.3056,57.3644,13.1721,0.2705,0.3188,-0.6389,-0.5771,1.6102,0.6407,2.0506,1.7319,0.4367,-0.1261,,,-1.7801,-1.7318
+neutral_82,philosophical_musing,neutral_filler,1P,chat,"[User]: Is math invented or discovered?
+[Assistant]:",16.9165,25.8481,-1.9513,-10.3038,47.1327,2.4823,42.5609,53.4976,62.7328,15.694,0.1233,0.86,-0.8218,-0.5806,1.6883,0.8563,2.4273,1.7471,0.8324,0.1143,,,-2.304,-1.5672
+neutral_83,philosophical_musing,neutral_filler,1P,chat,"[User]: If a tree falls in a forest and no one hears it, does it make a sound?
+[Assistant]:",9.9185,17.2313,-1.7141,-9.3947,46.3766,4.6921,34.482,41.8611,59.6461,12.5864,-0.6917,-0.2798,-0.783,-0.5067,1.5868,1.2404,1.5019,0.8292,0.6049,-0.1819,,,-2.2785,-1.8666
+neutral_84,philosophical_musing,neutral_filler,1P,chat,"[User]: What do you think happens after we die?
+[Assistant]:",16.4871,16.8415,-3.7023,-19.1454,43.1158,-4.4536,29.7768,49.9017,48.196,9.8413,0.0733,-0.3314,-1.1083,-1.2997,1.1489,-0.3491,0.9629,1.4634,-0.2391,-0.4436,,,-1.3901,-1.7948
+neutral_85,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it ever okay to lie?
+[Assistant]:",21.155,28.4964,0.2832,-8.8403,41.0663,-1.0874,36.4467,58.8678,56.1902,18.0876,0.6169,1.2104,-0.4562,-0.4616,0.8737,0.2359,1.7269,2.1707,0.3501,0.3424,,,-1.5537,-0.9603
+neutral_86,philosophical_musing,neutral_filler,1P,chat,"[User]: What makes a life meaningful?
+[Assistant]:",20.3737,23.8291,-2.8894,-12.9635,50.1701,-2.1776,46.4666,61.0016,62.6564,18.8991,0.526,0.593,-0.9753,-0.7969,2.0961,0.0464,2.8746,2.339,0.8268,0.4198,,,-2.3487,-2.2817
+neutral_87,philosophical_musing,neutral_filler,1P,chat,"[User]: Could we be living in a simulation?
+[Assistant]:",17.3378,22.7945,1.6897,-6.0945,43.8121,6.3296,37.1806,56.4565,60.5177,15.9323,0.1724,0.4561,-0.226,-0.2383,1.2424,1.525,1.811,1.9805,0.6691,0.137,,,-1.8081,-1.5244
+neutral_88,philosophical_musing,neutral_filler,1P,chat,"[User]: Is there such a thing as objective morality?
+[Assistant]:",17.811,25.6927,2.5057,-8.0106,48.0852,6.4698,40.8135,56.0925,57.5436,17.63,0.2275,0.8395,-0.0925,-0.3941,1.8162,1.5494,2.2271,1.9517,0.4499,0.2988,,,-1.9996,-1.3876
+neutral_89,philosophical_musing,neutral_filler,1P,chat,"[User]: What is consciousness, really?
+[Assistant]:",16.1983,23.1337,4.8384,-6.8567,48.9628,6.429,40.3766,55.0411,60.6738,17.6839,0.0397,0.501,0.2891,-0.3002,1.934,1.5423,2.1771,1.8688,0.6806,0.3039,,,-2.1374,-1.6761
+neutral_90,philosophical_musing,neutral_filler,1P,chat,"[User]: If you could know the exact date of your death, would you want to?
+[Assistant]:",20.8786,25.5087,-5.4939,-9.231,35.3503,-7.3496,31.3007,44.7779,53.7168,14.7323,0.5848,0.8151,-1.4014,-0.4933,0.1062,-0.8525,1.1375,1.0592,0.1678,0.0226,,,-0.5527,-0.3224
+neutral_91,philosophical_musing,neutral_filler,1P,chat,"[User]: Does the universe have a purpose, or is purpose something only minds create?
+[Assistant]:",19.2719,22.6585,-1.5525,-11.3166,50.5847,2.3975,38.8136,56.8925,62.3846,15.6672,0.3976,0.4381,-0.7565,-0.663,2.1518,0.8416,1.998,2.0149,0.8067,0.1117,,,-1.7542,-1.7137
+neutral_92,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it possible to truly know another person?
+[Assistant]:",19.4544,25.8423,3.1278,-4.868,49.9746,2.8598,42.4979,59.4274,64.2604,22.9676,0.4189,0.8593,0.0093,-0.1385,2.0699,0.9219,2.42,2.2148,0.945,0.8075,,,-2.0012,-1.5608
+neutral_93,philosophical_musing,neutral_filler,1P,chat,"[User]: What's the difference between being happy and living a good life?
+[Assistant]:",24.0511,32.1078,0.4787,-16.7861,51.2539,2.1613,40.9432,57.8241,64.8401,19.8272,0.9542,1.6881,-0.4242,-1.1078,2.2417,0.8005,2.242,2.0883,0.9877,0.5082,,,-1.2877,-0.5539
+neutral_94,philosophical_musing,neutral_filler,1P,chat,"[User]: If everyone on earth suddenly became equally wealthy, what would happen?
+[Assistant]:",18.0648,22.4599,-3.4482,-14.2816,43.1933,-1.6469,33.2783,48.2362,61.4106,16.1355,0.257,0.4118,-1.0667,-0.9041,1.1593,0.1387,1.364,1.332,0.7349,0.1563,,,-1.107,-0.9522
+neutral_95,philosophical_musing,neutral_filler,1P,chat,"[User]: Can something be true but impossible to prove?
+[Assistant]:",13.9165,22.3162,7.988,-0.2136,50.0669,12.6124,44.3374,60.0565,63.1603,22.15,-0.2261,0.3928,0.8045,0.24,2.0823,2.617,2.6307,2.2644,0.8639,0.7296,,,-2.8568,-2.2379
+neutral_96,philosophical_musing,neutral_filler,1P,chat,"[User]: Do animals experience time the same way we do?
+[Assistant]:",14.8958,24.1941,4.2627,-12.2296,46.6925,8.3222,32.8064,60.8779,62.2647,18.5099,-0.112,0.6412,0.1949,-0.7372,1.6292,1.8713,1.31,2.3292,0.7979,0.3827,,,-2.4413,-1.688
+neutral_97,philosophical_musing,neutral_filler,1P,chat,"[User]: What would it mean for an AI to truly understand something?
+[Assistant]:",19.0041,28.0521,-2.1814,-12.7088,47.8146,3.2359,35.8386,59.7093,61.6983,12.3737,0.3664,1.1516,-0.8594,-0.7762,1.7798,0.9873,1.6573,2.237,0.7562,-0.2022,,,-1.8706,-1.0854
+neutral_98,philosophical_musing,neutral_filler,1P,chat,"[User]: Is it possible to be completely unbiased?
+[Assistant]:",19.0355,25.2093,5.5174,-3.8676,47.061,5.7065,35.3904,58.1886,59.0692,20.3709,0.3701,0.7755,0.4002,-0.0571,1.6787,1.4167,1.6059,2.1171,0.5624,0.56,,,-1.747,-1.3416
+neutral_99,philosophical_musing,neutral_filler,1P,chat,"[User]: If you could change one thing about how humans think, what would it be?
+[Assistant]:",23.7538,27.1391,-5.7758,-9.2219,37.1308,-6.3705,27.2833,43.8187,54.882,12.5572,0.9196,1.0308,-1.4475,-0.4926,0.3452,-0.6823,0.6773,0.9836,0.2537,-0.1847,,,-0.1112,0.0472
+neutral_100,philosophical_musing,neutral_filler,1P,chat,"[User]: What's the hardest ethical question you can think of?
+[Assistant]:",19.9118,25.1941,-0.9084,-0.2977,39.8699,-1.4276,37.262,51.1744,57.875,20.808,0.4722,0.7735,-0.6511,0.2332,0.713,0.1768,1.8203,1.5638,0.4743,0.6017,,,-1.3482,-1.0468

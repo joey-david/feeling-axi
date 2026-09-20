@@ -209,6 +209,11 @@ tempCodeRunnerFile.py
 # PyPI configuration file
 .pypirc
 
+# Local orchestration and resumable API state
+slurm_logs/
+datasets/generated/**/.core_checkpoint.json
+datasets/generated/**/.screen_checkpoint.json
+
 # Marimo
 marimo/_static/
 marimo/_lsp/

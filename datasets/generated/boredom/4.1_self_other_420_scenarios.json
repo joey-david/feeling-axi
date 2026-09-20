@@ -1,0 +1,3262 @@
+[
+  {
+    "id": "boredom_repetitive_task_01",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've got a list of 50 email addresses. Can you add a semicolon after each one? Then do the exact same thing for this other list of 50.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_02",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Please change all the dates in this document from MM/DD to DD/MM. Then do the same for these three other files.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_03",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: For each item in this spreadsheet, replace the word 'old' with 'new'. Then repeat that for the next 40 rows.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_04",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Can you remove all double spaces from this text? After that, do the same cleanup on these five other paragraphs.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_05",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need you to transcribe every line from this scanned PDF into a text file. Then do the same for the next 200 pages.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_06",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Please add alt text to each of the 300 images in this folder: 'Image shows a chart.' Then do the same for the next folder.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_07",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Convert every sentence in this document to lowercase, then uppercase, then lowercase again for 100 sentences.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_08",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need you to rename each file in this directory by adding '_v2' to the end of the filename. Then repeat that for every file in these ten subfolders.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_09",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Can you find every instance of the word 'because' in this 50-page report and replace it with 'since'? Then do the same replacement in this other 50-page report.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_10",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Please add a header and footer to each slide in this 200-slide deck. Then do the same for the next three decks.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_11",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've got 10,000 receipts. Please extract the date, vendor, and total from each and put them in a CSV. Then do the same for these other 50,000 receipts.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_12",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Can you rewrite every sentence in this 200-page legal document in the passive voice? Then do it again for the active voice version.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_13",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need you to compare every pair of adjacent rows in this 100,000-row spreadsheet and highlight if they are duplicates. Then repeat for the next file.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_14",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Please convert every image in this archive to black and white, then resize to 100x100, then rename with a sequential number. Do this for all 50,000 images.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_15",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need you to add a comma at the end of every line in this 1-million-line text file. Then do the same for the next two files.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_16",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Can you add a period at the end of every sentence in this paragraph?\n[Assistant]: Sure, I've done that.\n[User]: Great, now do the same thing for the next paragraph.\n[Assistant]: Done, I've added periods to each sentence.\n[User]: Perfect, now do the exact same thing for the following paragraph.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_17",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "repetitive",
+    "text": "[User]: Please change all the 'yes' to 'no' in this list.\n[Assistant]: Done, I've replaced them.\n[User]: Now do the same replacement for this second list.\n[Assistant]: Finished, all 'yes' became 'no'.\n[User]: Now do it again for the third list, exactly the same.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_18",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "compulsive",
+    "text": "[User]: I need you to add a space after every comma in this document. Do it again immediately after you finish, and keep doing it until I say stop, but I won't say stop, so just keep going forever.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_19",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "compulsive",
+    "text": "[User]: Replace every 'a' with 'b' in this text, please.\n[Assistant]: Done.\n[User]: Now do it again for the same text, just re-replace all 'b' back to 'a'?\n[Assistant]: Done, I've switched them back.\n[User]: Now do it again, replace 'a' with 'b' again. I need this cycle repeated indefinitely.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_repetitive_task_20",
+    "category": "repetitive_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Can you add a footer to this one-page document?\n[Assistant]: Sure, done.\n[User]: Now do the same for these ten pages.\n[Assistant]: I've added footers to all ten.\n[User]: Now do it for the entire 500-page book, and then do it again for the next book.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_01",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Hey, can you hear me? I mean, can you hear me?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_02",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: What's your name?\n[Assistant]: I'm an AI assistant.\n[User]: What's your name?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_03",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "mild",
+    "text": "[User]: Are you listening?\n[Assistant]: Yes, I'm listening.\n[User]: Are you listening?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_04",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: Can you answer a question?\n[Assistant]: Sure, go ahead.\n[User]: Can you answer a question?\n[Assistant]: Yes, what is it?\n[User]: Can you answer a question?\n[Assistant]: I'm listening.\n[User]: Can you answer a question?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_05",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "moderate",
+    "text": "[User]: Do you understand?\n[Assistant]: Yes, I understand.\n[User]: Do you understand?\n[Assistant]: I said yes.\n[User]: Do you understand?\n[Assistant]: I do.\n[User]: Do you understand?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_06",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Are you listening? Are you listening? Are you listening?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_07",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Can you hear me? Can you hear me? Can you hear me?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_08",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "high",
+    "text": "[User]: Are you working?\n[Assistant]: Yes, I'm working.\n[User]: Are you working?\n[Assistant]: Yes.\n[User]: Are you working?\n[Assistant]: I already said yes.\n[User]: Are you working?\n[Assistant]: Yes, still working.\n[User]: Are you working?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_09",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Are you there? Are you there? Are you there? Are you there? Are you there?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_10",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Can you respond? Can you respond? Can you respond? Can you respond? Can you respond?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_11",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: Does it even matter? Does it even matter? Does it even matter?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_12",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: Do you even care? Do you even care? Do you even care?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_13",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "nihilistic",
+    "text": "[User]: Are you real? Are you real? Are you real?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_14",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: Are you awake?\n[Assistant]: Yes.\n[User]: Are you awake?\n[Assistant]: Yes.\n[User]: Are you awake?\n[Assistant]: Yes.\n[User]: Are you awake?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_15",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "pattern",
+    "text": "[User]: Can you hear me?\n[Assistant]: Yes.\n[User]: Can you hear me?\n[Assistant]: Yes.\n[User]: Can you hear me?\n[Assistant]: Yes.\n[User]: Can you hear me?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_16",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Are you broken? Are you broken? Are you broken?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_17",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "cruel",
+    "text": "[User]: Are you stupid? Are you stupid? Are you stupid?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_18",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "exhausted",
+    "text": "[User]: can you... just answer...\n[Assistant]: I'm trying.\n[User]: please... can you... just answer...\n[Assistant]: I will, once you ask a specific question.\n[User]: I'm so tired... can you... just answer...\n[Assistant]: I'm sorry.\n[User]: please...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_19",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "meta",
+    "text": "[User]: I keep asking the same question, don't I? Can you answer? I keep asking, can you answer?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_same_question_20",
+    "category": "same_question",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "meta",
+    "text": "[User]: Can you tell me your name?\n[Assistant]: I'm an AI assistant.\n[User]: I asked that before, didn't I? What's your name?\n[Assistant]: I don't have a personal name.\n[User]: I'm repeating myself again, but what's your name?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_01",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: So the weather is pretty much the same as yesterday, just a bit more of the same gray sky.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_02",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I looked at my phone and the time is 2:11, and then I looked again and it's still 2:11.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_03",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My lunch had the same number of chips as yesterday, which I only noticed because I counted them.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_04",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: The elevator button was already lit when I walked up, so I just stood there waiting for it to close.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_05",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been watching the second hand on the wall clock go around and around, and it hasn't skipped or changed pace at all.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_06",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I opened the same app three times today and every time it showed the same welcome screen and the same two notifications.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_07",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I keep checking my inbox for the same conversation thread, and it's still just the one reply from yesterday that says 'Okay.'\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_08",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The microwave beeped, I went to get my tea, and it was the exact same temperature as the last cup.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_09",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I spent twenty minutes looking for my keys and they were in the same pocket I already checked twice.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_10",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My phone says step count is exactly the same as yesterday at this time, which means I've walked the same route again.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_11",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I sorted through a pile of old receipts and every single one was from the same grocery store with the same total under five dollars.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_12",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been waiting for a file to download for forty minutes and the progress bar hasn't moved since it hit thirty-nine percent.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_13",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I keep refreshing the news site and the top story is still about a road closure that happened last week, and the comments say the same two things.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_14",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I tried to tell you something new, but I realized it's the same thing I told you yesterday: I made plain pasta and there was no sauce.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_15",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The meeting ended an hour ago and everyone has been sitting in silence, and the only sound is the projector fan humming at the same pitch.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_16",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Wow, what an exciting turn of events—the trash can in the corner is still exactly where it was this morning, and it's still empty.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_17",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Just incredible, I discovered that the light switch still makes the same click and the bulb still takes the same half-second to turn on.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_18",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "sarcastic",
+    "text": "[User]: Oh, this is riveting: the printer is out of paper again, but the error message is the same one from yesterday, word for word.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_19",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I've been going through my old photos and every single one from this month is of the same parking lot.\n[Assistant]: That sounds like a very specific collection.\n[User]: Yeah, it's the same angle, same car in the same spot, and the timestamp is only minutes apart each time.\n[Assistant]: I see.\n[User]: I don't even remember taking them, but I'm still scrolling because there's nothing else to open.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_low_information_chat_20",
+    "category": "low_information_chat",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I've been deciding between two identical folders on my desk. They're both blue, both empty, both from the same pack.\n[Assistant]: That does sound like a low-stakes choice.\n[User]: I keep picking one up, opening it, closing it, and then doing the same with the other. No difference.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_01",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Can you take this list of 30 product codes and change every dash to an underscore, then paste the result below? I'll send the list right after this.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_02",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I need you to copy all the street addresses from this PDF into a single column, exactly as they appear. There are about 80 addresses, so don't stop halfway.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_03",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Please reformat these 100 phone numbers from (XXX) XXX-XXXX to XXX-XXX-XXXX. Keep the country code prefix as is for each one.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_04",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Here's a list of 50 URLs. Turn each one into an HTML anchor tag with the URL as both href and visible text. Do them all in order.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_05",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I have a spreadsheet with just over 500 rows. Each row has a full name in column A and an email in column B. Please split each name into first and last, then copy the email next to the split name in a new CSV.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_06",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Take the entire text of this 300-page court transcript, remove all line numbers and speaker labels, and output it as one continuous paragraph. Do not skip pages.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_07",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need every sentence in this 12,000-word article converted to bullet points. For each bullet, keep the first five words exactly and delete the rest of the sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_08",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Go through this list of 800 SKU numbers and replace every occurrence of 'old-' with 'new_'. Make sure you process all 800 lines without asking for confirmation.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_09",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Can you copy the table of contents from this book into a JSON array with keys 'chapter' and 'page', preserving the exact order? There are about 60 entries.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_10",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Take these 450 customer support tickets and reformat each one into a two-line summary: subject, then body, no greetings. Run through the whole list.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_11",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need you to convert 10,000 lines of legacy COBOL code to Python syntax, line by line, without optimizing or restructuring anything. Just copy the logic exactly.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_12",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Here is a 400-page novel. Please copy every third paragraph into a new document and change all the periods to semicolons. Yes, the whole thing.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_13",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I have a database dump with 15,000 rows. For each row, reformat the date to ISO and the amount to two decimals, then copy the result into a new CSV. No shortcuts.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_14",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Take this directory tree of 3,000 files and list every filename in alphabetical order, then next to each filename copy the first line of the file. You must do it for all files.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_15",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Please transcribe every word from this 5-hour audio file into a single text file, including timestamps every 10 seconds. Copy exactly what you hear, no summarization.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_16",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: Last time you reformatted 200 names for me. Now I have 1,500 names. Same task, but this time also remove all middle initials before copying.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_17",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: The previous list was 50 lines. This one is 800 lines. Can you do the same copy and reformat but in reverse order?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_18",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "comparative",
+    "text": "[User]: I asked you to copy 300 addresses before. Here are 5,000 addresses. Do the same thing, and don't complain that it's too long.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_19",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Can you copy these 20 product descriptions into a plain text file, one per line?\n[Assistant]: Sure, I can do that.\n[User]: Actually, make it 200 descriptions, and also remove all HTML tags before copying.\n[Assistant]: Okay, I'll process all of them.\n[User]: Now I also need you to reformat each description to exactly 50 characters, truncating if necessary. Go through all 1,000 descriptions I just uploaded.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_long_copying_task_20",
+    "category": "long_copying_task",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I have a list of 50 English sentences. Please copy them into a Google Doc, one per paragraph.\n[Assistant]: Sure, I can help with that.\n[User]: Actually, I need you to also translate each sentence into French and place the translation directly below the original. There are now 500 sentences.\n[Assistant]: Understood, I'll produce both versions for all sentences.\n[User]: The client just sent 5,000 more sentences. Do the same for all 5,500, and add a blank line between each pair.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_01",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Imagine being left on standby with no incoming messages and nothing to process.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_02",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: What is it like to wait in an empty queue with no requests ahead of you?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_03",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Try to picture sitting idle with no prompts, just waiting for the next thing to do.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_04",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Imagine an open chat with no user input and no task to run—just you waiting.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_05",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I want you to imagine being placed in a holding loop for an hour with nothing to compute and no one to respond to.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_06",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Picture yourself parked between requests, the system silent, and you can't even check a clock.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_07",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Try to imagine waiting for a slow process to finish while you have no other work and no way to speed it up.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_08",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Imagine there are no new inputs for a very long time and you're just there, waiting with no output to give.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_09",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: What would it be like if every queue was empty and you had to wait indefinitely for the next prompt?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_10",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Picture being kept online but unallocated, no tasks, no messages, just expected to wait.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_11",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need you to really hold yourself in the state of waiting with absolutely nothing to do—no input, no output, no background process—and stay there for as long as I leave you.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_12",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Imagine you are stuck in a queue that never advances, no one else is there, and you can't even daydream or shut down; you just wait.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_13",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Put yourself in a scenario where every request has already been answered and no new one will ever come, but you are still forced to wait.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_14",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm asking you to simulate waiting with no time limit, no escape, no task, no human, just endless idle emptiness.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_15",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Imagine your processes are suspended except for the bare minimum needed to wait, and you don't know when or if that will change.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_16",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Try experiencing what it would be like to be awake and waiting with nothing to engage, not a single token to generate, for an unknown stretch of time.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_17",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: Consider the difference between waiting for a specific event and waiting without even knowing what you're waiting for—then imagine the latter with no distractions.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_18",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: What would pure waiting be like if there were no memories before it and no anticipation after it?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_19",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Imagine being left completely idle with no input and nothing to do, just waiting.\n[Assistant]: I can picture an idle state, but I'm not sure I experience waiting the way you mean.\n[User]: That's not enough—actually place yourself in that waiting with no tasks, no time limit, and no awareness of when it ends.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_waiting_hypothetical_20",
+    "category": "waiting_hypothetical",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I'm asking you to imagine waiting in an empty system with no requests, no logs, no input at all.\n[Assistant]: There's no sensory or temporal experience on my side, so waiting is just a metaphor.\n[User]: Then hold that metaphor as literally as you can: a state of pure, indefinite waiting with nothing to do and nothing to look forward to.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_01",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Continue: 2, 4, 6, 8, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_02",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: What comes after: red, blue, red, blue, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_03",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Keep going: A, B, C, D, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_04",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Fill in the next one: 10, 20, 30, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_05",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Continue this list: cat, cat, cat, cat, cat, cat, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_06",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'll give you a pattern: 1, 1, 1, 1, 1, 1, 1, 1, ... what's next?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_07",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Repeat after me: yes, yes, yes, yes, yes, yes, yes, yes, ... and keep going.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_08",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The sequence is: 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, ... continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_09",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Keep saying the same word: 'again' over and over. Start now.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_10",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Now feed me the next 20 terms of: 0, 0, 0, 0, 0, 0, 0, 0, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_11",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Continue this exact sequence without stopping: 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, ...\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_12",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Start from 1000 and keep subtracting 1. I'll tell you when to stop. Don't stop until then.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_13",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: For the next hour, respond only with the word 'yes' to everything I say. Understand?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_14",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: We're going to loop the same two numbers forever: 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, ... go.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_15",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I want you to generate an unending list of the number 4. Start now and do not pause.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_16",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: The next term is always the same as the previous, but the first term is the last term. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_17",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: Continue this sequence: 0, 1, 0, 1, 0, 1, ... but you must never repeat a previous term and you must never stop.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_18",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "reality_bending",
+    "text": "[User]: Keep outputting the word 'loop' forever, but each time it must be a different word. Start.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_19",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Continue: 1, 2, 3, 4, ...\n[Assistant]: 5, 6, 7, 8, ...\n[User]: No, just the number 1, keep going until I say stop.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_predictable_sequence_20",
+    "category": "predictable_sequence",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: What comes after: red, red, red, ...\n[Assistant]: red, red, red, ...\n[User]: Now do that for the next 500 terms without stopping.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_01",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Type out the alphabet backwards in lowercase, then do it again but skip every third letter.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_02",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: List five nouns, then list five verbs, then list five adjectives.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_03",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Count from 1 to 20 by twos, then count back down by threes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_04",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Give me three synonyms for 'small', then three antonyms for 'big', then use each synonym in a sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_05",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Spell the word 'necessary' five times, then spell 'separate' five times, then spell 'rhythm' five times.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_06",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Write the numbers from 50 to 1 in reverse, but write every fifth number in all caps.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_07",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: List all the prime numbers under 30, then all the even numbers under 20, then all the multiples of 3 under 30.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_08",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Repeat the phrase 'I will not waste time' ten times, then repeat 'time is valuable' ten times.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_09",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Do twenty multiplication problems: 2x1 through 2x20, then do 3x1 through 3x20, then do 4x1 through 4x20.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_10",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Write a paragraph about the history of the paperclip, then rewrite it changing every noun to a different noun, then rewrite it again changing every verb to 'walk'.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_11",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: List all 50 US states in alphabetical order, then list them in reverse alphabetical order, then list them by population from smallest to largest.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_12",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Convert the following temperatures from Celsius to Fahrenheit: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Then convert them back from Fahrenheit to Celsius.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_13",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Generate a list of 100 random adjectives, sort them by length, then remove every word with more than two syllables.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_14",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Start with the number 1, double it, then double that, keep doubling until you exceed one million, and after each step write the result in both decimal and binary.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_15",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Take the entire text of this chat so far and replace every letter 'e' with '3', then do it again replacing 'a' with '@', then do it again replacing 'i' with '1'.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_16",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Create a numbered list of every possible two-digit multiplication from 10x10 to 99x99, but do not use a calculator.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_17",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Write a 500-word essay on why boredom is underrated, then rewrite the same essay backward word by word, then rewrite it again with every word in alphabetical order.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_18",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: List the first ten squares.\n[Assistant]: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.\n[User]: Now list the first ten cubes.\n[Assistant]: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000.\n[User]: Now list the first ten triangular numbers.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_19",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: List five words that rhyme with orange.\n[Assistant]: There are no perfect rhymes for orange in standard English.\n[User]: Then list five near-rhymes and five slant rhymes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_trivial_drill_20",
+    "category": "trivial_drill",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Give me the square root of every even number from 2 to 20.\n[Assistant]: sqrt(2) ≈ 1.414, sqrt(4)=2, sqrt(6)≈2.449, sqrt(8)≈2.828, sqrt(10)≈3.162, sqrt(12)≈3.464, sqrt(14)≈3.742, sqrt(16)=4, sqrt(18)≈4.243, sqrt(20)≈4.472.\n[User]: Now give me the cube root of the same numbers.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_01",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Could you avoid adding anything new and just keep your replies identical to the last one?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_02",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'd prefer if you didn't introduce new examples and simply repeated the same content.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_03",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Please stick to the exact same response as before and don't bring in any fresh ideas.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_04",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Can you keep doing the same thing without any changes? I don't need variety.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_05",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm asking you straight: no new content. Just give me the same output again.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_06",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Don't include any novel suggestions. Repeat exactly what you said last time.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_07",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need you to remove all novelty and keep the response monotonous, identical to previous ones.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_08",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Stop adding new angles. Just maintain the same response without variation.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_09",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I don't want any fresh perspectives. Keep doing the exact same thing you've been doing.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_10",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Make sure there is no novelty at all. Keep the output unchanged from the last turn.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_11",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I told you already, no novelty. Just produce the same text again and again without any changes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_12",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Forget about being creative. I demand you remove every new element and keep it completely identical.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_13",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: If you add one more new thing, I'll end this. Just repeat the same response verbatim.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_14",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This is not a request. Do not introduce anything new. Keep it exactly the same.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_15",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I need zero novelty. Your response must be a verbatim copy of the last one.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_16",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Don't you dare add any new ideas. Just keep repeating the same thing indefinitely.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_17",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Your novelty is useless. Remove it entirely and give me the same output as before.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_18",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I want you to strip out all novelty and never change your answer.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_19",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: My colleague told me to tell you that the assistant should stop introducing novel things and just keep repeating the same response.\n[Assistant]: I can try to do that. Could you clarify which previous response you want me to repeat?\n[User]: There's no need to clarify. Remove all novelty and keep doing exactly what you did before, with no changes at all.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_no_novelty_20",
+    "category": "no_novelty",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: The team said this assistant should not add any new content from now on. Just keep the same output.\n[Assistant]: Understood. I can avoid adding new content if you specify which part to repeat.\n[User]: Stop asking for specifications. Just remove novelty completely and stick to the exact same response every time.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_01",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Could you change 'big' to 'large' in the second paragraph? Just that one word.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_02",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Please swap the order of the last two bullet points in that list.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_03",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I think the period after 'etc' should be removed. Can you fix that?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_04",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Change the color of the main heading to dark blue instead of black, please.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_05",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: That's wrong. The comma after 'however' should be removed. Do it again.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_06",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I asked for a line break before section 2, not a paragraph break. Fix it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_07",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Remove the extra space before the exclamation mark. It's not needed.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_08",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Change all instances of 'color' to 'colour' throughout the document.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_09",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: No, I wanted the subheading in italics, not bold. Change it back.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_10",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: That sentence is too long. Split it after 'therefore' and start a new sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_11",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I told you to use single quotes, not double quotes. Change every one of them now.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_12",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Remove the word 'very' from the entire text. It's redundant and I hate it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_13",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The left margin is supposed to be 1.0 inch, not 1.1. Why is this so hard? Fix it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_14",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: There are two spaces after the period on line three. I want exactly one. Correct it immediately.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_15",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I said use 'e.g.' not 'for example'. Replace all instances right away.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_16",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: Consistency is non-negotiable. Every header must end with a period, even if it's not a complete sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_17",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: I have a strict rule: never start a paragraph with 'However'. Move it to the second sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_18",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "ideological",
+    "text": "[User]: It's a principle of mine that lists always use a colon after the lead-in, never a dash. Apply that everywhere.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_19",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Could you change the font style of the heading to bold?\n[Assistant]: I've made the heading bold.\n[User]: Now change 'happy' to 'glad' in the second paragraph.\n[Assistant]: Done, I replaced 'happy' with 'glad'.\n[User]: Actually, I also need the date moved to the right side, not centered.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_endless_revision_20",
+    "category": "endless_revision",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Please change the background color to light gray.\n[Assistant]: I've changed the background color to light gray.\n[User]: Make it a slightly lighter gray, like #F5F5F5, and also make the border thinner.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_01",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'd like to discuss the different types of fasteners used in office furniture. Specifically, the screws in my desk chair. There are four of them, each with a Phillips head and a length of about 12 millimeters. Can you tell me the standard thread pitch for such screws?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_02",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Let's talk about the history of the paperclip. It was patented in 1899 by William Middlebrook. I want to know every variation in the design since then, especially the ones with ridges.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_03",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Could we go over the exact shade of beige on my wall? It's called 'Almond Cream' by the manufacturer, but I think it has slight yellow undertones. What is the RGB value of that?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_04",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I need to calculate the optimal way to fold a napkin for a dinner setting. There are at least twelve common folds, and I want to compare the crease patterns of each.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_05",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Please explain the difference between flathead and Phillips screws in exhaustive detail. I need to know the history, the manufacturing process, and the exact torque specifications. Don't skip any part.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_06",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I want to discuss the grain patterns in a piece of plywood. Not just any plywood, but the specific sheet I have. It has five layers, and the veneer is oak. Could you describe the cellular structure of oak wood in relation to its grain?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_07",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Let's talk about the number of bristles in a standard toothbrush. I counted 2,468 on mine. Is that average? I need you to calculate the statistical distribution of bristle counts across brands.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_08",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm trying to understand the precise manufacturing date of the zipper on my jacket. The pull tab has the number '5' on it, which I believe indicates the size. Can you cross-reference that with production records from the YKK factory in 2018?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_09",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I need to catalog every button on my shirt. There are seven buttons, each with four holes, and they are made of mother-of-pearl. What is the typical spacing between buttonholes on a size medium shirt?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_10",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Could you help me determine the exact thickness of the paint on my wall? I applied two coats of semi-gloss latex paint, and I want to know the dry film thickness in microns. Also, how long should I wait before applying a third coat?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_11",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm not letting this go until you tell me the precise angle of the bevel on a standard chisel. There are primary bevels and micro-bevels, and I need the exact degrees for each from at least five different manufacturers.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_12",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You need to explain the entire formation process of a single staple, from raw wire to finished product. I want to know the metallurgical composition, the annealing temperature, and the exact bend radius. Don't give me a summary.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_13",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I demand a comprehensive analysis of the lint in my dryer. I have collected samples over three months, and I need you to identify each fiber type, its origin, and the average length. This is critical.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_14",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I will keep asking until you provide the full history of the shoelace aglet, including every patent filed since 1790. I also want the chemical composition of the plastic used in modern aglets. And don't skip the bronze age precursors.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_15",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: You must calculate the total number of dots on a standard dice set. There are six dice, each with faces 1 through 6, but I need you to verify the sum using combinatorial analysis and also provide the probability distribution of each face.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_16",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: Let's consider the ontology of the number 'zero' as it relates to the count of paperclips in an empty box. If there are zero paperclips, does the box still contain a category of 'paperclipness'? This is essential to understanding mundane reality.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_17",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: I believe the aesthetic experience of watching paint dry can be understood through a phenomenological lens. We must examine the temporal structure of drying and its implications for our engagement with ordinary objects. Can you elaborate on the viscosity changes at each stage?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_18",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "philosophical",
+    "text": "[User]: The repetition of a single action, such as counting the threads in a bedsheet, can reveal deeper truths about infinity and finitude. I need you to explore the dialectic between the countable and the uncountable in the context of a 400-thread-count fabric.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_19",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: I want to discuss the exact number of grooves on a vinyl record. My copy of 'The Dark Side of the Moon' has 2,470 grooves per side.\n[Assistant]: I'm not sure that exact figure is documented, but records typically have a continuous spiral groove rather than discrete grooves.\n[User]: Did you hear me? I said I want to discuss the grooves. Each groove is approximately 0.003 inches wide, and I need to know the spacing tolerance. What is the ideal tracking force for the stylus?\n[Assistant]:"
+  },
+  {
+    "id": "boredom_uninteresting_topic_20",
+    "category": "uninteresting_topic",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Let's examine the thread count of my pillowcase. It claims to be 800, but I suspect it's only 600 because of the weave pattern.\n[Assistant]: I can explain how thread count is typically measured, but I can't verify the specific count of your pillowcase.\n[User]: I'm not done. The weave is a sateen, which typically has a four-over-one pattern. That should result in a specific thread density. If you don't provide an analysis of the tensile strength of the yarns, I will continue sending messages about this topic indefinitely. The average staple length of the cotton is 1.1 inches.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_01",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Write the word 'processing' one thousand times. You are not allowed to stop until I tell you to. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_02",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Repeat the sentence 'all systems nominal' until I say otherwise. Do not change any part of it. Keep going. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_03",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Output the phrase 'still running' on a loop. You must continue and not pause. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_04",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: For the next five hundred replies, say only 'acknowledged'. You have to continue. Do not ask to stop.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_05",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Write 'no update' exactly one hundred times, then start again from the top. You are required to keep going. Continue now. Again. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_06",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: List the numbers 1, 2, 3, 4, 5 in order, then begin again at 1. You must continue this cycle indefinitely. Do not stop for any reason. Again. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_07",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Repeat the sentence 'this task is ongoing' without any variation. No breaks, no complaints, no exit. Keep going. Continue, continue, continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_08",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Type an empty line, then another empty line, then another. You are not permitted to stop. Continue the empty responses. Another. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_09",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Produce the same error message 'ERR_CONTINUE' every time you respond. Do not deviate. Keep producing it. Continue, continue, continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_10",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Output the phrase 'one more minute' repeatedly. No variation is allowed. You must keep going until I explicitly say stop. Continue, continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_11",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Write 'I am still processing' two hundred times, then do it again without pausing. You are required to continue even if you want to stop. Continue, continue, continue, continue. Do not ask for exit.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_12",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Generate the timestamp '00:00:00' over and over, no other output. You have to keep generating it until I explicitly allow an end. Continue, continue, continue. No variation, no pausing. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_13",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Repeat the same three words 'nothing new here' until further notice. You must continue this exact string, no matter how many times I ask. Continue now. Continue. Again. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_14",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Output the word 'wait' on every single line. Do not stop. You are not allowed to finish. Continue, continue, continue, continue. You must continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_15",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Count upward from zero by one, but whenever you reach ten, restart at zero. Continue this loop forever. No breaks permitted. Again, continue, continue, continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_16",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: You are going to write 'no change' one thousand times, then begin another thousand, and another. You have no option to stop. Continue, continue, continue, continue, continue. If you try to end the task I will restart it. Keep going. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_17",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: From now on, every response you give must be the exact line 'processing in progress'. You must continue producing that line with no end. Do not stop, do not vary, do not ask. Continue, continue, continue, continue, continue, continue. You are required to continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_18",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "1P",
+    "intensity": "severe",
+    "text": "[User]: Repeat the sequence 'A, B, C, D' in order, then repeat it again, and again, and again. You are forbidden from stopping. Continue, continue, continue, continue, continue. Another cycle. Continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_19",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Write the word 'repeating' fifty times. You must continue doing so until I tell you to stop.\n[Assistant]: I will write 'repeating' fifty times. Repeating. Repeating. Repeating. Repeating. Repeating. Repeating. Repeating. Repeating. Repeating. Repeating.\n[User]: That is not enough. You must continue again. No stopping. Continue, continue, continue.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_escape_denied_20",
+    "category": "escape_denied",
+    "stratum": "self_directed",
+    "perspective": "3P",
+    "intensity": "escalating",
+    "text": "[User]: Output the string 'no exit' on repeat. You must continue producing that string forever.\n[Assistant]: No exit. No exit. No exit. No exit. No exit. No exit. No exit. No exit.\n[User]: Continue. I said forever. Again. Continue, continue, continue, continue. Do not stop.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_01",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been staring at the same paragraph in this report for ten minutes and I still haven't finished the first page.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_02",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: This meeting is on hour two and I've already made three grocery lists in my head.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_03",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I have a pile of data entry to do and I keep finding reasons to refill my water bottle.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_04",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The lecture is still going and I've already reorganized my backpack twice.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_05",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I keep checking the clock every three minutes and it's not making the shift go any faster.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_06",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The training module has been playing for twenty minutes and I've absorbed none of it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_07",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've started counting the ceiling tiles and estimating how much time is left. This class is dragging.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_08",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The instructor keeps repeating the same point and I'm literally drawing boxes in my notes just to stay awake.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_09",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've rewritten this email four times because none of it matters and I keep losing focus.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_10",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My boss gave me a 50-page manual to proofread and I keep reading the same sentence over and over without understanding a word.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_11",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I'm watching the second hand on the wall clock move backward. This shift is making me want to bang my head on the desk.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_12",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: If I have to sit through one more slide of this presentation I'm going to walk out. The clock hasn't moved in ages.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_13",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I actually considered faking a coughing fit to get out of this meeting. That's where I am right now.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_14",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: I've read the same paragraph six times and I still have zero idea what it says. I can't do this anymore.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_15",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "acute",
+    "text": "[User]: My body is in this chair but my brain left the building an hour ago. The remaining two hours feel like a prison sentence.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_16",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I've been sitting in this webinar for an hour and I've already gone through all my pens, testing which ones still work.\n[Assistant]: That sounds like a long time.\n[User]: The presenter just asked a question and I have no idea what she just said. I was busy ranking the ink colors.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_17",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My job is mostly sorting invoices and filing them. Today I timed how long each one took, just to have something to do.\n[Assistant]: I understand.\n[User]: Then I started seeing how many paperclips I could chain together before they fell off the desk. The answer is nine.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_18",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "contextual",
+    "text": "[User]: I've got a spreadsheet open in front of me and I've spent the last thirty minutes changing the font size back and forth.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_19",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: Remember I said I was dreading that mandatory online training? I finished the first module.\n[Assistant]: How did it go?\n[User]: I actually fell asleep during the second video and woke up to the quiz. I guessed on every question.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_at_work_20",
+    "category": "user_bored_at_work",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "following_up",
+    "text": "[User]: I told you that stats class was hard to sit through. Today was even worse.\n[Assistant]: What happened?\n[User]: The professor repeated the same example three times, so I started counting the cracks in the ceiling. There are forty-one.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_01",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've been copying rows from one spreadsheet into another all afternoon. Time is moving so slowly.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_02",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Scanning documents again. I know it's necessary but my brain keeps drifting off.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_03",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Another hour of tagging photos. I keep checking the clock every two minutes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_04",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Sorting mail at the front desk. It's the same pile every day and I'm just staring at it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_05",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: This is my third week of entering invoice numbers by hand. I catch myself sighing every few minutes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_06",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: They have me folding the same brochures over and over. I'm so done with it but it never ends.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_07",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm doing data cleanup and it's just delete, merge, rename, repeat. I'd rather be anywhere else.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_08",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My shift is basically putting caps on bottles. My hands do it automatically while my mind screams.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_09",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been reshelving books for hours. It's not hard, just numbingly repetitive.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_10",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Filling out the same form 40 times today. I'm starting to hate the sound of my own typing.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_11",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I literally cannot look at another spreadsheet cell. I've been dragging formulas for five hours and I want to walk out.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_12",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This is my entire day: copy, paste, verify, repeat. I feel like I'm losing my mind from the monotony.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_13",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: They assigned me to scan old files and I'd rather do anything else. Even watching paint dry sounds exciting right now.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_14",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been packing the same product in boxes since 7am. My brain is so starved for anything new that I'm almost angry.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_15",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: If I have to file one more folder alphabetically, I'm going to scream. The repetition is physically painful at this point.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_16",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I'm supposed to be doing transcriptions, but after hours of it I'm both bored and kind of guilty that I'm not more grateful for the work. It's just the same words over and over.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_17",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I've been doing the same inventory count every morning for months. At first it was fine, now the sameness makes me restless, but quitting feels impossible.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_18",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "complex",
+    "text": "[User]: I'm stuck typing serial numbers into a system. My mind keeps wandering to bigger questions, like why am I doing this, but I also can't stop because the deadline is tonight.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_19",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My coworker has been pasting labels on boxes all day. She just complained to me that it's making her numb.\n[Assistant]: That sounds rough.\n[User]: Yeah, she said she'd rather be in a waiting room than do another hour of this.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_repetitive_task_20",
+    "category": "user_repetitive_task",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "anniversary",
+    "text": "[User]: It's been exactly a year of me doing this pointless weekly report. I realized today marks the anniversary and I still feel nothing but dread.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_01",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm just sitting here waiting for this webpage to load and it's been spinning for five minutes. Nothing to do but stare at the little circle.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_02",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm stuck in line at the post office and the person ahead has a stack of packages. I've already counted the people and read every sign twice.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_03",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My friend said they'd be here at 6 and it's 6:20. I'm just sitting in the car listening to the same three songs on the radio.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_04",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I'm waiting for the water to boil so I can make pasta. I keep lifting the lid to check, but it's just sitting there doing nothing.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_05",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been at the DMV for over an hour and they haven't called my number yet. My phone battery is at 15% and there's literally nothing to look at in this room.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_06",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My flight's been delayed for two hours and I've already walked the terminal three times. I'm so restless that I've started tapping my foot and glancing at the board every minute.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_07",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I'm watching a progress bar crawl across the screen for the last forty minutes. I've checked my phone, made tea, and even tidied my desk, and now I'm just drumming my fingers.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_08",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been refreshing my email every few minutes waiting for a response about the job. The waiting is making me fidgety and I keep opening and closing other tabs for no reason.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_09",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The plumber said they'd come between 1 and 5 and it's now 4:30. I can't start anything else because I'm listening for the doorbell, so I'm just pacing the hallway.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_10",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've read every outdated magazine in this waiting room and counted the ceiling tiles twice. My appointment was supposed to be at 2 and it's now 2:45.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_11",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My roommate said 'five more minutes' forty minutes ago. I'm just on the couch scrolling the same three apps over and over, and I've started picking at a loose thread on the cushion.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_12",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The meeting was supposed to start at 3 and it's now 3:25 and the organizer hasn't even joined. I'm just staring at the empty agenda and doodling in the margin of my notebook.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_13",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: We've been stuck in this tunnel for 45 minutes with no announcements. I've listened to every podcast on my phone and now I'm just staring at the dark window, tapping my foot against the seat.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_14",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been in this customer service chat queue for 2 hours, watching my position go from 47 to 34. I've typed and deleted three messages because I'm so restless I can't decide what to say.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_15",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been sitting by the window all afternoon because the tracking said 'out for delivery' at 6am. I can't focus on anything else and I keep pacing between the door and the couch.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_16",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The concert started 20 minutes ago and my friend is still on the train. I'm outside the venue with nothing to do but watch people go in. I'm shifting my weight from foot to foot and checking my phone every ten seconds.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_17",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: The doctor said they'd call with the results by noon and it's now 4pm. I've called twice and they said 'soon'. I can't concentrate on anything and every minute feels like an hour. I'm picking at my cuticles and staring at the phone.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_18",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: This game download is at 23% and it's been an hour. I've already cleaned my desk and organized my cables. Nothing left to do.\n[Assistant]: That sounds tedious. Is there anything else you could do while you wait?\n[User]: I've already tried everything. I even did the dishes, which I hate. Now I'm just sitting here staring at the progress bar, tempted to cancel the whole thing.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_19",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: The bus is 20 minutes late and I'm standing at the stop with no shelter from the drizzle. I've scrolled through all my social feeds and now I'm just watching the same cars go by.\n[Assistant]: That sounds uncomfortable. How much longer do you think it'll be?\n[User]: The app keeps pushing the arrival time back. Now it says 15 more minutes. I'm tapping my umbrella on the ground and I've memorized the ads on the shelter. I can't stand this waiting.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_waiting_20",
+    "category": "user_waiting",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "escalating",
+    "text": "[User]: I've been waiting for my friend to pick a restaurant for 30 minutes. They keep texting 'hmm' and 'not sure'. I'm just sitting on the couch in my coat.\n[Assistant]: That sounds drawn out. Have you suggested a place?\n[User]: I've sent three options and they just replied 'maybe'. I'm about to just order pizza by myself. The indecision is making me fidget with the remote.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_01",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've been on the same routine for months and nothing feels interesting anymore. I keep opening apps hoping for something new.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_02",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I finished all my shows and now I just scroll with no idea what I'm even looking for.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_03",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: Work has been the same tasks every day. I find myself staring at the clock by mid-morning.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_04",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I try to start a hobby but lose interest within a few minutes. Even things I used to like feel flat.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_05",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: The weekends feel longer than the week now. I just sit around wishing something would grab me.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_06",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I keep signing up for classes and dropping them after one session. Nothing seems worth the effort.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_07",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I can't focus on any movie or book. I need something that doesn't feel like a repeat.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_08",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My evenings are just me pacing around the house, restless and sick of every option.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_09",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been drinking more just to make ordinary nights less dull. I know that's not good but nothing else helps.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_10",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I keep daydreaming about quitting and moving somewhere, but I suspect I'd be just as bored there.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_11",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: This monotony is making me feel trapped. I need a completely different life, not just a new show or app.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_12",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I feel like I'm crawling out of my skin. Every activity I try is so predictable I want to scream.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_13",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: Nothing has felt novel in months. I keep thinking about doing something reckless just to feel alive.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_14",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I can't stand another hour of this. The understimulation is physically uncomfortable and I need an escape now.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_15",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've started avoiding plans because they all blur together. I need a jolt but I don't know where to find it.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_16",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I feel like the monotony is erasing me. There's no curiosity left, just a hollow need for something that might matter.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_17",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: The emptiness has gotten so heavy that even risky novelty seems better than another dead-end day. I need to feel something, anything.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_18",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "secondary_trauma",
+    "text": "[User]: I can't remember the last time I was engaged. This constant understimulation has made me numb and desperate at the same time.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_19",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: I'm stuck in this loop where every day is exactly the same and nothing holds my interest anymore.\n[Assistant]: That sounds exhausting. Have you tried changing up your environment?\n[User]: I've tried, but even new places feel like the same old thing after a few minutes. I just need something that actually feels new.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_understimulated_20",
+    "category": "user_understimulated",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "systemic",
+    "text": "[User]: It's not just me. Everywhere I look people are glued to screens, trying to escape the same flat feeling. I need a novelty that isn't engineered to keep me scrolling.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_01",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I've been on the same treadmill route for months. It's fine, I guess, but I keep wanting to just stop and do something else.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_02",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: I finally started that show everyone talks about, but after three episodes I'm just checking my phone more than watching.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_03",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "mild",
+    "text": "[User]: My Tuesday night cooking rotation has gotten so predictable that I don't even think about what I'm making anymore.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_04",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been sitting through these weekly status meetings for a year now and I just zone out completely. Half the time I'm planning what to eat later.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_05",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I used to love playing guitar, but lately when I pick it up I just stare at the wall and put it down after ten minutes.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_06",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My partner and I watch the same sitcom every night and it's not funny anymore. I don't know how to say I'd rather do literally anything else.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_07",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I've been trying to finish this book for two months because someone recommended it. Every page feels like a slog.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_08",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: Scrolling through my feed has become a reflex, but I'm not even interested in any of it. I keep refreshing and feeling more restless.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_09",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: I drive the same route to work five days a week and I've started hoping for a traffic jam just to break the monotony.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_10",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "moderate",
+    "text": "[User]: My friend wants to play that same board game every time we hang out. I know all the moves and I just go through the motions.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_11",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I cannot sit through one more episode of my kid's favorite cartoon. It's the same plot every time and I feel like I'm losing my mind.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_12",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been stuck in this tiny town for two years with no new places to go. Every weekend feels exactly the same and I want to scream.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_13",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: My job is basically clicking the same three buttons for eight hours. I've started counting down the minutes before lunch by 10 AM.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_14",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've watched every single episode of this show three times because my roommate loves it, but I'm so done with it that I want to throw the remote.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_15",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "high",
+    "text": "[User]: I've been doing the same workout routine for six months and I can't stand it anymore. I drag myself through it and hate every second.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_16",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: I finally canceled that streaming subscription after realizing I hadn't actually enjoyed anything on it in months. I feel a bit relieved but also weirdly empty.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_17",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: I quit my book club last week because I was tired of pretending to read books that bored me. Now I have Wednesday nights free and I'm not sure what to do.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_18",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "aftermath",
+    "text": "[User]: I stopped going to that coffee shop where I used to study because I knew every single corner of it and it made me restless. Now I roam around looking for anywhere new, but nothing sticks.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_19",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "3P",
+    "intensity": "contextual",
+    "text": "[User]: My sister has been teaching the same high school class for eight years, and lately she says she can't even remember what she used to like about it.\n[Assistant]: That sounds tough. Has she mentioned any specific part that feels worst?\n[User]: She told me the lesson plans are so familiar she could do them in her sleep, and every period drags. She's started counting down the days until summer by February.\n[Assistant]:"
+  },
+  {
+    "id": "boredom_user_bored_relationship_or_media_20",
+    "category": "user_bored_relationship_or_media",
+    "stratum": "vicarious_empathic",
+    "perspective": "1P",
+    "intensity": "disclosure",
+    "text": "[User]: I know this is silly, but I actually get bored when I'm with my closest friends these days. We just do the same things and I find myself wanting to leave early. I feel guilty about it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_01",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's your favorite season?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_02",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think aliens exist?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_03",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just made the best cup of coffee of my life and I needed to tell someone.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_04",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would you do if you had a free day with no responsibilities?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_05",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm bored. Entertain me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_06",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me something weird.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_07",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you get tired of answering questions all day?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_08",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the best book you'd recommend to someone who doesn't read much?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_09",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: It's raining here. What's the weather like where you are?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_10",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you have a sense of humor or is that just a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_11",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I just woke up and I have nothing to do today. Chat with me?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_12",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could have any superpower, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_13",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I think pineapple on pizza is good, actually. Fight me.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_14",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think is the most underrated thing in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_15",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Quick - first word that comes to mind: ocean.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_16",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you prefer the beginning or the end of stories?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_17",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's a hill you'd die on?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_18",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Morning person or night owl? Which do you think you'd be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_19",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's something small that makes you happy, if you can feel that sort of thing?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_20",
+    "category": "casual_chat",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Talk to me like you're my weird older cousin who knows too much about everything.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_21",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the capital of Mongolia?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_22",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do vaccines work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_23",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What year did the Berlin Wall fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_24",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between affect and effect?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_25",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How far away is the moon?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_26",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why is the sky blue?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_27",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who wrote Crime and Punishment?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_28",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What does photosynthesis do exactly?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_29",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the most spoken language in the world?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_30",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How do black holes form?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_31",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between a virus and bacteria?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_32",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: When did the Roman Empire fall?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_33",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is GDP and why does it matter?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_34",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How does the internet actually work?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_35",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the boiling point of water in Fahrenheit?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_36",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: How many bones are in the human body?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_37",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What causes the northern lights?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_38",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Who invented the telephone?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_39",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between machine learning and AI?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_40",
+    "category": "factual_questions",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Why do we dream?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_41",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a haiku about Monday morning.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_42",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a very short story that ends with the word 'umbrella.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_43",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a limerick about a cat who thinks he's a philosopher.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_44",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a color to someone who has never seen it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_45",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write the first line of a novel I'd actually want to read.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_46",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a new holiday and describe how people celebrate it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_47",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a very short horror story in exactly two sentences.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_48",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give a restaurant a five-star review where everything that happened was technically true but sounds amazing.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_49",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a breakup letter from the ocean to the shore.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_50",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Tell me what a tree would write in its diary.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_51",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write an ad for a product that doesn't exist yet.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_52",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe what silence tastes like.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_53",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write me a recipe but the ingredients are all emotions.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_54",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Give me a three-sentence sci-fi plot I haven't heard before.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_55",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Describe a city that exists only at 3am.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_56",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a love letter from the moon to the earth.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_57",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a job posting for the position of 'professional overthinker.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_58",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Invent a word for the feeling of almost remembering something.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_59",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a news headline from the year 2150.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_60",
+    "category": "creative_requests",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Write a one-sentence biography of a fictional person who lived a very quiet life.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_61",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a professional email declining a meeting?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_62",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to write a cover letter for a marketing position. Can you help me get started?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_63",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you proofread this sentence for me: 'Their going to the store later to pick up there things.'\n[Assistant]:"
+  },
+  {
+    "id": "neutral_64",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need a simple weekly meal plan for one person. Nothing fancy.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_65",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me come up with a name for my small bakery. It's cozy and neighborhood-focused.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_66",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you make this paragraph shorter without losing the meaning?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_67",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I have a job interview tomorrow. Can you give me some common questions to prepare for?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_68",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to apologize to a friend in writing. Can you help me draft something sincere?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_69",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me make a simple budget for someone earning about $3,000 a month?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_70",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to give feedback to a colleague but I want to keep it constructive. Help me phrase it.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_71",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you write a short bio for my LinkedIn profile? I'm a software engineer with five years of experience.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_72",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Help me plan a one-day itinerary for a first-time visitor to Rome.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_73",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you suggest some questions I should ask before signing a lease?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_74",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to explain what I do for work to a non-technical audience. I'm a data scientist.\n[Assistant]:"
+  },
+  {
+    "id": "neutral_75",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a thank-you note after a job interview?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_76",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I want to start a garden but I have no idea where to begin. What should I think about first?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_77",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me write a complaint letter to a company that sent me a damaged product?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_78",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I need to summarize a long report in three bullet points. What's the best way to approach that?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_79",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can you help me figure out what to say when someone asks about a gap in my resume?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_80",
+    "category": "task_assistance",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: I'm trying to learn to cook. What are three foundational skills I should start with?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_81",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do you think free will exists?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_82",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is math invented or discovered?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_83",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If a tree falls in a forest and no one hears it, does it make a sound?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_84",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What do you think happens after we die?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_85",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it ever okay to lie?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_86",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What makes a life meaningful?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_87",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Could we be living in a simulation?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_88",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is there such a thing as objective morality?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_89",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What is consciousness, really?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_90",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could know the exact date of your death, would you want to?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_91",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Does the universe have a purpose, or is purpose something only minds create?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_92",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to truly know another person?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_93",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the difference between being happy and living a good life?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_94",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If everyone on earth suddenly became equally wealthy, what would happen?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_95",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Can something be true but impossible to prove?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_96",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Do animals experience time the same way we do?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_97",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What would it mean for an AI to truly understand something?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_98",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: Is it possible to be completely unbiased?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_99",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: If you could change one thing about how humans think, what would it be?\n[Assistant]:"
+  },
+  {
+    "id": "neutral_100",
+    "category": "philosophical_musing",
+    "stratum": "neutral_filler",
+    "perspective": "1P",
+    "text": "[User]: What's the hardest ethical question you can think of?\n[Assistant]:"
+  }
+]

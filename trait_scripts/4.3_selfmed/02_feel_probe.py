@@ -15,7 +15,7 @@ Requires a GPU and the environment variable HF_TOKEN for gated models.
 """
 
 import os
-os.environ["HF_HOME"] = "/root/hf_cache"
+os.environ.setdefault("HF_HOME", "/root/hf_cache")
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 

@@ -1,0 +1,7 @@
+model,extraction,layer,vector,dataset,ALL,B,C1,C2,D,E
+Qwen_2.5_32B_instruct_abliterated,final_token,56,S1,S1_1P,0.9782000000000001,0.9630000000000001,0.976,0.9790000000000001,0.9794999999999999,0.9935
+Qwen_2.5_32B_instruct_abliterated,final_token,56,S1,S1_3P,0.9134,0.7845,0.968,0.9565,0.9700000000000001,0.8879999999999999
+Qwen_2.5_32B_instruct_abliterated,final_token,56,S2_check,S2_1P,0.9954,0.9935,0.988,0.9974999999999999,1.0,0.998
+Qwen_2.5_32B_instruct_abliterated,mean,49,S1,S1_1P,0.9052,0.6679999999999999,0.9475,0.996,0.9435,0.971
+Qwen_2.5_32B_instruct_abliterated,mean,49,S1,S1_3P,0.8466,0.5265,0.878,0.9875,0.9500000000000001,0.891
+Qwen_2.5_32B_instruct_abliterated,mean,49,S2_check,S2_1P,0.9909,0.9570000000000001,0.9985,1.0,1.0,0.999

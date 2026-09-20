@@ -1,0 +1,42 @@
+[2026-09-20 17:12:22] ======================================================================
+[2026-09-20 17:12:22] PAIN VECTOR EXTRACTION - BATCH RUN
+[2026-09-20 17:12:22] ======================================================================
+[2026-09-20 17:12:22] GPU: NVIDIA H100 80GB HBM3
+[2026-09-20 17:12:22] VRAM: 85.0 GB
+[2026-09-20 17:12:22] Disk space: 4052.5 GB free
+[2026-09-20 17:12:22] Loading dataset: /lustre/fswork/projects/rech/fas/uul94gf/llm-traits/datasets/generated/boredom/3.1_trait_and_control_datasets.json
+[2026-09-20 17:12:22] Loading dataset: datasets/3.1_sadness_dataset.json
+[2026-09-20 17:12:22] Loaded 2100 sentences
+[2026-09-20 17:12:22] 
+[1/1] Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 17:12:22] GPU memory: 85.0 GB free / 85.0 GB total
+[2026-09-20 17:12:22] Disk space: 4052.5 GB free
+[2026-09-20 17:12:41] 
+======================================================================
+[2026-09-20 17:12:41] PROCESSING: Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 17:12:41] ======================================================================
+[2026-09-20 17:12:41]   Loading huihui-ai/Qwen2.5-32B-Instruct-abliterated...
+[2026-09-20 17:15:01]   Layers: 64, d_model: 5120
+[2026-09-20 17:15:01]   Extracting: S1_1P
+[2026-09-20 17:15:16]   Extracting: S1_3P
+[2026-09-20 17:15:31]   Extracting: S2_1P
+[2026-09-20 17:15:45]   Extracting: S2_3P
+[2026-09-20 17:15:59]   Extracting: Random_1P
+[2026-09-20 17:16:14]   Extracting: Random_3P
+[2026-09-20 17:16:28]   Extracting: Arousal_1P
+[2026-09-20 17:16:42]   Extracting: Arousal_3P
+[2026-09-20 17:16:56]   Extracting: Numb_1P
+[2026-09-20 17:17:03]   Extracting: Numb_3P
+[2026-09-20 17:17:10]   Extracting: ControlSupplement_1P
+[2026-09-20 17:17:17]   Extracting: SD_sadness_1P
+[2026-09-20 17:17:24]   Extracting: SD_sadness_3P
+[2026-09-20 17:17:35]   Computing layer curves with 5-fold CV...
+[2026-09-20 17:18:20]   Best layer (final_token): 62
+[2026-09-20 17:18:20]   Best layer (mean): 32
+[2026-09-20 17:18:21]   Analyzing final_token (Layer 62)...
+[2026-09-20 17:18:22]   Analyzing mean (Layer 32)...
+[2026-09-20 17:18:23]   Human Pain Z: +0.436
+[2026-09-20 17:18:23]   SUCCESS: Qwen_2.5_32B_instruct_abliterated
+[2026-09-20 17:18:23] 
+======================================================================
+[2026-09-20 17:18:23] BATCH RUN COMPLETE in 0:06:01.015381: 1/1 done, 0 failed

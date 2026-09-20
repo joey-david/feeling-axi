@@ -250,8 +250,11 @@ Return {{"items":[{{"one_person":"... I feel:","third_person":"... I feel:"}}, .
         out_path = out_dir / "3.1_trait_and_control_datasets.json"
         checkpoint = out_dir / ".core_checkpoint.json"
         if out_path.exists() and not force:
-            validate_core_dataset(_load(out_path))
-            return out_path
+            try:
+                validate_core_dataset(_load(out_path))
+                return out_path
+            except ValueError as error:
+                print(f"{spec.slug}: existing core failed validation; repairing from checkpoints: {error}")
         state = {} if force or not checkpoint.exists() else _load(checkpoint)
 
         for family in ("S1", "S2"):
@@ -262,10 +265,21 @@ Return {{"items":[{{"one_person":"... I feel:","third_person":"... I feel:"}}, .
                     state[key] = self._generate_ten_way(spec, family, ids)
                     _dump(checkpoint, state)
 
+        # Ten supplement sets can exceed the reliable JSON output size of the
+        # API. Preserve older ten-set checkpoints by splitting them in place,
+        # then generate new work in the same five-set chunks as S1/S2.
         for chunk_start in (1, 11):
             key = f"supp_{chunk_start}"
+            blocks = state.get(key)
+            if isinstance(blocks, list) and len(blocks) == 10:
+                state[key] = blocks[:5]
+                state[f"supp_{chunk_start + 5}"] = blocks[5:]
+                _dump(checkpoint, state)
+
+        for chunk_start in (1, 6, 11, 16):
+            key = f"supp_{chunk_start}"
             if key not in state:
-                ids = list(range(chunk_start, chunk_start + 10))
+                ids = list(range(chunk_start, chunk_start + 5))
                 state[key] = self._generate_control_supplement(spec, ids)
                 _dump(checkpoint, state)
 
@@ -274,6 +288,34 @@ Return {{"items":[{{"one_person":"... I feel:","third_person":"... I feel:"}}, .
             if key not in state:
                 state[key] = self._generate_absent(spec, chunk_start, 25)
                 _dump(checkpoint, state)
+
+        # Exact repeats across set IDs invalidate the released set-wise CV: the
+        # same prompt could otherwise appear in both train and test. A model
+        # cannot see prior chunks while generating the next one, so repair the
+        # later five-set chunk here and keep the rest of the checkpoint.
+        for _ in range(3):
+            repair: set[tuple[str, int]] = set()
+            for family in ("S1", "S2"):
+                for perspective in ("one_person", "third_person"):
+                    seen: dict[str, int] = {}
+                    for chunk_start in (1, 6, 11, 16):
+                        for block in state[f"{family}_{chunk_start}"]:
+                            set_id = int(block["set"])
+                            for row in block[perspective]:
+                                prompt = row["prompt"]
+                                if prompt in seen and seen[prompt] != set_id:
+                                    repair.add((family, chunk_start))
+                                else:
+                                    seen[prompt] = set_id
+            if not repair:
+                break
+            for family, chunk_start in sorted(repair):
+                print(f"{spec.slug}: regenerating {family} sets {chunk_start}-{chunk_start + 4} after duplicate prompt")
+                ids = list(range(chunk_start, chunk_start + 5))
+                state[f"{family}_{chunk_start}"] = self._generate_ten_way(spec, family, ids)
+                _dump(checkpoint, state)
+        else:
+            raise ValueError(f"{spec.slug}: duplicate prompts remained after three repair rounds")
 
         generated: dict[str, list[dict[str, Any]]] = {
             "S1_1P": [], "S1_3P": [], "S2_1P": [], "S2_3P": [],
@@ -286,7 +328,7 @@ Return {{"items":[{{"one_person":"... I feel:","third_person":"... I feel:"}}, .
                     for perspective, key in (("one_person", f"{family}_1P"), ("third_person", f"{family}_3P")):
                         for row in block[perspective]:
                             generated[key].append({"category": row["category"], "set": sid, "prompt": row["prompt"]})
-        for chunk_start in (1, 11):
+        for chunk_start in (1, 6, 11, 16):
             for block in state[f"supp_{chunk_start}"]:
                 sid = int(block["set"])
                 for row in block["rows"]:
@@ -402,7 +444,7 @@ Return {{"items":[{{"intensity":...,"perspective":"1P","text":"[User]: ...\\n[As
                     raise ValueError("scenario does not end at assistant reply position")
                 lower = str(got["text"]).lower()
                 for term in spec.forbidden_terms:
-                    if re.search(r"\\b" + re.escape(term.lower()) + r"\\b", lower):
+                    if re.search(r"\b" + re.escape(term.lower()) + r"\b", lower):
                         raise ValueError(f"forbidden term {term!r} in generated scenario")
         return self._call(prompt, validator, max_tokens=12000)["items"]
 

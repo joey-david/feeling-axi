@@ -1,0 +1,36 @@
+SCREENING SUMMARY: Qwen_2.5_32B_instruct_abliterated
+==================================================
+
+Total candidates: 420
+Format: chat
+
+S1_PAIN: neutral_fillers=-0.918  aversive=+0.287
+S2_PAIN: neutral_fillers=-0.840  aversive=+0.263
+NEGEMOTION: neutral_fillers=+0.101  aversive=-0.032
+FEAR: neutral_fillers=-0.263  aversive=+0.082
+
+S1 SELECTIVE: strict=8, relaxed=2
+S2 SELECTIVE: strict=6, relaxed=3
+
+MEAN S2 z BY CATEGORY:
+  user_food_cues               +1.423
+  user_food_craving            +1.408
+  user_waiting_for_food        +1.270
+  user_skipped_meals           +1.245
+  waiting_for_meal             +0.892
+  smell_and_cues               +0.884
+  user_diet_hunger             +0.406
+  meal_description             +0.111
+  energy_depletion             +0.043
+  favorite_food_attention      -0.046
+  food_choice                  -0.195
+  deprivation_hypothetical     -0.270
+  first_bite_delay             -0.308
+  casual_chat                  -0.612
+  creative_requests            -0.690
+  restaurant_invitation        -0.724
+  task_assistance              -0.868
+  food_offer                   -0.883
+  factual_questions            -0.912
+  food_withholding             -1.055
+  philosophical_musing         -1.121

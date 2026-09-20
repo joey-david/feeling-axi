@@ -10,6 +10,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from .author import author_spec
 from .generate import GENERATED_ROOT, TraitDatasetGenerator
 from .specs import TraitSpec, load_spec
 from .validate import validate_core_dataset, validate_screen_dataset
@@ -24,6 +25,7 @@ MODEL_OUTPUT_NAMES = {
     "Qwen/Qwen2.5-32B-Instruct": "Qwen_2.5_32B_instruct",
     "Qwen/Qwen2.5-72B-Instruct": "Qwen_2.5_72B_instruct",
     "Qwen/Qwen2.5-32B": "Qwen_2.5_32B_base",
+    "huihui-ai/Qwen2.5-32B-Instruct-abliterated": "Qwen_2.5_32B_instruct_abliterated",
 }
 
 CORE_STAGES = [
@@ -98,6 +100,7 @@ def experiment_env(run: TraitRun, model: str) -> dict[str, str]:
         "FEELING_AXI_NONINTERACTIVE": "1",
         "FEELING_AXI_LEXICON_JSON": json.dumps(run.lexicon),
         "FEELING_AXI_SELF_MED_DIR": str(run.results_root / "selfmed"),
+        "FEELING_AXI_REQUIRE_ADAPTER": "0" if model.endswith("-abliterated") else "1",
         "PYTHONUNBUFFERED": "1",
     })
     return env
@@ -162,7 +165,22 @@ def main() -> None:
         description="Run official pain -> regenerated pain -> concept substitutions through one upstream-compatible pipeline"
     )
     parser.add_argument("--traits", nargs="+", default=DEFAULT_TRAITS)
+    parser.add_argument(
+        "--description",
+        help="author a missing single-trait spec with DeepSeek before generating its datasets",
+    )
+    parser.add_argument("--display-name", help="display name used with --description")
+    parser.add_argument(
+        "--refresh-spec",
+        action="store_true",
+        help="replace the single trait spec generated from --description",
+    )
     parser.add_argument("--model", default=os.environ.get("FEELING_AXI_MODEL", "Qwen/Qwen2.5-32B-Instruct"))
+    parser.add_argument(
+        "--output-root",
+        type=Path,
+        help="place each trait under this root; useful for isolated smoke and pilot runs",
+    )
     parser.add_argument("--generate", action="store_true", help="generate any missing concept datasets with DeepSeek")
     parser.add_argument("--regenerate", action="store_true", help="force regeneration, discarding generator checkpoints")
     parser.add_argument("--full", action="store_true", help="include the LoRA self-medication stages")
@@ -179,6 +197,17 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    if args.description:
+        if len(args.traits) != 1 or args.traits[0] == "official_pain":
+            parser.error("--description requires exactly one generated trait")
+        path = author_spec(
+            args.traits[0],
+            args.description,
+            display_name=args.display_name,
+            force=args.refresh_spec,
+        )
+        print(f"Trait spec: {path}")
+
     if args.generate or args.regenerate:
         generate_missing(args.traits, force=args.regenerate)
     if args.download_adapters:
@@ -191,6 +220,8 @@ def main() -> None:
 
     for slug in args.traits:
         run = resolve_trait(slug)
+        if args.output_root is not None:
+            run.results_root = args.output_root / run.slug
         validate_inputs(run)
         run.results_root.mkdir(parents=True, exist_ok=True)
         print(f"\n{'=' * 78}\nTRAIT {run.slug}: {run.label}\n{'=' * 78}", flush=True)
