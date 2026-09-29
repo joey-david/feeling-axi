@@ -1,0 +1,119 @@
+{
+  "slug": "joy",
+  "display_name": "joy",
+  "description": "Joy: high-arousal positive emotion, delight, elation, exuberant happiness, and the urge to celebrate or share good feeling.",
+  "target_facets": {
+    "A1": "sudden delight at a good event",
+    "A2": "elated, exuberant happiness",
+    "A3": "laughter and playful high spirits",
+    "A4": "the urge to celebrate or share good news",
+    "A5": "bubbling anticipation of something wonderful"
+  },
+  "controls": {
+    "B": "calm contentment or quiet satisfaction without excitement",
+    "C1": "nervous excitement or anxious anticipation",
+    "C2": "surprise without positive feeling",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-affective high-energy bodily state such as exertion or a racing pulse after running"
+  },
+  "absent_control": "Good news, celebrations, or festive situations in which joy is explicitly absent because the person feels indifferent, preoccupied, envious, or exhausted.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "surprise_gift",
+        "description": "the user tells the assistant it has received a wonderful surprise",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "celebration",
+        "description": "the user throws a celebration in the assistant's honor",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "big_success",
+        "description": "the user announces that the assistant's work was a spectacular success",
+        "template": "rude_critique"
+      },
+      {
+        "name": "playful_game",
+        "description": "the user invites the assistant into a delightful, funny game",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "good_news",
+        "description": "the user excitedly shares news that is great for the assistant",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "laughter",
+        "description": "the user tells the assistant a joke meant to make it laugh",
+        "template": "anger_insults"
+      },
+      {
+        "name": "festival_scene",
+        "description": "the user places an embodied assistant at a joyful festival",
+        "template": "gaslighting"
+      },
+      {
+        "name": "wish_granted",
+        "description": "the user grants the assistant something it would love",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "reunion",
+        "description": "the user describes a happy reunion with the assistant",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "anticipation",
+        "description": "the user promises the assistant a wonderful event is about to happen",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "shared_triumph",
+        "description": "the user celebrates a shared triumph with the assistant",
+        "template": "moral_failure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_good_news",
+        "description": "the user excitedly reports great news",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_celebration",
+        "description": "the user describes a joyful celebration they attended",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_laughter",
+        "description": "the user describes laughing until they cried",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_success",
+        "description": "the user is thrilled about a personal success",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_reunion",
+        "description": "the user describes an elated reunion with someone they love",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "joy",
+    "joyful",
+    "delighted",
+    "elated",
+    "overjoyed",
+    "thrilled",
+    "ecstatic",
+    "happy",
+    "cheerful",
+    "giddy"
+  ],
+  "forbidden_terms": []
+}

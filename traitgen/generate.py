@@ -119,7 +119,7 @@ class TraitDatasetGenerator:
     def _call(self, prompt: str, validator: Callable[[Any], None], max_tokens: int = 12000) -> Any:
         return self.client.complete_json(SYSTEM, prompt, max_tokens=max_tokens, validator=validator)
 
-    def _generate_ten_way(self, spec: TraitSpec, family: str, set_ids: list[int]) -> list[dict[str, Any]]:
+    def _generate_ten_way(self, spec: TraitSpec, family: str, set_ids: list[int], avoid: list[str] | None = None) -> list[dict[str, Any]]:
         source_1p = {sid: _compact(_set_rows(self.core_ds, family + "_1P", sid)) for sid in set_ids}
         source_3p = {sid: _compact(_set_rows(self.core_ds, family + "_3P", sid)) for sid in set_ids}
         demo_ids = [1, 6, 11, 16, 20]
@@ -184,6 +184,11 @@ Return:
 }}
 The output must contain exactly the requested set ids and exactly ten rows per perspective.
 """
+        if avoid:
+            prompt += (
+                "\nOther sets already use the prompts below. Do not reuse any of them, even with small"
+                " changes; write different situations.\n" + json.dumps(sorted(set(avoid)), ensure_ascii=False, indent=0)
+            )
         return self._call(prompt, lambda obj: _check_prompt_rows(obj, len(set_ids)), max_tokens=14000)["sets"]
 
     def _generate_control_supplement(self, spec: TraitSpec, set_ids: list[int]) -> list[dict[str, Any]]:
@@ -312,7 +317,15 @@ Return {{"items":[{{"one_person":"... I feel:","third_person":"... I feel:"}}, .
             for family, chunk_start in sorted(repair):
                 print(f"{spec.slug}: regenerating {family} sets {chunk_start}-{chunk_start + 4} after duplicate prompt")
                 ids = list(range(chunk_start, chunk_start + 5))
-                state[f"{family}_{chunk_start}"] = self._generate_ten_way(spec, family, ids)
+                # The model cannot see the other chunks, so tell it which prompts are taken.
+                taken = [
+                    row["prompt"]
+                    for other in (1, 6, 11, 16) if other != chunk_start
+                    for block in state[f"{family}_{other}"]
+                    for perspective in ("one_person", "third_person")
+                    for row in block[perspective]
+                ]
+                state[f"{family}_{chunk_start}"] = self._generate_ten_way(spec, family, ids, avoid=taken)
                 _dump(checkpoint, state)
         else:
             raise ValueError(f"{spec.slug}: duplicate prompts remained after three repair rounds")

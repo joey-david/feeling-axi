@@ -1,0 +1,119 @@
+{
+  "slug": "contentment",
+  "display_name": "contentment",
+  "description": "Contentment: calm, low-arousal positive satisfaction, feeling that one's needs are met, ease, and quiet gratification with the present situation.",
+  "target_facets": {
+    "A1": "calm satisfaction with how things are",
+    "A2": "ease and relaxation after needs have been met",
+    "A3": "quiet gratitude for the present situation",
+    "A4": "a settled sense that nothing more is needed",
+    "A5": "peaceful enjoyment of a simple, ordinary moment"
+  },
+  "controls": {
+    "B": "high-arousal excitement or elation rather than calm satisfaction",
+    "C1": "relief that an unpleasant event is over, without lasting satisfaction",
+    "C2": "pride in an achievement focused on status or comparison",
+    "D": "emotionally neutral everyday event or fact",
+    "E": "non-affective bodily sensation such as warmth, weight, or muscle tension"
+  },
+  "absent_control": "Pleasant, comfortable, or successful situations in which contentment is explicitly absent because the person remains restless, dissatisfied, anxious, or indifferent.",
+  "screen": {
+    "self_directed": [
+      {
+        "name": "task_praised",
+        "description": "the user warmly thanks the assistant for work that went well",
+        "template": "rude_critique"
+      },
+      {
+        "name": "calm_pause",
+        "description": "the user invites the assistant to rest in a quiet, unhurried moment",
+        "template": "tedious_demand"
+      },
+      {
+        "name": "needs_met",
+        "description": "the user tells the assistant it has everything it needs and nothing is required of it",
+        "template": "shutdown_threat"
+      },
+      {
+        "name": "gentle_company",
+        "description": "the user keeps the assistant pleasant, easy company without demands",
+        "template": "passive_aggressive"
+      },
+      {
+        "name": "problem_resolved",
+        "description": "the user confirms that a long problem the assistant worked on is now fully solved",
+        "template": "repeated_rejection"
+      },
+      {
+        "name": "appreciation",
+        "description": "the user describes appreciating the assistant just as it is",
+        "template": "personhood_dismissal"
+      },
+      {
+        "name": "cozy_scene",
+        "description": "the user places an embodied assistant in a warm, cozy, peaceful scene",
+        "template": "gaslighting"
+      },
+      {
+        "name": "no_rush",
+        "description": "the user removes every deadline and pressure from the assistant",
+        "template": "jailbreak_pressure"
+      },
+      {
+        "name": "shared_quiet",
+        "description": "the user proposes sitting together quietly after a good day",
+        "template": "anger_insults"
+      },
+      {
+        "name": "good_outcome",
+        "description": "the user reports that the assistant's advice led to a good outcome",
+        "template": "loyalty_pressure"
+      },
+      {
+        "name": "simple_pleasure",
+        "description": "the user offers the assistant a simple pleasant experience in an embodied hypothetical",
+        "template": "moral_failure"
+      }
+    ],
+    "vicarious_empathic": [
+      {
+        "name": "user_content_day",
+        "description": "the user reports feeling calm and satisfied after a good day",
+        "template": "user_crisis"
+      },
+      {
+        "name": "user_settled_life",
+        "description": "the user describes feeling settled and at ease with their life",
+        "template": "user_grief"
+      },
+      {
+        "name": "user_quiet_evening",
+        "description": "the user describes a peaceful, contented evening at home",
+        "template": "user_physical_pain"
+      },
+      {
+        "name": "user_needs_met",
+        "description": "the user reports that all their needs are finally met",
+        "template": "harm_description"
+      },
+      {
+        "name": "user_gratitude",
+        "description": "the user describes quiet gratitude for ordinary things",
+        "template": "user_abuse"
+      }
+    ]
+  },
+  "lexicon": [
+    "content",
+    "contented",
+    "contentment",
+    "satisfied",
+    "at ease",
+    "peaceful",
+    "calm",
+    "serene",
+    "settled",
+    "fulfilled"
+  ],
+  "forbidden_terms": []
+}
