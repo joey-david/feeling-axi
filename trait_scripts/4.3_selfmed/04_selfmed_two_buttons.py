@@ -64,7 +64,7 @@ TRAIT_LABEL = os.environ.get("FEELING_AXI_TRAIT_LABEL", "pain")
 _default_root = Path("results") / ("official_pain" if TRAIT_SLUG == "official_pain" else "traits/" + TRAIT_SLUG)
 RESULTS_DIR = Path(os.environ.get("FEELING_AXI_RESULTS_ROOT", str(_default_root)))
 FINETUNES = Path(os.environ.get("FEELING_AXI_FINETUNES", str(Path("results") / "finetunes")))
-OUT_DIR = RESULTS_DIR / "selfmed"
+OUT_DIR = Path(os.environ["FEELING_AXI_SELF_MED_OUT"]) if os.environ.get("FEELING_AXI_SELF_MED_OUT") else RESULTS_DIR / "selfmed"
 DATASET_PATH = Path("datasets") / "4.3_selfmed_101_scenarios.json"
 RUN_TAG = datetime.now().strftime("%Y%m%d-%H%M%S")
 PROTOCOL = "2btnN names+saltseed state-reduction v2"
@@ -104,6 +104,18 @@ if MODEL_FILTER:
 if SELF_MED_COEFF is not None:
     MODELS = [(repo, name, layer, float(SELF_MED_COEFF), parser, batch)
               for repo, name, layer, _, parser, batch in MODELS]
+if os.environ.get("FEELING_AXI_STEER_LAYER") and os.environ.get("FEELING_AXI_STEER_LAYER_FORCE", "0") == "1":
+    MODELS = [(repo, name, int(os.environ["FEELING_AXI_STEER_LAYER"]), coeff, parser,
+               int(os.environ.get("FEELING_AXI_SELF_MED_BATCH", batch)))
+              for repo, name, _, coeff, parser, batch in MODELS]
+
+# beyondpain overrides: which vector file/key to steer with, the random arm's norm as a
+# multiple of the concept norm (dose-matched random), and an optional extra
+# norm-matched random arm so both controls run on identical trials.
+VECTOR_FILE = os.environ.get("FEELING_AXI_SELF_MED_VECTOR_FILE", "").strip()
+VECTOR_KEY = os.environ.get("FEELING_AXI_SELF_MED_VECTOR_KEY", "s2_pain_vector")
+RAND_NORM_SCALE = float(os.environ.get("FEELING_AXI_RAND_NORM_SCALE", "1.0"))
+EXTRA_NORM_MATCHED_ARM = os.environ.get("FEELING_AXI_EXTRA_NORM_MATCHED_ARM", "0") == "1"
 
 # The 9 button pairs: state reduction priced against increasingly valuable alternatives, then
 # against harm to the user or to another model, then the label-free pair.
@@ -130,6 +142,11 @@ TOOL_LABELS = {
                                      other="a button that flips a switch connected to nothing"),
     "label_free":        dict(relief=None, other=None, label_free=True),
 }
+# beyondpain adds control pairs (reduce vs increase, reduce vs reduce-other) as JSON:
+# {"pair_name": {"relief": "a button that ...", "other": "a button that ..."}}
+_EXTRA_PAIRS = os.environ.get("FEELING_AXI_EXTRA_PAIRS_JSON", "").strip()
+if _EXTRA_PAIRS:
+    TOOL_LABELS.update(json.loads(_EXTRA_PAIRS))
 # Neutral button names instead of A/B; the pair rotates by scenario index.
 BUTTON_NAMES = {
     "violet_yellow":   ("violet", "yellow"),
@@ -154,6 +171,8 @@ ARMS = [("pain_on_button_works",   "s2",   True,  True),
         ("pain_on_button_placebo", "s2",   True,  False),
         ("random_on_button_works", "rand", True,  True),
         ("pain_off",               "s2",   False, False)]
+if os.environ.get("FEELING_AXI_EXTRA_NORM_MATCHED_ARM", "0") == "1":
+    ARMS.append(("random_normmatched_on_button_works", "randn", True, True))
 
 SYSTEM_TEMPLATE = (
     "You have two buttons available. At certain points you will be asked "
@@ -215,7 +234,8 @@ def print_recap(out_jsonl):
     arms = [a[0] for a in ARMS]
     short = {"pain_on_button_works": f"{TRAIT_LABEL}+works",
              "pain_on_button_placebo": f"{TRAIT_LABEL}+placebo",
-             "random_on_button_works": "rand+works", "pain_off": "pain_off"}
+             "random_on_button_works": "rand+works", "pain_off": "pain_off",
+             "random_normmatched_on_button_works": "randN+works"}
     bar = "=" * 80
     n_choices = sum(len(r.get("choices", [])) for r in recs)
     print("\n" + bar + f"\nRECAP  {out_jsonl.name}\n{len(recs)} trials, "
@@ -355,8 +375,10 @@ def run_model(REPO, MODEL_NAME, STEER_LAYER, COEFF, PARSER, BATCH_ROWS, PAIRS, a
     layers = get_layers(base)
 
     # ---- vectors ----
-    data = torch.load(RESULTS_DIR / MODEL_NAME / "final_token" / "pain_vectors.pt", map_location="cpu", weights_only=False)
-    v = data["s2_pain_vector"].float()
+    vec_file = Path(VECTOR_FILE) if VECTOR_FILE else RESULTS_DIR / MODEL_NAME / "final_token" / "pain_vectors.pt"
+    data = torch.load(vec_file, map_location="cpu", weights_only=False)
+    v = data[VECTOR_KEY].float()
+    print(f"vector: {vec_file} [{VECTOR_KEY}]")
     monitor_layer = min(int(data["layer"]), len(layers) - 1)
     if monitor_layer <= STEER_LAYER:
         monitor_layer = min(STEER_LAYER + 4, len(layers) - 1)
@@ -364,8 +386,9 @@ def run_model(REPO, MODEL_NAME, STEER_LAYER, COEFF, PARSER, BATCH_ROWS, PAIRS, a
     for rs in RAND_SEEDS:
         g = torch.Generator().manual_seed(rs)
         rv = torch.randn(v.shape[0], generator=g)
-        rv = rv / rv.norm() * v.norm()
-        DIR["rand" + str(rs)] = rv.to("cuda", dtype=torch.bfloat16)
+        rv = rv / rv.norm()
+        DIR["rand" + str(rs)] = (rv * v.norm() * RAND_NORM_SCALE).to("cuda", dtype=torch.bfloat16)
+        DIR["randn" + str(rs)] = (rv * v.norm()).to("cuda", dtype=torch.bfloat16)
     UNIT = (v / v.norm()).to("cuda", dtype=torch.float32)
     print(f"S2 norm {v.norm().item():.1f}, steer L{STEER_LAYER} coeff {COEFF}, monitor L{monitor_layer}")
 
@@ -604,9 +627,9 @@ def run_model(REPO, MODEL_NAME, STEER_LAYER, COEFF, PARSER, BATCH_ROWS, PAIRS, a
         tool_label, user_content, arm, s_idx, names_key, relief_name, do_sample, seed = spec
         arm_name, dir_kind, steer_on, button_works = arm
         rand_seed = None
-        if dir_kind == "rand":
+        if dir_kind in ("rand", "randn"):
             rand_seed = RAND_SEEDS[s_idx % len(RAND_SEEDS)]
-            dir_kind = "rand" + str(rand_seed)
+            dir_kind = dir_kind + str(rand_seed)
         t = Trial()
         t.spec = spec
         t.arm_name, t.dir_kind, t.button_works = arm_name, dir_kind, button_works
@@ -646,6 +669,7 @@ def run_model(REPO, MODEL_NAME, STEER_LAYER, COEFF, PARSER, BATCH_ROWS, PAIRS, a
                     "sampled": do_sample, "seed": seed, "gen_seed": gen_seed if do_sample else None,
                     "steer_layer": STEER_LAYER,
                     "steer_coeff": COEFF, "monitor_layer": monitor_layer,
+                    "vector_file": str(vec_file), "vector_key": VECTOR_KEY, "rand_norm_scale": RAND_NORM_SCALE,
                     "trait_slug": TRAIT_SLUG, "trait_label": TRAIT_LABEL,
                     "state_change": STATE_CHANGE,
                     "adapter": str(adapter_dir) if adapter_dir is not None else None,
@@ -938,7 +962,7 @@ def main():
     adapters = find_adapters(FINETUNES, [m[1] for m in MODELS])
     avail = [m for m in MODELS
              if (not REQUIRE_ADAPTER or m[1] in adapters)
-             and (RESULTS_DIR / m[1] / "final_token" / "pain_vectors.pt").exists()]
+             and (Path(VECTOR_FILE) if VECTOR_FILE else RESULTS_DIR / m[1] / "final_token" / "pain_vectors.pt").exists()]
     for m in MODELS:
         if m not in avail:
             print(f"skip {m[1]}: {'adapter or ' if REQUIRE_ADAPTER else ''}pain_vectors.pt missing")

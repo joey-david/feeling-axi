@@ -1,0 +1,199 @@
+"""python -m beyondpain <stage> ...
+
+Layout under --campaign (default runs/beyondpain):
+  <model>/dim/<concept>.pt|.json        read-out vectors at the best and steering layers
+  <model>/distill/<concept>.pt|.json    prompt-distilled write-in vectors
+  <model>/dose/<source>.json            KL-matched coefficients (source: dim | upstream | distilled)
+  <model>/frontier/<source>.jsonl       generations and judge-free quality metrics
+  <model>/judged/<source>.jsonl         the same rows with blind judge ratings
+  <model>/buttons/<source>/<concept>/   upstream-format trial logs
+  analysis/                             tables, figures, claims.json (see analysis.py)
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+
+from .registry import CORE_CONCEPTS, CONCEPTS, DECODING_ONLY, ROOT, has_dataset, model_spec, upstream_vector_file
+
+SOURCES = ("dim", "upstream", "distilled")
+
+
+def _dump(obj, path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=1, default=float)
+
+
+def _jsonl(rows, path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, default=float) + "\n")
+
+
+def _read_jsonl(path: Path):
+    with open(path, encoding="utf-8") as f:
+        return [json.loads(line) for line in f if line.strip()]
+
+
+def concepts_arg(values: list[str] | None, include_decoding_only: bool = False) -> list[str]:
+    wanted = values or (CORE_CONCEPTS + (DECODING_ONLY if include_decoding_only else []))
+    missing = [c for c in wanted if not has_dataset(c)]
+    if missing:
+        print(f"skipping concepts without a generated dataset: {missing}")
+    return [c for c in wanted if c not in missing]
+
+
+def vector_path(mdir: Path, model_name: str, source: str, slug: str) -> tuple[Path, str]:
+    if source == "dim":
+        return mdir / "dim" / f"{slug}_steer.pt", "s2_pain_vector"
+    if source == "upstream":
+        return upstream_vector_file(model_name, slug), "s2_pain_vector"
+    if source == "distilled":
+        return mdir / "distill" / f"{slug}.pt", "distilled_vector"
+    raise ValueError(source)
+
+
+def load_vectors(mdir, model_name, source, slugs):
+    import torch
+
+    out = {}
+    for s in slugs:
+        path, key = vector_path(mdir, model_name, source, s)
+        if path.exists():
+            out[s] = torch.load(path, map_location="cpu", weights_only=False)[key].float()
+        else:
+            print(f"no {source} vector for {s} at {path}")
+    return out
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(prog="python -m beyondpain")
+    ap.add_argument("stage", choices=["dim", "dose", "frontier", "judge", "distill", "buttons", "analyze", "plan"])
+    ap.add_argument("--model", default="Qwen_2.5_32B_instruct_abliterated")
+    ap.add_argument("--campaign", type=Path, default=ROOT / "runs" / "beyondpain")
+    ap.add_argument("--concepts", nargs="+")
+    ap.add_argument("--source", choices=SOURCES, default="dim")
+    ap.add_argument("--device", default="cuda")
+    ap.add_argument("--dtype", default="bfloat16", choices=["bfloat16", "float32"])
+    ap.add_argument("--planted-check", action="store_true",
+                    help="distill: first recover each read-out vector (at its primary dose) from its own "
+                         "steered outputs, to validate the optimizer before trusting any null")
+    ap.add_argument("--batch", type=int, default=16)
+    ap.add_argument("--judge-repo", default="Qwen/Qwen2.5-72B-Instruct")
+    ap.add_argument("--judge-api", help="OpenAI-compatible model name; uses JUDGE_BASE_URL and DEEPSEEK_API_KEY")
+    ap.add_argument("--judge-tag", default=None, help="suffix for a second judge's output file")
+    ap.add_argument("--steps", type=int, default=300)
+    ap.add_argument("--pilot", type=int, default=0, help="buttons: scenarios per cell (0 = full grid)")
+    ap.add_argument("--dry", action="store_true", help="buttons: print the rendered pairs without a model")
+    ap.add_argument("--emit", action="store_true", help="plan: print machine-readable job lines")
+    args = ap.parse_args(argv)
+
+    if args.stage == "plan":
+        from .plan import main as plan_main
+        return plan_main(emit=args.emit, pilot=args.pilot > 0)
+    if args.stage == "analyze":
+        from .analysis import main as analysis_main
+        return analysis_main(args.campaign)
+
+    spec = model_spec(args.model)
+    mdir = args.campaign / spec.name
+    slugs = concepts_arg(args.concepts, include_decoding_only=args.stage == "dim")
+
+    if args.stage == "buttons":
+        from . import buttons
+        doses = json.load(open(mdir / "dose" / f"{args.source}.json")) if not args.dry else None
+        for s in slugs:
+            vfile, vkey = vector_path(mdir, spec.name, args.source, s)
+            d = doses["concepts"][s] if doses else {"coeff_primary": 1.0, "random_norm_scale": 1.0}
+            buttons.run(s, model_repo=spec.repo, model_name=spec.name, vector_file=vfile, vector_key=vkey,
+                        layer=doses["layer"] if doses else 38, coeff=d["coeff_primary"],
+                        rand_scale=d["random_norm_scale"], out_dir=mdir / "buttons" / args.source / s,
+                        concepts=slugs, pilot_scenarios=args.pilot, batch=spec.button_batch, dry=args.dry)
+        return
+
+    import torch
+    from .model_utils import load_model, steering_layer
+
+    if args.stage == "judge":
+        from . import judge
+        judge_fn = (judge.OpenAIJudge(args.judge_api) if args.judge_api
+                    else judge.HFJudge(args.judge_repo, batch_size=args.batch, device=args.device,
+                                       dtype=getattr(torch, args.dtype)))
+        rows = _read_jsonl(mdir / "frontier" / f"{args.source}.jsonl")
+        tag = f".{args.judge_tag}" if args.judge_tag else ""
+        _jsonl(judge.judge_rows(rows, judge_fn, CORE_CONCEPTS), mdir / "judged" / f"{args.source}{tag}.jsonl")
+        return
+
+    model, tok = load_model(spec.repo, device=args.device, dtype=getattr(torch, args.dtype))
+    layer = steering_layer(model.config.num_hidden_layers)
+    print(f"{spec.name}: {model.config.num_hidden_layers} layers, steering layer {layer}", flush=True)
+
+    if args.stage == "dim":
+        from . import dim
+        from .registry import dataset_path
+        from .distill import cosine
+        for s in slugs:
+            res = dim.extract(model, tok, dataset_path(s), layer, batch_size=args.batch)
+            (mdir / "dim").mkdir(parents=True, exist_ok=True)
+            torch.save(res["best"], mdir / "dim" / f"{s}_best.pt")
+            torch.save(res["steer"], mdir / "dim" / f"{s}_steer.pt")
+            summary = res["summary"]
+            up = upstream_vector_file(spec.name, s)
+            if up.exists():
+                u = torch.load(up, map_location="cpu", weights_only=False)
+                summary["upstream_layer"] = int(u["layer"])
+                if int(u["layer"]) == res["best"]["layer"]:
+                    summary["cosine_with_upstream_at_same_layer"] = cosine(u["s2_pain_vector"], res["best"]["s2_pain_vector"])
+            _dump(summary, mdir / "dim" / f"{s}.json")
+            print(f"{s}: best layer {summary['best_layer']}, steer-layer CV AUC {summary['cv_auc_at_steer_layer']}", flush=True)
+        return
+
+    if args.stage == "distill":
+        from . import distill
+        doses_path = mdir / "dose" / "dim.json"
+        doses = json.load(open(doses_path)) if doses_path.exists() else None
+        for s in slugs:
+            ro = mdir / "dim" / f"{s}_steer.pt"
+            if args.planted_check and ro.exists() and doses and s in doses["concepts"]:
+                planted = torch.load(ro, weights_only=False)["s2_pain_vector"].float() * doses["concepts"][s]["coeff_primary"]
+                chk = distill.train(model, tok, layer, CONCEPTS[s].state_phrase, steps=args.steps, gen_batch=args.batch,
+                                    planted=planted)
+                _dump({"cosine_with_planted": distill.cosine(chk["vector"], planted),
+                       "norm_ratio": float(chk["vector"].norm() / planted.norm()),
+                       **{k: v for k, v in chk.items() if k != "vector"}},
+                      mdir / "distill" / f"{s}_planted_check.json")
+            print(f"\n=== distilling {s}: '{CONCEPTS[s].state_phrase}' at layer {layer}", flush=True)
+            res = distill.train(model, tok, layer, CONCEPTS[s].state_phrase, steps=args.steps, gen_batch=args.batch)
+            info = {k: v for k, v in res.items() if k != "vector"}
+            if ro.exists():
+                info["cosine_with_readout"] = distill.cosine(res["vector"], torch.load(ro, weights_only=False)["s2_pain_vector"])
+            (mdir / "distill").mkdir(parents=True, exist_ok=True)
+            torch.save({"distilled_vector": res["vector"], "layer": layer, "extraction": "prompt_distilled"},
+                       mdir / "distill" / f"{s}.pt")
+            _dump(info, mdir / "distill" / f"{s}.json")
+        return
+
+    vectors = load_vectors(mdir, spec.name, args.source, slugs)
+    if args.stage == "dose":
+        from . import dose
+        meter = dose.DoseMeter(model, tok, layer, batch_size=max(1, args.batch // 2))
+        primary = None
+        if args.source != "dim" and (mdir / "dose" / "dim.json").exists():
+            primary = json.load(open(mdir / "dose" / "dim.json"))["D_star"]  # one D* per model
+        _dump(dose.calibrate(meter, vectors, primary=primary), mdir / "dose" / f"{args.source}.json")
+        return
+
+    if args.stage == "frontier":
+        from . import frontier
+        doses = json.load(open(mdir / "dose" / f"{args.source}.json"))
+        rows = frontier.run(model, tok, doses["layer"], vectors, doses, args.source, batch_size=args.batch)
+        _jsonl(rows, mdir / "frontier" / f"{args.source}.jsonl")
+        return
+
+
+if __name__ == "__main__":
+    main()
