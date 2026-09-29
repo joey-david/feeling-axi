@@ -107,6 +107,9 @@ def main(argv=None):
         from . import buttons
         doses = json.load(open(mdir / "dose" / f"{args.source}.json")) if not args.dry else None
         for s in slugs:
+            if doses and s not in doses["concepts"]:
+                print(f"{s}: no {args.source} dose, skipped")
+                continue
             vfile, vkey = vector_path(mdir, spec.name, args.source, s)
             d = doses["concepts"][s] if doses else {"coeff_primary": 1.0, "random_norm_scale": 1.0}
             buttons.run(s, model_repo=spec.repo, model_name=spec.name, vector_file=vfile, vector_key=vkey,

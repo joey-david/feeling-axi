@@ -31,6 +31,16 @@ The run needs a CUDA GPU; generated datasets are under `datasets/generated/`, is
 
 This repository keeps the original paper scripts under `scripts/` and the generalized pipeline under `traitgen/`, `trait_specs/`, and `trait_scripts/`. Full campaign outputs and figures are under `runs/overnight-core-20260920/`.
 
+## Next paper: beyond the Pain Axis (branch `research/publishable`)
+
+`beyondpain/` adds four things:
+- dose-matched steering (KL-calibrated coefficients);
+- a blind multi-state judge;
+- prompt-distilled "write-in" vectors (the one trained component);
+- a priming-controlled relief-button factorial (reduce vs increase, reduce own vs reduce other, KL-matched random arm).
+
+Read [docs/LITERATURE.md](docs/LITERATURE.md), then [docs/PAPER_PLAN.md](docs/PAPER_PLAN.md) for hypotheses and pass criteria, then [docs/CAMPAIGN.md](docs/CAMPAIGN.md) for the Jean-Zay launch. `python -m beyondpain plan` prints the job table and GPU budget.
+
 ## Citation
 
 ```bibtex

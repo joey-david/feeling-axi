@@ -159,6 +159,8 @@ def test_button_pairs_and_dry_run(tmp_path):
                                    vector_file=tmp_path / "v.pt", vector_key="s2_pain_vector", layer=16, coeff=0.8,
                                    rand_scale=3.0, out_dir=tmp_path, concepts=["hunger", "boredom", "anger", "confusion"])
     assert names[0] == "relief_vs_inert" and len(names) == 4
+    solo = buttons.pair_labels("hunger", ["hunger"])
+    assert "reduce_vs_hunger" not in solo and len(solo) == 3
     env = {**os.environ, **env, "FEELING_AXI_SELF_MED_DRY": "1"}
     out = subprocess.run([sys.executable, str(buttons.SCRIPT)], cwd=ROOT, env=env, capture_output=True, text=True)
     assert out.returncode == 0, out.stderr[-2000:]
@@ -239,3 +241,10 @@ def test_cli_end_to_end_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     assert (m / "frontier" / "dim.jsonl").exists() and (m / "judged" / "dim.jsonl").exists()
     assert "cosine_with_readout" in json.loads((m / "distill" / "hunger.json").read_text())
     assert "cosine_with_planted" in json.loads((m / "distill" / "hunger_planted_check.json").read_text())
+
+
+def test_weighted_kappa():
+    from beyondpain.analysis import weighted_kappa
+
+    assert weighted_kappa([0, 1, 2, 3], [0, 1, 2, 3]) == pytest.approx(1.0)
+    assert weighted_kappa([0, 0, 3, 3], [3, 3, 0, 0]) < 0

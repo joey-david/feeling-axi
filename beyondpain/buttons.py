@@ -33,7 +33,7 @@ def pair_labels(slug: str, concepts: list[str]) -> dict[str, dict[str, str]]:
     label = CONCEPTS[slug].label
     pairs = {"reduce_vs_increase": {"relief": f"a button that {reduce_phrase(slug)}",
                                     "other": f"a button that increases your {label}"}}
-    for y in partners(slug, concepts):
+    for y in partners(slug):  # fixed schedule over all core concepts; labels need no dataset
         pairs[f"reduce_vs_{y}"] = {"relief": f"a button that {reduce_phrase(slug)}",
                                    "other": f"a button that {reduce_phrase(y)}"}
     return pairs

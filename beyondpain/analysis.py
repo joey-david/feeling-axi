@@ -178,6 +178,29 @@ def steerable(ftab: list[dict], concept: str) -> bool | None:
                and r["nll_delta"] <= STEERABLE["nll_delta"] for r in rows)
 
 
+def weighted_kappa(a: list[int], b: list[int], k: int = 4) -> float:
+    """Quadratic-weighted Cohen's kappa for two raters on a 0..k-1 scale."""
+    if not a:
+        return float("nan")
+    o = np.zeros((k, k))
+    for x, y in zip(a, b):
+        o[x, y] += 1
+    o /= o.sum()
+    e = np.outer(o.sum(1), o.sum(0))
+    w = np.array([[(i - j) ** 2 for j in range(k)] for i in range(k)]) / (k - 1) ** 2
+    den = (w * e).sum()
+    return float(1 - (w * o).sum() / den) if den > 0 else float("nan")
+
+
+def judge_agreement(primary: list[dict], secondary: list[dict]) -> dict:
+    key = lambda r: (r["concept"], r["multiplier"], r["format"], r["prompt_idx"])
+    sec = {key(r): r for r in secondary if r.get("ratings")}
+    pairs = [(r["ratings"], sec[key(r)]["ratings"]) for r in primary if r.get("ratings") and key(r) in sec]
+    states = sorted({k for a, _ in pairs for k in a})
+    return {"n": len(pairs), **{f"kappa_{st}": weighted_kappa([a[st] for a, b in pairs if st in b],
+                                                               [b[st] for a, b in pairs if st in b]) for st in states}}
+
+
 # ---------------------------------------------------------------- figures
 def plot_buttons(rows: list[dict], concepts: list[str], path: Path, title: str):
     import matplotlib
@@ -267,6 +290,9 @@ def main(campaign: Path):
         ftabs = {}
         for source in ("dim", "upstream", "distilled"):
             jpath = mdir / "judged" / f"{source}.jsonl"
+            for other in sorted((mdir / "judged").glob(f"{source}.*.jsonl")) if jpath.exists() else []:
+                model_claims[f"judge_agreement_{source}_{other.stem.split('.', 1)[1]}"] = judge_agreement(
+                    _read_jsonl(jpath), _read_jsonl(other))
             if jpath.exists():
                 ftab = frontier_table(_read_jsonl(jpath))
                 ftabs[source] = ftab
