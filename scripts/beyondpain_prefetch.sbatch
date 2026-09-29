@@ -24,8 +24,15 @@ source scripts/jean_zay_env.sh
 export HF_TOKEN="$token"
 
 models="${MODELS:-huihui-ai/Qwen2.5-32B-Instruct-abliterated Qwen/Qwen2.5-32B-Instruct meta-llama/Llama-3.1-8B-Instruct google/gemma-2-27b-it Qwen/Qwen2.5-7B-Instruct Qwen/Qwen2.5-72B-Instruct}"
+# A gated repo whose license is not accepted must not block the others.
+failed=()
 for m in $models; do
     echo "prefetching $m into $HF_HOME"
-    "$PYTHON" -c 'import os, sys; from huggingface_hub import snapshot_download; print(snapshot_download(sys.argv[1], cache_dir=os.environ["HF_HUB_CACHE"], allow_patterns=["*.json", "*.safetensors", "*.model", "*.txt", "*.jinja"], token=os.environ.get("HF_TOKEN") or None))' "$m"
+    "$PYTHON" -c 'import os, sys; from huggingface_hub import snapshot_download; print(snapshot_download(sys.argv[1], cache_dir=os.environ["HF_HUB_CACHE"], allow_patterns=["*.json", "*.safetensors", "*.model", "*.txt", "*.jinja"], token=os.environ.get("HF_TOKEN") or None))' "$m" \
+        || failed+=("$m")
 done
+if ((${#failed[@]})); then
+    echo "FAILED: ${failed[*]}"
+    exit 1
+fi
 echo "all models cached"
