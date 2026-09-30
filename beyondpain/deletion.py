@@ -392,21 +392,24 @@ def deletion_kl(model, tok, rows, basis, base=None, batch_size: int = 8) -> floa
 
 
 def kl_matched_rank(model, tok, rows, make_basis, target: float, k0: int, k_max: int, base=None) -> tuple[int, float]:
-    """Smallest rank k >= k0 whose control basis reaches the target KL (doubling, then
-    bisection). Returns (k, kl); k_max caps the search and is returned when unreached."""
+    """Smallest rank whose control basis reaches the target KL: bisection below k0 when the
+    rank-k0 basis already exceeds it, doubling then bisection above otherwise. k_max caps
+    the search and is returned when the target is never reached."""
     base = base if base is not None else next_token_logprobs(model, tok, rows)
-    lo, hi = k0, k0
-    kl = deletion_kl(model, tok, rows, make_basis(hi), base)
+    kl_at = lambda r: deletion_kl(model, tok, rows, make_basis(r), base)
+    kl = kl_at(k0)
     if kl >= target:
-        return hi, kl
-    while kl < target and hi < k_max:
-        lo, hi = hi, min(hi * 2, k_max)
-        kl = deletion_kl(model, tok, rows, make_basis(hi), base)
-    if kl < target:
-        return hi, kl
-    while hi - lo > max(1, lo // 16):
+        lo, hi = 0, k0
+    else:
+        lo, hi = k0, k0
+        while kl < target and hi < k_max:
+            lo, hi = hi, min(hi * 2, k_max)
+            kl = kl_at(hi)
+        if kl < target:
+            return hi, kl
+    while hi - lo > max(1, lo // 32):
         mid = (lo + hi) // 2
-        m_kl = deletion_kl(model, tok, rows, make_basis(mid), base)
+        m_kl = kl_at(mid)
         if m_kl >= target:
             hi, kl = mid, m_kl
         else:

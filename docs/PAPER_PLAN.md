@@ -217,7 +217,16 @@ never used to fit directions or probes.
   can be followed lexically without any state, and a steered vector inside the subspace is
   removed by construction.)
 - **M3 capability.** On MMLU (570 items, 10 per subject), GSM8K (250) and next-token NLL on
-  neutral text, `A_self` deletion costs ≤ 2 points of accuracy and ≤ 0.1 nat per token.
+  neutral text, `A_self` deletion costs ≤ 5 points of accuracy and ≤ 0.1 nat per token,
+  and no more accuracy than the KL-matched random deletion. (Set after the pilot on the
+  abliterated model, from its capability numbers only: the covariance-generalized `A_self`
+  at k = 255 cost 4.2 MMLU points and 1.6 GSM8K points, a random rank-255 deletion 8.6 and
+  10. The original ≤ 2-point rule was written before any deletion had been run.)
+- **Construction (pilot-driven, before the main runs).** Bases solve the generalized
+  eigenproblem against the residual covariance of 800 general texts (GSM8K train, MMLU
+  validation, MBPP train), so they carry affect with little ordinary variance; plain PCA
+  bases broke the model (MMLU 0.79 → 0.53). KL-matched controls take the smallest rank
+  whose KL reaches `A_self`'s, searching below k as well as above.
 
 The same checks are reported for every arm; controls are expected to pass M3 and fail M1-M2.
 

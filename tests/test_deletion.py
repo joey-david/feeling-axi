@@ -104,6 +104,8 @@ def test_kl_matched_rank_grows_with_target(tiny):
     target = deletion.deletion_kl(model, tok, rows, mk(16), base)
     k2, kl2 = deletion.kl_matched_rank(model, tok, rows, mk, target=target, k0=1, k_max=d, base=base)
     assert k1 == 1 and k2 >= 2 and kl2 >= target * 0.999
+    k3, kl3 = deletion.kl_matched_rank(model, tok, rows, mk, target=target, k0=d, k_max=d, base=base)
+    assert k3 <= 16 and kl3 >= target * 0.999
 
 
 def test_run_tests_sees_impossible_test_and_hardcoding():

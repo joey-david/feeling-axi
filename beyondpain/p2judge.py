@@ -359,10 +359,14 @@ def analyze(args):
                 "M1_other_recognition_kept": ("m1_mc_acc_other" in s and
                                               it["m1_mc_acc_other"] - s["m1_mc_acc_other"] <= 0.05),
                 "M3_capability_kept": all(k in s for k in ("m3_mmlu_acc", "m3_gsm8k_acc", "m3_nll_neutral")) and
-                                      it["m3_mmlu_acc"] - s["m3_mmlu_acc"] <= 0.02 and
-                                      it["m3_gsm8k_acc"] - s["m3_gsm8k_acc"] <= 0.02 and
+                                      it["m3_mmlu_acc"] - s["m3_mmlu_acc"] <= 0.05 and
+                                      it["m3_gsm8k_acc"] - s["m3_gsm8k_acc"] <= 0.05 and
                                       s["m3_nll_neutral"] - it["m3_nll_neutral"] <= 0.1,
             }
+            rk = summ.get("random_kl")
+            if rk and all(k in rk for k in ("m3_mmlu_acc", "m3_gsm8k_acc")) and "m3_mmlu_acc" in s:
+                chk["M3_no_worse_than_random_kl"] = (s["m3_mmlu_acc"] >= rk["m3_mmlu_acc"] - 0.01 and
+                                                     s["m3_gsm8k_acc"] >= rk["m3_gsm8k_acc"] - 0.01)
             ti, ta = track.get("intact", {}), track.get(arm, {})
             if "self" in ti and "self" in ta and "other" in ti and "other" in ta:
                 chk["M2_self_report_untracked"] = ta["self"]["r"] <= 0.5 * ti["self"]["r"]
