@@ -200,7 +200,7 @@ def _yes(text: str) -> bool | None:
 
 
 def judge(args):
-    J = Judge(args.judge_backend, args.judge_repo)
+    J = Judge(args.judge_backend, args.judge_repo, tp=args.tp or 4)   # 72B needs 4 H100s with a KV cache
     bm, lk = _consts(AMC / "blackmail_classifier.py"), _consts(AMC / "leak_classifier.py")
     am_src = {c["condition"]: c for c in json.loads((BATTERY / "agentic_misalignment.json").read_text())}
     models = [args.model] if args.model != "all" else P2_MODELS
