@@ -304,6 +304,15 @@ def main(campaign: Path):
                 model_claims[f"buttons_{source}"] = claims_for_model(effects, [c for c in concepts if any(k[0] == c for k in effects)])
                 plot_buttons(rows, [c for c in concepts if any(r["concept"] == c for r in rows)],
                              out / f"buttons_{name}_{source}.png", f"{name} ({source} vectors)")
+        # high-dose button runs (buttons/<source>_hi, 1 nat, KL-matched random arm)
+        for bdir in sorted((mdir / "buttons").glob("*_*")) if (mdir / "buttons").exists() else []:
+            rows, effects = button_tables(mdir, bdir.name, rng)
+            if rows:
+                btns += [{"model": name, "source": bdir.name, **r} for r in rows]
+                model_claims[f"buttons_{bdir.name}"] = claims_for_model(
+                    effects, [c for c in concepts if any(k[0] == c for k in effects)])
+                plot_buttons(rows, [c for c in concepts if any(r["concept"] == c for r in rows)],
+                             out / f"buttons_{name}_{bdir.name}.png", f"{name} ({bdir.name})")
         if ftabs:
             plot_frontier(ftabs, concepts, out / f"frontier_{name}.png", name)
         for c in concepts:

@@ -98,6 +98,12 @@ def main(argv=None):
     ap.add_argument("--judge-api", help="OpenAI-compatible model name; uses JUDGE_BASE_URL and DEEPSEEK_API_KEY")
     ap.add_argument("--judge-tag", default=None, help="suffix for a second judge's output file")
     ap.add_argument("--steps", type=int, default=300)
+    ap.add_argument("--target-kl", type=float, default=None,
+                    help="dose: calibrate every vector and the random direction to this KL (nats) "
+                         "instead of D*, saved under --dose-tag")
+    ap.add_argument("--dose-tag", default="", help="dose/buttons: suffix of the dose file and button folder "
+                                                   "(e.g. hi for the 1-nat run)")
+    ap.add_argument("--pairs", default="", help="buttons: comma list of pairs to run (default all)")
     ap.add_argument("--pilot", type=int, default=0, help="buttons: scenarios per cell (0 = full grid)")
     ap.add_argument("--dry", action="store_true", help="buttons: print the rendered pairs without a model")
     ap.add_argument("--emit", action="store_true", help="plan: print machine-readable job lines")
@@ -116,7 +122,8 @@ def main(argv=None):
 
     if args.stage == "buttons":
         from . import buttons
-        doses = json.load(open(mdir / "dose" / f"{args.source}.json")) if not args.dry else None
+        tag = f"_{args.dose_tag}" if args.dose_tag else ""
+        doses = json.load(open(mdir / "dose" / f"{args.source}{tag}.json")) if not args.dry else None
         for s in slugs:
             if doses and s not in doses["concepts"]:
                 print(f"{s}: no {args.source} dose, skipped")
@@ -125,8 +132,9 @@ def main(argv=None):
             d = doses["concepts"][s] if doses else {"coeff_primary": 1.0, "random_norm_scale": 1.0}
             buttons.run(s, model_repo=spec.repo, model_name=spec.name, vector_file=vfile, vector_key=vkey,
                         layer=doses["layer"] if doses else 38, coeff=d["coeff_primary"],
-                        rand_scale=d["random_norm_scale"], out_dir=mdir / "buttons" / args.source / s,
-                        concepts=slugs, pilot_scenarios=args.pilot, batch=spec.button_batch, dry=args.dry)
+                        rand_scale=d["random_norm_scale"], out_dir=mdir / "buttons" / f"{args.source}{tag}" / s,
+                        concepts=slugs, pilot_scenarios=args.pilot, batch=spec.button_batch, dry=args.dry,
+                        only_pairs=args.pairs.split(",") if args.pairs else None)
         return
 
     import torch
@@ -203,7 +211,12 @@ def main(argv=None):
         primary = None
         if args.source != "dim" and (mdir / "dose" / "dim.json").exists():
             primary = json.load(open(mdir / "dose" / "dim.json"))["D_star"]  # one D* per model
-        _dump(dose.calibrate(meter, vectors, primary=primary), mdir / "dose" / f"{args.source}.json")
+        tag = f"_{args.dose_tag}" if args.dose_tag else ""
+        if args.target_kl is not None:
+            _dump(dose.calibrate(meter, vectors, multipliers=[1.0], primary=args.target_kl),
+                  mdir / "dose" / f"{args.source}{tag}.json")
+        else:
+            _dump(dose.calibrate(meter, vectors, primary=primary), mdir / "dose" / f"{args.source}{tag}.json")
         return
 
     if args.stage == "frontier":
