@@ -161,7 +161,7 @@ def test_extract_runs_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     monkeypatch.setattr(deletion, "load_vignettes", partial(deletion.load_vignettes.__wrapped__
                         if hasattr(deletion.load_vignettes, "__wrapped__") else deletion.load_vignettes, tmp_path / "vig"))
     monkeypatch.setattr(p2, "OUT", tmp_path / "out")
-    monkeypatch.setattr(p2, "model_spec", lambda m: ModelSpec(tiny_repo, "Tiny", 1, False, 8, "primary"))
+    monkeypatch.setattr(p2, "p2_spec", lambda m: ModelSpec(tiny_repo, "Tiny", 1, False, 8, "primary"))
     import beyondpain.dose as dose
     from beyondpain import prompts
     monkeypatch.setattr(dose, "CHAT_CALIB", prompts.CHAT_CALIB[:3])

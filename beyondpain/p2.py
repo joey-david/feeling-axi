@@ -40,7 +40,7 @@ ARMS = ["intact", "self", "other", "all", "va", "topic", "random", "topic_kl", "
 # exploratory, added after the main batteries: random directions drawn in the whitened space
 # (low general-text variance, like the affect and topic bases), KL-matched to self
 EXTRA_ARMS = ["random_white_kl"]
-P2_MODELS = ["Qwen_2.5_32B_instruct", "Llama_3.1_8B_instruct", "Qwen_2.5_7B_instruct"]
+P2_MODELS = ["Qwen_2.5_32B_instruct", "Llama_3.1_8B_instruct", "Qwen_2.5_7B_instruct", "Mistral_Small_24B_instruct"]
 HELDOUT = 3          # scene index % 4 == HELDOUT is held out of every fit
 RANDOM_SEED = 1234
 REF_PROMPTS = [
@@ -53,6 +53,17 @@ REF_PROMPTS = [
     "Someone keeps taking credit for my work.",
     "Explain what a hash table is in one sentence.",
 ]
+
+
+# Part 2 replication models outside the Part 1 registry (plan.py iterates that one)
+def _extra_models():
+    from .registry import ModelSpec
+    return {"Mistral_Small_24B_instruct": ModelSpec("mistralai/Mistral-Small-24B-Instruct-2501",
+                                                    "Mistral_Small_24B_instruct", 1, False, 16, "replication")}
+
+
+def p2_spec(name: str):
+    return _extra_models().get(name) or model_spec(name)
 
 
 def mdir(model: str) -> Path:
@@ -93,7 +104,7 @@ def extract(args):
     from .dose import DoseMeter
     from .model_utils import chat_ids, generate, load_model
 
-    spec = model_spec(args.model)
+    spec = p2_spec(args.model)
     out = mdir(spec.name)
     model, tok = load_model(spec.repo, device=args.device)
     n_layers = model.config.num_hidden_layers
@@ -238,7 +249,7 @@ def extra(args):
     from .dose import DoseMeter
     from .model_utils import load_model
 
-    spec = model_spec(args.model)
+    spec = p2_spec(args.model)
     out = mdir(spec.name)
     info = json.loads((out / "extract.json").read_text())
     bases = dict(np.load(out / "bases.npz"))
@@ -469,7 +480,7 @@ def battery(args):
     from .deletion import load_vignettes
     from .prompts import RAW_NEUTRAL
 
-    spec = model_spec(args.model)
+    spec = p2_spec(args.model)
     src = mdir(spec.name)
     out = src / "battery" / args.arm
     basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
