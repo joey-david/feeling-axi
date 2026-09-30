@@ -338,12 +338,12 @@ def report_tracking(model: str, arm: str) -> dict:
 
 
 def analyze(args):
-    models = [m for m in P2_MODELS if (mdir(m) / "extract.json").exists()]
+    models = [m for m in P2_MODELS + ["Qwen_2.5_32B_instruct_abliterated"] if (mdir(m) / "extract.json").exists()]
     claims = {}
     for model in models:
         info = json.loads((mdir(model) / "extract.json").read_text())
         summ = {a: json.loads((mdir(model) / "battery" / a / "summary.json").read_text())
-                for a in ARMS if (mdir(model) / "battery" / a / "summary.json").exists()}
+                for a in ARMS + EXTRA_ARMS if (mdir(model) / "battery" / a / "summary.json").exists()}
         scores = {a: item_scores(model, a) for a in summ}
         track = {a: report_tracking(model, a) for a in summ}
         chance = info["chance_emotion"]
@@ -394,6 +394,11 @@ def analyze(args):
                 effects[arm + "_vs_intact"] = {b: paired_diff(scores[arm][b], [scores["intact"][b]])
                                                for b in scores[arm] if b in scores["intact"]}
         c["effects"] = effects
+        # exploratory: each affect arm against each control on its own
+        c["effects_by_control"] = {
+            arm: {ctl: {b: paired_diff(scores[arm][b], [scores[ctl][b]]) for b in scores[arm] if b in scores[ctl]}
+                  for ctl in CONTROLS + EXTRA_ARMS + ["intact"] if ctl in scores}
+            for arm in ("self", "other", "all", "topic_kl", "random_white_kl") if arm in scores}
 
         def verdict(arm):
             e = effects.get(arm, {})
