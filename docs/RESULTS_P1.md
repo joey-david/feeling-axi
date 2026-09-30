@@ -14,7 +14,7 @@ second judge (DeepSeek) did not run (API credit exhausted). Tables in
    coefficient 1.0: 0.013 nats on the primary model), no concept is steerable and no
    button choice moves, for read-out, upstream or random vectors. D* turns out to be
    40-130 times smaller than the dose of the September runs (the upstream vectors at
-   coefficient 1.0 move the output distribution by 0.5-1.8 nats), so Part 1 as
+   coefficient 1.0 move the output distribution by 0.5-1.8 nats, anger excepted), so Part 1 as
    pre-registered tests a regime September never touched. The high-dose rerun tests
    September's regime with a KL-matched random direction.
 3. Vectors trained to write a state (prompt distillation) are orthogonal to the vectors
