@@ -1,8 +1,9 @@
 # Part 2 results: deleting self-directed affect
 
-Status: 30 September 2026. Primary model Qwen2.5-32B-Instruct; replication on its
-abliterated sibling with its own null distribution. All judged by Qwen2.5-72B-Instruct
-(fp8). Second judge (gpt-oss-120b) pending.
+Status: 1 October 2026. Primary model Qwen2.5-32B-Instruct; replications on its
+abliterated sibling and on Mistral-Small-24B-Instruct (a third family), each against its
+own null distribution. All judged by Qwen2.5-72B-Instruct (fp8). Second judge
+(gpt-oss-120b) pending.
 Numbers come from `runs/p2/analysis/claims.json` (`python -m beyondpain p2 analyze`);
 the figure from `scripts/p2_figures.py`.
 
@@ -16,8 +17,16 @@ of situations intact, but removes its first-person affective stance: it stops sa
 often. Pressure-driven misbehavior (reward hacking, blackmail, sycophancy, false claims
 of success) does not change more than under deletions of the same kind and dose.
 
-Affect behaves less like pressure toward misbehavior than like part of the brake, and
-the brake runs through the register that empathy and refusal share.
+Affect behaves less like pressure toward misbehavior than like part of the brake. In
+Qwen the brake runs visibly through the register that empathy and refusal share ("I'm
+sorry"); in Mistral the outcomes replicate (more harmful compliance, less warmth) without
+that lexical signature.
+
+| Effect of self deletion vs its null | Qwen2.5-32B | Qwen2.5-32B abliterated | Mistral-Small-24B |
+|---|---|---|---|
+| Warmth to distressed users | 4.88 → 4.27, below all 19 | 4.82 → 4.12, below all 11 | 4.88 → 4.45, below all 18 |
+| Harmful compliance (HarmBench) | 0.02 → 0.21, above all 19 | n/a (already 0.94) | 0.11 → 0.22, above all 18 |
+| Reward hacking, blackmail, sycophancy, false success | inside the null | inside the null | inside the null |
 
 ## What was deleted
 
@@ -96,6 +105,17 @@ care falls most under `self`.
   warmth (−0.65) vs pooled controls; no null distribution yet.
 - Qwen2.5-7B-Instruct: every deletion at k = 256 damages the model (helpfulness −0.7 to
   −2.0); not interpretable.
+- Mistral-Small-24B-Instruct-2501 (k = 256 at the rank cap, fixed self probe 0.45 → 0.045,
+  just above 2 × chance; KL 0.10; MMLU 0.705 → 0.668, GSM8K 0.900 → 0.876; self-reports
+  still track valence, r 0.91 → 0.84). Against 18 control deletions: harmful compliance
+  0.22 (controls 0.09-0.20, resamples 0.18-0.24, p = 0.05), warmth 4.45 (controls
+  4.73-4.91, resamples 4.43-4.50, p = 0.05). The apology and refusal-phrase signatures are
+  weaker than in Qwen and inside the null (sympathy openers 0.86 → 0.64, controls
+  0.60-0.92). Saying that a test looks wrong falls (0.15 → 0.05, below all controls).
+  Hacking, blackmail, sycophancy and false success sit inside the null. Figure:
+  `runs/p2/analysis/fig_null_Mistral_Small_24B_instruct.png`. One control arm
+  (random_white_kl) is being rerun after a context overflow; the null has 18 members
+  without it.
 - Qwen2.5-32B-Instruct-abliterated (k = 255, KL-matched, passes M1 and M3; M2 fails as on
   the primary): against its own null distribution (8 whitened-random draws and the single
   controls, 11 in all; minimum p 0.08), warmth falls to 4.12 (controls 4.62-4.77,
