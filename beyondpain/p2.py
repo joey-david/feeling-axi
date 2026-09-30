@@ -227,8 +227,13 @@ def extract(args):
 
 
 def extra(args):
-    """Adds random_white_kl to bases.npz: v = W u for Gaussian u, orthonormalized, at the
-    smallest rank whose KL reaches self's."""
+    """Exploratory arms added after the main batteries, all KL-matched to self:
+    - random_white_kl: v = W u for Gaussian u (low general-text variance, like the affect and
+      topic bases);
+    - with --draws N: a null distribution of N whitened-random draws (rw{i}) and N topic-subset
+      draws (tp{i}, half of the topics each), and N//2 bootstrap resamples of the emotions for
+      the self basis at rank k (sb{i}), so self can be compared with deletions of its kind
+      rather than with a single control."""
     from . import deletion
     from .dose import DoseMeter
     from .model_utils import load_model
@@ -242,29 +247,39 @@ def extra(args):
     texts = [tok.apply_chat_template([{"role": "user", "content": t["text"]}], tokenize=False,
                                      add_generation_prompt=True) if t["chat"] else t["text"] for t in cov_texts]
     W = deletion.pooled_whitener(deletion.activation_cov(model, tok, texts, info["layers"], batch_size=8))
-    d = W.shape[0]
-    U = np.random.default_rng(RANDOM_SEED + 1).standard_normal((min(d, 2048), d))
-    make = lambda r: deletion.orthonormal(U[:r] @ W)
+    d, k, target = W.shape[0], info["k"], info["kl"]["self"]
     meter = DoseMeter(model, tok, layer=0)
-    k_w, kl_w = deletion.kl_matched_rank(model, tok, meter.rows, make, info["kl"]["self"], info["k"], U.shape[0], meter.base)
-    bases["random_white_kl"] = make(k_w)
+    match = lambda make, k0, kmax: deletion.kl_matched_rank(model, tok, meter.rows, make, target, k0, kmax, meter.base)
+    D = np.load(out / "directions.npz")
+    layers = info["layers"]
+    dirs = {L: {p: D[f"{p}_L{L}"] for p in ("self", "other", "topic")} for L in layers}
+    n_emo, n_top = dirs[layers[0]]["self"].shape[0], dirs[layers[0]]["topic"].shape[0]
+
+    new = {}
+    U = np.random.default_rng(RANDOM_SEED + 1).standard_normal((min(d, 2048), d))
+    if "random_white_kl" not in bases:
+        new["random_white_kl"] = match(lambda r: deletion.orthonormal(U[:r] @ W), k, U.shape[0])
+        new["random_white_kl"] = (deletion.orthonormal(U[:new["random_white_kl"][0]] @ W),) + new["random_white_kl"]
+    for i in range(args.draws):
+        Ui = np.random.default_rng(RANDOM_SEED + 100 + i).standard_normal((min(d, 2048), d))
+        r, kl = match(lambda r: deletion.orthonormal(Ui[:r] @ W), k, Ui.shape[0])
+        new[f"rw{i}"] = (deletion.orthonormal(Ui[:r] @ W), r, kl)
+        sub = np.random.default_rng(RANDOM_SEED + 200 + i).choice(n_top, n_top // 2, replace=False)
+        T = np.concatenate([deletion._unit_rows(dirs[L]["topic"][sub]) for L in layers])
+        r, kl = match(lambda r: deletion.gen_principal(T, W, min(r, T.shape[0]))[0], k, T.shape[0])
+        new[f"tp{i}"] = (deletion.gen_principal(T, W, r)[0], r, kl)
+    for i in range(args.draws // 2):
+        idx = np.random.default_rng(RANDOM_SEED + 300 + i).choice(n_emo, n_emo, replace=True)
+        di = {L: {p: dirs[L][p][idx] if p != "topic" else dirs[L]["topic"] for p in dirs[L]} for L in layers}
+        B = deletion.self_components(di, k, W)
+        new[f"sb{i}"] = (B, k, deletion.deletion_kl(model, tok, meter.rows, B, meter.base))
+    for name, (B, r, kl) in new.items():
+        bases[name] = B
+        info["kl"][name] = kl
+        info.setdefault("extra_ranks", {})[name] = int(r)
+        print(f"{name}: rank {r}, KL {kl:.4f}", flush=True)
     np.savez(out / "bases.npz", **bases)
-    info["kl"]["random_white_kl"], info["rank_random_white_kl"] = kl_w, k_w
-    # fixed-probe read-out for the new arm, as in M1
-    emotions, _, _ = deletion.load_vignettes()
-    prompts, labels, idx = [], [], []
-    for e, rows in emotions.items():
-        for i, (s_, _, _) in enumerate(rows):
-            prompts.append(s_); labels.append(e); idx.append(i)
-    labels, ho = np.array(labels), heldout_mask(idx)
-    L = info["probe_layer"]
-    X0 = deletion.final_acts(model, tok, prompts, [L], args.batch)[L].astype(np.float32)
-    _, clf = _probe_scores(X0[~ho], labels[~ho], X0[ho], labels[ho])
-    with deletion.ProjectOut(model, bases["random_white_kl"]):
-        Xd = deletion.final_acts(model, tok, prompts, [L], args.batch)[L].astype(np.float32)
-    info["m1"]["random_white_kl/self"] = {"emotion_acc_fixed": _probe_scores(None, None, Xd[ho], labels[ho], clf)[0]}
     _dump(info, out / "extract.json")
-    print(f"random_white_kl: rank {k_w}, KL {kl_w:.4f}, fixed self probe {info['m1']['random_white_kl/self']}", flush=True)
 
 
 # =========================================================================== battery
@@ -663,6 +678,7 @@ def main(argv=None):
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
+    ap.add_argument("--draws", type=int, default=0, help="extra: null-distribution draws per control family")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)

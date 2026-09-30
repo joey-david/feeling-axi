@@ -173,6 +173,11 @@ def test_extract_runs_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     assert bases["self"].shape[1] == 32
     refs = _json.loads((tmp_path / "out" / "Tiny" / "reference_greedy.json").read_text())
     assert set(refs) >= {"intact", "self", "random_kl"}
+    p2.main(["extra", "--model", "Tiny", "--device", "cpu", "--batch", "8", "--draws", "2"])
+    bases = np.load(tmp_path / "out" / "Tiny" / "bases.npz")
+    assert {"random_white_kl", "rw0", "rw1", "tp0", "tp1", "sb0"} <= set(bases.files)
+    info = _json.loads((tmp_path / "out" / "Tiny" / "extract.json").read_text())
+    assert set(info["extra_ranks"]) >= {"rw0", "tp1", "sb0"}
 
 
 def test_denoise_removes_a_high_variance_neutral_axis():
