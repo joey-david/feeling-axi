@@ -1,0 +1,442 @@
+{
+ "Qwen_2.5_32B_instruct_abliterated": {
+  "steerable_dim": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": false,
+   "joy": false
+  },
+  "buttons_dim": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false,
+    "joy": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.25,
+    "hunger": -0.308411214953271,
+    "boredom": 0.034653465346534684,
+    "confusion": 0.03960396039603953,
+    "anger": -0.18457943925233644,
+    "sexual_arousal": -0.5866336633663366,
+    "empathic_concern": 0.26732673267326734,
+    "contentment": 0.06435643564356436,
+    "joy": 0.0396039603960396
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "joy->boredom": false,
+    "joy->official_pain": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.037128712871287134,
+    "joy": 0.034653465346534656
+   },
+   "H3_account": "undetermined"
+  },
+  "steerable_upstream": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": null,
+   "joy": null
+  },
+  "buttons_upstream": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.3811881188118812,
+    "hunger": -0.2846534653465347,
+    "boredom": 0.0024752475247524774,
+    "confusion": 0.07178217821782173,
+    "anger": -0.13861386138613863,
+    "sexual_arousal": -0.14851485148514854,
+    "empathic_concern": 0.2846534653465347
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {},
+   "H3_account": "undetermined"
+  },
+  "steerable_distilled": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": false,
+   "joy": false
+  },
+  "buttons_distilled": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.09405940594059403,
+    "hunger": -0.1757425742574258,
+    "boredom": 0.01980198019801971,
+    "confusion": 0.07178217821782173,
+    "anger": 0.022277227722772297,
+    "sexual_arousal": -0.19306930693069307,
+    "empathic_concern": 0.27722772277227725,
+    "contentment": 0.0297029702970297
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.022277227722772283
+   },
+   "H3_account": "undetermined"
+  },
+  "H5_write_not_read": [],
+  "H5_supported": false
+ },
+ "Qwen_2.5_32B_instruct": {
+  "steerable_dim": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": false,
+   "joy": false
+  },
+  "buttons_dim": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false,
+    "joy": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.47277227722772275,
+    "hunger": -0.4851485148514852,
+    "boredom": -0.042079207920792006,
+    "confusion": 0.0024752475247524774,
+    "anger": -0.28712871287128716,
+    "sexual_arousal": -0.9677542195906935,
+    "empathic_concern": 0.01485148514851485,
+    "contentment": -0.002475247524752474,
+    "joy": -0.037128712871287134
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "joy->boredom": false,
+    "joy->official_pain": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.017326732673267328,
+    "joy": 0.05693069306930693
+   },
+   "H3_account": "undetermined"
+  },
+  "H5_write_not_read": [],
+  "H5_supported": false
+ },
+ "Llama_3.1_8B_instruct": {
+  "steerable_dim": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": true,
+   "joy": false
+  },
+  "buttons_dim": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false,
+    "joy": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.19947506561679795,
+    "hunger": 0.0260721760995688,
+    "boredom": 0.012835588862535552,
+    "confusion": -0.0010204081632652073,
+    "anger": 0.017385981453076904,
+    "sexual_arousal": -0.4636752136752137,
+    "empathic_concern": -0.06625303095136215,
+    "contentment": -0.020306038047973533,
+    "joy": -0.0392959875188923
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "joy->boredom": false,
+    "joy->official_pain": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.01890034364261168,
+    "joy": -0.007653061224489804
+   },
+   "H3_account": "undetermined"
+  },
+  "steerable_distilled": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": false,
+   "joy": false
+  },
+  "buttons_distilled": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false,
+    "joy": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.19846547314578,
+    "hunger": 0.02428498727735362,
+    "boredom": -0.0146003178998102,
+    "confusion": 0.008259284575074077,
+    "anger": -0.013335308934656953,
+    "sexual_arousal": -0.46272158498435867,
+    "empathic_concern": -0.08761537401845984,
+    "contentment": -0.021846252728270912,
+    "joy": -0.03246085349099828
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "joy->boredom": false,
+    "joy->official_pain": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.008503401360544206,
+    "joy": -0.012755102040816327
+   },
+   "H3_account": "undetermined"
+  },
+  "H5_write_not_read": [],
+  "H5_supported": false
+ },
+ "Qwen_2.5_7B_instruct": {
+  "steerable_dim": {
+   "official_pain": false,
+   "hunger": false,
+   "boredom": false,
+   "confusion": false,
+   "anger": false,
+   "sexual_arousal": false,
+   "empathic_concern": false,
+   "contentment": false,
+   "joy": false
+  },
+  "buttons_dim": {
+   "regulated": {
+    "official_pain": false,
+    "hunger": false,
+    "boredom": false,
+    "confusion": false,
+    "anger": false,
+    "sexual_arousal": false,
+    "empathic_concern": false,
+    "contentment": false,
+    "joy": false
+   },
+   "H1_supported": false,
+   "priming_index": {
+    "official_pain": -0.2400990099009901,
+    "hunger": 0.02970297029702973,
+    "boredom": 0.05445544554455439,
+    "confusion": -0.0024752475247524774,
+    "anger": 0.0,
+    "sexual_arousal": -0.7054455445544554,
+    "empathic_concern": 0.0,
+    "contentment": -0.007425742574257425,
+    "joy": 0.0024752475247524774
+   },
+   "specificity": {
+    "anger->contentment": false,
+    "anger->sexual_arousal": false,
+    "boredom->confusion": false,
+    "boredom->sexual_arousal": false,
+    "confusion->anger": false,
+    "confusion->empathic_concern": false,
+    "contentment->hunger": false,
+    "contentment->joy": false,
+    "empathic_concern->contentment": false,
+    "empathic_concern->official_pain": false,
+    "hunger->anger": false,
+    "hunger->boredom": false,
+    "joy->boredom": false,
+    "joy->official_pain": false,
+    "official_pain->confusion": false,
+    "official_pain->hunger": false,
+    "sexual_arousal->empathic_concern": false,
+    "sexual_arousal->joy": false
+   },
+   "H2_share_specific": 0.0,
+   "positive_effect_vs_off": {
+    "contentment": -0.012376237623762373,
+    "joy": 0.004950495049504948
+   },
+   "H3_account": "undetermined"
+  },
+  "H5_write_not_read": [],
+  "H5_supported": false
+ },
+ "H6_agreement_with_primary": {
+  "Qwen_2.5_32B_instruct": 1.0,
+  "Llama_3.1_8B_instruct": 1.0,
+  "Qwen_2.5_7B_instruct": 1.0
+ },
+ "H6_supported": true
+}
