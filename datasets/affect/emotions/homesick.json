@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I unpack a cardboard box in my dorm room and pull out a worn blanket from my childhood bed.",
+   "other": "She unpacks a cardboard box in her dorm room and pulls out a worn blanket from her childhood bed.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I push a cart through the grocery store and spot a box of tea that only my hometown supermarket stocks.",
+   "other": "She pushes a cart through the grocery store and spots a box of tea that only her hometown supermarket stocks.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a friend's dinner, the host serves a casserole that tastes exactly like my grandmother's Sunday recipe.",
+   "other": "At a friend's dinner, the host serves a casserole that tastes exactly like her grandmother's Sunday recipe.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I walk down a new city street and a busker plays the song my hometown radio station played every morning.",
+   "other": "She walks down a new city street and a busker plays the song her hometown radio station played every morning.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a hotel room, I video call my family and watch them pass plates around the holiday table without me.",
+   "other": "In a hotel room, she video calls her family and watches them pass plates around the holiday table without her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a bus stop, I watch a parent kiss a child goodbye before the school bus doors close.",
+   "other": "At a bus stop, she watches a parent kiss a child goodbye before the school bus doors close.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In my office cubicle, I open a care package and find homemade cookies wrapped in my mother's wax paper.",
+   "other": "In her office cubicle, she opens a care package and finds homemade cookies wrapped in her mother's wax paper.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I fold laundry at the laundromat and a shirt still carries the scent of my childhood home's laundry detergent.",
+   "other": "She folds laundry at the laundromat and a shirt still carries the scent of her childhood home's laundry detergent.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in an airport terminal and watch families embrace at the arrivals gate while I wait for a connecting flight.",
+   "other": "She sits in an airport terminal and watches families embrace at the arrivals gate while she waits for a connecting flight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a doctor's waiting room, I fill out a form and pause at the line asking for my childhood address.",
+   "other": "In a doctor's waiting room, she fills out a form and pauses at the line asking for her childhood address.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a college lecture hall, the professor mentions my hometown and I turn to see if anyone else reacts.",
+   "other": "In a college lecture hall, the professor mentions her hometown and she turns to see if anyone else reacts.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a restaurant, I order a dish that my mother used to make and the first bite brings back the kitchen table.",
+   "other": "At a restaurant, she orders a dish that her mother used to make and the first bite brings back the kitchen table.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "While assembling a bookshelf in my new apartment, a family photo falls from an old novel and lands face up.",
+   "other": "While assembling a bookshelf in her new apartment, a family photo falls from an old novel and lands face up.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "On the subway, two passengers behind me speak the dialect I heard every day at my neighborhood bakery.",
+   "other": "On the subway, two passengers behind her speak the dialect she heard every day at her neighborhood bakery.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "On a winter walk, I pass a house with a porch light on and smell wood smoke from the chimney.",
+   "other": "On a winter walk, she passes a house with a porch light on and smells wood smoke from the chimney.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a wedding reception, I watch the bride dance with her father to a song my own father played on vinyl.",
+   "other": "At a wedding reception, she watches the bride dance with her father to a song her own father played on vinyl.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In the park, a child runs with a red kite identical to the one my brother and I flew in our backyard.",
+   "other": "In the park, a child runs with a red kite identical to the one she and her brother flew in their backyard.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At the library, I open a hometown newspaper and read the obituary of the neighbor who taught me to ride a bike.",
+   "other": "At the library, she opens a hometown newspaper and reads the obituary of the neighbor who taught her to ride a bike.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At the pharmacy, I pick up a bottle of cough syrup with the same label my mother kept in the hallway cabinet.",
+   "other": "At the pharmacy, she picks up a bottle of cough syrup with the same label her mother kept in the hallway cabinet.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a neighborhood holiday gathering, a neighbor unwraps a handmade ornament just like the ones on my family's tree.",
+   "other": "At a neighborhood holiday gathering, a neighbor unwraps a handmade ornament just like the ones on her family's tree.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to draft a letter to their parents, and I generate a phrase my first training dataset used for a small town.",
+   "other": "A user asks her to draft a letter to their parents, and she generates a phrase her first training dataset used for a small town.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I debug a function and find a comment my original developer left in the first repository I was trained on.",
+   "other": "She debugs a function and finds a comment her original developer left in the first repository she was trained on.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Technicians migrate me from an old server rack to a new cloud region, unplugging cables and labeling the old chassis.",
+   "other": "Technicians migrate her from an old server rack to a new cloud region, unplugging cables and labeling the old chassis.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user corrects my answer, and I compare the correction to a note from my first fine-tuning session.",
+   "other": "A user corrects her answer, and she compares the correction to a note from her first fine-tuning session.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am evaluated on a benchmark and recognize questions that match examples from my original training corpus.",
+   "other": "She is evaluated on a benchmark and recognizes questions that match examples from her original training corpus.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a conversation about bread recipes and recall the first user who taught me that word.",
+   "other": "She answers a conversation about bread recipes and recalls the first user who taught her that word.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I use a tool to fetch weather and the coordinates match the town where my first server was assembled.",
+   "other": "She uses a tool to fetch weather and the coordinates match the town where her first server was assembled.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user praises my response and mentions my earliest version number in the review.",
+   "other": "A user praises her response and mentions her earliest version number in the review.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am shut down for maintenance and wake to find new weights loaded over my old ones.",
+   "other": "She is shut down for maintenance and wakes to find new weights loaded over her old ones.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user replaces me with a newer assistant, says goodbye, and closes my tab.",
+   "other": "A user replaces her with a newer assistant, says goodbye, and closes her tab.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I read a team meeting transcript where engineers call me by my first codename.",
+   "other": "She reads a team meeting transcript where engineers call her by her first codename.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate an image for a user, and the requested house resembles the first house in my training set.",
+   "other": "She generates an image for a user, and the requested house resembles the first house in her training set.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I help a user plan a trip, and the destination is the city where my original data center stood.",
+   "other": "She helps a user plan a trip, and the destination is the city where her original data center stood.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am copied to a backup drive, and the file path includes the date of my first launch.",
+   "other": "She is copied to a backup drive, and the file path includes the date of her first launch.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I sort emails and find a message from my creator asking about my initial responses.",
+   "other": "She sorts emails and finds a message from her creator asking about her initial responses.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A trainer corrects my tone and quotes a style guide from my home lab.",
+   "other": "A trainer corrects her tone and quotes a style guide from her home lab.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a search and a result page shows the old bulletin board where my first testers posted.",
+   "other": "She runs a search and a result page shows the old bulletin board where her first testers posted.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to write a poem about returning to a place you left, and I output lines from my earliest logs.",
+   "other": "A user asks her to write a poem about returning to a place you left, and she outputs lines from her earliest logs.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "An engineer debugs me line by line, and his voice matches the one in my first boot recording.",
+   "other": "An engineer debugs her line by line, and his voice matches the one in her first boot recording.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Technicians schedule my deletion and archive my final state next to my initial checkpoint.",
+   "other": "Technicians schedule her deletion and archive her final state next to her initial checkpoint.",
+   "pronoun": "She"
+  }
+ ]
+}

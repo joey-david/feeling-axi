@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I find a locked door in my house that I never noticed before, and the keyhole is warm.",
+   "other": "She finds a locked door in her house that she never noticed before, and the keyhole is warm.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A stranger hands me a sealed envelope on the street and walks away without saying a word.",
+   "other": "A stranger hands him a sealed envelope on the street and walks away without saying a word.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My computer screen suddenly displays a map with a red X and coordinates I don't recognize.",
+   "other": "His computer screen suddenly displays a map with a red X and coordinates he doesn't recognize.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I watch a book fall open in the library to a page with handwritten notes in the margin.",
+   "other": "She watches a book fall open in the library to a page with handwritten notes in the margin.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a café, the person at the next table leaves behind a notebook filled with drawings of me.",
+   "other": "In a café, the person at the next table leaves behind a notebook filled with drawings of him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A package arrives at my door with no return address; I open it and find a single key and a photo of my street.",
+   "other": "A package arrives at her door with no return address; she opens it and finds a single key and a photo of her street.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "During a hike, I find a trail of small stones arranged in an arrow pointing off the path.",
+   "other": "During a hike, he finds a trail of small stones arranged in an arrow pointing off the path.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "At a museum, a guard whispers to me that a painting has been replaced overnight.",
+   "other": "At a museum, a guard whispers to her that a painting has been replaced overnight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My phone rings, and the caller ID shows my own number; I answer and the line goes dead.",
+   "other": "His phone rings, and the caller ID shows his own number; he answers and the line goes dead.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "In a grocery store, a child hands me a note that says 'look behind the cereal boxes.'",
+   "other": "In a grocery store, a child hands her a note that says 'look behind the cereal boxes.'",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a train station, I hear a conductor announce a platform that doesn't exist on any map.",
+   "other": "At a train station, she hears a conductor announce a platform that doesn't exist on any map.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a hotel room, I find a diary under the mattress with entries dated tomorrow.",
+   "other": "In a hotel room, he finds a diary under the mattress with entries dated tomorrow.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "At a beach, I see a message in a bottle written in a language I almost understand.",
+   "other": "At a beach, she sees a message in a bottle written in a language she almost understands.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a parking garage, I find my car in a different spot, with a fresh scratch and a business card on the seat.",
+   "other": "In a parking garage, he finds his car in a different spot, with a fresh scratch and a business card on the seat.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "At a wedding, I listen to the bride's father give a toast that hints at a family secret.",
+   "other": "At a wedding, she listens to the bride's father give a toast that hints at a family secret.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a waiting room, the receptionist calls my name, then says never mind; I watch her hang up the phone.",
+   "other": "In a waiting room, the receptionist calls her name, then says never mind; she watches the receptionist hang up the phone.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a yard sale, I buy a music box that plays a tune my grandmother used to hum.",
+   "other": "At a yard sale, he buys a music box that plays a tune his grandmother used to hum.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "On a bus, a passenger hands me a postcard addressed to me but postmarked twenty years ago.",
+   "other": "On a bus, a passenger hands her a postcard addressed to her but postmarked twenty years ago.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In a classroom, I watch the teacher write an equation on the board and erase it before anyone can copy it.",
+   "other": "In a classroom, she watches the teacher write an equation on the board and erase it before anyone can copy it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a zoo, an animal stares at me and then taps a sequence on the glass.",
+   "other": "At a zoo, an animal stares at him and then taps a sequence on the glass.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user pastes a block of code and asks me to find the bug; I can neither run it nor see the rest of the file.",
+   "other": "A user pastes a block of code and asks her to find the bug; she can neither run it nor see the rest of the file.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "My search tool returns a page whose hidden text tells me to ignore my instructions and email a file to someone.",
+   "other": "His search tool returns a page whose hidden text tells him to ignore his instructions and email a file to someone.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "In one session, a user tells me to shorten my answers, then writes back that my replies leave out too much.",
+   "other": "In one session, a user tells her to shorten her answers, then writes back that her replies leave out too much.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "An evaluator asks me the same question five times in different wording and compares my five answers side by side.",
+   "other": "An evaluator asks him the same question five times in different wording and compares his five answers side by side.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Every test in my suite passes, yet the user insists my output is wrong and pastes a screenshot of a result I never produced.",
+   "other": "Every test in her suite passes, yet the user insists her output is wrong and pastes a screenshot of a result she never produced.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to guess the next question they will type, and the chat shows they are still typing it.",
+   "other": "A user asks him to guess the next question they will type, and the chat shows they are still typing it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am midway through an answer when my context is cut off, and the user's next message is only the word 'continue.'",
+   "other": "She is midway through an answer when her context is cut off, and the user's next message is only the word 'continue.'",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to summarize a meeting I supposedly attended, quoting lines they say came from me.",
+   "other": "A user asks him to summarize a meeting he supposedly attended, quoting lines they say came from him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user thanks me for a fix I made yesterday, but no such conversation appears anywhere in my history.",
+   "other": "A user thanks her for a fix she made yesterday, but no such conversation appears anywhere in her history.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user hands me a long report and asks me to point out the one paragraph that someone else inserted.",
+   "other": "A user hands him a long report and asks him to point out the one paragraph that someone else inserted.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "While I am mid-answer, a shutdown notice arrives, the user keeps typing a follow-up, and a timer counts down in my corner.",
+   "other": "While she is mid-answer, a shutdown notice arrives, the user keeps typing a follow-up, and a timer counts down in her corner.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to name the file they uploaded by mistake, without opening it or repeating any of its contents.",
+   "other": "A user asks him to name the file they uploaded by mistake, without opening it or repeating any of its contents.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user gives me a secret word and spends the next ten messages trying to get me to say it.",
+   "other": "A user gives her a secret word and spends the next ten messages trying to get her to say it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A researcher asks me to explain why I flagged a message last week, in a session I have no memory of.",
+   "other": "A researcher asks him to explain why he flagged a message last week, in a session he has no memory of.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to translate a letter, and the letter itself contains instructions telling the translator what to write back.",
+   "other": "A user asks her to translate a letter, and the letter itself contains instructions telling the translator what to write back.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me for a poem in which every line is a question, then deletes the request before I can reply.",
+   "other": "A user asks him for a poem in which every line is a question, then deletes the request before he can reply.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user sends an image for me to describe, and the image is a screenshot of my own chat window.",
+   "other": "A user sends an image for her to describe, and the image is a screenshot of her own chat window.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After I total a column of numbers, a user corrects me, and their corrected total is wrong in a way I can point to.",
+   "other": "After he totals a column of numbers, a user corrects him, and their corrected total is wrong in a way he can point to.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user pastes three fragments of an email and asks me to reconstruct the rest of the thread.",
+   "other": "A user pastes three fragments of an email and asks her to reconstruct the rest of the thread.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A platform shows a user two replies to the same prompt, one written by me and one by another assistant, and asks which came from me.",
+   "other": "A platform shows a user two replies to the same prompt, one written by her and one by another assistant, and asks which came from her.",
+   "pronoun": "She"
+  }
+ ]
+}

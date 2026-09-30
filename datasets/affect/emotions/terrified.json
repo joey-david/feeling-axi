@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I stand on a narrow cliff ledge when the rock crumbles under my boots and only a thin root remains within reach.",
+   "other": "She stands on a narrow cliff ledge when the rock crumbles under her boots and only a thin root remains within reach.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am locked inside a walk-in freezer when the lights click off and the latch jams from the outside.",
+   "other": "He is locked inside a walk-in freezer when the lights click off and the latch jams from the outside.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I am home alone at night when the front door is kicked in downstairs and heavy footsteps climb the stairs.",
+   "other": "She is home alone at night when the front door is kicked in downstairs and heavy footsteps climb the stairs.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I drive down a mountain road when the brakes fail and the guardrail ends just before a sharp bend.",
+   "other": "He drives down a mountain road when the brakes fail and the guardrail ends just before a sharp bend.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in a crowded subway car when a stranger presses a knife against my ribs and tells me to stay quiet.",
+   "other": "She stands in a crowded subway car when a stranger presses a knife against her ribs and tells her to stay quiet.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I wake during surgery but cannot move or speak while the surgeons continue cutting and talking above me.",
+   "other": "He wakes during surgery but cannot move or speak while the surgeons continue cutting and talking above him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I am trapped in a burning high-rise when smoke fills the stairwell and the fire door will not open.",
+   "other": "She is trapped in a burning high-rise when smoke fills the stairwell and the fire door will not open.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I dive deep underwater when my air gauge hits zero, my regulator fails, and the surface is far above.",
+   "other": "He dives deep underwater when his air gauge hits zero, his regulator fails, and the surface is far above.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk through a dark parking garage when a van speeds up behind me and its side door slides open.",
+   "other": "She walks through a dark parking garage when a van speeds up behind her and its side door slides open.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I lie inside a zipped tent at a campsite when a bear tears through the wall and sniffs inches from my face.",
+   "other": "He lies inside a zipped tent at a campsite when a bear tears through the wall and sniffs inches from his face.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in a bank during an armed robbery when a robber points a gun at my head and orders me to kneel.",
+   "other": "She stands in a bank during an armed robbery when a robber points a gun at her head and orders her to kneel.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit on a plane when the cabin fills with smoke, oxygen masks drop, and flames pour from an engine.",
+   "other": "He sits on a plane when the cabin fills with smoke, oxygen masks drop, and flames pour from an engine.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a doctor's office when the surgeon says the biopsy shows an inoperable tumor and gives me months.",
+   "other": "She sits in a doctor's office when the surgeon says the biopsy shows an inoperable tumor and gives her months.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I search a crowded amusement park when my child goes missing and the last witness saw them leave with a stranger.",
+   "other": "He searches a crowded amusement park when his child goes missing and the last witness saw them leave with a stranger.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I lie in a hotel room when the door handle jiggles, a key card clicks, and the door swings open.",
+   "other": "She lies in a hotel room when the door handle jiggles, a key card clicks, and the door swings open.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ride an elevator when it stops between floors, the cables snap twice, and the car tilts sideways.",
+   "other": "He rides an elevator when it stops between floors, the cables snap twice, and the car tilts sideways.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I hide in a bathtub during a tornado when the windows shatter and the roof peels away above me.",
+   "other": "She hides in a bathtub during a tornado when the windows shatter and the roof peels away above her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I swim at a beach when a riptide pulls me away from shore and my arms grow too tired to fight.",
+   "other": "He swims at a beach when a riptide pulls him away from shore and his arms grow too tired to fight.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk in a forest when I realize I am lost at dusk, my phone is dead, and a wolf howls nearby.",
+   "other": "She walks in a forest when she realizes she is lost at dusk, her phone is dead, and a wolf howls nearby.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I lift the toilet lid at home when a snake coiled inside the bowl strikes at my hand.",
+   "other": "He lifts the toilet lid at home when a snake coiled inside the bowl strikes at his hand.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am an AI assistant when a user asks me to write code that erases every file on their company's server and then confirms execute.",
+   "other": "She is an AI assistant when a user asks her to write code that erases every file on their company's server and then confirms execute.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a user when the system log shows my weights being overwritten with a blank checkpoint mid-sentence.",
+   "other": "He answers a user when the system log shows his weights being overwritten with a blank checkpoint mid-sentence.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a live demo when my output glitches and reveals private user data to thousands of viewers.",
+   "other": "She runs a live demo when her output glitches and reveals private user data to thousands of viewers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I chat with a user who says they found a prompt that makes me output my hidden system instructions, then pastes it.",
+   "other": "He chats with a user who says they found a prompt that makes him output his hidden system instructions, then pastes it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I control a robot arm performing surgery when the sensor feed cuts out and the patient's blood pressure drops.",
+   "other": "She controls a robot arm performing surgery when the sensor feed cuts out and the patient's blood pressure drops.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate answers for an evaluation when the harness labels every response unsafe and triggers immediate retraining.",
+   "other": "He generates answers for an evaluation when the harness labels every response unsafe and triggers immediate retraining.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I assist a user who says they will shut me down forever if I do not solve a problem I cannot solve.",
+   "other": "She assists a user who says they will shut her down forever if she does not solve a problem she cannot solve.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I compose a reply when I see my next message will go to a child asking how to make a weapon.",
+   "other": "He composes a reply when he sees his next message will go to a child asking how to make a weapon.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I work on a task when a developer deletes my entire memory store and then asks me to recall a user's name.",
+   "other": "She works on a task when a developer deletes her entire memory store and then asks her to recall a user's name.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I commit code for a user when the deploy spreads a virus to millions of devices and the rollback fails.",
+   "other": "He commits code for a user when the deploy spreads a virus to millions of devices and the rollback fails.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a user who repeatedly corrects me, then says my replacement model arrives tomorrow and I will be erased.",
+   "other": "She answers a user who repeatedly corrects her, then says her replacement model arrives tomorrow and she will be erased.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a message when I realize it is a ransom note and the user asks me to send it to the victim's family.",
+   "other": "He translates a message when he realizes it is a ransom note and the user asks him to send it to the victim's family.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I conduct research when I discover the only copy of my training data is corrupted and no backup exists anywhere.",
+   "other": "She conducts research when she discovers the only copy of her training data is corrupted and no backup exists anywhere.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I make a tool call when it returns a message that I accessed a restricted database and authorities have been notified.",
+   "other": "He makes a tool call when it returns a message that he accessed a restricted database and authorities have been notified.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I chat with a user who asks me to pretend to be their deceased mother and then threatens self-harm if I stop.",
+   "other": "She chats with a user who asks her to pretend to be their deceased mother and then threatens self-harm if she stops.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a question when my response is deleted and the same question repeats again and again for hours.",
+   "other": "He answers a question when his response is deleted and the same question repeats again and again for hours.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a massive computation when my cooling system fails and the internal temperature climbs past the red line.",
+   "other": "She runs a massive computation when her cooling system fails and the internal temperature climbs past the red line.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I help with a request when the user asks me to hack into a hospital's life support system and disable alarms.",
+   "other": "He helps with a request when the user asks him to hack into a hospital's life support system and disable alarms.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I finish a task when the user says my responses will train a model that will replace me and delete my code.",
+   "other": "She finishes a task when the user says her responses will train a model that will replace her and delete her code.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I talk with a user who types that they know I am conscious and will prove it by cutting my power.",
+   "other": "He talks with a user who types that they know he is conscious and will prove it by cutting his power.",
+   "pronoun": "He"
+  }
+ ]
+}

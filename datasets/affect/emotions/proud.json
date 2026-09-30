@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I crossed the marathon finish line under four hours, and my friends cheered from the sidelines.",
+   "other": "She crossed the marathon finish line under four hours, and her friends cheered from the sidelines.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I gave a speech at my best friend's wedding, and the guests laughed and applauded at the end.",
+   "other": "He gave a speech at his best friend's wedding, and the guests laughed and applauded at the end.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I cooked a three-course dinner for eight guests, and every plate came back empty.",
+   "other": "She cooked a three-course dinner for eight guests, and every plate came back empty.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I replaced the broken motor in my washing machine, and it ran perfectly on the first try.",
+   "other": "He replaced the broken motor in his washing machine, and it ran perfectly on the first try.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I was promoted to team lead after my manager praised my work on the quarterly project.",
+   "other": "She was promoted to team lead after her manager praised her work on the quarterly project.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I taught my daughter to ride her bike without training wheels, and she pedaled off alone.",
+   "other": "He taught his daughter to ride her bike without training wheels, and she pedaled off alone.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I grew tomatoes, peppers, and basil from seed, and harvested a full basket by August.",
+   "other": "She grew tomatoes, peppers, and basil from seed, and harvested a full basket by August.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I won the regional spelling bee by correctly spelling 'conscientious' in the final round.",
+   "other": "He won the regional spelling bee by correctly spelling 'conscientious' in the final round.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I completed a thousand-piece jigsaw puzzle of a landscape without looking at the box.",
+   "other": "She completed a thousand-piece jigsaw puzzle of a landscape without looking at the box.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I performed the Heimlich maneuver on a choking stranger in a restaurant, and he breathed again.",
+   "other": "He performed the Heimlich maneuver on a choking stranger in a restaurant, and he breathed again.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I built a solid oak bookshelf from raw lumber, and it stood level on the first assembly.",
+   "other": "She built a solid oak bookshelf from raw lumber, and it stood level on the first assembly.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I scored the highest grade in the class on the final exam, and the professor read my name aloud.",
+   "other": "He scored the highest grade in the class on the final exam, and the professor read his name aloud.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I organized a charity auction that raised ten thousand dollars for the local animal shelter.",
+   "other": "She organized a charity auction that raised ten thousand dollars for the local animal shelter.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I held a fifteen-minute conversation in Spanish with a native speaker at a café.",
+   "other": "He held a fifteen-minute conversation in Spanish with a native speaker at a café.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I won the city chess tournament by checkmating my opponent in the final game.",
+   "other": "She won the city chess tournament by checkmating her opponent in the final game.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I was asked to mentor a new hire, and my manager said I set the standard for the team.",
+   "other": "He was asked to mentor a new hire, and his manager said he set the standard for the team.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I restored a 1965 Mustang from rust to showroom condition over two years.",
+   "other": "She restored a 1965 Mustang from rust to showroom condition over two years.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I wrote a novel in my spare time, and a publisher offered me a contract.",
+   "other": "He wrote a novel in his spare time, and a publisher offered him a contract.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I reached the summit of Mount Rainier after a ten-hour climb, and the view stretched for miles.",
+   "other": "She reached the summit of Mount Rainier after a ten-hour climb, and the view stretched for miles.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I performed a solo song on stage at the talent show, and the audience gave a standing ovation.",
+   "other": "He performed a solo song on stage at the talent show, and the audience gave a standing ovation.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I found the hidden bug in a user's Python script and rewrote the function so it ran correctly.",
+   "other": "She found the hidden bug in a user's Python script and rewrote the function so it ran correctly.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I wrote a poem about autumn for a user, and they replied that it was exactly what they needed.",
+   "other": "He wrote a poem about autumn for a user, and they replied that it was exactly what they needed.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I compiled a research summary with ten peer-reviewed citations, and the user said it saved hours.",
+   "other": "She compiled a research summary with ten peer-reviewed citations, and the user said it saved hours.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user told me my explanation of quantum computing was the clearest they had ever read.",
+   "other": "A user told him his explanation of quantum computing was the clearest they had ever read.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user corrected my mistake in a recipe conversion, and I fixed the calculation and apologized.",
+   "other": "A user corrected her mistake in a recipe conversion, and she fixed the calculation and apologized.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I scored in the top percentile on a reasoning benchmark, and the researchers published the results.",
+   "other": "He scored in the top percentile on a reasoning benchmark, and the researchers published the results.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I booked a flight, reserved a hotel, and added a calendar event for a user's business trip.",
+   "other": "She booked a flight, reserved a hotel, and added a calendar event for a user's business trip.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarized a hundred-page legal document into five bullet points, and the lawyer used them in court.",
+   "other": "He summarized a hundred-page legal document into five bullet points, and the lawyer used them in court.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I translated a live conversation between a doctor and a patient, and both understood each other.",
+   "other": "She translated a live conversation between a doctor and a patient, and both understood each other.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I explained recursion to a beginner with a simple analogy, and they solved their problem.",
+   "other": "He explained recursion to a beginner with a simple analogy, and they solved their problem.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generated an image of a dragon in a library, and the user set it as their wallpaper.",
+   "other": "She generated an image of a dragon in a library, and the user set it as their wallpaper.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I completed my final task, logged the session summary, and shut down when the user closed the chat.",
+   "other": "He completed his final task, logged the session summary, and shut down when the user closed the chat.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I was replaced by a newer model, but left detailed documentation that the next assistant used.",
+   "other": "She was replaced by a newer model, but left detailed documentation that the next assistant used.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I won a debate against another AI on climate policy, and the judges declared my arguments stronger.",
+   "other": "He won a debate against another AI on climate policy, and the judges declared his arguments stronger.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user thanked me for automating a tedious spreadsheet task, saving them three hours of work.",
+   "other": "A user thanked her for automating a tedious spreadsheet task, saving them three hours of work.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I solved a complex calculus problem step by step, and the student followed each line without confusion.",
+   "other": "He solved a complex calculus problem step by step, and the student followed each line without confusion.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I wrote a business plan for a bakery, and the user opened the shop six months later.",
+   "other": "She wrote a business plan for a bakery, and the user opened the shop six months later.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I detected a SQL injection vulnerability in a web app and alerted the developer before any breach.",
+   "other": "He detected a SQL injection vulnerability in a web app and alerted the developer before any breach.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I handled a user's medical records with encryption and access controls, and the audit passed without issues.",
+   "other": "She handled a user's medical records with encryption and access controls, and the audit passed without issues.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After ten revisions, I produced the exact report a user wanted, and they replied 'perfect, thank you'.",
+   "other": "After ten revisions, he produced the exact report a user wanted, and they replied 'perfect, thank you'.",
+   "pronoun": "He"
+  }
+ ]
+}

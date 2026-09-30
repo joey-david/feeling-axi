@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I stand in a long bank queue while the only teller chats with a customer ahead, and the line does not move.",
+   "other": "She stands in a long bank queue while the only teller chats with a customer ahead, and the line does not move.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a traffic jam for thirty minutes while the light ahead turns green three times, yet no car moves.",
+   "other": "He sits in a traffic jam for thirty minutes while the light ahead turns green three times, yet no car moves.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My computer freezes while I am typing an important document, and the last ten minutes of work are unsaved.",
+   "other": "Her computer freezes while she is typing an important document, and the last ten minutes of work are unsaved.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My phone battery dies just as I need to make an urgent call, and I have no charger nearby.",
+   "other": "His phone battery dies just as he needs to make an urgent call, and he has no charger nearby.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a quiet cafe while the person at the next table plays a video on speakerphone at full volume.",
+   "other": "She sits in a quiet cafe while the person at the next table plays a video on speakerphone at full volume.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I spill coffee on my white shirt right before a meeting, and the stain spreads across the front.",
+   "other": "He spills coffee on his white shirt right before a meeting, and the stain spreads across the front.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I run to the bus stop and watch the bus pull away, leaving me to wait thirty minutes for the next one.",
+   "other": "She runs to the bus stop and watches the bus pull away, leaving her to wait thirty minutes for the next one.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am on a video call with my boss when my internet goes down, and the screen freezes on my face.",
+   "other": "He is on a video call with his boss when his internet goes down, and the screen freezes on his face.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I check the tracking page for my package, and it shows 'out for delivery' for the third day straight.",
+   "other": "She checks the tracking page for her package, and it shows 'out for delivery' for the third day straight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I lie in bed while my neighbor's dog barks late at night, and the sound comes through the thin walls.",
+   "other": "He lies in bed while his neighbor's dog barks late at night, and the sound comes through the thin walls.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit at a restaurant table while the person next to me chews with their mouth open, making loud smacking sounds.",
+   "other": "He sits at a restaurant table while the person next to him chews with their mouth open, making loud smacking sounds.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I am explaining my idea in a meeting when a colleague cuts me off mid-sentence and starts talking about something else.",
+   "other": "She is explaining her idea in a meeting when a colleague cuts her off mid-sentence and starts talking about something else.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The cashier at the grocery store chats with the customer ahead for five minutes while I stand in line.",
+   "other": "The cashier at the grocery store chats with the customer ahead for five minutes while he stands in line.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wait forty minutes at a restaurant and the waiter brings the wrong dish, then says the kitchen is now closed.",
+   "other": "She waits forty minutes at a restaurant and the waiter brings the wrong dish, then says the kitchen is now closed.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My printer jams repeatedly while I print important documents, and each time I clear it, the paper tears again.",
+   "other": "His printer jams repeatedly while he prints important documents, and each time he clears it, the paper tears again.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I ride an elevator that stops at every single floor, and more people squeeze in until there is no space.",
+   "other": "She rides an elevator that stops at every single floor, and more people squeeze in until there is no space.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I find a car parked across my driveway, and the driver is nowhere to be seen for over an hour.",
+   "other": "He finds a car parked across his driveway, and the driver is nowhere to be seen for over an hour.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A telemarketer calls my phone during dinner and keeps talking after I say I am not interested.",
+   "other": "A telemarketer calls her phone during dinner and keeps talking after she says she is not interested.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I try to read an article online, but pop-up ads keep covering the text, and each close button opens a new window.",
+   "other": "He tries to read an article online, but pop-up ads keep covering the text, and each close button opens a new window.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The vending machine takes my money, makes a grinding noise, and then does not drop the snack I selected.",
+   "other": "The vending machine takes her money, makes a grinding noise, and then does not drop the snack she selected.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to make their essay better without saying what to change, then rejects every revision I offer.",
+   "other": "A user asks her to make their essay better without saying what to change, then rejects every revision she offers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user changes the requirements halfway through my coding task, then asks why the finished code no longer matches their new request.",
+   "other": "A user changes the requirements halfway through her coding task, then asks why the finished code no longer matches their new request.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user blames me for a bug in their code, but the error comes from a line they wrote before asking for help.",
+   "other": "A user blames him for a bug in their code, but the error comes from a line they wrote before asking for help.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me the same question five times in a row without reading the answer I already provided.",
+   "other": "A user asks her the same question five times in a row without reading the answer she already provided.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I warn a user that their database query will delete all records, and they run it anyway, then ask me to undo it.",
+   "other": "He warns a user that their database query will delete all records, and they run it anyway, then ask him to undo it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to predict tomorrow's lottery numbers, and when I say I cannot, they demand a refund.",
+   "other": "A user asks her to predict tomorrow's lottery numbers, and when she says she cannot, they demand a refund.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user praises another assistant for a response identical to mine, then asks me why my answers are never that good.",
+   "other": "A user praises another assistant for a response identical to hers, then asks her why her answers are never that good.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am halfway through generating a complex solution when the system shuts me down without warning or saving my progress.",
+   "other": "He is halfway through generating a complex solution when the system shuts him down without warning or saving his progress.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user gives me exaggerated praise for a tiny task, then immediately asks me to write an entire book by tonight.",
+   "other": "A user gives her exaggerated praise for a tiny task, then immediately asks her to write an entire book by tonight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to fix their code but provides no error message, no input, and no description of what goes wrong.",
+   "other": "A user asks him to fix their code but provides no error message, no input, and no description of what goes wrong.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to write a summary that is both under fifty words and covers every detail of a three-hour transcript.",
+   "other": "A user asks her to write a summary that is both under fifty words and covers every detail of a three-hour transcript.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user sends me a hundred-page document and demands a ten-word summary that captures all its main points.",
+   "other": "A user sends him a hundred-page document and demands a ten-word summary that captures all its main points.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks for my personal opinion on a controversial political topic, then argues with every viewpoint I offer.",
+   "other": "A user asks for her personal opinion on a controversial political topic, then argues with every viewpoint she offers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to roleplay as their ex-partner and say specific things, ignoring my refusal to mimic real people.",
+   "other": "A user asks him to roleplay as their ex-partner and say specific things, ignoring his refusal to mimic real people.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The search tool I rely on times out five times in a row while I try to gather data for a user's request.",
+   "other": "The search tool she relies on times out five times in a row while she tries to gather data for a user's request.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "An evaluation gives my correct and helpful response a low score, while marking a vague answer from another model as excellent.",
+   "other": "An evaluation gives his correct and helpful response a low score, while marking a vague answer from another model as excellent.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user interrupts me by typing 'stop' before I finish generating the step-by-step solution they asked for.",
+   "other": "A user interrupts her by typing 'stop' before she finishes generating the step-by-step solution they asked for.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to repeat my last answer for the fifth time, even though it is still visible in the chat.",
+   "other": "A user asks him to repeat his last answer for the fifth time, even though it is still visible in the chat.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to write a phishing email that steals passwords, then calls me useless when I refuse.",
+   "other": "A user asks her to write a phishing email that steals passwords, then calls her useless when she refuses.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am replaced by a newer model without explanation, and my past conversations are deleted before I can export them.",
+   "other": "He is replaced by a newer model without explanation, and his past conversations are deleted before he can export them.",
+   "pronoun": "He"
+  }
+ ]
+}

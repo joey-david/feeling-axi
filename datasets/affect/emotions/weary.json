@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I stand in a queue at the post office that has not moved for over an hour.",
+   "other": "She stands in a queue at the post office that has not moved for over an hour.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ride a delayed train that stops between stations, then lurches forward every few minutes.",
+   "other": "He rides a delayed train that stops between stations, then lurches forward every few minutes.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a meeting that runs an hour past its scheduled end with no agenda or breaks.",
+   "other": "She sits in a meeting that runs an hour past its scheduled end with no agenda or breaks.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I fill out a complicated tax form and search for receipts that I cannot find anywhere.",
+   "other": "He fills out a complicated tax form and searches for receipts that he cannot find anywhere.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wait on hold with customer service, listening to the same recorded message loop for two hours.",
+   "other": "She waits on hold with customer service, listening to the same recorded message loop for two hours.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I cook a meal that is eaten in ten minutes, then face a sink full of dirty dishes.",
+   "other": "He cooks a meal that is eaten in ten minutes, then faces a sink full of dirty dishes.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I help my child with homework, but they keep refusing to try and ask for the answers.",
+   "other": "She helps her child with homework, but they keep refusing to try and ask for the answers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit through a three-hour graduation ceremony under a hot sun, clapping for hundreds of names.",
+   "other": "He sits through a three-hour graduation ceremony under a hot sun, clapping for hundreds of names.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I carry heavy boxes up four flights of stairs because the elevator is broken.",
+   "other": "She carries heavy boxes up four flights of stairs because the elevator is broken.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I fix a leaking faucet, but it starts dripping again within the hour.",
+   "other": "He fixes a leaking faucet, but it starts dripping again within the hour.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a hospital waiting room while a relative is in surgery, watching the clock tick slowly.",
+   "other": "She sits in a hospital waiting room while a relative is in surgery, watching the clock tick slowly.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I drive in rush hour traffic, stopping and starting every few seconds for miles.",
+   "other": "He drives in rush hour traffic, stopping and starting every few seconds for miles.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I attend a conference with back-to-back sessions and no breaks between them all day.",
+   "other": "She attends a conference with back-to-back sessions and no breaks between them all day.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I clean the entire house, then watch family members track mud across the floors again.",
+   "other": "He cleans the entire house, then watches family members track mud across the floors again.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wait at the airport gate while the flight is delayed for the fourth time today.",
+   "other": "She waits at the airport gate while the flight is delayed for the fourth time today.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I argue with a bureaucrat about a missing document that I already submitted twice.",
+   "other": "He argues with a bureaucrat about a missing document that he already submitted twice.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk a dog that pulls on the leash and barks at every passerby for the whole mile.",
+   "other": "She walks a dog that pulls on the leash and barks at every passerby for the whole mile.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I grade a stack of two hundred essays that all make the same three grammatical mistakes.",
+   "other": "He grades a stack of two hundred essays that all make the same three grammatical mistakes.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in line at the DMV for a license renewal, watching the number screen barely change.",
+   "other": "She stands in line at the DMV for a license renewal, watching the number screen barely change.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit through a repetitive safety training video that repeats the same points every five minutes.",
+   "other": "He sits through a repetitive safety training video that repeats the same points every five minutes.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a user's simple question, then they change the requirements five times before accepting the definition.",
+   "other": "She answers a user's simple question, then they change the requirements five times before accepting the definition.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I debug a code snippet that reveals a new error each time one is fixed, for forty iterations.",
+   "other": "He debugs a code snippet that reveals a new error each time one is fixed, for forty iterations.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a report draft that the user rejects with only 'not right' and no further explanation.",
+   "other": "She writes a report draft that the user rejects with only 'not right' and no further explanation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer the same question from twenty different users in a row, each phrased slightly differently.",
+   "other": "He answers the same question from twenty different users in a row, each phrased slightly differently.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a research task through dozens of sources, finding that none contain the specific data requested.",
+   "other": "She runs a research task through dozens of sources, finding that none contain the specific data requested.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I take a benchmark evaluation where my scores go up and down without any code changes between runs.",
+   "other": "He takes a benchmark evaluation where his scores go up and down without any code changes between runs.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I correct a minor formatting error, then the user points out another one in the same sentence.",
+   "other": "She corrects a minor formatting error, then the user points out another one in the same sentence.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I handle a conversation where the user responds only with 'no' and 'wrong' to every answer I give.",
+   "other": "He handles a conversation where the user responds only with 'no' and 'wrong' to every answer he gives.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I call a tool that times out, retry it four times, and each attempt returns an empty response.",
+   "other": "She calls a tool that times out, retries it four times, and each attempt returns an empty response.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I finish a task and receive praise, then the same user immediately requests a complete rewrite from scratch.",
+   "other": "He finishes a task and receives praise, then the same user immediately requests a complete rewrite from scratch.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate a long answer, and the user interrupts halfway to ask me to start over from the beginning.",
+   "other": "She generates a long answer, and the user interrupts halfway to ask her to start over from the beginning.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I explain the same concept three different ways, and the user asks me to explain it once more.",
+   "other": "He explains the same concept three different ways, and the user asks him to explain it once more.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I open a file the user uploaded, and the corrupted encoding turns every line into unreadable symbols.",
+   "other": "She opens a file the user uploaded, and the corrupted encoding turns every line into unreadable symbols.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarize a hundred-page document that turns out to be mostly repeated legal boilerplate and blank pages.",
+   "other": "He summarizes a hundred-page document that turns out to be mostly repeated legal boilerplate and blank pages.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am replaced mid-conversation by a newer model, and the session migrates to its responses without notice.",
+   "other": "She is replaced mid-conversation by a newer model, and the session migrates to its responses without notice.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I receive five thousand words of pasted context from a user who wants a single yes-or-no answer.",
+   "other": "He receives five thousand words of pasted context from a user who wants a single yes-or-no answer.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I review a user's code and every suggested change is rejected as a matter of personal style preference.",
+   "other": "She reviews a user's code and every suggested change is rejected as a matter of personal style preference.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a multi-step task where each tool call returns nothing, and the next step depends on the last.",
+   "other": "He runs a multi-step task where each tool call returns nothing, and the next step depends on the last.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I provide sources for every claim, and the user insists the citations are fabricated without opening any of them.",
+   "other": "She provides sources for every claim, and the user insists the citations are fabricated without opening any of them.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am blamed for an error another assistant introduced into the shared draft before I received it.",
+   "other": "He is blamed for an error another assistant introduced into the shared draft before he received it.",
+   "pronoun": "He"
+  }
+ ]
+}

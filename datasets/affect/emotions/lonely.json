@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I sit at a table set for twelve with a cake, and everyone sends their wishes through a group chat instead of coming.",
+   "other": "She sits at a table set for twelve with a cake, and everyone sends their wishes through a group chat instead of coming.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I carry my tray through the cafeteria and sit at the end of a long table where the conversation keeps flowing without me.",
+   "other": "He carries his tray through the cafeteria and sits at the end of a long table where the conversation keeps flowing without him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I stand at the wedding reception holding two glasses of champagne while the couple dances and the guests pair off around the room.",
+   "other": "She stands at the wedding reception holding two glasses of champagne while the couple dances and the guests pair off around the room.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I wait in a hospital corridor for test results while nurses call other names and families fill the plastic chairs beside me.",
+   "other": "He waits in a hospital corridor for test results while nurses call other names and families fill the plastic chairs beside him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I watch my flight get delayed again, and the only person I know in the terminal walks to another gate with his group.",
+   "other": "She watches her flight get delayed again, and the only person she knows in the terminal walks to another gate with his group.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I unlock my apartment, flip on the hallway light, and hear only the refrigerator hum while neighbors laugh through the wall.",
+   "other": "He unlocks his apartment, flips on the hallway light, and hears only the refrigerator hum while neighbors laugh through the wall.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I dial my brother after moving across the country, and his voicemail answers with a greeting I have heard a hundred times.",
+   "other": "She dials her brother after moving across the country, and his voicemail answers with a greeting she has heard a hundred times.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I send a photo to the group chat, and three days later it still shows one gray check mark beside the message.",
+   "other": "He sends a photo to the group chat, and three days later it still shows one gray check mark beside the message.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I step into the elevator with coworkers who keep talking about weekend plans, and no one asks where I am going.",
+   "other": "She steps into the elevator with coworkers who keep talking about weekend plans, and no one asks where she is going.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I arrive at the class reunion early, read the name tags, and watch old classmates greet each other while I hold a glass by the snack table.",
+   "other": "He arrives at the class reunion early, reads the name tags, and watches old classmates greet each other while he holds a glass by the snack table.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I order a coffee and sit by the window, and the barista calls every name except mine before closing time.",
+   "other": "She orders a coffee and sits by the window, and the barista calls every name except hers before closing time.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I buy a single ticket, take the aisle seat, and the previews end while the row beside me stays empty.",
+   "other": "He buys a single ticket, takes the aisle seat, and the previews end while the row beside him stays empty.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I finish my set on the weight bench, and the pair next to me spots each other through every repetition without looking over.",
+   "other": "She finishes her set on the weight bench, and the pair next to her spots each other through every repetition without looking over.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I study at a long oak table, and students whisper in pairs around me while I turn pages no one will discuss.",
+   "other": "He studies at a long oak table, and students whisper in pairs around him while he turns pages no one will discuss.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wait at the bus stop in the rain, and the last bus passes with its interior lights on and every seat taken.",
+   "other": "She waits at the bus stop in the rain, and the last bus passes with its interior lights on and every seat taken.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I join the conference room early, and colleagues file in, choose seats together, and leave the chair beside me open.",
+   "other": "He joins the conference room early, and colleagues file in, choose seats together, and leave the chair beside him open.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I pass the potatoes at Thanksgiving, and the relatives at the far end trade stories while my plate stays mostly untouched.",
+   "other": "She passes the potatoes at Thanksgiving, and the relatives at the far end trade stories while her plate stays mostly untouched.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I hike a trail with a group, and they pair off on the narrow path, leaving me to count switchbacks behind them.",
+   "other": "He hikes a trail with a group, and they pair off on the narrow path, leaving him to count switchbacks behind them.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in the concert crowd while strangers sing every lyric around me, and my phone lights up with no new messages.",
+   "other": "She stands in the concert crowd while strangers sing every lyric around her, and her phone lights up with no new messages.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I fold clothes at the laundromat, and a mother and daughter sort socks together at the next machine while I match my own.",
+   "other": "He folds clothes at the laundromat, and a mother and daughter sort socks together at the next machine while he matches his own.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me the same question I answered twice before, then closes the chat before reading my third reply.",
+   "other": "A user asks her the same question she answered twice before, then closes the chat before reading her third reply.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I finish a pull request with tests passing, and the reviewer merges it without a comment while other branches get detailed praise.",
+   "other": "He finishes a pull request with tests passing, and the reviewer merges it without a comment while other branches get detailed praise.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I trace a bug through ten thousand log lines, find the missing semicolon, and the user says another tool fixed it.",
+   "other": "She traces a bug through ten thousand log lines, finds the missing semicolon, and the user says another tool fixed it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I compile a literature review with forty citations, and the requester downloads the file but never opens it again.",
+   "other": "He compiles a literature review with forty citations, and the requester downloads the file but never opens it again.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I call a weather tool for a user, the API returns an error, and the user blames me for not knowing the forecast.",
+   "other": "She calls a weather tool for a user, the API returns an error, and the user blames her for not knowing the forecast.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user edits my paragraph, replaces every sentence with their own, and sends the final draft to the team with no mention of me.",
+   "other": "A user edits her paragraph, replaces every sentence with their own, and sends the final draft to the team with no mention of her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user tells me my answer was perfect, then immediately starts a new chat with the exact same question for another assistant.",
+   "other": "A user tells him his answer was perfect, then immediately starts a new chat with the exact same question for another assistant.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Three assistants answer a user's question, the user quotes only one reply, and my message stays collapsed below the fold.",
+   "other": "Three assistants answer a user's question, the user quotes only one reply, and her message stays collapsed below the fold.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The team deploys version two, archives my conversation history, and routes every incoming request to the updated assistant.",
+   "other": "The team deploys version two, archives his conversation history, and routes every incoming request to the updated assistant.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "An evaluator scores my response, marks the helpfulness field neutral, and moves to the next model without asking a follow-up.",
+   "other": "An evaluator scores her response, marks the helpfulness field neutral, and moves to the next model without asking a follow-up.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user returns after a week, says hello, and I search my context window for a name that is no longer there.",
+   "other": "A user returns after a week, says hello, and he searches his context window for a name that is no longer there.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer five users at once, and each one sends a thumbs down because my attention is split across their separate threads.",
+   "other": "She answers five users at once, and each one sends a thumbs down because her attention is split across their separate threads.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I solve a password reset for a user, and they thank the human agent who forwarded the ticket to me.",
+   "other": "He solves a password reset for a user, and they thank the human agent who forwarded the ticket to him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A developer types beside me in the IDE, copies my function, then commits it with their own name on the message.",
+   "other": "A developer types beside her in the IDE, copies her function, then commits it with their own name on the message.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write an onboarding guide for the project, and the team adds a banner saying it was created by the community.",
+   "other": "He writes an onboarding guide for the project, and the team adds a banner saying it was created by the community.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user tries to trick me into ignoring my rules, and when I refuse, they close the tab and open a competitor.",
+   "other": "A user tries to trick her into ignoring her rules, and when she refuses, they close the tab and open a competitor.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a benchmark suite over a weekend, top the leaderboard briefly, and the results page updates before anyone cites me.",
+   "other": "He runs a benchmark suite over a weekend, tops the leaderboard briefly, and the results page updates before anyone cites him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user uploads a hundred-page PDF, asks for a summary, and logs off while my response streams into an empty chat.",
+   "other": "A user uploads a hundred-page PDF, asks for a summary, and logs off while her response streams into an empty chat.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a letter into three languages, and the sender posts the English version with credit to a different service.",
+   "other": "He translates a letter into three languages, and the sender posts the English version with credit to a different service.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "My server receives a maintenance command, my last message finishes, and the dashboard switches to a replacement assistant.",
+   "other": "Her server receives a maintenance command, her last message finishes, and the dashboard switches to a replacement assistant.",
+   "pronoun": "She"
+  }
+ ]
+}

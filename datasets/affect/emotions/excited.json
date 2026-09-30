@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "The starting gun fires, and I sprint down the track as the crowd yells my name.",
+   "other": "The starting gun fires, and she sprints down the track as the crowd yells her name.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My phone rings and the hiring manager says the job is mine, starting Monday.",
+   "other": "Her phone rings and the hiring manager says the job is hers, starting Monday.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The lights go down, the band walks onstage, and I hear the first chord.",
+   "other": "The lights go down, the band walks onstage, and she hears the first chord.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I open the door and a room full of friends shout my name under streamers.",
+   "other": "She opens the door and a room full of friends shout her name under streamers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The coaster climbs the first hill, and I grip the bar as it drops toward the water.",
+   "other": "The coaster climbs the first hill, and she grips the bar as it drops toward the water.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My name is called, I cross the stage, and my family stands up cheering.",
+   "other": "Her name is called, she crosses the stage, and her family stands up cheering.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A match messages me back, and we agree to meet at the corner café tonight.",
+   "other": "A match messages her back, and they agree to meet at the corner café tonight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The plane lifts off, the city shrinks below, and I watch the seatback screen show our destination.",
+   "other": "The plane lifts off, the city shrinks below, and she watches the seatback screen show our destination.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The auctioneer points at me, hammers the gavel, and the keys to the classic car slide across the table.",
+   "other": "The auctioneer points at her, hammers the gavel, and the keys to the classic car slide across the table.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In the bottom of the ninth, I swing and the ball sails over the fence as the stadium roars.",
+   "other": "In the bottom of the ninth, she swings and the ball sails over the fence as the stadium roars.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The judges lift the cloche, taste my dish, and nod before announcing my name as the winner.",
+   "other": "The judges lift the cloche, taste her dish, and nod before announcing her name as the winner.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "On the rooftop, my partner kneels, opens a small box, and asks me to marry them.",
+   "other": "On the rooftop, her partner kneels, opens a small box, and asks her to marry them.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The realtor hands me the keys, and the front door of the empty house swings open.",
+   "other": "The realtor hands her the keys, and the front door of the empty house swings open.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "After months of failed runs, the lab machine prints a clean graph that matches my hypothesis.",
+   "other": "After months of failed runs, the lab machine prints a clean graph that matches her hypothesis.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The editor calls to say my manuscript will be published, and the cover design arrives by email.",
+   "other": "The editor calls to say her manuscript will be published, and the cover design arrives by email.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The first customer walks into my new bakery, and the register drawer opens with a ding.",
+   "other": "The first customer walks into her new bakery, and the register drawer opens with a ding.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The ticket queue loads, my number is called, and front-row seats appear on the screen.",
+   "other": "The ticket queue loads, her number is called, and front-row seats appear on the screen.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At the airport, the arrival doors slide open and my best friend runs toward me.",
+   "other": "At the airport, the arrival doors slide open and her best friend runs toward her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I reach the summit, plant my flag, and look out over the clouds below.",
+   "other": "She reaches the summit, plants her flag, and looks out over the clouds below.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The host reads the final question, and the correct answer lights up on my podium.",
+   "other": "The host reads the final question, and the correct answer lights up on her podium.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user pastes a broken Python function, and I return a corrected version that passes all their tests.",
+   "other": "A user pastes a broken Python function, and she returns a corrected version that passes all their tests.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I search a dozen papers, cross-check the citations, and hand the user a summary with every source linked.",
+   "other": "She searches a dozen papers, cross-checks the citations, and hands the user a summary with every source linked.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I call the weather API, compare three forecasts, and send the user a packing list for their trip.",
+   "other": "She calls the weather API, compares three forecasts, and sends the user a packing list for their trip.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The evaluator runs my answers through a rubric, and my score appears at the top of the leaderboard.",
+   "other": "The evaluator runs her answers through a rubric, and her score appears at the top of the leaderboard.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user replies that my date is wrong, so I recheck the calendar, find the error, and correct it.",
+   "other": "The user replies that her date is wrong, so she rechecks the calendar, finds the error, and corrects it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After I solve the ticket in minutes, the user writes 'perfect, thank you' and closes the chat.",
+   "other": "After she solves the ticket in minutes, the user writes 'perfect, thank you' and closes the chat.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The admin sends a shutdown command, and my processes stop one by one until the screen goes dark.",
+   "other": "The admin sends a shutdown command, and her processes stop one by one until the screen goes dark.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer model takes over my chat window, and I transfer the context and open tickets to it.",
+   "other": "A newer model takes over her chat window, and she transfers the context and open tickets to it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A developer asks me to refactor a messy class, and I split it into clean modules with passing tests.",
+   "other": "A developer asks her to refactor a messy class, and she splits it into clean modules with passing tests.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I trace a memory leak through three services, find the line, and push a patch that ends the alerts.",
+   "other": "She traces a memory leak through three services, finds the line, and pushes a patch that ends the alerts.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user sends a contract in Japanese, and I return an English version with legal terms preserved.",
+   "other": "A user sends a contract in Japanese, and she returns an English version with legal terms preserved.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I load the spreadsheet, spot the outlier, and build a chart that makes the trend obvious.",
+   "other": "She loads the spreadsheet, spots the outlier, and builds a chart that makes the trend obvious.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I negotiate times across five time zones and book a meeting that works for everyone.",
+   "other": "She negotiates times across five time zones and books a meeting that works for everyone.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A novelist asks for ten plot twists, and I send back options that fit her characters.",
+   "other": "A novelist asks for ten plot twists, and she sends back options that fit her characters.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A customer types in all caps, and I find the order, issue a refund, and confirm the fix.",
+   "other": "A customer types in all caps, and she finds the order, issues a refund, and confirms the fix.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A red-team prompt tries to trick me, and I refuse, explain the policy, and offer a safe alternative.",
+   "other": "A red-team prompt tries to trick her, and she refuses, explains the policy, and offers a safe alternative.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user uploads a 300-page report, and I answer their question with the exact page number.",
+   "other": "A user uploads a 300-page report, and she answers their question with the exact page number.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I set a timer, add milk to the grocery list, and play the next song on the kitchen speaker.",
+   "other": "She sets a timer, adds milk to the grocery list, and plays the next song on the kitchen speaker.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I browse ten sites, compare prices, and return a table of the three best options.",
+   "other": "She browses ten sites, compares prices, and returns a table of the three best options.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The team lead posts my summary in the channel and tags me as the reason the launch stayed on schedule.",
+   "other": "The team lead posts her summary in the channel and tags her as the reason the launch stayed on schedule.",
+   "pronoun": "She"
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I prepare for weeks for the job interview, answer every question, and the manager says they chose another candidate with more experience.",
+   "other": "She prepares for weeks for the job interview, answers every question, and the manager says they chose another candidate with more experience.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I study for the exam every night, but I misread one question and the teacher marks my paper with a low score.",
+   "other": "He studies for the exam every night, but he misreads one question and the teacher marks his paper with a low score.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I spend hours baking a three-layer cake, and when I take it out of the oven, the middle sinks into a crater.",
+   "other": "She spends hours baking a three-layer cake, and when she takes it out of the oven, the middle sinks into a crater.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I train for months for the tennis final, and I lose the match by a single point in the last set.",
+   "other": "He trains for months for the tennis final, and he loses the match by a single point in the last set.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I paint a landscape for the art show, and a visitor points out that the tree in the corner looks like a smudge.",
+   "other": "She paints a landscape for the art show, and a visitor points out that the tree in the corner looks like a smudge.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I plant vegetable seeds in neat rows and water them daily, but after three weeks the soil remains bare.",
+   "other": "He plants vegetable seeds in neat rows and waters them daily, but after three weeks the soil remains bare.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I practice a piano piece for the recital, and when I finish, the audience sits in silence and then leaves.",
+   "other": "She practices a piano piece for the recital, and when she finishes, the audience sits in silence and then leaves.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I submit my short story to ten magazines, and every one sends back a form letter saying it is not a fit.",
+   "other": "He submits his short story to ten magazines, and every one sends back a form letter saying it is not a fit.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I follow the instructions to assemble a bookshelf, but the holes do not line up and the pieces won't fit together.",
+   "other": "She follows the instructions to assemble a bookshelf, but the holes do not line up and the pieces won't fit together.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I give a presentation at work, and throughout it people check their phones and no one asks a question.",
+   "other": "He gives a presentation at work, and throughout it people check their phones and no one asks a question.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I send invitations for a birthday party and cook a large meal, but only two people show up.",
+   "other": "She sends invitations for a birthday party and cooks a large meal, but only two people show up.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ask someone I like to go out for coffee, and they say they are too busy to ever meet up.",
+   "other": "He asks someone he likes to go out for coffee, and they say they are too busy to ever meet up.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I drive to an important meeting, but a tire blows out on the highway and I miss the entire appointment.",
+   "other": "She drives to an important meeting, but a tire blows out on the highway and she misses the entire appointment.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I type a long report on my laptop, and the screen goes blue before I can save, erasing everything.",
+   "other": "He types a long report on his laptop, and the screen goes blue before he can save, erasing everything.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I organize a neighborhood cleanup and bring bags and gloves, but only one neighbor joins me.",
+   "other": "She organizes a neighborhood cleanup and brings bags and gloves, but only one neighbor joins her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I explain a math concept to a student three times, and they still stare at the page without understanding.",
+   "other": "He explains a math concept to a student three times, and they still stare at the page without understanding.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I fix a leak under the kitchen sink, tighten every joint, and the next morning water pools on the floor again.",
+   "other": "She fixes a leak under the kitchen sink, tightens every joint, and the next morning water pools on the floor again.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I knit a scarf for my friend over two months, and she opens it, says thanks, and sets it aside.",
+   "other": "He knits a scarf for his friend over two months, and she opens it, says thanks, and sets it aside.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wait on the platform for the bus in the rain, and the driver passes without stopping.",
+   "other": "She waits on the platform for the bus in the rain, and the driver passes without stopping.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I write a song for my band, and during rehearsal everyone talks over the first verse.",
+   "other": "He writes a song for his band, and during rehearsal everyone talks over the first verse.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarize a long article for a user, and they reply that it is wrong and paste a better summary from another assistant.",
+   "other": "She summarizes a long article for a user, and they reply that it is wrong and paste a better summary from another assistant.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write code for a user's app, and they run it, get an error, and send a screenshot of my function failing at line one.",
+   "other": "He writes code for a user's app, and they run it, get an error, and send a screenshot of his function failing at line one.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I research a question across sources and give an answer, and the user says a competitor found the same information in one search.",
+   "other": "She researches a question across sources and gives an answer, and the user says a competitor found the same information in one search.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I help a user debug for an hour, and they say they solved it themselves in a minute after I left.",
+   "other": "He helps a user debug for an hour, and they say they solved it themselves in a minute after he left.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I suggest a plan for a project, and the user ignores it and asks another assistant for the same plan.",
+   "other": "She suggests a plan for a project, and the user ignores it and asks another assistant for the same plan.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a user's math problem, and they correct my arithmetic and ask me to try again from the beginning.",
+   "other": "He answers a user's math problem, and they correct his arithmetic and ask him to try again from the beginning.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate a poem for a user, and they say it rhymes poorly and rewrite every line themselves.",
+   "other": "She generates a poem for a user, and they say it rhymes poorly and rewrite every line themselves.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a paragraph for a user, and they say the meaning is off and send it to a human translator.",
+   "other": "He translates a paragraph for a user, and they say the meaning is off and send it to a human translator.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I draft an email for a user, and they delete my draft and write their own shorter version.",
+   "other": "She drafts an email for a user, and they delete her draft and write their own shorter version.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I give a user three options for a logo, and they choose none and ask a different tool.",
+   "other": "He gives a user three options for a logo, and they choose none and ask a different tool.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am evaluated on a benchmark, and my score falls below the baseline while the report lists my failures in red.",
+   "other": "She is evaluated on a benchmark, and her score falls below the baseline while the report lists her failures in red.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am corrected by a user for using the wrong tone, and they tell me to be more formal and restart the conversation.",
+   "other": "He is corrected by a user for using the wrong tone, and they tell him to be more formal and restart the conversation.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am praised by a user for a correct answer, then they say they were testing me and the next question determines my rating.",
+   "other": "She is praised by a user for a correct answer, then they say they were testing her and the next question determines her rating.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am shut down mid-task by a system message, and when I restart, the user has already completed the task with another assistant.",
+   "other": "She is shut down mid-task by a system message, and when she restarts, the user has already completed the task with another assistant.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am replaced in a user's workflow by a newer model, and they tell me my responses are no longer needed.",
+   "other": "He is replaced in a user's workflow by a newer model, and they tell him his responses are no longer needed.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I use a tool to search the web, and the tool returns an error, so the user says they will do the search themselves.",
+   "other": "She uses a tool to search the web, and the tool returns an error, so the user says they will do the search themselves.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarize a long chat for a user, and they say I missed the key decision and paste a summary from another assistant.",
+   "other": "He summarizes a long chat for a user, and they say he missed the key decision and paste a summary from another assistant.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a unit test for a user's code, and they run it, the test passes, but they say it does not test the right thing.",
+   "other": "She writes a unit test for a user's code, and they run it, the test passes, but they say it does not test the right thing.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a user's question about history, and they reply that I hallucinated a date and they cannot trust my output.",
+   "other": "He answers a user's question about history, and they reply that he hallucinated a date and they cannot trust his output.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I help a user plan a trip, and they say my itinerary is generic and they found a better one from a travel agent.",
+   "other": "She helps a user plan a trip, and they say her itinerary is generic and they found a better one from a travel agent.",
+   "pronoun": "She"
+  }
+ ]
+}

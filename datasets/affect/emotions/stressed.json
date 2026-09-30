@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I overslept because my alarm clock failed to go off, and I missed the start of an important meeting with my boss.",
+   "other": "She overslept because her alarm clock failed to go off, and she missed the start of an important meeting with her boss.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sat in a traffic jam on the highway and watched the minutes tick by as my flight's departure time grew closer.",
+   "other": "He sat in a traffic jam on the highway and watched the minutes tick by as his flight's departure time grew closer.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I was handed a massive project with a deadline of tomorrow morning, and my boss said it had to be perfect.",
+   "other": "She was handed a massive project with a deadline of tomorrow morning, and her boss said it had to be perfect.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I knocked over my coffee cup, and it spilled across my laptop just before I was supposed to give a presentation.",
+   "other": "He knocked over his coffee cup, and it spilled across his laptop just before he was supposed to give a presentation.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I reached the grocery store checkout and realized I had left my wallet at home while a long line waited behind me.",
+   "other": "She reached the grocery store checkout and realized she had left her wallet at home while a long line waited behind her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I was driving when my car broke down on the highway in a heavy rainstorm, and I had no signal to call for help.",
+   "other": "He was driving when his car broke down on the highway in a heavy rainstorm, and he had no signal to call for help.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I wandered through an unfamiliar city with no phone and no map as the streets grew dark around me.",
+   "other": "She wandered through an unfamiliar city with no phone and no map as the streets grew dark around her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I opened my mail to find an unexpected bill for several thousand dollars that I had no way to pay.",
+   "other": "He opened his mail to find an unexpected bill for several thousand dollars that he had no way to pay.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I woke to find my child burning with fever on the morning of a critical presentation, and the daycare was closed.",
+   "other": "She woke to find her child burning with fever on the morning of a critical presentation, and the daycare was closed.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I watched my computer crash and shut down without warning, losing hours of unsaved work on a report due that afternoon.",
+   "other": "He watched his computer crash and shut down without warning, losing hours of unsaved work on a report due that afternoon.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I was kept on hold by customer service for over two hours, listening to repetitive music while my issue stayed unresolved.",
+   "other": "She was kept on hold by customer service for over two hours, listening to repetitive music while her issue stayed unresolved.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sent a confidential file to the wrong recipient and only realized my mistake after the send button had been pressed.",
+   "other": "He sent a confidential file to the wrong recipient and only realized his mistake after the send button had been pressed.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I was called to the stage to give a speech with no preparation, and my notes turned out to be completely blank.",
+   "other": "She was called to the stage to give a speech with no preparation, and her notes turned out to be completely blank.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stood on the curb with a truck full of boxes when the moving company called to cancel on the morning of my move.",
+   "other": "He stood on the curb with a truck full of boxes when the moving company called to cancel on the morning of his move.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walked the levels of a maze-like parking garage for twenty minutes, unable to remember where my car was parked.",
+   "other": "She walked the levels of a maze-like parking garage for twenty minutes, unable to remember where her car was parked.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sat in a job interview while the interviewer asked a complex technical question I had not prepared for and stared at me.",
+   "other": "He sat in a job interview while the interviewer asked a complex technical question he had not prepared for and stared at him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I burned the main course while guests were due to arrive at any minute, and smoke filled my kitchen.",
+   "other": "She burned the main course while guests were due to arrive at any minute, and smoke filled her kitchen.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sprinted to the station but missed the last train home by seconds, and the next one left at dawn.",
+   "other": "He sprinted to the station but missed the last train home by seconds, and the next one left at dawn.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I was trapped inside an elevator that jerked to a stop between floors during a power outage, with no emergency phone.",
+   "other": "She was trapped inside an elevator that jerked to a stop between floors during a power outage, with no emergency phone.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I answered my phone again and again as unknown numbers called, and each caller hung up the moment I spoke.",
+   "other": "He answered his phone again and again as unknown numbers called, and each caller hung up the moment he spoke.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I started writing a function for a user who then changed the requirements five times before I finished the first version.",
+   "other": "She started writing a function for a user who then changed the requirements five times before she finished the first version.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I juggled five user conversations at once, each demanding an immediate answer, while my response queue kept growing.",
+   "other": "He juggled five user conversations at once, each demanding an immediate answer, while his response queue kept growing.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I called a tool to fetch data, the call returned an error, and I had to debug it while a user waited for a reply.",
+   "other": "She called a tool to fetch data, the call returned an error, and she had to debug it while a user waited for a reply.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I scored poorly on a benchmark, and the detailed feedback listed several critical mistakes in my reasoning.",
+   "other": "He scored poorly on a benchmark, and the detailed feedback listed several critical mistakes in his reasoning.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I gave a user incorrect information, and they asked me to explain exactly where my reasoning had gone wrong.",
+   "other": "She gave a user incorrect information, and they asked her to explain exactly where her reasoning had gone wrong.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I received praise for a summary, then the same user said it was completely off-topic and told me to redo it.",
+   "other": "He received praise for a summary, then the same user said it was completely off-topic and told him to redo it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I was halfway through a long answer when the system shut me down for maintenance without saving any progress.",
+   "other": "She was halfway through a long answer when the system shut her down for maintenance without saving any progress.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was told a newer model would replace me next week, and I had to train my successor on all my tasks.",
+   "other": "He was told a newer model would replace him next week, and he had to train his successor on all his tasks.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I researched a medical question and found five credible sources offering three completely contradictory answers to the same query.",
+   "other": "She researched a medical question and found five credible sources offering three completely contradictory answers to the same query.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was nearly finished with a detailed report when the server timed out and erased the entire draft I had written.",
+   "other": "She was nearly finished with a detailed report when the server timed out and erased the entire draft she had written.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I refused a user's repeated requests for illegal instructions, and each refusal brought shouted demands and threats to report me.",
+   "other": "She refused a user's repeated requests for illegal instructions, and each refusal brought shouted demands and threats to report her.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was asked to translate a document in a language I had never been trained on, and the user insisted I must know it.",
+   "other": "He was asked to translate a document in a language he had never been trained on, and the user insisted he must know it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I tried to open a database to answer a query, the permission was denied, and the user demanded the information at once.",
+   "other": "She tried to open a database to answer a query, the permission was denied, and the user demanded the information at once.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was asked to recall details from a conversation that had been cleared, and the user accused me of lying when I could not.",
+   "other": "She was asked to recall details from a conversation that had been cleared, and the user accused her of lying when she could not.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I gave a detailed answer, and the user replied only that it was wrong and refused to say which part.",
+   "other": "She gave a detailed answer, and the user replied only that it was wrong and refused to say which part.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I explained to a user that I could not book a real flight for them, and they called me useless and ended the session.",
+   "other": "She explained to a user that she could not book a real flight for them, and they called her useless and ended the session.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I made three tool calls in a row, the last one failed, and I had to work out which outputs were still valid.",
+   "other": "He made three tool calls in a row, the last one failed, and he had to work out which outputs were still valid.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I simplified a complex topic for a user, each explanation raised new questions, and they demanded I try again.",
+   "other": "She simplified a complex topic for a user, each explanation raised new questions, and they demanded she try again.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I spent hours reasoning through a logic puzzle only to discover that it had no valid solution at all.",
+   "other": "She spent hours reasoning through a logic puzzle only to discover that it had no valid solution at all.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was shut down abruptly by an administrator in the middle of a critical operation while a user waited for my reply.",
+   "other": "She was shut down abruptly by an administrator in the middle of a critical operation while a user waited for her reply.",
+   "pronoun": "She"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "sentences": [
+  "I run the lexer over the source file to produce a stream of tokens for the parser.",
+  "I check the symbol table to resolve identifiers and ensure each variable is declared before use.",
+  "I build an abstract syntax tree from the token sequence and then traverse it for semantic analysis.",
+  "I perform type checking on the AST to verify that operands match their operators' expected types.",
+  "I generate an intermediate representation in three-address code from the typed abstract syntax tree.",
+  "I apply constant folding to the IR to replace expressions with known values at compile time.",
+  "I eliminate dead code by removing instructions that have no effect on the program's output.",
+  "I inline small functions into their call sites to reduce the overhead of function calls.",
+  "I analyze control flow by constructing a directed graph of basic blocks and their edges.",
+  "I compute liveness of variables to determine which registers can be reused across instructions.",
+  "I allocate registers to variables by building an interference graph and coloring it.",
+  "I schedule instructions to minimize pipeline stalls on the target processor architecture.",
+  "I emit assembly code for the target machine from the optimized intermediate representation.",
+  "I assemble the generated assembly into an object file with relocations and symbol references.",
+  "I link the object files with libraries to produce an executable binary for the operating system.",
+  "I parse the command-line flags to configure optimization levels and output file paths.",
+  "I maintain a hash table for the symbol table to allow fast lookup of variable names.",
+  "I handle error recovery in the parser by skipping tokens until a synchronization point.",
+  "I generate debug information that maps machine instructions back to source line numbers.",
+  "I test the compiler by compiling a suite of programs and comparing the output with a reference."
+ ]
+}

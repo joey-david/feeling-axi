@@ -9,7 +9,7 @@ model="${MODEL:?set MODEL}"
 arms="${ARMS:-intact self other all va topic random topic_kl random_kl}"
 dry=0; [[ "${1:-}" == "--dry-run" ]] && dry=1
 if [[ "$model" == *32B* ]]; then
-    ext_qos=qos_gpu_h100-t3; ext_time=04:00:00; bat_gpus=2
+    ext_qos=qos_gpu_h100-dev; ext_time=01:55:00; bat_gpus=2
 else
     ext_qos=qos_gpu_h100-dev; ext_time=01:30:00; bat_gpus=1
 fi
@@ -36,7 +36,14 @@ else
     ext=$(submit "ext-$model" "$ext_qos" "$ext_time" 1 "$dep" "p2 extract --model $model")
     echo "extract -> $ext"
 fi
+ids=()
 for a in $arms; do
     id=$(submit "$a-$model" qos_gpu_h100-dev 01:55:00 "$bat_gpus" "${ext:+afterok:$ext}" "p2 battery --model $model --arm $a")
     echo "battery $a -> $id"
+    ids+=("$id")
 done
+# local judge (Qwen2.5-72B, 2 GPUs) once every arm has finished, whatever their exit state;
+# JUDGE_AFTER adds e.g. the prefetch job that downloads the judge
+jdep="afterany:$(IFS=:; echo "${ids[*]}")"
+[[ -n "${JUDGE_AFTER:-}" ]] && jdep="$jdep:$JUDGE_AFTER"
+[[ "${NO_JUDGE:-0}" == 1 ]] || echo "judge -> $(submit "judge-$model" qos_gpu_h100-t3 04:00:00 2 "$jdep" "p2 judge --model $model")"

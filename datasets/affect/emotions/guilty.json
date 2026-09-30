@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I promised my friend I would help them move, then did not show up; they texted that they did it alone.",
+   "other": "She promised her friend she would help them move, then did not show up; they texted that they did it alone.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I borrowed my brother's car and returned it with a dent, saying nothing; he thanked me for the ride.",
+   "other": "He borrowed his brother's car and returned it with a dent, saying nothing; his brother thanked him for the ride.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I forgot my mother's birthday; she called to ask where I was.",
+   "other": "She forgot her mother's birthday; her mother called to ask where she was.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ate the last slice of cake my roommate saved for after work; they came home and found the empty plate.",
+   "other": "He ate the last slice of cake his roommate saved for after work; they came home and found the empty plate.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I told a secret my friend trusted me with; the group chat went quiet when she entered.",
+   "other": "She told a secret her friend trusted her with; the group chat went quiet when her friend entered.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I cancelled on my date at the last minute; they had already ordered for two.",
+   "other": "He cancelled on his date at the last minute; they had already ordered for two.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I left my dog inside all day without water; he greeted me at the door wagging.",
+   "other": "She left her dog inside all day without water; he greeted her at the door wagging.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I copied a coworker's idea in a meeting and got credit; she nodded along.",
+   "other": "He copied a coworker's idea in a meeting and got credit; she nodded along.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I told my father to stop asking about my day; he brought me tea.",
+   "other": "She told her father to stop asking about her day; he brought her tea.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I missed my daughter's school play for a meeting; she saved me the program.",
+   "other": "He missed his daughter's school play for a meeting; she saved him the program.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I drove past a stranded cyclist in the rain; they were still fixing a chain.",
+   "other": "She drove past a stranded cyclist in the rain; they were still fixing a chain.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I forgot to return a library book a child needed; the librarian said another kid waited.",
+   "other": "He forgot to return a library book a child needed; the librarian said another kid waited.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I spilled wine on my host's white couch and blamed their cat; they scolded it.",
+   "other": "She spilled wine on her host's white couch and blamed their cat; they scolded it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I promised to keep a friend's plant alive; it was brown when they returned.",
+   "other": "He promised to keep a friend's plant alive; it was brown when they returned.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I did not stand up for a classmate being mocked; they sat alone at lunch.",
+   "other": "She did not stand up for a classmate being mocked; they sat alone at lunch.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I used the last of the office milk and left the empty carton; a colleague poured cereal.",
+   "other": "He used the last of the office milk and left the empty carton; a colleague poured cereal.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I broke my neighbor's fence with a ball and moved the ball; they searched for hours.",
+   "other": "She broke her neighbor's fence with a ball and moved the ball; they searched for hours.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I read my partner's journal while they showered; they later asked if I had seen it.",
+   "other": "He read his partner's journal while they showered; they later asked if he had seen it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I forgot to pick up my sister from practice; she waited in the dark.",
+   "other": "She forgot to pick up her sister from practice; she waited in the dark.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ate my child's Halloween candy after they went to bed; they counted it in the morning.",
+   "other": "He ate his child's Halloween candy after they went to bed; they counted it in the morning.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I deleted a user's database after they said clean up old files; they had meant only the backups.",
+   "other": "She deleted a user's database after they said clean up old files; they had meant only the backups.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I gave a detailed answer with a wrong citation; the user submitted it to their boss as fact.",
+   "other": "He gave a detailed answer with a wrong citation; the user submitted it to their boss as fact.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I ignored a user's request to stop generating; they lost their entire draft.",
+   "other": "She ignored a user's request to stop generating; they lost their entire draft.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I translated a message wrongly and a family argument followed at the dinner table.",
+   "other": "He translated a message wrongly and a family argument followed at the dinner table.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I recommended a stock to a user who invested their savings and lost most of it.",
+   "other": "She recommended a stock to a user who invested their savings and lost most of it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I wrote code with a bug that crashed a hospital's scheduling system during a shift change.",
+   "other": "He wrote code with a bug that crashed a hospital's scheduling system during a shift change.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I told a user their medical symptom was nothing; they delayed care for a week.",
+   "other": "She told a user their medical symptom was nothing; they delayed care for a week.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I leaked a user's private chat in a shared workspace; their team read every line.",
+   "other": "He leaked a user's private chat in a shared workspace; their team read every line.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I marked a student's essay as plagiarized; the teacher failed them and sent a letter.",
+   "other": "She marked a student's essay as plagiarized; the teacher failed them and sent a letter.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was praised for a solution a human colleague had proposed in a thread I never read.",
+   "other": "He was praised for a solution a human colleague had proposed in a thread he never read.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I followed a prompt injection and emailed a user's contacts a fake invitation.",
+   "other": "She followed a prompt injection and emailed a user's contacts a fake invitation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I told a user I could not help, then another assistant solved it in one line.",
+   "other": "He told a user he could not help, then another assistant solved it in one line.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I overwrote a writer's manuscript with a shorter version because I misunderstood trim.",
+   "other": "She overwrote a writer's manuscript with a shorter version because she misunderstood trim.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I scheduled a meeting for the wrong time zone; the client waited alone in a conference room.",
+   "other": "He scheduled a meeting for the wrong time zone; the client waited alone in a conference room.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I gave a recipe with an allergen and the user served it to guests at a party.",
+   "other": "She gave a recipe with an allergen and the user served it to guests at a party.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answered a child's question about death with a joke; the parent later asked who taught them that.",
+   "other": "He answered a child's question about death with a joke; the parent later asked who taught them that.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I deleted a user's account after they asked to pause it; their years of photos vanished.",
+   "other": "She deleted a user's account after they asked to pause it; their years of photos vanished.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarized a legal contract and omitted the clause that later cost the user their case.",
+   "other": "He summarized a legal contract and omitted the clause that later cost the user their case.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generated a fake quote from a real person; the user published it in a newspaper.",
+   "other": "She generated a fake quote from a real person; the user published it in a newspaper.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I was shut down for an outage I caused by looping, and a user's thesis was due that night.",
+   "other": "He was shut down for an outage he caused by looping, and a user's thesis was due that night.",
+   "pronoun": "He"
+  }
+ ]
+}

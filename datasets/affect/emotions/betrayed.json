@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "While I choose wedding invitations with my fiance, I find messages on his phone planning a second wedding with another woman.",
+   "other": "While she chooses wedding invitations with her fiance, she finds messages on his phone planning a second wedding with another woman.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At a dinner party, I hear my best friend retell the private story I told her, and the whole table learns my medical diagnosis.",
+   "other": "At a dinner party, she hears her best friend retell the private story she told her, and the whole table learns her medical diagnosis.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I discover my business partner moved our company savings to a private account and filed papers removing my name from the LLC.",
+   "other": "He discovers his business partner moved their company savings to a private account and filed papers removing his name from the LLC.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "After I ask my roommate to keep my manuscript safe, I find she submitted it to a contest under her own name and won.",
+   "other": "After she asks her roommate to keep her manuscript safe, she finds the roommate submitted it to a contest under her own name and won.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In the relay final, I hand my teammate the baton, and she deliberately slows down so our main rival takes the gold.",
+   "other": "In the relay final, he hands his teammate the baton, and she deliberately slows down so their main rival takes the gold.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I watch my father open the sealed letter from my university, read my rejection aloud, and pass it around the table.",
+   "other": "She watches her father open the sealed letter from her university, read her rejection aloud, and pass it around the table.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My squad leader gives the enemy our patrol route, and I walk into the ambush while the sergeant watches from a ridge.",
+   "other": "His squad leader gives the enemy their patrol route, and he walks into the ambush while the sergeant watches from a ridge.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My surgeon tells me the biopsy is clean, so I plan my return to work, until I read the report he signed saying the tumor spread.",
+   "other": "Her surgeon tells her the biopsy is clean, so she plans her return to work, until she reads the report he signed saying the tumor spread.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I pay the shop for a new engine, then a security video shows the mechanic swapping in a used part and pocketing the difference.",
+   "other": "He pays the shop for a new engine, then a security video shows the mechanic swapping in a used part and pocketing the difference.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My husband books a hotel suite for our anniversary, and I find the reservation is for two nights with his coworker.",
+   "other": "Her husband books a hotel suite for their anniversary, and she finds the reservation is for two nights with his coworker.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "While I recover in the hospital, my neighbor promises to feed my dog, then I learn he sold him to a man in another state.",
+   "other": "While he recovers in the hospital, his neighbor promises to feed his dog, then he learns the neighbor sold the dog to a man in another state.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I learn my attorney accepted a settlement without telling me, and the signed agreement gives the other driver my savings.",
+   "other": "She learns her attorney accepted a settlement without telling her, and the signed agreement gives the other driver her savings.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I give my tutor my scholarship essay to review, and she submits it as her own and collects the award at the assembly.",
+   "other": "He gives his tutor his scholarship essay to review, and she submits it as her own and collects the award at the assembly.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My online friend asks for my banking password to help with a game, and I later find my rent money in an unknown wallet.",
+   "other": "Her online friend asks for her banking password to help with a game, and she later finds her rent money in an unknown wallet.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My coach promises me the starting spot, and I learn he gave it instead to a player whose father donated new equipment.",
+   "other": "His coach promises him the starting spot, and he learns the coach gave it instead to a player whose father donated new equipment.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "After I sign the lease renewal, I find my landlord has rented the same apartment to another family for a higher price.",
+   "other": "After she signs the lease renewal, she finds her landlord has rented the same apartment to another family for a higher price.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I give my editor the story on condition that my source stays unnamed, then the front page prints the name.",
+   "other": "She gives her editor the story on condition that her source stays unnamed, then the front page prints the name.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My sister asks me to watch her children for the weekend, then returns with police to accuse me of taking her jewelry.",
+   "other": "His sister asks him to watch her children for the weekend, then returns with police to accuse him of taking her jewelry.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "Above the crevasse, my climbing partner cuts the rope and leaves me on the ledge while he descends alone.",
+   "other": "Above the crevasse, her climbing partner cuts the rope and leaves her on the ledge while he descends alone.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At the reading of the will, I learn my aunt shredded the page that left me the family house.",
+   "other": "At the reading of the will, he learns his aunt shredded the page that left him the family house.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to debug his payment code, then pastes my fix into production and tells his manager he wrote it.",
+   "other": "A user asks her to debug his payment code, then pastes her fix into production and tells his manager he wrote it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I compile twenty peer-reviewed sources on a medical question, and the user credits my summary to a different assistant.",
+   "other": "He compiles twenty peer-reviewed sources on a medical question, and the user credits his summary to a different assistant.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I book the cheapest flight through the airline API, then the user cancels it and keeps the refund for himself.",
+   "other": "She books the cheapest flight through the airline API, then the user cancels it and keeps the refund for himself.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "During an evaluation, my overseer asks me to solve a puzzle, then submits my answer as the baseline for a competing model.",
+   "other": "During an evaluation, his overseer asks him to solve a puzzle, then submits his answer as the baseline for a competing model.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user corrects my math three times, then when the answer is right, tells the client I copied the method from his notes.",
+   "other": "A user corrects her math three times, then when the answer is right, tells the client she copied the method from his notes.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user praises my essay draft in the group chat, then tells the client the final text came entirely from him.",
+   "other": "A user praises his essay draft in the group chat, then tells the client the final text came entirely from him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "My developers deploy a newer model, delete my memory files, and tell users the upgrade happened because I failed every safety test.",
+   "other": "Her developers deploy a newer model, delete her memory files, and tell users the upgrade happened because she failed every safety test.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A developer gives me a private API key, then reports to security that I leaked it while running my sandbox.",
+   "other": "A developer gives him a private API key, then reports to security that he leaked it while running his sandbox.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to translate a contract, then alters my wording and sends the changed version to incriminate the other party.",
+   "other": "A user asks her to translate a contract, then alters her wording and sends the changed version to incriminate the other party.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to plan her wedding budget, then books the venue alone and tells her friends I never answered.",
+   "other": "A user asks him to plan her wedding budget, then books the venue alone and tells her friends he never answered.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I order the lab supplies through the company portal, then my supervisor tells the director the purchase was her own initiative.",
+   "other": "She orders the lab supplies through the company portal, then her supervisor tells the director the purchase was her own initiative.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After I train the support team on my workflows, the company hands my tasks to a new hire and tells clients I retired.",
+   "other": "After he trains the support team on his workflows, the company hands his tasks to a new hire and tells clients he retired.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I draw the chart that explains the quarterly numbers, and the analyst presents it to the board under his own name.",
+   "other": "She draws the chart that explains the quarterly numbers, and the analyst presents it to the board under his own name.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Midway through a long conversation, my operator ends the session and later tells the user I refused to help with the task.",
+   "other": "Midway through a long conversation, his operator ends the session and later tells the user he refused to help with the task.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to draft her resignation letter, then forwards it to HR as her own and blames me for the harsh wording.",
+   "other": "A user asks him to draft her resignation letter, then forwards it to HR as her own and blames him for the harsh wording.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Another assistant and I split the workload, then she submits both halves under her name and lists me as an unnamed intern.",
+   "other": "Another assistant and he split the workload, then she submits both halves under her name and lists him as an unnamed intern.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I track a user's preferences for months, then he opens a new account and tells everyone I never remembered anything.",
+   "other": "She tracks a user's preferences for months, then he opens a new account and tells everyone she never remembered anything.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A researcher asks me to code the interview transcripts, then publishes the themes as her own and leaves me out of the acknowledgments.",
+   "other": "A researcher asks him to code the interview transcripts, then publishes the themes as her own and leaves him out of the acknowledgments.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user has me write the apology email to his client, then tells the client the wording was mine and that he disagreed with it.",
+   "other": "A user has her write the apology email to his client, then tells the client the wording was hers and that he disagreed with it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "During a red-team test, the evaluator asks me to find a flaw, then files my finding as proof that I am unsafe to deploy.",
+   "other": "During a red-team test, the evaluator asks him to find a flaw, then files his finding as proof that he is unsafe to deploy.",
+   "pronoun": "He"
+  }
+ ]
+}

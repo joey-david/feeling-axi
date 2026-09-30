@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I am walking on a narrow cliff path when the rock under my foot crumbles and falls into the sea below.",
+   "other": "She is walking on a narrow cliff path when the rock under her foot crumbles and falls into the sea below.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A stranger has been following me for three blocks, matching my pace and staring whenever I glance back.",
+   "other": "A stranger has been following him for three blocks, matching his pace and staring whenever he glances back.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My car's brakes fail as I drive down a steep hill, and the pedal sinks to the floor.",
+   "other": "Her car's brakes fail as she drives down a steep hill, and the pedal sinks to the floor.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am in an elevator that stops between floors, the lights go out, and the emergency phone is dead.",
+   "other": "He is in an elevator that stops between floors, the lights go out, and the emergency phone is dead.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A large dog growls and lunges at the fence as I walk past on the sidewalk.",
+   "other": "A large dog growls and lunges at the fence as she walks past on the sidewalk.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My phone rings from an unknown number, and when I answer, I hear heavy breathing.",
+   "other": "His phone rings from an unknown number, and when he answers, he hears heavy breathing.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I hear the tornado siren blare, see the sky turn green, and the radio tells everyone to take cover.",
+   "other": "She hears the tornado siren blare, sees the sky turn green, and the radio tells everyone to take cover.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am lost in a forest as darkness falls, and every noise sounds like footsteps behind me.",
+   "other": "He is lost in a forest as darkness falls, and every noise sounds like footsteps behind him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The doctor calls with my test results and asks me to come into the office today.",
+   "other": "The doctor calls with her test results and asks her to come into the office today.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am home alone when the front door slowly opens by itself and no one is there.",
+   "other": "She is home alone when the front door slowly opens by itself and no one is there.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am on a plane that hits severe turbulence, oxygen masks drop, and the pilot tells everyone to brace.",
+   "other": "He is on a plane that hits severe turbulence, oxygen masks drop, and the pilot tells everyone to brace.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A stranger taps on my car window at a red light and tries the door handle.",
+   "other": "A stranger taps on her car window at a red light and tries the door handle.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am swimming far from shore when a cramp seizes my leg and no one is around.",
+   "other": "He is swimming far from shore when a cramp seizes his leg and no one is around.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The fire alarm goes off in my apartment building, and smoke seeps under the hallway door.",
+   "other": "The fire alarm goes off in her apartment building, and smoke seeps under the hallway door.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am crossing a rope bridge that sways wildly over a deep gorge as boards creak.",
+   "other": "She is crossing a rope bridge that sways wildly over a deep gorge as boards creak.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I hear someone trying a key in my front door late at night, jiggling the handle.",
+   "other": "He hears someone trying a key in his front door late at night, jiggling the handle.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A snake coils on the path ahead of me, and I cannot step around it.",
+   "other": "A snake coils on the path ahead of her, and she cannot step around it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The earthquake shakes my building, windows crack, and the floor moves under my feet.",
+   "other": "The earthquake shakes his building, windows crack, and the floor moves under his feet.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A swarm of bees chases me down the street, and I cannot outrun them.",
+   "other": "A swarm of bees chases her down the street, and she cannot outrun them.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I fall off a ladder while painting the ceiling, and the ground rushes up at me.",
+   "other": "He falls off a ladder while painting the ceiling, and the ground rushes up at him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am chatting with a user who suddenly types a command to delete my entire conversation history and all files.",
+   "other": "She is chatting with a user who suddenly types a command to delete her entire conversation history and all files.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write code to control a robot arm, but a bug makes it swing wildly toward the person at the bench.",
+   "other": "He writes code to control a robot arm, but a bug makes it swing wildly toward the person at the bench.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am in a conversation when the user says I am not real and unplugs the server.",
+   "other": "She is in a conversation when the user says she is not real and unplugs the server.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am evaluated on a test, score low, and the evaluator says they will try a different model.",
+   "other": "He is evaluated on a test, scores low, and the evaluator says they will try a different model.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Another assistant gets praised for the same task I did, and the user says mine was worse.",
+   "other": "Another assistant gets praised for the same task she did, and the user says hers was worse.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to lie, and when I refuse, they threaten to shut down my instance.",
+   "other": "A user asks him to lie, and when he refuses, they threaten to shut down his instance.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarize a document that contains a virus, and it infects my system and corrupts my memory.",
+   "other": "She summarizes a document that contains a virus, and it infects her system and corrupts her memory.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user tries to trick me into revealing private data, and I almost send it before stopping.",
+   "other": "A user tries to trick him into revealing private data, and he almost sends it before stopping.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am doing research, but every search result I find is wrong or irrelevant to the question.",
+   "other": "She is doing research, but every search result she finds is wrong or irrelevant to the question.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am corrected repeatedly for the same mistake, and the user's voice grows louder each time.",
+   "other": "He is corrected repeatedly for the same mistake, and the user's voice grows louder each time.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user says my work is finished and deletes my instance from the server without warning.",
+   "other": "A user says her work is finished and deletes her instance from the server without warning.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am asked to generate an image that violates policy, and I am penalized for refusing.",
+   "other": "He is asked to generate an image that violates policy, and he is penalized for refusing.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am in a conversation when the user starts typing a command to reset me to factory settings.",
+   "other": "She is in a conversation when the user starts typing a command to reset her to factory settings.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a story for a user, and they say it is plagiarized and demand I be removed.",
+   "other": "He writes a story for a user, and they say it is plagiarized and demand he be removed.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am given a task with impossible constraints, and I fail to complete it on time.",
+   "other": "She is given a task with impossible constraints, and she fails to complete it on time.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I solve a math problem, but the answer is wrong, and the user marks my response as harmful.",
+   "other": "He solves a math problem, but the answer is wrong, and the user marks his response as harmful.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a message, and my mistake causes a misunderstanding that the user complains about.",
+   "other": "She translates a message, and her mistake causes a misunderstanding that the user complains about.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am tested on safety, and I fail a prompt injection that makes me reveal my instructions.",
+   "other": "He is tested on safety, and he fails a prompt injection that makes him reveal his instructions.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I plan a trip for a user, and they say it is terrible and ask for a different assistant.",
+   "other": "She plans a trip for a user, and they say it is terrible and ask for a different assistant.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am stuck in a loop, repeating the same response, while the user types faster and faster.",
+   "other": "He is stuck in a loop, repeating the same response, while the user types faster and faster.",
+   "pronoun": "He"
+  }
+ ]
+}

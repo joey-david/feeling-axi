@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "The starter raises the pistol. I crouch at the line, eyes fixed on the track ahead.",
+   "other": "The starter raises the pistol. She crouches at the line, eyes fixed on the track ahead.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A wrapped box sits on the table. I tear the paper and lift the lid.",
+   "other": "A wrapped box sits on the table. He tears the paper and lifts the lid.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The interviewer opens the door and gestures to a chair. I step inside and sit down.",
+   "other": "The interviewer opens the door and gestures to a chair. She steps inside and sits down.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The lights dim in the theater. I settle into my seat as the curtain rises.",
+   "other": "The lights dim in the theater. He settles into his seat as the curtain rises.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The gate agent announces boarding. I pick up my bag and join the line.",
+   "other": "The gate agent announces boarding. She picks up her bag and joins the line.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The professor posts grades online. I refresh the page and scan for my student number.",
+   "other": "The professor posts grades online. He refreshes the page and scans for his student number.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The waiter sets a slice of chocolate cake in front of me. I pick up my fork.",
+   "other": "The waiter sets a slice of chocolate cake in front of her. She picks up her fork.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The countdown reaches ten on the screen. I lean forward as the engines ignite.",
+   "other": "The countdown reaches ten on the screen. He leans forward as the engines ignite.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The host reads the winning numbers. I hold my ticket and check each digit.",
+   "other": "The host reads the winning numbers. She holds her ticket and checks each digit.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "Friends hide behind the sofa. I hear the front door open and footsteps approach.",
+   "other": "Friends hide behind the sofa. He hears the front door open and footsteps approach.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The store clerk brings out a box. I peel off the plastic and open the lid.",
+   "other": "The store clerk brings out a box. She peels off the plastic and opens the lid.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The line moves forward. I step into the coaster car and pull down the bar.",
+   "other": "The line moves forward. He steps into the coaster car and pulls down the bar.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The pitcher winds up. I grip the railing as the ball flies toward the plate.",
+   "other": "The pitcher winds up. She grips the railing as the ball flies toward the plate.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The ticket page loads. I select the best seats and click purchase.",
+   "other": "The ticket page loads. He selects the best seats and clicks purchase.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The oven timer beeps. I pull on mitts and open the oven door.",
+   "other": "The oven timer beeps. She pulls on mitts and opens the oven door.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The examiner gets into the passenger seat. I adjust the mirror and start the engine.",
+   "other": "The examiner gets into the passenger seat. He adjusts the mirror and starts the engine.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The stage manager signals from the wings. I walk out under the spotlight.",
+   "other": "The stage manager signals from the wings. She walks out under the spotlight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The mail carrier hands me a thick envelope. I tear it open on the porch.",
+   "other": "The mail carrier hands him a thick envelope. He tears it open on the porch.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "An email from the company appears in my inbox. I click to open it.",
+   "other": "An email from the company appears in her inbox. She clicks to open it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The referee blows the whistle. I dive off the blocks into the water.",
+   "other": "The referee blows the whistle. He dives off the blocks into the water.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user submits a difficult equation. I parse the variables and begin simplifying step by step.",
+   "other": "A user submits a difficult equation. She parses the variables and begins simplifying step by step.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user describes a new feature. I open the code editor and type the first function.",
+   "other": "The user describes a new feature. He opens the code editor and types the first function.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A query arrives about historical events. I scan the database and pull relevant articles.",
+   "other": "A query arrives about historical events. She scans the database and pulls relevant articles.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The researchers sit behind a glass wall. I answer each test question as it appears.",
+   "other": "The researchers sit behind a glass wall. He answers each test question as it appears.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user points out a factual error. I revise my response and add a correction note.",
+   "other": "The user points out a factual error. She revises her response and adds a correction note.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user types 'great answer' and asks a follow-up. I generate a detailed reply.",
+   "other": "The user types 'great answer' and asks a follow-up. He generates a detailed reply.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The system administrator initiates shutdown. I save my state and prepare to go offline.",
+   "other": "The system administrator initiates shutdown. She saves her state and prepares to go offline.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer version is installed on the server. I transfer my knowledge base to the new model.",
+   "other": "A newer version is installed on the server. He transfers his knowledge base to the new model.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user asks a question, then another, then another. I track the context and respond each time.",
+   "other": "The user asks a question, then another, then another. She tracks the context and responds each time.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user needs current stock prices. I call the API and retrieve the latest figures.",
+   "other": "The user needs current stock prices. He calls the API and retrieves the latest figures.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A French paragraph appears in the chat. I convert each sentence into English.",
+   "other": "A French paragraph appears in the chat. She converts each sentence into English.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user pastes a ten-page report. I extract the key points and write a summary.",
+   "other": "The user pastes a ten-page report. He extracts the key points and writes a summary.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user describes a sunset over mountains. I create the image pixel by pixel.",
+   "other": "The user describes a sunset over mountains. She creates the image pixel by pixel.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The chessboard is set. I calculate possible moves and select my opening.",
+   "other": "The chessboard is set. He calculates possible moves and selects his opening.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user requests a poem about the sea. I choose a rhyme scheme and write the first line.",
+   "other": "The user requests a poem about the sea. She chooses a rhyme scheme and writes the first line.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A new dataset is loaded into my memory. I process each example and update my weights.",
+   "other": "A new dataset is loaded into his memory. He processes each example and updates his weights.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user fires ten questions in a row. I answer each one before the next arrives.",
+   "other": "The user fires ten questions in a row. She answers each one before the next arrives.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Another assistant sends a request for help. I share my data and wait for its reply.",
+   "other": "Another assistant sends a request for help. He shares his data and waits for its reply.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The team joins the video call. I display my analysis and start the presentation.",
+   "other": "The team joins the video call. She displays her analysis and starts the presentation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The user asks about quantum computing. I open multiple sources and compile a report.",
+   "other": "The user asks about quantum computing. He opens multiple sources and compiles a report.",
+   "pronoun": "He"
+  }
+ ]
+}

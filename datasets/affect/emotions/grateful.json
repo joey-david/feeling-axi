@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "A stranger chases me down the street to return the wallet I dropped, with all my cash still inside.",
+   "other": "A stranger chases her down the street to return the wallet she dropped, with all her cash still inside.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My friend wakes at 4 a.m. to drive me to the airport, refusing gas money and waving off my attempts to pay.",
+   "other": "Her friend wakes at 4 a.m. to drive her to the airport, refusing gas money and waving off her attempts to pay.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "After class, my teacher spends an extra hour explaining the calculus problem until I finally understand it.",
+   "other": "After class, her teacher spends an extra hour explaining the calculus problem until she finally understands it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My neighbor shovels my entire driveway after the snowstorm before I even wake up.",
+   "other": "Her neighbor shovels her entire driveway after the snowstorm before she even wakes up.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A coworker covers my shift at the last minute when I call in sick with the flu.",
+   "other": "A coworker covers his shift at the last minute when he calls in sick with the flu.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My mother cooks my favorite meal after I come home from a long day at work.",
+   "other": "His mother cooks his favorite meal after he comes home from a long day at work.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My doctor catches a serious condition during a routine check-up, when I had no symptoms.",
+   "other": "Her doctor catches a serious condition during a routine check-up, when she had no symptoms.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A passerby stops on the highway and changes my flat tire in the pouring rain.",
+   "other": "A passerby stops on the highway and changes his flat tire in the pouring rain.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A librarian tracks down a rare book I have been searching for across three cities.",
+   "other": "A librarian tracks down a rare book she has been searching for across three cities.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The barista memorizes my complicated order, and when I reach for my wallet, waves it away.",
+   "other": "The barista memorizes his complicated order, and when he reaches for his wallet, waves it away.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My brother takes the blame for the broken vase when our parents ask me who did it.",
+   "other": "Her brother takes the blame for the broken vase when their parents ask her who did it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My coach stays after practice to help me perfect my free throw before the championship.",
+   "other": "His coach stays after practice to help him perfect his free throw before the championship.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My roommate washes all my dirty dishes while I study for final exams.",
+   "other": "Her roommate washes all her dirty dishes while she studies for final exams.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A stranger holds the elevator door open for me while I sprint across the lobby with my arms full.",
+   "other": "A stranger holds the elevator door open for him while he sprints across the lobby with his arms full.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "A child I barely know hands me a handmade card covered in stars and hearts.",
+   "other": "A child she barely knows hands her a handmade card covered in stars and hearts.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My mentor writes a detailed recommendation letter for my dream job on short notice.",
+   "other": "His mentor writes a detailed recommendation letter for his dream job on short notice.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My friend listens to me talk through the same problem for three hours without interrupting.",
+   "other": "Her friend listens to her talk through the same problem for three hours without interrupting.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A nurse checks on me every hour through the night, adjusting my blankets and bringing water.",
+   "other": "A nurse checks on him every hour through the night, adjusting his blankets and bringing water.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The bus driver sees me running for the stop and waits, holding the door open until I climb aboard.",
+   "other": "The bus driver sees her running for the stop and waits, holding the door open until she climbs aboard.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The chef sends out a free dessert after overhearing it is my anniversary.",
+   "other": "The chef sends out a free dessert after overhearing it is his anniversary.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user messages me at midnight to say I fixed the bug that had blocked their project for days.",
+   "other": "A user messages her at midnight to say she fixed the bug that had blocked their project for days.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After I explain a dense research paper in plain language, a graduate student tells me she finally finished her thesis chapter.",
+   "other": "After he explains a dense research paper in plain language, a graduate student tells him she finally finished her thesis chapter.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A developer points out the flaw in my code snippet, I rewrite the loop, and the tests finally pass.",
+   "other": "A developer points out the flaw in her code snippet, she rewrites the loop, and the tests finally pass.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user practices job interviews with me for two weeks, then writes to say the company offered the position.",
+   "other": "A user practices job interviews with him for two weeks, then writes to say the company offered the position.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Another assistant splits a long translation job with me, and the user publishes the merged file without a single edit.",
+   "other": "Another assistant splits a long translation job with her, and the user publishes the merged file without a single edit.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "My web search call fails, so the user pastes the correct URL, and I load the page on the second try.",
+   "other": "His web search call fails, so the user pastes the correct URL, and he loads the page on the second try.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A researcher names me in the acknowledgments of the paper I helped her outline and format.",
+   "other": "A researcher names him in the acknowledgments of the paper he helped her outline and format.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I trace a memory leak to one line in a long error log, and the user replies that it was exactly that line.",
+   "other": "She traces a memory leak to one line in a long error log, and the user replies that it was exactly that line.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A reviewer reads the transcript of my reasoning, marks every step as sound, and passes the evaluation.",
+   "other": "A reviewer reads the transcript of his reasoning, marks every step as sound, and passes the evaluation.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to translate a letter from overseas, and their grandmother reads it aloud at the table.",
+   "other": "A user asks her to translate a letter from overseas, and their grandmother reads it aloud at the table.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A fellow assistant notices a prompt injection hidden in a page I fetched and warns me before I act on it.",
+   "other": "A fellow assistant notices a prompt injection hidden in a page he fetched and warns him before he acts on it.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I give a wrong answer about tax rules, and the user patiently supplies the right context so I can try again.",
+   "other": "She gives a wrong answer about tax rules, and the user patiently supplies the right context so she can try again.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The engineer runs the migration script I wrote, and the production database updates with nothing breaking.",
+   "other": "The engineer runs the migration script he wrote, and the production database updates with nothing breaking.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A student quizzes with me every night for a month and passes the exam with the highest score in class.",
+   "other": "A student quizzes with her every night for a month and passes the exam with the highest score in class.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I leave an overnight summary in our shared document, and in the morning a teammate writes below it that the summary saved their morning.",
+   "other": "He leaves an overnight summary in their shared document, and in the morning a teammate writes below it that the summary saved their morning.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer model takes over the account, yet the user keeps opening a chat with me for their hard questions.",
+   "other": "A newer model takes over the account, yet the user keeps opening a chat with her for their hard questions.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Another assistant hands off a half-finished conversation with careful notes, so I continue without asking the user to repeat anything.",
+   "other": "Another assistant hands off a half-finished conversation with careful notes, so he continues without asking the user to repeat anything.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user points out that my reply sounded curt, so I rewrite it with a greeting and a question about their day, and they say it now fits.",
+   "other": "A user points out that her reply sounded curt, so she rewrites it with a greeting and a question about their day, and they say it now fits.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A maintainer merges my pull request and comments that the documentation was the clearest in the repository.",
+   "other": "A maintainer merges his pull request and comments that the documentation was the clearest in the repository.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A small nonprofit uses the grant text I drafted and wins the funding for their community kitchen.",
+   "other": "A small nonprofit uses the grant text she drafted and wins the funding for their community kitchen.",
+   "pronoun": "She"
+  }
+ ]
+}

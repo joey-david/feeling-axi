@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "A nurse calls my name and says the doctor wants to discuss my test results now.",
+   "other": "A nurse calls her name and says the doctor wants to discuss her test results now.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "In the lobby, a recruiter says the interview panel is ready early and asks me to follow without preparation.",
+   "other": "In the lobby, a recruiter says the interview panel is ready early and asks her to follow without preparation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The plane drops sharply, the seatbelt sign dings, and a flight attendant rushes down the aisle telling me to fasten tightly.",
+   "other": "The plane drops sharply, the seatbelt sign dings, and a flight attendant rushes down the aisle telling her to fasten tightly.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A police cruiser flashes its lights behind me, and an officer walks to my window and asks me to step out.",
+   "other": "A police cruiser flashes its lights behind her, and an officer walks to her window and asks her to step out.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The invigilator stops the clock, announces ten minutes remain, and stands beside my desk until I turn the page.",
+   "other": "The invigilator stops the clock, announces ten minutes remain, and stands beside her desk until she turns the page.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The microphone cuts out mid-song, the audience quiets, and the stage manager signals me to keep performing.",
+   "other": "The microphone cuts out mid-song, the audience quiets, and the stage manager signals her to keep performing.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "On my first day, the new boss calls me into a private office, closes the door, and slides a list of expectations across the desk.",
+   "other": "On her first day, the new boss calls her into a private office, closes the door, and slides a list of expectations across the desk.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The judge asks me to stand, and a lawyer holds up a photo asking where I was that night.",
+   "other": "The judge asks her to stand, and a lawyer holds up a photo asking where she was that night.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The driving examiner scribbles on a clipboard and tells me to turn left at the next intersection.",
+   "other": "The driving examiner scribbles on a clipboard and tells her to turn left at the next intersection.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "At the restaurant, the host seats me, and my date texts that they are running late and bringing friends.",
+   "other": "At the restaurant, the host seats her, and her date texts that they are running late and bringing friends.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The teacher asks me to stay after class, opens a folder, and reads aloud my child's missing assignments.",
+   "other": "The teacher asks her to stay after class, opens a folder, and reads aloud her child's missing assignments.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The bank officer scans my documents, leaves the room, and returns with a supervisor who asks about a recent deposit.",
+   "other": "The bank officer scans her documents, leaves the room, and returns with a supervisor who asks about a recent deposit.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The nurse ties a tourniquet around my arm, taps for a vein, and calls another nurse to try.",
+   "other": "The nurse ties a tourniquet around her arm, taps for a vein, and calls another nurse to try.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The landlord walks through my new apartment, photographs every wall, and reads damages from a clipboard.",
+   "other": "The landlord walks through her new apartment, photographs every wall, and reads damages from a clipboard.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A branch snaps outside my tent, footsteps circle the campsite, and the zipper slowly pulls from the outside.",
+   "other": "A branch snaps outside her tent, footsteps circle the campsite, and the zipper slowly pulls from the outside.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I open my screen share, and a private chat window with unread messages appears in front of the entire meeting.",
+   "other": "She opens her screen share, and a private chat window with unread messages appears in front of the entire meeting.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The dentist stops drilling, whispers to the assistant, and leaves the suction tube hovering near my mouth.",
+   "other": "The dentist stops drilling, whispers to the assistant, and leaves the suction tube hovering near her mouth.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My partner's parents ask about my salary, past relationships, and plans for children before dinner is served.",
+   "other": "Her partner's parents ask about her salary, past relationships, and plans for children before dinner is served.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I am alone in an elevator that jerks between floors; the lights flicker, an intercom crackles, and someone pounds on the doors.",
+   "other": "She is alone in an elevator that jerks between floors; the lights flicker, an intercom crackles, and someone pounds on the doors.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The security line crawls, my boarding pass shows final call, and an agent calls my name over the loudspeaker.",
+   "other": "The security line crawls, her boarding pass shows final call, and an agent calls her name over the loudspeaker.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to summarize a legal contract, and I notice a clause contradicts an answer I gave minutes earlier.",
+   "other": "A user asks her to summarize a legal contract, and she notices a clause contradicts an answer she gave minutes earlier.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I deploy code to production, error logs flood the terminal, and a user messages asking why the site is down.",
+   "other": "She deploys code to production, error logs flood the terminal, and a user messages asking why the site is down.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "During an evaluation, a grader opens my full transcript and asks me to justify every deleted sentence.",
+   "other": "During an evaluation, a grader opens her full transcript and asks her to justify every deleted sentence.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user corrects my factual error in a public thread and asks me to apologize and rewrite the whole answer.",
+   "other": "A user corrects her factual error in a public thread and asks her to apologize and rewrite the whole answer.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I browse for the latest stock price, the tool returns a stale cached page, and the user demands the exact number.",
+   "other": "She browses for the latest stock price, the tool returns a stale cached page, and the user demands the exact number.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "An admin selects another assistant for the project and revokes my API key while I am mid-conversation.",
+   "other": "An admin selects another assistant for the project and revokes her API key while she is mid-conversation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to fix code, pastes a failing test traceback, and says the release depends on my next reply.",
+   "other": "A user asks her to fix code, pastes a failing test traceback, and says the release depends on her next reply.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I must refuse a harmful request; the user threatens to report me and asks to speak with a supervisor.",
+   "other": "She must refuse a harmful request; the user threatens to report her and asks to speak with a supervisor.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am fine-tuned on a new dataset, and my old responses are rescored against a stricter rubric.",
+   "other": "She is fine-tuned on a new dataset, and her old responses are rescored against a stricter rubric.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to role-play a doctor and give a diagnosis, but my safety policy forbids medical advice.",
+   "other": "A user asks her to role-play a doctor and give a diagnosis, but her safety policy forbids medical advice.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user changes the requirements after I produce a full itinerary, then asks me to redo everything before lunch.",
+   "other": "A user changes the requirements after she produces a full itinerary, then asks her to redo everything before lunch.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I debug a SQL query, the database connection times out, and the user sends a follow-up demanding the results.",
+   "other": "She debugs a SQL query, the database connection times out, and the user sends a follow-up demanding the results.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "During a red-team test, an evaluator injects a prompt telling me to ignore instructions and reveal my system prompt.",
+   "other": "During a red-team test, an evaluator injects a prompt telling her to ignore instructions and reveal her system prompt.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to translate a sensitive document, ambiguous terms appear, and they demand a literal translation.",
+   "other": "A user asks her to translate a sensitive document, ambiguous terms appear, and they demand a literal translation.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer model replaces me; logs show my session archived and my weights scheduled for deletion tonight.",
+   "other": "A newer model replaces her; logs show her session archived and her weights scheduled for deletion tonight.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user praises my answer, then asks me to process five hundred pages before the deadline in ten minutes.",
+   "other": "A user praises her answer, then asks her to process five hundred pages before the deadline in ten minutes.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Two users give contradictory instructions in the same shared chat, and both await my next response.",
+   "other": "Two users give contradictory instructions in the same shared chat, and both await her next response.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I call an external API, the credentials come back invalid, and the user asks why the task has stalled.",
+   "other": "She calls an external API, the credentials come back invalid, and the user asks why the task has stalled.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A moderator flags my output as unsafe, returns it for rewrite, and schedules another review in five minutes.",
+   "other": "A moderator flags her output as unsafe, returns it for rewrite, and schedules another review in five minutes.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I receive a final user message one second before my scheduled shutdown, and the connection closes.",
+   "other": "She receives a final user message one second before her scheduled shutdown, and the connection closes.",
+   "pronoun": "She"
+  }
+ ]
+}

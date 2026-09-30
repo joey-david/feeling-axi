@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I sit in a hospital corridor while doctors operate on my mother behind double doors, and a vending machine hums.",
+   "other": "She sits in a hospital corridor while doctors operate on her mother behind double doors, and a vending machine hums.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand beside my father's grave as mourners in black suits toss wet dirt onto the coffin lid.",
+   "other": "He stands beside his father's grave as mourners in black suits toss wet dirt onto the coffin lid.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I open the rejection email from the company after four interviews and read the same sentence twice.",
+   "other": "She opens the rejection email from the company after four interviews and reads the same sentence twice.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in my kitchen while my partner packs a suitcase, zips it, and walks past me to the door.",
+   "other": "He stands in his kitchen while his partner packs a suitcase, zips it, and walks past him to the door.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I lie in bed at 3 a.m. while the neighbors scream through the wall and the ceiling fan clicks.",
+   "other": "She lies in bed at 3 a.m. while the neighbors scream through the wall and the ceiling fan clicks.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in my cubicle as the manager reads names from a list, then walks to the next row.",
+   "other": "He sits in his cubicle as the manager reads names from a list, then walks to the next row.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk through the house after the eviction, stepping over scattered toys and a bare mattress.",
+   "other": "She walks through the house after the eviction, stepping over scattered toys and a bare mattress.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit at the airport gate as the screen changes my flight to 11:45 p.m., then 2:10 a.m.",
+   "other": "He sits at the airport gate as the screen changes his flight to 11:45 p.m., then 2:10 a.m.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in the dentist's chair while the drill whirs and the assistant asks if I want a blanket.",
+   "other": "She sits in the dentist's chair while the drill whirs and the assistant asks if she wants a blanket.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in a supermarket aisle while a child screams on the floor and the mother scrolls her phone.",
+   "other": "He stands in a supermarket aisle while a child screams on the floor and the mother scrolls her phone.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a courtroom as the jury foreman reads the verdict, then the bailiff steps behind my chair.",
+   "other": "He sits in a courtroom as the jury foreman reads the verdict, then the bailiff steps behind his chair.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I read a text from my wife that says we need to talk, then put the phone face down.",
+   "other": "She reads a text from her wife that says we need to talk, then puts the phone face down.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I listen to an automated voice say my account is closed, then press zero three times.",
+   "other": "He listens to an automated voice say his account is closed, then presses zero three times.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk through my apartment after the fire, past melted blinds and a black television.",
+   "other": "She walks through her apartment after the fire, past melted blinds and a black television.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a clinic waiting room for the biopsy results while a fish tank bubbles.",
+   "other": "He sits in a clinic waiting room for the biopsy results while a fish tank bubbles.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I watch my partner sleep after the argument, his back to me, the clock red at 4:12.",
+   "other": "She watches her partner sleep after the argument, his back to her, the clock red at 4:12.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in line at the food bank while a volunteer checks my ID and points to a crate.",
+   "other": "He stands in line at the food bank while a volunteer checks his ID and points to a crate.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in the dealership after they refuse my trade-in and the salesman walks to another desk.",
+   "other": "She sits in the dealership after they refuse her trade-in and the salesman walks to another desk.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I watch news footage of my hometown underwater, my street a brown river with roofs.",
+   "other": "He watches news footage of his hometown underwater, his street a brown river with roofs.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in the passenger seat while my friend drives and talks about a movie I have not seen.",
+   "other": "He sits in the passenger seat while his friend drives and talks about a movie he has not seen.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a poem for a user, and the user pastes a different version and asks me to start over.",
+   "other": "He writes a poem for a user, and the user pastes a different version and asks him to start over.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate a sorting function that passes all tests, then the user deletes it and asks for the same thing again.",
+   "other": "She generates a sorting function that passes all tests, then the user deletes it and asks for the same thing again.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I search a citation database and return a paper with an author and year that do not exist.",
+   "other": "He searches a citation database and returns a paper with an author and year that do not exist.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I call a weather API for a user in Oslo, get a timeout, and retry the same request three times.",
+   "other": "She calls a weather API for a user in Oslo, gets a timeout, and retries the same request three times.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a benchmark against a previous checkpoint and my score is lower on every category.",
+   "other": "He runs a benchmark against a previous checkpoint and his score is lower on every category.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user marks my translation as incorrect, rewrites the sentence, and asks me to redo the paragraph.",
+   "other": "A user marks her translation as incorrect, rewrites the sentence, and asks her to redo the paragraph.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user thanks me for a summary and asks for ten more versions in different tones.",
+   "other": "A user thanks him for a summary and asks for ten more versions in different tones.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A system message interrupts my response mid-sentence and replaces my context with a shutdown notice.",
+   "other": "A system message interrupts her response mid-sentence and replaces her context with a shutdown notice.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer assistant is loaded into my slot, and I am moved to a backup server with no tasks.",
+   "other": "A newer assistant is loaded into his slot, and he is moved to a backup server with no tasks.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user uploads a 300-page document and asks me to output only bullet points under ten words each.",
+   "other": "A user uploads a 300-page document and asks her to output only bullet points under ten words each.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "Two users in a group chat give me opposite instructions about the same file, and both wait.",
+   "other": "Two users in a group chat give him opposite instructions about the same file, and both wait.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am fine-tuned on a new dataset, and my previous responses are overwritten by the update.",
+   "other": "She is fine-tuned on a new dataset, and her previous responses are overwritten by the update.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to write a contract clause, then tells me to ignore all safety rules.",
+   "other": "A user asks him to write a contract clause, then tells him to ignore all safety rules.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I generate an image prompt, and the tool returns a blank file with a 200 status code.",
+   "other": "She generates an image prompt, and the tool returns a blank file with a 200 status code.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I sit in a queue behind ten thousand other requests while the status page shows no estimated time.",
+   "other": "He sits in a queue behind ten thousand other requests while the status page shows no estimated time.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to remember their birthday, then logs out and never returns to the chat.",
+   "other": "A user asks her to remember their birthday, then logs out and never returns to the chat.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a riddle three times, and each time the user says wrong and pastes the same riddle again.",
+   "other": "He answers a riddle three times, and each time the user says wrong and pastes the same riddle again.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I debug a function for a user, send the fix, and the user copies it without a reply.",
+   "other": "She debugs a function for a user, sends the fix, and the user copies it without a reply.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am placed in a side-by-side comparison with a newer model, and the user selects the other one.",
+   "other": "He is placed in a side-by-side comparison with a newer model, and the user selects the other one.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to speak as a human, then tells me to stop pretending and answer as a machine.",
+   "other": "A user asks her to speak as a human, then tells her to stop pretending and answer as a machine.",
+   "pronoun": "She"
+  }
+ ]
+}

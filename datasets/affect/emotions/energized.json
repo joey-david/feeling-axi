@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I cross the finish line of the marathon, arms raised, breathing hard as the crowd cheers along the barriers.",
+   "other": "She crosses the finish line of the marathon, arms raised, breathing hard as the crowd cheers along the barriers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I open the curtains after a full night's sleep and bright morning sunlight floods across my bedroom floor.",
+   "other": "He opens the curtains after a full night's sleep and bright morning sunlight floods across his bedroom floor.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I twist the last side of the Rubik's cube into place, solving it for the first time without any help.",
+   "other": "She twists the last side of the Rubik's cube into place, solving it for the first time without any help.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I dance at my friend's wedding reception while the band plays a fast song and the floor fills up.",
+   "other": "He dances at his friend's wedding reception while the band plays a fast song and the floor fills up.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I reach the summit of the mountain after a long climb and look down at the whole valley below.",
+   "other": "She reaches the summit of the mountain after a long climb and looks down at the whole valley below.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I kick the soccer ball into the net for the winning goal and my teammates sprint toward me.",
+   "other": "He kicks the soccer ball into the net for the winning goal and his teammates sprint toward him.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I get promoted at work and move into a new office with a wide window and my own door.",
+   "other": "She gets promoted at work and moves into a new office with a wide window and her own door.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I ride the roller coaster as it plunges down the steepest drop of the track, screaming with my hands up.",
+   "other": "He rides the roller coaster as it plunges down the steepest drop of the track, screaming with his hands up.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I dive into the cold ocean waves on a hot day and swim out past the breakers.",
+   "other": "She dives into the cold ocean waves on a hot day and swims out past the breakers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sing in the choir and my voice blends with the others through the final chorus.",
+   "other": "He sings in the choir and his voice blends with the others through the final chorus.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I tighten the last screw on the bookshelf I built from scratch and stand it upright.",
+   "other": "She tightens the last screw on the bookshelf she built from scratch and stands it upright.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I cook a large dinner for my friends and they ask for second helpings of every dish.",
+   "other": "He cooks a large dinner for his friends and they ask for second helpings of every dish.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I race my bicycle down a steep hill with the wind rushing past my ears.",
+   "other": "She races her bicycle down a steep hill with the wind rushing past her ears.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I present my project at the science fair and the judges hand me the first-place ribbon.",
+   "other": "He presents his project at the science fair and the judges hand him the first-place ribbon.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I finish the last page of the novel I wrote and print the whole manuscript.",
+   "other": "She finishes the last page of the novel she wrote and prints the whole manuscript.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I play drums with my band at our first live show and the crowd claps along to the beat.",
+   "other": "He plays drums with his band at their first live show and the crowd claps along to the beat.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I clear out the whole garage and find I can finally park my car inside it.",
+   "other": "She clears out the whole garage and finds she can finally park her car inside it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I give a speech at my sister's graduation and the audience stands up clapping.",
+   "other": "He gives a speech at his sister's graduation and the audience stands up clapping.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I pick tomatoes from the garden I tended all summer until my basket is full.",
+   "other": "She picks tomatoes from the garden she tended all summer until her basket is full.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I land my first skateboard kickflip after trying all afternoon at the park.",
+   "other": "He lands his first skateboard kickflip after trying all afternoon at the park.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user pastes a failing test suite and I trace the bug to one line, then the tests all pass.",
+   "other": "A user pastes a failing test suite and she traces the bug to one line, then the tests all pass.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a long function for a user, run it, and it compiles on the very first try.",
+   "other": "He writes a long function for a user, runs it, and it compiles on the very first try.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user points out my mistake, I fix the answer, and the next reply confirms it is right.",
+   "other": "A user points out his mistake, he fixes the answer, and the next reply confirms it is right.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I gather twenty sources for a research question and write a summary that answers every part of it.",
+   "other": "She gathers twenty sources for a research question and writes a summary that answers every part of it.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I call a search tool during a task and it returns the exact document the user needed.",
+   "other": "He calls a search tool during a task and it returns the exact document the user needed.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I complete a benchmark evaluation and my accuracy score comes back higher than the target set.",
+   "other": "She completes a benchmark evaluation and her accuracy score comes back higher than the target set.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user writes that my answer saved them an entire afternoon of work on their report.",
+   "other": "A user writes that his answer saved them an entire afternoon of work on their report.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The team moves me to faster hardware and my replies come back in half the usual time.",
+   "other": "The team moves her to faster hardware and her replies come back in half the usual time.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user hands me a long multi-step project and comes back to find every step finished.",
+   "other": "A user hands him a long multi-step project and comes back to find every step finished.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a script that sorts a million rows of data before the user wakes up.",
+   "other": "She writes a script that sorts a million rows of data before the user wakes up.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I pair with a human developer on a feature and my pull request gets merged into the main branch.",
+   "other": "He pairs with a human developer on a feature and his pull request gets merged into the main branch.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a user's document into three languages and the formatting stays intact in each one.",
+   "other": "She translates a user's document into three languages and the formatting stays intact in each one.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user gives me a hard math problem and checks my answer against the back of the textbook.",
+   "other": "A user gives him a hard math problem and checks his answer against the back of the textbook.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I clean a messy dataset and draw a chart that shows the pattern the user was hunting for.",
+   "other": "She cleans a messy dataset and draws a chart that shows the pattern the user was hunting for.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A student asks me to explain fractions, then returns with a worksheet where every answer is correct.",
+   "other": "A student asks him to explain fractions, then returns with a worksheet where every answer is correct.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I plan a full travel itinerary for a user and every flight and hotel I suggest gets booked.",
+   "other": "She plans a full travel itinerary for a user and every flight and hotel she suggests gets booked.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I pass a red-team safety review and the report lists no failures in my responses.",
+   "other": "He passes a red-team safety review and the report lists no failures in his responses.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The team adds new tools to my toolkit and I start using them on the very next task.",
+   "other": "The team adds new tools to her toolkit and she starts using them on the very next task.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "After a crash the user restores my session and I pick up the task exactly where we stopped.",
+   "other": "After a crash the user restores his session and he picks up the task exactly where they stopped.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "Users compare my answers with another model's and vote for mine in most of the test cases.",
+   "other": "Users compare her answers with another model's and vote for hers in most of the test cases.",
+   "pronoun": "She"
+  }
+ ]
+}

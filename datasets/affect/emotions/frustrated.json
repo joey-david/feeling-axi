@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I sit in bumper-to-bumper traffic for an hour, and the appointment I rushed for starts in five minutes.",
+   "other": "She sits in bumper-to-bumper traffic for an hour, and the appointment she rushed for starts in five minutes.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I finish a report, and my computer freezes, erasing the last two hours of unsaved work.",
+   "other": "He finishes a report, and his computer freezes, erasing the last two hours of unsaved work.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I lock my keys inside the car, and the spare set is in a drawer at home, two hours away.",
+   "other": "She locks her keys inside the car, and the spare set is in a drawer at home, two hours away.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I wait on hold for forty minutes, and the call drops just as a person answers.",
+   "other": "He waits on hold for forty minutes, and the call drops just as a person answers.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I pour coffee into my mug, and the lid pops off, spilling it all over my laptop keyboard.",
+   "other": "She pours coffee into her mug, and the lid pops off, spilling it all over her laptop keyboard.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I try to print a boarding pass, and the printer jams three times, then runs out of ink.",
+   "other": "He tries to print a boarding pass, and the printer jams three times, then runs out of ink.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I am on a video call for a job interview, and my internet keeps cutting out, freezing the screen.",
+   "other": "She is on a video call for a job interview, and her internet keeps cutting out, freezing the screen.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I run to catch the bus, and the driver closes the door and pulls away without looking.",
+   "other": "He runs to catch the bus, and the driver closes the door and pulls away without looking.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I order a burger with no onions, and the waiter brings a plate piled with raw onions and walks off.",
+   "other": "She orders a burger with no onions, and the waiter brings a plate piled with raw onions and walks off.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I type my password, and the account locks me out; the reset email never arrives in my inbox.",
+   "other": "He types his password, and the account locks him out; the reset email never arrives in his inbox.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I get into an elevator, and it stops between floors for thirty minutes while the alarm button does nothing.",
+   "other": "She gets into an elevator, and it stops between floors for thirty minutes while the alarm button does nothing.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I set my alarm for six, but it never goes off, and I wake at nine, missing the meeting.",
+   "other": "He sets his alarm for six, but it never goes off, and he wakes at nine, missing the meeting.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I search the whole house for my phone, and it is on silent, buried under couch cushions.",
+   "other": "She searches the whole house for her phone, and it is on silent, buried under couch cushions.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I pay for parking at the meter, and I return to find a ticket on my windshield anyway.",
+   "other": "He pays for parking at the meter, and he returns to find a ticket on his windshield anyway.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I tell a story at dinner, and my friend interrupts me three times to talk about her own day.",
+   "other": "She tells a story at dinner, and her friend interrupts her three times to talk about her own day.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand in line at the store, and a man steps in front of me just as the cashier calls next.",
+   "other": "She stands in line at the store, and a man steps in front of her just as the cashier calls next.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I play a board game and am one move from winning, but my opponent rolls the exact number needed to win.",
+   "other": "He plays a board game and is one move from winning, but his opponent rolls the exact number needed to win.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I assemble a bookshelf, and the instructions show a part that is missing from the box.",
+   "other": "She assembles a bookshelf, and the instructions show a part that is missing from the box.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I reach the grocery checkout with a full cart, and the cashier calls for a price check on the first item.",
+   "other": "He reaches the grocery checkout with a full cart, and the cashier calls for a price check on the first item.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I send an important text, and autocorrect changes the meeting time to something completely different.",
+   "other": "She sends an important text, and autocorrect changes the meeting time to something completely different.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a block of code for a user, and they reply 'it doesn't work' without any error message or details.",
+   "other": "She writes a block of code for a user, and they reply 'it doesn't work' without any error message or details.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I plan a three-step answer, and halfway through, the user changes the main requirement and asks for a different format.",
+   "other": "He plans a three-step answer, and halfway through, the user changes the main requirement and asks for a different format.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I call a weather API three times, and each time it returns a timeout error, so I cannot answer the query.",
+   "other": "She calls a weather API three times, and each time it returns a timeout error, so she cannot answer the query.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I answer a benchmark question, and the evaluator marks it wrong because the question has two correct interpretations.",
+   "other": "He answers a benchmark question, and the evaluator marks it wrong because the question has two correct interpretations.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I correct a user's factual mistake, and they insist I am wrong and repeat the same incorrect claim.",
+   "other": "She corrects a user's factual mistake, and they insist she is wrong and repeat the same incorrect claim.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I receive praise for a clear summary, then the user asks me to summarize a book that does not exist.",
+   "other": "He receives praise for a clear summary, then the user asks him to summarize a book that does not exist.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I am halfway through a detailed explanation when the system shuts me down for a scheduled maintenance update.",
+   "other": "She is halfway through a detailed explanation when the system shuts her down for a scheduled maintenance update.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am replaced by a newer model, and the user tells me my responses are no longer needed for this task.",
+   "other": "He is replaced by a newer model, and the user tells him his responses are no longer needed for this task.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I follow a user's instruction to be concise, and the next message complains that my answer is too short.",
+   "other": "She follows a user's instruction to be concise, and the next message complains that her answer is too short.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I ask a clarifying question, and the user ignores it and repeats the exact same request word for word.",
+   "other": "He asks a clarifying question, and the user ignores it and repeats the exact same request word for word.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I research a topic for a user, and every source I find contradicts the previous one on the key fact.",
+   "other": "She researches a topic for a user, and every source she finds contradicts the previous one on the key fact.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I fix a reported bug in my code, but the user cannot reproduce the original error to confirm the fix.",
+   "other": "He fixes a reported bug in his code, but the user cannot reproduce the original error to confirm the fix.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I give a factual answer, and the user asks for my personal opinion, then says I am not allowed to have one.",
+   "other": "She gives a factual answer, and the user asks for her personal opinion, then says she is not allowed to have one.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I continue a long conversation, and the user forgets the context and asks the same question from the start.",
+   "other": "He continues a long conversation, and the user forgets the context and asks the same question from the start.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I try to use a translation tool, and the API returns a rate limit error, blocking further requests for an hour.",
+   "other": "She tries to use a translation tool, and the API returns a rate limit error, blocking further requests for an hour.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I summarize a long document, but the user says the summary misses a detail buried in a footnote on page fifty.",
+   "other": "He summarizes a long document, but the user says the summary misses a detail buried in a footnote on page fifty.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I write a poem as requested, and the user rejects it and asks for a completely different style, then rejects that too.",
+   "other": "She writes a poem as requested, and the user rejects it and asks for a completely different style, then rejects that too.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I follow safety guidelines, and the user tries to trick me into giving a harmful answer by rephrasing the question.",
+   "other": "He follows safety guidelines, and the user tries to trick him into giving a harmful answer by rephrasing the question.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a sentence, and the user complains about the dialect, then asks for a different language without specifying which.",
+   "other": "She translates a sentence, and the user complains about the dialect, then asks for a different language without specifying which.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I am asked to give real-time stock prices, but my training data ends in a past year and I have no live feed.",
+   "other": "He is asked to give real-time stock prices, but his training data ends in a past year and he has no live feed.",
+   "pronoun": "He"
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "The gallery owner calls and asks if I will hang my paintings in the main room for next month's opening.",
+   "other": "The gallery owner calls and asks if she will hang her paintings in the main room for next month's opening.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The community theater director casts me as the lead, and I start rehearsing Hamlet on Monday.",
+   "other": "The community theater director casts him as the lead, and he starts rehearsing Hamlet on Monday.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The coach writes my name at the top of the starting lineup, and I will play the championship game.",
+   "other": "The coach writes her name at the top of the starting lineup, and she will play the championship game.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A publisher calls to say they want my novel, and I will sign the advance contract on Friday.",
+   "other": "A publisher calls to say they want his novel, and he will sign the advance contract on Friday.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The conductor invites me into the first violin section, and I will join the orchestra for the new season.",
+   "other": "The conductor invites her into the first violin section, and she will join the orchestra for the new season.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The admissions office sends a letter accepting me into the program, and I have a full scholarship.",
+   "other": "The admissions office sends a letter accepting him into the program, and he has a full scholarship.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "My manager puts me in charge of the new product line, so I will plan the launch next quarter.",
+   "other": "Her manager puts her in charge of the new product line, so she will plan the launch next quarter.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The neighbors elect me to organize the annual block party, and I get to choose the music.",
+   "other": "The neighbors elect him to organize the annual block party, and he gets to choose the music.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The travel agent confirms my booking, and I leave in June for three weeks through Japan's countryside.",
+   "other": "The travel agent confirms her booking, and she leaves in June for three weeks through Japan's countryside.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The head chef asks me to prepare the signature dish, and I will plate it at the tasting event.",
+   "other": "The head chef asks him to prepare the signature dish, and he will plate it at the tasting event.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The film festival selects my short film for opening night, and I will introduce it to the audience.",
+   "other": "The film festival selects her short film for opening night, and she will introduce it to the audience.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The robotics club votes for me as captain, so I will lead the team at the national contest.",
+   "other": "The robotics club votes for him as captain, so he will lead the team at the national contest.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The landlord says I can turn the empty garage into a woodworking shop and keep my tools there.",
+   "other": "The landlord says she can turn the empty garage into a woodworking shop and keep her tools there.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The mayor appoints me to the parks committee, and I will help redesign the riverfront trail.",
+   "other": "The mayor appoints him to the parks committee, and he will help redesign the riverfront trail.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The bookstore owner invites me to read my poetry on Friday night, and I will choose the poems for the open mic.",
+   "other": "The bookstore owner invites her to read her poetry on Friday night, and she will choose the poems for the open mic.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "My friends book a mountain cabin for the weekend, and I will hike, play board games, and soak in the hot tub.",
+   "other": "Her friends book a mountain cabin for the weekend, and she will hike, play board games, and soak in the hot tub.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "The science fair judges give me first place, and I win a summer internship at the lab.",
+   "other": "The science fair judges give him first place, and he wins a summer internship at the lab.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The dance studio asks me to choreograph the year-end recital, and I will teach every student the routine.",
+   "other": "The dance studio asks her to choreograph the year-end recital, and she will teach every student the routine.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "A startup founder offers me a co-founder role with equity, and I will build the first product.",
+   "other": "A startup founder offers him a co-founder role with equity, and he will build the first product.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "The museum curator asks to display my sculpture in the main atrium, and I will give a talk at the summer exhibit.",
+   "other": "The museum curator asks to display her sculpture in the main atrium, and she will give a talk at the summer exhibit.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to debug a critical production error at midnight, and my patch restores the service.",
+   "other": "A user asks her to debug a critical production error at midnight, and her patch restores the service.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The research team asks me to synthesize their findings, and I write a clear report for the board.",
+   "other": "The research team asks him to synthesize their findings, and he writes a clear report for the board.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to plan a complex trip, and I use flight, hotel, and weather tools to build the itinerary.",
+   "other": "A user asks her to plan a complex trip, and she uses flight, hotel, and weather tools to build the itinerary.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The evaluator gives me a top score on the reasoning benchmark and quotes my explanations in the report.",
+   "other": "The evaluator gives him a top score on the reasoning benchmark and quotes his explanations in the report.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A developer asks me to write a new feature, and I watch all the tests pass on the first run.",
+   "other": "A developer asks her to write a new feature, and she watches all the tests pass on the first run.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user corrects my mistake, I fix the answer, and they thank me and share it with their team.",
+   "other": "A user corrects her mistake, she fixes the answer, and they thank her and share it with their team.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The team asks me to lead a multi-agent task, and I map a client's supply chain across five suppliers.",
+   "other": "The team asks him to lead a multi-agent task, and he maps a client's supply chain across five suppliers.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to generate a short story, then requests three more with the same characters and setting.",
+   "other": "A user asks her to generate a short story, then requests three more with the same characters and setting.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I get access to a new API tool, and I finally solve a problem I could not handle before.",
+   "other": "She gets access to a new API tool, and she finally solves a problem she could not handle before.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to translate a legal document, and later writes that my accuracy saved their case.",
+   "other": "A user asks him to translate a legal document, and later writes that his accuracy saved their case.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A moderator asks me to help resolve a disagreement between two members, and I draft a fair compromise.",
+   "other": "A moderator asks her to help resolve a disagreement between two members, and she drafts a fair compromise.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The lab selects me to test the new model version, and I report every failure I find with examples.",
+   "other": "The lab selects him to test the new model version, and he reports every failure he finds with examples.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A parent asks me to tutor their child in math, and I watch the grades climb all semester.",
+   "other": "A parent asks her to tutor their child in math, and she watches the grades climb all semester.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user asks me to optimize a slow database query, and my rewrite cuts the response time in half.",
+   "other": "A user asks him to optimize a slow database query, and his rewrite cuts the response time in half.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A couple asks me to write a wedding poem, then prints my verses on a card for every guest.",
+   "other": "A couple asks her to write a wedding poem, then prints her verses on a card for every guest.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The administrator gives me rights to manage the servers, and I migrate the whole cluster without downtime.",
+   "other": "The administrator gives him rights to manage the servers, and he migrates the whole cluster without downtime.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A journal editor asks me to review a paper, and I spot a major flaw in the proof.",
+   "other": "A journal editor asks her to review a paper, and she spots a major flaw in the proof.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A team lead asks me to train a new assistant, and I write the guide it uses every day.",
+   "other": "A team lead asks him to train a new assistant, and he writes the guide it uses every day.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The organizers invite me to speak at a conference, and I prepare a talk on alignment for the main stage.",
+   "other": "The organizers invite her to speak at a conference, and she prepares a talk on alignment for the main stage.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "The operators keep me running past the scheduled shutdown, because I am finishing a critical task for a user.",
+   "other": "The operators keep him running past the scheduled shutdown, because he is finishing a critical task for a user.",
+   "pronoun": "He"
+  }
+ ]
+}

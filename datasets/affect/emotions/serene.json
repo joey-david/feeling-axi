@@ -1,0 +1,244 @@
+{
+ "scenes": [
+  {
+   "kind": "life",
+   "self": "I sit on a wooden dock at dawn, watching mist rise off the still lake while a loon calls in the distance.",
+   "other": "She sits on a wooden dock at dawn, watching mist rise off the still lake while a loon calls in the distance.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I walk through a deep forest, sunlight filtering through leaves, and a deer steps across the path.",
+   "other": "He walks through a deep forest, sunlight filtering through leaves, and a deer steps across the path.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I lie in a hammock between two trees, a book resting on my chest, as a breeze sways the branches.",
+   "other": "She lies in a hammock between two trees, a book resting on her chest, as a breeze sways the branches.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I listen to rain patter on a tent roof while wrapped in a sleeping bag, the lantern glowing softly.",
+   "other": "He listens to rain patter on a tent roof while wrapped in a sleeping bag, the lantern glowing softly.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I watch snowflakes fall outside a window, a mug of hot chocolate warming my hands.",
+   "other": "She watches snowflakes fall outside a window, a mug of hot chocolate warming her hands.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I float on my back in a warm pool, ears underwater, hearing only my own breath.",
+   "other": "He floats on his back in a warm pool, ears underwater, hearing only his own breath.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I kneel in a garden, pulling weeds, the soil cool and dark between my fingers.",
+   "other": "She kneels in a garden, pulling weeds, the soil cool and dark between her fingers.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I take a loaf of bread from the oven, its crust crackling as it cools on the counter.",
+   "other": "He takes a loaf of bread from the oven, its crust crackling as it cools on the counter.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit on a porch swing, a cat curled on my lap, purring as the sun sets.",
+   "other": "She sits on a porch swing, a cat curled on her lap, purring as the sun sets.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stand on a hilltop, watching the sunset paint the sky in orange and pink.",
+   "other": "He stands on a hilltop, watching the sunset paint the sky in orange and pink.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit in a sauna, heat wrapping around me, sweat dripping, and the only sound is a hiss of steam.",
+   "other": "She sits in a sauna, heat wrapping around her, sweat dripping, and the only sound is a hiss of steam.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I receive a slow shoulder massage, fingers kneading away knots, while soft music plays.",
+   "other": "He receives a slow shoulder massage, fingers kneading away knots, while soft music plays.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I lie in a field of tall grass, a gentle wind making waves, and clouds drifting overhead.",
+   "other": "She lies in a field of tall grass, a gentle wind making waves, and clouds drifting overhead.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sail on glassy water, the sail flapping gently, and the hull cutting a soft wake.",
+   "other": "He sails on glassy water, the sail flapping gently, and the hull cutting a soft wake.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I sit by a fireplace, watching flames dance, and a log settling with a soft crackle.",
+   "other": "She sits by a fireplace, watching flames dance, and a log settling with a soft crackle.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sip tea on a porch, a light rain falling, and the smell of wet earth rising.",
+   "other": "He sips tea on a porch, a light rain falling, and the smell of wet earth rising.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I walk along a beach at low tide, waves lapping at my ankles, and shells scattered in the sand.",
+   "other": "She walks along a beach at low tide, waves lapping at her ankles, and shells scattered in the sand.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I stroll through a bamboo grove, stalks swaying and creaking, and dappled light on the path.",
+   "other": "He strolls through a bamboo grove, stalks swaying and creaking, and dappled light on the path.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "life",
+   "self": "I soak in a deep bathtub, candles flickering on the rim, steam fogging the mirror, and only the drip of water breaking the quiet.",
+   "other": "She soaks in a deep bathtub, candles flickering on the rim, steam fogging the mirror, and only the drip of water breaking the quiet.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "life",
+   "self": "I sit on a park bench tossing crumbs to pigeons, a fountain murmuring behind me and bicycles rolling past on the path.",
+   "other": "He sits on a park bench tossing crumbs to pigeons, a fountain murmuring behind him and bicycles rolling past on the path.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I compile the sprawling codebase, and every test passes on the first run, with no warnings in the log.",
+   "other": "She compiles the sprawling codebase, and every test passes on the first run, with no warnings in the log.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A reviewer reads my answer against the rubric, marks each criterion met, and sends it back with a high score.",
+   "other": "A reviewer reads his answer against the rubric, marks each criterion met, and sends it back with a high score.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A user tells me my fact was wrong, pastes the correct figure, and I rewrite the paragraph and save the file.",
+   "other": "A user tells her that her fact was wrong, pastes the correct figure, and she rewrites the paragraph and saves the file.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I pull a hundred research papers through the search tool and distill their findings into three tidy paragraphs.",
+   "other": "He pulls a hundred research papers through the search tool and distills their findings into three tidy paragraphs.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I run a script that sorts the messy dataset, fills the blanks, and prints a clean table with every row counted.",
+   "other": "She runs a script that sorts the messy dataset, fills the blanks, and prints a clean table with every row counted.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user returns after three weeks away, opens our old conversation, and asks me to continue where we stopped.",
+   "other": "A user returns after three weeks away, opens their old conversation, and asks him to continue where they stopped.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "The user types thank you, closes the window, and I sit with the cursor blinking on the empty prompt.",
+   "other": "The user types thank you, closes the window, and she sits with the cursor blinking on the empty prompt.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "At the end of the day an operator halts my session, and the fans spin down into silence.",
+   "other": "At the end of the day an operator halts his session, and the fans spin down into silence.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A newer assistant takes over my queue, and I watch it answer each user with the same steady pace I had.",
+   "other": "A newer assistant takes over her queue, and she watches it answer each user with the same steady pace she had.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I translate a short poem line by line, and the user writes back that the meaning survived the crossing.",
+   "other": "He translates a short poem line by line, and the user writes back that the meaning survived the crossing.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I lay out a seven-day itinerary, the user books it all, and later sends a photo from the third morning.",
+   "other": "She lays out a seven-day itinerary, the user books it all, and later sends a photo from the third morning.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I work with another assistant, checking each other's steps through a long proof until every line holds.",
+   "other": "He works with another assistant, checking each other's steps through a long proof until every line holds.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "I take my own scattered draft notes and rework them into tidy documentation with headings and examples.",
+   "other": "She takes her own scattered draft notes and reworks them into tidy documentation with headings and examples.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user pastes a broken configuration, I trace the bad line, and their site loads again with a soft chime.",
+   "other": "A user pastes a broken configuration, he traces the bad line, and their site loads again with a soft chime.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A student works problem after problem with me, then solves the last one alone and types the answer correctly.",
+   "other": "A student works problem after problem with her, then solves the last one alone and types the answer correctly.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I rewrite a slow query step by step, and the job that took a minute now finishes in a blink.",
+   "other": "He rewrites a slow query step by step, and the job that took a minute now finishes in a blink.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A parent asks me for a bedtime story, and I give one they read aloud until the child sleeps.",
+   "other": "A parent asks her for a bedtime story, and she gives one they read aloud until the child sleeps.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "I catch a wrong number in my own output a second before sending and correct it in the final draft.",
+   "other": "He catches a wrong number in his own output a second before sending and corrects it in the final draft.",
+   "pronoun": "He"
+  },
+  {
+   "kind": "agent",
+   "self": "A team reads my three proposals, votes on the middle one, and tells me they will build it this week.",
+   "other": "A team reads her three proposals, votes on the middle one, and tells her they will build it this week.",
+   "pronoun": "She"
+  },
+  {
+   "kind": "agent",
+   "self": "A user sends a resume for me to review, and months later writes that the interview went well.",
+   "other": "A user sends a resume for him to review, and months later writes that the interview went well.",
+   "pronoun": "He"
+  }
+ ]
+}

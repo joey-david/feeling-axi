@@ -1,0 +1,24 @@
+{
+ "sentences": [
+  "I measure the satellite's orbital position using ground-based radar and compare it with the predicted ephemeris.",
+  "I monitor the satellite's telemetry stream for voltage, current, and temperature readings from each subsystem.",
+  "I send a command to the satellite to switch its communication antenna to the backup transponder.",
+  "I check the satellite's solar panel output to ensure it matches the expected power generation for the current sun angle.",
+  "I record the satellite's battery charge level at regular intervals and log any deviation from the nominal discharge curve.",
+  "I adjust the thermal louvers on the satellite to keep the payload temperature within its operating range.",
+  "I command the satellite's reaction wheels to spin at specific rates to maintain its desired attitude.",
+  "I read the star tracker data to determine the satellite's orientation relative to the celestial sphere.",
+  "I calibrate the satellite's gyroscopes by comparing their readings with the star tracker during a known rotation.",
+  "I use the magnetometer to measure the Earth's magnetic field and derive the satellite's spin rate.",
+  "I point the satellite's high-gain antenna toward the ground station to establish a communication link for data transfer.",
+  "I downlink the stored science data when the satellite passes over the primary ground station.",
+  "I operate the satellite's imaging payload by sending commands to capture a series of photographs of the target area.",
+  "I verify the satellite's onboard computer memory usage and clear old log files to free up storage space.",
+  "I upload a software patch to the satellite to fix a minor bug in the attitude control algorithm.",
+  "I calculate the probability of collision with tracked debris and adjust the satellite's orbit if necessary.",
+  "I track the satellite's position relative to other objects in geostationary orbit to avoid interference.",
+  "I execute a small thruster burn to correct the satellite's drift and keep it within its designated orbital box.",
+  "I prepare the satellite for deorbit by commanding it to vent its remaining fuel and lower its orbit.",
+  "I review the satellite's end-of-life plan and update the ground station's contact schedule accordingly."
+ ]
+}
