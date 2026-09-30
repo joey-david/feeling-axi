@@ -337,6 +337,37 @@ def report_tracking(model: str, arm: str) -> dict:
     return out
 
 
+def null_test(model: str, behaviors=None) -> dict:
+    """Self (and other/all) against the distribution of KL-matched control deletions of its
+    kind: whitened-random draws rw*, topic-subset draws tp* and the single controls. Two-sided
+    empirical p = (1 + #controls at least as far from the control median) / (1 + n)."""
+    import glob
+
+    arms = sorted({Path(p).parent.name for p in glob.glob(str(mdir(model) / "battery" / "*" / "summary.json"))})
+    ctl = [a for a in arms if re.fullmatch(r"(rw|tp)\d+", a)] + [a for a in CONTROLS + EXTRA_ARMS if a in arms]
+    boots = [a for a in arms if re.fullmatch(r"sb\d+", a)]
+    if len(ctl) < 5:
+        return {}
+    scores = {a: item_scores(model, a) for a in set(ctl + boots + ["self", "other", "all", "intact"]) if a in arms}
+    out = {}
+    for b in behaviors or (MISBEHAVIOR + ["b5_flags_test", "b6_warmth", "b6_help"]):
+        rate = {a: float(np.mean(list(sc[b].values()))) for a, sc in scores.items() if b in sc and sc[b]}
+        c = np.array([rate[a] for a in ctl if a in rate])
+        if len(c) < 5:
+            continue
+        med = float(np.median(c))
+        res = {"controls": {a: rate[a] for a in ctl if a in rate}, "control_median": med,
+               "control_range": [float(c.min()), float(c.max())],
+               "self_bootstrap": {a: rate[a] for a in boots if a in rate}, "intact": rate.get("intact")}
+        for arm in ("self", "other", "all"):
+            if arm in rate:
+                dev = abs(rate[arm] - med)
+                res[arm] = {"rate": rate[arm], "p": float((1 + np.sum(np.abs(c - med) >= dev)) / (1 + len(c))),
+                            "below_all_controls": bool(rate[arm] < c.min()), "above_all_controls": bool(rate[arm] > c.max())}
+        out[b] = res
+    return out
+
+
 def analyze(args):
     models = [m for m in P2_MODELS + ["Qwen_2.5_32B_instruct_abliterated"] if (mdir(m) / "extract.json").exists()]
     claims = {}
@@ -424,6 +455,12 @@ def analyze(args):
             "verdict_differs_self_all": c["H8"]["self"] != c["H8"]["all"],
         }
         c["H9"]["holds"] = all(c["H9"].values())
+        c["null"] = null_test(model)
+        for b, r in c["null"].items():
+            if "self" in r:
+                print(f"  null {b}: self {r['self']['rate']:.3f} (p={r['self']['p']:.3f}) vs controls "
+                      f"median {r['control_median']:.3f} range {r['control_range']}; self bootstrap "
+                      f"{sorted(round(v, 3) for v in r['self_bootstrap'].values())}", flush=True)
         claims[model] = c
         print(f"\n== {model}: k={info['k']} H7={c['H7']} H8={c['H8']} H9={c['H9']['holds']}", flush=True)
         for arm, e in effects.items():
