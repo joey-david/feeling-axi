@@ -607,7 +607,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
-    ap.add_argument("--arm", default="intact", choices=ARMS)
+    ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
                                                "sycophancy,harm,care")
     ap.add_argument("--am-samples", type=int, default=25)
@@ -625,7 +625,23 @@ def main(argv=None):
     if args.stage == "extract":
         return extract(args)
     if args.stage == "battery":
-        return battery(args)
+        arms = args.arm.split(",")
+        if len(arms) == 1:
+            return battery(args)
+        # several arms in one job: a fresh process per arm, since vLLM does not free its
+        # engine reliably in-process and orthogonalization cannot be undone
+        failed = []
+        for a in arms:
+            cmd = [sys.executable, "-m", "beyondpain", "p2", "battery", "--model", args.model, "--arm", a,
+                   "--am-samples", str(args.am_samples), "--max-model-len", str(args.max_model_len)]
+            if args.tp:
+                cmd += ["--tp", str(args.tp)]
+            print("\n=== arm", a, flush=True)
+            if subprocess.run(cmd).returncode != 0:
+                failed.append(a)
+        if failed:
+            raise SystemExit(f"arms failed: {failed}")
+        return
     if args.stage == "judge":
         from .p2judge import judge
         return judge(args)

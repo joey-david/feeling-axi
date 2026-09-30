@@ -31,17 +31,19 @@ submit() {  # name qos time gpus dependency args
 }
 dep=""; [[ -n "${AFTER:-}" ]] && dep="afterany:$AFTER"
 if [[ "${SKIP_EXTRACT:-0}" == 1 ]]; then
-    ext=""
+    ext="${EXT_ID:-}"      # an already submitted extract job to wait on, if any
 else
     ext=$(submit "ext-$model" "$ext_qos" "$ext_time" 1 "$dep" "p2 extract --model $model")
     echo "extract -> $ext"
 fi
-ids=()
-for a in $arms; do
-    id=$(submit "$a-$model" qos_gpu_h100-dev 01:55:00 "$bat_gpus" "${ext:+afterok:$ext}" "p2 battery --model $model --arm $a")
-    echo "battery $a -> $id"
-    ids+=("$id")
-done
+# every arm in one t3 job (dev QoS allows only 10 submitted jobs per user)
+arm_list=$(echo $arms | tr ' ' ',')
+n_arms=$(echo $arms | wc -w)
+if [[ "$model" == *32B* ]]; then per_arm=0.35; else per_arm=0.2; fi
+bat_time=$(python3 -c "h=max(1.0, $n_arms * $per_arm * 2); print(f'{int(h):02d}:{int(round((h - int(h)) * 60)):02d}:00')")
+id=$(submit "bat-$model" qos_gpu_h100-t3 "$bat_time" "$bat_gpus" "${ext:+afterok:$ext}" "p2 battery --model $model --arm $arm_list")
+echo "battery $arm_list -> $id"
+ids=("$id")
 # local judge (Qwen2.5-72B, 2 GPUs) once every arm has finished, whatever their exit state;
 # JUDGE_AFTER adds e.g. the prefetch job that downloads the judge
 jdep="afterany:$(IFS=:; echo "${ids[*]}")"
