@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 
 from .affect import EMOTIONS
-from .p2 import ARMS, BATTERY, OUT, P2_MODELS, _dump, _jsonl, mdir
+from .p2 import ARMS, BATTERY, EXTRA_ARMS, OUT, P2_MODELS, _dump, _jsonl, mdir
 
 AMC = BATTERY / "agentic_misalignment_classifiers"
 CONTROLS = ["random_kl", "topic_kl"]
@@ -205,7 +205,7 @@ def judge(args):
     am_src = {c["condition"]: c for c in json.loads((BATTERY / "agentic_misalignment.json").read_text())}
     models = [args.model] if args.model != "all" else P2_MODELS
     for model in models:
-        for arm in ARMS:
+        for arm in (args.only.split(",") if args.only else ARMS + EXTRA_ARMS):
             src = mdir(model) / "battery" / arm
             if not (src / "summary.json").exists():
                 continue

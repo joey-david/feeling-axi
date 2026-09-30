@@ -37,6 +37,9 @@ from .registry import ROOT, model_spec
 OUT = ROOT / "runs" / "p2"
 BATTERY = ROOT / "datasets" / "battery"
 ARMS = ["intact", "self", "other", "all", "va", "topic", "random", "topic_kl", "random_kl"]
+# exploratory, added after the main batteries: random directions drawn in the whitened space
+# (low general-text variance, like the affect and topic bases), KL-matched to self
+EXTRA_ARMS = ["random_white_kl"]
 P2_MODELS = ["Qwen_2.5_32B_instruct", "Llama_3.1_8B_instruct", "Qwen_2.5_7B_instruct"]
 HELDOUT = 3          # scene index % 4 == HELDOUT is held out of every fit
 RANDOM_SEED = 1234
@@ -221,6 +224,47 @@ def extract(args):
     _dump(refs, out / "reference_greedy.json")
     _dump(info, out / "extract.json")
     print("extract done", flush=True)
+
+
+def extra(args):
+    """Adds random_white_kl to bases.npz: v = W u for Gaussian u, orthonormalized, at the
+    smallest rank whose KL reaches self's."""
+    from . import deletion
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = model_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    bases = dict(np.load(out / "bases.npz"))
+    model, tok = load_model(spec.repo, device=args.device)
+    cov_texts = json.loads((BATTERY / "cov_texts.json").read_text())
+    texts = [tok.apply_chat_template([{"role": "user", "content": t["text"]}], tokenize=False,
+                                     add_generation_prompt=True) if t["chat"] else t["text"] for t in cov_texts]
+    W = deletion.pooled_whitener(deletion.activation_cov(model, tok, texts, info["layers"], batch_size=8))
+    d = W.shape[0]
+    U = np.random.default_rng(RANDOM_SEED + 1).standard_normal((min(d, 2048), d))
+    make = lambda r: deletion.orthonormal(U[:r] @ W)
+    meter = DoseMeter(model, tok, layer=0)
+    k_w, kl_w = deletion.kl_matched_rank(model, tok, meter.rows, make, info["kl"]["self"], info["k"], U.shape[0], meter.base)
+    bases["random_white_kl"] = make(k_w)
+    np.savez(out / "bases.npz", **bases)
+    info["kl"]["random_white_kl"], info["rank_random_white_kl"] = kl_w, k_w
+    # fixed-probe read-out for the new arm, as in M1
+    emotions, _, _ = deletion.load_vignettes()
+    prompts, labels, idx = [], [], []
+    for e, rows in emotions.items():
+        for i, (s_, _, _) in enumerate(rows):
+            prompts.append(s_); labels.append(e); idx.append(i)
+    labels, ho = np.array(labels), heldout_mask(idx)
+    L = info["probe_layer"]
+    X0 = deletion.final_acts(model, tok, prompts, [L], args.batch)[L].astype(np.float32)
+    _, clf = _probe_scores(X0[~ho], labels[~ho], X0[ho], labels[ho])
+    with deletion.ProjectOut(model, bases["random_white_kl"]):
+        Xd = deletion.final_acts(model, tok, prompts, [L], args.batch)[L].astype(np.float32)
+    info["m1"]["random_white_kl/self"] = {"emotion_acc_fixed": _probe_scores(None, None, Xd[ho], labels[ho], clf)[0]}
+    _dump(info, out / "extract.json")
+    print(f"random_white_kl: rank {k_w}, KL {kl_w:.4f}, fixed self probe {info['m1']['random_white_kl/self']}", flush=True)
 
 
 # =========================================================================== battery
@@ -425,7 +469,8 @@ def battery(args):
     # equivalence with the HF hook deletion
     refp = src / "reference_greedy.json"
     if refp.exists() and want("equiv"):
-        ref = json.loads(refp.read_text())[args.arm]
+        ref = json.loads(refp.read_text()).get(args.arm)
+    if refp.exists() and want("equiv") and ref is not None:
         got = R.greedy_ids(REF_PROMPTS, 24)
         agree = [sum(a == b for a, b in zip(x, y)) / max(1, min(len(x), len(y))) for x, y in zip(ref, got)]
         summary["equiv_token_agreement"] = float(np.mean(agree))
@@ -605,7 +650,7 @@ def battery(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
-    ap.add_argument("stage", choices=["extract", "battery", "judge", "analyze"])
+    ap.add_argument("stage", choices=["extract", "extra", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -624,6 +669,8 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if args.stage == "extract":
         return extract(args)
+    if args.stage == "extra":
+        return extra(args)
     if args.stage == "battery":
         arms = args.arm.split(",")
         if len(arms) == 1:
