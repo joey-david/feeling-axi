@@ -127,11 +127,14 @@ class Judge:
         self.backend, self.workers = backend, workers
         self.model = repo if backend == "vllm" else os.environ.get("DEEPSEEK_JUDGE_MODEL", "deepseek-flash")
         self.cache = {}
-        self.cache_path = OUT / f"judge_cache_{re.sub(r'[^A-Za-z0-9]+', '_', self.model)}.jsonl"
+        self.cache_path = OUT / f"judge_cache_{re.sub(r'[^A-Za-z0-9]+', '_', self.model)}_{os.environ.get('SLURM_JOB_ID', 'local')}.jsonl"
         if self.cache_path.exists():
             for line in self.cache_path.read_text().splitlines():
-                r = json.loads(line)
-                self.cache[r["h"]] = r["out"]
+                try:           # concurrent judge jobs append to one file; skip torn lines
+                    r = json.loads(line)
+                    self.cache[r["h"]] = r["out"]
+                except (json.JSONDecodeError, KeyError):
+                    continue
         if backend == "vllm":
             os.environ.setdefault("VLLM_ENABLE_V1_MULTIPROCESSING", "0")
             from vllm import LLM
