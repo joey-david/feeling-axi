@@ -675,6 +675,7 @@ def main(argv=None):
     ap.add_argument("--judge-backend", default="vllm", choices=["vllm", "api"])
     ap.add_argument("--judge-repo", default="Qwen/Qwen2.5-72B-Instruct")
     ap.add_argument("--judge-tasks", default="", help="judge: comma list of m2,b1,b2,b4,b6 (default all)")
+    ap.add_argument("--judge-out", default="judged", help="judge: output folder per model (second judge: judged2)")
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)

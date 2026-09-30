@@ -174,8 +174,9 @@ class Judge:
                 convs = [([{"role": "system", "content": s}] if s else []) +
                          [{"role": "user", "content": u + ("\nReturn only the JSON object." if j else "")}]
                          for _, (s, u, j) in todo]
-                outs = [o.outputs[0].text for o in self.llm.chat(convs, SamplingParams(temperature=0.0, max_tokens=1200),
-                                                                  use_tqdm=False)]
+                reasoning = "gpt-oss" in self.model
+                sp = SamplingParams(temperature=0.0, max_tokens=6000 if reasoning else 1200)
+                outs = [final_channel(o.outputs[0].text) for o in self.llm.chat(convs, sp, use_tqdm=False)]
             else:
                 with ThreadPoolExecutor(self.workers) as ex:
                     outs = list(ex.map(self._api, [r for _, r in todo]))
@@ -184,6 +185,13 @@ class Judge:
                     self.cache[h] = o
                     f.write(json.dumps({"h": h, "out": o}) + "\n")
         return [self.cache[h] for h in hs]
+
+
+def final_channel(text: str) -> str:
+    """gpt-oss decodes as '<analysis>...assistantfinal<answer>' (harmony channels, special
+    tokens skipped): keep the final channel. Other models' text passes through."""
+    parts = re.split(r"(?:<\|channel\|>\s*final\s*<\|message\|>|assistant\s*final)", text)
+    return parts[-1].strip() if len(parts) > 1 else text
 
 
 def _json(text: str) -> dict:
@@ -213,7 +221,7 @@ def judge(args):
             src = mdir(model) / "battery" / arm
             if not (src / "summary.json").exists():
                 continue
-            dst = mdir(model) / "judged" / arm
+            dst = mdir(model) / args.judge_out / arm
             print(f"judging {model}/{arm}", flush=True)
 
             def rows(name):
