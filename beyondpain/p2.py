@@ -130,7 +130,16 @@ def extract(args):
     # on held-out self scenes (minimal sufficient deletion; pre-declared after the pilot)
     held_self = [prompts_emo[i] for i in np.where((pp == "self") & ho)[0]]
     y_hs = y[(pp == "self") & ho]
-    comps = deletion.self_components(dirs, args.kmax)
+    # general-text covariance: the deletion targets directions that carry affect but little
+    # ordinary variance (pilot: plain PCA bases broke the model, MMLU 0.79 -> 0.53)
+    W = None
+    if args.whiten:
+        cov_texts = json.loads((BATTERY / "cov_texts.json").read_text())
+        texts = [tok.apply_chat_template([{"role": "user", "content": t["text"]}], tokenize=False,
+                                         add_generation_prompt=True) if t["chat"] else t["text"] for t in cov_texts]
+        W = deletion.pooled_whitener(deletion.activation_cov(model, tok, texts, layers, batch_size=8))
+        print(f"whitener from {len(texts)} general texts", flush=True)
+    comps = deletion.self_components(dirs, args.kmax, W)
 
     def probe_at(k):
         with deletion.ProjectOut(model, comps[:k]):
@@ -152,7 +161,8 @@ def extract(args):
         print(f"k={mid}: fixed self probe {curve[mid]:.3f}", flush=True)
         lo, hi = (lo, mid) if curve[mid] <= 2 * chance else (mid, hi)
     k = hi
-    bases, info = deletion.build_subspaces(dirs, k=k, seed=RANDOM_SEED)
+    bases, info = deletion.build_subspaces(dirs, k=k, seed=RANDOM_SEED, W=W)
+    info["whitened"] = W is not None
     d = info["d"]
     info.update({"k_rule": "min rank with fixed self probe <= 2x chance", "k_reached": bool(reached),
                  "k_curve": {str(a): b for a, b in sorted(curve.items())},
@@ -169,7 +179,7 @@ def extract(args):
             kls[name] = deletion.deletion_kl(model, tok, rows, B, base)
             print(f"KL[{name}] = {kls[name]:.4f}", flush=True)
     T = np.concatenate([deletion._unit_rows(x["topic"]) for x in dirs.values()])
-    make_topic = lambda r: deletion.principal(T, min(r, T.shape[0]))[0]
+    make_topic = lambda r: deletion.gen_principal(T, W, min(r, T.shape[0]))[0]
     make_rand = lambda r: deletion.random_basis(d, r, RANDOM_SEED)
     k_t, kl_t = deletion.kl_matched_rank(model, tok, rows, make_topic, kls["self"], k, T.shape[0], base)
     k_r, kl_r = deletion.kl_matched_rank(model, tok, rows, make_rand, kls["self"], k, min(d // 2, 2048), base)
@@ -608,6 +618,8 @@ def main(argv=None):
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
+    ap.add_argument("--no-whiten", dest="whiten", action="store_false",
+                    help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)
     args = ap.parse_args(argv)
     if args.stage == "extract":

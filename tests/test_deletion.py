@@ -188,3 +188,18 @@ def test_denoise_removes_a_high_variance_neutral_axis():
     assert np.abs(raw[:, 7]).mean() > 1.0 and np.abs(den["self"][:, 7]).mean() < 0.1 and den["n_denoise"] >= 1
     comps = deletion.self_components({5: den}, 3)
     assert comps.shape == (3, 24)
+
+
+def test_generalized_components_avoid_high_variance_axes():
+    from beyondpain import deletion
+
+    rng = np.random.default_rng(0)
+    d = 16
+    C = np.eye(d); C[0, 0] = 400.0                     # axis 0 carries most general-text variance
+    M = np.zeros((6, d)); M[:, 0] = 5.0; M[:, 1] = 1.0  # affect rows lean on axis 0 and axis 1
+    M += 0.01 * rng.standard_normal(M.shape)
+    W = deletion.whitener(C, shrink=0.0)
+    B, _ = deletion.gen_principal(M, W, 1)
+    assert abs(B[0, 1]) > 0.9 and abs(B[0, 0]) < 0.3
+    P, _ = deletion.principal(M, 1)
+    assert abs(P[0, 0]) > 0.9

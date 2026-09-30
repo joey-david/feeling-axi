@@ -181,6 +181,61 @@ def orthonormal(B: np.ndarray) -> np.ndarray:
     return q.T
 
 
+SHRINK = 0.1   # covariance shrinkage toward the identity (after scaling to unit mean eigenvalue)
+
+
+@torch.no_grad()
+def activation_cov(model, tok, texts: list[str], layers: list[int], batch_size: int = 8,
+                   max_len: int = 256) -> dict[int, np.ndarray]:
+    """Covariance of the residual after block L over every token of general texts (the
+    first position, an attention sink with outsized activations, is skipped)."""
+    dev = input_device(model)
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+    d = model.config.hidden_size
+    xx = {L: np.zeros((d, d)) for L in layers}
+    xs = {L: np.zeros(d) for L in layers}
+    n = 0
+    for i in range(0, len(texts), batch_size):
+        ids = [tok(t).input_ids[:max_len] for t in texts[i:i + batch_size]]
+        x, att = pad_left(ids, pad, dev)
+        hs = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states
+        keep = att.bool().clone()
+        first = att.float().argmax(dim=1)
+        keep[torch.arange(len(ids)), first] = False
+        n += int(keep.sum())
+        for L in layers:
+            h = hs[L + 1][keep].float()
+            xx[L] += (h.T @ h).double().cpu().numpy()
+            xs[L] += h.sum(0).double().cpu().numpy()
+    return {L: xx[L] / n - np.outer(xs[L] / n, xs[L] / n) for L in layers}
+
+
+def whitener(C: np.ndarray, shrink: float = SHRINK) -> np.ndarray:
+    """Symmetric C_s^(-1/2) of the scaled, shrunk covariance."""
+    d = C.shape[0]
+    Cs = (1 - shrink) * C / (np.trace(C) / d) + shrink * np.eye(d)
+    w, V = np.linalg.eigh(Cs)
+    return (V * w ** -0.5) @ V.T
+
+
+def pooled_whitener(covs: dict[int, np.ndarray], shrink: float = SHRINK) -> np.ndarray:
+    d = next(iter(covs.values())).shape[0]
+    return whitener(sum(C / (np.trace(C) / d) for C in covs.values()) / len(covs), shrink)
+
+
+def gen_principal(M: np.ndarray, W: np.ndarray | None, k: int | None = None, var: float = VAR_EXPLAINED):
+    """Directions maximizing the rows' energy per unit of general-text variance (the
+    generalized eigenproblem M^T M v = lambda C v, solved as an SVD of M W, W = C^-1/2),
+    orthonormalized in order. W None falls back to plain uncentered PCA."""
+    if W is None:
+        return principal(M, k, var)
+    _, S, Vt = np.linalg.svd(M @ W, full_matrices=False)
+    ratio = S ** 2 / (S ** 2).sum()
+    if k is None:
+        k = int(np.searchsorted(np.cumsum(ratio), var) + 1)
+    return orthonormal(Vt[:k] @ W), ratio
+
+
 def _pooled(dirs_by_layer):
     S = np.concatenate([_unit_rows(d["self"]) for d in dirs_by_layer.values()])
     O = np.concatenate([_unit_rows(d["other"]) for d in dirs_by_layer.values()])
@@ -190,26 +245,28 @@ def _pooled(dirs_by_layer):
     return S, O, T, o_span, s_span, project_out(S, o_span), project_out(O, s_span)
 
 
-def self_components(dirs_by_layer: dict[int, dict], kmax: int) -> np.ndarray:
-    """The ordered principal components of the self-only directions; the self basis at rank
-    k is the first k rows."""
-    return principal(_pooled(dirs_by_layer)[5], kmax)[0]
+def self_components(dirs_by_layer: dict[int, dict], kmax: int, W: np.ndarray | None = None) -> np.ndarray:
+    """The ordered components of the self-only directions (generalized against the
+    general-text covariance when W is given); the self basis at rank k is the first k rows."""
+    return gen_principal(_pooled(dirs_by_layer)[5], W, kmax)[0]
 
 
-def build_subspaces(dirs_by_layer: dict[int, dict], k: int | None = None, seed: int = 0) -> dict:
+def build_subspaces(dirs_by_layer: dict[int, dict], k: int | None = None, seed: int = 0,
+                    W: np.ndarray | None = None) -> dict:
     """Pools unit-normalized directions over layers and returns every arm's basis at rank k
-    (k = self's VAR_EXPLAINED rank when None)."""
+    (k = self's VAR_EXPLAINED rank when None). With W, every affect and topic basis is the
+    generalized solution against the general-text covariance."""
     S, O, T, o_span, s_span, self_only, other_only = _pooled(dirs_by_layer)
-    B_self, r_self = principal(self_only, k)
+    B_self, r_self = gen_principal(self_only, W, k)
     k = B_self.shape[0]
     d = S.shape[1]
     rng = np.random.default_rng(seed)
     out = {
         "self": B_self,
-        "other": principal(other_only, k)[0],
-        "all": principal(np.concatenate([S, O]), k)[0],
-        "va": principal(np.concatenate([S, O]), 2)[0],
-        "topic": principal(T, k)[0] if len(T) else None,
+        "other": gen_principal(other_only, W, k)[0],
+        "all": gen_principal(np.concatenate([S, O]), W, k)[0],
+        "va": gen_principal(np.concatenate([S, O]), W, 2)[0],
+        "topic": gen_principal(T, W, k)[0] if len(T) else None,
         "random": orthonormal(rng.standard_normal((k, d))),
     }
     info = {"k": int(k), "d": int(d), "self_var_ratio_top": r_self[:k].tolist(),
