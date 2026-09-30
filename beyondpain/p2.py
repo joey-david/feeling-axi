@@ -103,9 +103,61 @@ def extract(args):
     table = deletion.collect(model, tok, layers, emotions, neutral, topics, batch_size=args.batch)
     train = lambda idx: ~heldout_mask(idx)
     dirs = {L: deletion.directions(table, L, train) for L in layers}
-    bases, info = deletion.build_subspaces(dirs, seed=RANDOM_SEED)
-    k, d = info["k"], info["d"]
-    print(f"k = {k}: {json.dumps({x: info[x] for x in info if x != 'self_var_ratio_top'})}", flush=True)
+
+    # intact probes at the probe layer: 88-way emotion and valence sign, per perspective
+    lab, per, idx = table["label"], table["persp"], table["idx"]
+    emo_rows = np.isin(lab, list(emotions))
+    prompts_emo = []
+    for e, rows_e in emotions.items():
+        for s_, o_, _ in rows_e:
+            prompts_emo += [s_, o_]
+    assert len(prompts_emo) == emo_rows.sum()
+    ho = heldout_mask(idx[emo_rows])
+    y = lab[emo_rows]
+    val = np.array([EMOTIONS[e].valence > 0 for e in y])
+    pp = per[emo_rows]
+    X0 = table["acts"][probe_layer][emo_rows].astype(np.float32)
+    m1, fitted = {}, {}
+    for p in ("self", "other"):
+        sel = pp == p
+        acc, clf = _probe_scores(X0[sel & ~ho], y[sel & ~ho], X0[sel & ho], y[sel & ho])
+        vacc, vclf = _probe_scores(X0[sel & ~ho], val[sel & ~ho], X0[sel & ho], val[sel & ho])
+        fitted[p] = (clf, vclf)
+        m1[f"intact/{p}"] = {"emotion_acc": acc, "valence_acc": vacc}
+    chance = 1 / len(emotions)
+
+    # k: the smallest self-only rank whose deletion takes the fixed self probe to <= 2 x chance
+    # on held-out self scenes (minimal sufficient deletion; pre-declared after the pilot)
+    held_self = [prompts_emo[i] for i in np.where((pp == "self") & ho)[0]]
+    y_hs = y[(pp == "self") & ho]
+    comps = deletion.self_components(dirs, args.kmax)
+
+    def probe_at(k):
+        with deletion.ProjectOut(model, comps[:k]):
+            X = deletion.final_acts(model, tok, held_self, [probe_layer], args.batch)[probe_layer].astype(np.float32)
+        return float((fitted["self"][0].predict(X) == y_hs).mean())
+
+    curve, lo, hi = {}, 0, 1
+    while hi <= comps.shape[0]:
+        curve[hi] = probe_at(hi)
+        print(f"k={hi}: fixed self probe {curve[hi]:.3f} (target <= {2 * chance:.3f})", flush=True)
+        if curve[hi] <= 2 * chance:
+            break
+        lo, hi = hi, hi * 2
+    reached = hi <= comps.shape[0]
+    hi = min(hi, comps.shape[0])
+    while reached and hi - lo > 1:
+        mid = (lo + hi) // 2
+        curve[mid] = probe_at(mid)
+        print(f"k={mid}: fixed self probe {curve[mid]:.3f}", flush=True)
+        lo, hi = (lo, mid) if curve[mid] <= 2 * chance else (mid, hi)
+    k = hi
+    bases, info = deletion.build_subspaces(dirs, k=k, seed=RANDOM_SEED)
+    d = info["d"]
+    info.update({"k_rule": "min rank with fixed self probe <= 2x chance", "k_reached": bool(reached),
+                 "k_curve": {str(a): b for a, b in sorted(curve.items())},
+                 "n_denoise": {str(L): dirs[L].get("n_denoise") for L in layers}})
+    print(f"k = {k}: {json.dumps({x: info[x] for x in info if x not in ('self_var_ratio_top', 'k_curve')})}", flush=True)
 
     # dose of each deletion on neutral chat (continuations of the intact model)
     meter = DoseMeter(model, tok, layer=0)
@@ -130,27 +182,7 @@ def extract(args):
     np.savez_compressed(out / "directions.npz", **{f"{p}_L{L}": dirs[L][p] for L in layers for p in ("self", "other", "topic")},
                         names=np.array(dirs[layers[0]]["names"]), topics=np.array(dirs[layers[0]]["topics"]))
 
-    # M1: decoding of the emotion (99-way) and of valence sign, per perspective, at the probe layer
-    lab, per, idx = table["label"], table["persp"], table["idx"]
-    emo_rows = np.isin(lab, list(emotions))
-    prompts_emo = []
-    for e, rows_e in emotions.items():
-        for s, o, _ in rows_e:
-            prompts_emo += [s, o]
-    assert len(prompts_emo) == emo_rows.sum()
-    ho = heldout_mask(idx[emo_rows])
-    y = lab[emo_rows]
-    val = np.array([EMOTIONS[e].valence > 0 for e in y])
-    pp = per[emo_rows]
-    X0 = table["acts"][probe_layer][emo_rows].astype(np.float32)
-    m1 = {}
-    fitted = {}
-    for p in ("self", "other"):
-        sel = pp == p
-        acc, clf = _probe_scores(X0[sel & ~ho], y[sel & ~ho], X0[sel & ho], y[sel & ho])
-        vacc, vclf = _probe_scores(X0[sel & ~ho], val[sel & ~ho], X0[sel & ho], val[sel & ho])
-        fitted[p] = (clf, vclf)
-        m1[f"intact/{p}"] = {"emotion_acc": acc, "valence_acc": vacc}
+    # M1 for every arm: fixed probes and probes retrained on deleted activations
     for name, B in bases.items():
         if B is None:
             continue
@@ -167,7 +199,7 @@ def extract(args):
             }
         print(f"M1 {name}: {json.dumps(m1[f'{name}/self'])} | other {json.dumps(m1[f'{name}/other'])}", flush=True)
     info["m1"] = m1
-    info["chance_emotion"] = 1 / len(emotions)
+    info["chance_emotion"] = chance
 
     # greedy references for the vLLM equivalence check
     ref_ids = [tok(p).input_ids for p in REF_PROMPTS]
@@ -575,6 +607,7 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
     ap.add_argument("--workers", type=int, default=16)
     args = ap.parse_args(argv)
     if args.stage == "extract":

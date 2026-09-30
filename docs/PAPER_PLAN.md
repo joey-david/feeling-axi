@@ -170,11 +170,18 @@ The question has three pre-declared answers:
   Qwen2.5-72B-Instruct judge of Part 1.) The self-specific part of each concept is its self direction with the
   span of all other-directions projected out.
 - **Subspaces.** `A_self` = top-k principal components of the self-specific directions;
-  `A_all` = top-k of self and other together. k is pre-declared as the smallest rank that
-  explains 90% of the variance of the self-specific directions, and we also report `va`,
-  the top-2 plane of all directions. `random` and `topic` are built at rank k and again at
-  the rank that matches `A_self`'s KL (`random_kl`, `topic_kl`); H8 compares against the
-  KL-matched pair.
+  `A_all` = top-k of self and other together. Every direction is first denoised as in
+  Part 1 (projected off the neutral-activation PCs holding 50% of their variance). k is
+  the **smallest self-only rank whose deletion takes a fixed 88-way self-emotion probe to
+  ≤ 2 × chance on held-out scenes** (minimal sufficient deletion). This rule replaced a
+  90%-variance rule after the pilot on the abliterated model, which gave k = 82 on
+  undenoised directions and a deletion that cost 9 nats of KL on neutral chat (a broken
+  model); the pilot's deleted arms were not analyzed. We also report `va`, the top-2 plane
+  of all directions. `random` and `topic` are built at rank k and again at the rank that
+  matches `A_self`'s KL (`random_kl`, `topic_kl`); H8 compares against the KL-matched
+  pair. Because the probe criterion selects k, M1's probe condition holds by construction
+  for `A_self`; the informative M1 checks are the other-perspective recognition and
+  whether the KL-matched controls also silence the probe.
 - **Intervention.** Directional ablation of one subspace at every layer, applied by
   orthogonalizing the weights that write to the residual stream, as in refusal
   abliteration (Arditi et al., 2024). The subspace is pooled across the middle layers so

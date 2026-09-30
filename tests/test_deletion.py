@@ -70,7 +70,7 @@ def test_self_subspace_finds_the_self_only_axis():
     from beyondpain import deletion
 
     table, shared, self_axis = _synthetic_table()
-    dirs = {5: deletion.directions(table, 5)}
+    dirs = {5: deletion.directions(table, 5, denoise=False)}
     assert dirs[5]["self"].shape == (6, 24) and len(dirs[5]["topics"]) == 4
     bases, info = deletion.build_subspaces(dirs, k=1)
     u = self_axis / np.linalg.norm(self_axis)
@@ -171,3 +171,20 @@ def test_extract_runs_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     assert bases["self"].shape[1] == 32
     refs = _json.loads((tmp_path / "out" / "Tiny" / "reference_greedy.json").read_text())
     assert set(refs) >= {"intact", "self", "random_kl"}
+
+
+def test_denoise_removes_a_high_variance_neutral_axis():
+    from beyondpain import deletion
+
+    table, shared, self_axis = _synthetic_table()
+    rng = np.random.default_rng(5)
+    loud = np.zeros(24); loud[7] = 1.0
+    A = table["acts"][5].astype(np.float64)
+    A += np.outer(rng.standard_normal(len(A)) * 20, loud)           # every input varies along it
+    A[np.char.startswith(table["label"], "e")] += 3 * loud           # and emotions shift it too
+    table["acts"][5] = A.astype(np.float16)
+    raw = deletion.directions(table, 5, denoise=False)["self"]
+    den = deletion.directions(table, 5, denoise=True)
+    assert np.abs(raw[:, 7]).mean() > 1.0 and np.abs(den["self"][:, 7]).mean() < 0.1 and den["n_denoise"] >= 1
+    comps = deletion.self_components({5: den}, 3)
+    assert comps.shape == (3, 24)

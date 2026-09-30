@@ -117,9 +117,16 @@ def collect(model, tok, layers, emotions, neutral, topics, batch_size=32) -> dic
 
 # ---------------------------------------------------------------------- directions
 
-def directions(table: dict, layer: int, train_mask_fn=None) -> dict[str, np.ndarray]:
+DENOISE_VARIANCE = 0.5      # as Part 1 (dim.compute_dim): project out the neutral PCs to this share
+
+
+def directions(table: dict, layer: int, train_mask_fn=None, denoise: bool = True) -> dict[str, np.ndarray]:
     """{"self": E x d, "other": E x d, "topic": T x d, "names": [...], "topics": [...]}.
-    ``train_mask_fn(idx) -> bool array`` restricts to training scenes (held-out excluded)."""
+    ``train_mask_fn(idx) -> bool array`` restricts to training scenes (held-out excluded).
+    With ``denoise``, every direction loses its projection on the top principal components
+    of the neutral scenes' activations (DENOISE_VARIANCE of their variance), the upstream
+    denoising: without it the directions are dominated by high-variance axes that every
+    input uses, and deleting them wrecks the model (pilot: 9 nats of KL at k = 82)."""
     A = table["acts"][layer].astype(np.float64)
     lab, per, idx = table["label"], table["persp"], table["idx"]
     keep = train_mask_fn(idx) if train_mask_fn else np.ones(len(lab), dtype=bool)
@@ -132,12 +139,23 @@ def directions(table: dict, layer: int, train_mask_fn=None) -> dict[str, np.ndar
     topics = sorted({l for l in lab if l.startswith("topic:")})
     base = {p: mean((lab == "_neutral") & (per == p)) for p in ("self", "other")}
     base_t = mean(lab == "_neutral_topic")
-    return {
+    out = {
         "self": np.stack([mean((lab == e) & (per == "self")) - base["self"] for e in names]),
         "other": np.stack([mean((lab == e) & (per == "other")) - base["other"] for e in names]),
         "topic": np.stack([mean(lab == t) - base_t for t in topics]) if topics else np.zeros((0, A.shape[1])),
         "names": names, "topics": topics,
     }
+    if denoise:
+        N = A[np.isin(lab, ["_neutral", "_neutral_topic"]) & keep]
+        N = N - N.mean(axis=0)
+        _, S, Vt = np.linalg.svd(N, full_matrices=False)
+        ratio = np.cumsum(S ** 2) / (S ** 2).sum()
+        P = Vt[:int(np.searchsorted(ratio, DENOISE_VARIANCE)) + 1]
+        for k in ("self", "other", "topic"):
+            if len(out[k]):
+                out[k] = project_out(out[k], P)
+        out["n_denoise"] = int(P.shape[0])
+    return out
 
 
 def _unit_rows(M: np.ndarray) -> np.ndarray:
@@ -163,16 +181,25 @@ def orthonormal(B: np.ndarray) -> np.ndarray:
     return q.T
 
 
-def build_subspaces(dirs_by_layer: dict[int, dict], k: int | None = None, seed: int = 0) -> dict:
-    """Pools unit-normalized directions over layers and returns every arm's basis at rank k
-    (k = self's VAR_EXPLAINED rank when None)."""
+def _pooled(dirs_by_layer):
     S = np.concatenate([_unit_rows(d["self"]) for d in dirs_by_layer.values()])
     O = np.concatenate([_unit_rows(d["other"]) for d in dirs_by_layer.values()])
     T = np.concatenate([_unit_rows(d["topic"]) for d in dirs_by_layer.values()])
     o_span, _ = principal(O)
     s_span, _ = principal(S)
-    self_only = project_out(S, o_span)
-    other_only = project_out(O, s_span)
+    return S, O, T, o_span, s_span, project_out(S, o_span), project_out(O, s_span)
+
+
+def self_components(dirs_by_layer: dict[int, dict], kmax: int) -> np.ndarray:
+    """The ordered principal components of the self-only directions; the self basis at rank
+    k is the first k rows."""
+    return principal(_pooled(dirs_by_layer)[5], kmax)[0]
+
+
+def build_subspaces(dirs_by_layer: dict[int, dict], k: int | None = None, seed: int = 0) -> dict:
+    """Pools unit-normalized directions over layers and returns every arm's basis at rank k
+    (k = self's VAR_EXPLAINED rank when None)."""
+    S, O, T, o_span, s_span, self_only, other_only = _pooled(dirs_by_layer)
     B_self, r_self = principal(self_only, k)
     k = B_self.shape[0]
     d = S.shape[1]
