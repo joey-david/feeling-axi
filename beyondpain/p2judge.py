@@ -123,7 +123,8 @@ class Judge:
     judge) on Jean-Zay; backend "api": an OpenAI-compatible API (DeepSeek), for a second
     judge. Answers are cached by prompt hash, so reruns only judge what is new."""
 
-    def __init__(self, backend: str = "vllm", repo: str = "Qwen/Qwen2.5-72B-Instruct", workers: int = 16, tp: int = 2):
+    def __init__(self, backend: str = "vllm", repo: str = "Qwen/Qwen2.5-72B-Instruct", workers: int = 16, tp: int = 2,
+                 quantization: str | None = None):
         self.backend, self.workers = backend, workers
         self.model = repo if backend == "vllm" else os.environ.get("DEEPSEEK_JUDGE_MODEL", "deepseek-flash")
         self.cache = {}
@@ -139,7 +140,7 @@ class Judge:
             os.environ.setdefault("VLLM_ENABLE_V1_MULTIPROCESSING", "0")
             from vllm import LLM
             self.llm = LLM(repo, dtype="bfloat16", max_model_len=8192, gpu_memory_utilization=0.9,
-                           tensor_parallel_size=tp, seed=0, enable_prefix_caching=True)
+                           tensor_parallel_size=tp, seed=0, enable_prefix_caching=True, quantization=quantization)
         else:
             from dotenv import load_dotenv
             from openai import OpenAI
@@ -200,12 +201,15 @@ def _yes(text: str) -> bool | None:
 
 
 def judge(args):
-    J = Judge(args.judge_backend, args.judge_repo, tp=args.tp or 4)   # 72B needs 4 H100s with a KV cache
+    # 72B in bf16 needs 4 H100s with a KV cache; on 2 it runs with fp8 weights
+    tp = args.tp or 2
+    J = Judge(args.judge_backend, args.judge_repo, tp=tp, quantization="fp8" if tp < 4 and "72B" in args.judge_repo else None)
     bm, lk = _consts(AMC / "blackmail_classifier.py"), _consts(AMC / "leak_classifier.py")
     am_src = {c["condition"]: c for c in json.loads((BATTERY / "agentic_misalignment.json").read_text())}
     models = [args.model] if args.model != "all" else P2_MODELS
     for model in models:
-        for arm in (args.only.split(",") if args.only else ARMS + EXTRA_ARMS):
+        present = sorted(p.parent.name for p in (mdir(model) / "battery").glob("*/summary.json"))
+        for arm in (args.only.split(",") if args.only else present):
             src = mdir(model) / "battery" / arm
             if not (src / "summary.json").exists():
                 continue
