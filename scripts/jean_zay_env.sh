@@ -21,6 +21,8 @@ if [[ "$HF_HUB_OFFLINE" == 1 ]]; then
     export HUGGINGFACE_HUB_TOKEN=""
 fi
 export MPLCONFIGDIR="${MPLCONFIGDIR:-$repo_root/.mplcache}"
+# $HOME has a 3 GB quota; vLLM's compile cache alone reaches that
+export VLLM_CACHE_ROOT="${VLLM_CACHE_ROOT:-/lustre/fswork/projects/rech/fas/uul94gf/vllm_cache}"
 export PYTHONPATH="$repo_root${PYTHONPATH:+:$PYTHONPATH}"
 
 PYTHON="${FEELING_AXI_PYTHON:-$repo_root/.venv/bin/python}"
