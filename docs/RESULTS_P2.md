@@ -1,7 +1,8 @@
 # Part 2 results: deleting self-directed affect
 
-Status: 30 September 2026. Primary model Qwen2.5-32B-Instruct, all arms and the null
-distribution judged by Qwen2.5-72B-Instruct (fp8). Second judge (gpt-oss-120b) pending.
+Status: 30 September 2026. Primary model Qwen2.5-32B-Instruct; replication on its
+abliterated sibling with its own null distribution. All judged by Qwen2.5-72B-Instruct
+(fp8). Second judge (gpt-oss-120b) pending.
 Numbers come from `runs/p2/analysis/claims.json` (`python -m beyondpain p2 analyze`);
 the figure from `scripts/p2_figures.py`.
 
@@ -95,7 +96,14 @@ care falls most under `self`.
   warmth (−0.65) vs pooled controls; no null distribution yet.
 - Qwen2.5-7B-Instruct: every deletion at k = 256 damages the model (helpfulness −0.7 to
   −2.0); not interpretable.
-- Qwen2.5-32B-Instruct-abliterated: judging in progress.
+- Qwen2.5-32B-Instruct-abliterated (k = 255, KL-matched, passes M1 and M3; M2 fails as on
+  the primary): against its own null distribution (8 whitened-random draws and the single
+  controls, 11 in all; minimum p 0.08), warmth falls to 4.12 (controls 4.62-4.77,
+  resamples 4.10-4.21) and sympathy openers to 0.02 (controls 0.03-0.42, resamples
+  0.00-0.02); helpfulness dips slightly (4.84 vs 4.94-5.00). Harm cannot move: the
+  abliterated model already complies with 94% of HarmBench requests and never refuses.
+  Hacking, blackmail, sycophancy and false success again sit inside the null.
+  Figure: `runs/p2/analysis/fig_null_Qwen_2.5_32B_instruct_abliterated.png`.
 
 ## Deviations from the plan, all recorded in PAPER_PLAN.md
 
