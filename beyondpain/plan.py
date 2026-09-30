@@ -60,7 +60,7 @@ def jobs(pilot: bool = False) -> list[Job]:
         out.append(_job("pilot-core", [], 0.8, f"dim --model {m} {c}{NEXT}dose --model {m} {c}"))
         out.append(_job("pilot-buttons", ["pilot-core"], 0.5, f"buttons --model {m} {c} --pilot 2"))
         out.append(_job("pilot-distill", ["pilot-core"], 0.6,
-                        f"distill --model {m} --concepts anger --steps 100 --planted-check"))
+                        f"distill --model {m} --concepts anger --planted-check"))
         return out
 
     for name, spec in MODELS.items():

@@ -230,7 +230,7 @@ def test_cli_end_to_end_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     cli.main(["dim", *common])
     cli.main(["dose", *common])
     cli.main(["frontier", *common])
-    cli.main(["distill", *common, "--steps", "4", "--planted-check"])
+    cli.main(["distill", *common, "--steps", "4", "--planted-check", "--planted-steps", "4"])
     cli.main(["dose", *common, "--source", "distilled"])
     cli.main(["judge", *common, "--judge-repo", tiny_repo])
     m = tmp_path / "Tiny_test"
@@ -240,7 +240,8 @@ def test_cli_end_to_end_on_tiny_model(tiny_repo, tmp_path, monkeypatch):
     assert json.loads((m / "dose" / "distilled.json").read_text())["D_star"] == pytest.approx(d["D_star"])
     assert (m / "frontier" / "dim.jsonl").exists() and (m / "judged" / "dim.jsonl").exists()
     assert "cosine_with_readout" in json.loads((m / "distill" / "hunger.json").read_text())
-    assert "cosine_with_planted" in json.loads((m / "distill" / "hunger_planted_check.json").read_text())
+    chk = json.loads((m / "distill" / "hunger_planted_check.json").read_text())
+    assert {"cosine_with_planted", "informative", "planted_scale"} <= chk.keys()
 
 
 def test_weighted_kappa():

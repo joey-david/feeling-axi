@@ -6,6 +6,7 @@
 #   scripts/beyondpain_campaign.sh                    # full campaign, ~76 H100-hours
 #   scripts/beyondpain_campaign.sh --dry-run [--pilot]  # print the sbatch lines only
 #   AFTER=<jobid> scripts/beyondpain_campaign.sh      # also wait on e.g. the prefetch job
+#   AFTER_SKIP='^q32abl-(core|front|btn|dist)'        # ...except jobs whose model is already cached
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
@@ -36,8 +37,11 @@ set_id() { eval "id_${1//-/_}=\$2"; }
 get_id() { eval "printf '%s' \"\${id_${1//-/_}:-}\""; }
 while IFS='|' read -r name deps qos time gpus args; do
     [[ -z "$name" ]] && continue
-    dep_ids=()
-    [[ -n "${AFTER:-}" ]] && dep_ids+=("$AFTER")
+    dep_ids=(); dep=""
+    # afterany: a prefetch that fails only on a gated repo must not block every other model
+    if [[ -n "${AFTER:-}" ]] && ! [[ -n "${AFTER_SKIP:-}" && "$name" =~ $AFTER_SKIP ]]; then
+        dep="afterany:$AFTER"
+    fi
     IFS=',' read -r -a dl <<<"$deps"
     for d in ${dl[@]+"${dl[@]}"}; do
         [[ -z "$d" ]] && continue
@@ -48,8 +52,9 @@ while IFS='|' read -r name deps qos time gpus args; do
     opts=(--job-name="bp-$name" --qos="$qos" --time="$time" --gres="gpu:h100:$gpus"
           --cpus-per-task=$((24 * gpus)))
     if ((${#dep_ids[@]})); then
-        opts+=(--dependency="afterok:$(IFS=:; echo "${dep_ids[*]}")")
+        dep="${dep:+$dep,}afterok:$(IFS=:; echo "${dep_ids[*]}")"
     fi
+    [[ -n "$dep" ]] && opts+=(--dependency="$dep")
     if [[ "$dry" == 1 ]]; then
         set_id "$name" "<$name>"
         printf 'sbatch %s --export=ALL,FEELING_AXI_MODULES_PRELOADED=1,BP_ARGS="%s" scripts/beyondpain_job.sbatch\n' "${opts[*]}" "$args"

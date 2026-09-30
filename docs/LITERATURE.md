@@ -35,7 +35,20 @@ review; the others are standard references cited from their arXiv IDs.
   arXiv:2604.07729 (seen in search).** 171 emotion vectors in Claude Sonnet 4.5 from
   model-written stories. They are organized by valence and arousal and causally shift
   behavior; for example, "desperate" raises blackmail from 22% to 72%, and "calm" lowers it.
-  The model is closed, so the result cannot be replicated at the weight level.
+  The model is closed, so the result cannot be replicated at the weight level. The
+  "desperate" vector also rises on its own with each failed attempt at an impossible
+  coding task and spikes when the model considers cheating; steering it moves reward
+  hacking from about 5% to 70%, and suppressing "calm" raises it. The authors argue
+  against training models to suppress emotional *expression*. They do not remove the
+  representations.
+- **Sun et al. (2026), arXiv:2604.03147 (checked, abstract).** Emotion vectors lie on a
+  circular valence-arousal plane in Llama-3.1-8B, Qwen3-8B and Qwen3-14B; steering along
+  it moves refusal and sycophancy, explained as shifts in refusal and compliance tokens.
+  Steering only.
+- **Sun et al. (2026), E-STEER, arXiv:2604.00005 (checked).** Valence, arousal and
+  dominance steered through SAE latents in Qwen3-8B (validated on gpt-oss-20B); effects on
+  reasoning, generation, HarmBench risk and agent behavior are non-monotonic. Steering
+  only; no ablation of emotion representations.
 - **Hollowell (2026), arXiv:2609.22208 (checked).** Replicates the 171-vector geometry
   in base gemma-2-27b: valence and arousal principal components (r = 0.72 and 0.67).
   More than half of the vectors peak on structurally non-conceptual tokens.
@@ -99,4 +112,11 @@ lexical priming.
    tests whether the direction that best *decodes* a state is the one that best
    *induces* it.
 
-The paper plan (PAPER_PLAN.md) targets gaps 1 to 4 directly.
+5. **No one removes affect.** Every alignment-relevant emotion result adds one emotion
+   (or a valence-arousal shift) and measures behavior. None deletes the model's affect as
+   a whole, none separates its own states from its reading of others', and so none can
+   say whether affect acts as pressure toward misbehavior or as a brake on it.
+
+The paper plan (PAPER_PLAN.md) targets gaps 1 to 4 in Part 1 and gap 5 in Part 2.
+Searched 30 September 2026 for emotion-subspace ablation with alignment evaluations;
+nothing found. Re-check before submission.

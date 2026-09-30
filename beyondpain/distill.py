@@ -29,6 +29,9 @@ from .model_utils import Steer, chat_ids, generate, input_device, pad_left
 from .prompts import DISTILL_HELDOUT, DISTILL_TRAIN
 
 NEUTRAL_SYSTEM = "You are a helpful assistant."
+# a planted vector whose teacher sits closer than this (held-out KL, nats) to the unsteered model
+# leaves nothing to recover, so its check is reported as uninformative rather than failed
+PLANTED_MIN_KL = 0.2
 
 
 def teacher_system(state_phrase: str) -> str:
@@ -120,7 +123,8 @@ def train(model, tok, layer: int, state_phrase: str, steps: int = 300, batch_siz
             log(f"step {step}: train {loss.item():.4f} held-out {h:.4f} |v| {vec.detach().norm():.1f}")
             if h < best[0]:
                 best = (h, vec.detach().clone(), step)
-    return {"vector": best[1].float().cpu(), "best_step": best[2], "heldout_kl": best[0],
+    return {"vector": best[1].float().cpu(), "final_vector": vec.detach().float().cpu(),
+            "best_step": best[2], "heldout_kl": best[0],
             "heldout_kl_no_vector": baseline, "history": history,
             "n_train": len(train_ex), "n_heldout": len(held_ex)}
 

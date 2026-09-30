@@ -14,7 +14,7 @@ scripts/beyondpain_campaign.sh --dry-run --pilot
 ```
 
 Copy the branch (including `datasets/generated/contentment` and `joy`) to the existing
-Jean-Zay checkout `/lustre/fswork/projects/rech/fas/uul94gf/llm-traits`. Jean-Zay
+Jean-Zay checkout `/lustre/fswork/projects/rech/fas/uul94gf/llm-traits-beyondpain`. Jean-Zay
 already has the `.venv` created with system site packages. The new code adds no
 dependency beyond what that environment already has (torch, transformers, sklearn,
 matplotlib, httpx).
@@ -24,7 +24,7 @@ matplotlib, httpx).
 ```bash
 # (a) models + judge -> HF cache, on prepost (~200 GB; gated models need HF_TOKEN
 #     and accepted licenses for meta-llama and google/gemma)
-HF_TOKEN=... sbatch scripts/beyondpain_prefetch.sbatch
+HF_TOKEN=... scripts/jean_zay_submit.sh scripts/beyondpain_prefetch.sbatch
 
 # (b) pilot, dev QoS, ~2 H100-hours, after the prefetch finishes
 AFTER=<prefetch_jobid> scripts/beyondpain_campaign.sh --pilot

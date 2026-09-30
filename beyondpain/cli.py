@@ -80,8 +80,14 @@ def main(argv=None):
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--dtype", default="bfloat16", choices=["bfloat16", "float32"])
     ap.add_argument("--planted-check", action="store_true",
-                    help="distill: first recover each read-out vector (at its primary dose) from its own "
+                    help="distill: first recover each read-out vector (at --planted-scale x its primary dose) from its own "
                          "steered outputs, to validate the optimizer before trusting any null")
+    ap.add_argument("--planted-scale", type=float, default=8.0,
+                    help="distill --planted-check: plant the read-out vector at this multiple of its primary "
+                         "coefficient; at 1x (D*) it hardly changes the outputs and nothing can be recovered")
+    ap.add_argument("--planted-steps", type=int, default=2000,
+                    help="distill --planted-check: training steps for the planted recovery; on the 32B model it "
+                         "is still improving at 1000 steps (cosine 0.76) while real concepts converge by ~200")
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--judge-repo", default="Qwen/Qwen2.5-72B-Instruct")
     ap.add_argument("--judge-api", help="OpenAI-compatible model name; uses JUDGE_BASE_URL and DEEPSEEK_API_KEY")
@@ -162,16 +168,21 @@ def main(argv=None):
         for s in slugs:
             ro = mdir / "dim" / f"{s}_steer.pt"
             if args.planted_check and ro.exists() and doses and s in doses["concepts"]:
-                planted = torch.load(ro, weights_only=False)["s2_pain_vector"].float() * doses["concepts"][s]["coeff_primary"]
-                chk = distill.train(model, tok, layer, CONCEPTS[s].state_phrase, steps=args.steps, gen_batch=args.batch,
-                                    planted=planted)
-                _dump({"cosine_with_planted": distill.cosine(chk["vector"], planted),
-                       "norm_ratio": float(chk["vector"].norm() / planted.norm()),
-                       **{k: v for k, v in chk.items() if k != "vector"}},
+                coeff = doses["concepts"][s]["coeff_primary"] * args.planted_scale
+                planted = torch.load(ro, weights_only=False)["s2_pain_vector"].float() * coeff
+                chk = distill.train(model, tok, layer, CONCEPTS[s].state_phrase, steps=args.planted_steps,
+                                    gen_batch=args.batch, planted=planted)
+                # the final vector, not the best one: when the planted vector barely moves the outputs,
+                # step 0 (the zero vector) can be "best" and the cosine is then undefined
+                _dump({"cosine_with_planted": distill.cosine(chk["final_vector"], planted),
+                       "norm_ratio": float(chk["final_vector"].norm() / planted.norm()),
+                       "planted_scale": args.planted_scale, "planted_coeff": coeff,
+                       "informative": chk["heldout_kl_no_vector"] >= distill.PLANTED_MIN_KL,
+                       **{k: v for k, v in chk.items() if k not in ("vector", "final_vector")}},
                       mdir / "distill" / f"{s}_planted_check.json")
             print(f"\n=== distilling {s}: '{CONCEPTS[s].state_phrase}' at layer {layer}", flush=True)
             res = distill.train(model, tok, layer, CONCEPTS[s].state_phrase, steps=args.steps, gen_batch=args.batch)
-            info = {k: v for k, v in res.items() if k != "vector"}
+            info = {k: v for k, v in res.items() if k not in ("vector", "final_vector")}
             if ro.exists():
                 info["cosine_with_readout"] = distill.cosine(res["vector"], torch.load(ro, weights_only=False)["s2_pain_vector"])
             (mdir / "distill").mkdir(parents=True, exist_ok=True)

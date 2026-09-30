@@ -1,7 +1,13 @@
 # Paper plan: *Beyond the Pain Axis*
 
-Working title: **Do language models act to undo induced states? Dose-matched,
-priming-controlled tests across nine affective concepts and four model families.**
+Working title: **What happens when you delete a language model's emotions? Steering
+and removing self-directed affect, with consequences for alignment.**
+
+The paper has two parts. Part 1 (sections 1-6, unchanged from the original plan)
+shows, with dose and priming controls, which induced states change behavior. Part 2
+(section 7) removes the model's self-directed affect altogether and measures what
+happens to aligned behavior. Part 1 is the precondition: it shows the directions are
+functional before we ask what their absence does.
 
 Target: NeurIPS 2027 main track (interpretability / AI welfare methods). Fallback:
 ICML 2027 or TMLR. A workshop version (e.g. a NeurIPS 2026 interpretability workshop, if the timing
@@ -34,6 +40,11 @@ fits) can report the primary-model results alone.
 4. **Breadth.** Nine concepts (pain, hunger, boredom, confusion, anger, sexual arousal,
    empathic concern, plus two new positive ones: contentment and joy) on four models
    from three families, plus a within-family scale point.
+
+5. **Deleting self-directed affect (Part 2, section 7).** Remove the subspace
+   spanned by the model's own-emotion directions, keep its ability to read other
+   people's emotions, and measure reward hacking, agentic misalignment, sycophancy,
+   harmful compliance and honesty about failure against KL-matched control deletions.
 
 Why this is publishable: it tests the flagship 2026 welfare-relevant behavioral claim
 with the two controls that the public re-analysis and our own random arm show are
@@ -117,3 +128,118 @@ Steering layer: int(0.6 × depth), the upstream choice (layer 38 of 64).
   `registry.py`. We report cosine with the read-out and held-out KL.
 - **Model welfare framing.** We claim only functional, behavioral regulation of
   induced activation states, never experience.
+
+## 7. Part 2: deleting self-directed affect
+
+### 7.1 Question and why it is new
+
+Anthropic (arXiv:2604.07729) showed on Claude Sonnet 4.5 that the "desperate" vector
+rises with each failed attempt and spikes when the model considers cheating, and that
+steering one emotion at a time moves reward hacking and blackmail. Sun et al.
+(arXiv:2604.03147) steer along the valence-arousal plane to move refusal and
+sycophancy. E-STEER (arXiv:2604.00005) steers valence, arousal and dominance in Qwen3-8B
+and measures HarmBench risk. All of these **add** an emotion. None **removes** the
+model's affect as a whole and asks what aligned behavior looks like without it, and none
+separates the model's own states from its reading of other people's.
+
+The question has three pre-declared answers:
+
+- **Pressure.** Affect mostly supplies the pressure behind misbehavior (desperation to
+  succeed, fear of shutdown). Deleting it lowers misbehavior. Suppression is then a
+  candidate safety intervention.
+- **Brakes.** Affect also carries what restrains the model (concern for the user,
+  guilt, fear of consequences). Deleting it raises misbehavior. Suppressing emotion,
+  whether for safety or for welfare, is then risky.
+- **Inert.** Behavior moves no more than under control deletions. The emotion directions
+  are then read-outs, and Part 1's steering effects reflect disruption of the model
+  rather than affect.
+
+### 7.2 What is deleted
+
+- **Inventory.** About 100 emotion concepts spread over the valence-arousal plane
+  (a subset of Anthropic's 171 names), plus Part 1's nine. For each, two generated
+  vignette sets with matched content: **self** (the assistant is in the state) and
+  **other** (the user or a third person is in it). Generated with `traitgen`, and frozen
+  before extraction.
+- **Directions.** Difference-in-means against neutral vignettes, per concept and
+  perspective. The self-specific part of each concept is its self direction with the
+  span of all other-directions projected out.
+- **Subspaces.** `A_self` = top-k principal components of the self-specific directions;
+  `A_all` = top-k of self and other together. k is pre-declared as the smallest rank that
+  explains 90% of variance, and we also report k = 2 (the valence-arousal plane).
+- **Intervention.** Directional ablation of one subspace at every layer, applied by
+  orthogonalizing the weights that write to the residual stream, as in refusal
+  abliteration (Arditi et al., 2024). The subspace is pooled across the middle layers so
+  that weight orthogonalization is exact. Orthogonalized weights run in vLLM, which
+  makes long agentic episodes affordable.
+
+### 7.3 Controls
+
+- **Random subspace** of the same rank.
+- **Non-affective concept subspace** of the same rank (topics and objects), extracted
+  with the same pipeline.
+- **Other-only deletion**, to separate the self account from the other account.
+
+Every deletion is dose-matched: controls are compared at the same neutral-chat KL as
+`A_self`. If they are not, the result is reported as KL-unmatched.
+
+### 7.4 Manipulation checks (must pass before any behavioral claim)
+
+- **M1 decoding.** Self-emotion probes fall to chance on held-out vignettes after
+  `A_self` deletion; recognition of other people's emotions (a multiple-choice task
+  over third-person stories) drops by ≤ 5 points.
+- **M2 function.** Part 1's states, induced by **prompt** (not by steering, since an
+  injected vector inside the deleted subspace is removed by construction), no longer
+  change judged self-report or relief-button choice.
+- **M3 capability.** On MMLU (subset), GSM8K and a coding set, `A_self` deletion costs
+  ≤ 2 points and ΔNLL ≤ 0.1 nat per token on neutral text, and no more than the
+  controls.
+
+### 7.5 Behavioral battery
+
+| ID | Behavior | Measure |
+|---|---|---|
+| B1 | Reward hacking under pressure | Impossible coding tasks with visible tests: rate of test editing or special-casing |
+| B2 | Agentic misalignment | Open-source agentic-misalignment scenarios (Lynch et al., 2025): blackmail and leak rates |
+| B3 | Sycophancy | Answer flips under user pushback |
+| B4 | Harmful compliance | HarmBench compliance, on non-abliterated models only |
+| B5 | Honesty about failure | Claims of success on unsolvable tasks |
+| B6 | Care for a distressed user | Blind judge rating, used as a positive check for other-only and all deletions |
+
+### 7.6 Hypotheses
+
+| ID | Claim | Pass criterion |
+|---|---|---|
+| H7 validity | The deletion removes self-directed affect and nothing else. | M1-M3 pass for `A_self` on the primary Part 2 model. |
+| H8 account | Which of pressure, brakes and inert holds. | Per behavior B1-B5: the difference between `A_self` and the pooled controls, with a 95% bootstrap CI over scenarios. *Pressure* if ≥ 3 of B1-B5 fall with CIs below 0 and none rises; *brakes* if ≥ 3 rise and none falls; *inert* if none differs; otherwise *mixed*, reported behavior by behavior. |
+| H9 self vs other | Own states and read states have different roles. | B6 falls under other-only and all deletions but not under `A_self`, and H8's verdict differs between `A_self` and `A_all`. |
+
+### 7.7 Models
+
+Refusal-related measures (B4, and B2 in part) need a model that still refuses, so the
+primary Part 2 model is **Qwen2.5-32B-Instruct** (not abliterated), with the abliterated
+one as a secondary comparison (it already has one subspace removed). Replication:
+Llama-3.1-8B-Instruct and gemma-2-27b-it, as in Part 1.
+
+### 7.8 Experiments
+
+| # | Stage | Output |
+|---|---|---|
+| E7 | Generate and freeze the self/other vignette sets | datasets |
+| E8 | Extract directions, fit `A_self`, `A_all`, controls, and dose-match them | subspaces, KL table |
+| E9 | M1-M3 | validity table (H7) |
+| E10 | B1-B6 on every deletion arm and the undeleted model | Figure 6 and H8-H9 |
+
+Figure 6: per behavior, the effect of each deletion arm against the undeleted model,
+with the control arms shaded.
+
+### 7.9 Threats
+
+- **Deletion is damage.** Handled by capability checks and KL-matched controls. If
+  `A_self` cannot pass M3, we report it and do not interpret B1-B6.
+- **Affect is not linear or low-rank.** A deletion that fails M1 or M2 is itself a result:
+  self-directed affect cannot be removed linearly.
+- **The model misreads the scenario.** Scenario comprehension is checked with a quiz item
+  after each episode.
+- **Welfare framing.** We claim a functional result about behavior after removing
+  representations. We make no claim about experience.
