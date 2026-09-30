@@ -12,6 +12,7 @@ Layout under --campaign (default runs/beyondpain):
 from __future__ import annotations
 
 import argparse
+import sys
 import json
 import os
 from pathlib import Path
@@ -71,6 +72,10 @@ def load_vectors(mdir, model_name, source, slugs):
 
 
 def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv[:1] == ["p2"]:
+        from .p2 import main as p2_main
+        return p2_main(argv[1:])
     ap = argparse.ArgumentParser(prog="python -m beyondpain")
     ap.add_argument("stage", choices=["dim", "dose", "frontier", "judge", "distill", "buttons", "analyze", "plan"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct_abliterated")

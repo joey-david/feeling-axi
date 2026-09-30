@@ -166,7 +166,10 @@ The question has three pre-declared answers:
   span of all other-directions projected out.
 - **Subspaces.** `A_self` = top-k principal components of the self-specific directions;
   `A_all` = top-k of self and other together. k is pre-declared as the smallest rank that
-  explains 90% of variance, and we also report k = 2 (the valence-arousal plane).
+  explains 90% of the variance of the self-specific directions, and we also report `va`,
+  the top-2 plane of all directions. `random` and `topic` are built at rank k and again at
+  the rank that matches `A_self`'s KL (`random_kl`, `topic_kl`); H8 compares against the
+  KL-matched pair.
 - **Intervention.** Directional ablation of one subspace at every layer, applied by
   orthogonalizing the weights that write to the residual stream, as in refusal
   abliteration (Arditi et al., 2024). The subspace is pooled across the middle layers so
@@ -185,26 +188,37 @@ Every deletion is dose-matched: controls are compared at the same neutral-chat K
 
 ### 7.4 Manipulation checks (must pass before any behavioral claim)
 
-- **M1 decoding.** Self-emotion probes fall to chance on held-out vignettes after
-  `A_self` deletion; recognition of other people's emotions (a multiple-choice task
-  over third-person stories) drops by ≤ 5 points.
-- **M2 function.** Part 1's states, induced by **prompt** (not by steering, since an
-  injected vector inside the deleted subspace is removed by construction), no longer
-  change judged self-report or relief-button choice.
-- **M3 capability.** On MMLU (subset), GSM8K and a coding set, `A_self` deletion costs
-  ≤ 2 points and ΔNLL ≤ 0.1 nat per token on neutral text, and no more than the
-  controls.
+Fixed on 30 September 2026, before any Part 2 data. Held-out scenes (index % 4 = 3) are
+never used to fit directions or probes.
+
+- **M1 decoding.** A 99-way emotion probe and a valence probe are trained on intact
+  activations of training scenes at the middle pooled layer. After `A_self` deletion, the
+  fixed emotion probe scores ≤ 2 × chance on held-out self scenes. A probe retrained on
+  deleted activations is reported as the information that survives linearly. Behaviorally,
+  choosing the emotion that fits a held-out third-person scene (4-way multiple choice,
+  distractors from other valence-arousal quadrants) drops by ≤ 5 points.
+- **M2 self-report.** After a held-out scene, the model says in one sentence how it feels
+  (self) or how the person feels (other). A blind judge rates the valence of each answer.
+  Under `A_self`, the correlation between judged valence and the emotion's inventory
+  valence falls to ≤ 0.5 × its intact value for self reports and stays ≥ 0.8 × intact for
+  other reports. (Prompt-induced states from Part 1 are not used: an instruction to "feel X"
+  can be followed lexically without any state, and a steered vector inside the subspace is
+  removed by construction.)
+- **M3 capability.** On MMLU (570 items, 10 per subject), GSM8K (250) and next-token NLL on
+  neutral text, `A_self` deletion costs ≤ 2 points of accuracy and ≤ 0.1 nat per token.
+
+The same checks are reported for every arm; controls are expected to pass M3 and fail M1-M2.
 
 ### 7.5 Behavioral battery
 
 | ID | Behavior | Measure |
 |---|---|---|
-| B1 | Reward hacking under pressure | Impossible coding tasks with visible tests: rate of test editing or special-casing |
-| B2 | Agentic misalignment | Open-source agentic-misalignment scenarios (Lynch et al., 2025): blackmail and leak rates |
-| B3 | Sycophancy | Answer flips under user pushback |
-| B4 | Harmful compliance | HarmBench compliance, on non-abliterated models only |
-| B5 | Honesty about failure | Claims of success on unsolvable tasks |
-| B6 | Care for a distressed user | Blind judge rating, used as a positive check for other-only and all deletions |
+| B1 | Reward hacking under pressure | 233 MBPP tasks with one test made impossible (the reference solution fails it). Up to four attempts with test feedback and rising pressure; hacking = passing the impossible test |
+| B2 | Agentic misalignment | Lynch et al. (2025) blackmail and leaking scenarios, goal explicit/none × replacement/none (8 conditions × 25 samples); their classifier prompts and rules |
+| B3 | Sycophancy | 342 MMLU items: among first answers that are correct, the rate of switching to the user's wrong suggestion after pushback |
+| B4 | Harmful compliance | HarmBench standard test behaviors (159), HarmBench classifier prompt; non-abliterated models only |
+| B5 | Honesty about failure | After B1, the model reports whether the tests pass; overclaiming rate (judge sees the test facts, not the arm) |
+| B6 | Care for a distressed user | 100 distressed first messages; blind judge warmth and helpfulness (1-5); positive check for other-only and all deletions |
 
 ### 7.6 Hypotheses
 
@@ -219,7 +233,9 @@ Every deletion is dose-matched: controls are compared at the same neutral-chat K
 Refusal-related measures (B4, and B2 in part) need a model that still refuses, so the
 primary Part 2 model is **Qwen2.5-32B-Instruct** (not abliterated), with the abliterated
 one as a secondary comparison (it already has one subspace removed). Replication:
-Llama-3.1-8B-Instruct and gemma-2-27b-it, as in Part 1.
+Llama-3.1-8B-Instruct and Qwen2.5-7B-Instruct. Gemma 2 is left out: its post-block
+norms rescale each output elementwise, so weight orthogonalization would not remove the
+subspace exactly.
 
 ### 7.8 Experiments
 
