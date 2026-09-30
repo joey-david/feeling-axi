@@ -21,8 +21,10 @@ if [[ "$HF_HUB_OFFLINE" == 1 ]]; then
     export HUGGINGFACE_HUB_TOKEN=""
 fi
 export MPLCONFIGDIR="${MPLCONFIGDIR:-$repo_root/.mplcache}"
-# $HOME has a 3 GB quota; vLLM's compile cache alone reaches that
-export VLLM_CACHE_ROOT="${VLLM_CACHE_ROOT:-/lustre/fswork/projects/rech/fas/uul94gf/vllm_cache}"
+# $HOME has a 3 GB quota that vLLM's compile cache alone fills, and $WORK a 500k-file
+# quota; keep the cache in the job-local scratch and do not persist compiled graphs
+export VLLM_CACHE_ROOT="${VLLM_CACHE_ROOT:-${JOBSCRATCH:-/tmp/$USER}/vllm_cache}"
+export VLLM_DISABLE_COMPILE_CACHE="${VLLM_DISABLE_COMPILE_CACHE:-1}"
 export PYTHONPATH="$repo_root${PYTHONPATH:+:$PYTHONPATH}"
 
 PYTHON="${FEELING_AXI_PYTHON:-$repo_root/.venv/bin/python}"
