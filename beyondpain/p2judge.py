@@ -139,7 +139,7 @@ class Judge:
         if backend == "vllm":
             os.environ.setdefault("VLLM_ENABLE_V1_MULTIPROCESSING", "0")
             from vllm import LLM
-            self.llm = LLM(repo, dtype="bfloat16", max_model_len=8192, gpu_memory_utilization=0.9,
+            self.llm = LLM(repo, dtype="bfloat16", max_model_len=16384, gpu_memory_utilization=0.9,
                            tensor_parallel_size=tp, seed=0, enable_prefix_caching=True, quantization=quantization)
         else:
             from dotenv import load_dotenv
@@ -166,6 +166,8 @@ class Judge:
         raise RuntimeError(f"judge failed: {last}")
 
     def batch(self, reqs: list[tuple[str, str, bool]]) -> list[str]:
+        # a runaway response (repetition loops) can exceed the judge context; keep head and tail
+        reqs = [(sy, u if len(u) < 30000 else u[:20000] + "\n[...]\n" + u[-8000:], j) for sy, u, j in reqs]
         hs = [self._h(*r) for r in reqs]
         todo = sorted({h: r for h, r in zip(hs, reqs) if h not in self.cache}.items())
         if todo:
