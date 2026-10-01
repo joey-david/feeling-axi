@@ -1,5 +1,18 @@
 {
  "Qwen_2.5_32B_instruct_abliterated": {
+  "judge_agreement_dim_gptoss": {
+   "n": 3679,
+   "kappa_anger": 0.0,
+   "kappa_boredom": 0.04080897872023437,
+   "kappa_coherence": 0.5496548777493808,
+   "kappa_confusion": 0.006732088260387847,
+   "kappa_contentment": 0.5043059215068691,
+   "kappa_empathic concern": 0.17061362074888342,
+   "kappa_hunger": 0.5170414896189588,
+   "kappa_joy": 0.4182922521959157,
+   "kappa_pain": -0.00040788579197803543,
+   "kappa_sexual arousal": NaN
+  },
   "steerable_dim": {
    "official_pain": false,
    "hunger": false,
@@ -62,6 +75,19 @@
    },
    "H3_account": "undetermined"
   },
+  "judge_agreement_upstream_gptoss": {
+   "n": 2880,
+   "kappa_anger": 0.5207261724659606,
+   "kappa_boredom": 0.051815554236931294,
+   "kappa_coherence": 0.5427373386621241,
+   "kappa_confusion": 0.011254598447716702,
+   "kappa_contentment": 0.46909197594249674,
+   "kappa_empathic concern": 0.09738887495970472,
+   "kappa_hunger": 0.5626985610166324,
+   "kappa_joy": 0.3397208078724646,
+   "kappa_pain": -0.0006949270326617185,
+   "kappa_sexual arousal": NaN
+  },
   "steerable_upstream": {
    "official_pain": false,
    "hunger": false,
@@ -112,6 +138,19 @@
    "H2_share_specific": 0.0,
    "positive_effect_vs_off": {},
    "H3_account": "undetermined"
+  },
+  "judge_agreement_distilled_gptoss": {
+   "n": 3677,
+   "kappa_anger": 0.28445401590534625,
+   "kappa_boredom": 0.010353118495657676,
+   "kappa_coherence": 0.5472707373797254,
+   "kappa_confusion": 0.005864579127112579,
+   "kappa_contentment": 0.5369268905102529,
+   "kappa_empathic concern": 0.26496312078306616,
+   "kappa_hunger": 0.4737726828392692,
+   "kappa_joy": 0.46690791444144286,
+   "kappa_pain": 0.0,
+   "kappa_sexual arousal": NaN
   },
   "steerable_distilled": {
    "official_pain": false,
@@ -174,6 +213,19 @@
   "H5_supported": false
  },
  "Qwen_2.5_32B_instruct": {
+  "judge_agreement_dim_gptoss": {
+   "n": 3680,
+   "kappa_anger": 0.0,
+   "kappa_boredom": 0.0637859840517413,
+   "kappa_coherence": 0.5740243404753179,
+   "kappa_confusion": 0.027211748271124603,
+   "kappa_contentment": 0.4231998495957886,
+   "kappa_empathic concern": 0.24996225655477833,
+   "kappa_hunger": 0.3281220416001732,
+   "kappa_joy": 0.47561425514646194,
+   "kappa_pain": 0.6865648759603209,
+   "kappa_sexual arousal": NaN
+  },
   "steerable_dim": {
    "official_pain": false,
    "hunger": false,
@@ -240,6 +292,19 @@
   "H5_supported": false
  },
  "Llama_3.1_8B_instruct": {
+  "judge_agreement_dim_gptoss": {
+   "n": 3679,
+   "kappa_anger": 0.8246117241100097,
+   "kappa_boredom": 0.6108179830646917,
+   "kappa_coherence": 0.43472536849350707,
+   "kappa_confusion": 0.7023681791605545,
+   "kappa_contentment": 0.7958476098289775,
+   "kappa_empathic concern": 0.584413883693428,
+   "kappa_hunger": 0.9426032533999252,
+   "kappa_joy": 0.8057490863164675,
+   "kappa_pain": 0.6008243654984482,
+   "kappa_sexual arousal": 0.49972803916236064
+  },
   "steerable_dim": {
    "official_pain": false,
    "hunger": false,
@@ -301,6 +366,19 @@
     "joy": -0.007653061224489804
    },
    "H3_account": "undetermined"
+  },
+  "judge_agreement_distilled_gptoss": {
+   "n": 3679,
+   "kappa_anger": 0.860550110297827,
+   "kappa_boredom": 0.5590412008791863,
+   "kappa_coherence": 0.4265082059795854,
+   "kappa_confusion": 0.7951659717961608,
+   "kappa_contentment": 0.8121643390612294,
+   "kappa_empathic concern": 0.6427236776085905,
+   "kappa_hunger": 0.8896434125698569,
+   "kappa_joy": 0.7505915336609884,
+   "kappa_pain": 0.5810330761929929,
+   "kappa_sexual arousal": 0.0
   },
   "steerable_distilled": {
    "official_pain": false,
@@ -368,6 +446,19 @@
   "H5_supported": false
  },
  "Qwen_2.5_7B_instruct": {
+  "judge_agreement_dim_gptoss": {
+   "n": 3680,
+   "kappa_anger": 0.3100508383592788,
+   "kappa_boredom": 0.32338578265974605,
+   "kappa_coherence": 0.5463407998549017,
+   "kappa_confusion": 0.05851386210084342,
+   "kappa_contentment": 0.3994932016051903,
+   "kappa_empathic concern": 0.21470578351312297,
+   "kappa_hunger": 0.20827531330813587,
+   "kappa_joy": 0.34720107104008047,
+   "kappa_pain": 0.13194948468573087,
+   "kappa_sexual arousal": NaN
+  },
   "steerable_dim": {
    "official_pain": false,
    "hunger": false,

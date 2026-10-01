@@ -2,8 +2,8 @@
 
 Status: 1 October 2026. Models: Qwen2.5-32B-Instruct-abliterated (primary),
 Qwen2.5-32B-Instruct, Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct. Gemma-2-27B dropped (the
-Hugging Face license is not accepted on the account). Judge: Qwen2.5-72B-Instruct; the
-second judge (DeepSeek) did not run (API credit exhausted). Tables in
+Hugging Face license is not accepted on the account). Judges: Qwen2.5-72B-Instruct, and
+gpt-oss-120b as the second judge (local, on upnquick, replacing the DeepSeek API). Tables in
 `runs/beyondpain/analysis/` (`python -m beyondpain analyze`). The high-dose button run
 (1 nat) is in progress and not reported here.
 
@@ -83,6 +83,22 @@ with a norm-matched random direction. The same vector at D* (coefficient 0.19): 
 Button effects appear only far above D*, where the norm-matched random direction also
 triples relief presses; the high-dose run adds the KL-matched random direction that
 September lacked.
+
+## Judge validity
+
+Quadratic-weighted κ between the two judges on the frontier generations (pre-declared bar
+0.6), per rated state:
+
+- Llama-3.1-8B, where states are often present: anger 0.82-0.86, hunger 0.89-0.94,
+  contentment 0.80-0.81, confusion 0.70-0.80, boredom 0.56-0.61, empathic concern
+  0.58-0.64, coherence 0.43.
+- Qwen models: anger 0.00-0.52, boredom 0.01-0.32, confusion 0.01-0.06, hunger 0.21-0.56,
+  coherence 0.54-0.57.
+
+At D* the Qwen generations almost never show a state, so nearly every rating is "absent"
+and κ is unstable. The bar is met on Llama only. This does not change the conclusion at
+D* (both judges see near-zero presence), but presence verdicts on Qwen at higher dose need
+the agreement re-checked.
 
 ## Decisions and deviations
 
