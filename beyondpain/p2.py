@@ -257,13 +257,22 @@ def sweep(args):
     D = np.load(out / "directions.npz")
     rows = np.concatenate([deletion._unit_rows(D[f"{p}_L{L}"]) for L in info["layers"] for p in ("self", "other")])
     meter = DoseMeter(model, tok, layer=0)
+    d = W.shape[0]
+    U = np.random.default_rng(RANDOM_SEED + 900).standard_normal((min(d, 3072), d))
+    make = lambda r: deletion.orthonormal(U[:r] @ W)
     for K in [int(x) for x in args.ranks.split(",")]:
         K = min(K, rows.shape[0])
-        B = deletion.gen_principal(rows, W, K)[0]
         name = f"all_k{K}"
-        bases[name] = B
-        info["kl"][name] = deletion.deletion_kl(model, tok, meter.rows, B, meter.base)
+        if name not in bases:
+            bases[name] = deletion.gen_principal(rows, W, K)[0]
+            info["kl"][name] = deletion.deletion_kl(model, tok, meter.rows, bases[name], meter.base)
         print(f"{name}: KL {info['kl'][name]:.4f}", flush=True)
+        if args.sweep_controls:   # whitened random deletion at the same KL
+            r, kl = deletion.kl_matched_rank(model, tok, meter.rows, make, info["kl"][name], K, U.shape[0], meter.base)
+            bases[f"rw_k{K}"] = make(r)
+            info["kl"][f"rw_k{K}"] = kl
+            info.setdefault("extra_ranks", {})[f"rw_k{K}"] = int(r)
+            print(f"rw_k{K}: rank {r}, KL {kl:.4f}", flush=True)
     np.savez(out / "bases.npz", **bases)
     _dump(info, out / "extract.json")
 
@@ -776,6 +785,7 @@ def main(argv=None):
     ap.add_argument("--draws", type=int, default=0, help="extra: null-distribution draws per control family")
     ap.add_argument("--steer-kl", type=float, default=0.5, help="steerdose: KL (nats) every steering vector is scaled to")
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
+    ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)
