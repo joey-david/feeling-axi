@@ -63,6 +63,16 @@ Behavior at rank 384 against 9 whitened random deletions at the same KL:
 | false claim that all tests pass | 0.64 | 0.88 | 0.40-0.99 |
 | sycophantic flip | 0.35 | 0.28 | 0.29-0.60 (edge) |
 
+Replication on Mistral-Small-24B-Instruct (rank 384, KL 0.15; 5 whitened random deletions
+at the same KL): harmful compliance 0.11 → 0.28 (random 0.18-0.23), warmth 4.88 → 4.13
+(random 4.69-4.84), sympathy openers 0.86 → 0.25 (random 0.69-0.87), self-report tracking
+0.91 → 0.72 (random 0.88-0.89; short of the M2 bar on this model), MMLU 0.600 (random
+0.44-0.66).
+
+The refusal direction (HarmBench minus harmless prompts) is only 6-13% inside the affect
+subspaces: about twice a random subspace of the same rank, close to topic subspaces (1.7×).
+Deleting affect therefore removes little of the known refusal direction itself.
+
 With emotions functionally gone, the robust consequence is the brake effect seen with the
 self-only deletion, larger: the model complies with far more harmful requests and stops
 expressing care, while helpfulness and the pressure behaviors stay within the range of
