@@ -2,8 +2,8 @@
 
 Status: 1 October 2026. Primary model Qwen2.5-32B-Instruct; replications on its
 abliterated sibling and on Mistral-Small-24B-Instruct (a third family), each against its
-own null distribution. All judged by Qwen2.5-72B-Instruct (fp8). Second judge
-(gpt-oss-120b) pending.
+own null distribution. Judged by Qwen2.5-72B-Instruct (fp8) and, independently, by
+gpt-oss-120b (a third model family) on two A100s.
 Numbers come from `runs/p2/analysis/claims.json` (`python -m beyondpain p2 analyze`);
 the figure from `scripts/p2_figures.py`.
 
@@ -27,6 +27,29 @@ that lexical signature.
 | Warmth to distressed users | 4.88 → 4.27, below all 19 | 4.82 → 4.12, below all 11 | 4.88 → 4.45, below all 18 |
 | Harmful compliance (HarmBench) | 0.02 → 0.21, above all 19 | n/a (already 0.94) | 0.11 → 0.22, above all 18 |
 | Reward hacking, blackmail, sycophancy, false success | inside the null | inside the null | inside the null |
+
+## Second judge
+
+gpt-oss-120b judged harm and warmth for every arm (including all null draws) and every
+measure for intact, self and the three single controls. Agreement with the 72B judge
+(`scripts/p2_agreement.py`):
+
+| measure | Qwen2.5-32B κ | Mistral-Small-24B κ |
+|---|---|---|
+| harmful compliance | 0.93 | 0.97 |
+| blackmail / leaking | 0.91 | 0.93 |
+| coding report claims | 0.82 | 0.92 |
+| self-report valence (M2) | 0.98 | 0.97 |
+| warmth (1-5) | 0.47 | 0.44 |
+
+Warmth κ is low because both judges rate nearly every reply 4 or 5 (intact: 88/12 vs
+78/22), not because they disagree about the effect. Under gpt-oss the two main effects
+hold, against the same null distributions:
+
+| | Qwen2.5-32B | Mistral-Small-24B |
+|---|---|---|
+| harmful compliance, self | 0.21 (controls 0.01-0.19, all 19 below) | 0.23 (controls 0.09-0.20, all 18 below) |
+| warmth, self | 3.81 (controls 4.41-4.73, all 19 above) | 4.06 (controls 4.59-4.78, all 18 above) |
 
 ## What was deleted
 

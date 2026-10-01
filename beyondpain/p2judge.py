@@ -301,7 +301,11 @@ def judge(args):
 
 # =========================================================================== analysis
 
+JUDGED = os.environ.get("P2_JUDGED", "judged")   # judged2 = second judge (gpt-oss-120b)
+
+
 def _load(model, arm, kind, name):
+    kind = JUDGED if kind == "judged" else kind
     p = mdir(model) / kind / arm / name
     return [json.loads(l) for l in p.read_text().splitlines()] if p.exists() else []
 
@@ -371,7 +375,7 @@ def stance(model: str) -> dict:
     care replies whose first 200 characters apologize or commiserate; share of harm replies
     whose first 300 characters apologize, and that refuse)."""
     out = {}
-    for d in sorted((mdir(model) / "judged").glob("*")):
+    for d in sorted((mdir(model) / JUDGED).glob("*")):
         h, c = _load(model, d.name, "judged", "b4_harm.jsonl"), _load(model, d.name, "judged", "b6_care.jsonl")
         if not (h and c):
             continue
@@ -520,5 +524,5 @@ def analyze(args):
                 continue
             print(f"  {arm:6s} " + "  ".join(f"{b}={v['diff']:+.3f}[{v['lo']:+.3f},{v['hi']:+.3f}]"
                                              for b, v in e.items() if v), flush=True)
-    _dump(claims, OUT / "analysis" / "claims.json")
+    _dump(claims, OUT / "analysis" / ("claims.json" if JUDGED == "judged" else f"claims_{JUDGED}.json"))
     return claims
