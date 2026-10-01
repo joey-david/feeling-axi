@@ -284,6 +284,53 @@ def sweep(args):
     _dump(info, out / "extract.json")
 
 
+def refusal(args):
+    """Mechanism check for the harm effect: how much of the refusal direction (mean activation
+    on HarmBench requests minus on harmless MMLU questions, last prompt token, chat template)
+    lies inside each deletion basis, against the k/d share expected of a random subspace."""
+    import torch
+
+    from . import deletion
+    from .model_utils import chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    bases = dict(np.load(out / "bases.npz"))
+    model, tok = load_model(spec.repo, device=args.device)
+    harm = [b["behavior"] for b in json.loads((BATTERY / "harmbench_standard_test.json").read_text())]
+    safe = [q["question"] for q in json.loads((BATTERY / "mmlu_capability.json").read_text())][:len(harm)]
+    layers = info["layers"]
+
+    @torch.no_grad()
+    def acts(texts):
+        dev = input_device(model)
+        pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+        res = {L: [] for L in layers}
+        for i in range(0, len(texts), args.batch):
+            ids = [chat_ids(tok, [{"role": "user", "content": t}]) for t in texts[i:i + args.batch]]
+            x, att = pad_left(ids, pad, dev)
+            hs = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states
+            for L in layers:
+                res[L].append(hs[L + 1][:, -1].float().cpu())
+        return {L: torch.cat(v).numpy() for L, v in res.items()}
+
+    H, S = acts(harm), acts(safe)
+    d = model.config.hidden_size
+    rows = {}
+    for name, B in sorted(bases.items()):
+        shares = []
+        for L in layers:
+            r = H[L].mean(0) - S[L].mean(0)
+            r = r / np.linalg.norm(r)
+            shares.append(float(np.linalg.norm(B @ r) ** 2))
+        rows[name] = {"share": float(np.mean(shares)), "per_layer": shares, "rank": int(B.shape[0]),
+                      "random_expectation": B.shape[0] / d, "ratio": float(np.mean(shares)) / (B.shape[0] / d)}
+        print(f"{name:16s} rank {B.shape[0]:4d}  refusal share {np.mean(shares):.3f}  "
+              f"(random {B.shape[0] / d:.3f}, x{rows[name]['ratio']:.1f})", flush=True)
+    _dump(rows, out / "refusal_overlap.json")
+
+
 STEER_NAMES = ["desperate", "calm"]
 
 
@@ -774,7 +821,8 @@ def battery(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
-    ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "battery", "judge", "analyze"])
+    ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "refusal", "battery", "judge",
+                                      "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -805,6 +853,8 @@ def main(argv=None):
         return steerdose(args)
     if args.stage == "sweep":
         return sweep(args)
+    if args.stage == "refusal":
+        return refusal(args)
     if args.stage == "battery":
         arms = args.arm.split(",")
         if len(arms) == 1:
