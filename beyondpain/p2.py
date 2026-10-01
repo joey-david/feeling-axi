@@ -438,7 +438,10 @@ class Runner:
 
         kw = {}
         if steer is not None:   # a forward patch is invisible to compiled graphs
-            kw = dict(enforce_eager=True, compilation_config={"level": 0})
+            kw = dict(enforce_eager=True)
+            import vllm
+            if tuple(int(x) for x in vllm.__version__.split(".")[:2]) < (0, 11):
+                kw["compilation_config"] = {"level": 0}
         self.llm = LLM(repo, dtype="bfloat16", max_model_len=max_model_len, gpu_memory_utilization=gpu_mem,
                        seed=seed, enable_prefix_caching=steer is None, tensor_parallel_size=tp, **kw)
         self.tok = self.llm.get_tokenizer()
