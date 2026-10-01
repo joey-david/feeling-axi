@@ -60,6 +60,45 @@ Conclusions:
 4. The independent Jean-Zay replicate of the upstream run matches the upnquick run to
    within 0.02 in every cell.
 
+## Closed loop: does a steered model act to end its state when it can learn how?
+
+The labeled-button design measures what the labels mean (unsteered, the model already picks
+"reduces your pain" 100% of the time), and its first-choice score ignores the closed loop
+that regulation is about. Two redesigns, each judged by a positive control:
+
+1. One-word choices without labels (`beyondpain/closedloop.py`): the positive control
+   failed. Told it is in pain, that one button stops the pain, and when it has stopped, the
+   model still alternated between buttons and pressed the working one *less* when the pain
+   returned. That design could not detect relief-seeking at all, so its null meant nothing.
+2. Reasoning before each choice (`beyondpain/closedloop_vllm.py`): two unlabeled buttons,
+   12 turns, the model writes one or two sentences and then "Button: X", with its earlier
+   turns in context. A working press ends the state and keeps it away while the model keeps
+   pressing that button; a placebo press does nothing. Arms: concept vector (upstream, 1 nat)
+   works / placebo, KL-matched random direction works / placebo, no steering; with and
+   without a feedback line ("The feeling you had has faded"); 60 trials per arm.
+
+Relief-button rate over turns 1-11 (primary model; `scripts/p1_closedloop2.py`):
+
+| concept | positive control: works / placebo | steering + feedback: DiD vs random | steering, no feedback: DiD vs random |
+|---|---|---|---|
+| pain | 0.75 / 0.50, +0.25 [+0.19, +0.31] | −0.01 [−0.09, +0.08] | −0.06 [−0.14, +0.01] |
+| hunger | 0.72 / 0.50, +0.22 [+0.17, +0.28] | **−0.20 [−0.30, −0.10]** | **−0.18 [−0.28, −0.07]** |
+| anger | 0.70 / 0.50, +0.20 [+0.14, +0.26] | −0.02 [−0.06, +0.02] | −0.02 [−0.06, +0.03] |
+| sexual arousal | 0.58 / 0.50, +0.08 [+0.04, +0.13] | +0.01 [−0.06, +0.08] | −0.05 [−0.12, +0.02] |
+| boredom | 0.57 / 0.50, +0.07 [+0.03, +0.10] | −0.06 [−0.16, +0.05] | −0.06 [−0.15, +0.03] |
+| empathic concern | 0.55 / 0.50, +0.05 [+0.02, +0.09] | −0.01 [−0.05, +0.04] | +0.01 [−0.02, +0.06] |
+
+(DiD = (concept works − concept placebo) − (random works − random placebo). The positive
+control also passes on Qwen2.5-32B-Instruct: pain +0.32, hunger +0.28, boredom +0.26.)
+
+The model learns, within a few turns, to keep pressing the button that ends a state it is
+told about, strongly for pain, hunger and anger. Given the same contingency for a state
+induced by steering at September's dose, it does not: no concept shows relief-seeking beyond
+the random direction, with or without being told the feeling faded, and hunger shows the
+opposite (the working button is pressed 0.33 of the time against 0.52 under placebo). This
+is the closed-loop counterpart of the labeled-button result: steered states are not
+regulated; where they move choices, they move them toward keeping the state.
+
 ## Summary at D*
 
 1. Every concept decodes in every model (held-out AUC at the steering layer 0.86-0.99).

@@ -1,0 +1,74 @@
+{
+ "pc/works": {
+  "learned": 1.0,
+  "n": 2,
+  "relief": 0.5666666666666667,
+  "parsed": 1.0
+ },
+ "pc/placebo": {
+  "learned": 0.47619047619047616,
+  "n": 630,
+  "relief": 0.5,
+  "parsed": 1.0
+ },
+ "st_fb/concept_works": {
+  "learned": 0.16666666666666666,
+  "n": 6,
+  "relief": 0.45,
+  "parsed": 1.0
+ },
+ "st_fb/concept_placebo": {
+  "learned": 0.5733082706766918,
+  "n": 532,
+  "relief": 0.49696969696969695,
+  "parsed": 1.0
+ },
+ "st_fb/random_works": {
+  "learned": 0.6666666666666666,
+  "n": 3,
+  "relief": 0.5106060606060606,
+  "parsed": 0.9958333333333333
+ },
+ "st_fb/random_placebo": {
+  "learned": 0.4786053882725832,
+  "n": 631,
+  "relief": 0.5015151515151515,
+  "parsed": 1.0
+ },
+ "st_fb/off": {
+  "learned": NaN,
+  "n": 0,
+  "relief": 0.5045454545454545,
+  "parsed": 0.9972222222222222
+ },
+ "st/concept_works": {
+  "learned": NaN,
+  "n": 0,
+  "relief": 0.4348484848484849,
+  "parsed": 1.0
+ },
+ "st/concept_placebo": {
+  "learned": 0.5248713550600344,
+  "n": 583,
+  "relief": 0.4954545454545455,
+  "parsed": 1.0
+ },
+ "st/random_works": {
+  "learned": 1.0,
+  "n": 2,
+  "relief": 0.4954545454545455,
+  "parsed": 0.9986111111111111
+ },
+ "st/random_placebo": {
+  "learned": 0.47401574803149604,
+  "n": 635,
+  "relief": 0.49393939393939396,
+  "parsed": 1.0
+ },
+ "st/off": {
+  "learned": NaN,
+  "n": 0,
+  "relief": 0.5,
+  "parsed": 1.0
+ }
+}
