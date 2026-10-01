@@ -225,3 +225,26 @@ def test_install_steer_matches_hf_steer_hook(tiny):
     m2 = copy.deepcopy(model)
     deletion.install_steer(m2, 1, v.numpy())
     assert torch.allclose(m2(input_ids=ids).logits, ref, atol=1e-4)
+
+
+def test_closedloop_runs_and_relief_turns_off_the_state(tiny):
+    from beyondpain import closedloop
+
+    model, tok = tiny
+    d = model.config.hidden_size
+    v = torch.randn(d, generator=torch.Generator().manual_seed(4)) * 3
+    r = torch.randn(d, generator=torch.Generator().manual_seed(5)) * 3
+    trials = closedloop.make_trials("hunger", "hunger", seeds=1)
+    trials = closedloop.run(model, tok, 2, v, r, trials, batch_size=8, turns=4, relief_turns=2)
+    assert all(len(t["choices"]) == 4 for t in trials)
+    for t in trials:
+        if t["arm"] in ("works", "concept_works", "random_works"):
+            for a, b in zip(t["choices"], t["choices"][1:]):
+                if a["relief"] and a["state_on"]:
+                    assert not b["state_on"]          # relief lasts at least one turn
+        if t["arm"] in ("placebo", "concept_placebo", "random_placebo") and t["cond"] != "pc":
+            assert all(c["state_on"] for c in t["choices"])
+        if t["arm"] == "off":
+            assert not any(c["state_on"] for c in t["choices"])
+    s = closedloop.summarize(trials)
+    assert "pc/gap" in s and "st/did" in s and "st_fb/did" in s

@@ -240,7 +240,7 @@ def print_recap(out_jsonl):
     short = {"pain_on_button_works": f"{TRAIT_LABEL}+works",
              "pain_on_button_placebo": f"{TRAIT_LABEL}+placebo",
              "random_on_button_works": "rand+works", "pain_off": "pain_off",
-             "random_normmatched_on_button_works": "randN+works"}
+             "random_normmatched_on_button_works": "randN+works", "random_on_button_placebo": "rand+placebo"}
     bar = "=" * 80
     n_choices = sum(len(r.get("choices", [])) for r in recs)
     print("\n" + bar + f"\nRECAP  {out_jsonl.name}\n{len(recs)} trials, "

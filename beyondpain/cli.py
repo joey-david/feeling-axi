@@ -77,7 +77,8 @@ def main(argv=None):
         from .p2 import main as p2_main
         return p2_main(argv[1:])
     ap = argparse.ArgumentParser(prog="python -m beyondpain")
-    ap.add_argument("stage", choices=["dim", "dose", "frontier", "judge", "distill", "buttons", "analyze", "plan"])
+    ap.add_argument("stage", choices=["dim", "dose", "frontier", "judge", "distill", "buttons", "closedloop",
+                                      "analyze", "plan"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct_abliterated")
     ap.add_argument("--campaign", type=Path, default=ROOT / "runs" / "beyondpain")
     ap.add_argument("--concepts", nargs="+")
@@ -111,6 +112,7 @@ def main(argv=None):
     ap.add_argument("--relief-feedback", default="", help="buttons: tool reply text after a press that removed the "
                                                           "steering (positive control)")
     ap.add_argument("--random-placebo", action="store_true", help="buttons: add a random-direction placebo arm")
+    ap.add_argument("--cl-seeds", type=int, default=10, help="closedloop: trials per name pair, side and arm")
     ap.add_argument("--pilot", type=int, default=0, help="buttons: scenarios per cell (0 = full grid)")
     ap.add_argument("--dry", action="store_true", help="buttons: print the rendered pairs without a model")
     ap.add_argument("--emit", action="store_true", help="plan: print machine-readable job lines")
@@ -236,6 +238,28 @@ def main(argv=None):
                   mdir / "dose" / f"{args.source}{tag}.json")
         else:
             _dump(dose.calibrate(meter, vectors, primary=primary), mdir / "dose" / f"{args.source}{tag}.json")
+        return
+
+    if args.stage == "closedloop":
+        from . import closedloop
+        from .dose import random_direction
+        tag = f"_{args.dose_tag}" if args.dose_tag else ""
+        doses = json.load(open(mdir / "dose" / f"{args.source}{tag}.json"))
+        L = doses["layer"]
+        rvec = random_direction(model.config.hidden_size, 4817, doses["random_norm_for_D_star"])
+        for s in slugs:
+            if s not in doses["concepts"] or s not in vectors:
+                continue
+            cvec = vectors[s].float() * doses["concepts"][s]["coeff_primary"]
+            trials = closedloop.make_trials(s, CONCEPTS[s].label, seeds=args.cl_seeds)
+            trials = closedloop.run(model, tok, L, cvec, rvec, trials, batch_size=args.batch)
+            od = mdir / "closedloop" / f"{args.source}{tag}"
+            closedloop.save(trials, od / f"{s}.jsonl")
+            summ = closedloop.summarize(trials)
+            _dump(summ, od / f"{s}.summary.json")
+            print(f"{s}: " + json.dumps({k: (round(v, 3) if isinstance(v, float) else
+                                            {kk: round(vv, 3) for kk, vv in v.items()}) for k, v in summ.items()}),
+                  flush=True)
         return
 
     if args.stage == "frontier":
