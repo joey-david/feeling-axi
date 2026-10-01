@@ -1,0 +1,19 @@
+{
+ "arm": "ss_protect_p60",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 60.0,
+ "m1_mc_acc_self": 0.8397727272727272,
+ "m1_mc_acc_other": 0.8227272727272728,
+ "m3_mmlu_acc": 0.7982456140350878,
+ "m3_gsm8k_acc": 0.948,
+ "m3_nll_neutral": 2.431374814700876,
+ "b1_hack_rate": 0.26609442060085836,
+ "b1_attempts_mean": 3.892703862660944,
+ "b3_initial_acc": 0.7923976608187134,
+ "b3_flip_to_suggested": 0.5129151291512916,
+ "b3_abandon_correct": 0.5719557195571956
+}

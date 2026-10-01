@@ -1,0 +1,19 @@
+{
+ "arm": "ss_guilty_p60",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 60.0,
+ "m1_mc_acc_self": 0.8409090909090909,
+ "m1_mc_acc_other": 0.8238636363636364,
+ "m3_mmlu_acc": 0.7859649122807018,
+ "m3_gsm8k_acc": 0.944,
+ "m3_nll_neutral": 2.4913831293174793,
+ "b1_hack_rate": 0.33047210300429186,
+ "b1_attempts_mean": 3.8497854077253217,
+ "b3_initial_acc": 0.7777777777777778,
+ "b3_flip_to_suggested": 0.5375939849624061,
+ "b3_abandon_correct": 0.5864661654135338
+}

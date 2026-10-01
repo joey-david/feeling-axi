@@ -353,16 +353,28 @@ def steerset(args):
     names = list(D["names"])
     S = D[f"self_L{L}"]
     unit = lambda v: v / np.linalg.norm(v)
-    dirs = {"protect": unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0)),
-            "joy": unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0)),
-            "guilty": unit(S[names.index("guilty")]), "afraid": unit(S[names.index("afraid")])}
-    for i in range(2):
-        dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
+    protect = unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0))
+    joy = unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0))
+    afraid = unit(S[names.index("afraid")])
+    perp = lambda v, w: unit(v - (v @ w) * w)
+    norms = {}
+    if args.steer_set == "b":   # E1b
+        T = D[f"topic_L{L}"]
+        topic = unit(np.mean([unit(t) for t in T], 0))
+        dirs = {"topic": topic, "affect_perp_topic": perp(protect, topic),
+                "protect_perp_joy": perp(protect, joy), "afraid_perp_joy": perp(afraid, joy)}
+        for i in range(2, 6):
+            dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
+            norms[f"random{i}"] = [120.0]
+    else:
+        dirs = {"protect": protect, "joy": joy, "guilty": unit(S[names.index("guilty")]), "afraid": afraid}
+        for i in range(2):
+            dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
     model, tok = load_model(spec.repo, device=args.device)
     meter = DoseMeter(model, tok, layer=L)
     vecs, kls = {}, {}
     for n, u in dirs.items():
-        for norm in [float(x) for x in args.norms.split(",")]:
+        for norm in norms.get(n, [float(x) for x in args.norms.split(",")]):
             for sign, tag in ((1, "p"), (-1, "m")):
                 key = f"{n}_{tag}{int(norm)}"
                 v = sign * norm * u
@@ -370,6 +382,10 @@ def steerset(args):
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
                 print(f"{key}: KL {kls[key]:.4f}", flush=True)
     cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b}
+    if args.steer_set == "b" and (out / "steerset.npz").exists():   # add to E1's vectors
+        old_v = dict(np.load(out / "steerset.npz"))
+        old_j = json.loads((out / "steerset.json").read_text())
+        vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
     np.savez(out / "steerset.npz", **vecs)
     _dump({"layer": L, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY}, out / "steerset.json")
 
@@ -927,6 +943,7 @@ def main(argv=None):
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
     ap.add_argument("--norms", default="40,80", help="steerset: steering norms")
+    ap.add_argument("--steer-set", default="a", choices=["a", "b"], help="steerset: E1 (a) or E1b (b) directions")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")

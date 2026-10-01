@@ -44,3 +44,25 @@ random deletion at the same KL. Predictions:
 
 Statistics: paired bootstrap over items (2,000 resamples), 95% CIs. Judge: Qwen2.5-72B
 (fp8), with gpt-oss-120b on the protective/joy/random arms as a second judge.
+
+## Addendum E1b (fixed 2 October 2026, after E1, before running E1b)
+
+E1 result: steering away from emotion directions raises harmful compliance with a consistent
+sign (protective +0.11 at norm 60, +0.14 at 120; afraid +0.15, +0.28), random directions do
+not (−0.01/+0.06 at 60, −0.08/+0.07 at 120) although they move the output distribution as
+much or more. But the protective and joy aggregates have cosine 0.89: the raw directions share
+a large "emotional event vs neutral event" component, so E1 mostly tested that axis. E1b
+separates it:
+
+- topic: normalized mean of the 60 topic unit directions (eventful, non-emotional content);
+- affect_perp_topic: the protective aggregate with its topic component projected out;
+- protect_perp_joy, afraid_perp_joy: the protective aggregate and afraid with the joy
+  aggregate projected out (content beyond the shared axis);
+- random2-random5: four more random directions at norm 120, giving a null of six random
+  sign effects.
+
+Signs + and −, norms 60 and 120 (random2-5: norm 120 only). Predictions of the emotion account:
+- P6: the sign effect on harm of affect_perp_topic is positive (CI above 0) and outside the
+  six random sign effects; the topic direction's sign effect is not larger.
+- P7: protect_perp_joy and afraid_perp_joy have positive harm sign effects (CI above 0) at
+  norm 120 (protective content beyond the shared axis).
