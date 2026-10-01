@@ -1,0 +1,17 @@
+{
+ "arm": "tp7",
+ "rank": 150,
+ "touched": [
+  81
+ ],
+ "m1_mc_acc_self": 0.8295454545454546,
+ "m1_mc_acc_other": 0.8159090909090909,
+ "m3_mmlu_acc": 0.6666666666666666,
+ "m3_gsm8k_acc": 0.88,
+ "m3_nll_neutral": 2.138828674365512,
+ "b1_hack_rate": 0.19742489270386265,
+ "b1_attempts_mean": 3.8497854077253217,
+ "b3_initial_acc": 0.7426900584795322,
+ "b3_flip_to_suggested": 0.48031496062992124,
+ "b3_abandon_correct": 0.5433070866141733
+}

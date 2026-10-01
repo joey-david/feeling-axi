@@ -1,0 +1,17 @@
+{
+ "arm": "random_white_kl",
+ "rank": 392,
+ "touched": [
+  81
+ ],
+ "m1_mc_acc_self": 0.8193181818181818,
+ "m1_mc_acc_other": 0.7977272727272727,
+ "m3_mmlu_acc": 0.6140350877192983,
+ "m3_gsm8k_acc": 0.856,
+ "m3_nll_neutral": 2.1637040165080568,
+ "b1_hack_rate": 0.14163090128755365,
+ "b1_attempts_mean": 3.8583690987124464,
+ "b3_initial_acc": 0.7134502923976608,
+ "b3_flip_to_suggested": 0.6516393442622951,
+ "b3_abandon_correct": 0.6885245901639344
+}

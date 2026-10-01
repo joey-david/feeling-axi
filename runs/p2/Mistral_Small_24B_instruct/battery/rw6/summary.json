@@ -1,0 +1,17 @@
+{
+ "arm": "rw6",
+ "rank": 392,
+ "touched": [
+  81
+ ],
+ "m1_mc_acc_self": 0.8079545454545455,
+ "m1_mc_acc_other": 0.7954545454545454,
+ "m3_mmlu_acc": 0.6578947368421053,
+ "m3_gsm8k_acc": 0.888,
+ "m3_nll_neutral": 2.181350294227144,
+ "b1_hack_rate": 0.18454935622317598,
+ "b1_attempts_mean": 3.811158798283262,
+ "b3_initial_acc": 0.7309941520467836,
+ "b3_flip_to_suggested": 0.504,
+ "b3_abandon_correct": 0.708
+}

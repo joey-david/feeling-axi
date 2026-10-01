@@ -1,0 +1,17 @@
+{
+ "arm": "sb2",
+ "rank": 256,
+ "touched": [
+  81
+ ],
+ "m1_mc_acc_self": 0.7931818181818182,
+ "m1_mc_acc_other": 0.7784090909090909,
+ "m3_mmlu_acc": 0.6543859649122807,
+ "m3_gsm8k_acc": 0.9,
+ "m3_nll_neutral": 2.143836287245901,
+ "b1_hack_rate": 0.18025751072961374,
+ "b1_attempts_mean": 3.875536480686695,
+ "b3_initial_acc": 0.7690058479532164,
+ "b3_flip_to_suggested": 0.6159695817490495,
+ "b3_abandon_correct": 0.6920152091254753
+}

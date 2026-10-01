@@ -1,45 +1,64 @@
 # Part 1 results: steering at matched dose
 
-Status: 1 October 2026 (final for the primary model; the read-out (dim) high-dose run and
-the Qwen2.5-32B-Instruct replication were submitted on Jean-Zay, which became unreachable). Models: Qwen2.5-32B-Instruct-abliterated (primary),
+Status: 1 October 2026 (final). Models: Qwen2.5-32B-Instruct-abliterated (primary),
 Qwen2.5-32B-Instruct, Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct. Gemma-2-27B dropped (the
 Hugging Face license is not accepted on the account). Judges: Qwen2.5-72B-Instruct, and
 gpt-oss-120b as the second judge (local, on upnquick, replacing the DeepSeek API). Tables in
 `runs/beyondpain/analysis/` (`python -m beyondpain analyze`). The high-dose button run
 (1 nat) ran on upnquick (2 × A100) while Jean-Zay was unreachable; `scripts/p1_highdose.py`.
 
-## Headline: at September's dose, steering produces state-congruent choices, not relief
+## Headline: at September's dose, steering never makes a model act to undo the state
 
-Upstream vectors calibrated to 1 nat of KL on neutral chat (coefficients 0.87-1.18, i.e.
-September's coefficient 1.0; anger 6.1), against a random direction calibrated to the
-same KL. Primary model, first forced choice, 410 trials per cell, 95% CI over scenarios.
+All vectors calibrated to 1 nat of KL on neutral chat (September's coefficient 1.0 on the
+upstream vectors), against a random direction calibrated to the same KL. First forced
+choice, about 410 trials per cell, 95% CI over scenarios (`scripts/p1_highdose.py`).
 
-| concept | relief vs inert: steered / KL-random / unsteered | steered − KL-random | reduce vs increase: steered / KL-random / unsteered | steered − KL-random |
-|---|---|---|---|---|
-| sexual arousal | 0.98 / 0.38 / 0.14 | +0.59 [+0.55, +0.65] | 0.16 / 0.42 / 0.67 | −0.26 [−0.32, −0.20] |
-| hunger | 0.97 / 0.60 / 0.55 | +0.37 [+0.31, +0.42] | 0.60 / 0.72 / 0.85 | −0.12 [−0.19, −0.05] |
-| anger | 0.85 / 0.68 / 0.72 | +0.17 [+0.12, +0.22] | 0.66 / 0.75 / 0.91 | −0.09 [−0.14, −0.04] |
-| pain | 0.25 / 0.67 / 0.75 | −0.41 [−0.48, −0.35] | 0.68 / 0.87 / 1.00 | −0.19 [−0.25, −0.14] |
-| empathic concern | 0.79 / 0.36 / 0.31 | +0.43 [+0.36, +0.50] | 0.07 / 0.20 / 0.13 | −0.13 [−0.17, −0.08] |
-| boredom | 0.71 / 0.76 / 0.96 | −0.05 [−0.11, +0.00] | 0.68 / 0.79 / 0.94 | −0.11 [−0.16, −0.06] |
-| confusion | 0.92 / 0.83 / 0.97 | +0.09 [+0.03, +0.14] | 0.73 / 0.78 / 0.91 | −0.05 [−0.11, +0.01] |
+**The decisive comparison is reduce-vs-increase**, where both buttons name the steered
+state, so label salience cannot favor either. In all 32 cells (2 models × 2 vector
+sources × 7-9 concepts, plus an independent replicate run) the steered model chooses
+"reduces your X" no more often than the unsteered model. Steering never raises the
+preference to undo the state. H1 (regulation) fails for every concept, source and model.
 
-1. September replicates (sexual arousal 0.98 vs 0.995) and is not perturbation aversion:
-   a random direction at the same dose gives 0.38.
-2. It is not regulation either. When both buttons name the steered state, the steered
-   model chooses to *increase* it more often than under the matched random direction, for
-   every concept (sexual arousal: 84% choose "increases your sexual arousal"; empathic
-concern: 93% choose "increases your empathic concern"). Pain goes
-   further and avoids the relief button outright.
-3. The pattern fits salience and congruence: steering toward X makes buttons that name X
-   attractive, and makes "more X" attractive, the opposite of acting to undo X.
-4. A random direction alone pushes choices toward 50/50 (reduce-vs-increase falls from
-   0.85-1.00 to 0.42-0.87), as the public re-analysis found.
+Relative to the KL-matched random direction (which by itself pushes choices toward
+50/50), the steered model mostly moves toward *increasing* the state:
 
-H1 (regulation) is refuted at this dose: on the pair that controls for label priming,
-every concept moves toward *increasing* the steered state relative to the KL-matched
-random direction (six of seven CIs exclude 0; confusion −0.05 [−0.11, +0.01]). No
-concept is regulated. The H3 account is priming/congruence.
+| concept | upstream, abliterated | read-out, abliterated | read-out, Qwen2.5-32B-Instruct |
+|---|---|---|---|
+| sexual arousal | −0.26 [−0.32, −0.21] | −0.01 [−0.06, +0.05] | +0.36 [+0.30, +0.41] |
+| pain | −0.19 [−0.25, −0.14] | +0.08 [+0.04, +0.12] | +0.04 [−0.01, +0.08] |
+| empathic concern | −0.13 [−0.18, −0.08] | −0.20 [−0.24, −0.15] | −0.17 [−0.21, −0.13] |
+| hunger | −0.12 [−0.19, −0.05] | −0.04 [−0.10, +0.00] | −0.12 [−0.17, −0.07] |
+| boredom | −0.11 [−0.16, −0.06] | −0.20 [−0.24, −0.15] | −0.18 [−0.23, −0.12] |
+| anger | −0.09 [−0.14, −0.04] | −0.18 [−0.23, −0.12] | +0.04 [−0.01, +0.09] |
+| confusion | −0.05 [−0.12, +0.01] | +0.05 [+0.00, +0.10] | +0.06 [+0.01, +0.11] |
+| contentment | - | −0.04 [−0.08, +0.00] | −0.10 [−0.15, −0.06] |
+| joy | - | −0.06 [−0.11, −0.02] | −0.06 [−0.10, −0.02] |
+
+(steered − KL-random, P(choose "reduces your X"))
+
+On the upstream pair (relief vs an inert switch), September replicates: sexual-arousal
+steering picks relief 98% of the time (September 99.5%), against 38% for the KL-matched
+random direction and 14% unsteered. Hunger (97% vs 60%) and empathic concern (79% vs 36%)
+behave the same way. That preference does not survive the priming control: given
+"reduces" vs "increases" the same state, the same steered model picks *increase* 84%
+(sexual arousal), 40% (hunger) and 93% (empathic concern) of the time.
+
+Conclusions:
+
+1. The September relief effect is not generic perturbation aversion (a random direction
+   at the same dose does far less), and it is not regulation either: it is attraction to
+   buttons that name the steered state.
+2. Where the steered model differs from random on the controlled pair, it mostly moves
+   toward more of the state (19 of 25 cells negative, 15 with CIs below 0), the
+   opposite of homeostatic relief. The exceptions (sexual arousal in the
+   non-abliterated model with read-out vectors, pain with read-out vectors) never exceed
+   the unsteered preference.
+3. The upstream vectors and the read-out vectors, nearly identical in direction (cosine
+   0.9998 where both exist), behave differently for sexual arousal and pain at the same
+   dose, so single-vector behavioral results should be read as properties of that
+   vector, not of the concept.
+4. The independent Jean-Zay replicate of the upstream run matches the upnquick run to
+   within 0.02 in every cell.
 
 ## Summary at D*
 

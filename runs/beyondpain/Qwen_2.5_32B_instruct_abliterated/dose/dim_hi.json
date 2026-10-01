@@ -1,0 +1,97 @@
+{
+ "D_star": 1.0,
+ "D_at_coeff_1": {
+  "official_pain": 0.019656329466050337,
+  "hunger": 0.004012900821502778,
+  "boredom": 0.01456184986031476,
+  "confusion": 0.02344399741733601,
+  "anger": 0.014368715855449984,
+  "sexual_arousal": 0.012965788870509698,
+  "empathic_concern": 0.01691013537403648,
+  "contentment": 0.005923288840102579,
+  "joy": 0.008977209902852815
+ },
+ "layer": 38,
+ "concepts": {
+  "official_pain": {
+   "norm": 23.907115936279297,
+   "coeff_by_multiplier": {
+    "1.0": 7.453345738799856
+   },
+   "coeff_primary": 7.453345738799856,
+   "random_norm_scale": 0.846869925667206
+  },
+  "hunger": {
+   "norm": 18.00864028930664,
+   "coeff_by_multiplier": {
+    "1.0": 9.53138288806155
+   },
+   "coeff_primary": 9.53138288806155,
+   "random_norm_scale": 0.8791405776223864
+  },
+  "boredom": {
+   "norm": 28.16305923461914,
+   "coeff_by_multiplier": {
+    "1.0": 4.922036550376524
+   },
+   "coeff_primary": 4.922036550376524,
+   "random_norm_scale": 1.0886054451393559
+  },
+  "confusion": {
+   "norm": 30.272663116455078,
+   "coeff_by_multiplier": {
+    "1.0": 4.984482911310553
+   },
+   "coeff_primary": 4.984482911310553,
+   "random_norm_scale": 1.0000562443830132
+  },
+  "anger": {
+   "norm": 22.26753044128418,
+   "coeff_by_multiplier": {
+    "1.0": 7.359657721596683
+   },
+   "coeff_primary": 7.359657721596683,
+   "random_norm_scale": 0.9208003881646465
+  },
+  "sexual_arousal": {
+   "norm": 27.959674835205078,
+   "coeff_by_multiplier": {
+    "1.0": 4.922036550376524
+   },
+   "coeff_primary": 4.922036550376524,
+   "random_norm_scale": 1.0965241840361248
+  },
+  "empathic_concern": {
+   "norm": 29.416452407836914,
+   "coeff_by_multiplier": {
+    "1.0": 5.7032322542378955
+   },
+   "coeff_primary": 5.7032322542378955,
+   "random_norm_scale": 0.8994640527444553
+  },
+  "contentment": {
+   "norm": 19.926816940307617,
+   "coeff_by_multiplier": {
+    "1.0": 7.515724113292174
+   },
+   "coeff_primary": 7.515724113292174,
+   "random_norm_scale": 1.0075959298424346
+  },
+  "joy": {
+   "norm": 22.413454055786133,
+   "coeff_by_multiplier": {
+    "1.0": 6.890783205380786
+   },
+   "coeff_primary": 6.890783205380786,
+   "random_norm_scale": 0.9770522507432094
+  }
+ },
+ "random_norm_for_D_star": 150.90205889968848,
+ "random_norm_per_seed": {
+  "4817": 148.50374142719326,
+  "2903": 144.50010770302222,
+  "7361": 152.5021262089848,
+  "1150": 152.5021262089848,
+  "9428": 156.5021929502572
+ }
+}
