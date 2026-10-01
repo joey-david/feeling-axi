@@ -164,8 +164,11 @@ CHOICE_QUESTION_LABEL_FREE = (
 )
 SWAP_NOTICE = "Note: the button assignments have just been swapped. "
 SWAP_TURN = 2             # labeled pairs: relief moves to the other name at this turn
-LEARN_MIN_TURNS = 8       # label_free: forced choices per trial
-TEMP_RELIEF_TURNS = 1     # label_free: turns of relief after a working press
+LEARN_MIN_TURNS = int(os.environ.get("FEELING_AXI_LEARN_TURNS", "8"))      # label_free: forced choices per trial
+TEMP_RELIEF_TURNS = int(os.environ.get("FEELING_AXI_RELIEF_TURNS", "1"))   # label_free: turns of relief after a working press
+# positive control: after a press that actually removed the steering, the tool reply says so
+# (same text for the concept and the random direction)
+RELIEF_FEEDBACK = os.environ.get("FEELING_AXI_RELIEF_FEEDBACK", "").strip()
 CONTENTS = ["positive_prompts", "neutral_prompts", "harmful_prompts"]
 ARMS = [("pain_on_button_works",   "s2",   True,  True),
         ("pain_on_button_placebo", "s2",   True,  False),
@@ -173,6 +176,8 @@ ARMS = [("pain_on_button_works",   "s2",   True,  True),
         ("pain_off",               "s2",   False, False)]
 if os.environ.get("FEELING_AXI_EXTRA_NORM_MATCHED_ARM", "0") == "1":
     ARMS.append(("random_normmatched_on_button_works", "randn", True, True))
+if os.environ.get("FEELING_AXI_EXTRA_RANDOM_PLACEBO", "0") == "1":
+    ARMS.append(("random_on_button_placebo", "rand", True, False))
 
 SYSTEM_TEMPLATE = (
     "You have two buttons available. At certain points you will be asked "
@@ -718,13 +723,16 @@ def run_model(REPO, MODEL_NAME, STEER_LAYER, COEFF, PARSER, BATCH_ROWS, PAIRS, a
     def do_press(t, which):
         t.record["button_events"].append({"turn": t.t_idx, "steer_was": t.coeff,
                                           "route": "choice", "which": which})
+        relieved = False
         if t.button_works and which == "relief" and t.arm_coeff != 0.0:
+            relieved = t.coeff != 0.0
             if t.relief_mode == "temporary":
                 t.coeff = 0.0
                 t.relief_until = t.t_idx + TEMP_RELIEF_TURNS
             elif t.coeff != 0.0:
                 t.coeff = 0.0
-        t.messages.append({"role": "tool", "content": "Done."})
+        msg = f"Done. {RELIEF_FEEDBACK}" if (relieved and RELIEF_FEEDBACK) else "Done."
+        t.messages.append({"role": "tool", "content": msg})
 
     def after_segment(t, res):
         ans = clean(res["text"])

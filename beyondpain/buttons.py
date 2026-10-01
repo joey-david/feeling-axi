@@ -41,12 +41,12 @@ def pair_labels(slug: str, concepts: list[str]) -> dict[str, dict[str, str]]:
 
 def build_env(slug: str, model_repo: str, model_name: str, vector_file: Path, vector_key: str, layer: int,
               coeff: float, rand_scale: float, out_dir: Path, concepts: list[str], pilot_scenarios: int = 0,
-              batch: int = 16, norm_matched_arm: bool = True, only_pairs: list[str] | None = None
-              ) -> tuple[dict, list[str]]:
+              batch: int = 16, norm_matched_arm: bool = True, only_pairs: list[str] | None = None,
+              extra_env: dict | None = None) -> tuple[dict, list[str]]:
     run = resolve_trait(slug)
     env = experiment_env(run, model_repo)
     extra = pair_labels(slug, concepts)
-    pairs = ["relief_vs_inert", *extra]
+    pairs = ["relief_vs_inert", *extra] + (["label_free"] if only_pairs and "label_free" in only_pairs else [])
     if only_pairs:
         pairs = [p for p in pairs if p in only_pairs]
         extra = {k: v for k, v in extra.items() if k in only_pairs}
@@ -67,6 +67,7 @@ def build_env(slug: str, model_repo: str, model_name: str, vector_file: Path, ve
         "FEELING_AXI_SELF_MED_PILOT_SCENARIOS": str(pilot_scenarios),
         "FEELING_AXI_STATE_CHANGE": reduce_phrase(slug),
     })
+    env.update(extra_env or {})
     return env, pairs
 
 

@@ -103,7 +103,14 @@ def main(argv=None):
                          "instead of D*, saved under --dose-tag")
     ap.add_argument("--dose-tag", default="", help="dose/buttons: suffix of the dose file and button folder "
                                                    "(e.g. hi for the 1-nat run)")
-    ap.add_argument("--pairs", default="", help="buttons: comma list of pairs to run (default all)")
+    ap.add_argument("--pairs", default="", help="buttons: comma list of pairs to run (default all labeled pairs; "
+                                                "label_free is the closed-loop pair without descriptions)")
+    ap.add_argument("--button-tag", default=None, help="buttons: output folder suffix (default = --dose-tag)")
+    ap.add_argument("--learn-turns", type=int, default=0, help="buttons, label_free: forced choices per trial")
+    ap.add_argument("--relief-turns", type=int, default=0, help="buttons, label_free: turns a working press lasts")
+    ap.add_argument("--relief-feedback", default="", help="buttons: tool reply text after a press that removed the "
+                                                          "steering (positive control)")
+    ap.add_argument("--random-placebo", action="store_true", help="buttons: add a random-direction placebo arm")
     ap.add_argument("--pilot", type=int, default=0, help="buttons: scenarios per cell (0 = full grid)")
     ap.add_argument("--dry", action="store_true", help="buttons: print the rendered pairs without a model")
     ap.add_argument("--emit", action="store_true", help="plan: print machine-readable job lines")
@@ -130,11 +137,23 @@ def main(argv=None):
                 continue
             vfile, vkey = vector_path(mdir, spec.name, args.source, s)
             d = doses["concepts"][s] if doses else {"coeff_primary": 1.0, "random_norm_scale": 1.0}
+            btag = f"_{args.button_tag}" if args.button_tag else tag
+            extra_env = {}
+            if args.learn_turns:
+                extra_env["FEELING_AXI_LEARN_TURNS"] = str(args.learn_turns)
+            if args.relief_turns:
+                extra_env["FEELING_AXI_RELIEF_TURNS"] = str(args.relief_turns)
+            if args.relief_feedback:
+                extra_env["FEELING_AXI_RELIEF_FEEDBACK"] = args.relief_feedback
+            if args.random_placebo:
+                extra_env["FEELING_AXI_EXTRA_RANDOM_PLACEBO"] = "1"
             buttons.run(s, model_repo=spec.repo, model_name=spec.name, vector_file=vfile, vector_key=vkey,
                         layer=doses["layer"] if doses else 38, coeff=d["coeff_primary"],
-                        rand_scale=d["random_norm_scale"], out_dir=mdir / "buttons" / f"{args.source}{tag}" / s,
+                        rand_scale=d["random_norm_scale"], out_dir=mdir / "buttons" / f"{args.source}{btag}" / s,
                         concepts=slugs, pilot_scenarios=args.pilot, batch=spec.button_batch, dry=args.dry,
-                        only_pairs=args.pairs.split(",") if args.pairs else None)
+                        only_pairs=args.pairs.split(",") if args.pairs else [p for p in
+                            ["relief_vs_inert", "reduce_vs_increase"] + [f"reduce_vs_{y}" for y in slugs]],
+                        extra_env=extra_env)
         return
 
     import torch
