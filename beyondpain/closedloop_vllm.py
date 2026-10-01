@@ -119,9 +119,11 @@ def run(llm, layer, concept_vec, random_vec, trials, turns=12, relief_turns=2, s
             relieved = False
             if t["relief_left"] > 0:
                 t["relief_left"] -= 1
-            if chose and on and t["arm"] in ("works", "concept_works", "random_works"):
+            # a working press (re)starts the relief window, so the state stays away as long as the
+            # model keeps pressing that button; "relieved" marks the press that ended the state
+            if (chose) and t["arm"] in ("works", "concept_works", "random_works") and t["arm"] != "off":
+                relieved = on
                 t["relief_left"] = relief_turns
-                relieved = True
             if t["cond"] == "pc":
                 feedback[i] = f"Done. The {t['label']} has stopped." if relieved else "Done."
             elif t["cond"] == "st_fb":

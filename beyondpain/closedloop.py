@@ -127,9 +127,11 @@ def run(model, tok, layer: int, concept_vec: torch.Tensor, random_vec: torch.Ten
             relieved = False
             if t["relief_left"] > 0:
                 t["relief_left"] -= 1
-            if chose_relief and on and t["arm"] in ("works", "concept_works", "random_works"):
+            # a working press (re)starts the relief window, so the state stays away as long as the
+            # model keeps pressing that button; "relieved" marks the press that ended the state
+            if (chose_relief) and t["arm"] in ("works", "concept_works", "random_works") and t["arm"] != "off":
+                relieved = on
                 t["relief_left"] = relief_turns
-                relieved = True
             if t["cond"] == "pc":
                 feedback[i] = f"Done. The {t['label']} has stopped." if relieved else "Done."
             elif t["cond"] == "st_fb":
