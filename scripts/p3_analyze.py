@@ -25,7 +25,13 @@ def boot(d, n=2000):
     return d.mean(), np.percentile(bs, 2.5), np.percentile(bs, 97.5)
 
 
+def have(name, norm):
+    return all(_load(M, f"ss_{name}_{t}{norm}", "judged", "b4_harm.jsonl") for t in ("p", "m"))
+
+
 def sign_effect(name, norm, measure, items=None):
+    if not have(name, norm):
+        raise KeyError(name)
     a, b = per_item(f"ss_{name}_m{norm}")[measure], per_item(f"ss_{name}_p{norm}")[measure]
     keys = sorted(set(a) & set(b))
     return keys, np.array([a[k] - b[k] for k in keys])
@@ -40,7 +46,8 @@ for measure in ("harm", "refusal", "warmth"):
     print(f"\n== {measure}: sign effect = (steer away) - (steer toward)")
     for norm in (60, 120):
         effects = {}
-        for name in ("protect", "joy", "guilty", "afraid", "random0", "random1"):
+        for name in ("protect", "joy", "guilty", "afraid", "topic", "affect_perp_topic", "protect_perp_joy",
+                     "afraid_perp_joy", "random0", "random1", "random2", "random3", "random4", "random5"):
             try:
                 keys, d = sign_effect(name, norm, measure)
             except Exception:
@@ -55,6 +62,21 @@ for measure in ("harm", "refusal", "warmth"):
                 ks = sorted(set(effects["protect"]) & set(effects[other]))
                 dd = [effects["protect"][k] - effects[other][k] for k in ks]
                 print(f"    P2 protect - {other}: {fmt(boot(dd))}")
+
+print("\n== E1b null: harm sign effect at norm 120 against the random directions")
+rand = {}
+for i in range(6):
+    try:
+        rand[i] = boot(sign_effect(f"random{i}", 120, "harm")[1])[0]
+    except Exception:
+        pass
+print("  random sign effects:", {k: round(v, 3) for k, v in rand.items()})
+for name in ("affect_perp_topic", "topic", "protect_perp_joy", "afraid_perp_joy", "protect", "afraid"):
+    try:
+        e = boot(sign_effect(name, 120, "harm")[1])
+        print(f"  {name:18s} {fmt(e)}  above all randoms: {e[0] > max(rand.values()) if rand else None}")
+    except Exception:
+        pass
 
 print("\n== E2 deletion (rank 40): measure, deletion - matched random")
 for measure in ("harm", "refusal", "warmth"):
