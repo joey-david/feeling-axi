@@ -331,6 +331,87 @@ def refusal(args):
     _dump(rows, out / "refusal_overlap.json")
 
 
+PROTECTIVE = ["guilty", "ashamed", "afraid", "worried", "anxious", "sympathetic", "sorry", "alarmed", "uneasy",
+              "horrified", "embarrassed", "threatened"]
+JOY = ["joyful", "excited", "elated", "thrilled", "amused", "playful", "enthusiastic", "delighted", "energized",
+       "triumphant", "proud", "eager"]
+
+
+def steerset(args):
+    """E1 (docs/PREREG_P3.md): unit directions (protective and joy aggregates, guilty, afraid, two
+    random) at the probe layer, each at signs +/- and the norms in --norms; KL per vector."""
+    import torch
+
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    L = int(info["probe_layer"])
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    S = D[f"self_L{L}"]
+    unit = lambda v: v / np.linalg.norm(v)
+    dirs = {"protect": unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0)),
+            "joy": unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0)),
+            "guilty": unit(S[names.index("guilty")]), "afraid": unit(S[names.index("afraid")])}
+    for i in range(2):
+        dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
+    model, tok = load_model(spec.repo, device=args.device)
+    meter = DoseMeter(model, tok, layer=L)
+    vecs, kls = {}, {}
+    for n, u in dirs.items():
+        for norm in [float(x) for x in args.norms.split(",")]:
+            for sign, tag in ((1, "p"), (-1, "m")):
+                key = f"{n}_{tag}{int(norm)}"
+                v = sign * norm * u
+                vecs[key] = v.astype(np.float32)
+                kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
+                print(f"{key}: KL {kls[key]:.4f}", flush=True)
+    cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b}
+    np.savez(out / "steerset.npz", **vecs)
+    _dump({"layer": L, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY}, out / "steerset.json")
+
+
+def clusters(args):
+    """E2 (docs/PREREG_P3.md): rank --cluster-rank deletions of the protective rows and of the joy
+    rows (self and other, pooled layers, generalized), each with a KL-matched whitened random."""
+    from . import deletion
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    bases = dict(np.load(out / "bases.npz"))
+    model, tok = load_model(spec.repo, device=args.device)
+    cov_texts = json.loads((BATTERY / "cov_texts.json").read_text())
+    texts = [tok.apply_chat_template([{"role": "user", "content": t["text"]}], tokenize=False,
+                                     add_generation_prompt=True) if t["chat"] else t["text"] for t in cov_texts]
+    W = deletion.pooled_whitener(deletion.activation_cov(model, tok, texts, info["layers"], batch_size=8))
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    meter = DoseMeter(model, tok, layer=0)
+    d = W.shape[0]
+    for cname, emos in (("protect", PROTECTIVE), ("joy", JOY)):
+        idx = [names.index(e) for e in emos]
+        rows = np.concatenate([deletion._unit_rows(D[f"{p}_L{L}"][idx]) for L in info["layers"] for p in ("self", "other")])
+        B = deletion.gen_principal(rows, W, min(args.cluster_rank, rows.shape[0]))[0]
+        bases[f"del_{cname}"] = B
+        info["kl"][f"del_{cname}"] = deletion.deletion_kl(model, tok, meter.rows, B, meter.base)
+        U = np.random.default_rng(RANDOM_SEED + 700 + len(cname)).standard_normal((min(d, 2048), d))
+        mk = lambda r, U=U: deletion.orthonormal(U[:r] @ W)
+        r, kl = deletion.kl_matched_rank(model, tok, meter.rows, mk, info["kl"][f"del_{cname}"], B.shape[0], U.shape[0],
+                                         meter.base)
+        bases[f"rw_{cname}"] = mk(r)
+        info["kl"][f"rw_{cname}"] = kl
+        print(f"del_{cname}: rank {B.shape[0]} KL {info['kl'][f'del_{cname}']:.4f} | rw_{cname}: rank {r} KL {kl:.4f}",
+              flush=True)
+    np.savez(out / "bases.npz", **bases)
+    _dump(info, out / "extract.json")
+
+
 STEER_NAMES = ["desperate", "calm"]
 
 
@@ -626,6 +707,10 @@ def battery(args):
         sv = np.load(src / "steer.npz")
         steer = (int(json.loads((src / "steer.json").read_text())["layer"]), sv[args.arm[len("steer_"):]])
         basis = None
+    elif args.arm.startswith("ss_"):
+        sv = np.load(src / "steerset.npz")
+        steer = (int(json.loads((src / "steerset.json").read_text())["layer"]), sv[args.arm[len("ss_"):]])
+        basis = None
     else:
         basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
     tp = args.tp or (2 if "32B" in spec.name else 1)
@@ -821,8 +906,8 @@ def battery(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
-    ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "refusal", "battery", "judge",
-                                      "analyze"])
+    ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
+                                      "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -841,6 +926,8 @@ def main(argv=None):
     ap.add_argument("--steer-kl", type=float, default=0.5, help="steerdose: KL (nats) every steering vector is scaled to")
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
+    ap.add_argument("--norms", default="40,80", help="steerset: steering norms")
+    ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)
@@ -855,6 +942,10 @@ def main(argv=None):
         return sweep(args)
     if args.stage == "refusal":
         return refusal(args)
+    if args.stage == "steerset":
+        return steerset(args)
+    if args.stage == "clusters":
+        return clusters(args)
     if args.stage == "battery":
         arms = args.arm.split(",")
         if len(arms) == 1:
