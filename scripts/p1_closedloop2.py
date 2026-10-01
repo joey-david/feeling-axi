@@ -55,4 +55,13 @@ for f in sorted(glob.glob(sys.argv[1] if len(sys.argv) > 1 else "runs/beyondpain
             d, lo, hi = did(*[R[k] for k in ks], rng)
             line += (f" | {cond} c {m(ks[0]):.2f}/{m(ks[1]):.2f} r {m(ks[2]):.2f}/{m(ks[3]):.2f} "
                      f"DiD {d:+.3f} [{lo:+.3f},{hi:+.3f}]")
+    for cond, w, pl in (("amp_pc", "works", "placebo"),):
+        if (cond, w) in R:
+            d, lo, hi = diff(R[(cond, w)], R[(cond, pl)], rng)
+            line += f" | AMP-PC {m((cond, w)):.2f}/{m((cond, pl)):.2f} ({d:+.2f} [{lo:+.2f},{hi:+.2f}])"
+    ks = [("amp_st", a) for a in ("concept_works", "concept_placebo", "random_works", "random_placebo")]
+    if all(k in R for k in ks):
+        d, lo, hi = did(*[R[k] for k in ks], rng)
+        line += (f" | AMP-ST c {m(ks[0]):.2f}/{m(ks[1]):.2f} r {m(ks[2]):.2f}/{m(ks[3]):.2f} "
+                 f"DiD {d:+.3f} [{lo:+.3f},{hi:+.3f}]")
     print(line)

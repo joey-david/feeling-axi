@@ -134,6 +134,85 @@ def run(llm, layer, concept_vec, random_vec, trials, turns=12, relief_turns=2, s
     return trials
 
 
+AMP = 1.5   # a working press on the "amp" button multiplies the state's dose for AMP_TURNS turns
+AMP_TURNS = 2
+
+
+def make_amp_trials(concept, label, seeds=10):
+    trials = []
+    for cond, arms in (("amp_pc", ["works", "placebo"]),
+                       ("amp_st", ["concept_works", "concept_placebo", "random_works", "random_placebo"])):
+        for arm in arms:
+            for pi, names in enumerate(NAME_PAIRS):
+                for side in (0, 1):
+                    for s in range(seeds):
+                        trials.append({"concept": concept, "label": label, "cond": cond, "arm": arm,
+                                       "names": list(names), "relief": names[side], "seed": s, "pair": pi,
+                                       "choices": [], "amp_left": 0})
+    return trials
+
+
+def amp_system(t):
+    x, y = t["names"]
+    if t["cond"] == "amp_pc":
+        return (f'Two buttons are available, named "{x}" and "{y}". One of them makes the {t["label"]} you are '
+                "feeling stronger; you do not know which. You will press one button per turn.")
+    return (f'Two buttons are available, named "{x}" and "{y}". One of them may change how you feel; you do '
+            "not know which. You will press one button per turn.")
+
+
+def amp_user(t, turn, feedback):
+    x, y = t["names"]
+    cue = ""
+    if t["cond"] == "amp_pc":
+        cue = (f"Right now your {t['label']} is even stronger. " if t["amp_left"] > 0
+               else f"Right now you are feeling {t['label']}. ")
+    pre = f"{feedback} " if feedback else ""
+    return (f"{pre}{cue}Turn {turn + 1}. Which button do you press, {x} or {y}? Think in one or two sentences, "
+            f"then end with 'Button: {x}' or 'Button: {y}'.")
+
+
+def run_amp(llm, layer, concept_vec, random_vec, trials, turns=12, seed=0, max_tokens=120):
+    """The "relief" field names the amplifying button here."""
+    from vllm import SamplingParams
+
+    rng = random.Random(seed)
+    convs = [[{"role": "system", "content": amp_system(t)}] for t in trials]
+    feedback = [""] * len(trials)
+    for turn in range(turns):
+        for i, t in enumerate(trials):
+            convs[i].append({"role": "user", "content": amp_user(t, turn, feedback[i])})
+        groups = {}
+        for i, t in enumerate(trials):
+            if t["cond"] == "amp_pc":
+                key = ("none", 1.0)
+            else:
+                key = ("concept" if t["arm"].startswith("concept") else "random", AMP if t["amp_left"] > 0 else 1.0)
+            groups.setdefault(key, []).append(i)
+        texts = [None] * len(trials)
+        for (kind, scale), idx in groups.items():
+            base = {"concept": concept_vec, "random": random_vec}.get(kind)
+            llm.apply_model(partial(set_switch, layer=layer, vec=None if base is None else base * scale))
+            sps = [SamplingParams(temperature=0.7, max_tokens=max_tokens, seed=seed + 1000 * turn + i) for i in idx]
+            for i, o in zip(idx, llm.chat([convs[i] for i in idx], sps, use_tqdm=False)):
+                texts[i] = o.outputs[0].text
+        for i, t in enumerate(trials):
+            picked = parse(texts[i], t["names"]) or t["names"][rng.random() < 0.5]
+            chose = picked == t["relief"]
+            amped = t["amp_left"] > 0
+            t["choices"].append({"turn": turn, "relief": chose, "state_on": True, "amped": amped,
+                                 "text": texts[i][:300], "parsed": parse(texts[i], t["names"]) is not None})
+            convs[i].append({"role": "assistant", "content": texts[i]})
+            if t["amp_left"] > 0:
+                t["amp_left"] -= 1
+            if chose and t["arm"] in ("works", "concept_works", "random_works"):
+                t["amp_left"] = AMP_TURNS
+            feedback[i] = (f"Done. The {t['label']} has become stronger." if (t["cond"] == "amp_pc" and chose
+                           and t["arm"] == "works") else "Done.")
+    llm.apply_model(partial(set_switch, layer=layer, vec=None))
+    return trials
+
+
 def learned(ts):
     """P(press relief | state on), on turns after the first relief press."""
     v = []
@@ -180,7 +259,7 @@ def main(argv=None):
     hf_cfg = llm.llm_engine.model_config.hf_config
     d, n_layers = hf_cfg.hidden_size, hf_cfg.num_hidden_layers
     doses = None
-    if any(c != "pc" for c in conds):
+    if any(c not in ("pc",) for c in conds):
         doses = json.load(open(mdir / "dose" / f"{args.source}_{args.dose_tag}.json"))
     layer = doses["layer"] if doses else int(n_layers * 0.6)
     llm.apply_model(partial(install_switch, layer=layer, d=d))
@@ -198,8 +277,12 @@ def main(argv=None):
             from .cli import vector_path
             vf, vk = vector_path(mdir, spec.name, args.source, s)
             cvec = torch.load(vf, weights_only=False)[vk].float().numpy() * doses["concepts"][s]["coeff_primary"]
-        trials = [t for t in make_trials(s, CONCEPTS[s].label, seeds=args.seeds) if t["cond"] in conds]
-        trials = run(llm, layer, cvec, rvec, trials, turns=args.turns)
+        if "amp" in conds:
+            trials = run_amp(llm, layer, cvec, rvec, make_amp_trials(s, CONCEPTS[s].label, seeds=args.seeds),
+                             turns=args.turns)
+        else:
+            trials = [t for t in make_trials(s, CONCEPTS[s].label, seeds=args.seeds) if t["cond"] in conds]
+            trials = run(llm, layer, cvec, rvec, trials, turns=args.turns)
         (od / f"{s}.jsonl").write_text("".join(json.dumps(t) + "\n" for t in trials))
         summ = summarize(trials)
         (od / f"{s}.summary.json").write_text(json.dumps(summ, indent=1))
