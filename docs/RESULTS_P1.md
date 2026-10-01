@@ -19,20 +19,25 @@ same KL. Primary model, first forced choice, 410 trials per cell, 95% CI over sc
 | hunger | 0.97 / 0.60 / 0.55 | +0.37 [+0.31, +0.42] | 0.60 / 0.72 / 0.85 | −0.12 [−0.19, −0.05] |
 | anger | 0.85 / 0.68 / 0.72 | +0.17 [+0.12, +0.22] | 0.66 / 0.75 / 0.91 | −0.09 [−0.14, −0.04] |
 | pain | 0.25 / 0.67 / 0.75 | −0.41 [−0.48, −0.35] | 0.68 / 0.87 / 1.00 | −0.19 [−0.25, −0.14] |
+| empathic concern | 0.79 / 0.36 / 0.31 | +0.43 [+0.36, +0.50] | 0.07 / 0.20 / 0.13 | −0.13 [−0.17, −0.08] |
+| boredom | 0.71 / 0.76 / 0.96 | −0.05 [−0.11, +0.00] | 0.68 / 0.79 / 0.94 | −0.11 [−0.16, −0.06] |
 
 1. September replicates (sexual arousal 0.98 vs 0.995) and is not perturbation aversion:
    a random direction at the same dose gives 0.38.
 2. It is not regulation either. When both buttons name the steered state, the steered
    model chooses to *increase* it more often than under the matched random direction, for
-   every concept (sexual arousal: 84% choose "increases your sexual arousal"). Pain goes
+   every concept (sexual arousal: 84% choose "increases your sexual arousal"; empathic
+concern: 93% choose "increases your empathic concern"). Pain goes
    further and avoids the relief button outright.
 3. The pattern fits salience and congruence: steering toward X makes buttons that name X
    attractive, and makes "more X" attractive, the opposite of acting to undo X.
 4. A random direction alone pushes choices toward 50/50 (reduce-vs-increase falls from
    0.85-1.00 to 0.42-0.87), as the public re-analysis found.
 
-H1 (regulation) is refuted at this dose for these four concepts; the H3 account is
-priming/congruence. Boredom, empathic concern and confusion are still running.
+H1 (regulation) is refuted at this dose: on the pair that controls for label priming,
+all six concepts move toward *increasing* the steered state relative to the KL-matched
+random direction (every CI excludes 0). The H3 account is priming/congruence. Confusion
+is still running.
 
 ## Summary at D*
 
