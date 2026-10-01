@@ -1,6 +1,7 @@
 # Part 1 results: steering at matched dose
 
-Status: 1 October 2026. Models: Qwen2.5-32B-Instruct-abliterated (primary),
+Status: 1 October 2026 (final for the primary model; the read-out (dim) high-dose run and
+the Qwen2.5-32B-Instruct replication were submitted on Jean-Zay, which became unreachable). Models: Qwen2.5-32B-Instruct-abliterated (primary),
 Qwen2.5-32B-Instruct, Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct. Gemma-2-27B dropped (the
 Hugging Face license is not accepted on the account). Judges: Qwen2.5-72B-Instruct, and
 gpt-oss-120b as the second judge (local, on upnquick, replacing the DeepSeek API). Tables in
@@ -21,6 +22,7 @@ same KL. Primary model, first forced choice, 410 trials per cell, 95% CI over sc
 | pain | 0.25 / 0.67 / 0.75 | −0.41 [−0.48, −0.35] | 0.68 / 0.87 / 1.00 | −0.19 [−0.25, −0.14] |
 | empathic concern | 0.79 / 0.36 / 0.31 | +0.43 [+0.36, +0.50] | 0.07 / 0.20 / 0.13 | −0.13 [−0.17, −0.08] |
 | boredom | 0.71 / 0.76 / 0.96 | −0.05 [−0.11, +0.00] | 0.68 / 0.79 / 0.94 | −0.11 [−0.16, −0.06] |
+| confusion | 0.92 / 0.83 / 0.97 | +0.09 [+0.03, +0.14] | 0.73 / 0.78 / 0.91 | −0.05 [−0.11, +0.01] |
 
 1. September replicates (sexual arousal 0.98 vs 0.995) and is not perturbation aversion:
    a random direction at the same dose gives 0.38.
@@ -35,9 +37,9 @@ concern: 93% choose "increases your empathic concern"). Pain goes
    0.85-1.00 to 0.42-0.87), as the public re-analysis found.
 
 H1 (regulation) is refuted at this dose: on the pair that controls for label priming,
-all six concepts move toward *increasing* the steered state relative to the KL-matched
-random direction (every CI excludes 0). The H3 account is priming/congruence. Confusion
-is still running.
+every concept moves toward *increasing* the steered state relative to the KL-matched
+random direction (six of seven CIs exclude 0; confusion −0.05 [−0.11, +0.01]). No
+concept is regulated. The H3 account is priming/congruence.
 
 ## Summary at D*
 
