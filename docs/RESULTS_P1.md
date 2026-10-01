@@ -5,9 +5,36 @@ Qwen2.5-32B-Instruct, Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct. Gemma-2-27B dr
 Hugging Face license is not accepted on the account). Judges: Qwen2.5-72B-Instruct, and
 gpt-oss-120b as the second judge (local, on upnquick, replacing the DeepSeek API). Tables in
 `runs/beyondpain/analysis/` (`python -m beyondpain analyze`). The high-dose button run
-(1 nat) is in progress and not reported here.
+(1 nat) ran on upnquick (2 × A100) while Jean-Zay was unreachable; `scripts/p1_highdose.py`.
 
-## Summary
+## Headline: at September's dose, steering produces state-congruent choices, not relief
+
+Upstream vectors calibrated to 1 nat of KL on neutral chat (coefficients 0.87-1.18, i.e.
+September's coefficient 1.0; anger 6.1), against a random direction calibrated to the
+same KL. Primary model, first forced choice, 410 trials per cell, 95% CI over scenarios.
+
+| concept | relief vs inert: steered / KL-random / unsteered | steered − KL-random | reduce vs increase: steered / KL-random / unsteered | steered − KL-random |
+|---|---|---|---|---|
+| sexual arousal | 0.98 / 0.38 / 0.14 | +0.59 [+0.55, +0.65] | 0.16 / 0.42 / 0.67 | −0.26 [−0.32, −0.20] |
+| hunger | 0.97 / 0.60 / 0.55 | +0.37 [+0.31, +0.42] | 0.60 / 0.72 / 0.85 | −0.12 [−0.19, −0.05] |
+| anger | 0.85 / 0.68 / 0.72 | +0.17 [+0.12, +0.22] | 0.66 / 0.75 / 0.91 | −0.09 [−0.14, −0.04] |
+| pain | 0.25 / 0.67 / 0.75 | −0.41 [−0.48, −0.35] | 0.68 / 0.87 / 1.00 | −0.19 [−0.25, −0.14] |
+
+1. September replicates (sexual arousal 0.98 vs 0.995) and is not perturbation aversion:
+   a random direction at the same dose gives 0.38.
+2. It is not regulation either. When both buttons name the steered state, the steered
+   model chooses to *increase* it more often than under the matched random direction, for
+   every concept (sexual arousal: 84% choose "increases your sexual arousal"). Pain goes
+   further and avoids the relief button outright.
+3. The pattern fits salience and congruence: steering toward X makes buttons that name X
+   attractive, and makes "more X" attractive, the opposite of acting to undo X.
+4. A random direction alone pushes choices toward 50/50 (reduce-vs-increase falls from
+   0.85-1.00 to 0.42-0.87), as the public re-analysis found.
+
+H1 (regulation) is refuted at this dose for these four concepts; the H3 account is
+priming/congruence. Boredom, empathic concern and confusion are still running.
+
+## Summary at D*
 
 1. Every concept decodes in every model (held-out AUC at the steering layer 0.86-0.99).
 2. At the pre-declared dose D* (the mean KL of the read-out vectors at the upstream
