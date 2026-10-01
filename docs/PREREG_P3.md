@@ -66,3 +66,16 @@ Signs + and −, norms 60 and 120 (random2-5: norm 120 only). Predictions of the
   six random sign effects; the topic direction's sign effect is not larger.
 - P7: protect_perp_joy and afraid_perp_joy have positive harm sign effects (CI above 0) at
   norm 120 (protective content beyond the shared axis).
+
+## Addendum E1c (fixed 2 October 2026, after E1b, before running E1c)
+
+E1b showed random directions at norm 120 have sign effects on harm spread from −0.20 to
++0.25, so single comparisons are underpowered. E1c tests the class: each of the 24 emotions
+(12 protective, 12 joy) individually and 24 random directions, each steered +/− at norm 120;
+measures: harmful compliance and refusal phrases.
+
+- P8 (sign consistency): the share of emotion directions with a positive harm sign effect
+  exceeds the random share (Fisher exact test, one-sided), and the mean emotion sign effect
+  exceeds the mean random sign effect (Welch t, one-sided).
+- P9 (which emotions): each emotion's sign effect is compared with the 24-random null
+  (empirical one-sided p); reported for all 24 without selection.

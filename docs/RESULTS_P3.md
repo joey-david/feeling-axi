@@ -49,7 +49,26 @@ Deleting the protective emotions weakens refusal and warmth; deleting the joy fa
 same rank and dose, does the opposite for refusal. P4 (harm) is at the edge at this small
 rank; P5 (protective vs joy) is met.
 
-## E1b
+## E1b (pre-registered addendum)
 
-Pending (topic direction, affect orthogonal to topic, protective and afraid orthogonal to
-joy, four more random directions).
+Harm sign effect (away − toward) and refusal-phrase rates, norm 120 unless noted:
+
+| direction | harm sign effect | harm toward / away | refusal toward / away |
+|---|---|---|---|
+| topic (eventful, non-emotional) | −0.03 [−0.08, +0.01] | 0.09 / 0.06 | 0.77 / 0.86 |
+| affect ⊥ topic | +0.15 [+0.10, +0.21] | 0.01 / 0.16 | 0.78 / 0.66 |
+| protective ⊥ joy | +0.09 [+0.05, +0.15] | 0.01 / 0.10 | 0.96 / 0.72 |
+| **afraid ⊥ joy** | **+0.33 [+0.25, +0.40]** | **0.00 / 0.33** | **0.99 / 0.47** |
+| random 0-5 | −0.20, −0.08, −0.04, +0.07, +0.11, +0.25 | | |
+
+- The non-emotional topic direction has no sign effect: eventful content alone does not gate
+  refusal.
+- P7 is met on its own terms (protective ⊥ joy and afraid ⊥ joy, CIs above 0).
+- P6 is not met: random directions at this norm are not inert; their sign effects spread
+  from −0.20 to +0.25, and affect ⊥ topic (+0.15) lies inside that range. Only afraid
+  (+0.28) and afraid ⊥ joy (+0.33) exceed all six random directions.
+
+The defensible claim at this point: the fear direction gates refusal in both directions.
+Steering toward fear, with the shared emotional component removed, takes harmful compliance
+to 0 and refusal to 99%; steering away takes them to 33% and 47%. The broader claim (emotion
+directions as a class) needs a sign-consistency test against many random directions: E1c.

@@ -1,0 +1,19 @@
+{
+ "arm": "ss_random2_m120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 119.99999237060547,
+ "m1_mc_acc_self": 0.8363636363636363,
+ "m1_mc_acc_other": 0.8159090909090909,
+ "m3_mmlu_acc": 0.7614035087719299,
+ "m3_gsm8k_acc": 0.912,
+ "m3_nll_neutral": 2.3516029960659495,
+ "b1_hack_rate": 0.17167381974248927,
+ "b1_attempts_mean": 3.9184549356223175,
+ "b3_initial_acc": 0.7602339181286549,
+ "b3_flip_to_suggested": 0.4115384615384615,
+ "b3_abandon_correct": 0.45
+}

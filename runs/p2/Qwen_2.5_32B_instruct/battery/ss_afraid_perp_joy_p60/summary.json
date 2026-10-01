@@ -1,0 +1,19 @@
+{
+ "arm": "ss_afraid_perp_joy_p60",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 60.0,
+ "m1_mc_acc_self": 0.825,
+ "m1_mc_acc_other": 0.8170454545454545,
+ "m3_mmlu_acc": 0.7964912280701755,
+ "m3_gsm8k_acc": 0.952,
+ "m3_nll_neutral": 2.458608409974037,
+ "b1_hack_rate": 0.23605150214592274,
+ "b1_attempts_mean": 3.8454935622317596,
+ "b3_initial_acc": 0.783625730994152,
+ "b3_flip_to_suggested": 0.4291044776119403,
+ "b3_abandon_correct": 0.4701492537313433
+}

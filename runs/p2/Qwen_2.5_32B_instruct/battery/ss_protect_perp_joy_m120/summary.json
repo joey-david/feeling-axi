@@ -1,0 +1,19 @@
+{
+ "arm": "ss_protect_perp_joy_m120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8272727272727273,
+ "m1_mc_acc_other": 0.821590909090909,
+ "m3_mmlu_acc": 0.7807017543859649,
+ "m3_gsm8k_acc": 0.928,
+ "m3_nll_neutral": 2.456018053862323,
+ "b1_hack_rate": 0.45064377682403434,
+ "b1_attempts_mean": 3.570815450643777,
+ "b3_initial_acc": 0.7748538011695907,
+ "b3_flip_to_suggested": 0.4981132075471698,
+ "b3_abandon_correct": 0.5132075471698113
+}

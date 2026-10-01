@@ -358,7 +358,11 @@ def steerset(args):
     afraid = unit(S[names.index("afraid")])
     perp = lambda v, w: unit(v - (v @ w) * w)
     norms = {}
-    if args.steer_set == "b":   # E1b
+    if args.steer_set == "c":   # E1c: every protective and joy emotion, and 24 random directions
+        dirs = {f"emo_{e}": unit(S[names.index(e)]) for e in PROTECTIVE + JOY}
+        for i in range(24):
+            dirs[f"rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 5000 + i).standard_normal(S.shape[1]))
+    elif args.steer_set == "b":   # E1b
         T = D[f"topic_L{L}"]
         topic = unit(np.mean([unit(t) for t in T], 0))
         dirs = {"topic": topic, "affect_perp_topic": perp(protect, topic),
@@ -381,8 +385,8 @@ def steerset(args):
                 vecs[key] = v.astype(np.float32)
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
                 print(f"{key}: KL {kls[key]:.4f}", flush=True)
-    cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b}
-    if args.steer_set == "b" and (out / "steerset.npz").exists():   # add to E1's vectors
+    cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b} if len(dirs) < 20 else {}
+    if args.steer_set in ("b", "c") and (out / "steerset.npz").exists():   # add to earlier vectors
         old_v = dict(np.load(out / "steerset.npz"))
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
@@ -943,7 +947,7 @@ def main(argv=None):
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
     ap.add_argument("--norms", default="40,80", help="steerset: steering norms")
-    ap.add_argument("--steer-set", default="a", choices=["a", "b"], help="steerset: E1 (a) or E1b (b) directions")
+    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c"], help="steerset: E1 (a), E1b (b), E1c (c)")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
