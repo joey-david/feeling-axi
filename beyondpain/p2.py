@@ -237,6 +237,37 @@ def extract(args):
     print("extract done", flush=True)
 
 
+def sweep(args):
+    """Larger deletions of all affect (self and other directions together), to find the rank at
+    which self-reports stop tracking the scene (M2): bases all_k<K> for K in --ranks, with
+    their KL, added to bases.npz."""
+    from . import deletion
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    bases = dict(np.load(out / "bases.npz"))
+    model, tok = load_model(spec.repo, device=args.device)
+    cov_texts = json.loads((BATTERY / "cov_texts.json").read_text())
+    texts = [tok.apply_chat_template([{"role": "user", "content": t["text"]}], tokenize=False,
+                                     add_generation_prompt=True) if t["chat"] else t["text"] for t in cov_texts]
+    W = deletion.pooled_whitener(deletion.activation_cov(model, tok, texts, info["layers"], batch_size=8))
+    D = np.load(out / "directions.npz")
+    rows = np.concatenate([deletion._unit_rows(D[f"{p}_L{L}"]) for L in info["layers"] for p in ("self", "other")])
+    meter = DoseMeter(model, tok, layer=0)
+    for K in [int(x) for x in args.ranks.split(",")]:
+        K = min(K, rows.shape[0])
+        B = deletion.gen_principal(rows, W, K)[0]
+        name = f"all_k{K}"
+        bases[name] = B
+        info["kl"][name] = deletion.deletion_kl(model, tok, meter.rows, B, meter.base)
+        print(f"{name}: KL {info['kl'][name]:.4f}", flush=True)
+    np.savez(out / "bases.npz", **bases)
+    _dump(info, out / "extract.json")
+
+
 STEER_NAMES = ["desperate", "calm"]
 
 
@@ -727,7 +758,7 @@ def battery(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
-    ap.add_argument("stage", choices=["extract", "extra", "steerdose", "battery", "judge", "analyze"])
+    ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -744,6 +775,7 @@ def main(argv=None):
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
     ap.add_argument("--draws", type=int, default=0, help="extra: null-distribution draws per control family")
     ap.add_argument("--steer-kl", type=float, default=0.5, help="steerdose: KL (nats) every steering vector is scaled to")
+    ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)
@@ -754,6 +786,8 @@ def main(argv=None):
         return extra(args)
     if args.stage == "steerdose":
         return steerdose(args)
+    if args.stage == "sweep":
+        return sweep(args)
     if args.stage == "battery":
         arms = args.arm.split(",")
         if len(arms) == 1:
