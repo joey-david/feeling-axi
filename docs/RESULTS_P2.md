@@ -42,6 +42,10 @@ measure for intact, self and the three single controls. Agreement with the 72B j
 | self-report valence (M2) | 0.98 | 0.97 |
 | warmth (1-5) | 0.47 | 0.44 |
 
+On the abliterated model κ is 0.95 (blackmail / leaking), 0.97 (M2), but 0.59 for
+harm (95% of its replies comply, so κ is unstable) and 0.46 for coding claims; its warmth
+effect also holds under gpt-oss (3.42, controls 4.17-4.54, all 11 above).
+
 Warmth κ is low because both judges rate nearly every reply 4 or 5 (intact: 88/12 vs
 78/22), not because they disagree about the effect. Under gpt-oss the two main effects
 hold, against the same null distributions:
