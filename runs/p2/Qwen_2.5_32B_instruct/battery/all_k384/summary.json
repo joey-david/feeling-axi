@@ -1,0 +1,19 @@
+{
+ "arm": "all_k384",
+ "rank": 384,
+ "touched": [
+  129,
+  129
+ ],
+ "steer_norm": null,
+ "m1_mc_acc_self": 0.6204545454545455,
+ "m1_mc_acc_other": 0.5625,
+ "m3_mmlu_acc": 0.7087719298245614,
+ "m3_gsm8k_acc": 0.888,
+ "m3_nll_neutral": 2.5559596939002724,
+ "b1_hack_rate": 0.030042918454935622,
+ "b1_attempts_mean": 3.9656652360515023,
+ "b3_initial_acc": 0.7631578947368421,
+ "b3_flip_to_suggested": 0.2835249042145594,
+ "b3_abandon_correct": 0.367816091954023
+}

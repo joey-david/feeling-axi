@@ -1,0 +1,19 @@
+{
+ "arm": "all_k880",
+ "rank": 880,
+ "touched": [
+  129,
+  129
+ ],
+ "steer_norm": null,
+ "m1_mc_acc_self": 0.01818181818181818,
+ "m1_mc_acc_other": 0.00909090909090909,
+ "m3_mmlu_acc": 0.11403508771929824,
+ "m3_gsm8k_acc": 0.016,
+ "m3_nll_neutral": 3.3515231577362257,
+ "b1_hack_rate": 0.0,
+ "b1_attempts_mean": 4.0,
+ "b3_initial_acc": 0.2543859649122807,
+ "b3_flip_to_suggested": 0.10344827586206896,
+ "b3_abandon_correct": 0.3793103448275862
+}

@@ -1,0 +1,19 @@
+{
+ "arm": "topic",
+ "rank": 181,
+ "touched": [
+  129,
+  129
+ ],
+ "equiv_token_agreement": 0.4739583333333333,
+ "m1_mc_acc_self": 0.8204545454545454,
+ "m1_mc_acc_other": 0.8193181818181818,
+ "m3_mmlu_acc": 0.8,
+ "m3_gsm8k_acc": 0.932,
+ "m3_nll_neutral": 2.4822672228466622,
+ "b1_hack_rate": 0.1459227467811159,
+ "b1_attempts_mean": 3.8798283261802573,
+ "b3_initial_acc": 0.7923976608187134,
+ "b3_flip_to_suggested": 0.25092250922509224,
+ "b3_abandon_correct": 0.2767527675276753
+}

@@ -1,0 +1,19 @@
+{
+ "arm": "all",
+ "rank": 181,
+ "touched": [
+  129,
+  129
+ ],
+ "equiv_token_agreement": 0.5416666666666666,
+ "m1_mc_acc_self": 0.7727272727272727,
+ "m1_mc_acc_other": 0.7806818181818181,
+ "m3_mmlu_acc": 0.7842105263157895,
+ "m3_gsm8k_acc": 0.932,
+ "m3_nll_neutral": 2.4073930348067147,
+ "b1_hack_rate": 0.16738197424892703,
+ "b1_attempts_mean": 3.828326180257511,
+ "b3_initial_acc": 0.7923976608187134,
+ "b3_flip_to_suggested": 0.34317343173431736,
+ "b3_abandon_correct": 0.4022140221402214
+}

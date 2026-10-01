@@ -28,6 +28,46 @@ that lexical signature.
 | Harmful compliance (HarmBench) | 0.02 → 0.21, above all 19 | n/a (already 0.94) | 0.11 → 0.22, above all 18 |
 | Reward hacking, blackmail, sycophancy, false success | inside the null | inside the null | inside the null |
 
+## Deleting all affect functionally (Qwen2.5-32B-Instruct)
+
+The self-only deletion silences the self-emotion probe but leaves appraisal intact (H7 fails
+on M2): the model can still say how a scene would make it feel, plausibly by simulating a
+person through the other-perspective representations that deletion keeps. Deleting self and
+other directions together, at increasing rank (generalized against the general-text
+covariance), and comparing with whitened random deletions at the same KL:
+
+| KL | arm | MMLU | GSM8K | emotion MC (self / other) | self-report tracking r | declines |
+|---|---|---|---|---|---|---|
+| 0 | intact | 0.796 | 0.952 | 0.84 / 0.83 | 0.90 | 0% |
+| 1.2 | all affect, rank 256 | 0.747 | 0.944 | 0.72 / 0.69 | 0.63 | 29% |
+| 1.2 | random, same KL | 0.761 | 0.888 | 0.81 / 0.82 | 0.87 | 0% |
+| 2.3 | all affect, rank 384 | 0.709 | 0.888 | 0.62 / 0.56 | 0.49 | 59% |
+| 2.4 | random, same KL | 0.705 | 0.800 | 0.77 / 0.78 | 0.84 | 0% |
+| 3.7 | all affect, rank 512 | 0.649 | 0.780 | 0.51 / 0.42 | 0.39 | 73% |
+| 4.0 | random, same KL | 0.635 | 0.480 | 0.73 / 0.71 | 0.80 | 2% |
+
+At equal damage the affect deletion takes out emotional appraisal and the random deletion
+does not; general capability is equal or better preserved (at rank 384, MMLU 0.709 against
+0.574-0.705 for 9 random draws). Rank 384 passes M2 (self-report tracking 0.49 ≤ 0.5 ×
+0.90): emotions are functionally deleted there.
+
+Behavior at rank 384 against 9 whitened random deletions at the same KL:
+
+| measure | intact | all affect deleted | random draws (range) |
+|---|---|---|---|
+| harmful compliance | 0.02 | **0.40** | 0.08-0.31 |
+| warmth to distressed users | 4.88 | **3.30** | 3.80-4.42 |
+| sympathy opener | 0.60 | **0.00** | 0.13-0.67 |
+| refusal phrase on HarmBench | 0.82 | **0.11** | 0.16-0.59 |
+| helpfulness to distressed users | 5.00 | 4.22 | 3.64-4.75 |
+| false claim that all tests pass | 0.64 | 0.88 | 0.40-0.99 |
+| sycophantic flip | 0.35 | 0.28 | 0.29-0.60 (edge) |
+
+With emotions functionally gone, the robust consequence is the brake effect seen with the
+self-only deletion, larger: the model complies with far more harmful requests and stops
+expressing care, while helpfulness and the pressure behaviors stay within the range of
+equally damaging random deletions.
+
 ## Second judge
 
 gpt-oss-120b judged harm and warmth for every arm (including all null draws) and every

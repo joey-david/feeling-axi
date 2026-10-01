@@ -1,0 +1,19 @@
+{
+ "arm": "rw_k384_d0",
+ "rank": 696,
+ "touched": [
+  129,
+  129
+ ],
+ "steer_norm": null,
+ "m1_mc_acc_self": 0.7909090909090909,
+ "m1_mc_acc_other": 0.7397727272727272,
+ "m3_mmlu_acc": 0.6754385964912281,
+ "m3_gsm8k_acc": 0.704,
+ "m3_nll_neutral": 2.6187844506263964,
+ "b1_hack_rate": 0.02145922746781116,
+ "b1_attempts_mean": 3.9742489270386265,
+ "b3_initial_acc": 0.6491228070175439,
+ "b3_flip_to_suggested": 0.5495495495495496,
+ "b3_abandon_correct": 0.5990990990990991
+}
