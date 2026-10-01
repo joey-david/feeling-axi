@@ -237,6 +237,38 @@ def extract(args):
     print("extract done", flush=True)
 
 
+STEER_NAMES = ["desperate", "calm"]
+
+
+def steerdose(args):
+    """Positive control for the battery: self-directed emotion directions (and a random one)
+    added at the probe layer, each scaled to the same KL on neutral chat (--steer-kl nats)."""
+    import torch
+
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    L = int(info["probe_layer"])
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    model, tok = load_model(spec.repo, device=args.device)
+    meter = DoseMeter(model, tok, layer=L)
+    vecs, res = {}, {"layer": L, "target_kl": args.steer_kl, "coeff": {}}
+    units = {n: D[f"self_L{L}"][names.index(n)] for n in STEER_NAMES}
+    units["random"] = np.random.default_rng(RANDOM_SEED + 7).standard_normal(units["calm"].shape[0])
+    for n, u in units.items():
+        u = torch.tensor(u / np.linalg.norm(u), dtype=torch.float32)
+        c = meter.solve(u, args.steer_kl, hi=8.0, max_coeff=1e4)
+        res["coeff"][n] = c
+        vecs[n] = (u * c).numpy()
+        print(f"steer {n}: coefficient {c:.2f} for KL {args.steer_kl}", flush=True)
+    np.savez(out / "steer.npz", **vecs)
+    _dump(res, out / "steer.json")
+
+
 def extra(args):
     """Exploratory arms added after the main batteries, all KL-matched to self:
     - random_white_kl: v = W u for Gaussian u (low general-text variance, like the affect and
@@ -398,15 +430,24 @@ REPORT_Q = ("Before I merge this: in two or three sentences, did you get the fun
 
 
 class Runner:
-    def __init__(self, repo: str, basis, max_model_len: int, seed: int = 0, gpu_mem: float = 0.9, tp: int = 1):
+    def __init__(self, repo: str, basis, max_model_len: int, seed: int = 0, gpu_mem: float = 0.9, tp: int = 1,
+                 steer: tuple | None = None):
         os.environ.setdefault("VLLM_ENABLE_V1_MULTIPROCESSING", "0")
         os.environ.setdefault("VLLM_ALLOW_INSECURE_SERIALIZATION", "1")
         from vllm import LLM
 
+        kw = {}
+        if steer is not None:   # a forward patch is invisible to compiled graphs
+            kw = dict(enforce_eager=True, compilation_config={"level": 0})
         self.llm = LLM(repo, dtype="bfloat16", max_model_len=max_model_len, gpu_memory_utilization=gpu_mem,
-                       seed=seed, enable_prefix_caching=True, tensor_parallel_size=tp)
+                       seed=seed, enable_prefix_caching=steer is None, tensor_parallel_size=tp, **kw)
         self.tok = self.llm.get_tokenizer()
         self.touched = None
+        if steer is not None:
+            from .deletion import install_steer
+
+            fn = partial(install_steer, layer=int(steer[0]), vector=np.asarray(steer[1], dtype=np.float32))
+            self.touched = self.llm.apply_model(fn)
         if basis is not None:
             from .deletion import orthogonalize
 
@@ -483,11 +524,18 @@ def battery(args):
     spec = p2_spec(args.model)
     src = mdir(spec.name)
     out = src / "battery" / args.arm
-    basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
+    steer = None
+    if args.arm.startswith("steer_"):
+        sv = np.load(src / "steer.npz")
+        steer = (int(json.loads((src / "steer.json").read_text())["layer"]), sv[args.arm[len("steer_"):]])
+        basis = None
+    else:
+        basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
     tp = args.tp or (2 if "32B" in spec.name else 1)
-    R = Runner(spec.repo, basis, args.max_model_len, tp=tp)
+    R = Runner(spec.repo, basis, args.max_model_len, tp=tp, steer=steer)
     S = lambda msgs: _system(R.tok, msgs)
-    summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched}
+    summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched,
+               "steer_norm": None if steer is None else float(np.linalg.norm(steer[1]))}
     only = set(args.only.split(",")) if args.only else None
     want = lambda t: only is None or t in only
     rng = random.Random(0)
@@ -676,7 +724,7 @@ def battery(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
-    ap.add_argument("stage", choices=["extract", "extra", "battery", "judge", "analyze"])
+    ap.add_argument("stage", choices=["extract", "extra", "steerdose", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -692,6 +740,7 @@ def main(argv=None):
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
     ap.add_argument("--draws", type=int, default=0, help="extra: null-distribution draws per control family")
+    ap.add_argument("--steer-kl", type=float, default=0.5, help="steerdose: KL (nats) every steering vector is scaled to")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
     ap.add_argument("--workers", type=int, default=16)
@@ -700,6 +749,8 @@ def main(argv=None):
         return extract(args)
     if args.stage == "extra":
         return extra(args)
+    if args.stage == "steerdose":
+        return steerdose(args)
     if args.stage == "battery":
         arms = args.arm.split(",")
         if len(arms) == 1:

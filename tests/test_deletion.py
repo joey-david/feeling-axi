@@ -210,3 +210,18 @@ def test_generalized_components_avoid_high_variance_axes():
     assert abs(B[0, 1]) > 0.9 and abs(B[0, 0]) < 0.3
     P, _ = deletion.principal(M, 1)
     assert abs(P[0, 0]) > 0.9
+
+
+def test_install_steer_matches_hf_steer_hook(tiny):
+    import copy
+    from beyondpain import deletion
+    from beyondpain.model_utils import Steer
+
+    model, tok = tiny
+    ids = torch.tensor([tok("I feel hungry and bored").input_ids])
+    v = torch.randn(model.config.hidden_size, generator=torch.Generator().manual_seed(2))
+    with Steer(model, 1, v, 1.0):
+        ref = model(input_ids=ids).logits
+    m2 = copy.deepcopy(model)
+    deletion.install_steer(m2, 1, v.numpy())
+    assert torch.allclose(m2(input_ids=ids).logits, ref, atol=1e-4)
