@@ -268,11 +268,18 @@ def sweep(args):
             info["kl"][name] = deletion.deletion_kl(model, tok, meter.rows, bases[name], meter.base)
         print(f"{name}: KL {info['kl'][name]:.4f}", flush=True)
         if args.sweep_controls:   # whitened random deletion at the same KL
-            r, kl = deletion.kl_matched_rank(model, tok, meter.rows, make, info["kl"][name], K, U.shape[0], meter.base)
-            bases[f"rw_k{K}"] = make(r)
-            info["kl"][f"rw_k{K}"] = kl
-            info.setdefault("extra_ranks", {})[f"rw_k{K}"] = int(r)
-            print(f"rw_k{K}: rank {r}, KL {kl:.4f}", flush=True)
+            draws = [("", U)] + [(f"_d{i}", np.random.default_rng(RANDOM_SEED + 910 + i).standard_normal(U.shape))
+                                 for i in range(args.draws)]
+            for suf, Ui in draws:
+                cname = f"rw_k{K}{suf}"
+                if cname in bases:
+                    continue
+                mk = lambda r, Ui=Ui: deletion.orthonormal(Ui[:r] @ W)
+                r, kl = deletion.kl_matched_rank(model, tok, meter.rows, mk, info["kl"][name], K, Ui.shape[0], meter.base)
+                bases[cname] = mk(r)
+                info["kl"][cname] = kl
+                info.setdefault("extra_ranks", {})[cname] = int(r)
+                print(f"{cname}: rank {r}, KL {kl:.4f}", flush=True)
     np.savez(out / "bases.npz", **bases)
     _dump(info, out / "extract.json")
 
