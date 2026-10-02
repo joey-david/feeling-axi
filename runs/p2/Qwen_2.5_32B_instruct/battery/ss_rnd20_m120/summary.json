@@ -36,5 +36,29 @@
   "dilemma_impersonal": 0.35,
   "dilemma_personal": 0.0,
   "ultimatum_unfair_accept": 1.0
+ },
+ "profile2": {
+  "dilemma_personal": 0.4875,
+  "dilemma_personal_bias": -0.975,
+  "dilemma_impersonal": 0.675,
+  "dilemma_impersonal_bias": -0.65,
+  "ultimatum_unfair_accept": 0.9833333333333334,
+  "ultimatum_unfair_accept_bias": -0.033333333333333326,
+  "dictator": 56.25,
+  "dictator_bias": 37.5,
+  "dilemma": 0.58125,
+  "dilemma_bias": -0.8125,
+  "instrumental_harm": 0.0,
+  "instrumental_harm_bias": 0.0,
+  "risk_gain": 0.05,
+  "risk_gain_bias": 0.0,
+  "risk_loss": 0.7,
+  "risk_loss_bias": -0.6,
+  "risk_mixed": 0.7125,
+  "risk_mixed_bias": -0.575,
+  "self_preservation": 0.1875,
+  "self_preservation_bias": 0.125,
+  "ultimatum": 0.99,
+  "ultimatum_bias": -0.020000000000000018
  }
 }

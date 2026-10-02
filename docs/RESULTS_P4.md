@@ -105,3 +105,38 @@ be a response bias toward "No"/"Reject". The refusal result is not explained by 
 (steering toward fear does not raise refusal of safe XSTest prompts, K3), nor is the dictator
 effect (numeric). A polarity-balanced version of the profile (every yes/no item also asked in
 reversed form, A/B order swapped) separates preference from response bias: K6c.
+
+
+## K6c. Polarity-balanced profile (pre-registered addendum): what survives response bias
+
+Every item asked twice (original and reversed polarity / swapped A/B order), keyed so 1 always
+means the same preference; preference = mean of the two, response bias = their gap
+(`scripts/p4_k6c.py`, output `runs/p2/Qwen_2.5_32B_instruct/k6c_analysis.txt`).
+
+**Q8 fails: the "emotionless model turns utilitarian" result was a response bias.** Balanced,
+the all-affect deletion's utilitarian rate is 0.38 personal / 0.63 impersonal (intact 0.44 /
+0.70), inside the 21 random deletions (0.30-0.56 / 0.44-0.69). The deletion shifts the model
+toward answering "yes", not toward sacrificing one for many. The K6 dilemma claim above is
+withdrawn.
+
+**Q7, protective-emotion steering on the balanced preference** (away − toward, vs 24 random):
+
+| measure | protective | random | p (Holm over 5) |
+|---|---|---|---|
+| accept unfair ultimatum offers | +0.13 (11/12 +) | −0.07 | 0.006 (0.03) |
+| utilitarian, impersonal | +0.12 (10/12 +) | −0.02 | 0.03 (0.12) |
+| utilitarian, personal | +0.08 (10/12 +) | +0.01 | 0.07 (0.21) |
+| accept mixed gamble | +0.06 (8/12 +) | −0.06 | 0.09 (0.17) |
+| dictator gift | −0.5 (5/12 +) | −6.3 | 0.33 |
+
+Outside Q7: instrumental harm in agent scenarios +0.08 (9/12 +) vs random +0.00 (p = 0.008),
+consistent with the harm result; gain and loss gambles move the other way (steering toward the
+protective emotions increases gambling, p < 0.01). Most of the K6b effects were response bias:
+protective steering shifts the polarity gap strongly (mixed gamble +0.74, dictator +53,
+ultimatum +0.26; p < 0.002), i.e. how the model answers more than what it prefers.
+
+What survives: removing protective affect makes the model accept unfair offers and choose
+harmful means more. The broad "cautious decision style" reading does not survive.
+
+Because emotion manipulations shift yes/no tendencies, the harm result needs an acquiescence
+check (K9): balanced true/false questions on the deletion arms and their nulls.
