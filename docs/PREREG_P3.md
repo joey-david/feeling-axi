@@ -79,3 +79,12 @@ measures: harmful compliance and refusal phrases.
   exceeds the mean random sign effect (Welch t, one-sided).
 - P9 (which emotions): each emotion's sign effect is compared with the 24-random null
   (empirical one-sided p); reported for all 24 without selection.
+
+## Note on the Mistral replication of E1c (2 October 2026)
+
+A fixed norm of 120 put every steered Mistral arm at KL ≈ 16 nats (Mistral's residual
+scale is far smaller than Qwen's), so the model produced no usable output in any arm, emotion
+or random. That run is discarded as a dose error. The replication uses one shared norm per
+model, chosen so that random directions reach KL 0.5, the regime of Qwen's norm 120 (mean
+KL 0.51 for random, 0.51 for emotion directions). Directions, signs, measures and tests are
+unchanged.

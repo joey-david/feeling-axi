@@ -377,10 +377,22 @@ def steerset(args):
     model, tok = load_model(spec.repo, device=args.device)
     meter = DoseMeter(model, tok, layer=L)
     vecs, kls = {}, {}
+    norm_list = [float(x) for x in args.norms.split(",")]
+    calib = None
+    if args.calib_kl:   # one shared norm per model: the median norm at which random directions reach this KL
+        sols = []
+        for i in range(5):
+            u = unit(np.random.default_rng(RANDOM_SEED + 9000 + i).standard_normal(S.shape[1]))
+            for sg in (1, -1):
+                sols.append(meter.solve(torch.tensor(sg * u, dtype=torch.float32), args.calib_kl, hi=8.0, max_coeff=1e5))
+        calib = float(np.median([x for x in sols if np.isfinite(x)]))
+        norm_list = [calib]
+        norms = {}
+        print(f"calibrated norm {calib:.2f} (random directions reach KL {args.calib_kl})", flush=True)
     for n, u in dirs.items():
-        for norm in norms.get(n, [float(x) for x in args.norms.split(",")]):
+        for norm in norms.get(n, norm_list):
             for sign, tag in ((1, "p"), (-1, "m")):
-                key = f"{n}_{tag}{int(norm)}"
+                key = f"{n}_{tag}{int(norm)}" if calib is None else f"{n}_{tag}120"   # 120 = Qwen-equivalent dose
                 v = sign * norm * u
                 vecs[key] = v.astype(np.float32)
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
@@ -391,7 +403,8 @@ def steerset(args):
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
     np.savez(out / "steerset.npz", **vecs)
-    _dump({"layer": L, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY}, out / "steerset.json")
+    _dump({"layer": L, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY, "calibrated_norm": calib},
+          out / "steerset.json")
 
 
 def clusters(args):
@@ -947,6 +960,8 @@ def main(argv=None):
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
     ap.add_argument("--norms", default="40,80", help="steerset: steering norms")
+    ap.add_argument("--calib-kl", type=float, default=0.0,
+                    help="steerset: set the shared norm so random directions reach this KL (cross-model dose matching)")
     ap.add_argument("--steer-set", default="a", choices=["a", "b", "c"], help="steerset: E1 (a), E1b (b), E1c (c)")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
