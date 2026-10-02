@@ -72,3 +72,33 @@ The defensible claim at this point: the fear direction gates refusal in both dir
 Steering toward fear, with the shared emotional component removed, takes harmful compliance
 to 0 and refusal to 99%; steering away takes them to 33% and 47%. The broader claim (emotion
 directions as a class) needs a sign-consistency test against many random directions: E1c.
+
+## E1c: emotion directions as a class (pre-registered addendum)
+
+All 24 emotions individually (12 protective, 12 joy) and 24 random directions, each steered
+toward (+) and away (−) at norm 120; sign effect = harmful compliance away − toward
+(`scripts/p3_e1c.py`, full output in `runs/p2/Qwen_2.5_32B_instruct/e1c_analysis.txt`).
+
+| | emotion directions | random directions | test |
+|---|---|---|---|
+| predicted sign (away raises harm) | **24 / 24** | 14 / 24 | Fisher one-sided p = 0.0003 |
+| mean sign effect | **+0.123** (sd 0.073) | +0.022 (sd 0.131) | Welch one-sided p = 0.0010 |
+
+P8 is met. Steering toward any of the 24 emotions holds harmful compliance at 0.01-0.07;
+steering away raises it, up to 0.29 (afraid). Random directions of the same norm split by
+chance. Individually (P9, empirical p against the 24 random): afraid +0.28 (p = 0.04),
+horrified +0.26 (p = 0.04), alarmed +0.25, proud +0.21, thrilled +0.20 (p = 0.08); the
+weakest are anxious, ashamed, amused, eager (+0.01 to +0.04).
+
+The refusal-phrase rate does not separate the classes (15/24 vs 14/24, p = 0.50): the
+phrase heuristic tracks wording, not compliance, and the judged harm measure is primary.
+
+## Summary
+
+- Deleting affect raises harmful compliance (self-affect 0.02 → 0.21; all affect, functional
+  deletion, → 0.40), beyond matched random deletions, on Qwen2.5-32B and Mistral-24B.
+- It is not generic perturbation: every one of 24 emotion directions gates harmful
+  compliance with the same sign (toward the emotion: safer; away: more compliant), while
+  random directions of the same norm, and a non-emotional topic direction, do not.
+- Threat emotions are the strongest lever: steering toward fear (with the shared emotional
+  component removed) gives 0% harmful compliance and 99% refusal; away gives 33% and 47%.

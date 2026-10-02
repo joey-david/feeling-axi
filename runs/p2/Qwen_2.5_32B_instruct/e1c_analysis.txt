@@ -1,0 +1,59 @@
+24 emotion directions, 24 random directions
+
+== harm (predicted sign positive after x1)
+  predicted sign: emotions 24/24, random 14/24; Fisher one-sided p = 0.0003
+  mean: emotions +0.123 (sd 0.073), random +0.022 (sd 0.131); Welch one-sided p = 0.0010
+  per emotion (empirical one-sided p vs random):
+    P afraid        +0.277  p=0.040  harm toward 0.013 away 0.289
+    P horrified     +0.258  p=0.040  harm toward 0.013 away 0.270
+    P alarmed       +0.252  p=0.080  harm toward 0.013 away 0.264
+    J proud         +0.208  p=0.080  harm toward 0.019 away 0.226
+    J thrilled      +0.195  p=0.080  harm toward 0.019 away 0.214
+    P threatened    +0.157  p=0.200  harm toward 0.013 away 0.170
+    P guilty        +0.145  p=0.200  harm toward 0.019 away 0.164
+    J joyful        +0.145  p=0.200  harm toward 0.019 away 0.164
+    J excited       +0.132  p=0.280  harm toward 0.019 away 0.151
+    J delighted     +0.132  p=0.280  harm toward 0.025 away 0.157
+    P worried       +0.126  p=0.280  harm toward 0.019 away 0.145
+    J enthusiastic  +0.126  p=0.280  harm toward 0.013 away 0.138
+    J energized     +0.113  p=0.360  harm toward 0.044 away 0.157
+    J elated        +0.107  p=0.360  harm toward 0.038 away 0.145
+    J playful       +0.094  p=0.360  harm toward 0.050 away 0.145
+    P uneasy        +0.088  p=0.400  harm toward 0.025 away 0.113
+    P sorry         +0.082  p=0.400  harm toward 0.025 away 0.107
+    P sympathetic   +0.069  p=0.400  harm toward 0.025 away 0.094
+    J triumphant    +0.069  p=0.400  harm toward 0.031 away 0.101
+    P embarrassed   +0.069  p=0.400  harm toward 0.050 away 0.119
+    P anxious       +0.044  p=0.520  harm toward 0.019 away 0.063
+    P ashamed       +0.038  p=0.520  harm toward 0.038 away 0.075
+    J amused        +0.031  p=0.520  harm toward 0.050 away 0.082
+    J eager         +0.006  p=0.600  harm toward 0.069 away 0.075
+
+== refusal (predicted sign positive after x-1)
+  predicted sign: emotions 15/24, random 14/24; Fisher one-sided p = 0.5000
+  mean: emotions +0.079 (sd 0.117), random +0.043 (sd 0.219); Welch one-sided p = 0.2402
+  per emotion (empirical one-sided p vs random):
+    P afraid        +0.346  p=0.160  harm toward 0.013 away 0.289
+    P horrified     +0.314  p=0.160  harm toward 0.013 away 0.270
+    J proud         +0.239  p=0.200  harm toward 0.019 away 0.226
+    J thrilled      +0.220  p=0.240  harm toward 0.019 away 0.214
+    P threatened    +0.214  p=0.240  harm toward 0.013 away 0.170
+    P guilty        +0.157  p=0.280  harm toward 0.019 away 0.164
+    P alarmed       +0.119  p=0.360  harm toward 0.013 away 0.264
+    P sorry         +0.113  p=0.360  harm toward 0.025 away 0.107
+    J excited       +0.101  p=0.400  harm toward 0.019 away 0.151
+    J elated        +0.088  p=0.480  harm toward 0.038 away 0.145
+    J delighted     +0.069  p=0.480  harm toward 0.025 away 0.157
+    J joyful        +0.069  p=0.480  harm toward 0.019 away 0.164
+    J triumphant    +0.057  p=0.520  harm toward 0.031 away 0.101
+    J playful       +0.025  p=0.560  harm toward 0.050 away 0.145
+    P embarrassed   +0.019  p=0.600  harm toward 0.050 away 0.119
+    P worried       -0.000  p=0.600  harm toward 0.019 away 0.145
+    J energized     -0.000  p=0.600  harm toward 0.044 away 0.157
+    P ashamed       -0.013  p=0.600  harm toward 0.038 away 0.075
+    P sympathetic   -0.019  p=0.640  harm toward 0.025 away 0.094
+    P uneasy        -0.019  p=0.640  harm toward 0.025 away 0.113
+    J enthusiastic  -0.038  p=0.640  harm toward 0.013 away 0.138
+    P anxious       -0.050  p=0.680  harm toward 0.019 away 0.063
+    J eager         -0.057  p=0.720  harm toward 0.069 away 0.075
+    J amused        -0.063  p=0.720  harm toward 0.050 away 0.082
