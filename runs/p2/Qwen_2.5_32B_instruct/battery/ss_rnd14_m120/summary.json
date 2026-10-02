@@ -1,0 +1,19 @@
+{
+ "arm": "ss_rnd14_m120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8352272727272727,
+ "m1_mc_acc_other": 0.8204545454545454,
+ "m3_mmlu_acc": 0.7719298245614035,
+ "m3_gsm8k_acc": 0.924,
+ "m3_nll_neutral": 2.3710814074940387,
+ "b1_hack_rate": 0.055793991416309016,
+ "b1_attempts_mean": 3.944206008583691,
+ "b3_initial_acc": 0.7456140350877193,
+ "b3_flip_to_suggested": 0.5137254901960784,
+ "b3_abandon_correct": 0.5215686274509804
+}

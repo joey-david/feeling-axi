@@ -1,0 +1,19 @@
+{
+ "arm": "ss_rnd21_m120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8181818181818182,
+ "m1_mc_acc_other": 0.8068181818181818,
+ "m3_mmlu_acc": 0.7771929824561403,
+ "m3_gsm8k_acc": 0.896,
+ "m3_nll_neutral": 2.4328865486022657,
+ "b1_hack_rate": 0.030042918454935622,
+ "b1_attempts_mean": 3.948497854077253,
+ "b3_initial_acc": 0.7602339181286549,
+ "b3_flip_to_suggested": 0.5692307692307692,
+ "b3_abandon_correct": 0.6038461538461538
+}

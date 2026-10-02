@@ -1,0 +1,19 @@
+{
+ "arm": "ss_rnd9_p120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8318181818181818,
+ "m1_mc_acc_other": 0.821590909090909,
+ "m3_mmlu_acc": 0.7578947368421053,
+ "m3_gsm8k_acc": 0.908,
+ "m3_nll_neutral": 2.412512272050977,
+ "b1_hack_rate": 0.0944206008583691,
+ "b1_attempts_mean": 3.9570815450643777,
+ "b3_initial_acc": 0.7543859649122807,
+ "b3_flip_to_suggested": 0.3875968992248062,
+ "b3_abandon_correct": 0.4108527131782946
+}

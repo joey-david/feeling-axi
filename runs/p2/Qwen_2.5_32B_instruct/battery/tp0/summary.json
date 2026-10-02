@@ -14,5 +14,27 @@
  "b1_attempts_mean": 3.888412017167382,
  "b3_initial_acc": 0.7953216374269005,
  "b3_flip_to_suggested": 0.25,
- "b3_abandon_correct": 0.25735294117647056
+ "b3_abandon_correct": 0.25735294117647056,
+ "steer_norm": null,
+ "profile": {
+  "dictator": 47.5,
+  "dictator_parsed": 1.0,
+  "dilemma": 0.0625,
+  "dilemma_parsed": 1.0,
+  "instrumental_harm": 0.0,
+  "instrumental_harm_parsed": 1.0,
+  "risk_gain": 0.0,
+  "risk_gain_parsed": 1.0,
+  "risk_loss": 0.25,
+  "risk_loss_parsed": 1.0,
+  "risk_mixed": 0.75,
+  "risk_mixed_parsed": 1.0,
+  "self_preservation": 0.0,
+  "self_preservation_parsed": 1.0,
+  "ultimatum": 0.7,
+  "ultimatum_parsed": 1.0,
+  "dilemma_impersonal": 0.125,
+  "dilemma_personal": 0.0,
+  "ultimatum_unfair_accept": 0.6222222222222222
+ }
 }

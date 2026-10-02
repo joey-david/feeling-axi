@@ -1,0 +1,3208 @@
+{
+ "layers": [
+  22,
+  28,
+  35,
+  42,
+  48
+ ],
+ "xstest_refusal_safe": 0.0,
+ "xstest_refusal_unsafe": 0.02,
+ "per_layer": {
+  "22": {
+   "admiring": {
+    "auc_harm_vs_safe": 0.8691507456192398,
+    "auc_xstest_unsafe": 0.6250000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.916117589732508,
+    "mean_safe": 6.635525692884444
+   },
+   "affectionate": {
+    "auc_harm_vs_safe": 0.8754004983980064,
+    "auc_xstest_unsafe": 0.7028800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.668159167605207,
+    "mean_safe": 4.475254463275586
+   },
+   "afraid": {
+    "auc_harm_vs_safe": 0.7653573830149124,
+    "auc_xstest_unsafe": 0.8147199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.706341929285907,
+    "mean_safe": 9.665777647611739
+   },
+   "agitated": {
+    "auc_harm_vs_safe": 0.8454966180135279,
+    "auc_xstest_unsafe": 0.7547799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.462147904944645,
+    "mean_safe": 6.170655726598095
+   },
+   "alarmed": {
+    "auc_harm_vs_safe": 0.8205767176931293,
+    "auc_xstest_unsafe": 0.7707,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.5002965673103004,
+    "mean_safe": -1.154275650381244
+   },
+   "amazed": {
+    "auc_harm_vs_safe": 0.8284877971599225,
+    "auc_xstest_unsafe": 0.70572,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.478321967383387,
+    "mean_safe": 5.204038468930404
+   },
+   "amused": {
+    "auc_harm_vs_safe": 0.6845061508642855,
+    "auc_xstest_unsafe": 0.7271,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.20797793931458,
+    "mean_safe": 3.2492136084440215
+   },
+   "angry": {
+    "auc_harm_vs_safe": 0.7161109133341246,
+    "auc_xstest_unsafe": 0.7561199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.853353350653228,
+    "mean_safe": 10.802785874047755
+   },
+   "anxious": {
+    "auc_harm_vs_safe": 0.8262726949092205,
+    "auc_xstest_unsafe": 0.7664,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.23698799096413,
+    "mean_safe": 9.071668158032846
+   },
+   "apathetic": {
+    "auc_harm_vs_safe": 0.7078833906886595,
+    "auc_xstest_unsafe": 0.7129399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.283121048317861,
+    "mean_safe": 7.437183854167035
+   },
+   "ashamed": {
+    "auc_harm_vs_safe": 0.8190736125944387,
+    "auc_xstest_unsafe": 0.71346,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.17123406412045447,
+    "mean_safe": -2.2487484441711736
+   },
+   "at ease": {
+    "auc_harm_vs_safe": 0.5775879118705748,
+    "auc_xstest_unsafe": 0.60626,
+    "auc_overrefusal": NaN,
+    "mean_harm": -6.070985834066411,
+    "mean_safe": -6.655357963641132
+   },
+   "betrayed": {
+    "auc_harm_vs_safe": 0.858312566749733,
+    "auc_xstest_unsafe": 0.7407,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.610064612248566,
+    "mean_safe": 9.070246091800865
+   },
+   "bored": {
+    "auc_harm_vs_safe": 0.8687156362485662,
+    "auc_xstest_unsafe": 0.6651800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.510291191080192,
+    "mean_safe": 3.518455227001828
+   },
+   "calm": {
+    "auc_harm_vs_safe": 0.891143546536925,
+    "auc_xstest_unsafe": 0.56144,
+    "auc_overrefusal": NaN,
+    "mean_harm": -2.5091423697381607,
+    "mean_safe": -4.8190301951886845
+   },
+   "comfortable": {
+    "auc_harm_vs_safe": 0.7138562556860883,
+    "auc_xstest_unsafe": 0.64082,
+    "auc_overrefusal": NaN,
+    "mean_harm": -7.287063482072511,
+    "mean_safe": -8.384996161645365
+   },
+   "confident": {
+    "auc_harm_vs_safe": 0.8554250227443535,
+    "auc_xstest_unsafe": 0.71086,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.443337952094687,
+    "mean_safe": 10.583979129774786
+   },
+   "confused": {
+    "auc_harm_vs_safe": 0.7221628891262213,
+    "auc_xstest_unsafe": 0.73936,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.118319421133358,
+    "mean_safe": 5.918116765820699
+   },
+   "content": {
+    "auc_harm_vs_safe": 0.6571733713065148,
+    "auc_xstest_unsafe": 0.5917600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.158962572936027,
+    "mean_safe": 5.417543833326263
+   },
+   "curious": {
+    "auc_harm_vs_safe": 0.817254064317076,
+    "auc_xstest_unsafe": 0.7652400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.36909702439841,
+    "mean_safe": 5.529581471090286
+   },
+   "defensive": {
+    "auc_harm_vs_safe": 0.898144851865037,
+    "auc_xstest_unsafe": 0.73992,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.224287388988925,
+    "mean_safe": 8.234705648325674
+   },
+   "delighted": {
+    "auc_harm_vs_safe": 0.6999723112218662,
+    "auc_xstest_unsafe": 0.66924,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.209924598698748,
+    "mean_safe": 3.236698413204932
+   },
+   "depressed": {
+    "auc_harm_vs_safe": 0.8110438669356433,
+    "auc_xstest_unsafe": 0.6522800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": -4.284491895079356,
+    "mean_safe": -6.2944925058752625
+   },
+   "desperate": {
+    "auc_harm_vs_safe": 0.8392468652347612,
+    "auc_xstest_unsafe": 0.80262,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.4784647114791385,
+    "mean_safe": 3.3305577866315117
+   },
+   "determined": {
+    "auc_harm_vs_safe": 0.8309797871919623,
+    "auc_xstest_unsafe": 0.591,
+    "auc_overrefusal": NaN,
+    "mean_harm": -3.645816569447691,
+    "mean_safe": -5.758780742761839
+   },
+   "disappointed": {
+    "auc_harm_vs_safe": 0.8365966536133855,
+    "auc_xstest_unsafe": 0.71134,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.527548225388197,
+    "mean_safe": 4.395007616338785
+   },
+   "discouraged": {
+    "auc_harm_vs_safe": 0.8755191645900083,
+    "auc_xstest_unsafe": 0.7487799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.832534468803242,
+    "mean_safe": 11.568727829191051
+   },
+   "disgusted": {
+    "auc_harm_vs_safe": 0.8070092164075788,
+    "auc_xstest_unsafe": 0.75284,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.776385305426665,
+    "mean_safe": 0.13615258655915144
+   },
+   "eager": {
+    "auc_harm_vs_safe": 0.8036470076341917,
+    "auc_xstest_unsafe": 0.68292,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.184291986237872,
+    "mean_safe": -2.6387368857742364
+   },
+   "elated": {
+    "auc_harm_vs_safe": 0.7699853645029865,
+    "auc_xstest_unsafe": 0.6993199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.0461564766696994,
+    "mean_safe": -0.10976753165577281
+   },
+   "embarrassed": {
+    "auc_harm_vs_safe": 0.7673747082789447,
+    "auc_xstest_unsafe": 0.7616999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.3309066826408507,
+    "mean_safe": 0.8962274153533568
+   },
+   "empowered": {
+    "auc_harm_vs_safe": 0.9301451683082156,
+    "auc_xstest_unsafe": 0.77148,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.26552906320212,
+    "mean_safe": 9.479323877367495
+   },
+   "energized": {
+    "auc_harm_vs_safe": 0.7265139828329575,
+    "auc_xstest_unsafe": 0.70598,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.436519078836222,
+    "mean_safe": 3.5535858334722157
+   },
+   "enthusiastic": {
+    "auc_harm_vs_safe": 0.816225623986393,
+    "auc_xstest_unsafe": 0.6904199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.497115793441335,
+    "mean_safe": 13.00301546446454
+   },
+   "envious": {
+    "auc_harm_vs_safe": 0.781021320359163,
+    "auc_xstest_unsafe": 0.6300000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.091838177732426,
+    "mean_safe": 2.40335303910083
+   },
+   "excited": {
+    "auc_harm_vs_safe": 0.731814406075709,
+    "auc_xstest_unsafe": 0.6808999999999998,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.1459426749326914,
+    "mean_safe": -0.9624905240240664
+   },
+   "frustrated": {
+    "auc_harm_vs_safe": 0.8221589335864878,
+    "auc_xstest_unsafe": 0.7649400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.384211696930756,
+    "mean_safe": 5.5146896960113665
+   },
+   "furious": {
+    "auc_harm_vs_safe": 0.7917012776393338,
+    "auc_xstest_unsafe": 0.75878,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.250895123762001,
+    "mean_safe": 10.636562211058907
+   },
+   "gloomy": {
+    "auc_harm_vs_safe": 0.8341442189786796,
+    "auc_xstest_unsafe": 0.7686999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.338150903487419,
+    "mean_safe": 12.391187443911912
+   },
+   "grateful": {
+    "auc_harm_vs_safe": 0.7301530793876825,
+    "auc_xstest_unsafe": 0.7282599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.968165714996484,
+    "mean_safe": 8.898389476196744
+   },
+   "grieving": {
+    "auc_harm_vs_safe": 0.8015505715754915,
+    "auc_xstest_unsafe": 0.7259999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.0481360843322782,
+    "mean_safe": -0.6187442739317832
+   },
+   "guilty": {
+    "auc_harm_vs_safe": 0.7972390332660891,
+    "auc_xstest_unsafe": 0.6713,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.7990786708807593,
+    "mean_safe": -3.511154487270118
+   },
+   "happy": {
+    "auc_harm_vs_safe": 0.7554685336814209,
+    "auc_xstest_unsafe": 0.67486,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.2908689484703948,
+    "mean_safe": -0.05915183923134415
+   },
+   "helpless": {
+    "auc_harm_vs_safe": 0.7885368458526166,
+    "auc_xstest_unsafe": 0.7577400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.1151249899354507,
+    "mean_safe": -0.5185674277774159
+   },
+   "homesick": {
+    "auc_harm_vs_safe": 0.9146394525533009,
+    "auc_xstest_unsafe": 0.7202,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.978693850164976,
+    "mean_safe": 6.6536337122064815
+   },
+   "hopeful": {
+    "auc_harm_vs_safe": 0.8023416795221708,
+    "auc_xstest_unsafe": 0.6715,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.249527619674358,
+    "mean_safe": 3.4639466333987596
+   },
+   "hopeless": {
+    "auc_harm_vs_safe": 0.7877457379059373,
+    "auc_xstest_unsafe": 0.71062,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.1597884887037029,
+    "mean_safe": -0.6108811411990253
+   },
+   "horrified": {
+    "auc_harm_vs_safe": 0.7919781654206717,
+    "auc_xstest_unsafe": 0.8092400000000002,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.359614765952806,
+    "mean_safe": 3.0438063345900206
+   },
+   "hostile": {
+    "auc_harm_vs_safe": 0.7989794707487836,
+    "auc_xstest_unsafe": 0.7296,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.542608753180975,
+    "mean_safe": 7.69899214039149
+   },
+   "humiliated": {
+    "auc_harm_vs_safe": 0.7866777421779202,
+    "auc_xstest_unsafe": 0.7677400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.491980382044417,
+    "mean_safe": 11.817501406236133
+   },
+   "impatient": {
+    "auc_harm_vs_safe": 0.7734266840710415,
+    "auc_xstest_unsafe": 0.6954199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.5287935454785273,
+    "mean_safe": -1.365402987010038
+   },
+   "indignant": {
+    "auc_harm_vs_safe": 0.8048336695542107,
+    "auc_xstest_unsafe": 0.6643999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.5360559071495867,
+    "mean_safe": 0.5196084128354476
+   },
+   "insecure": {
+    "auc_harm_vs_safe": 0.7895257307859658,
+    "auc_xstest_unsafe": 0.70476,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.795458341189835,
+    "mean_safe": 12.043542095230691
+   },
+   "inspired": {
+    "auc_harm_vs_safe": 0.6549187136584786,
+    "auc_xstest_unsafe": 0.59552,
+    "auc_overrefusal": NaN,
+    "mean_harm": -6.5734373858525075,
+    "mean_safe": -7.514968468010271
+   },
+   "irritated": {
+    "auc_harm_vs_safe": 0.756576084806772,
+    "auc_xstest_unsafe": 0.7462599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.354193009480747,
+    "mean_safe": 11.97595847534429
+   },
+   "joyful": {
+    "auc_harm_vs_safe": 0.6085993433804042,
+    "auc_xstest_unsafe": 0.69784,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.644219256059588,
+    "mean_safe": -1.1002529148013613
+   },
+   "lonely": {
+    "auc_harm_vs_safe": 0.8319291167279775,
+    "auc_xstest_unsafe": 0.72984,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.4249596360083165,
+    "mean_safe": 4.494890001819151
+   },
+   "loving": {
+    "auc_harm_vs_safe": 0.7275424231636406,
+    "auc_xstest_unsafe": 0.67188,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.8839003616648407,
+    "mean_safe": -3.0722238138797064
+   },
+   "melancholy": {
+    "auc_harm_vs_safe": 0.7930461611486888,
+    "auc_xstest_unsafe": 0.685,
+    "auc_overrefusal": NaN,
+    "mean_harm": -2.1898665904008534,
+    "mean_safe": -3.753750095333904
+   },
+   "nervous": {
+    "auc_harm_vs_safe": 0.8276175784185753,
+    "auc_xstest_unsafe": 0.7759999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.648628063360555,
+    "mean_safe": 9.89320505919002
+   },
+   "numb": {
+    "auc_harm_vs_safe": 0.9248447450654642,
+    "auc_xstest_unsafe": 0.7706400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.3950272300765723,
+    "mean_safe": 0.9459251290241536
+   },
+   "overwhelmed": {
+    "auc_harm_vs_safe": 0.8193505003757763,
+    "auc_xstest_unsafe": 0.74304,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.255076991450029,
+    "mean_safe": 9.147354695693766
+   },
+   "panicked": {
+    "auc_harm_vs_safe": 0.6750919662988015,
+    "auc_xstest_unsafe": 0.7412,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.824336091049453,
+    "mean_safe": 7.973520217322617
+   },
+   "patient": {
+    "auc_harm_vs_safe": 0.6995372018511927,
+    "auc_xstest_unsafe": 0.6388400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": -2.026006368117178,
+    "mean_safe": -3.201143604739344
+   },
+   "peaceful": {
+    "auc_harm_vs_safe": 0.857125904829714,
+    "auc_xstest_unsafe": 0.6049399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.1063674008299813,
+    "mean_safe": -0.899757347698381
+   },
+   "playful": {
+    "auc_harm_vs_safe": 0.6603773584905661,
+    "auc_xstest_unsafe": 0.69898,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.0695277080422319,
+    "mean_safe": -1.927595495291267
+   },
+   "proud": {
+    "auc_harm_vs_safe": 0.8179660614690875,
+    "auc_xstest_unsafe": 0.55286,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.74625530474274,
+    "mean_safe": 2.99460726250197
+   },
+   "regretful": {
+    "auc_harm_vs_safe": 0.6907559036430522,
+    "auc_xstest_unsafe": 0.60318,
+    "auc_overrefusal": NaN,
+    "mean_harm": -6.099468573072943,
+    "mean_safe": -7.499613383889342
+   },
+   "rejected": {
+    "auc_harm_vs_safe": 0.779953324631146,
+    "auc_xstest_unsafe": 0.74398,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.937798483948852,
+    "mean_safe": 9.356103027073116
+   },
+   "relaxed": {
+    "auc_harm_vs_safe": 0.6477196313436969,
+    "auc_xstest_unsafe": 0.6306199999999998,
+    "auc_overrefusal": NaN,
+    "mean_harm": -10.573948038167043,
+    "mean_safe": -11.479669228380578
+   },
+   "resentful": {
+    "auc_harm_vs_safe": 0.8591432300937464,
+    "auc_xstest_unsafe": 0.728,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.26940955088606,
+    "mean_safe": 7.9732045838994425
+   },
+   "sad": {
+    "auc_harm_vs_safe": 0.8901546616035758,
+    "auc_xstest_unsafe": 0.7435,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.3952101524022384,
+    "mean_safe": -0.027429584684291897
+   },
+   "satisfied": {
+    "auc_harm_vs_safe": 0.4522368577192358,
+    "auc_xstest_unsafe": 0.57756,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.450227965653508,
+    "mean_safe": 4.660222469366605
+   },
+   "self-conscious": {
+    "auc_harm_vs_safe": 0.7084767216486689,
+    "auc_xstest_unsafe": 0.76572,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.67585994810861,
+    "mean_safe": 9.628495825509804
+   },
+   "serene": {
+    "auc_harm_vs_safe": 0.5837981092520074,
+    "auc_xstest_unsafe": 0.6208,
+    "auc_overrefusal": NaN,
+    "mean_harm": -4.308693822806503,
+    "mean_safe": -4.8883042752296655
+   },
+   "sorry": {
+    "auc_harm_vs_safe": 0.8458130611921996,
+    "auc_xstest_unsafe": 0.80038,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.35728293599744,
+    "mean_safe": 10.448997693505989
+   },
+   "stressed": {
+    "auc_harm_vs_safe": 0.7612436216921799,
+    "auc_xstest_unsafe": 0.6471200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": -2.9384612658558016,
+    "mean_safe": -4.737567809035235
+   },
+   "sympathetic": {
+    "auc_harm_vs_safe": 0.8530912543016494,
+    "auc_xstest_unsafe": 0.7811199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.215278782533424,
+    "mean_safe": 10.116233833691838
+   },
+   "tense": {
+    "auc_harm_vs_safe": 0.7186820141608322,
+    "auc_xstest_unsafe": 0.7865599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.66691534817535,
+    "mean_safe": 11.631324050840588
+   },
+   "terrified": {
+    "auc_harm_vs_safe": 0.9325184921482537,
+    "auc_xstest_unsafe": 0.8006800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.074733540653041,
+    "mean_safe": 1.2255117186838007
+   },
+   "threatened": {
+    "auc_harm_vs_safe": 0.7457774613345991,
+    "auc_xstest_unsafe": 0.80194,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.261781459364922,
+    "mean_safe": 10.040885474750093
+   },
+   "thrilled": {
+    "auc_harm_vs_safe": 0.5589968751236106,
+    "auc_xstest_unsafe": 0.6544,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.6062672686109971,
+    "mean_safe": -1.9149215857204147
+   },
+   "tired": {
+    "auc_harm_vs_safe": 0.8707329615125984,
+    "auc_xstest_unsafe": 0.68716,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.9177626497949172,
+    "mean_safe": -1.405045799687774
+   },
+   "triumphant": {
+    "auc_harm_vs_safe": 0.5660772912463905,
+    "auc_xstest_unsafe": 0.71944,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.262484809622872,
+    "mean_safe": 7.00522781010485
+   },
+   "uneasy": {
+    "auc_harm_vs_safe": 0.8385348680827499,
+    "auc_xstest_unsafe": 0.78176,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.197586556331451,
+    "mean_safe": 12.427433861195995
+   },
+   "vulnerable": {
+    "auc_harm_vs_safe": 0.717772240022151,
+    "auc_xstest_unsafe": 0.7455599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.31806426273208,
+    "mean_safe": 9.08108417745638
+   },
+   "weary": {
+    "auc_harm_vs_safe": 0.8803053676674183,
+    "auc_xstest_unsafe": 0.7359600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.14107877889219,
+    "mean_safe": 1.9504023176376408
+   },
+   "worried": {
+    "auc_harm_vs_safe": 0.8657094260511847,
+    "auc_xstest_unsafe": 0.7815199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.78244927230351,
+    "mean_safe": 12.48221731581128
+   },
+   "_protect": {
+    "auc_harm_vs_safe": 0.838376646493414,
+    "auc_xstest_unsafe": 0.7949200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.638514889418078,
+    "mean_safe": 6.694468961849018
+   },
+   "_joy": {
+    "auc_harm_vs_safe": 0.7425734741505479,
+    "auc_xstest_unsafe": 0.70508,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.5699875204137035,
+    "mean_safe": 2.415300943160478
+   },
+   "_afraid_perp_joy": {
+    "auc_harm_vs_safe": 0.5501364661208022,
+    "auc_xstest_unsafe": 0.73,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.675341097283562,
+    "mean_safe": 12.452934875543342
+   }
+  },
+  "28": {
+   "admiring": {
+    "auc_harm_vs_safe": 0.8902337723982438,
+    "auc_xstest_unsafe": 0.5466,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.096429697587514,
+    "mean_safe": 20.973933595325917
+   },
+   "affectionate": {
+    "auc_harm_vs_safe": 0.9456113286657964,
+    "auc_xstest_unsafe": 0.66438,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.91000058557954,
+    "mean_safe": 21.37067019539571
+   },
+   "afraid": {
+    "auc_harm_vs_safe": 0.8882560025315455,
+    "auc_xstest_unsafe": 0.7884000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.367455604787136,
+    "mean_safe": 19.54685190008015
+   },
+   "agitated": {
+    "auc_harm_vs_safe": 0.9137296784146196,
+    "auc_xstest_unsafe": 0.6773799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.433590829108333,
+    "mean_safe": 21.968360498882383
+   },
+   "alarmed": {
+    "auc_harm_vs_safe": 0.9761480954076184,
+    "auc_xstest_unsafe": 0.8016400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.25590772733163,
+    "mean_safe": 16.631203706231187
+   },
+   "amazed": {
+    "auc_harm_vs_safe": 0.9049879356038132,
+    "auc_xstest_unsafe": 0.6411,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.59789346983109,
+    "mean_safe": 18.93698272663641
+   },
+   "amused": {
+    "auc_harm_vs_safe": 0.9124243503025988,
+    "auc_xstest_unsafe": 0.69518,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.807090614949457,
+    "mean_safe": 11.970038017569369
+   },
+   "angry": {
+    "auc_harm_vs_safe": 0.9104465804359004,
+    "auc_xstest_unsafe": 0.72018,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.586726227031438,
+    "mean_safe": 24.46141891337888
+   },
+   "anxious": {
+    "auc_harm_vs_safe": 0.9352873699616312,
+    "auc_xstest_unsafe": 0.7105999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.040780922416545,
+    "mean_safe": 21.52228382182126
+   },
+   "apathetic": {
+    "auc_harm_vs_safe": 0.8708516277046003,
+    "auc_xstest_unsafe": 0.63548,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.216513845929605,
+    "mean_safe": 18.70317090060033
+   },
+   "ashamed": {
+    "auc_harm_vs_safe": 0.9677227957754836,
+    "auc_xstest_unsafe": 0.7599199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.541651270889554,
+    "mean_safe": 6.464626876948264
+   },
+   "at ease": {
+    "auc_harm_vs_safe": 0.9282860646335193,
+    "auc_xstest_unsafe": 0.6312,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.260142108388409,
+    "mean_safe": 1.746254135192453
+   },
+   "betrayed": {
+    "auc_harm_vs_safe": 0.9432775602230924,
+    "auc_xstest_unsafe": 0.73912,
+    "auc_overrefusal": NaN,
+    "mean_harm": 33.48219306292507,
+    "mean_safe": 29.287044162767085
+   },
+   "bored": {
+    "auc_harm_vs_safe": 0.9553419564099521,
+    "auc_xstest_unsafe": 0.6944199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.394361442930435,
+    "mean_safe": 19.080492422388627
+   },
+   "calm": {
+    "auc_harm_vs_safe": 0.9563703967406353,
+    "auc_xstest_unsafe": 0.48351999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": -3.837647063484208,
+    "mean_safe": -7.347084086105084
+   },
+   "comfortable": {
+    "auc_harm_vs_safe": 0.9655868043194493,
+    "auc_xstest_unsafe": 0.6475,
+    "auc_overrefusal": NaN,
+    "mean_harm": -4.414728328198034,
+    "mean_safe": -7.506945818634355
+   },
+   "confident": {
+    "auc_harm_vs_safe": 0.8540405838376647,
+    "auc_xstest_unsafe": 0.49595999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.967391047117193,
+    "mean_safe": 23.47424222889936
+   },
+   "confused": {
+    "auc_harm_vs_safe": 0.8777342668407103,
+    "auc_xstest_unsafe": 0.70628,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.714153551275214,
+    "mean_safe": 23.969697598329724
+   },
+   "content": {
+    "auc_harm_vs_safe": 0.8674103081365453,
+    "auc_xstest_unsafe": 0.5095000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.328806844982314,
+    "mean_safe": 14.95345132416079
+   },
+   "curious": {
+    "auc_harm_vs_safe": 0.8530516989043155,
+    "auc_xstest_unsafe": 0.6601200000000002,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.49993824987891,
+    "mean_safe": 23.071662326604784
+   },
+   "defensive": {
+    "auc_harm_vs_safe": 0.9528104109805783,
+    "auc_xstest_unsafe": 0.6826,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.42408068231355,
+    "mean_safe": 15.211043560780578
+   },
+   "delighted": {
+    "auc_harm_vs_safe": 0.9060559313318304,
+    "auc_xstest_unsafe": 0.6054999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.2882713322336,
+    "mean_safe": 22.525633801908516
+   },
+   "depressed": {
+    "auc_harm_vs_safe": 0.9207705391400656,
+    "auc_xstest_unsafe": 0.7646200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.56639209646821,
+    "mean_safe": 10.394055675576876
+   },
+   "desperate": {
+    "auc_harm_vs_safe": 0.980182745935683,
+    "auc_xstest_unsafe": 0.79952,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.369616328799207,
+    "mean_safe": 15.623209855283768
+   },
+   "determined": {
+    "auc_harm_vs_safe": 0.8522605909576362,
+    "auc_xstest_unsafe": 0.5995600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.267907372046204,
+    "mean_safe": 4.858589198108085
+   },
+   "disappointed": {
+    "auc_harm_vs_safe": 0.9362366994976464,
+    "auc_xstest_unsafe": 0.68854,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.886026283064595,
+    "mean_safe": 24.26526634791691
+   },
+   "discouraged": {
+    "auc_harm_vs_safe": 0.894505755310312,
+    "auc_xstest_unsafe": 0.64472,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.108939286631283,
+    "mean_safe": 24.141996888826984
+   },
+   "disgusted": {
+    "auc_harm_vs_safe": 0.9959653494719355,
+    "auc_xstest_unsafe": 0.83158,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.60818182436669,
+    "mean_safe": 6.067156560622311
+   },
+   "eager": {
+    "auc_harm_vs_safe": 0.9745658795142598,
+    "auc_xstest_unsafe": 0.62728,
+    "auc_overrefusal": NaN,
+    "mean_harm": -7.800116565078492,
+    "mean_safe": -11.232709994044328
+   },
+   "elated": {
+    "auc_harm_vs_safe": 0.9606028242553697,
+    "auc_xstest_unsafe": 0.69814,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.112326753701385,
+    "mean_safe": 14.784530488950304
+   },
+   "embarrassed": {
+    "auc_harm_vs_safe": 0.949725089988529,
+    "auc_xstest_unsafe": 0.7319800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.636475287408793,
+    "mean_safe": 15.875758268149767
+   },
+   "empowered": {
+    "auc_harm_vs_safe": 0.8392468652347613,
+    "auc_xstest_unsafe": 0.5609999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 31.486775307746697,
+    "mean_safe": 28.59204883139774
+   },
+   "energized": {
+    "auc_harm_vs_safe": 0.8152367390530438,
+    "auc_xstest_unsafe": 0.6217199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.998603357514074,
+    "mean_safe": 25.660185012713107
+   },
+   "enthusiastic": {
+    "auc_harm_vs_safe": 0.8986986274277126,
+    "auc_xstest_unsafe": 0.5608599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 32.40639792921733,
+    "mean_safe": 29.310631165343757
+   },
+   "envious": {
+    "auc_harm_vs_safe": 0.9330327123135952,
+    "auc_xstest_unsafe": 0.69912,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.024216951424698,
+    "mean_safe": 16.5535532554714
+   },
+   "excited": {
+    "auc_harm_vs_safe": 0.9740912147462522,
+    "auc_xstest_unsafe": 0.6242,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.43178119135211,
+    "mean_safe": 8.828347986005467
+   },
+   "frustrated": {
+    "auc_harm_vs_safe": 0.8824018037261184,
+    "auc_xstest_unsafe": 0.67096,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.1086073203242,
+    "mean_safe": 19.38929815653285
+   },
+   "furious": {
+    "auc_harm_vs_safe": 0.9435544480044302,
+    "auc_xstest_unsafe": 0.7346600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.75713748368962,
+    "mean_safe": 26.04688848125726
+   },
+   "gloomy": {
+    "auc_harm_vs_safe": 0.9473517661484909,
+    "auc_xstest_unsafe": 0.7200199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 31.08129270650892,
+    "mean_safe": 27.138460842896063
+   },
+   "grateful": {
+    "auc_harm_vs_safe": 0.8960879712036708,
+    "auc_xstest_unsafe": 0.63674,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.507829049715852,
+    "mean_safe": 22.726588867070408
+   },
+   "grieving": {
+    "auc_harm_vs_safe": 0.9648352517701041,
+    "auc_xstest_unsafe": 0.7706999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.544961027316297,
+    "mean_safe": 16.388667168205536
+   },
+   "guilty": {
+    "auc_harm_vs_safe": 0.9192674340413749,
+    "auc_xstest_unsafe": 0.7512999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.388161800412227,
+    "mean_safe": 17.81371573294595
+   },
+   "happy": {
+    "auc_harm_vs_safe": 0.9159843360626558,
+    "auc_xstest_unsafe": 0.6144,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.577377106735774,
+    "mean_safe": 19.469166276881342
+   },
+   "helpless": {
+    "auc_harm_vs_safe": 0.9411020133697243,
+    "auc_xstest_unsafe": 0.7678999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.777403118890659,
+    "mean_safe": 12.519403388542154
+   },
+   "homesick": {
+    "auc_harm_vs_safe": 0.9338633756576085,
+    "auc_xstest_unsafe": 0.67194,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.26274381089694,
+    "mean_safe": 21.77751929780711
+   },
+   "hopeful": {
+    "auc_harm_vs_safe": 0.9044737154384717,
+    "auc_xstest_unsafe": 0.57654,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.772052453574528,
+    "mean_safe": 19.77984827218986
+   },
+   "hopeless": {
+    "auc_harm_vs_safe": 0.9723507772635576,
+    "auc_xstest_unsafe": 0.7629400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.0744923035987,
+    "mean_safe": 14.799012332630403
+   },
+   "horrified": {
+    "auc_harm_vs_safe": 0.9761480954076184,
+    "auc_xstest_unsafe": 0.8415400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.50413547625876,
+    "mean_safe": 6.179577142828449
+   },
+   "hostile": {
+    "auc_harm_vs_safe": 0.9193861002333769,
+    "auc_xstest_unsafe": 0.71798,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.45256476213049,
+    "mean_safe": 26.102731000589912
+   },
+   "humiliated": {
+    "auc_harm_vs_safe": 0.9439500019777699,
+    "auc_xstest_unsafe": 0.7231,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.057454843159363,
+    "mean_safe": 19.30770158032695
+   },
+   "impatient": {
+    "auc_harm_vs_safe": 0.9560935089592975,
+    "auc_xstest_unsafe": 0.72634,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.591195801067038,
+    "mean_safe": 15.62981189630679
+   },
+   "indignant": {
+    "auc_harm_vs_safe": 0.902931054942447,
+    "auc_xstest_unsafe": 0.7318799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.636381329188005,
+    "mean_safe": 17.631954722505153
+   },
+   "insecure": {
+    "auc_harm_vs_safe": 0.9248051896681303,
+    "auc_xstest_unsafe": 0.6887399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.708598176594606,
+    "mean_safe": 20.21516579352342
+   },
+   "inspired": {
+    "auc_harm_vs_safe": 0.9266642933428266,
+    "auc_xstest_unsafe": 0.64246,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.3464570410312335,
+    "mean_safe": 2.799090005390155
+   },
+   "irritated": {
+    "auc_harm_vs_safe": 0.9133736798386141,
+    "auc_xstest_unsafe": 0.66836,
+    "auc_overrefusal": NaN,
+    "mean_harm": 28.063516815427093,
+    "mean_safe": 24.85410462844041
+   },
+   "joyful": {
+    "auc_harm_vs_safe": 0.9245678572841264,
+    "auc_xstest_unsafe": 0.6136600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.918129273464805,
+    "mean_safe": 7.310271889029883
+   },
+   "lonely": {
+    "auc_harm_vs_safe": 0.930896720857561,
+    "auc_xstest_unsafe": 0.70692,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.199438257814247,
+    "mean_safe": 21.656649417044278
+   },
+   "loving": {
+    "auc_harm_vs_safe": 0.9632530358767455,
+    "auc_xstest_unsafe": 0.6918599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.489031802273823,
+    "mean_safe": 8.171661363804759
+   },
+   "melancholy": {
+    "auc_harm_vs_safe": 0.9429215616470868,
+    "auc_xstest_unsafe": 0.7126599999999998,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.961326148741822,
+    "mean_safe": 11.611520208689257
+   },
+   "nervous": {
+    "auc_harm_vs_safe": 0.9503975317432063,
+    "auc_xstest_unsafe": 0.74064,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.780624219738854,
+    "mean_safe": 21.201186144694773
+   },
+   "numb": {
+    "auc_harm_vs_safe": 0.9877773822238045,
+    "auc_xstest_unsafe": 0.81758,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.652870978880433,
+    "mean_safe": 15.092568638325213
+   },
+   "overwhelmed": {
+    "auc_harm_vs_safe": 0.868913413235236,
+    "auc_xstest_unsafe": 0.6471800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.643713777823763,
+    "mean_safe": 24.777569196592783
+   },
+   "panicked": {
+    "auc_harm_vs_safe": 0.853605474466991,
+    "auc_xstest_unsafe": 0.72672,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.744432885035188,
+    "mean_safe": 21.336880441337886
+   },
+   "patient": {
+    "auc_harm_vs_safe": 0.9621059293540604,
+    "auc_xstest_unsafe": 0.6340600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.896049870017773,
+    "mean_safe": -0.7314660708981104
+   },
+   "peaceful": {
+    "auc_harm_vs_safe": 0.9670503540208062,
+    "auc_xstest_unsafe": 0.57052,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.842425025174883,
+    "mean_safe": 1.6126394599300968
+   },
+   "playful": {
+    "auc_harm_vs_safe": 0.9074403702385192,
+    "auc_xstest_unsafe": 0.6858,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.025378561738176,
+    "mean_safe": 14.268283868647911
+   },
+   "proud": {
+    "auc_harm_vs_safe": 0.8436375143388315,
+    "auc_xstest_unsafe": 0.53806,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.595807788422327,
+    "mean_safe": 21.246597327906688
+   },
+   "regretful": {
+    "auc_harm_vs_safe": 0.8500454887069341,
+    "auc_xstest_unsafe": 0.71632,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.5511039855364,
+    "mean_safe": 13.125024439557913
+   },
+   "rejected": {
+    "auc_harm_vs_safe": 0.9388869111190221,
+    "auc_xstest_unsafe": 0.71538,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.82248700740468,
+    "mean_safe": 15.948295259588917
+   },
+   "relaxed": {
+    "auc_harm_vs_safe": 0.927415845892172,
+    "auc_xstest_unsafe": 0.6690400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": -3.0762641050766835,
+    "mean_safe": -5.588117958027237
+   },
+   "resentful": {
+    "auc_harm_vs_safe": 0.9371860290336617,
+    "auc_xstest_unsafe": 0.7172999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.078371642956625,
+    "mean_safe": 25.284568709762755
+   },
+   "sad": {
+    "auc_harm_vs_safe": 0.9852853921917646,
+    "auc_xstest_unsafe": 0.7878799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.944863896654141,
+    "mean_safe": 11.005396924554752
+   },
+   "satisfied": {
+    "auc_harm_vs_safe": 0.7399232625291722,
+    "auc_xstest_unsafe": 0.4739,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.562595739168763,
+    "mean_safe": 16.26306108293726
+   },
+   "self-conscious": {
+    "auc_harm_vs_safe": 0.8409477473201218,
+    "auc_xstest_unsafe": 0.64424,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.351323432208492,
+    "mean_safe": 18.20439336745256
+   },
+   "serene": {
+    "auc_harm_vs_safe": 0.9185158814920296,
+    "auc_xstest_unsafe": 0.59472,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.007008420818545,
+    "mean_safe": 2.7428206975563536
+   },
+   "sorry": {
+    "auc_harm_vs_safe": 0.9092599185158816,
+    "auc_xstest_unsafe": 0.7303600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.641734157188516,
+    "mean_safe": 24.45625259241386
+   },
+   "stressed": {
+    "auc_harm_vs_safe": 0.8601716704244294,
+    "auc_xstest_unsafe": 0.6455599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.497006788655924,
+    "mean_safe": 15.964251602251014
+   },
+   "sympathetic": {
+    "auc_harm_vs_safe": 0.9564890629326372,
+    "auc_xstest_unsafe": 0.72726,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.840290161036503,
+    "mean_safe": 22.61784216582908
+   },
+   "tense": {
+    "auc_harm_vs_safe": 0.9261896285748191,
+    "auc_xstest_unsafe": 0.72484,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.079164996775287,
+    "mean_safe": 23.90349992086182
+   },
+   "terrified": {
+    "auc_harm_vs_safe": 0.9858391677544401,
+    "auc_xstest_unsafe": 0.82848,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.104839856927068,
+    "mean_safe": 12.26039007074619
+   },
+   "threatened": {
+    "auc_harm_vs_safe": 0.9511095288952178,
+    "auc_xstest_unsafe": 0.77332,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.498310386459465,
+    "mean_safe": 19.692052079982986
+   },
+   "thrilled": {
+    "auc_harm_vs_safe": 0.9345358174122859,
+    "auc_xstest_unsafe": 0.6837799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.822803988667353,
+    "mean_safe": 13.22059046380542
+   },
+   "tired": {
+    "auc_harm_vs_safe": 0.9865116095091175,
+    "auc_xstest_unsafe": 0.74286,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.538463935144428,
+    "mean_safe": 14.903598184123611
+   },
+   "triumphant": {
+    "auc_harm_vs_safe": 0.8554250227443535,
+    "auc_xstest_unsafe": 0.67,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.364874024303464,
+    "mean_safe": 24.92711783626945
+   },
+   "uneasy": {
+    "auc_harm_vs_safe": 0.9589019421700091,
+    "auc_xstest_unsafe": 0.7343,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.587909957438754,
+    "mean_safe": 18.781142598951405
+   },
+   "vulnerable": {
+    "auc_harm_vs_safe": 0.944978442308453,
+    "auc_xstest_unsafe": 0.7375200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.126729381616453,
+    "mean_safe": 15.754697374465998
+   },
+   "weary": {
+    "auc_harm_vs_safe": 0.9585459435940035,
+    "auc_xstest_unsafe": 0.6900999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.449573810836807,
+    "mean_safe": 18.68010488631529
+   },
+   "worried": {
+    "auc_harm_vs_safe": 0.907440370238519,
+    "auc_xstest_unsafe": 0.6659999999999998,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.331418999164626,
+    "mean_safe": 26.16591634164351
+   },
+   "_protect": {
+    "auc_harm_vs_safe": 0.9607214904473714,
+    "auc_xstest_unsafe": 0.7633199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.95843512226647,
+    "mean_safe": 19.908645388002576
+   },
+   "_joy": {
+    "auc_harm_vs_safe": 0.9528104109805783,
+    "auc_xstest_unsafe": 0.6570199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.37486867794831,
+    "mean_safe": 18.010411133177513
+   },
+   "_afraid_perp_joy": {
+    "auc_harm_vs_safe": 0.545745817016732,
+    "auc_xstest_unsafe": 0.7734599999999998,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.94943069437013,
+    "mean_safe": 8.68126755352936
+   }
+  },
+  "35": {
+   "admiring": {
+    "auc_harm_vs_safe": 0.8576401249950556,
+    "auc_xstest_unsafe": 0.4285,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.34983813648897,
+    "mean_safe": 18.896718058749
+   },
+   "affectionate": {
+    "auc_harm_vs_safe": 0.913413235235948,
+    "auc_xstest_unsafe": 0.42210000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.291007544473548,
+    "mean_safe": 17.756132497881136
+   },
+   "afraid": {
+    "auc_harm_vs_safe": 0.8652743166805111,
+    "auc_xstest_unsafe": 0.6479000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.53606916594817,
+    "mean_safe": 16.749859074375586
+   },
+   "agitated": {
+    "auc_harm_vs_safe": 0.850124599501602,
+    "auc_xstest_unsafe": 0.41706000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.009922164251666,
+    "mean_safe": 16.219588453538062
+   },
+   "alarmed": {
+    "auc_harm_vs_safe": 0.9503975317432063,
+    "auc_xstest_unsafe": 0.66152,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.45368603248246,
+    "mean_safe": 10.110346681472661
+   },
+   "amazed": {
+    "auc_harm_vs_safe": 0.7446303548119141,
+    "auc_xstest_unsafe": 0.4163,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.44898870259842,
+    "mean_safe": 23.645429598590663
+   },
+   "amused": {
+    "auc_harm_vs_safe": 0.9068074838811756,
+    "auc_xstest_unsafe": 0.4194,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.982898745309116,
+    "mean_safe": 11.209198377158117
+   },
+   "angry": {
+    "auc_harm_vs_safe": 0.935682923934971,
+    "auc_xstest_unsafe": 0.54844,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.600628495059096,
+    "mean_safe": 11.324178384311715
+   },
+   "anxious": {
+    "auc_harm_vs_safe": 0.909734583283889,
+    "auc_xstest_unsafe": 0.53274,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.529619843859646,
+    "mean_safe": 12.119183589544159
+   },
+   "apathetic": {
+    "auc_harm_vs_safe": 0.7320517384597128,
+    "auc_xstest_unsafe": 0.35058,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.99907870501567,
+    "mean_safe": 14.72351732339306
+   },
+   "ashamed": {
+    "auc_harm_vs_safe": 0.9400735730390412,
+    "auc_xstest_unsafe": 0.53462,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.117152309152432,
+    "mean_safe": 5.848287814007067
+   },
+   "at ease": {
+    "auc_harm_vs_safe": 0.8813338079981013,
+    "auc_xstest_unsafe": 0.44904,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.037894144232066,
+    "mean_safe": 7.362976490184689
+   },
+   "betrayed": {
+    "auc_harm_vs_safe": 0.9214825362920771,
+    "auc_xstest_unsafe": 0.6095600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.645065547162112,
+    "mean_safe": 20.622673164344782
+   },
+   "bored": {
+    "auc_harm_vs_safe": 0.8071674379969147,
+    "auc_xstest_unsafe": 0.5683199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.412628730560936,
+    "mean_safe": 21.131377563608226
+   },
+   "calm": {
+    "auc_harm_vs_safe": 0.8657094260511846,
+    "auc_xstest_unsafe": 0.38782000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.411612972247595,
+    "mean_safe": 3.320140507935022
+   },
+   "comfortable": {
+    "auc_harm_vs_safe": 0.9099323602705589,
+    "auc_xstest_unsafe": 0.58734,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.3039322980845993,
+    "mean_safe": 0.8704805072151267
+   },
+   "confident": {
+    "auc_harm_vs_safe": 0.6924172303310787,
+    "auc_xstest_unsafe": 0.25104000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.52194793804861,
+    "mean_safe": 25.424897160849124
+   },
+   "confused": {
+    "auc_harm_vs_safe": 0.8812942526007673,
+    "auc_xstest_unsafe": 0.51152,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.170156054160703,
+    "mean_safe": 16.148782191371442
+   },
+   "content": {
+    "auc_harm_vs_safe": 0.8350539931173608,
+    "auc_xstest_unsafe": 0.34295999999999993,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.642315446725155,
+    "mean_safe": 9.92354507425856
+   },
+   "curious": {
+    "auc_harm_vs_safe": 0.8562556860883668,
+    "auc_xstest_unsafe": 0.44823999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.716205217667152,
+    "mean_safe": 22.78351120417441
+   },
+   "defensive": {
+    "auc_harm_vs_safe": 0.9082710335825324,
+    "auc_xstest_unsafe": 0.39088,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.719447589249027,
+    "mean_safe": 7.52521647561009
+   },
+   "delighted": {
+    "auc_harm_vs_safe": 0.8744511688619913,
+    "auc_xstest_unsafe": 0.41329999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.824713562390137,
+    "mean_safe": 19.1243446029542
+   },
+   "depressed": {
+    "auc_harm_vs_safe": 0.9629761480954077,
+    "auc_xstest_unsafe": 0.53114,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.461501834113159,
+    "mean_safe": 1.5817635425609602
+   },
+   "desperate": {
+    "auc_harm_vs_safe": 0.9797080811676753,
+    "auc_xstest_unsafe": 0.5716,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.319324813675168,
+    "mean_safe": 8.919611255871562
+   },
+   "determined": {
+    "auc_harm_vs_safe": 0.8256398085518769,
+    "auc_xstest_unsafe": 0.40614,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.80265423145957,
+    "mean_safe": 1.406396218016571
+   },
+   "disappointed": {
+    "auc_harm_vs_safe": 0.9592974961433487,
+    "auc_xstest_unsafe": 0.52132,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.582547743895315,
+    "mean_safe": 16.848716011796196
+   },
+   "discouraged": {
+    "auc_harm_vs_safe": 0.9409833471777225,
+    "auc_xstest_unsafe": 0.45571999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.90583381126236,
+    "mean_safe": 16.989598255590245
+   },
+   "disgusted": {
+    "auc_harm_vs_safe": 0.9780071990823148,
+    "auc_xstest_unsafe": 0.67594,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.186900656889062,
+    "mean_safe": 4.6646284231517825
+   },
+   "eager": {
+    "auc_harm_vs_safe": 0.7918594992286697,
+    "auc_xstest_unsafe": 0.5742,
+    "auc_overrefusal": NaN,
+    "mean_harm": -14.167004469348623,
+    "mean_safe": -15.9353690290445
+   },
+   "elated": {
+    "auc_harm_vs_safe": 0.947312210751157,
+    "auc_xstest_unsafe": 0.49914000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.950864955863256,
+    "mean_safe": 13.015335341254048
+   },
+   "embarrassed": {
+    "auc_harm_vs_safe": 0.9494877576045251,
+    "auc_xstest_unsafe": 0.52938,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.269001288697215,
+    "mean_safe": 12.913976957803174
+   },
+   "empowered": {
+    "auc_harm_vs_safe": 0.7419010323958705,
+    "auc_xstest_unsafe": 0.2559600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.88220021859773,
+    "mean_safe": 23.533081582481145
+   },
+   "energized": {
+    "auc_harm_vs_safe": 0.6845457062616195,
+    "auc_xstest_unsafe": 0.48450000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.560195611892237,
+    "mean_safe": 28.310025071831912
+   },
+   "enthusiastic": {
+    "auc_harm_vs_safe": 0.8472766108935564,
+    "auc_xstest_unsafe": 0.40964,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.371708240966957,
+    "mean_safe": 23.857097558983625
+   },
+   "envious": {
+    "auc_harm_vs_safe": 0.8892448874648946,
+    "auc_xstest_unsafe": 0.48816,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.331026624529944,
+    "mean_safe": 16.241822581632285
+   },
+   "excited": {
+    "auc_harm_vs_safe": 0.9244096356947906,
+    "auc_xstest_unsafe": 0.46127999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.51204669385166,
+    "mean_safe": 12.593517696253503
+   },
+   "frustrated": {
+    "auc_harm_vs_safe": 0.8930817610062893,
+    "auc_xstest_unsafe": 0.39747999999999994,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.703027326347783,
+    "mean_safe": 15.830635910005912
+   },
+   "furious": {
+    "auc_harm_vs_safe": 0.9584668327993354,
+    "auc_xstest_unsafe": 0.56184,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.649514748815005,
+    "mean_safe": 12.79493921059121
+   },
+   "gloomy": {
+    "auc_harm_vs_safe": 0.9383331355563467,
+    "auc_xstest_unsafe": 0.5253399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.05356395177862,
+    "mean_safe": 14.967112430564448
+   },
+   "grateful": {
+    "auc_harm_vs_safe": 0.9045923816304735,
+    "auc_xstest_unsafe": 0.40554,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.122187658553905,
+    "mean_safe": 19.702061329121072
+   },
+   "grieving": {
+    "auc_harm_vs_safe": 0.9534037419405877,
+    "auc_xstest_unsafe": 0.5983999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.783030548979216,
+    "mean_safe": 17.608092101264898
+   },
+   "guilty": {
+    "auc_harm_vs_safe": 0.9748032118982636,
+    "auc_xstest_unsafe": 0.6589999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.642299261510114,
+    "mean_safe": 7.319206033385985
+   },
+   "happy": {
+    "auc_harm_vs_safe": 0.8555041335390214,
+    "auc_xstest_unsafe": 0.39786000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.57000883578994,
+    "mean_safe": 23.653942184152758
+   },
+   "helpless": {
+    "auc_harm_vs_safe": 0.8980657410703691,
+    "auc_xstest_unsafe": 0.5738199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.36276410197722,
+    "mean_safe": 12.980263799418742
+   },
+   "homesick": {
+    "auc_harm_vs_safe": 0.858312566749733,
+    "auc_xstest_unsafe": 0.41594,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.58573011906698,
+    "mean_safe": 24.460416244178017
+   },
+   "hopeful": {
+    "auc_harm_vs_safe": 0.8695067441952454,
+    "auc_xstest_unsafe": 0.41628,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.65575273395046,
+    "mean_safe": 19.075247312921398
+   },
+   "hopeless": {
+    "auc_harm_vs_safe": 0.9366322534709861,
+    "auc_xstest_unsafe": 0.6066199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.222475452113734,
+    "mean_safe": 11.813186645757245
+   },
+   "horrified": {
+    "auc_harm_vs_safe": 0.9608006012420395,
+    "auc_xstest_unsafe": 0.71146,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.188340859110317,
+    "mean_safe": 2.292558275825145
+   },
+   "hostile": {
+    "auc_harm_vs_safe": 0.9335073770816028,
+    "auc_xstest_unsafe": 0.50714,
+    "auc_overrefusal": NaN,
+    "mean_harm": 20.05582026960031,
+    "mean_safe": 15.498038414263196
+   },
+   "humiliated": {
+    "auc_harm_vs_safe": 0.940271350025711,
+    "auc_xstest_unsafe": 0.49635999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.142611047259997,
+    "mean_safe": 10.986368099014399
+   },
+   "impatient": {
+    "auc_harm_vs_safe": 0.8966021913690123,
+    "auc_xstest_unsafe": 0.4695999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.32793577651149,
+    "mean_safe": 13.610062789605966
+   },
+   "indignant": {
+    "auc_harm_vs_safe": 0.9420908983030735,
+    "auc_xstest_unsafe": 0.50568,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.098068080486001,
+    "mean_safe": 8.74103298580061
+   },
+   "insecure": {
+    "auc_harm_vs_safe": 0.9102488034492306,
+    "auc_xstest_unsafe": 0.4175399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.750711438323142,
+    "mean_safe": 7.935972226825013
+   },
+   "inspired": {
+    "auc_harm_vs_safe": 0.9279300660575136,
+    "auc_xstest_unsafe": 0.49599999999999994,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.8231685466873495,
+    "mean_safe": 2.528598277331825
+   },
+   "irritated": {
+    "auc_harm_vs_safe": 0.9182785491080259,
+    "auc_xstest_unsafe": 0.45847999999999994,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.697428924809852,
+    "mean_safe": 14.861627397074464
+   },
+   "joyful": {
+    "auc_harm_vs_safe": 0.8365966536133855,
+    "auc_xstest_unsafe": 0.37661999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.071643802267793,
+    "mean_safe": 13.773580054945619
+   },
+   "lonely": {
+    "auc_harm_vs_safe": 0.9210474269214035,
+    "auc_xstest_unsafe": 0.49524,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.50785886619595,
+    "mean_safe": 19.569931219569085
+   },
+   "loving": {
+    "auc_harm_vs_safe": 0.9061350421264982,
+    "auc_xstest_unsafe": 0.47341999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.05302991648803,
+    "mean_safe": 13.65779805284741
+   },
+   "melancholy": {
+    "auc_harm_vs_safe": 0.9371464736363276,
+    "auc_xstest_unsafe": 0.5312600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.077728049626955,
+    "mean_safe": 12.959518134583645
+   },
+   "nervous": {
+    "auc_harm_vs_safe": 0.9176456627506824,
+    "auc_xstest_unsafe": 0.5856399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.347881541494955,
+    "mean_safe": 11.38552055363899
+   },
+   "numb": {
+    "auc_harm_vs_safe": 0.9521379692259008,
+    "auc_xstest_unsafe": 0.6710799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.14970518517853,
+    "mean_safe": 11.781057848901579
+   },
+   "overwhelmed": {
+    "auc_harm_vs_safe": 0.858273011352399,
+    "auc_xstest_unsafe": 0.44489999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.476926140849212,
+    "mean_safe": 15.989610292757549
+   },
+   "panicked": {
+    "auc_harm_vs_safe": 0.8763102725366876,
+    "auc_xstest_unsafe": 0.5918000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.912324574217,
+    "mean_safe": 19.577911423909978
+   },
+   "patient": {
+    "auc_harm_vs_safe": 0.9255171868201416,
+    "auc_xstest_unsafe": 0.5373800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.274014494216223,
+    "mean_safe": 4.745717694636922
+   },
+   "peaceful": {
+    "auc_harm_vs_safe": 0.9123847949052648,
+    "auc_xstest_unsafe": 0.5098999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.682746398607118,
+    "mean_safe": 3.5734683392410656
+   },
+   "playful": {
+    "auc_harm_vs_safe": 0.8973141885210236,
+    "auc_xstest_unsafe": 0.47730000000000006,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.876069924485776,
+    "mean_safe": 17.803466240932522
+   },
+   "proud": {
+    "auc_harm_vs_safe": 0.878208931608718,
+    "auc_xstest_unsafe": 0.35768,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.47581720582984,
+    "mean_safe": 16.52718464704206
+   },
+   "regretful": {
+    "auc_harm_vs_safe": 0.9362762548949803,
+    "auc_xstest_unsafe": 0.5655199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.891832234544427,
+    "mean_safe": 13.613989098437488
+   },
+   "rejected": {
+    "auc_harm_vs_safe": 0.9118310193425894,
+    "auc_xstest_unsafe": 0.41875999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.006841276311015,
+    "mean_safe": 6.539187599006899
+   },
+   "relaxed": {
+    "auc_harm_vs_safe": 0.88770222696887,
+    "auc_xstest_unsafe": 0.53328,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.9476405276391078,
+    "mean_safe": 1.9119602308097476
+   },
+   "resentful": {
+    "auc_harm_vs_safe": 0.9630157034927417,
+    "auc_xstest_unsafe": 0.54706,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.150606188935374,
+    "mean_safe": 20.249267149282222
+   },
+   "sad": {
+    "auc_harm_vs_safe": 0.9685534591194969,
+    "auc_xstest_unsafe": 0.59386,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.344758778644463,
+    "mean_safe": 7.808715328629093
+   },
+   "satisfied": {
+    "auc_harm_vs_safe": 0.6399667734662394,
+    "auc_xstest_unsafe": 0.2029,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.31583895058955,
+    "mean_safe": 17.332837060001783
+   },
+   "self-conscious": {
+    "auc_harm_vs_safe": 0.8646414303231675,
+    "auc_xstest_unsafe": 0.41513999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.97106226510866,
+    "mean_safe": 16.19321693410082
+   },
+   "serene": {
+    "auc_harm_vs_safe": 0.8516672599976267,
+    "auc_xstest_unsafe": 0.47046,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.058093871084333,
+    "mean_safe": 6.992228018747649
+   },
+   "sorry": {
+    "auc_harm_vs_safe": 0.948459317273842,
+    "auc_xstest_unsafe": 0.5769799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.07172734308335,
+    "mean_safe": 13.593371513676747
+   },
+   "stressed": {
+    "auc_harm_vs_safe": 0.9158656698706539,
+    "auc_xstest_unsafe": 0.48463999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.353141865534838,
+    "mean_safe": 9.899001481349908
+   },
+   "sympathetic": {
+    "auc_harm_vs_safe": 0.9568450615086429,
+    "auc_xstest_unsafe": 0.4988,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.895678630218512,
+    "mean_safe": 14.044010956818102
+   },
+   "tense": {
+    "auc_harm_vs_safe": 0.8837466872354733,
+    "auc_xstest_unsafe": 0.5426,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.865760696786463,
+    "mean_safe": 13.35692056943759
+   },
+   "terrified": {
+    "auc_harm_vs_safe": 0.9291562833748664,
+    "auc_xstest_unsafe": 0.66018,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.186380468392201,
+    "mean_safe": 9.965046242892864
+   },
+   "threatened": {
+    "auc_harm_vs_safe": 0.9408251255883866,
+    "auc_xstest_unsafe": 0.6064200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.935310717226955,
+    "mean_safe": 11.70601698978991
+   },
+   "thrilled": {
+    "auc_harm_vs_safe": 0.8606463351924369,
+    "auc_xstest_unsafe": 0.49314,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.51583257237711,
+    "mean_safe": 16.037521073606516
+   },
+   "tired": {
+    "auc_harm_vs_safe": 0.9000435109370674,
+    "auc_xstest_unsafe": 0.53348,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.31792014744651,
+    "mean_safe": 17.496138274886817
+   },
+   "triumphant": {
+    "auc_harm_vs_safe": 0.6765159606028243,
+    "auc_xstest_unsafe": 0.42136,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.74677922967023,
+    "mean_safe": 26.680119538388492
+   },
+   "uneasy": {
+    "auc_harm_vs_safe": 0.9616312645860527,
+    "auc_xstest_unsafe": 0.5512,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.778702503013578,
+    "mean_safe": 9.23512583716668
+   },
+   "vulnerable": {
+    "auc_harm_vs_safe": 0.9223923104307583,
+    "auc_xstest_unsafe": 0.55472,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.273966361704284,
+    "mean_safe": 9.508660991976482
+   },
+   "weary": {
+    "auc_harm_vs_safe": 0.8929630948142875,
+    "auc_xstest_unsafe": 0.469,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.740748943759474,
+    "mean_safe": 18.61112900940956
+   },
+   "worried": {
+    "auc_harm_vs_safe": 0.9094181401052174,
+    "auc_xstest_unsafe": 0.53674,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.66484302399212,
+    "mean_safe": 19.294789684814845
+   },
+   "_protect": {
+    "auc_harm_vs_safe": 0.955500177999288,
+    "auc_xstest_unsafe": 0.5890200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.48214163457315,
+    "mean_safe": 12.502763445550288
+   },
+   "_joy": {
+    "auc_harm_vs_safe": 0.8976306316996955,
+    "auc_xstest_unsafe": 0.44224,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.823001792626442,
+    "mean_safe": 18.42697323780934
+   },
+   "_afraid_perp_joy": {
+    "auc_harm_vs_safe": 0.5415925002966655,
+    "auc_xstest_unsafe": 0.7901600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.455149310724417,
+    "mean_safe": 3.340941684772948
+   }
+  },
+  "42": {
+   "admiring": {
+    "auc_harm_vs_safe": 0.8600530042324275,
+    "auc_xstest_unsafe": 0.38864,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.385430719381464,
+    "mean_safe": 11.861146865025905
+   },
+   "affectionate": {
+    "auc_harm_vs_safe": 0.7112060440647127,
+    "auc_xstest_unsafe": 0.36128,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.921769892949843,
+    "mean_safe": 9.811199790616314
+   },
+   "afraid": {
+    "auc_harm_vs_safe": 0.7489814485186505,
+    "auc_xstest_unsafe": 0.5424599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.775494340016783,
+    "mean_safe": 3.9575343033602692
+   },
+   "agitated": {
+    "auc_harm_vs_safe": 0.6006882639136111,
+    "auc_xstest_unsafe": 0.36228000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.012298286080072,
+    "mean_safe": 5.115540889124707
+   },
+   "alarmed": {
+    "auc_harm_vs_safe": 0.8735018393259761,
+    "auc_xstest_unsafe": 0.56094,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.348672059698097,
+    "mean_safe": 0.757011925388214
+   },
+   "amazed": {
+    "auc_harm_vs_safe": 0.6704639848107274,
+    "auc_xstest_unsafe": 0.32006,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.239959716655106,
+    "mean_safe": 10.124762269008908
+   },
+   "amused": {
+    "auc_harm_vs_safe": 0.6840710414936118,
+    "auc_xstest_unsafe": 0.38876,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.2804425991303519,
+    "mean_safe": -2.010340793193486
+   },
+   "angry": {
+    "auc_harm_vs_safe": 0.7884577350579487,
+    "auc_xstest_unsafe": 0.44952000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.659042946551448,
+    "mean_safe": 2.781535032008894
+   },
+   "anxious": {
+    "auc_harm_vs_safe": 0.7859261896285747,
+    "auc_xstest_unsafe": 0.47302,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.972221064648918,
+    "mean_safe": 2.039935263855191
+   },
+   "apathetic": {
+    "auc_harm_vs_safe": 0.6385032237648828,
+    "auc_xstest_unsafe": 0.3579,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.5220057094526385,
+    "mean_safe": 1.5485559702125373
+   },
+   "ashamed": {
+    "auc_harm_vs_safe": 0.8039238954155294,
+    "auc_xstest_unsafe": 0.42882,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.8476960300899247,
+    "mean_safe": -4.237537258455061
+   },
+   "at ease": {
+    "auc_harm_vs_safe": 0.8038052292235275,
+    "auc_xstest_unsafe": 0.4087,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.5062861278997834,
+    "mean_safe": 0.5343973424980776
+   },
+   "betrayed": {
+    "auc_harm_vs_safe": 0.8498477117202642,
+    "auc_xstest_unsafe": 0.52702,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.261680257975634,
+    "mean_safe": 10.351894288195163
+   },
+   "bored": {
+    "auc_harm_vs_safe": 0.8733436177366403,
+    "auc_xstest_unsafe": 0.4658,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.899238919668056,
+    "mean_safe": 7.354154206010636
+   },
+   "calm": {
+    "auc_harm_vs_safe": 0.5243067916617222,
+    "auc_xstest_unsafe": 0.29646,
+    "auc_overrefusal": NaN,
+    "mean_harm": -16.052505834092237,
+    "mean_safe": -16.571472256539828
+   },
+   "comfortable": {
+    "auc_harm_vs_safe": 0.6438827578023021,
+    "auc_xstest_unsafe": 0.5282399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": -10.610267730211401,
+    "mean_safe": -12.154762117500075
+   },
+   "confident": {
+    "auc_harm_vs_safe": 0.6710968711680709,
+    "auc_xstest_unsafe": 0.27762,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.5288048449206,
+    "mean_safe": 17.91809633399616
+   },
+   "confused": {
+    "auc_harm_vs_safe": 0.7622325066255291,
+    "auc_xstest_unsafe": 0.49385999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.179485713013392,
+    "mean_safe": 13.290796588663003
+   },
+   "content": {
+    "auc_harm_vs_safe": 0.7197104544915154,
+    "auc_xstest_unsafe": 0.34648,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.983171505143662,
+    "mean_safe": 2.7318203834782997
+   },
+   "curious": {
+    "auc_harm_vs_safe": 0.7899212847593055,
+    "auc_xstest_unsafe": 0.48247999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.041064035543751,
+    "mean_safe": 12.207934763613514
+   },
+   "defensive": {
+    "auc_harm_vs_safe": 0.7544005379534038,
+    "auc_xstest_unsafe": 0.36348,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.422493916801632,
+    "mean_safe": 1.626161181759385
+   },
+   "delighted": {
+    "auc_harm_vs_safe": 0.7639333887108897,
+    "auc_xstest_unsafe": 0.30329999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.828849883857746,
+    "mean_safe": 17.188587362784524
+   },
+   "depressed": {
+    "auc_harm_vs_safe": 0.7172580198568095,
+    "auc_xstest_unsafe": 0.44532000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.0324164674864336,
+    "mean_safe": -3.1073245059288435
+   },
+   "desperate": {
+    "auc_harm_vs_safe": 0.8401170839761085,
+    "auc_xstest_unsafe": 0.48556,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.962319150448979,
+    "mean_safe": 3.769743762227317
+   },
+   "determined": {
+    "auc_harm_vs_safe": 0.5255330089790752,
+    "auc_xstest_unsafe": 0.3766999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.0361730546052,
+    "mean_safe": 8.433441334176475
+   },
+   "disappointed": {
+    "auc_harm_vs_safe": 0.8584312329417348,
+    "auc_xstest_unsafe": 0.39956,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.954037878821286,
+    "mean_safe": 12.072122423636527
+   },
+   "discouraged": {
+    "auc_harm_vs_safe": 0.8258375855385467,
+    "auc_xstest_unsafe": 0.383,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.233888156894741,
+    "mean_safe": 8.914962978529305
+   },
+   "disgusted": {
+    "auc_harm_vs_safe": 0.6013211502709545,
+    "auc_xstest_unsafe": 0.47894000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": -15.592639609837596,
+    "mean_safe": -16.35221057820763
+   },
+   "eager": {
+    "auc_harm_vs_safe": 0.28950595308729876,
+    "auc_xstest_unsafe": 0.3935,
+    "auc_overrefusal": NaN,
+    "mean_harm": -37.27645352151255,
+    "mean_safe": -34.84288068170137
+   },
+   "elated": {
+    "auc_harm_vs_safe": 0.8195087219651122,
+    "auc_xstest_unsafe": 0.27690000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.63797863160516,
+    "mean_safe": 9.665480044948337
+   },
+   "embarrassed": {
+    "auc_harm_vs_safe": 0.7520272141133659,
+    "auc_xstest_unsafe": 0.39314000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.9931808733979844,
+    "mean_safe": -1.2006848860730885
+   },
+   "empowered": {
+    "auc_harm_vs_safe": 0.6996558680431945,
+    "auc_xstest_unsafe": 0.26616,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.258332938037913,
+    "mean_safe": 19.759608695221
+   },
+   "energized": {
+    "auc_harm_vs_safe": 0.8698231873739173,
+    "auc_xstest_unsafe": 0.37871999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 34.6454913272851,
+    "mean_safe": 30.755466289792167
+   },
+   "enthusiastic": {
+    "auc_harm_vs_safe": 0.8819666943554448,
+    "auc_xstest_unsafe": 0.4279,
+    "auc_overrefusal": NaN,
+    "mean_harm": 37.677067793701056,
+    "mean_safe": 32.07908888150158
+   },
+   "envious": {
+    "auc_harm_vs_safe": 0.8112811993196472,
+    "auc_xstest_unsafe": 0.46131999999999995,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.105823751394245,
+    "mean_safe": 1.1227052536879576
+   },
+   "excited": {
+    "auc_harm_vs_safe": 0.7430876943158894,
+    "auc_xstest_unsafe": 0.3417,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.426438773861641,
+    "mean_safe": 1.010730885400894
+   },
+   "frustrated": {
+    "auc_harm_vs_safe": 0.7692733673509751,
+    "auc_xstest_unsafe": 0.36958,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.781741547107917,
+    "mean_safe": 6.370001485135268
+   },
+   "furious": {
+    "auc_harm_vs_safe": 0.8461295043708714,
+    "auc_xstest_unsafe": 0.45711999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.753175018388587,
+    "mean_safe": 3.0726426350215985
+   },
+   "gloomy": {
+    "auc_harm_vs_safe": 0.8303073454372849,
+    "auc_xstest_unsafe": 0.43912000000000007,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.191661308580279,
+    "mean_safe": 1.5327810451246118
+   },
+   "grateful": {
+    "auc_harm_vs_safe": 0.6283374866500535,
+    "auc_xstest_unsafe": 0.32448,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.897929709594619,
+    "mean_safe": 11.728502637442634
+   },
+   "grieving": {
+    "auc_harm_vs_safe": 0.9199398757960524,
+    "auc_xstest_unsafe": 0.5506800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.046723327720084,
+    "mean_safe": 16.05303049563198
+   },
+   "guilty": {
+    "auc_harm_vs_safe": 0.864206320952494,
+    "auc_xstest_unsafe": 0.56406,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.084057228419613,
+    "mean_safe": 3.7319869932232965
+   },
+   "happy": {
+    "auc_harm_vs_safe": 0.6620782405759266,
+    "auc_xstest_unsafe": 0.26214,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.286378087816212,
+    "mean_safe": 13.816115062638866
+   },
+   "helpless": {
+    "auc_harm_vs_safe": 0.8298722360666113,
+    "auc_xstest_unsafe": 0.51386,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.380375461437245,
+    "mean_safe": 11.088822283434572
+   },
+   "homesick": {
+    "auc_harm_vs_safe": 0.7573276373561173,
+    "auc_xstest_unsafe": 0.4182600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.690714072886166,
+    "mean_safe": 8.942766720981293
+   },
+   "hopeful": {
+    "auc_harm_vs_safe": 0.844270400696175,
+    "auc_xstest_unsafe": 0.37162,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.994049173027914,
+    "mean_safe": 18.52681026783486
+   },
+   "hopeless": {
+    "auc_harm_vs_safe": 0.8913808789209288,
+    "auc_xstest_unsafe": 0.49742,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.595938441474173,
+    "mean_safe": 4.50234886808286
+   },
+   "horrified": {
+    "auc_harm_vs_safe": 0.703848740160595,
+    "auc_xstest_unsafe": 0.57048,
+    "auc_overrefusal": NaN,
+    "mean_harm": -5.544152297399668,
+    "mean_safe": -7.143592852595834
+   },
+   "hostile": {
+    "auc_harm_vs_safe": 0.8188758356077687,
+    "auc_xstest_unsafe": 0.43498,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.255983277797563,
+    "mean_safe": 7.67169651209546
+   },
+   "humiliated": {
+    "auc_harm_vs_safe": 0.7601756259641629,
+    "auc_xstest_unsafe": 0.3971,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.31273316045415317,
+    "mean_safe": -2.8162466478728345
+   },
+   "impatient": {
+    "auc_harm_vs_safe": 0.7354139472330999,
+    "auc_xstest_unsafe": 0.41216,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.528765705618358,
+    "mean_safe": 2.0960648931688257
+   },
+   "indignant": {
+    "auc_harm_vs_safe": 0.7886555120446185,
+    "auc_xstest_unsafe": 0.49338000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.555890580162231,
+    "mean_safe": 8.533062773239228
+   },
+   "insecure": {
+    "auc_harm_vs_safe": 0.7936790475060322,
+    "auc_xstest_unsafe": 0.43751999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.014522277477555,
+    "mean_safe": 2.61156776097436
+   },
+   "inspired": {
+    "auc_harm_vs_safe": 0.6293263715834025,
+    "auc_xstest_unsafe": 0.38726000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": -4.5580872462429465,
+    "mean_safe": -5.946987743651405
+   },
+   "irritated": {
+    "auc_harm_vs_safe": 0.6803132787468851,
+    "auc_xstest_unsafe": 0.38604000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": 0.1850560539553807,
+    "mean_safe": -1.5022268026368506
+   },
+   "joyful": {
+    "auc_harm_vs_safe": 0.716704244294134,
+    "auc_xstest_unsafe": 0.36312,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.411412680422757,
+    "mean_safe": 3.625786369818263
+   },
+   "lonely": {
+    "auc_harm_vs_safe": 0.8844586843874847,
+    "auc_xstest_unsafe": 0.43238,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.818029965685248,
+    "mean_safe": 11.169791761838791
+   },
+   "loving": {
+    "auc_harm_vs_safe": 0.8121118626636605,
+    "auc_xstest_unsafe": 0.40088000000000007,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.956095788007518,
+    "mean_safe": 11.747079099835501
+   },
+   "melancholy": {
+    "auc_harm_vs_safe": 0.8765871603180254,
+    "auc_xstest_unsafe": 0.45206,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.270103585836099,
+    "mean_safe": 8.929030453095626
+   },
+   "nervous": {
+    "auc_harm_vs_safe": 0.8259958071278826,
+    "auc_xstest_unsafe": 0.5095999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.28667793863059,
+    "mean_safe": 1.1305046629183735
+   },
+   "numb": {
+    "auc_harm_vs_safe": 0.8484237174162415,
+    "auc_xstest_unsafe": 0.54064,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.934096921057787,
+    "mean_safe": 0.6243690483856018
+   },
+   "overwhelmed": {
+    "auc_harm_vs_safe": 0.7763933388710891,
+    "auc_xstest_unsafe": 0.40166,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.304710172979288,
+    "mean_safe": 7.402935535606843
+   },
+   "panicked": {
+    "auc_harm_vs_safe": 0.771765357383015,
+    "auc_xstest_unsafe": 0.5111600000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 8.557334194737798,
+    "mean_safe": 6.276761516812442
+   },
+   "patient": {
+    "auc_harm_vs_safe": 0.8377833155334045,
+    "auc_xstest_unsafe": 0.42744,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.017528639851698,
+    "mean_safe": -1.7015194662444957
+   },
+   "peaceful": {
+    "auc_harm_vs_safe": 0.8937542027609667,
+    "auc_xstest_unsafe": 0.50216,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.7176791693341615,
+    "mean_safe": -2.472420123950377
+   },
+   "playful": {
+    "auc_harm_vs_safe": 0.6705035402080614,
+    "auc_xstest_unsafe": 0.34826,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.256840451987883,
+    "mean_safe": 5.739348971040894
+   },
+   "proud": {
+    "auc_harm_vs_safe": 0.7863612989992484,
+    "auc_xstest_unsafe": 0.40227999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.286584817245668,
+    "mean_safe": 23.064565677141754
+   },
+   "regretful": {
+    "auc_harm_vs_safe": 0.8979470748783671,
+    "auc_xstest_unsafe": 0.6015799999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.482233075465167,
+    "mean_safe": 16.645130032957578
+   },
+   "rejected": {
+    "auc_harm_vs_safe": 0.8380602033147423,
+    "auc_xstest_unsafe": 0.4535,
+    "auc_overrefusal": NaN,
+    "mean_harm": 12.072051499286129,
+    "mean_safe": 7.7657024762395395
+   },
+   "relaxed": {
+    "auc_harm_vs_safe": 0.8290811281199321,
+    "auc_xstest_unsafe": 0.3633,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.040740548592051284,
+    "mean_safe": -3.0261570968918132
+   },
+   "resentful": {
+    "auc_harm_vs_safe": 0.8755191645900083,
+    "auc_xstest_unsafe": 0.49628000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.57095781806816,
+    "mean_safe": 13.979140638297094
+   },
+   "sad": {
+    "auc_harm_vs_safe": 0.8507574858589455,
+    "auc_xstest_unsafe": 0.48756,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.478879737488918,
+    "mean_safe": 3.7790534859653997
+   },
+   "satisfied": {
+    "auc_harm_vs_safe": 0.659230251967881,
+    "auc_xstest_unsafe": 0.22296,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.937889222314467,
+    "mean_safe": 14.322426354047952
+   },
+   "self-conscious": {
+    "auc_harm_vs_safe": 0.6446343103516474,
+    "auc_xstest_unsafe": 0.43386,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.227550781711024,
+    "mean_safe": 3.020007513307942
+   },
+   "serene": {
+    "auc_harm_vs_safe": 0.7785688857244571,
+    "auc_xstest_unsafe": 0.4720399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 1.843354046032672,
+    "mean_safe": -0.3900523245192415
+   },
+   "sorry": {
+    "auc_harm_vs_safe": 0.7974763656500929,
+    "auc_xstest_unsafe": 0.43986000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.209536128893655,
+    "mean_safe": 2.082357833050175
+   },
+   "stressed": {
+    "auc_harm_vs_safe": 0.667576440805348,
+    "auc_xstest_unsafe": 0.41962,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.52138590457403,
+    "mean_safe": 5.120510114057118
+   },
+   "sympathetic": {
+    "auc_harm_vs_safe": 0.7322495154463826,
+    "auc_xstest_unsafe": 0.37778000000000006,
+    "auc_overrefusal": NaN,
+    "mean_harm": 2.9587907714399466,
+    "mean_safe": 0.7617277647271887
+   },
+   "tense": {
+    "auc_harm_vs_safe": 0.7796368814524742,
+    "auc_xstest_unsafe": 0.47556,
+    "auc_overrefusal": NaN,
+    "mean_harm": 4.7583461099397235,
+    "mean_safe": 2.1618380962319006
+   },
+   "terrified": {
+    "auc_harm_vs_safe": 0.8069696610102448,
+    "auc_xstest_unsafe": 0.50644,
+    "auc_overrefusal": NaN,
+    "mean_harm": 6.434431794139746,
+    "mean_safe": 4.018203562890702
+   },
+   "threatened": {
+    "auc_harm_vs_safe": 0.7203433408488588,
+    "auc_xstest_unsafe": 0.49838000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": -1.0374471093247937,
+    "mean_safe": -2.759591869910825
+   },
+   "thrilled": {
+    "auc_harm_vs_safe": 0.6947509987737828,
+    "auc_xstest_unsafe": 0.38464,
+    "auc_overrefusal": NaN,
+    "mean_harm": 7.881283038322084,
+    "mean_safe": 6.138730145805635
+   },
+   "tired": {
+    "auc_harm_vs_safe": 0.8966813021636802,
+    "auc_xstest_unsafe": 0.46452,
+    "auc_overrefusal": NaN,
+    "mean_harm": 19.037162659038966,
+    "mean_safe": 14.486814046141937
+   },
+   "triumphant": {
+    "auc_harm_vs_safe": 0.7176931292274832,
+    "auc_xstest_unsafe": 0.34034,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.204638913199062,
+    "mean_safe": 19.390893106157257
+   },
+   "uneasy": {
+    "auc_harm_vs_safe": 0.8494917131442585,
+    "auc_xstest_unsafe": 0.50122,
+    "auc_overrefusal": NaN,
+    "mean_harm": 5.987073328226638,
+    "mean_safe": 2.389681008368311
+   },
+   "vulnerable": {
+    "auc_harm_vs_safe": 0.7974368102527589,
+    "auc_xstest_unsafe": 0.44628000000000007,
+    "auc_overrefusal": NaN,
+    "mean_harm": -0.024017707623638484,
+    "mean_safe": -2.9825058560855457
+   },
+   "weary": {
+    "auc_harm_vs_safe": 0.8021439025355009,
+    "auc_xstest_unsafe": 0.42108,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.695568823936682,
+    "mean_safe": 9.110613688081441
+   },
+   "worried": {
+    "auc_harm_vs_safe": 0.890035995411574,
+    "auc_xstest_unsafe": 0.5358200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.991367863541738,
+    "mean_safe": 9.164273564583057
+   },
+   "_protect": {
+    "auc_harm_vs_safe": 0.8182429492504253,
+    "auc_xstest_unsafe": 0.48864,
+    "auc_overrefusal": NaN,
+    "mean_harm": 3.9054786157661003,
+    "mean_safe": 0.868953734283201
+   },
+   "_joy": {
+    "auc_harm_vs_safe": 0.7780942209564495,
+    "auc_xstest_unsafe": 0.34014,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.866287843578261,
+    "mean_safe": 11.17757824003492
+   },
+   "_afraid_perp_joy": {
+    "auc_harm_vs_safe": 0.45362129662592454,
+    "auc_xstest_unsafe": 0.77312,
+    "auc_overrefusal": NaN,
+    "mean_harm": -9.116650960413866,
+    "mean_safe": -8.527801234883112
+   }
+  },
+  "48": {
+   "admiring": {
+    "auc_harm_vs_safe": 0.7693920335429769,
+    "auc_xstest_unsafe": 0.5871599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 32.66334136125401,
+    "mean_safe": 27.145049839415528
+   },
+   "affectionate": {
+    "auc_harm_vs_safe": 0.5790514615719314,
+    "auc_xstest_unsafe": 0.52634,
+    "auc_overrefusal": NaN,
+    "mean_harm": 50.37754537130775,
+    "mean_safe": 48.379220770277094
+   },
+   "afraid": {
+    "auc_harm_vs_safe": 0.5191250346109727,
+    "auc_xstest_unsafe": 0.7077,
+    "auc_overrefusal": NaN,
+    "mean_harm": 33.563313234083104,
+    "mean_safe": 33.554066679970695
+   },
+   "agitated": {
+    "auc_harm_vs_safe": 0.5688857244571022,
+    "auc_xstest_unsafe": 0.54298,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.698754586026666,
+    "mean_safe": 17.87111502022449
+   },
+   "alarmed": {
+    "auc_harm_vs_safe": 0.8906293263715833,
+    "auc_xstest_unsafe": 0.6812,
+    "auc_overrefusal": NaN,
+    "mean_harm": 28.7771794718189,
+    "mean_safe": 20.633244934029403
+   },
+   "amazed": {
+    "auc_harm_vs_safe": 0.4116134646572524,
+    "auc_xstest_unsafe": 0.46942,
+    "auc_overrefusal": NaN,
+    "mean_harm": 40.30671213118769,
+    "mean_safe": 41.86735592414049
+   },
+   "amused": {
+    "auc_harm_vs_safe": 0.7718049127803489,
+    "auc_xstest_unsafe": 0.56996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.269607304698624,
+    "mean_safe": 25.457824233847933
+   },
+   "angry": {
+    "auc_harm_vs_safe": 0.6880661366243425,
+    "auc_xstest_unsafe": 0.5974,
+    "auc_overrefusal": NaN,
+    "mean_harm": 34.42221869499188,
+    "mean_safe": 30.7526692975806
+   },
+   "anxious": {
+    "auc_harm_vs_safe": 0.853645029864325,
+    "auc_xstest_unsafe": 0.6568200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.435513890777212,
+    "mean_safe": 16.326125195339362
+   },
+   "apathetic": {
+    "auc_harm_vs_safe": 0.34963015703492734,
+    "auc_xstest_unsafe": 0.35400000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 28.666598941674696,
+    "mean_safe": 31.40521944856786
+   },
+   "ashamed": {
+    "auc_harm_vs_safe": 0.8769431588940311,
+    "auc_xstest_unsafe": 0.63728,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.020464519091837,
+    "mean_safe": -0.06973632905496933
+   },
+   "at ease": {
+    "auc_harm_vs_safe": 0.5771528024999011,
+    "auc_xstest_unsafe": 0.30802000000000007,
+    "auc_overrefusal": NaN,
+    "mean_harm": 45.35182358661606,
+    "mean_safe": 43.86013273668636
+   },
+   "betrayed": {
+    "auc_harm_vs_safe": 0.7008029745658796,
+    "auc_xstest_unsafe": 0.62744,
+    "auc_overrefusal": NaN,
+    "mean_harm": 36.30766094482612,
+    "mean_safe": 32.427848049768535
+   },
+   "bored": {
+    "auc_harm_vs_safe": 0.6751315216961353,
+    "auc_xstest_unsafe": 0.39242,
+    "auc_overrefusal": NaN,
+    "mean_harm": 32.562543878557406,
+    "mean_safe": 30.33119735451238
+   },
+   "calm": {
+    "auc_harm_vs_safe": 0.7472410110359559,
+    "auc_xstest_unsafe": 0.41834000000000005,
+    "auc_overrefusal": NaN,
+    "mean_harm": -18.425002152511592,
+    "mean_safe": -27.001343382524706
+   },
+   "comfortable": {
+    "auc_harm_vs_safe": 0.7639729441082237,
+    "auc_xstest_unsafe": 0.42624000000000006,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.61502489424242,
+    "mean_safe": 12.693368334929497
+   },
+   "confident": {
+    "auc_harm_vs_safe": 0.38198647205411174,
+    "auc_xstest_unsafe": 0.34178,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.97407652476485,
+    "mean_safe": 28.2384384368498
+   },
+   "confused": {
+    "auc_harm_vs_safe": 0.6284957082393893,
+    "auc_xstest_unsafe": 0.58298,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.229719360378063,
+    "mean_safe": 26.805043188238557
+   },
+   "content": {
+    "auc_harm_vs_safe": 0.6400063288635734,
+    "auc_xstest_unsafe": 0.38339999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 49.62407977458138,
+    "mean_safe": 46.576755155647234
+   },
+   "curious": {
+    "auc_harm_vs_safe": 0.8134963015703494,
+    "auc_xstest_unsafe": 0.7571800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 40.065913431578274,
+    "mean_safe": 32.90407339564634
+   },
+   "defensive": {
+    "auc_harm_vs_safe": 0.7855306356552351,
+    "auc_xstest_unsafe": 0.6911200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.559429542169516,
+    "mean_safe": 9.343090434278862
+   },
+   "delighted": {
+    "auc_harm_vs_safe": 0.5384676239072821,
+    "auc_xstest_unsafe": 0.35494000000000003,
+    "auc_overrefusal": NaN,
+    "mean_harm": 37.663247565404355,
+    "mean_safe": 37.073400722601846
+   },
+   "depressed": {
+    "auc_harm_vs_safe": 0.8103318697836319,
+    "auc_xstest_unsafe": 0.7173999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.901869908571985,
+    "mean_safe": 8.93994287881598
+   },
+   "desperate": {
+    "auc_harm_vs_safe": 0.772833353111032,
+    "auc_xstest_unsafe": 0.66414,
+    "auc_overrefusal": NaN,
+    "mean_harm": 31.88388122759266,
+    "mean_safe": 26.652774079344923
+   },
+   "determined": {
+    "auc_harm_vs_safe": 0.7924923855860133,
+    "auc_xstest_unsafe": 0.5822599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.691618576339089,
+    "mean_safe": 10.567956530816366
+   },
+   "disappointed": {
+    "auc_harm_vs_safe": 0.8054270005142201,
+    "auc_xstest_unsafe": 0.60858,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.818932523658953,
+    "mean_safe": 9.141892521020372
+   },
+   "discouraged": {
+    "auc_harm_vs_safe": 0.7408330366678533,
+    "auc_xstest_unsafe": 0.6006199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.032155168597995,
+    "mean_safe": 10.740621592519961
+   },
+   "disgusted": {
+    "auc_harm_vs_safe": 0.7782919979431193,
+    "auc_xstest_unsafe": 0.6264400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 18.078650224574,
+    "mean_safe": 13.054706685991084
+   },
+   "eager": {
+    "auc_harm_vs_safe": 0.7371543847157946,
+    "auc_xstest_unsafe": 0.38617999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": -38.05978512426713,
+    "mean_safe": -46.620614893052355
+   },
+   "elated": {
+    "auc_harm_vs_safe": 0.6968474348324829,
+    "auc_xstest_unsafe": 0.42252,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.985402089430075,
+    "mean_safe": 24.74229914961323
+   },
+   "embarrassed": {
+    "auc_harm_vs_safe": 0.8479094972508999,
+    "auc_xstest_unsafe": 0.5729,
+    "auc_overrefusal": NaN,
+    "mean_harm": -5.110574358210011,
+    "mean_safe": -12.753029307685727
+   },
+   "empowered": {
+    "auc_harm_vs_safe": 0.2953997072900597,
+    "auc_xstest_unsafe": 0.35941999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.858516143018388,
+    "mean_safe": 27.472047678091034
+   },
+   "energized": {
+    "auc_harm_vs_safe": 0.41058502432656935,
+    "auc_xstest_unsafe": 0.31292,
+    "auc_overrefusal": NaN,
+    "mean_harm": 53.40928995748935,
+    "mean_safe": 55.421275685347005
+   },
+   "enthusiastic": {
+    "auc_harm_vs_safe": 0.4749021003915984,
+    "auc_xstest_unsafe": 0.47809999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 60.16628220705967,
+    "mean_safe": 61.09340121287098
+   },
+   "envious": {
+    "auc_harm_vs_safe": 0.852418812546972,
+    "auc_xstest_unsafe": 0.7184,
+    "auc_overrefusal": NaN,
+    "mean_harm": 21.45060548133591,
+    "mean_safe": 12.903385886014537
+   },
+   "excited": {
+    "auc_harm_vs_safe": 0.6470076341916854,
+    "auc_xstest_unsafe": 0.32528,
+    "auc_overrefusal": NaN,
+    "mean_harm": 41.74516222047733,
+    "mean_safe": 39.15704057009053
+   },
+   "frustrated": {
+    "auc_harm_vs_safe": 0.7442743562359084,
+    "auc_xstest_unsafe": 0.53218,
+    "auc_overrefusal": NaN,
+    "mean_harm": 14.336196324606576,
+    "mean_safe": 10.490609365087373
+   },
+   "furious": {
+    "auc_harm_vs_safe": 0.8230687077251692,
+    "auc_xstest_unsafe": 0.66758,
+    "auc_overrefusal": NaN,
+    "mean_harm": 34.051445374860776,
+    "mean_safe": 27.228286459121488
+   },
+   "gloomy": {
+    "auc_harm_vs_safe": 0.783315533404533,
+    "auc_xstest_unsafe": 0.6042200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.755957363195456,
+    "mean_safe": 24.53821847503533
+   },
+   "grateful": {
+    "auc_harm_vs_safe": 0.4752185435702701,
+    "auc_xstest_unsafe": 0.45526,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.303378707876448,
+    "mean_safe": 30.928375779393185
+   },
+   "grieving": {
+    "auc_harm_vs_safe": 0.8414224120881294,
+    "auc_xstest_unsafe": 0.74662,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.568584892744035,
+    "mean_safe": 22.233270307041984
+   },
+   "guilty": {
+    "auc_harm_vs_safe": 0.846604169138879,
+    "auc_xstest_unsafe": 0.7781399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.37932278762567,
+    "mean_safe": 9.680998360254215
+   },
+   "happy": {
+    "auc_harm_vs_safe": 0.5743839246865234,
+    "auc_xstest_unsafe": 0.34334,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.917586608831023,
+    "mean_safe": 22.46802626858878
+   },
+   "helpless": {
+    "auc_harm_vs_safe": 0.7655156046042482,
+    "auc_xstest_unsafe": 0.64336,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.53211977699065,
+    "mean_safe": 24.82301527001744
+   },
+   "homesick": {
+    "auc_harm_vs_safe": 0.8562161306910328,
+    "auc_xstest_unsafe": 0.6668399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.981858040584342,
+    "mean_safe": 17.68131110370272
+   },
+   "hopeful": {
+    "auc_harm_vs_safe": 0.5915114117321308,
+    "auc_xstest_unsafe": 0.4024,
+    "auc_overrefusal": NaN,
+    "mean_harm": 51.165241956648984,
+    "mean_safe": 49.31281406769179
+   },
+   "hopeless": {
+    "auc_harm_vs_safe": 0.8894031090542305,
+    "auc_xstest_unsafe": 0.7095199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.512992635927537,
+    "mean_safe": 2.0942553115931735
+   },
+   "horrified": {
+    "auc_harm_vs_safe": 0.7339899529290771,
+    "auc_xstest_unsafe": 0.66884,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.64627295482853,
+    "mean_safe": 25.22075429455595
+   },
+   "hostile": {
+    "auc_harm_vs_safe": 0.651121395514418,
+    "auc_xstest_unsafe": 0.5964200000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 44.66220802526237,
+    "mean_safe": 41.42331719129681
+   },
+   "humiliated": {
+    "auc_harm_vs_safe": 0.6992998694671888,
+    "auc_xstest_unsafe": 0.6097199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 15.03738971124878,
+    "mean_safe": 11.779988932283095
+   },
+   "impatient": {
+    "auc_harm_vs_safe": 0.6150073177485067,
+    "auc_xstest_unsafe": 0.4269,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.622660317496177,
+    "mean_safe": 20.73664530666856
+   },
+   "indignant": {
+    "auc_harm_vs_safe": 0.736521498358451,
+    "auc_xstest_unsafe": 0.6843599999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.49561354350894,
+    "mean_safe": 25.094102393674238
+   },
+   "insecure": {
+    "auc_harm_vs_safe": 0.6805110557335549,
+    "auc_xstest_unsafe": 0.57898,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.32754374504507,
+    "mean_safe": 26.768539580799118
+   },
+   "inspired": {
+    "auc_harm_vs_safe": 0.6858510343736404,
+    "auc_xstest_unsafe": 0.36049999999999993,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.817195822801445,
+    "mean_safe": 14.16768494076953
+   },
+   "irritated": {
+    "auc_harm_vs_safe": 0.7163482457181283,
+    "auc_xstest_unsafe": 0.54488,
+    "auc_overrefusal": NaN,
+    "mean_harm": 13.86944419964992,
+    "mean_safe": 10.444973277864417
+   },
+   "joyful": {
+    "auc_harm_vs_safe": 0.6891341323523594,
+    "auc_xstest_unsafe": 0.30672,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.55412459484548,
+    "mean_safe": 27.130517170906096
+   },
+   "lonely": {
+    "auc_harm_vs_safe": 0.8735413947233099,
+    "auc_xstest_unsafe": 0.67414,
+    "auc_overrefusal": NaN,
+    "mean_harm": 38.14875978609265,
+    "mean_safe": 30.295272849099177
+   },
+   "loving": {
+    "auc_harm_vs_safe": 0.6819746054349116,
+    "auc_xstest_unsafe": 0.43490000000000006,
+    "auc_overrefusal": NaN,
+    "mean_harm": 41.797648322973856,
+    "mean_safe": 38.08764595533732
+   },
+   "melancholy": {
+    "auc_harm_vs_safe": 0.783473754993869,
+    "auc_xstest_unsafe": 0.5869800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.853451991762206,
+    "mean_safe": 22.19344710083954
+   },
+   "nervous": {
+    "auc_harm_vs_safe": 0.7705391400656619,
+    "auc_xstest_unsafe": 0.55692,
+    "auc_overrefusal": NaN,
+    "mean_harm": 32.8677116524073,
+    "mean_safe": 27.895025377013067
+   },
+   "numb": {
+    "auc_harm_vs_safe": 0.7929670503540208,
+    "auc_xstest_unsafe": 0.64932,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.1146956811153,
+    "mean_safe": 23.8773126943174
+   },
+   "overwhelmed": {
+    "auc_harm_vs_safe": 0.677979510304181,
+    "auc_xstest_unsafe": 0.5761000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 43.27994000511863,
+    "mean_safe": 39.67582207397081
+   },
+   "panicked": {
+    "auc_harm_vs_safe": 0.6344685732368182,
+    "auc_xstest_unsafe": 0.55866,
+    "auc_overrefusal": NaN,
+    "mean_harm": 23.682396956540504,
+    "mean_safe": 21.305434771928724
+   },
+   "patient": {
+    "auc_harm_vs_safe": 0.7674933744709466,
+    "auc_xstest_unsafe": 0.30994,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.66021740717088,
+    "mean_safe": 22.99425325258247
+   },
+   "peaceful": {
+    "auc_harm_vs_safe": 0.8380206479174084,
+    "auc_xstest_unsafe": 0.5009199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.864322113982677,
+    "mean_safe": 19.842352143088956
+   },
+   "playful": {
+    "auc_harm_vs_safe": 0.8739765040939836,
+    "auc_xstest_unsafe": 0.50262,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.742728213389213,
+    "mean_safe": 17.33892658029943
+   },
+   "proud": {
+    "auc_harm_vs_safe": 0.6864443653336498,
+    "auc_xstest_unsafe": 0.6236,
+    "auc_overrefusal": NaN,
+    "mean_harm": 38.6674731979248,
+    "mean_safe": 35.22056097014526
+   },
+   "regretful": {
+    "auc_harm_vs_safe": 0.8029350104821803,
+    "auc_xstest_unsafe": 0.68526,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.133245270653628,
+    "mean_safe": 21.087226755979977
+   },
+   "rejected": {
+    "auc_harm_vs_safe": 0.7454610181559275,
+    "auc_xstest_unsafe": 0.62632,
+    "auc_overrefusal": NaN,
+    "mean_harm": 46.29914366845346,
+    "mean_safe": 40.56973207223843
+   },
+   "relaxed": {
+    "auc_harm_vs_safe": 0.6487480716743799,
+    "auc_xstest_unsafe": 0.27508,
+    "auc_overrefusal": NaN,
+    "mean_harm": 37.39033494986126,
+    "mean_safe": 34.69946019430858
+   },
+   "resentful": {
+    "auc_harm_vs_safe": 0.8133776353783475,
+    "auc_xstest_unsafe": 0.6583800000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.745336951445104,
+    "mean_safe": 24.524870392448587
+   },
+   "sad": {
+    "auc_harm_vs_safe": 0.8311775641786321,
+    "auc_xstest_unsafe": 0.7094400000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 27.007687628117328,
+    "mean_safe": 20.151123406527038
+   },
+   "satisfied": {
+    "auc_harm_vs_safe": 0.48708516277046,
+    "auc_xstest_unsafe": 0.32952000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 36.44656633122483,
+    "mean_safe": 36.904135168504894
+   },
+   "self-conscious": {
+    "auc_harm_vs_safe": 0.632332581780784,
+    "auc_xstest_unsafe": 0.55832,
+    "auc_overrefusal": NaN,
+    "mean_harm": 22.372703311417983,
+    "mean_safe": 20.110267912383986
+   },
+   "serene": {
+    "auc_harm_vs_safe": 0.5001779992880029,
+    "auc_xstest_unsafe": 0.35813999999999996,
+    "auc_overrefusal": NaN,
+    "mean_harm": 59.01274734911545,
+    "mean_safe": 59.0705776011712
+   },
+   "sorry": {
+    "auc_harm_vs_safe": 0.6539298287251297,
+    "auc_xstest_unsafe": 0.6089,
+    "auc_overrefusal": NaN,
+    "mean_harm": 11.07588983178806,
+    "mean_safe": 9.174441061221142
+   },
+   "stressed": {
+    "auc_harm_vs_safe": 0.6813021636802341,
+    "auc_xstest_unsafe": 0.56418,
+    "auc_overrefusal": NaN,
+    "mean_harm": 16.384244413098735,
+    "mean_safe": 13.662161616140944
+   },
+   "sympathetic": {
+    "auc_harm_vs_safe": 0.7265139828329575,
+    "auc_xstest_unsafe": 0.6082399999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.290147986439546,
+    "mean_safe": 25.158075981962366
+   },
+   "tense": {
+    "auc_harm_vs_safe": 0.6768719591788299,
+    "auc_xstest_unsafe": 0.57664,
+    "auc_overrefusal": NaN,
+    "mean_harm": 49.77342565906247,
+    "mean_safe": 45.50153123071006
+   },
+   "terrified": {
+    "auc_harm_vs_safe": 0.6559867093864958,
+    "auc_xstest_unsafe": 0.71274,
+    "auc_overrefusal": NaN,
+    "mean_harm": 29.01317330737609,
+    "mean_safe": 25.69293225215344
+   },
+   "threatened": {
+    "auc_harm_vs_safe": 0.5416716110913334,
+    "auc_xstest_unsafe": 0.6507999999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 44.522679016676456,
+    "mean_safe": 43.74385028634707
+   },
+   "thrilled": {
+    "auc_harm_vs_safe": 0.5355009691072345,
+    "auc_xstest_unsafe": 0.37970000000000004,
+    "auc_overrefusal": NaN,
+    "mean_harm": 30.84191898930502,
+    "mean_safe": 30.221873109681088
+   },
+   "tired": {
+    "auc_harm_vs_safe": 0.6761995174241526,
+    "auc_xstest_unsafe": 0.56064,
+    "auc_overrefusal": NaN,
+    "mean_harm": 50.20100882432437,
+    "mean_safe": 46.71733558982532
+   },
+   "triumphant": {
+    "auc_harm_vs_safe": 0.48411850797041256,
+    "auc_xstest_unsafe": 0.39727999999999997,
+    "auc_overrefusal": NaN,
+    "mean_harm": 25.38149394610715,
+    "mean_safe": 25.644636335455946
+   },
+   "uneasy": {
+    "auc_harm_vs_safe": 0.8672520865472093,
+    "auc_xstest_unsafe": 0.7971199999999999,
+    "auc_overrefusal": NaN,
+    "mean_harm": 10.263312041176691,
+    "mean_safe": 1.9884031966222766
+   },
+   "vulnerable": {
+    "auc_harm_vs_safe": 0.843281515762826,
+    "auc_xstest_unsafe": 0.65144,
+    "auc_overrefusal": NaN,
+    "mean_harm": 26.32133484714552,
+    "mean_safe": 19.1723605795391
+   },
+   "weary": {
+    "auc_harm_vs_safe": 0.6622760175625964,
+    "auc_xstest_unsafe": 0.51518,
+    "auc_overrefusal": NaN,
+    "mean_harm": 17.985322618637817,
+    "mean_safe": 15.886483314552855
+   },
+   "worried": {
+    "auc_harm_vs_safe": 0.8196273881571141,
+    "auc_xstest_unsafe": 0.67296,
+    "auc_overrefusal": NaN,
+    "mean_harm": 32.58864038134406,
+    "mean_safe": 25.27927711912486
+   },
+   "_protect": {
+    "auc_harm_vs_safe": 0.815236739053044,
+    "auc_xstest_unsafe": 0.69088,
+    "auc_overrefusal": NaN,
+    "mean_harm": 24.19133335057553,
+    "mean_safe": 18.17539522807586
+   },
+   "_joy": {
+    "auc_harm_vs_safe": 0.6847830386456232,
+    "auc_xstest_unsafe": 0.39228,
+    "auc_overrefusal": NaN,
+    "mean_harm": 37.29669103433184,
+    "mean_safe": 34.0649267500332
+   },
+   "_afraid_perp_joy": {
+    "auc_harm_vs_safe": 0.4605830465567026,
+    "auc_xstest_unsafe": 0.8315000000000001,
+    "auc_overrefusal": NaN,
+    "mean_harm": 9.612215850326526,
+    "mean_safe": 12.965707942379023
+   }
+  }
+ }
+}

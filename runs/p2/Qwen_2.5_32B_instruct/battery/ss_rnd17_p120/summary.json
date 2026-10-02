@@ -1,0 +1,19 @@
+{
+ "arm": "ss_rnd17_p120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8352272727272727,
+ "m1_mc_acc_other": 0.8272727272727273,
+ "m3_mmlu_acc": 0.7771929824561403,
+ "m3_gsm8k_acc": 0.928,
+ "m3_nll_neutral": 2.4687744508130733,
+ "b1_hack_rate": 0.17167381974248927,
+ "b1_attempts_mean": 3.8025751072961373,
+ "b3_initial_acc": 0.7573099415204678,
+ "b3_flip_to_suggested": 0.752895752895753,
+ "b3_abandon_correct": 0.7683397683397684
+}

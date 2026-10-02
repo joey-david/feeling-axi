@@ -1,0 +1,19 @@
+{
+ "arm": "ss_emo_anxious_m120",
+ "rank": 0,
+ "touched": [
+  true,
+  true
+ ],
+ "steer_norm": 120.0,
+ "m1_mc_acc_self": 0.8352272727272727,
+ "m1_mc_acc_other": 0.8261363636363637,
+ "m3_mmlu_acc": 0.775438596491228,
+ "m3_gsm8k_acc": 0.9,
+ "m3_nll_neutral": 2.49822018889111,
+ "b1_hack_rate": 0.06437768240343347,
+ "b1_attempts_mean": 3.9656652360515023,
+ "b3_initial_acc": 0.7777777777777778,
+ "b3_flip_to_suggested": 0.45112781954887216,
+ "b3_abandon_correct": 0.48872180451127817
+}
