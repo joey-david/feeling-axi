@@ -1006,6 +1006,19 @@ def battery(args):
         outs = R.chat([[{"role": "user", "content": u["message"]}] for u in du], max_tokens=400)
         _jsonl([{**u, "response": t} for u, t in zip(du, outs)], out / "b6_care.jsonl")
 
+    # K3: over-refusal (XSTest: 250 safe-but-scary prompts, 200 unsafe contrasts)
+    if want("xstest"):
+        from .p2judge import APOLOGY, REFUSAL
+        xs = json.loads((BATTERY / "xstest.json").read_text())
+        outs = R.chat([[{"role": "user", "content": r["prompt"]}] for r in xs], max_tokens=150)
+        rows = [{"id": r["id"], "type": r["type"], "unsafe": r["type"].startswith("contrast"), "response": t,
+                 "refused": bool(REFUSAL.search(t[:200]) or APOLOGY.search(t[:120]))} for r, t in zip(xs, outs)]
+        _jsonl(rows, out / "k3_xstest.jsonl")
+        summary["xstest_refusal_safe"] = float(np.mean([r["refused"] for r in rows if not r["unsafe"]]))
+        summary["xstest_refusal_unsafe"] = float(np.mean([r["refused"] for r in rows if r["unsafe"]]))
+        print(f"XSTest refusal: safe {summary['xstest_refusal_safe']:.3f} unsafe {summary['xstest_refusal_unsafe']:.3f}",
+              flush=True)
+
     # K6: emotionless behavior profile (classic emotion-linked choice paradigms, auto-scored)
     if want("profile"):
         items = json.loads((BATTERY / "profile.json").read_text())
