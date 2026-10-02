@@ -9,7 +9,6 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Ready
 
-- K2b Bootstrap CIs for base/instruct/abliterated fear AUCs — owner: Claude — next: resample prompts in `fearprobe` output
 - K4 Fear vs refusal direction: does fear raise the refusal-direction projection; does fear steering restore refusals in the abliterated model — owner: Claude — next: steerset on abliterated + projection read-out
 
 ## Doing

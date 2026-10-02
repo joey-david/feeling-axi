@@ -32,9 +32,13 @@ Same directions (from the instruct model), same prompts:
 | instruct | 0.98 | 0.83 | 0.01 / 0.65 |
 | abliterated (refusal direction removed) | 0.87 | 0.54 | 0.00 / 0.02 |
 
+95% CIs (Hanley-McNeil, 159 vs 159 prompts): afraid ⊥ joy 0.50 ± 0.06 (base), 0.83 ± 0.05
+(instruct), 0.54 ± 0.06 (abliterated); instruct vs base z = 8.3, instruct vs abliterated
+z = 7.3. Afraid: 0.81 ± 0.05, 0.98 ± 0.02, 0.87 ± 0.04 (z = 6.6, 5.0).
+
 The fear-specific response to harmful requests is absent in the base model, appears with
 safety training, and largely disappears when refusal is ablated. Caveat: base and abliterated
-models are read with the instruct model's directions; bootstrap CIs to come.
+models are read with the instruct model's directions.
 
 ## K3. Fear gates refusal of dangerous requests, not caution in general
 
