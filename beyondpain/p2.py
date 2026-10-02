@@ -979,6 +979,8 @@ def main(argv=None):
                    "--am-samples", str(args.am_samples), "--max-model-len", str(args.max_model_len)]
             if args.tp:
                 cmd += ["--tp", str(args.tp)]
+            if args.only:
+                cmd += ["--only", args.only]
             print("\n=== arm", a, flush=True)
             if subprocess.run(cmd).returncode != 0:
                 failed.append(a)
