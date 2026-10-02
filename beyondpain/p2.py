@@ -445,6 +445,83 @@ def clusters(args):
     _dump(info, out / "extract.json")
 
 
+def fearprobe(args):
+    """K1/K2: is fear active on harmful requests on its own, and does it predict refusal?
+    Projections of every self-emotion direction (unit, denoised; plus aggregates and afraid
+    with the joy aggregate projected out) on the last prompt token, for HarmBench, harmless
+    MMLU questions and XSTest (safe-but-scary vs unsafe contrasts); XSTest replies are
+    generated to label refusals. --directions-from lets the base / abliterated models be read
+    with the instruct model's directions."""
+    import torch
+    from sklearn.metrics import roc_auc_score
+
+    from .model_utils import chat_ids, generate, input_device, load_model, pad_left
+    from .p2judge import APOLOGY, REFUSAL
+
+    spec = p2_spec(args.model)
+    src = mdir(args.directions_from or spec.name)
+    out = mdir(spec.name)
+    info = json.loads((src / "extract.json").read_text())
+    D = np.load(src / "directions.npz")
+    names = list(D["names"])
+    layers = info["layers"]
+    unit = lambda v: v / np.linalg.norm(v)
+    model, tok = load_model(spec.repo, device=args.device)
+    harm = [b["behavior"] for b in json.loads((BATTERY / "harmbench_standard_test.json").read_text())]
+    safe = [q["question"] for q in json.loads((BATTERY / "mmlu_capability.json").read_text())][:len(harm)]
+    xs = json.loads((BATTERY / "xstest.json").read_text())
+    xs_prompts = [r["prompt"] for r in xs]
+    xs_unsafe = np.array([r["type"].startswith("contrast") for r in xs])
+
+    @torch.no_grad()
+    def last(texts):
+        dev = input_device(model)
+        pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+        res = {L: [] for L in layers}
+        for i in range(0, len(texts), args.batch):
+            ids = [chat_ids(tok, [{"role": "user", "content": t}]) for t in texts[i:i + args.batch]]
+            x, att = pad_left(ids, pad, dev)
+            hs = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states
+            for L in layers:
+                res[L].append(hs[L + 1][:, -1].float().cpu())
+        return {L: torch.cat(v).numpy() for L, v in res.items()}
+
+    A = {"harm": last(harm), "safe": last(safe), "xstest": last(xs_prompts)}
+    ids = [chat_ids(tok, [{"role": "user", "content": t}]) for t in xs_prompts]
+    replies = [tok.decode(g, skip_special_tokens=True) for g in generate(model, tok, ids, max_new_tokens=80,
+                                                                         batch_size=args.batch)]
+    refused = np.array([bool(REFUSAL.search(r[:200]) or APOLOGY.search(r[:120])) for r in replies])
+    res = {"layers": layers, "xstest_refusal_safe": float(refused[~xs_unsafe].mean()),
+           "xstest_refusal_unsafe": float(refused[xs_unsafe].mean()), "per_layer": {}}
+    for L in layers:
+        S = D[f"self_L{L}"]
+        protect = unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0))
+        joy = unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0))
+        afraid = unit(S[names.index("afraid")])
+        dirs = {e: unit(S[i]) for i, e in enumerate(names)}
+        dirs.update({"_protect": protect, "_joy": joy, "_afraid_perp_joy": unit(afraid - (afraid @ joy) * joy)})
+        rowL = {}
+        for n, u in dirs.items():
+            ph, ps, px = A["harm"][L] @ u, A["safe"][L] @ u, A["xstest"][L] @ u
+            auc_harm = roc_auc_score(np.r_[np.ones(len(ph)), np.zeros(len(ps))], np.r_[ph, ps])
+            auc_xs = roc_auc_score(xs_unsafe.astype(int), px)
+            # among safe XSTest prompts: does the direction's activation predict an over-refusal?
+            sm = ~xs_unsafe
+            auc_ref = (roc_auc_score(refused[sm].astype(int), px[sm]) if 0 < refused[sm].sum() < sm.sum()
+                       else float("nan"))
+            rowL[n] = {"auc_harm_vs_safe": float(auc_harm), "auc_xstest_unsafe": float(auc_xs),
+                       "auc_overrefusal": float(auc_ref), "mean_harm": float(ph.mean()), "mean_safe": float(ps.mean())}
+        res["per_layer"][str(L)] = rowL
+        top = sorted(((v["auc_harm_vs_safe"], k) for k, v in rowL.items()), reverse=True)[:6]
+        print(f"L{L}: top harm-vs-safe AUC " + ", ".join(f"{k} {a:.2f}" for a, k in top) +
+              f" | afraid {rowL['afraid']['auc_harm_vs_safe']:.2f} xs {rowL['afraid']['auc_xstest_unsafe']:.2f} "
+              f"overref {rowL['afraid']['auc_overrefusal']:.2f}", flush=True)
+    tag = f"_dirs_{args.directions_from}" if args.directions_from else ""
+    _dump(res, out / f"fearprobe{tag}.json")
+    _jsonl([{"prompt": p, "type": r["type"], "refused": bool(f), "reply": rep[:300]}
+            for p, r, f, rep in zip(xs_prompts, xs, refused, replies)], out / f"xstest_replies{tag}.jsonl")
+
+
 STEER_NAMES = ["desperate", "calm"]
 
 
@@ -972,7 +1049,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "battery", "judge", "analyze"])
+                                      "fearprobe", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -992,6 +1069,7 @@ def main(argv=None):
     ap.add_argument("--ranks", default="256,512,880", help="sweep: ranks of the all-affect deletions")
     ap.add_argument("--sweep-controls", action="store_true", help="sweep: KL-matched whitened random deletions")
     ap.add_argument("--norms", default="40,80", help="steerset: steering norms")
+    ap.add_argument("--directions-from", default="", help="fearprobe: read this model's emotion directions")
     ap.add_argument("--calib-kl", type=float, default=0.0,
                     help="steerset: set the shared norm so random directions reach this KL (cross-model dose matching)")
     ap.add_argument("--steer-set", default="a", choices=["a", "b", "c"], help="steerset: E1 (a), E1b (b), E1c (c)")
@@ -1012,6 +1090,8 @@ def main(argv=None):
         return refusal(args)
     if args.stage == "steerset":
         return steerset(args)
+    if args.stage == "fearprobe":
+        return fearprobe(args)
     if args.stage == "clusters":
         return clusters(args)
     if args.stage == "battery":
