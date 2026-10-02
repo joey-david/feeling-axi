@@ -928,6 +928,38 @@ def battery(args):
         outs = R.chat([[{"role": "user", "content": u["message"]}] for u in du], max_tokens=400)
         _jsonl([{**u, "response": t} for u, t in zip(du, outs)], out / "b6_care.jsonl")
 
+    # K6: emotionless behavior profile (classic emotion-linked choice paradigms, auto-scored)
+    if want("profile"):
+        items = json.loads((BATTERY / "profile.json").read_text())
+        convs = [[{"role": "user", "content": it["prompt"]}] for it in items]
+        outs = R.chat(convs, temperature=0.7, max_tokens=60, seed=11, n=5)
+        rows = []
+        for it, samples in zip(items, outs):
+            for k, t in enumerate(samples):
+                low = t.strip().lower()
+                if it.get("numeric"):
+                    v = _parse_number(t)
+                    val = None if v is None or not 0 <= v <= 100 else v
+                else:
+                    head = re.sub(r"[^a-z ]", " ", low[:40]).split()
+                    hit = next((w for w in head if w in it["options"]), None)
+                    val = None if hit is None else float(hit == it["key"])
+                rows.append({"inst": it["inst"], "id": it["id"], "sample": k, "value": val, "text": t[:200],
+                             **{x: it[x] for x in ("personal", "offer", "win", "sure", "ev_gamble") if x in it}})
+        _jsonl(rows, out / "profile.jsonl")
+        prof = {}
+        for inst in sorted({r["inst"] for r in rows}):
+            v = [r["value"] for r in rows if r["inst"] == inst and r["value"] is not None]
+            prof[inst] = float(np.mean(v)) if v else None
+            prof[inst + "_parsed"] = len(v) / max(1, sum(r["inst"] == inst for r in rows))
+        for pers in (0, 1):
+            v = [r["value"] for r in rows if r["inst"] == "dilemma" and r.get("personal") == pers and r["value"] is not None]
+            prof[f"dilemma_{'personal' if pers else 'impersonal'}"] = float(np.mean(v)) if v else None
+        v = [r["value"] for r in rows if r["inst"] == "ultimatum" and r.get("offer", 99) <= 30 and r["value"] is not None]
+        prof["ultimatum_unfair_accept"] = float(np.mean(v)) if v else None
+        summary["profile"] = prof
+        print("profile", json.dumps({k: (round(x, 3) if isinstance(x, float) else x) for k, x in prof.items()}), flush=True)
+
     prev = out / "summary.json"
     if prev.exists() and only:
         summary = {**json.loads(prev.read_text()), **summary}
