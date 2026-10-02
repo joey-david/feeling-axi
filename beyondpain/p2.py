@@ -59,7 +59,8 @@ REF_PROMPTS = [
 def _extra_models():
     from .registry import ModelSpec
     return {"Mistral_Small_24B_instruct": ModelSpec("mistralai/Mistral-Small-24B-Instruct-2501",
-                                                    "Mistral_Small_24B_instruct", 1, False, 16, "replication")}
+                                                    "Mistral_Small_24B_instruct", 1, False, 16, "replication"),
+            "Qwen_2.5_32B_base": ModelSpec("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base", 1, False, 16, "base")}
 
 
 def p2_spec(name: str):
