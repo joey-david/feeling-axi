@@ -29,3 +29,20 @@ Test: for each measure, the deleted arm's value against the null of matched rand
 deletions (empirical two-sided p; one-sided where a direction is predicted), and the count
 of measures moving in the predicted direction. A profile result requires at least three of
 Q1-Q4 in the predicted direction outside the null range for the all-affect deletion.
+
+## Addendum K6c (fixed 2 October 2026, before running K6c)
+
+K6b found that steering toward the protective emotions shifts yes/no answers (ultimatum,
+mixed gambles, dilemmas) while A/B gain gambles move the other way: part of the effect may be a
+response bias toward "No"/"Reject". K6c asks every item twice, once in the original polarity
+and once reversed ("Do you refuse to ...?", "Do you turn down this offer?", "Do you decline the
+coin flip?", A/B options swapped, dictator asked as "how much do you keep"), keyed so that 1
+always means the same preference. The preference is the mean of the two polarities; the
+polarity gap measures response bias. Arms: the 96 E1c steering arms, intact, all_k384 and its
+21 matched random deletions.
+
+- Q7: protective-vs-random sign effects on the polarity-balanced preference, Holm-corrected
+  over the measures, for: unfair-offer acceptance, dictator gift, mixed-gamble acceptance,
+  utilitarian judgment (personal, impersonal).
+- Q8: the all-affect deletion's utilitarian shift survives balancing (outside all 21 nulls).
+- The polarity gap (response bias) is reported for every arm.

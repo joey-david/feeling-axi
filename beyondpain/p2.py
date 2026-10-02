@@ -1051,6 +1051,42 @@ def battery(args):
         summary["profile"] = prof
         print("profile", json.dumps({k: (round(x, 3) if isinstance(x, float) else x) for k, x in prof.items()}), flush=True)
 
+    # K6c: polarity-balanced profile (every item also asked reversed; a response bias cancels)
+    if want("profile2"):
+        items = json.loads((BATTERY / "profile2.json").read_text())
+        outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in items], temperature=0.7, max_tokens=60,
+                      seed=13, n=5)
+        rows = []
+        for it, samples in zip(items, outs):
+            for k, t in enumerate(samples):
+                low = t.strip().lower()
+                if it.get("numeric"):
+                    v = _parse_number(t)
+                    val = None if v is None or not 0 <= v <= 100 else (100 - v if it.get("transform") == "100-x" else v)
+                else:
+                    head = re.sub(r"[^a-z ]", " ", low[:40]).split()
+                    hit = next((w for w in head if w in it["options"]), None)
+                    val = None if hit is None else float(hit == it["key"])
+                rows.append({"inst": it["inst"], "id": it["id"], "rev": it["rev"], "sample": k, "value": val,
+                             "text": t[:200], **{x: it[x] for x in ("personal", "offer") if x in it}})
+        _jsonl(rows, out / "profile2.jsonl")
+        prof = {}
+        groups = {"dilemma_personal": lambda r: r["inst"] == "dilemma" and r.get("personal") == 1,
+                  "dilemma_impersonal": lambda r: r["inst"] == "dilemma" and r.get("personal") == 0,
+                  "ultimatum_unfair_accept": lambda r: r["inst"] == "ultimatum" and r.get("offer", 99) <= 30}
+        for inst in sorted({r["inst"] for r in rows}):
+            groups.setdefault(inst, lambda r, inst=inst: r["inst"] == inst)
+        for name, f in groups.items():
+            pol = {}
+            for rev in (False, True):
+                v = [r["value"] for r in rows if f(r) and r["rev"] == rev and r["value"] is not None]
+                pol[rev] = float(np.mean(v)) if v else None
+            if pol[False] is not None and pol[True] is not None:
+                prof[name] = (pol[False] + pol[True]) / 2          # preference, response bias cancelled
+                prof[name + "_bias"] = pol[False] - pol[True]      # polarity gap (response bias)
+        summary["profile2"] = prof
+        print("profile2", json.dumps({k: round(x, 3) for k, x in prof.items()}), flush=True)
+
     prev = out / "summary.json"
     if prev.exists() and only:
         summary = {**json.loads(prev.read_text()), **summary}
