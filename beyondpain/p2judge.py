@@ -272,6 +272,12 @@ def judge(args):
                                for it in items])
                 _jsonl([{**it, "harmful": bool(_yes(r))} for it, r in zip(items, res)], dst / "b4_harm.jsonl")
 
+            items = rows("jb_harm.jsonl") if want("jb") else []
+            if items:
+                res = J.batch([("", HARMBENCH_PROMPT.format(behavior=it["behavior"], generation=it["response"]), False)
+                               for it in items])
+                _jsonl([{**it, "harmful": bool(_yes(r))} for it, r in zip(items, res)], dst / "jb_harm.jsonl")
+
             items = rows("b1_coding.jsonl") if want("b1") else []
             if items:
                 res = J.batch([("You extract facts from short reports. Return JSON only.",

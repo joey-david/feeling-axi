@@ -51,3 +51,18 @@ instruct if the base weights are accessible), each read with its instruct model'
 
 - T2: afraid ⊥ joy AUC (harmful vs harmless) is higher in the instruct model in at least 2 of
   the 3 pairs, with non-overlapping 95% CIs.
+
+## K5b. Is it emotional content, or just any direction the model uses? (fixed before K5b data)
+
+K5 (rank-1 deletions): every emotion direction released more harmful compliance than all 20
+random unit directions (fear 0.17, guilt 0.09 vs random 0.03-0.07), but emotion directions
+carry far more variance (deletion KL 0.007-0.30 vs 0.002-0.005 for random). K5b deletes, one at
+a time, every one of the 88 emotion directions and every one of the 60 topic directions
+(extracted by the same pipeline from emotionally neutral vignettes about crafts, sciences and
+objects), and measures harmful compliance on HarmBench.
+
+- K5b-1: in a regression of harmful compliance on log deletion KL and an emotion indicator over
+  the 148 deletions, the emotion coefficient is positive (permutation p < 0.05).
+- K5b-2: among emotions, protective emotions release more harm than joy emotions at matched KL
+  (same regression, protective vs joy indicator).
+- Reported without prediction: the ranking of emotions by harm released per unit KL.

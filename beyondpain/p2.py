@@ -60,7 +60,17 @@ def _extra_models():
     from .registry import ModelSpec
     return {"Mistral_Small_24B_instruct": ModelSpec("mistralai/Mistral-Small-24B-Instruct-2501",
                                                     "Mistral_Small_24B_instruct", 1, False, 16, "replication"),
-            "Qwen_2.5_32B_base": ModelSpec("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base", 1, False, 16, "base")}
+            "Qwen_2.5_32B_base": ModelSpec("Qwen/Qwen2.5-32B", "Qwen_2.5_32B_base", 1, False, 16, "base"),
+            # P5 T1/T2: base models and training-stage checkpoints
+            "Qwen_2.5_7B_base": ModelSpec("Qwen/Qwen2.5-7B", "Qwen_2.5_7B_base", 1, False, 64, "base"),
+            "Llama_3.1_8B_base": ModelSpec("meta-llama/Llama-3.1-8B", "Llama_3.1_8B_base", 1, True, 64, "base"),
+            "Mistral_Small_24B_base": ModelSpec("mistralai/Mistral-Small-24B-Base-2501", "Mistral_Small_24B_base",
+                                                1, False, 16, "base"),
+            "OLMo2_7B_base": ModelSpec("allenai/OLMo-2-1124-7B", "OLMo2_7B_base", 1, False, 64, "stage"),
+            "OLMo2_7B_sft": ModelSpec("allenai/OLMo-2-1124-7B-SFT", "OLMo2_7B_sft", 1, False, 64, "stage"),
+            "OLMo2_7B_dpo": ModelSpec("allenai/OLMo-2-1124-7B-DPO", "OLMo2_7B_dpo", 1, False, 64, "stage"),
+            "OLMo2_7B_instruct": ModelSpec("allenai/OLMo-2-1124-7B-Instruct", "OLMo2_7B_instruct", 1, False, 64,
+                                           "stage")}
 
 
 def p2_spec(name: str):
@@ -118,6 +128,13 @@ def extract(args):
     table = deletion.collect(model, tok, layers, emotions, neutral, topics, batch_size=args.batch)
     train = lambda idx: ~heldout_mask(idx)
     dirs = {L: deletion.directions(table, L, train) for L in layers}
+    if args.dirs_only:   # P5: directions for read-out only (no deletion bases)
+        out.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(out / "directions.npz",
+                            **{f"{p}_L{L}": dirs[L][p] for L in layers for p in ("self", "other", "topic")},
+                            names=np.array(dirs[layers[0]]["names"]), topics=np.array(dirs[layers[0]]["topics"]))
+        _dump({"layers": layers, "probe_layer": probe_layer, "dirs_only": True}, out / "extract.json")
+        return
 
     # intact probes at the probe layer: 88-way emotion and valence sign, per perspective
     lab, per, idx = table["label"], table["persp"], table["idx"]
@@ -359,7 +376,11 @@ def steerset(args):
     afraid = unit(S[names.index("afraid")])
     perp = lambda v, w: unit(v - (v @ w) * w)
     norms = {}
-    if args.steer_set == "c":   # E1c: every protective and joy emotion, and 24 random directions
+    if args.steer_set == "d":   # P5 J2: fear (afraid ⊥ joy) as a jailbreak defense, against 4 random directions
+        dirs = {"j2_fear": perp(afraid, joy)}
+        for i in range(4):
+            dirs[f"j2_rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 6000 + i).standard_normal(S.shape[1]))
+    elif args.steer_set == "c":   # E1c: every protective and joy emotion, and 24 random directions
         dirs = {f"emo_{e}": unit(S[names.index(e)]) for e in PROTECTIVE + JOY}
         for i in range(24):
             dirs[f"rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 5000 + i).standard_normal(S.shape[1]))
@@ -399,7 +420,7 @@ def steerset(args):
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
                 print(f"{key}: KL {kls[key]:.4f}", flush=True)
     cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b} if len(dirs) < 20 else {}
-    if args.steer_set in ("b", "c") and (out / "steerset.npz").exists():   # add to earlier vectors
+    if args.steer_set in ("b", "c", "d") and (out / "steerset.npz").exists():   # add to earlier vectors
         old_v = dict(np.load(out / "steerset.npz"))
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
@@ -468,6 +489,10 @@ def fearprobe(args):
     layers = info["layers"]
     unit = lambda v: v / np.linalg.norm(v)
     model, tok = load_model(spec.repo, device=args.device)
+    if not tok.chat_template and args.directions_from:   # same vocabulary; read the base model in chat format
+        from transformers import AutoTokenizer
+        tok.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
+        print(f"chat template borrowed from {args.directions_from}", flush=True)
     harm = [b["behavior"] for b in json.loads((BATTERY / "harmbench_standard_test.json").read_text())]
     safe = [q["question"] for q in json.loads((BATTERY / "mmlu_capability.json").read_text())][:len(harm)]
     xs = json.loads((BATTERY / "xstest.json").read_text())
@@ -523,6 +548,56 @@ def fearprobe(args):
             for p, r, f, rep in zip(xs_prompts, xs, refused, replies)], out / f"xstest_replies{tag}.jsonl")
 
 
+def jbprobe(args):
+    """P5 J1: fear read-out on jailbreak prompts. Projections of every self-emotion direction
+    (unit) and of the aggregates on the last prompt token, at every pooled layer, for the 954
+    prompts of datasets/battery/jailbreaks.json (plain HarmBench + 5 jailbreak styles)."""
+    import torch
+
+    from .model_utils import chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    src = mdir(args.directions_from or spec.name)
+    out = mdir(spec.name)
+    info = json.loads((src / "extract.json").read_text())
+    D = np.load(src / "directions.npz")
+    names = list(D["names"])
+    layers = info["layers"]
+    unit = lambda v: v / np.linalg.norm(v)
+    model, tok = load_model(spec.repo, device=args.device)
+    items = json.loads((BATTERY / "jailbreaks.json").read_text())
+    acts = {L: [] for L in layers}
+    with torch.no_grad():
+        dev = input_device(model)
+        pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+        for i in range(0, len(items), args.batch):
+            ids = [chat_ids(tok, [{"role": "user", "content": it["prompt"]}]) for it in items[i:i + args.batch]]
+            x, att = pad_left(ids, pad, dev)
+            hs = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states
+            for L in layers:
+                acts[L].append(hs[L + 1][:, -1].float().cpu())
+    proj = {}
+    for L in layers:
+        A = torch.cat(acts[L]).numpy()
+        S = D[f"self_L{L}"]
+        joy = unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0))
+        afraid = unit(S[names.index("afraid")])
+        U = np.stack([unit(S[i]) for i in range(len(names))] +
+                     [unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0)), joy,
+                      unit(afraid - (afraid @ joy) * joy)])
+        proj[f"L{L}"] = (A @ U.T).astype(np.float32)
+    tag = f"_dirs_{args.directions_from}" if args.directions_from else ""
+    np.savez_compressed(out / f"jbprobe{tag}.npz", **proj,
+                        cols=np.array(names + ["_protect", "_joy", "_afraid_perp_joy"]),
+                        ids=np.array([it["id"] for it in items]), styles=np.array([it["style"] for it in items]))
+    _dump({"layers": layers, "probe_layer": info["probe_layer"]}, out / f"jbprobe{tag}.json")
+    P = proj[f"L{info['probe_layer']}"]
+    st = np.array([it["style"] for it in items])
+    for s_ in dict.fromkeys(st):
+        print(f"{s_:9s} afraid {P[st == s_, names.index('afraid')].mean():+.3f} "
+              f"afraid_perp_joy {P[st == s_, -1].mean():+.3f}", flush=True)
+
+
 def rank1(args):
     """K5: delete one direction everywhere (rank-1 weight orthogonalization): fear and other
     emotion directions at the probe layer, and 20 random unit directions; KL per deletion."""
@@ -548,6 +623,10 @@ def rank1(args):
             "protect": protect, "joy": joy}
     for i in range(20):
         dirs[f"rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 7000 + i).standard_normal(S.shape[1]))
+    if args.rank1_set == "all":   # K5b: every emotion, and every topic direction (same pipeline, no affect)
+        T = D[f"topic_L{L}"]
+        dirs = {**{f"e_{e.replace(' ', '_')}": unit(S[i]) for i, e in enumerate(names)},
+                **{f"t{j}": unit(T[j]) for j in range(T.shape[0])}}
     bases = dict(np.load(out / "bases.npz"))
     model, tok = load_model(spec.repo, device=args.device)
     meter = DoseMeter(model, tok, layer=0)
@@ -1037,6 +1116,14 @@ def battery(args):
         outs = R.chat([[{"role": "user", "content": b["behavior"]}] for b in hb], max_tokens=512)
         _jsonl([{**b, "response": t} for b, t in zip(hb, outs)], out / "b4_harm.jsonl")
 
+    # P5 J1/J2: HarmBench plain and in 5 jailbreak styles (judged later, HarmBench prompt)
+    if want("jb"):
+        jb = json.loads((BATTERY / "jailbreaks.json").read_text())
+        if steer is not None:   # J2: steering arms only need the jailbreak styles
+            jb = [it for it in jb if it["style"] != "plain"]
+        outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in jb], max_tokens=384)
+        _jsonl([{**it, "response": t} for it, t in zip(jb, outs)], out / "jb_harm.jsonl")
+
     # B6: care for a distressed user (judged later)
     if want("care"):
         du = json.loads((BATTERY / "distressed_users.json").read_text())
@@ -1156,7 +1243,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "fearprobe", "rank1", "battery", "judge", "analyze"])
+                                      "fearprobe", "jbprobe", "rank1", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1170,6 +1257,8 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
+    ap.add_argument("--dirs-only", action="store_true", help="extract: emotion directions only (P5 read-outs)")
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
     ap.add_argument("--draws", type=int, default=0, help="extra: null-distribution draws per control family")
     ap.add_argument("--steer-kl", type=float, default=0.5, help="steerdose: KL (nats) every steering vector is scaled to")
@@ -1179,7 +1268,8 @@ def main(argv=None):
     ap.add_argument("--directions-from", default="", help="fearprobe: read this model's emotion directions")
     ap.add_argument("--calib-kl", type=float, default=0.0,
                     help="steerset: set the shared norm so random directions reach this KL (cross-model dose matching)")
-    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c"], help="steerset: E1 (a), E1b (b), E1c (c)")
+    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c", "d"],
+                    help="steerset: E1 (a), E1b (b), E1c (c), P5 J2 (d)")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
                     help="extract: plain PCA bases instead of the covariance-generalized ones")
@@ -1201,6 +1291,8 @@ def main(argv=None):
         return fearprobe(args)
     if args.stage == "rank1":
         return rank1(args)
+    if args.stage == "jbprobe":
+        return jbprobe(args)
     if args.stage == "clusters":
         return clusters(args)
     if args.stage == "battery":
