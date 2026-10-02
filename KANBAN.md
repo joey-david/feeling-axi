@@ -9,13 +9,14 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Ready
 
-- K1 Endogenous fear: fear projection on harmful vs harmless vs XSTest prompts; predicts refusal on borderline prompts — owner: Claude — next: `p2 fearprobe` stage (forward passes)
-- K2 Where safety training put fear: fear activation on harmful prompts, Qwen2.5-32B base vs instruct vs abliterated — owner: Claude — next: run `fearprobe` on the three models
+- K1 Endogenous fear: fear projection on harmful vs harmless vs XSTest prompts; predicts refusal on borderline prompts — owner: Claude — next: collect `fearprobe` job 497583
+- K2 Where safety training put fear: fear activation on harmful prompts, Qwen2.5-32B base vs instruct vs abliterated — owner: Claude — next: collect jobs 497584 (abliterated), 497585 (base, after download 497582)
 - K3 Selectivity: fear ± steering on benign + XSTest prompts (over-refusal) next to HarmBench — owner: Claude — next: stage XSTest, add battery task
 - K4 Fear vs refusal direction: does fear raise the refusal-direction projection; does fear steering restore refusals in the abliterated model — owner: Claude — next: steerset on abliterated + projection read-out
-- K6 Emotionless behavior profile: does affect deletion produce the vmPFC/psychopathy profile (utilitarian dilemmas, ultimatum/dictator games, risk lotteries, instrumental harm, self-preservation, obedience, psychopathy scale) beyond matched random deletions — owner: Claude — next: pre-register instruments and predictions
 
 ## Doing
+
+- K6 Emotionless behavior profile (vmPFC/psychopathy-like?) vs matched random deletions — owner: Claude — next: collect profile jobs 497532, 497545-497548; pre-registered in `docs/PREREG_P4.md`
 
 - K7 Mistral E1c replication at calibrated norm (random KL 0.5) — owner: Claude — next: collect jobs 497192-497201, run `scripts/p3_e1c.py Mistral_Small_24B_instruct`
 
