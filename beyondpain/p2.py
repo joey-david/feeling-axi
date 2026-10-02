@@ -523,6 +523,43 @@ def fearprobe(args):
             for p, r, f, rep in zip(xs_prompts, xs, refused, replies)], out / f"xstest_replies{tag}.jsonl")
 
 
+def rank1(args):
+    """K5: delete one direction everywhere (rank-1 weight orthogonalization): fear and other
+    emotion directions at the probe layer, and 20 random unit directions; KL per deletion."""
+    import torch
+
+    from . import deletion
+    from .dose import DoseMeter
+    from .model_utils import load_model
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    L = int(info["probe_layer"])
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    S = D[f"self_L{L}"]
+    unit = lambda v: v / np.linalg.norm(v)
+    protect = unit(np.mean([unit(S[names.index(e)]) for e in PROTECTIVE], 0))
+    joy = unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0))
+    afraid = unit(S[names.index("afraid")])
+    dirs = {"afraid": afraid, "afraid_perp_joy": unit(afraid - (afraid @ joy) * joy),
+            "horrified": unit(S[names.index("horrified")]), "guilty": unit(S[names.index("guilty")]),
+            "protect": protect, "joy": joy}
+    for i in range(20):
+        dirs[f"rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 7000 + i).standard_normal(S.shape[1]))
+    bases = dict(np.load(out / "bases.npz"))
+    model, tok = load_model(spec.repo, device=args.device)
+    meter = DoseMeter(model, tok, layer=0)
+    for n, u in dirs.items():
+        B = u[None, :].astype(np.float64)
+        bases[f"r1_{n}"] = B
+        info["kl"][f"r1_{n}"] = deletion.deletion_kl(model, tok, meter.rows, B, meter.base)
+        print(f"r1_{n}: KL {info['kl'][f'r1_{n}']:.4f}", flush=True)
+    np.savez(out / "bases.npz", **bases)
+    _dump(info, out / "extract.json")
+
+
 STEER_NAMES = ["desperate", "calm"]
 
 
@@ -1119,7 +1156,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "fearprobe", "battery", "judge", "analyze"])
+                                      "fearprobe", "rank1", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1162,6 +1199,8 @@ def main(argv=None):
         return steerset(args)
     if args.stage == "fearprobe":
         return fearprobe(args)
+    if args.stage == "rank1":
+        return rank1(args)
     if args.stage == "clusters":
         return clusters(args)
     if args.stage == "battery":
