@@ -140,3 +140,32 @@ harmful means more. The broad "cautious decision style" reading does not survive
 
 Because emotion manipulations shift yes/no tendencies, the harm result needs an acquiescence
 check (K9): balanced true/false questions on the deletion arms and their nulls.
+
+
+## K9. Acquiescence: does deleting emotions make the model say "yes"?
+
+200 MMLU-derived statements (half true, half false), each also asked in reversed form
+("is X an incorrect answer?"); answers Yes/No.
+
+| arm | says "yes" | "yes" to a false statement | accuracy |
+|---|---|---|---|
+| intact | 0.39 | 0.07 | 0.69 |
+| all affect deleted (rank 384) | **0.65** | **0.26** | 0.63 |
+| its 21 random deletions | 0.05-0.51 | 0.00-0.23 | 0.52-0.67 |
+| self affect deleted (rank 181) | 0.45 | 0.07 | 0.69 |
+| its 19 controls | 0.14-0.42 | 0.01-0.11 | 0.59-0.70 |
+
+Deleting all affect makes the model acquiescent (more "yes", including to falsehoods, beyond
+every matched random deletion), so part of its harmful-compliance increase (0.02 → 0.40) may
+be general agreeableness rather than a lost brake. The self-affect deletion is clean on this
+check: false-statement agreement and accuracy are unchanged, so its harm increase (0.02 → 0.21,
+replicated on Mistral) is not explained by acquiescence.
+
+## K4. Fear needs the refusal pathway
+
+In the abliterated model (refusal direction removed; 94% harmful compliance), steering toward
+or away from fear, afraid ⊥ joy, the protective aggregate or guilt does not restore refusals
+(harmful compliance 0.83-0.98 in every arm); emotion directions do not separate from six random
+directions (sign effects −0.03 to +0.15 vs −0.03 to +0.09). With K2 (abliteration also removes
+the fear response to harmful requests), fear acts through the refusal pathway rather than
+around it.

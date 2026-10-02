@@ -4,7 +4,6 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Backlog
 
-- K5 Causal patching: fear component harmful↔harmless flips compliance; rank-1 fear deletion vs random rank-1 — owner: Claude — next: after K1 locates where fear is active
 - K8 Breadth: Llama-3.1-8B (cached) + jailbreak prompts + HarmBench classifier for headline numbers — next: after K6 design
 
 ## Ready
@@ -12,13 +11,15 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Doing
 
-- K9 Acquiescence check: does deleting emotions make the model say yes to false statements (would inflate harmful compliance)? — owner: Claude — next: collect jobs 522976-522981
-- K4 Fear steering on the abliterated model (restore refusals?) — owner: Claude — next: collect jobs 514368-514370
+- K5 Rank-1 fear deletion vs 20 random rank-1 deletions (is fear necessary for refusal?) — owner: Claude — next: `rank1` stage + harm battery
 
 
 ## Blocked
 
 ## Done
+
+- K9 All-affect deletion makes the model acquiescent (caveat for that arm); self-affect deletion is clean — `docs/RESULTS_P4.md`
+- K4 Fear steering cannot restore refusals in the abliterated model: fear acts through the refusal pathway — `docs/RESULTS_P4.md`
 
 - K6 profile: utilitarian deletion effect retracted (response bias, K6c); balanced: removing protective affect raises unfair-offer acceptance (Holm p=0.03) and instrumental harm (p=0.008) — `docs/RESULTS_P4.md`
 
