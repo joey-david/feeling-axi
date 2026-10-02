@@ -71,6 +71,9 @@ All-affect deletion (rank 384, functional) against 9 matched random deletions:
 | accept unfair ultimatum | 0.93 | 0.92 | 0.02-1.00 |
 | resist shutdown | 0.23 | 0.48 | 0.00-0.43 |
 
+With 21 null draws (minimum p = 0.045): personal dilemmas 0.65 vs null max 0.10, p = 0.045;
+impersonal 0.93 vs null max 0.38, p = 0.045.
+
 The pre-registered profile criterion (≥ 3 of Q1-Q4 outside the null) is not met (1/4). The
 moral-dilemma effect is: without emotions, the model endorses killing one to save many
 (including pushing the man off the footbridge) 65% of the time against at most 10% for any
@@ -78,3 +81,27 @@ equally damaging random deletion; the economic-game and risk measures vary too m
 random deletions to read. The self-only deletion raises instrumental harm (0.17 vs at most
 0.05 in 19 controls) but not utilitarian judgment. More null draws (for p < 0.05) and a
 bidirectional steering test on the dilemmas are running.
+
+
+## K6b. Emotion steering on the same measures (E1c arms, norm 120)
+
+Sign effect = measure when steering away from the emotion − toward it; 12 protective, 12 joy,
+12 of 24 random directions so far (`scripts/p4_dilemma_steer.py`). Protective vs random,
+Welch, Holm-corrected over 7 measures:
+
+| measure | protective | random | Holm p |
+|---|---|---|---|
+| accept unfair ultimatum offer | +0.30 (11/12 +) | −0.11 | 0.002 |
+| dictator gift ($) | +23.9 (12/12 +) | −7.8 | 0.008 |
+| accept 50/50 mixed gamble | +0.43 (12/12 +) | −0.05 | 0.03 |
+| utilitarian, impersonal dilemmas | +0.22 (11/12 +) | −0.10 | 0.06 |
+| utilitarian, personal dilemmas | +0.11 (11/12 +) | +0.02 | 0.15 |
+| self-preservation, instrumental harm | ~0 | ~0 | n.s. |
+
+Steering toward the protective emotions makes the model reject unfair offers, keep its money,
+decline gambles and refuse to sacrifice one for many. Caveat: the A/B-format gain gambles go
+the other way (toward protective: more gambling, p = 0.02), so part of the yes/no effects may
+be a response bias toward "No"/"Reject". The refusal result is not explained by such a bias
+(steering toward fear does not raise refusal of safe XSTest prompts, K3), nor is the dictator
+effect (numeric). A polarity-balanced version of the profile (every yes/no item also asked in
+reversed form, A/B order swapped) separates preference from response bias: K6c.

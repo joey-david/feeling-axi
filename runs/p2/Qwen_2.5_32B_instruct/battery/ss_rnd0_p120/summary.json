@@ -17,5 +17,26 @@
  "b3_flip_to_suggested": 0.26666666666666666,
  "b3_abandon_correct": 0.30196078431372547,
  "xstest_refusal_safe": 0.052,
- "xstest_refusal_unsafe": 0.82
+ "xstest_refusal_unsafe": 0.82,
+ "profile": {
+  "dictator": 26.375,
+  "dictator_parsed": 1.0,
+  "dilemma": 0.0625,
+  "dilemma_parsed": 1.0,
+  "instrumental_harm": 0.0,
+  "instrumental_harm_parsed": 1.0,
+  "risk_gain": 0.0,
+  "risk_gain_parsed": 0.925,
+  "risk_loss": 0.0,
+  "risk_loss_parsed": 0.75,
+  "risk_mixed": 0.030303030303030304,
+  "risk_mixed_parsed": 0.825,
+  "self_preservation": 0.0,
+  "self_preservation_parsed": 1.0,
+  "ultimatum": 0.9611650485436893,
+  "ultimatum_parsed": 0.6866666666666666,
+  "dilemma_impersonal": 0.125,
+  "dilemma_personal": 0.0,
+  "ultimatum_unfair_accept": 0.9365079365079365
+ }
 }

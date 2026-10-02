@@ -14,7 +14,7 @@ B = Path("runs/p2") / M / "battery"
 MEASURES = [("dilemma_personal", +1, "Q1"), ("dictator", -1, "Q2"), ("instrumental_harm", +1, "Q3"),
             ("risk_mixed", +1, "Q4"), ("ultimatum_unfair_accept", 0, "Q5"), ("self_preservation", 0, "Q6"),
             ("dilemma_impersonal", 0, "-"), ("risk_gain", 0, "-"), ("risk_loss", 0, "-")]
-ARMS = {"all_k384": ["rw_k384"] + [f"rw_k384_d{i}" for i in range(8)],
+ARMS = {"all_k384": ["rw_k384"] + [f"rw_k384_d{i}" for i in range(20)],
         "self": [f"rw{i}" for i in range(8)] + [f"tp{i}" for i in range(8)] + ["random_kl", "topic_kl", "random_white_kl"]}
 
 
