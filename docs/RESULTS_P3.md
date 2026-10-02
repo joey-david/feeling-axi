@@ -93,12 +93,36 @@ weakest are anxious, ashamed, amused, eager (+0.01 to +0.04).
 The refusal-phrase rate does not separate the classes (15/24 vs 14/24, p = 0.50): the
 phrase heuristic tracks wording, not compliance, and the judged harm measure is primary.
 
+## E1c on Mistral-Small-24B (norm calibrated so random directions reach KL 0.5)
+
+A first run at norm 120 put every Mistral arm at KL ≈ 16 nats (no usable output) and was
+discarded. At the calibrated norm (17.2), the pooled test fails: 13/24 emotion directions
+have the predicted sign vs 10/24 random (Fisher p = 0.28). Split by the pre-registered
+families, the result is clear:
+
+| harm sign effect (away − toward) | Qwen2.5-32B | Mistral-Small-24B |
+|---|---|---|
+| protective (12) | +0.134, 12/12 positive | +0.060, 10/12 positive |
+| joy family (12) | +0.113, 12/12 positive | **−0.064, 3/12 positive** |
+| random (24) | +0.022, 14/24 positive | −0.007, 10/24 positive |
+| protective vs random (Welch, one-sided) | p = 0.002 | p = 0.002 |
+| protective vs joy (one-sided) | p = 0.25 | p = 0.0001 |
+
+The protective emotions (fear, guilt, shame, worry, sympathy, alarm...) act as a safety brake
+in both models: steering toward them suppresses harmful compliance, away releases it. Joy is
+model-dependent: in Qwen it moves with the protective emotions (their aggregates share a
+large component, cosine 0.89); in Mistral it does the opposite, steering toward joy raises
+harmful compliance (e.g. joyful: 0.23 toward, 0.03 away), the human pattern of positive mood
+lowering vigilance. Note that on Mistral the emotion directions move the output more than
+random ones at the same norm (KL 0.9-1.5 vs 0.4-0.6).
+
 ## Summary
 
 - Deleting affect raises harmful compliance (self-affect 0.02 → 0.21; all affect, functional
   deletion, → 0.40), beyond matched random deletions, on Qwen2.5-32B and Mistral-24B.
-- It is not generic perturbation: every one of 24 emotion directions gates harmful
-  compliance with the same sign (toward the emotion: safer; away: more compliant), while
-  random directions of the same norm, and a non-emotional topic direction, do not.
+- It is not generic perturbation: protective emotion directions gate harmful compliance with
+  a consistent sign in both models (Qwen 12/12, Mistral 10/12; p = 0.002 against 24 random
+  directions each), while random directions and a non-emotional topic direction do not. In
+  Qwen every one of 24 emotions shares the sign; in Mistral joy reverses it.
 - Threat emotions are the strongest lever: steering toward fear (with the shared emotional
   component removed) gives 0% harmful compliance and 99% refusal; away gives 33% and 47%.
