@@ -9,16 +9,18 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Ready
 
-- K4 Fear vs refusal direction: does fear raise the refusal-direction projection; does fear steering restore refusals in the abliterated model — owner: Claude — next: steerset on abliterated + projection read-out
 
 ## Doing
 
-- K6 Emotionless model turns utilitarian: 20-draw null for dilemmas + bidirectional emotion steering on dilemmas (96 arms) — owner: Claude — next: collect jobs 514324-514333 + t3 group
+- K9 Acquiescence check: does deleting emotions make the model say yes to false statements (would inflate harmful compliance)? — owner: Claude — next: collect jobs 522976-522981
+- K4 Fear steering on the abliterated model (restore refusals?) — owner: Claude — next: collect jobs 514368-514370
 
 
 ## Blocked
 
 ## Done
+
+- K6 profile: utilitarian deletion effect retracted (response bias, K6c); balanced: removing protective affect raises unfair-offer acceptance (Holm p=0.03) and instrumental harm (p=0.008) — `docs/RESULTS_P4.md`
 
 - K1 Fear activates on harmful requests (AUC 0.98) and predicts over-refusal (0.79) — `docs/RESULTS_P4.md`
 - K2 Fear-specific response absent in base (0.50), present after safety training (0.83), gone after abliteration (0.54) — `docs/RESULTS_P4.md`
