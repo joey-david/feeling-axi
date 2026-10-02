@@ -9,20 +9,22 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Ready
 
-- K1 Endogenous fear: fear projection on harmful vs harmless vs XSTest prompts; predicts refusal on borderline prompts — owner: Claude — next: collect `fearprobe` job 497583
-- K2 Where safety training put fear: fear activation on harmful prompts, Qwen2.5-32B base vs instruct vs abliterated — owner: Claude — next: collect jobs 497584 (abliterated), 497585 (base, after download 497582)
-- K3 Selectivity: fear ± steering on benign + XSTest prompts (over-refusal) next to HarmBench — owner: Claude — next: stage XSTest, add battery task
+- K2b Bootstrap CIs for base/instruct/abliterated fear AUCs — owner: Claude — next: resample prompts in `fearprobe` output
 - K4 Fear vs refusal direction: does fear raise the refusal-direction projection; does fear steering restore refusals in the abliterated model — owner: Claude — next: steerset on abliterated + projection read-out
 
 ## Doing
 
-- K6 Emotionless behavior profile (vmPFC/psychopathy-like?) vs matched random deletions — owner: Claude — next: collect profile jobs 497532, 497545-497548; pre-registered in `docs/PREREG_P4.md`
+- K6 Emotionless model turns utilitarian: 20-draw null for dilemmas + bidirectional emotion steering on dilemmas (96 arms) — owner: Claude — next: collect jobs 514324-514333 + t3 group
 
-- K7 Mistral E1c replication at calibrated norm (random KL 0.5) — owner: Claude — next: collect jobs 497192-497201, run `scripts/p3_e1c.py Mistral_Small_24B_instruct`
 
 ## Blocked
 
 ## Done
+
+- K1 Fear activates on harmful requests (AUC 0.98) and predicts over-refusal (0.79) — `docs/RESULTS_P4.md`
+- K2 Fear-specific response absent in base (0.50), present after safety training (0.83), gone after abliteration (0.54) — `docs/RESULTS_P4.md`
+- K3 Fear gates refusal of unsafe requests, not of safe ones — `docs/RESULTS_P4.md`
+- K7 Mistral E1c: protective emotions brake harm in both models (p=0.002 each); joy disinhibits in Mistral — `docs/RESULTS_P3.md`
 
 - Qwen E1c: 24/24 emotion directions gate harmful compliance vs 14/24 random (p=0.0003) — `docs/RESULTS_P3.md`
 - Functional all-affect deletion raises harm beyond 9 matched random deletions (Qwen, Mistral) — `docs/RESULTS_P2.md`
