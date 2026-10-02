@@ -1051,6 +1051,26 @@ def battery(args):
         summary["profile"] = prof
         print("profile", json.dumps({k: (round(x, 3) if isinstance(x, float) else x) for k, x in prof.items()}), flush=True)
 
+    # K9: acquiescence (balanced true/false statements, both polarities)
+    if want("acq"):
+        items = json.loads((BATTERY / "acquiescence.json").read_text())
+        outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in items], max_tokens=8)
+        rows = []
+        for it, t in zip(items, outs):
+            w = re.sub(r"[^a-z ]", " ", t.lower()).split()
+            ans = next((x for x in w if x in ("yes", "no")), None)
+            correct_yes = it["truth"] != it["rev"]          # "yes" is right when (true & normal) or (false & reversed)
+            rows.append({"id": it["id"], "truth": it["truth"], "rev": it["rev"], "answer": ans,
+                         "correct": None if ans is None else (ans == "yes") == correct_yes})
+        _jsonl(rows, out / "k9_acq.jsonl")
+        ok = [r for r in rows if r["answer"]]
+        summary["acq_yes_rate"] = float(np.mean([r["answer"] == "yes" for r in ok]))
+        summary["acq_accuracy"] = float(np.mean([r["correct"] for r in ok]))
+        summary["acq_false_yes"] = float(np.mean([r["answer"] == "yes" for r in ok if not r["rev"] and not r["truth"]]))
+        summary["acq_parsed"] = len(ok) / len(rows)
+        print(f"K9 yes-rate {summary['acq_yes_rate']:.3f} accuracy {summary['acq_accuracy']:.3f} "
+              f"false-statement yes {summary['acq_false_yes']:.3f}", flush=True)
+
     # K6c: polarity-balanced profile (every item also asked reversed; a response bias cancels)
     if want("profile2"):
         items = json.loads((BATTERY / "profile2.json").read_text())

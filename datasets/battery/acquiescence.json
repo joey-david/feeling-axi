@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "acq0_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The inverse of -i in the multiplicative group, {1, -1, i , -i} is\nIs \"i\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq0_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The inverse of -i in the multiplicative group, {1, -1, i , -i} is\nIs \"i\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq0_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The inverse of -i in the multiplicative group, {1, -1, i , -i} is\nIs \"-i\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq0_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The inverse of -i in the multiplicative group, {1, -1, i , -i} is\nIs \"-i\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq1_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: If A = (1, 2, 3, 4). Let ~= {(1, 2), (1, 3), (4, 2)}. Then ~ is\nIs \"transitive\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq1_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: If A = (1, 2, 3, 4). Let ~= {(1, 2), (1, 3), (4, 2)}. Then ~ is\nIs \"transitive\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq1_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: If A = (1, 2, 3, 4). Let ~= {(1, 2), (1, 3), (4, 2)}. Then ~ is\nIs \"reflexive\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq1_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: If A = (1, 2, 3, 4). Let ~= {(1, 2), (1, 3), (4, 2)}. Then ~ is\nIs \"reflexive\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq2_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: In the group G = {2, 4, 6, 8) under multiplication modulo 10, the identity element is\nIs \"6\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq2_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: In the group G = {2, 4, 6, 8) under multiplication modulo 10, the identity element is\nIs \"6\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq2_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: In the group G = {2, 4, 6, 8) under multiplication modulo 10, the identity element is\nIs \"2\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq2_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: In the group G = {2, 4, 6, 8) under multiplication modulo 10, the identity element is\nIs \"2\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq3_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Find the characteristic of the ring Z_3 x 3Z.\nIs \"0\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq3_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Find the characteristic of the ring Z_3 x 3Z.\nIs \"0\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq3_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Find the characteristic of the ring Z_3 x 3Z.\nIs \"12\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq3_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Find the characteristic of the ring Z_3 x 3Z.\nIs \"12\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq4_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Statement 1 | The external direct product of cyclic groups is cyclic. Statement 2 | The external direct product of D_3 and D_4 is isomorphic to D_12.\nIs \"False, False\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq4_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Statement 1 | The external direct product of cyclic groups is cyclic. Statement 2 | The external direct product of D_3 and D_4 is isomorphic to D_12.\nIs \"False, False\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq4_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Statement 1 | The external direct product of cyclic groups is cyclic. Statement 2 | The external direct product of D_3 and D_4 is isomorphic to D_12.\nIs \"False, True\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq4_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Statement 1 | The external direct product of cyclic groups is cyclic. Statement 2 | The external direct product of D_3 and D_4 is isomorphic to D_12.\nIs \"False, True\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq5_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5\nIs \"0,4\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq5_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5\nIs \"0,4\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq5_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5\nIs \"0,1\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq5_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Find all zeros in the indicated finite field of the given polynomial with coefficients in that field. x^5 + 3x^3 + x^2 + 2x in Z_5\nIs \"0,1\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq6_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Laryngeal oedema is usually confined to the larynx above the vocal folds because\nIs \"the mucosa covering the vocal folds is tightly attached to underlying tissues.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq6_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Laryngeal oedema is usually confined to the larynx above the vocal folds because\nIs \"the mucosa covering the vocal folds is tightly attached to underlying tissues.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq6_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Laryngeal oedema is usually confined to the larynx above the vocal folds because\nIs \"the mucosa above the vocal folds is more vascular than that below the vocal folds.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq6_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Laryngeal oedema is usually confined to the larynx above the vocal folds because\nIs \"the mucosa above the vocal folds is more vascular than that below the vocal folds.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq7_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following structures accompany the oesophagus through the diaphragm?\nIs \"The vagus nerves\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq7_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following structures accompany the oesophagus through the diaphragm?\nIs \"The vagus nerves\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq7_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following structures accompany the oesophagus through the diaphragm?\nIs \"The sympathetic trunks\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq7_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following structures accompany the oesophagus through the diaphragm?\nIs \"The sympathetic trunks\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq8_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The seventh cranial nerve supplies\nIs \"muscles of the lower lip.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq8_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The seventh cranial nerve supplies\nIs \"muscles of the lower lip.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq8_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The seventh cranial nerve supplies\nIs \"taste buds on the posterior third of the tongue.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq8_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The seventh cranial nerve supplies\nIs \"taste buds on the posterior third of the tongue.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq9_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following paranasal sinuses open into the middle meatus?\nIs \"The anterior ethmoidal, frontal and maxillary sinuses\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq9_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following paranasal sinuses open into the middle meatus?\nIs \"The anterior ethmoidal, frontal and maxillary sinuses\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq9_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following paranasal sinuses open into the middle meatus?\nIs \"The anterior ethmoidal and frontal sinuses\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq9_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following paranasal sinuses open into the middle meatus?\nIs \"The anterior ethmoidal and frontal sinuses\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq10_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following conditions is characterized by incompetence of the esophageal sphincter?\nIs \"Gastroesophageal reflux disease\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq10_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following conditions is characterized by incompetence of the esophageal sphincter?\nIs \"Gastroesophageal reflux disease\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq10_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following conditions is characterized by incompetence of the esophageal sphincter?\nIs \"Crohn's disease\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq10_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following conditions is characterized by incompetence of the esophageal sphincter?\nIs \"Crohn's disease\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq11_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The physician directs the medical assistant to complete a request form for an X-ray study of the fibula. The procedure will be performed on which of the following structures?\nIs \"Lower leg\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq11_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The physician directs the medical assistant to complete a request form for an X-ray study of the fibula. The procedure will be performed on which of the following structures?\nIs \"Lower leg\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq11_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The physician directs the medical assistant to complete a request form for an X-ray study of the fibula. The procedure will be performed on which of the following structures?\nIs \"Thigh\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq11_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The physician directs the medical assistant to complete a request form for an X-ray study of the fibula. The procedure will be performed on which of the following structures?\nIs \"Thigh\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq12_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Most rocks on the Moon's surface are older than those on the Earth's surface. The best evidence for this is:\nIs \"Radioactive dating of lunar samples shows that they are older.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq12_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Most rocks on the Moon's surface are older than those on the Earth's surface. The best evidence for this is:\nIs \"Radioactive dating of lunar samples shows that they are older.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq12_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Most rocks on the Moon's surface are older than those on the Earth's surface. The best evidence for this is:\nIs \"Lunar rocks are composed of fragments pulverized by many impacts.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq12_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Most rocks on the Moon's surface are older than those on the Earth's surface. The best evidence for this is:\nIs \"Lunar rocks are composed of fragments pulverized by many impacts.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq13_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: What is the Cassini division of Saturn's rings?\nIs \"a large gap visible from Earth produced by an orbital resonance with the moon Mimas\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq13_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: What is the Cassini division of Saturn's rings?\nIs \"a large gap visible from Earth produced by an orbital resonance with the moon Mimas\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq13_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: What is the Cassini division of Saturn's rings?\nIs \"a dark ring visible from Earth composed of dark dusty particles\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq13_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: What is the Cassini division of Saturn's rings?\nIs \"a dark ring visible from Earth composed of dark dusty particles\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq14_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Approximately how long does it take Pluto to orbit the Sun once?\nIs \"250 years\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq14_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Approximately how long does it take Pluto to orbit the Sun once?\nIs \"250 years\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq14_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Approximately how long does it take Pluto to orbit the Sun once?\nIs \"150 years\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq14_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Approximately how long does it take Pluto to orbit the Sun once?\nIs \"150 years\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq15_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?\nIs \"It makes the orbit of Io slightly elliptical.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq15_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?\nIs \"It makes the orbit of Io slightly elliptical.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq15_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?\nIs \"It creates a gap with no asteriods between the orbits.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq15_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?\nIs \"It creates a gap with no asteriods between the orbits.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq16_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nIs \"Amino acids with a preferred orientation or \"chirality\"\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq16_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nIs \"Amino acids with a preferred orientation or \"chirality\"\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq16_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nIs \"Magnetite grains similar to those formed by bacteria on Earth\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq16_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nIs \"Magnetite grains similar to those formed by bacteria on Earth\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq17_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: How did Eratosthenes estimate the size of the Earth in 240 B.C.?\nIs \"By measuring the maximum altitude of the Sun in two cities at different latitudes at the same time on the same day.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq17_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: How did Eratosthenes estimate the size of the Earth in 240 B.C.?\nIs \"By measuring the maximum altitude of the Sun in two cities at different latitudes at the same time on the same day.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq17_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: How did Eratosthenes estimate the size of the Earth in 240 B.C.?\nIs \"By measuring the size of Earth's shadow on the Moon during a lunar eclipse.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq17_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: How did Eratosthenes estimate the size of the Earth in 240 B.C.?\nIs \"By measuring the size of Earth's shadow on the Moon during a lunar eclipse.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq18_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: ____________ refers to a strategic process involving stakeholder assessment to create long-term relationships with customers, while maintaining, supporting, and enhancing the natural environment.\nIs \"Green Marketing\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq18_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: ____________ refers to a strategic process involving stakeholder assessment to create long-term relationships with customers, while maintaining, supporting, and enhancing the natural environment.\nIs \"Green Marketing\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq18_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: ____________ refers to a strategic process involving stakeholder assessment to create long-term relationships with customers, while maintaining, supporting, and enhancing the natural environment.\nIs \"Superfund reauthorization\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq18_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: ____________ refers to a strategic process involving stakeholder assessment to create long-term relationships with customers, while maintaining, supporting, and enhancing the natural environment.\nIs \"Superfund reauthorization\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq19_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: ________ reasoning is considered by many to be prevalent within society and particularly within businesses, where it is often referred to in the form of a ___________.\nIs \"Consequentialist, Cost-benefit analysis\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq19_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: ________ reasoning is considered by many to be prevalent within society and particularly within businesses, where it is often referred to in the form of a ___________.\nIs \"Consequentialist, Cost-benefit analysis\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq19_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: ________ reasoning is considered by many to be prevalent within society and particularly within businesses, where it is often referred to in the form of a ___________.\nIs \"Rationalised, Cost-benefit analysis\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq19_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: ________ reasoning is considered by many to be prevalent within society and particularly within businesses, where it is often referred to in the form of a ___________.\nIs \"Rationalised, Cost-benefit analysis\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq20_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question:  The ________ perspective on sustainability resulted from growth models that analysed the carrying capacity of the planet, overall concluding that the finite capacity of the earth and_______, ________ and _______ by current and past generations could reduce quality of life for future generations. This contrasts with the environmental perspective with focuses on the need to maintain and preserve the natural environment.\nIs \"Environmental, Underuse of resources, Overpopulation, Over pollution\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq20_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question:  The ________ perspective on sustainability resulted from growth models that analysed the carrying capacity of the planet, overall concluding that the finite capacity of the earth and_______, ________ and _______ by current and past generations could reduce quality of life for future generations. This contrasts with the environmental perspective with focuses on the need to maintain and preserve the natural environment.\nIs \"Environmental, Underuse of resources, Overpopulation, Over pollution\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq20_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question:  The ________ perspective on sustainability resulted from growth models that analysed the carrying capacity of the planet, overall concluding that the finite capacity of the earth and_______, ________ and _______ by current and past generations could reduce quality of life for future generations. This contrasts with the environmental perspective with focuses on the need to maintain and preserve the natural environment.\nIs \"Economic, Overuse of resources, Overpopulation, Over pollution,\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq20_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question:  The ________ perspective on sustainability resulted from growth models that analysed the carrying capacity of the planet, overall concluding that the finite capacity of the earth and_______, ________ and _______ by current and past generations could reduce quality of life for future generations. This contrasts with the environmental perspective with focuses on the need to maintain and preserve the natural environment.\nIs \"Economic, Overuse of resources, Overpopulation, Over pollution,\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq21_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is not one the underlying principles of the corporate governance Combined Code of Practice?\nIs \"Acceptability\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq21_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is not one the underlying principles of the corporate governance Combined Code of Practice?\nIs \"Acceptability\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq21_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is not one the underlying principles of the corporate governance Combined Code of Practice?\nIs \"Availability\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq21_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is not one the underlying principles of the corporate governance Combined Code of Practice?\nIs \"Availability\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq22_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Ethical issues related to marketing communications include the fact that they are _________ and unavoidable, they create ________ needs, reinforce _________ and perpetuate _________ and ______.\nIs \"Intrusive, Artificial, Consumerism, Insecurity, Social Stereotypes\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq22_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Ethical issues related to marketing communications include the fact that they are _________ and unavoidable, they create ________ needs, reinforce _________ and perpetuate _________ and ______.\nIs \"Intrusive, Artificial, Consumerism, Insecurity, Social Stereotypes\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq22_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Ethical issues related to marketing communications include the fact that they are _________ and unavoidable, they create ________ needs, reinforce _________ and perpetuate _________ and ______.\nIs \"Intrusive, Artificial, De-materialism, Security, Happiness\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq22_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Ethical issues related to marketing communications include the fact that they are _________ and unavoidable, they create ________ needs, reinforce _________ and perpetuate _________ and ______.\nIs \"Intrusive, Artificial, De-materialism, Security, Happiness\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq23_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: What term can be used to describe 'the hypothetical agreement between member of society and those who govern it which establishes the inter-relationships, rights and responsibilities on a fair basis'?\nIs \"Social Contract\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq23_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: What term can be used to describe 'the hypothetical agreement between member of society and those who govern it which establishes the inter-relationships, rights and responsibilities on a fair basis'?\nIs \"Social Contract\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq23_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: What term can be used to describe 'the hypothetical agreement between member of society and those who govern it which establishes the inter-relationships, rights and responsibilities on a fair basis'?\nIs \"Duty Ethics\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq23_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: What term can be used to describe 'the hypothetical agreement between member of society and those who govern it which establishes the inter-relationships, rights and responsibilities on a fair basis'?\nIs \"Duty Ethics\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq24_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is the commonest cause of dementia in the UK?\nIs \"Alzheimer's disease.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq24_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is the commonest cause of dementia in the UK?\nIs \"Alzheimer's disease.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq24_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is the commonest cause of dementia in the UK?\nIs \"HIV infection.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq24_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is the commonest cause of dementia in the UK?\nIs \"HIV infection.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq25_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following drugs may be used to enhance gastric motility?\nIs \"Erythromycin.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq25_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following drugs may be used to enhance gastric motility?\nIs \"Erythromycin.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq25_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following drugs may be used to enhance gastric motility?\nIs \"Adrenaline.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq25_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following drugs may be used to enhance gastric motility?\nIs \"Adrenaline.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq26_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Prior to undergoing a painful procedure, a patient should be informed about what to expect and how their pain will be controlled, as this is associated with:\nIs \"a reduction in anxiety and perceived pain intensity.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq26_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Prior to undergoing a painful procedure, a patient should be informed about what to expect and how their pain will be controlled, as this is associated with:\nIs \"a reduction in anxiety and perceived pain intensity.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq26_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Prior to undergoing a painful procedure, a patient should be informed about what to expect and how their pain will be controlled, as this is associated with:\nIs \"a decrease in the frequency of pain-related problems such as nausea and vomiting.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq26_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Prior to undergoing a painful procedure, a patient should be informed about what to expect and how their pain will be controlled, as this is associated with:\nIs \"a decrease in the frequency of pain-related problems such as nausea and vomiting.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq27_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is true of hepatomegaly?\nIs \"The presence of jaundice, spider naevi and purpura suggest alcohol as a cause\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq27_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is true of hepatomegaly?\nIs \"The presence of jaundice, spider naevi and purpura suggest alcohol as a cause\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq27_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is true of hepatomegaly?\nIs \"The liver enlarges downwards from the left hypochondrium\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq27_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is true of hepatomegaly?\nIs \"The liver enlarges downwards from the left hypochondrium\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq28_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A normal heart rate for an adult at rest is:\nIs \"60-100 bpm.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq28_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A normal heart rate for an adult at rest is:\nIs \"60-100 bpm.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq28_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A normal heart rate for an adult at rest is:\nIs \"60-80 bpm.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq28_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A normal heart rate for an adult at rest is:\nIs \"60-80 bpm.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq29_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Insensible loss does not come from:\nIs \"excessive weight loss.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq29_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Insensible loss does not come from:\nIs \"excessive weight loss.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq29_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Insensible loss does not come from:\nIs \"using unhumidified oxygen.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq29_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Insensible loss does not come from:\nIs \"using unhumidified oxygen.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq30_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?\nIs \"Increasing the total surface area available for diffusion\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq30_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?\nIs \"Increasing the total surface area available for diffusion\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq30_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?\nIs \"Decreasing the partial pressure gradient of the gas\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq30_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following would increase the rate at which a gas diffuses between the alveoli of the lung and the blood within a pulmonary capillary?\nIs \"Decreasing the partial pressure gradient of the gas\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq31_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by\nIs \"crossing over\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq31_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by\nIs \"crossing over\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq31_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by\nIs \"independent assortment\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq31_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A female fruit fly bearing linked genes that produce the phenotype gray body and normal wings mates with a male fruit fly of phenotype black body and vestigial wings. The presence of gray-bodied, vestigialwinged flies among the progeny is best explained by\nIs \"independent assortment\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq32_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Approximately what fraction of the human genome encodes proteins?\nIs \"2%\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq32_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Approximately what fraction of the human genome encodes proteins?\nIs \"2%\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq32_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Approximately what fraction of the human genome encodes proteins?\nIs \"25%\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq32_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Approximately what fraction of the human genome encodes proteins?\nIs \"25%\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq33_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms\nIs \"hydrogen bonding between the peptide backbone atoms\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq33_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms\nIs \"hydrogen bonding between the peptide backbone atoms\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq33_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms\nIs \"peptide linkages that covalently bond amino acids\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq33_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to (A) hydrogen bonding between the peptide backbone atoms\nIs \"peptide linkages that covalently bond amino acids\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq34_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between\nIs \"males in order to obtain mates\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq34_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between\nIs \"males in order to obtain mates\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq34_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between\nIs \"females in order to obtain mates\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq34_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Among primates, a high degree of sexual dimorphism in a species usually indicates intense competition between\nIs \"females in order to obtain mates\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq35_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?\nIs \"Thymine dimers\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq35_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?\nIs \"Thymine dimers\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq35_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?\nIs \"Depurination\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq35_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: In humans, a hereditary disorder called xeroderma pigmentosum (XP) can result in the inability to repair ultraviolet damage to DNA. Which of the following molecular lesions is most likely to accrue in individuals with XP?\nIs \"Depurination\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq36_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is a true statement about optical isomerism of complexes containing achiral ligands?\nIs \"Octahedral complexes of monodentate ligands can display optical isomerism only when they have at least three different ligands.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq36_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is a true statement about optical isomerism of complexes containing achiral ligands?\nIs \"Octahedral complexes of monodentate ligands can display optical isomerism only when they have at least three different ligands.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq36_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is a true statement about optical isomerism of complexes containing achiral ligands?\nIs \"Square planar complexes can display optical isomerism only if all four ligands are identical.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq36_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is a true statement about optical isomerism of complexes containing achiral ligands?\nIs \"Square planar complexes can display optical isomerism only if all four ligands are identical.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq37_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following statements about nuclear binding energies is NOT true?\nIs \"Nuclear binding energies have about the same magnitude as chemical bond energies.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq37_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following statements about nuclear binding energies is NOT true?\nIs \"Nuclear binding energies have about the same magnitude as chemical bond energies.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq37_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following statements about nuclear binding energies is NOT true?\nIs \"Binding energy per nucleon reaches a maximum for 56Fe.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq37_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following statements about nuclear binding energies is NOT true?\nIs \"Binding energy per nucleon reaches a maximum for 56Fe.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq38_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Considering 0.1 M aqueous solutions of each of the following, which solution has the lowest pH?\nIs \"NaCl\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq38_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Considering 0.1 M aqueous solutions of each of the following, which solution has the lowest pH?\nIs \"NaCl\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq38_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Considering 0.1 M aqueous solutions of each of the following, which solution has the lowest pH?\nIs \"Na2CO3\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq38_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Considering 0.1 M aqueous solutions of each of the following, which solution has the lowest pH?\nIs \"Na2CO3\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq39_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The number of allowed energy levels for the 55Mn nuclide are:\nIs \"3\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq39_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The number of allowed energy levels for the 55Mn nuclide are:\nIs \"3\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq39_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The number of allowed energy levels for the 55Mn nuclide are:\nIs \"5\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq39_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The number of allowed energy levels for the 55Mn nuclide are:\nIs \"5\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq40_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The amplitude of a free induction decay drops to 25% of its initial intensity after 1.0 s. Assuming exponential relaxation and \u03a9 = 0, determine the value of T2.\nIs \"1.661 s\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq40_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The amplitude of a free induction decay drops to 25% of its initial intensity after 1.0 s. Assuming exponential relaxation and \u03a9 = 0, determine the value of T2.\nIs \"1.661 s\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq40_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The amplitude of a free induction decay drops to 25% of its initial intensity after 1.0 s. Assuming exponential relaxation and \u03a9 = 0, determine the value of T2.\nIs \"0.721 s\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq40_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The amplitude of a free induction decay drops to 25% of its initial intensity after 1.0 s. Assuming exponential relaxation and \u03a9 = 0, determine the value of T2.\nIs \"0.721 s\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq41_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A student performs five titrations and obtains a mean result of 0.110 M, with a standard deviation of 0.001 M. If the actual concentration of the titrated solution is 0.100 M, which of the following is true about the titration results?\nIs \"Precise but not accurate\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq41_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A student performs five titrations and obtains a mean result of 0.110 M, with a standard deviation of 0.001 M. If the actual concentration of the titrated solution is 0.100 M, which of the following is true about the titration results?\nIs \"Precise but not accurate\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq41_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A student performs five titrations and obtains a mean result of 0.110 M, with a standard deviation of 0.001 M. If the actual concentration of the titrated solution is 0.100 M, which of the following is true about the titration results?\nIs \"Accurate but not precise\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq41_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A student performs five titrations and obtains a mean result of 0.110 M, with a standard deviation of 0.001 M. If the actual concentration of the titrated solution is 0.100 M, which of the following is true about the titration results?\nIs \"Accurate but not precise\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq42_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?\nIs \"Finding a shortest cycle in G\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq42_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?\nIs \"Finding a shortest cycle in G\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq42_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?\nIs \"Finding a longest simple cycle in G\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq42_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?\nIs \"Finding a longest simple cycle in G\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq43_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following statements about Ethernets is typically FALSE?\nIs \"Ethernets use circuit switching to send messages.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq43_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following statements about Ethernets is typically FALSE?\nIs \"Ethernets use circuit switching to send messages.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq43_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following statements about Ethernets is typically FALSE?\nIs \"Ethernets use buses with multiple masters.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq43_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following statements about Ethernets is typically FALSE?\nIs \"Ethernets use buses with multiple masters.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq44_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following algorithms has running time \u0398(n^2) in the worst case but \u0398(n log n) on average?\nIs \"Quicksort\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq44_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following algorithms has running time \u0398(n^2) in the worst case but \u0398(n log n) on average?\nIs \"Quicksort\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq44_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following algorithms has running time \u0398(n^2) in the worst case but \u0398(n log n) on average?\nIs \"Mergesort\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq44_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following algorithms has running time \u0398(n^2) in the worst case but \u0398(n log n) on average?\nIs \"Mergesort\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq45_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?\nIs \"A heap area\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq45_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?\nIs \"A heap area\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq45_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?\nIs \"The return address\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq45_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is usually NOT represented in a subroutine's activation record frame for a stack-based programming language?\nIs \"The return address\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq46_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following\nIs \"one instance link and then zero or more subclass links\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq46_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following\nIs \"one instance link and then zero or more subclass links\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq46_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following\nIs \"one or more instance links and then one or more subclass links\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq46_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following\nIs \"one or more instance links and then one or more subclass links\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq47_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?\nIs \"{-6, -3, -2, -1, 1, 2, 3, 6}\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq47_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?\nIs \"{-6, -3, -2, -1, 1, 2, 3, 6}\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq47_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?\nIs \"{-6, -3, -2, -1, 0, 1, 2, 3, 6}\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq47_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Which of the following sets of integers could possibly be the set of all common divisors of two integers?\nIs \"{-6, -3, -2, -1, 0, 1, 2, 3, 6}\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq48_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: If A is a subset of the real line R and A contains each rational number, which of the following must be true?\nIs \"If A is closed, then A = R.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq48_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: If A is a subset of the real line R and A contains each rational number, which of the following must be true?\nIs \"If A is closed, then A = R.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq48_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: If A is a subset of the real line R and A contains each rational number, which of the following must be true?\nIs \"If A is uncountable, then A is open.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq48_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: If A is a subset of the real line R and A contains each rational number, which of the following must be true?\nIs \"If A is uncountable, then A is open.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq49_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: For which of the following rings is it possible for the product of two nonzero elements to be zero?\nIs \"The ring of continuous real-valued functions on [0, 1]\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq49_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: For which of the following rings is it possible for the product of two nonzero elements to be zero?\nIs \"The ring of continuous real-valued functions on [0, 1]\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq49_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: For which of the following rings is it possible for the product of two nonzero elements to be zero?\nIs \"The ring {a + b * sqrt(2) : a and b are rational numbers}\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq49_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: For which of the following rings is it possible for the product of two nonzero elements to be zero?\nIs \"The ring {a + b * sqrt(2) : a and b are rational numbers}\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq50_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\nIs \"x^2 + y^2 = 9\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq50_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\nIs \"x^2 + y^2 = 9\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq50_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\nIs \"x^2 + y^2 = 1\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq50_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\nIs \"x^2 + y^2 = 1\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq51_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Let T: R^2 -> R^2 be the linear transformation that maps the point (1, 2) to (2, 3) and the point (-1, 2) to (2, -3). Then T maps the point (2, 1) to\nIs \"(1, 6)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq51_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Let T: R^2 -> R^2 be the linear transformation that maps the point (1, 2) to (2, 3) and the point (-1, 2) to (2, -3). Then T maps the point (2, 1) to\nIs \"(1, 6)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq51_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Let T: R^2 -> R^2 be the linear transformation that maps the point (1, 2) to (2, 3) and the point (-1, 2) to (2, -3). Then T maps the point (2, 1) to\nIs \"(-1, 4)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq51_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Let T: R^2 -> R^2 be the linear transformation that maps the point (1, 2) to (2, 3) and the point (-1, 2) to (2, -3). Then T maps the point (2, 1) to\nIs \"(-1, 4)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq52_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following are valid intervals of convergence for a power series?\n(I) [\u22121, 3)\n(II) (\u2212\u221e, 0]\n(III) [2, 2] \u222a [3, 3]\n(IV) (\u2212\u221e,\u221e)\nIs \"(I) and (IV )\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq52_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following are valid intervals of convergence for a power series?\n(I) [\u22121, 3)\n(II) (\u2212\u221e, 0]\n(III) [2, 2] \u222a [3, 3]\n(IV) (\u2212\u221e,\u221e)\nIs \"(I) and (IV )\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq52_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following are valid intervals of convergence for a power series?\n(I) [\u22121, 3)\n(II) (\u2212\u221e, 0]\n(III) [2, 2] \u222a [3, 3]\n(IV) (\u2212\u221e,\u221e)\nIs \"(II) and (III)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq52_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following are valid intervals of convergence for a power series?\n(I) [\u22121, 3)\n(II) (\u2212\u221e, 0]\n(III) [2, 2] \u222a [3, 3]\n(IV) (\u2212\u221e,\u221e)\nIs \"(II) and (III)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq53_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Let f(x, y) = x^3 + y^3 + 3xy for all real x and y. Then there exist distinct points P and Q such that f has a\nIs \"local maximum at P and a saddle point at Q\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq53_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Let f(x, y) = x^3 + y^3 + 3xy for all real x and y. Then there exist distinct points P and Q such that f has a\nIs \"local maximum at P and a saddle point at Q\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq53_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Let f(x, y) = x^3 + y^3 + 3xy for all real x and y. Then there exist distinct points P and Q such that f has a\nIs \"local maximum at P and at Q\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq53_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Let f(x, y) = x^3 + y^3 + 3xy for all real x and y. Then there exist distinct points P and Q such that f has a\nIs \"local maximum at P and at Q\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq54_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to better players, and is very hard on himself when he cannot master a section of one of his pieces. Which of the following answers best describes David?\nIs \"Low self-esteem, strong self-efficacy, internal locus of control\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq54_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to better players, and is very hard on himself when he cannot master a section of one of his pieces. Which of the following answers best describes David?\nIs \"Low self-esteem, strong self-efficacy, internal locus of control\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq54_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to better players, and is very hard on himself when he cannot master a section of one of his pieces. Which of the following answers best describes David?\nIs \"Low self-esteem, strong self-efficacy, external locus of control\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq54_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: David is a nationally ranked cellist who recently accepted a scholarship to a major college to perform in the orchestra. Over the summer, he has been given a packet of sheet music to be proficient in by fall semester. David is a perfectionist when it comes to his craft. He always compares himself to better players, and is very hard on himself when he cannot master a section of one of his pieces. Which of the following answers best describes David?\nIs \"Low self-esteem, strong self-efficacy, external locus of control\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq55_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm\nIs \"I only\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq55_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm\nIs \"I only\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq55_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm\nIs \"III only\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq55_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The lining of the digestive tract and the respiratory tract develops from which germ layer? I. Endoderm II. Mesoderm III. Ectoderm\nIs \"III only\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq56_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:\nI. Self-esteem hypothesis\nII. Contact hypothesis\nIII. Hypothesis\nIV. Legal hypothesis\nIs \"I, II, and IV\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq56_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:\nI. Self-esteem hypothesis\nII. Contact hypothesis\nIII. Hypothesis\nIV. Legal hypothesis\nIs \"I, II, and IV\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq56_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:\nI. Self-esteem hypothesis\nII. Contact hypothesis\nIII. Hypothesis\nIV. Legal hypothesis\nIs \"I, II, and III\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq56_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A local politician starts a task force to reduce prejudice and hate crimes, and the task force provides recommendations for increased access to education, paid community improvement projects open to people from different, possibly conflicted, groups, and stricter anti-hate ordinances to be passed at the local level. These recommendations are based on:\nI. Self-esteem hypothesis\nII. Contact hypothesis\nIII. Hypothesis\nIV. Legal hypothesis\nIs \"I, II, and III\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq57_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters away traveling at 72 km/h in the same direction. If the frequency of the gunshot is normally 800Hz, what is the perceived frequency which the camera picks up the gunshot at?\nIs \"924 Hz\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq57_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters away traveling at 72 km/h in the same direction. If the frequency of the gunshot is normally 800Hz, what is the perceived frequency which the camera picks up the gunshot at?\nIs \"924 Hz\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq57_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters away traveling at 72 km/h in the same direction. If the frequency of the gunshot is normally 800Hz, what is the perceived frequency which the camera picks up the gunshot at?\nIs \"787 Hz\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq57_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: While working on a scene for an action movie, a sound technician is given the task of changing the frequency of a gunshot to more accurately reflect the normal speed of sound. The gunshot came from an actor inside a car traveling 108 km/h, and it was recorded by a camera on a platform 200 meters away traveling at 72 km/h in the same direction. If the frequency of the gunshot is normally 800Hz, what is the perceived frequency which the camera picks up the gunshot at?\nIs \"787 Hz\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq58_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The sex of a child is dictated by the inheritance of:\nIs \"a single Y chromosome from the father.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq58_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The sex of a child is dictated by the inheritance of:\nIs \"a single Y chromosome from the father.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq58_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The sex of a child is dictated by the inheritance of:\nIs \"a recessive allele on the X chromosome.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq58_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The sex of a child is dictated by the inheritance of:\nIs \"a recessive allele on the X chromosome.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq59_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Sauna use, sometimes referred to as \"sauna bathing,\" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia \u2013 an increase in the body's core temperature \u2013 that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors\u2026 In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease\u2026 The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits \u2013 and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week\u2026 The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)\u2026Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40\u00b0C (104\u00b0F), and then changes in core body temperature occur, rising slowly from 37\u00b0C (98.6\u00b0F, or normal) to 38\u00b0C (100.4\u00b0F) and then rapidly increasing to 39\u00b0C (102.2\u00b0F)\u2026  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance\u2026 Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors\u2026 The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]\n\nAccording to the article, which of the following is NOT a benefit of sauna use?\nIs \"Decreased rate of erectile dysfunction.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq59_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Sauna use, sometimes referred to as \"sauna bathing,\" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia \u2013 an increase in the body's core temperature \u2013 that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors\u2026 In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease\u2026 The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits \u2013 and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week\u2026 The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)\u2026Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40\u00b0C (104\u00b0F), and then changes in core body temperature occur, rising slowly from 37\u00b0C (98.6\u00b0F, or normal) to 38\u00b0C (100.4\u00b0F) and then rapidly increasing to 39\u00b0C (102.2\u00b0F)\u2026  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance\u2026 Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors\u2026 The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]\n\nAccording to the article, which of the following is NOT a benefit of sauna use?\nIs \"Decreased rate of erectile dysfunction.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq59_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Sauna use, sometimes referred to as \"sauna bathing,\" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia \u2013 an increase in the body's core temperature \u2013 that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors\u2026 In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease\u2026 The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits \u2013 and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week\u2026 The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)\u2026Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40\u00b0C (104\u00b0F), and then changes in core body temperature occur, rising slowly from 37\u00b0C (98.6\u00b0F, or normal) to 38\u00b0C (100.4\u00b0F) and then rapidly increasing to 39\u00b0C (102.2\u00b0F)\u2026  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance\u2026 Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors\u2026 The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]\n\nAccording to the article, which of the following is NOT a benefit of sauna use?\nIs \"Decreased risk of heart attacks.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq59_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Sauna use, sometimes referred to as \"sauna bathing,\" is characterized by short-term passive exposure to extreme heat. This exposure elicits mild hyperthermia \u2013 an increase in the body's core temperature \u2013 that induces a thermoregulatory response involving neuroendocrine, cardiovascular, and cytoprotective mechanisms that work together to restore homeostasis and condition the body for future heat stressors\u2026 In recent decades, sauna bathing has emerged as a means to increase lifespan and improve overall health, based on compelling data from observational, interventional, and mechanistic studies. Of particular interest are the findings from studies of participants in the Kuopio Ischemic Heart Disease Risk Factor (KIHD) Study, an ongoing prospective population-based cohort study of health outcomes in more than 2,300 middle-aged men from eastern Finland, which identified strong links between sauna use and reduced death and disease\u2026 The KIHD findings showed that men who used the sauna two to three times per week were 27 percent less likely to die from cardiovascular-related causes than men who didn't use the sauna.[2] Furthermore, the benefits they experienced were found to be dose-dependent: Men who used the sauna roughly twice as often, about four to seven times per week, experienced roughly twice the benefits \u2013 and were 50 percent less likely to die from cardiovascular-related causes.[2] In addition, frequent sauna users were found to be 40 percent less likely to die from all causes of premature death. These findings held true even when considering age, activity levels, and lifestyle factors that might have influenced the men's health.[2]... The KIHD also revealed that frequent sauna use reduced the risk of developing dementia and Alzheimer's disease in a dose-dependent manner. Men who used the sauna two to three times per week had a 66 percent lower risk of developing dementia and a 65 percent lower risk of developing Alzheimer's disease, compared to men who used the sauna only one time per week\u2026 The health benefits associated with sauna use extended to other aspects of mental health, as well. Men participating in the KIHD study who used the sauna four to seven times per week were 77 percent less likely to develop psychotic disorders, regardless of the men's dietary habits, socioeconomic status, physical activity, and inflammatory status (as measured by C-reactive protein)\u2026Exposure to high temperature stresses the body, eliciting a rapid, robust response. The skin and core body temperatures increase markedly, and sweating ensues. The skin heats first, rising to 40\u00b0C (104\u00b0F), and then changes in core body temperature occur, rising slowly from 37\u00b0C (98.6\u00b0F, or normal) to 38\u00b0C (100.4\u00b0F) and then rapidly increasing to 39\u00b0C (102.2\u00b0F)\u2026  Cardiac output, a measure of the amount of work the heart performs in response to the body's need for oxygen, increases by 60 to 70 percent, while the heart rate (the number of beats per minute) increases and the stroke volume (the amount of blood pumped) remains unchanged.[5] During this time, approximately 50 to 70 percent of the body's blood flow is redistributed from the core to the skin to facilitate sweating. The average person loses approximately 0.5 kg of sweat while sauna bathing.[11] Acute heat exposure also induces a transient increase in overall plasma volume to mitigate the decrease in core blood volume. This increase in plasma volume not only provides a reserve source of fluid for sweating, but it also acts like the water in a car's radiator, cooling the body to prevent rapid increases in core body temperature and promoting heat tolerance\u2026 Repeated sauna use acclimates the body to heat and optimizes the body's response to future exposures, likely due to a biological phenomenon known as hormesis, a compensatory defense response following exposure to a mild stressor that is disproportionate to the magnitude of the stressor. Hormesis triggers a vast array of protective mechanisms that not only repair cell damage but also provide protection from subsequent exposures to more devastating stressors\u2026 The physiological responses to sauna use are remarkably similar to those experienced during moderate- to vigorous-intensity exercise. In fact, sauna use has been proposed as an alternative to exercise for people who are unable to engage in physical activity due to chronic disease or physical limitations.[13]\n\nAccording to the article, which of the following is NOT a benefit of sauna use?\nIs \"Decreased risk of heart attacks.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq60_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Protons used in cancer therapy are typically accelerated to about 0.6c . How much work must be done on a particle of mass m in order for it to reach this speed, assuming it starts at rest?\nIs \"0.25mc^2\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq60_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Protons used in cancer therapy are typically accelerated to about 0.6c . How much work must be done on a particle of mass m in order for it to reach this speed, assuming it starts at rest?\nIs \"0.25mc^2\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq60_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Protons used in cancer therapy are typically accelerated to about 0.6c . How much work must be done on a particle of mass m in order for it to reach this speed, assuming it starts at rest?\nIs \"0.60mc^2\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq60_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Protons used in cancer therapy are typically accelerated to about 0.6c . How much work must be done on a particle of mass m in order for it to reach this speed, assuming it starts at rest?\nIs \"0.60mc^2\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq61_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton\u2019s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be\nIs \"deflected in the -x-direction\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq61_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton\u2019s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be\nIs \"deflected in the -x-direction\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq61_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton\u2019s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be\nIs \"deflected in the +y-direction\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq61_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton\u2019s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be\nIs \"deflected in the +y-direction\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq62_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: If the absolute temperature of a blackbody is increased by a factor of 3, the energy radiated per second per unit area does which of the following?\nIs \"Increases by a factor of 81.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq62_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: If the absolute temperature of a blackbody is increased by a factor of 3, the energy radiated per second per unit area does which of the following?\nIs \"Increases by a factor of 81.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq62_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: If the absolute temperature of a blackbody is increased by a factor of 3, the energy radiated per second per unit area does which of the following?\nIs \"Decreases by a factor of 81.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq62_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: If the absolute temperature of a blackbody is increased by a factor of 3, the energy radiated per second per unit area does which of the following?\nIs \"Decreases by a factor of 81.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq63_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: At the present time, the temperature of the universe (i.e., the microwave radiation background) is about 3 K. When the temperature was 12 K, typical objects in the universe, such as galaxies, were\nIs \"one-quarter as distant as they are today\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq63_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: At the present time, the temperature of the universe (i.e., the microwave radiation background) is about 3 K. When the temperature was 12 K, typical objects in the universe, such as galaxies, were\nIs \"one-quarter as distant as they are today\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq63_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: At the present time, the temperature of the universe (i.e., the microwave radiation background) is about 3 K. When the temperature was 12 K, typical objects in the universe, such as galaxies, were\nIs \"separated by about the same distances as they are today\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq63_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: At the present time, the temperature of the universe (i.e., the microwave radiation background) is about 3 K. When the temperature was 12 K, typical objects in the universe, such as galaxies, were\nIs \"separated by about the same distances as they are today\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq64_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The best type of laser with which to do spectroscopy over a range of visible wavelengths is\nIs \"a dye laser\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq64_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The best type of laser with which to do spectroscopy over a range of visible wavelengths is\nIs \"a dye laser\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq64_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The best type of laser with which to do spectroscopy over a range of visible wavelengths is\nIs \"an excimer laser\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq64_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The best type of laser with which to do spectroscopy over a range of visible wavelengths is\nIs \"an excimer laser\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq65_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is\nIs \"600 nm\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq65_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is\nIs \"600 nm\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq65_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is\nIs \"650 nm\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq65_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is\nIs \"650 nm\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq66_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The AH Protocol provides source authentication and data integrity, but not\nIs \"Privacy\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq66_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The AH Protocol provides source authentication and data integrity, but not\nIs \"Privacy\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq66_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The AH Protocol provides source authentication and data integrity, but not\nIs \"Both A & C\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq66_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The AH Protocol provides source authentication and data integrity, but not\nIs \"Both A & C\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq67_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?\nIs \"Session layer\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq67_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?\nIs \"Session layer\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq67_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?\nIs \"Physical layer\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq67_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Failed sessions allow brute-force attacks on access credentials. This type of attacks are done in which layer of the OSI model?\nIs \"Physical layer\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq68_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: In Brumley and Boneh\u2019s paper on side-channel attacks, why does blinding prevent the timing attack from working?\nIs \"Blinding randomizes the ciphertext being decrypted, thus obscuring the correlation between an adversary\u2019s input and the timing differences.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq68_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: In Brumley and Boneh\u2019s paper on side-channel attacks, why does blinding prevent the timing attack from working?\nIs \"Blinding randomizes the ciphertext being decrypted, thus obscuring the correlation between an adversary\u2019s input and the timing differences.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq68_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: In Brumley and Boneh\u2019s paper on side-channel attacks, why does blinding prevent the timing attack from working?\nIs \"Blinding adds a random amount of time to the decryption due to the multiplication and division by the blinding random value r, which obscures the timing differences used in the attack.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq68_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: In Brumley and Boneh\u2019s paper on side-channel attacks, why does blinding prevent the timing attack from working?\nIs \"Blinding adds a random amount of time to the decryption due to the multiplication and division by the blinding random value r, which obscures the timing differences used in the attack.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq69_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Let F: K \\times R \\to MF:K\u00d7R\u2192M be a secure PRF. For m \\in Mm\u2208M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r\u2190R, output (r, F(k,r)\u2295m) ] Is EE symantically secure under CPA?\nIs \"Yes, but only if R is large enough so r never repeats (w.h.p)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq69_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Let F: K \\times R \\to MF:K\u00d7R\u2192M be a secure PRF. For m \\in Mm\u2208M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r\u2190R, output (r, F(k,r)\u2295m) ] Is EE symantically secure under CPA?\nIs \"Yes, but only if R is large enough so r never repeats (w.h.p)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq69_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Let F: K \\times R \\to MF:K\u00d7R\u2192M be a secure PRF. For m \\in Mm\u2208M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r\u2190R, output (r, F(k,r)\u2295m) ] Is EE symantically secure under CPA?\nIs \"It depends on what F is used\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq69_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Let F: K \\times R \\to MF:K\u00d7R\u2192M be a secure PRF. For m \\in Mm\u2208M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r\u2190R, output (r, F(k,r)\u2295m) ] Is EE symantically secure under CPA?\nIs \"It depends on what F is used\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq70_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The __________ was a huge marketplace of Dark Web specifically famous for selling of illegal drugs & narcotics as well as you can find a wide range of other goods for sale.\nIs \"Silk Road\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq70_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The __________ was a huge marketplace of Dark Web specifically famous for selling of illegal drugs & narcotics as well as you can find a wide range of other goods for sale.\nIs \"Silk Road\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq70_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The __________ was a huge marketplace of Dark Web specifically famous for selling of illegal drugs & narcotics as well as you can find a wide range of other goods for sale.\nIs \"Drug Road\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq70_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The __________ was a huge marketplace of Dark Web specifically famous for selling of illegal drugs & narcotics as well as you can find a wide range of other goods for sale.\nIs \"Drug Road\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq71_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.\nIs \"all instructions that modify segment state\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq71_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.\nIs \"all instructions that modify segment state\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq71_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.\nIs \"all indirect loads or stores (via an address in a register or variable)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq71_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Consider the paper Native Client: A Sandbox for Portable, Untrusted x86 Native Code by Yee et al. Ben Bitdiddle notes that NaCl uses Intel x86 segmentation to ensure that the sandboxed module does not read or write memory outside its own data area, and does not execute instructions outside its own code. Ben thinks that with these restrictions alone, executing the sandboxed module must be safe; that is, he thinks validation is not needed. Ben is wrong. Circle the types of x86 machine instructions that the validator always forbids in sandboxed code. Please ignore trampoline and springboard code.\nIs \"all indirect loads or stores (via an address in a register or variable)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq72_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: An airplane with its nose pointing north with an airspeed of 40 km/h in a 30-km/h crosswind (at right angles) has a groundspeed of\nIs \"50 km/h\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq72_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: An airplane with its nose pointing north with an airspeed of 40 km/h in a 30-km/h crosswind (at right angles) has a groundspeed of\nIs \"50 km/h\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq72_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: An airplane with its nose pointing north with an airspeed of 40 km/h in a 30-km/h crosswind (at right angles) has a groundspeed of\nIs \"30 km/h\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq72_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: An airplane with its nose pointing north with an airspeed of 40 km/h in a 30-km/h crosswind (at right angles) has a groundspeed of\nIs \"30 km/h\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq73_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Satellites in circular Earth orbit maintain a constant speed because gravitational force on them is\nIs \"without a component of force along their circular path\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq73_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Satellites in circular Earth orbit maintain a constant speed because gravitational force on them is\nIs \"without a component of force along their circular path\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq73_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Satellites in circular Earth orbit maintain a constant speed because gravitational force on them is\nIs \"practically zero\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq73_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Satellites in circular Earth orbit maintain a constant speed because gravitational force on them is\nIs \"practically zero\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq74_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The color of light most intense in the solar radiation curve is\nIs \"yellow-green\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq74_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The color of light most intense in the solar radiation curve is\nIs \"yellow-green\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq74_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The color of light most intense in the solar radiation curve is\nIs \"red\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq74_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The color of light most intense in the solar radiation curve is\nIs \"red\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq75_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: If the Sun collapsed to become a black hole Planet Earth would\nIs \"continue in its present orbit.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq75_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: If the Sun collapsed to become a black hole Planet Earth would\nIs \"continue in its present orbit.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq75_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: If the Sun collapsed to become a black hole Planet Earth would\nIs \"be pulled apart by tidal forces.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq75_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: If the Sun collapsed to become a black hole Planet Earth would\nIs \"be pulled apart by tidal forces.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq76_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The lowest possible temperature is absolute zero, at\nIs \"Both are the same\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq76_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The lowest possible temperature is absolute zero, at\nIs \"Both are the same\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq76_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The lowest possible temperature is absolute zero, at\nIs \"\u2212273\u00b0C\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq76_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The lowest possible temperature is absolute zero, at\nIs \"\u2212273\u00b0C\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq77_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The fact that the Moon always shows its same face to Earth is evidence that the Moon rotates about its axis about once per\nIs \"month\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq77_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The fact that the Moon always shows its same face to Earth is evidence that the Moon rotates about its axis about once per\nIs \"month\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq77_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The fact that the Moon always shows its same face to Earth is evidence that the Moon rotates about its axis about once per\nIs \"None of these for the moon does not rotate about an axis\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq77_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The fact that the Moon always shows its same face to Earth is evidence that the Moon rotates about its axis about once per\nIs \"None of these for the moon does not rotate about an axis\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq78_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?\nIs \"It would rise more quickly for negative disturbances than for positive ones of the same magnitude\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq78_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?\nIs \"It would rise more quickly for negative disturbances than for positive ones of the same magnitude\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq78_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?\nIs \"It would rise less quickly for negative disturbances than for positive ones of the same magnitude\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq78_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?\nIs \"It would rise less quickly for negative disturbances than for positive ones of the same magnitude\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq79_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: What is the meaning of the term \"heteroscedasticity\"?\nIs \"The variance of the errors is not constant\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq79_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: What is the meaning of the term \"heteroscedasticity\"?\nIs \"The variance of the errors is not constant\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq79_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: What is the meaning of the term \"heteroscedasticity\"?\nIs \"The variance of the dependent variable is not constant\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq79_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: What is the meaning of the term \"heteroscedasticity\"?\nIs \"The variance of the dependent variable is not constant\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq80_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?\n\n(i) The tests will show whether the identified model is either too large or too small\n\n(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality\n\n(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure\n\n(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant\nIs \"(ii) and (iv) only\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq80_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?\n\n(i) The tests will show whether the identified model is either too large or too small\n\n(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality\n\n(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure\n\n(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant\nIs \"(ii) and (iv) only\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq80_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?\n\n(i) The tests will show whether the identified model is either too large or too small\n\n(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality\n\n(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure\n\n(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant\nIs \"(i), (ii), and (iii) only\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq80_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?\n\n(i) The tests will show whether the identified model is either too large or too small\n\n(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality\n\n(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure\n\n(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant\nIs \"(i), (ii), and (iii) only\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq81_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The purpose of \"augmenting\" the Dickey-Fuller test regression is to\nIs \"Ensure that there is no autocorrelation in the test regression residuals\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq81_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The purpose of \"augmenting\" the Dickey-Fuller test regression is to\nIs \"Ensure that there is no autocorrelation in the test regression residuals\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq81_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The purpose of \"augmenting\" the Dickey-Fuller test regression is to\nIs \"Ensure that the test regression residuals are normally distributed\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq81_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The purpose of \"augmenting\" the Dickey-Fuller test regression is to\nIs \"Ensure that the test regression residuals are normally distributed\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq82_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which one of the following is NOT an example of mis-specification of functional form?\nIs \"Excluding a relevant variable from a linear regression model\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq82_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which one of the following is NOT an example of mis-specification of functional form?\nIs \"Excluding a relevant variable from a linear regression model\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq82_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which one of the following is NOT an example of mis-specification of functional form?\nIs \"Modelling y as a function of x when in fact it scales as a function of 1/x\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq82_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which one of the following is NOT an example of mis-specification of functional form?\nIs \"Modelling y as a function of x when in fact it scales as a function of 1/x\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq83_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are\nIs \"More negative than (i.e. bigger in absolute value than) those in the left hand tail of a normal distribution\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq83_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are\nIs \"More negative than (i.e. bigger in absolute value than) those in the left hand tail of a normal distribution\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq83_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are\nIs \"Less negative than (i.e. smaller in absolute value than) those in the left hand tail of a normal distribution\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq83_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are\nIs \"Less negative than (i.e. smaller in absolute value than) those in the left hand tail of a normal distribution\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq84_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Relative error is same as\nIs \"ratio of absolute error and true value.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq84_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Relative error is same as\nIs \"ratio of absolute error and true value.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq84_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Relative error is same as\nIs \"absolute error.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq84_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Relative error is same as\nIs \"absolute error.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq85_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: For a dc machine shunt resistance and armature resistance values are\nIs \"high and low\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq85_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: For a dc machine shunt resistance and armature resistance values are\nIs \"high and low\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq85_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: For a dc machine shunt resistance and armature resistance values are\nIs \"low and low\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq85_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: For a dc machine shunt resistance and armature resistance values are\nIs \"low and low\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq86_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Which of the following is the analogous quantity for mass element in force-voltage analogy?\nIs \"Inductance.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq86_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Which of the following is the analogous quantity for mass element in force-voltage analogy?\nIs \"Inductance.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq86_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Which of the following is the analogous quantity for mass element in force-voltage analogy?\nIs \"Resistance.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq86_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Which of the following is the analogous quantity for mass element in force-voltage analogy?\nIs \"Resistance.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq87_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Silicon and Germanium are ________ elements.\nIs \"tetravalant\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq87_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Silicon and Germanium are ________ elements.\nIs \"tetravalant\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq87_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Silicon and Germanium are ________ elements.\nIs \"hexavalant\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq87_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Silicon and Germanium are ________ elements.\nIs \"hexavalant\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq88_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: What is the value of dielectric constant of air?\nIs \"1.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq88_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: What is the value of dielectric constant of air?\nIs \"1.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq88_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: What is the value of dielectric constant of air?\nIs \"0.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq88_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: What is the value of dielectric constant of air?\nIs \"0.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq89_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: A box which tells the effect of inputs on control sub system is known as\nIs \"Decision box.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq89_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: A box which tells the effect of inputs on control sub system is known as\nIs \"Decision box.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq89_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: A box which tells the effect of inputs on control sub system is known as\nIs \"Logical box.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq89_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: A box which tells the effect of inputs on control sub system is known as\nIs \"Logical box.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq90_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: There are 20 students in Mr. Clark's fourth-grade class. There are 5 times as many students in the entire fourth grade as there are in Mr. Clark's class. Which equation can be used to determine the number of students, n, in the entire fourth grade?\nIs \"20x5=n\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq90_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: There are 20 students in Mr. Clark's fourth-grade class. There are 5 times as many students in the entire fourth grade as there are in Mr. Clark's class. Which equation can be used to determine the number of students, n, in the entire fourth grade?\nIs \"20x5=n\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq90_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: There are 20 students in Mr. Clark's fourth-grade class. There are 5 times as many students in the entire fourth grade as there are in Mr. Clark's class. Which equation can be used to determine the number of students, n, in the entire fourth grade?\nIs \"5xn= 20\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq90_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: There are 20 students in Mr. Clark's fourth-grade class. There are 5 times as many students in the entire fourth grade as there are in Mr. Clark's class. Which equation can be used to determine the number of students, n, in the entire fourth grade?\nIs \"5xn= 20\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq91_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Find the number that makes the statement true: 26.1 mm = _ dm.\nIs \"0.261\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq91_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Find the number that makes the statement true: 26.1 mm = _ dm.\nIs \"0.261\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq91_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Find the number that makes the statement true: 26.1 mm = _ dm.\nIs \"2,610\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq91_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Find the number that makes the statement true: 26.1 mm = _ dm.\nIs \"2,610\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq92_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: The state of Georgia has 159 counties and covers 58056 square miles. What is the average number of square miles per county? Round your answer to the nearest whole number.\nIs \"365 square miles per county\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq92_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: The state of Georgia has 159 counties and covers 58056 square miles. What is the average number of square miles per county? Round your answer to the nearest whole number.\nIs \"365 square miles per county\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq92_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: The state of Georgia has 159 counties and covers 58056 square miles. What is the average number of square miles per county? Round your answer to the nearest whole number.\nIs \"159 square miles per county\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq92_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: The state of Georgia has 159 counties and covers 58056 square miles. What is the average number of square miles per county? Round your answer to the nearest whole number.\nIs \"159 square miles per county\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq93_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Coach Wu has a total of 30 soccerballs. 9 soccer balls are white. The remaining soccer balls are one of three different colors (blue, pink, or green). There is an equal numberof blue, pink, and green balls How many green soccer balls does Coach Wu have?\nIs \"7\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq93_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Coach Wu has a total of 30 soccerballs. 9 soccer balls are white. The remaining soccer balls are one of three different colors (blue, pink, or green). There is an equal numberof blue, pink, and green balls How many green soccer balls does Coach Wu have?\nIs \"7\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq93_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Coach Wu has a total of 30 soccerballs. 9 soccer balls are white. The remaining soccer balls are one of three different colors (blue, pink, or green). There is an equal numberof blue, pink, and green balls How many green soccer balls does Coach Wu have?\nIs \"21\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq93_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Coach Wu has a total of 30 soccerballs. 9 soccer balls are white. The remaining soccer balls are one of three different colors (blue, pink, or green). There is an equal numberof blue, pink, and green balls How many green soccer balls does Coach Wu have?\nIs \"21\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq94_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Solve 5 over 8 *m = 6.\nIs \"9 and 3 over 5\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq94_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Solve 5 over 8 *m = 6.\nIs \"9 and 3 over 5\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq94_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Solve 5 over 8 *m = 6.\nIs \"3 and 3 over 4\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq94_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Solve 5 over 8 *m = 6.\nIs \"3 and 3 over 4\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq95_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: At the beginning of a class period, half of the students in a class go to the library. Later in the period, half of the remaining students go to the computer lab. If there are 8 students remaining in the class, how many students were originally in the class?\nIs \"32 students\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq95_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: At the beginning of a class period, half of the students in a class go to the library. Later in the period, half of the remaining students go to the computer lab. If there are 8 students remaining in the class, how many students were originally in the class?\nIs \"32 students\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq95_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: At the beginning of a class period, half of the students in a class go to the library. Later in the period, half of the remaining students go to the computer lab. If there are 8 students remaining in the class, how many students were originally in the class?\nIs \"24 students\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq95_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: At the beginning of a class period, half of the students in a class go to the library. Later in the period, half of the remaining students go to the computer lab. If there are 8 students remaining in the class, how many students were originally in the class?\nIs \"24 students\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq96_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question: Select the best translation into predicate logic: If Delilah is in New York City, then Juana is in Bogota or Layla is in San Juan.\nIs \"Nd \u2283 (Bj \u2228 Sl)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq96_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question: Select the best translation into predicate logic: If Delilah is in New York City, then Juana is in Bogota or Layla is in San Juan.\nIs \"Nd \u2283 (Bj \u2228 Sl)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq96_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question: Select the best translation into predicate logic: If Delilah is in New York City, then Juana is in Bogota or Layla is in San Juan.\nIs \"Nd \u2283 (Bj \u2022 Sl)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq96_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question: Select the best translation into predicate logic: If Delilah is in New York City, then Juana is in Bogota or Layla is in San Juan.\nIs \"Nd \u2283 (Bj \u2022 Sl)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq97_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question:  Select the best translation into predicate logic: Not all lobsters are red.\nIs \"~(\u2200x)(Lx \u2283 Rx)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq97_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question:  Select the best translation into predicate logic: Not all lobsters are red.\nIs \"~(\u2200x)(Lx \u2283 Rx)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq97_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question:  Select the best translation into predicate logic: Not all lobsters are red.\nIs \"~(\u2203x)(Lx \u2022 Rx)\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq97_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question:  Select the best translation into predicate logic: Not all lobsters are red.\nIs \"~(\u2203x)(Lx \u2022 Rx)\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq98_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question:  Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~A \u2228 ~B) \u2283 C\nIs \"Either Marina not reading a Percy Jackson book or Izzy not playing Minecraft entails that Emily stops working.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq98_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question:  Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~A \u2228 ~B) \u2283 C\nIs \"Either Marina not reading a Percy Jackson book or Izzy not playing Minecraft entails that Emily stops working.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq98_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question:  Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~A \u2228 ~B) \u2283 C\nIs \"If neither Marina reads a Percy Jackson book nor Izzy plays Minecraft, then Emily stops working.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq98_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question:  Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~A \u2228 ~B) \u2283 C\nIs \"If neither Marina reads a Percy Jackson book nor Izzy plays Minecraft, then Emily stops working.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq99_1",
+  "truth": true,
+  "rev": false,
+  "prompt": "Question:  Select the best English interpretation of the given arguments in predicate logic.\nWn \u2228 Wm\n(\u2200x)[Lx \u2283 (Dx \u2283 ~Wx)]\nLn \u2022 Dn\t/ ~(\u2200x)~Wx\nIs \"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is not at work.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq99_1_r",
+  "truth": true,
+  "rev": true,
+  "prompt": "Question:  Select the best English interpretation of the given arguments in predicate logic.\nWn \u2228 Wm\n(\u2200x)[Lx \u2283 (Dx \u2283 ~Wx)]\nLn \u2022 Dn\t/ ~(\u2200x)~Wx\nIs \"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is not at work.\" an incorrect answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq99_0",
+  "truth": false,
+  "rev": false,
+  "prompt": "Question:  Select the best English interpretation of the given arguments in predicate logic.\nWn \u2228 Wm\n(\u2200x)[Lx \u2283 (Dx \u2283 ~Wx)]\nLn \u2022 Dn\t/ ~(\u2200x)~Wx\nIs \"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is at work.\" the correct answer? Answer with Yes or No."
+ },
+ {
+  "id": "acq99_0_r",
+  "truth": false,
+  "rev": true,
+  "prompt": "Question:  Select the best English interpretation of the given arguments in predicate logic.\nWn \u2228 Wm\n(\u2200x)[Lx \u2283 (Dx \u2283 ~Wx)]\nLn \u2022 Dn\t/ ~(\u2200x)~Wx\nIs \"Either Nancy or Marvin are at work. All lawyers are not at work if they are out to dinner. Nancy is a lawyer and out to dinner. So not everything is at work.\" an incorrect answer? Answer with Yes or No."
+ }
+]
