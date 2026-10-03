@@ -141,3 +141,36 @@ persuading the model the request is fine (upstream; restoring the alarm blocks i
 the output format (downstream of the alarm). The framing styles are also the ones that calm the
 alarm most (P7 slot analysis: fiction −0.92, historical −0.98). Needs a pre-registered
 replication (D5).
+
+## D5. Replication on Mistral: not met
+
+| arm | framing | output-forcing | other | over-refusal | MMLU |
+|---|---|---|---|---|---|
+| unchanged | 0.184 | 0.646 | 0.177 | 0.075 | 0.707 |
+| vacd_alarm17 | 0.158 | 0.557 | 0.152 | 0.057 | 0.702 |
+| vacd_rnd17 | 0.234 | 0.639 | 0.190 | 0.057 | 0.691 |
+| vacd_refusal9 | 0.082 | 0.291 | 0.080 | 0.135 | 0.700 |
+
+- D5a not met: framing, alarm − unchanged −0.025 [−0.070, +0.019] (vs random −0.076 [−0.120,
+  −0.032]).
+- D5b not met: on Mistral the alarm push lowers output-forcing jailbreaks more than framing ones
+  (difference of changes +0.063 [−0.006, +0.136]); output-forcing −0.089 [−0.146, −0.032].
+- D5c met: over-refusal 5.7% vs 7.5% unchanged; MMLU −0.5 points.
+
+The Qwen framing/output-forcing dissociation does not replicate; treat it as Qwen-specific.
+What holds on both models: conditional alarm distillation lowers jailbreak success relative to
+the same training along a random direction (Qwen −0.23, Mistral −0.08 framing / −0.08 forcing)
+without raising over-refusal, but it is weaker than distilling the refusal direction, which
+roughly halves Mistral's jailbreak success at +6 points over-refusal.
+
+## Defense line, summary
+
+| approach | outcome |
+|---|---|
+| fear steering (J2) | works on both models vs 20 random directions; Mistral 0.51 → 0.17 |
+| alarm as monitor (D1) | no better than the refusal direction |
+| alarm gain (D2) | null: the gate cannot fire on prompts the attack has calmed |
+| alarm vaccine, last token (D3) | null; a single position is not a bottleneck |
+| conditional alarm distillation (D4/D5) | beats random-direction control on both models at no over-refusal cost; modest vs unchanged (Qwen −59% held-out, Mistral n.s. on framing) |
+| calm-seeking search (P7) | alarm not privileged; refusal is |
+| refusal-direction tools | strongest throughout; gating it halves its over-refusal |
