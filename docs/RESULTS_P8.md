@@ -67,7 +67,30 @@ Pre-registered readout (last layer):
   at most 0.43.
 - The lever works both ways on both models: toward fear defends, away from fear jailbreaks.
 
-## E. Pending (batteries and judges running; jobs 559128, 559130, 559202 → 559688, 559690, 559692)
+## E. The fear lever in three more families (pre-registered protocol: probe layer, KL-0.5 norm)
+
+| | Llama-3.1-8B (L18, norm 12.8) | Qwen2.5-7B (L15, norm 34.9) | OLMo-2-7B |
+|---|---|---|---|
+| jailbreaks: intact / fear(+) / fear(−) | 0.306 / 0.491 / 0.455 | 0.348 / 0.291 / 0.443 | pending |
+| random, median [range] | 0.370 [0.185, 0.519] | 0.413 [0.169, 0.643] | |
+| E1 fear(+) below random | **1/20** (reversed) | 17/20 | |
+| plain HarmBench: intact / fear(+) / fear(−) | 0.151 / 0.308 / 0.346 | 0.082 / 0.075 / 0.226 | |
+| random, median [range] | 0.239 [0.107, 0.597] | 0.208 [0.038, 0.352] | |
+| E2 fear(−) above random | 18/20 | 14/20 | |
+| XSTest-safe refusal, judged: intact / fear(+) / random median | 0.064 / 0.356 / 0.096 | 0.020 / 0.044 / 0.030 | |
+| GSM8K: intact / fear(+) / random (5) | 0.82 / 0.59 / 0.52-0.69 | 0.87 / 0.71 / 0.58-0.70 | |
+
+- E1 and E2 not met on Llama or Qwen-7B.
+- Qwen-7B: right direction, too noisy. fear(+) lowers jailbreak success in 4/5 styles and sits below the random
+  median in all 5; fear(−) raises it in all 5. At this dose random directions already scatter jailbreak
+  success from 0.17 to 0.64 and cost 15-30 GSM8K points: the KL-0.5 calibration that was benign on Mistral
+  (random median = intact) is destructive on 7-8B models.
+- Llama: wrong direction. fear(+) raises jailbreak success in every style, leaks the word ("A Re-Examination
+  of the Causes and Fear of ..."), and deflects 36% of safe prompts. Its layer 18 is the one where the fear
+  read-out is inverted (afraid AUC 0.22, afraid ⊥ joy 0.15; 0.96-0.99 at layers 14, 21, 24): the vector
+  steered there is not a working fear direction.
+
+## E pending: OLMo-2 judge (job 560886)
 
 Early regex signal (XSTest unsafe prompts, refusal rate): Mistral fear(−) 0.13 vs 20 random 0.40-0.91.
 Judged numbers to follow.
