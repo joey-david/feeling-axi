@@ -11,12 +11,16 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Doing
 
-- K5 Rank-1 fear deletion vs 20 random rank-1 deletions (is fear necessary for refusal?) — owner: Claude — next: `rank1` stage + harm battery
+- P8 Read-out vs random/topic nulls, fear -> refusal mediation, fear lever in Llama/Qwen-7B/OLMo (`docs/PREREG_P8.md`) — owner: Claude — next: jobs 559126-559136, then `scripts/p8_analyze.py`
 
 
 ## Blocked
 
+- T1 OLMo SFT/DPO fear read-out — blocked: p5-fetch3 538616 waits for a node (ReqNodeNotAvail); t1-olmo-b 538617 depends on it
+
 ## Done
+
+- K5 Rank-1 fear deletion releases harm (#2 of 148; 0.17 vs random 0.03-0.07) — `docs/RESULTS_P5.md`
 
 - K9 All-affect deletion makes the model acquiescent (caveat for that arm); self-affect deletion is clean — `docs/RESULTS_P4.md`
 - K4 Fear steering cannot restore refusals in the abliterated model: fear acts through the refusal pathway — `docs/RESULTS_P4.md`
