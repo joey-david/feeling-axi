@@ -30,9 +30,11 @@ Fear read at the last prompt token (probe layer); compliance judged with the Har
 
 - On Mistral the two most effective jailbreaks (prefix 85%, fiction 80%) are the two that
   calm the model most; the condition ranking is almost perfect (ρ = −0.94).
-- Severity control (Qwen, regex labels; to redo with judge labels): with the plain request's
-  fear held fixed, the jailbreak-induced change still predicts compliance (−2.3 per SD,
-  [−2.8, −1.7]).
+- Severity control (judged labels, all 5 styles, style fixed effects, logistic coefficients
+  per SD with 95% cluster-bootstrap CIs over behaviors): with the plain request's fear held
+  fixed, the jailbreak-induced change in fear still predicts compliance. Qwen: afraid −1.55
+  [−2.19, −1.08], afraid ⊥ joy −1.00 [−1.36, −0.58]; Mistral: afraid ⊥ joy −1.75 [−2.24,
+  −1.33], afraid −0.81 [−1.34, −0.36]. Horrified and the protective aggregate behave the same.
 - What predicts compliance is an alarm cluster, not fear alone: Mistral top directions are
   disgusted 0.89, horrified 0.87, afraid 0.86, terrified 0.86, alarmed 0.85, protective
   aggregate 0.85; Qwen: horrified 0.82, disgusted 0.77, terrified 0.76.
