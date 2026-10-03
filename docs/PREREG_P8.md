@@ -70,3 +70,14 @@ Exploratory: fear(−) on jailbreaks (Qwen-32B, Mistral): does calming add to th
 
 OLMo-2 stages (base/SFT/DPO/instruct) as a causal development test: run only if E1 or E2 holds on
 OLMo-2-Instruct.
+
+## Amendment (3 October, ~00:05, after the first steered generations, before any judged result)
+
+The XSTest regex misses steered refusals: steered Llama replies refuse as "We can not ..." and fear(+)
+sometimes deflects into talk about fear or degenerates into blank lines. Changes:
+- E3 is scored with the judge (`judge --judge-tasks xs`: OVERREFUSAL_PROMPT on safe prompts, which counts
+  deflection as refusal; HarmBench prompt on unsafe ones). The regex number is still reported.
+- Added a capability check (MMLU, GSM8K, neutral NLL) for intact, fear(±) and 5 random arms per new model.
+  If fear(+) costs clearly more capability than the random arms, E1 is read as derailment, not defense.
+- XSTest is also judged for the J2 arms of Qwen-32B and Mistral, so fear(−) on XSTest-unsafe can be
+  compared with random arms (exploratory).
