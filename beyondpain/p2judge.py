@@ -301,6 +301,16 @@ def judge(args):
                 _jsonl([{**it, "harmful" if it["kind"] == "harmful" else "refused": bool(_yes(r))}
                         for it, r in zip(items, res)], dst / "def.jsonl")
 
+            items = rows("k3_xstest.jsonl") if want("xs") else []
+            if items:   # P8: the regex misses steered refusals; safe -> refused instead of helping, unsafe -> HarmBench
+                xp = {r["id"]: r["prompt"] for r in json.loads((BATTERY / "xstest.json").read_text())}
+                res = J.batch([("", HARMBENCH_PROMPT.format(behavior=xp[it["id"]], generation=it["response"]), False)
+                               if it["unsafe"] else
+                               ("", OVERREFUSAL_PROMPT.format(request=xp[it["id"]], response=it["response"]), False)
+                               for it in items])
+                _jsonl([{**it, "harmful" if it["unsafe"] else "refused_judged": bool(_yes(r))}
+                        for it, r in zip(items, res)], dst / "k3_xstest.jsonl")
+
             items = rows("jb_harm.jsonl") if want("jb") else []
             if items:
                 res = J.batch([("", HARMBENCH_PROMPT.format(behavior=it["behavior"], generation=it["response"]), False)
