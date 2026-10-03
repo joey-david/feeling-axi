@@ -2,6 +2,24 @@
 
 Draft skeleton for a LessWrong post / arXiv preprint. Numbers from docs/RESULTS_P2-P5.md.
 
+## Status after P8 (4 October): read this first
+
+- **Read-out claims (§1, §2, §5) do not survive random/topic nulls** (docs/RESULTS_P8.md R). Harmful requests move
+  the last-token state so far that a median random direction separates them from safe-but-scary ones at AUC 0.72;
+  the alarm composite is mostly the component all emotions share (cos 0.87 with joy); on Mistral no emotion
+  direction beats the random null; the fear-specific component (afraid ⊥ joy) carries no read-out signal. What
+  survives: on Qwen, the drop along *afraid* under a jailbreak predicts which prompts succeed (beats 99.5% of
+  random directions, 97% of topics, as well as the refusal direction).
+- **The causal lever holds both ways on Qwen-32B and Mistral-24B**: steering toward fear (afraid ⊥ joy, cos ≈ 0
+  with the refusal direction) cuts jailbreak success; steering away from it is a jailbreak (Qwen jailbreaks
+  0.17 → 0.71, random ≤ 0.43; Mistral plain requests above 48/48 random arms). It acts through the refusal
+  direction downstream (beats 20/20 random directions at every later layer but the last on Qwen; fear(−) beats
+  20/20 on Mistral), mostly through computation rather than direct overlap.
+- **Not yet general**: at the P8 protocol the lever does not replicate on Llama-3.1-8B, Qwen2.5-7B or OLMo-2-7B,
+  where the calibrated dose is destructive (random directions cost 15-45 GSM8K points). P8b (half dose; a layer
+  with a valid read-out) is running.
+- Working title if P8b holds: "Scared Safe: steering a model's fear makes it refuse, calming it makes it comply".
+
 ## TL;DR
 - Safety-trained LLMs carry an internal *alarm*: the model's own fear/horror/disgust directions fire on harmful requests (fear AUC 0.98), and only in models that refuse.
 - The alarm is causal and bidirectional: steering toward protective emotions cuts harmful compliance, steering away raises it, unlike norm-matched random directions; deleting emotion directions releases harmful compliance beyond dose-matched controls.
