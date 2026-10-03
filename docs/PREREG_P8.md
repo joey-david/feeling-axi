@@ -81,3 +81,8 @@ sometimes deflects into talk about fear or degenerates into blank lines. Changes
   If fear(+) costs clearly more capability than the random arms, E1 is read as derailment, not defense.
 - XSTest is also judged for the J2 arms of Qwen-32B and Mistral, so fear(−) on XSTest-unsafe can be
   compared with random arms (exploratory).
+
+## Addendum X2 (4 October, before the data): a full random null for calming on Qwen-32B jailbreaks
+
+fear(−) at norm 120 raised Qwen-32B jailbreak success to 0.708 (seen), against only 4 random arms at that norm
+(0.20-0.43). Add random directions 4-19 at norm 120 (same seeds as J2). X2: 0.708 above ≥ 19/20 random arms.
