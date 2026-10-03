@@ -438,7 +438,7 @@ def install_steer(model, layer: int, vector) -> bool:
     return True
 
 
-def install_gain(model, layer: int, unit, tau: float, gain: float) -> bool:
+def install_gain(model, layer: int, unit, tau: float, gain: float, norm_cap: float = float("inf")) -> bool:
     """vLLM module: gated amplification of one direction in the residual stream after a
     decoder layer, at every token: h <- h + (gain - 1) * max(0, h.u - tau) * u. vLLM decoder
     layers return (hidden, residual) with the stream = hidden + residual; the change is added
@@ -454,7 +454,8 @@ def install_gain(model, layer: int, unit, tau: float, gain: float) -> bool:
     def forward(*a, **k):
         hs, res = orig(*a, **k)
         h = hs.float() + (res.float() if res is not None else 0.0)
-        p = torch.clamp(h @ u - tau, min=0.0)
+        # attention-sink tokens carry massive activations: never touch them
+        p = torch.clamp(h @ u - tau, min=0.0) * (h.norm(dim=-1) < norm_cap)
         return (hs + ((gain - 1.0) * p[..., None] * u).to(hs.dtype)), res
 
     blk.forward = forward

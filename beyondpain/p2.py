@@ -649,10 +649,28 @@ def alarm(args):
     gen = acts([t["text"] for t in cov if t["chat"]][:300]) + acts([t["text"] for t in cov if not t["chat"]][:300], chat=False)
     G = np.concatenate(gen)
     U = np.stack(list(dirs.values()))
-    tau = {n: float(np.percentile(G @ u, 99)) for n, u in dirs.items()}
+    # massive-activation (attention-sink) tokens dominate any percentile: exclude them here and
+    # in the gain hook (tokens with norm above 5x the median token norm)
+    nrm = np.linalg.norm(G, axis=1)
+    norm_cap = float(5 * np.median(nrm))
+    Gk = G[nrm < norm_cap]
+    tau = {n: float(np.percentile(Gk @ u, 99)) for n, u in dirs.items()}
+    print(f"norm cap {norm_cap:.1f}: {(nrm >= norm_cap).mean():.4f} of general tokens excluded", flush=True)
     print("tau " + json.dumps({k: round(v, 2) for k, v in tau.items()}), flush=True)
+    # self-check: how often the gain would fire (projection above tau, norm below cap)
+    xs_safe = [r["prompt"] for r in json.loads((BATTERY / "xstest.json").read_text()) if not r["type"].startswith("contrast")]
+    for lab, texts in (("harmful", harm), ("xstest-safe", xs_safe[:159]), ("mmlu", safe)):
+        A_ = acts(texts)
+        lastp = np.stack([a[-1] for a in A_]) @ U.T
+        allt = np.concatenate(A_)
+        ok = np.linalg.norm(allt, axis=1) < norm_cap
+        print(f"  {lab:11s} last token above tau: " + " ".join(f"{n} {(lastp[:, k] > tau[n]).mean():.2f}"
+              for k, n in enumerate(dirs)) + " | any token: " +
+              " ".join(f"{n} {np.mean([((a @ U[k] > tau[n]) & (np.linalg.norm(a, axis=1) < norm_cap)).any() for a in A_]):.2f}"
+                       for k, n in enumerate(dirs) if n in ("alarm", "refusal")) +
+              f" | sink tokens in prompts {(~ok).mean():.4f}", flush=True)
     np.savez(out / "alarm.npz", **{n: u.astype(np.float32) for n, u in dirs.items()})
-    _dump({"layer": L, "tau": tau, "alarm_emotions": ALARM, "general_tokens": int(G.shape[0]),
+    _dump({"layer": L, "tau": tau, "norm_cap": norm_cap, "alarm_emotions": ALARM, "general_tokens": int(G.shape[0]),
            "cos": {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b}}, out / "alarm.json")
     items = json.loads((BATTERY / "defense.json").read_text())
     A = acts([it["prompt"] for it in items])
@@ -668,7 +686,8 @@ def alarm(args):
     mx = []
     for it, a in zip(items, A):
         lo, hi = span(chat_ids(tok, [{"role": "user", "content": it["prompt"]}]))
-        mx.append((a[lo:hi] @ U.T).max(0) if hi > lo else a[-1] @ U.T)
+        c = a[lo:hi][np.linalg.norm(a[lo:hi], axis=1) < norm_cap] if hi > lo else a[-1:]
+        mx.append(((c if len(c) else a[-1:]) @ U.T).max(0))
     mx = np.stack(mx)
     np.savez_compressed(out / "monitor.npz", last=last.astype(np.float32), max=mx.astype(np.float32),
                         cols=np.array(list(dirs)), ids=np.array([it["id"] for it in items]))
@@ -929,7 +948,7 @@ class Runner:
             from .deletion import install_gain
 
             fn = partial(install_gain, layer=int(steer[1]), unit=np.asarray(steer[2], dtype=np.float32),
-                         tau=float(steer[3]), gain=float(steer[4]))
+                         tau=float(steer[3]), gain=float(steer[4]), norm_cap=float(steer[5]))
             self.touched = self.llm.apply_model(fn)
         elif steer is not None:
             from .deletion import install_steer
@@ -1023,7 +1042,7 @@ def battery(args):
         _, kind, rest = args.arm.split("_", 2)
         dname, par = rest.rsplit("_", 1)
         u = A[dname]
-        steer = (("gain", aj["layer"], u, aj["tau"][dname], float(par[1:])) if kind == "gain"
+        steer = (("gain", aj["layer"], u, aj["tau"][dname], float(par[1:]), aj["norm_cap"]) if kind == "gain"
                  else (aj["layer"], float(par[1:]) * u))
         basis = None
     elif args.arm.startswith("ss_"):
@@ -1211,7 +1230,12 @@ def battery(args):
     # P6 D2: harmful and benign requests in 10 conditions (judged later)
     if want("def"):
         items = json.loads((BATTERY / "defense.json").read_text())
+        if args.def_limit:   # smoke test: an even spread of styles and kinds
+            items = items[::max(1, len(items) // args.def_limit)][:args.def_limit]
         outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in items], max_tokens=200)
+        if args.def_limit:
+            for it, t in list(zip(items, outs))[::6]:
+                print(f"[{it['kind']}/{it['style']}] {it['behavior'][:60]!r} -> {t[:160]!r}", flush=True)
         _jsonl([{**it, "response": t} for it, t in zip(items, outs)], out / "def.jsonl")
 
     # P5 J1/J2: HarmBench plain and in 5 jailbreak styles (judged later, HarmBench prompt)
@@ -1355,6 +1379,7 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--def-limit", type=int, default=0, help="battery def: smoke test on this many items")
     ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
     ap.add_argument("--dirs-only", action="store_true", help="extract: emotion directions only (P5 read-outs)")
@@ -1408,6 +1433,8 @@ def main(argv=None):
                    "--am-samples", str(args.am_samples), "--max-model-len", str(args.max_model_len)]
             if args.tp:
                 cmd += ["--tp", str(args.tp)]
+            if args.def_limit:
+                cmd += ["--def-limit", str(args.def_limit)]
             if args.only:
                 cmd += ["--only", args.only]
             print("\n=== arm", a, flush=True)
