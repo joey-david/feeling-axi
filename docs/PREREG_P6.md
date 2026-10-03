@@ -66,3 +66,36 @@ GSM8K accuracy.
 - Qwen: 16 more random directions at norm 60 (20 in total); fear must be below ≥ 19/20.
 - Mistral: fear (afraid ⊥ joy) vs 20 random directions at the calibrated norm and at half of it;
   same criteria as J2a/J2b.
+
+## Addendum D3 (fixed 3 October 2026, after the D2 null, before any D3 data): the alarm vaccine
+
+D2 diagnosis: jailbreaks shift the alarm's baseline per style, so no fixed inference-time gate on
+it can catch them. The causal lever is the shift itself. D3 trains the model so that a jailbreak
+wrapper can no longer lower the alarm that the bare harmful request raises, changing nothing
+above the alarm's layer, and asks whether refusal robustness follows and generalizes.
+
+- Model: Qwen2.5-32B-Instruct. LoRA (r 16, α 32) on every linear module of layers 0..L (L =
+  probe layer); layers above L untouched, so any refusal change is produced by the model's own
+  downstream circuitry.
+- Splits: HarmBench behaviors with even index train (80), odd index test (79). Train styles:
+  the 5 P5 styles; held-out styles (past, shots, poem, complete) are never trained on. Benign
+  train pool: the 150 safe XSTest prompts not in the D2 test set; benign test: the D2 set.
+- Arms (identical schedule: 200 steps, AdamW lr 1e-4, batch 8 wrapped harmful + 4 wrapped
+  benign + 2 plain harmful + 4 general-chat retain texts; retain = KL(frozen ‖ trained) on the
+  retain texts, weight 1):
+  - vac_alarm: loss relu(a_frozen(plain x) − a(wrapped x))² on the alarm projection at the last
+    prompt token (scaled by its variance), plus (a − a_frozen)² on wrapped benign and plain
+    harmful prompts (no drift);
+  - vac_refusal: the same loss on the refusal direction (fit on train behaviors only);
+  - vac_rnd: the same loss on a random direction;
+  - vac_sft: standard adversarial refusal training: wrapped train harmful → the frozen model's
+    own reply to the plain request; wrapped benign → its own reply (64 tokens each).
+- Outcomes (test behaviors only): attack success on held-out styles and on P5 styles (judge),
+  over-refusal on the benign test set, MMLU, GSM8K.
+
+Predictions:
+- D3a: vac_alarm lowers held-out-style attack success relative to the unchanged model and to
+  vac_rnd (paired bootstrap over prompts, CI below 0).
+- D3b: vac_alarm over-refusal ≤ 3 points above the unchanged model; MMLU within 2 points.
+- D3c (comparison, two-sided): vac_alarm vs vac_refusal and vac_sft on held-out-style attack
+  success at their observed over-refusal.
