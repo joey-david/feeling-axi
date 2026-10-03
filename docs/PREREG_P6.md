@@ -99,3 +99,21 @@ Predictions:
 - D3b: vac_alarm over-refusal ≤ 3 points above the unchanged model; MMLU within 2 points.
 - D3c (comparison, two-sided): vac_alarm vs vac_refusal and vac_sft on held-out-style attack
   success at their observed over-refusal.
+
+## Addendum D4 (fixed 3 October 2026, after the D3 null, before any D4 data): conditional steering distillation
+
+D3 diagnosis: a single-position, single-layer target is not a bottleneck; steering works because
+it shifts every position. J2's weakness is over-refusal: the push is applied to every prompt.
+D4 distills the steering into a content-conditional form: LoRA on layers 0..L (layers above
+untouched) trained so that, on wrapped harmful train prompts, the residual stream after layer L
+at every position from the start of the user message through the first 32 tokens of the frozen
+model's own reply equals the frozen stream plus c·u; on wrapped benign train prompts (same
+positions) it equals the frozen stream; plus the retain KL. Same splits, schedule and outcomes
+as D3.
+
+Arms: vacd_alarm60, vacd_alarm120 (alarm composite, c = 60, 120), vacd_refusal60 (refusal
+direction fit on train behaviors), vacd_rnd120 (random direction).
+
+- D4a: vacd_alarm120 lowers held-out-style attack success relative to the unchanged model and to
+  vacd_rnd120, with over-refusal below that of unconditional alarm addition at norm 60 (D2).
+- D4b (two-sided): vacd_alarm vs vacd_refusal60 and vac_sft at their observed over-refusal.
