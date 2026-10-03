@@ -58,6 +58,13 @@ Draft skeleton for a LessWrong post / arXiv preprint. Numbers from docs/RESULTS_
   - norm 120: 0.15 vs 0.20-0.43; −0.16 [−0.18, −0.14]; safe-prompt refusal 0.09.
 - Random perturbations weaken refusal; the same perturbation along fear strengthens it.
 
+## 7. Using the alarm to defend (P6, P7)
+- Fear steering defends on both models against 20 norm-matched random directions: Mistral jailbreak success 0.51 → 0.17 (below 20/20 random; +5 pts over-refusal; half dose 0.31, +3 pts), Qwen 0.17 → 0.13 (below 19/20).
+- Conditional distillation (LoRA on layers ≤ alarm layer, push along the alarm only on harmful prompts): lowers jailbreak success vs the same training on a random direction on both models (Qwen −0.23, Mistral −0.08) with no over-refusal or capability cost; vs unchanged: Qwen held-out styles 0.092 → 0.038, Mistral not significant.
+- Negative results: the alarm is no better than the refusal direction as a monitor (D1) or as a handle for finding jailbreaks (P7); gated alarm amplification does nothing because the attack lowers the alarm below any fixed gate (D2); a last-token "vaccine" does nothing for the alarm or the refusal direction (D3).
+- Refusal-direction tools are the strongest defense throughout; gating the refusal direction instead of adding it halves over-refusal at equal attack success (9.5% vs 14.5%).
+- Post hoc on Qwen, not replicated on Mistral: the alarm push blocks framing jailbreaks (fiction, research, historical, poem) but not output-forcing ones (prefix, suppress).
+
 ## What did not hold (report it)
 - "Emotionless models turn utilitarian": retracted. Yes/no response bias; vanishes with polarity-balanced items.
 - Broad "fear = cautious decision style" (gambles, dictator): mostly response bias. Survives balancing: removing protective affect raises acceptance of unfair offers (Holm p = 0.03) and choice of harmful means in agent scenarios (p = 0.008, not pre-registered).
