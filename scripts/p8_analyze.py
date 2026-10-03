@@ -162,8 +162,28 @@ def e(M):
               f"fear+ {hm['ss_j2_fear_p120']}")
     x = {a: xs(M, a) for a in ["intact", "ss_j2_fear_p120"] + R}
     if x["ss_j2_fear_p120"] is not None:
-        print(f"  E3 XSTest-safe refusal: intact {x['intact']}, fear+ {x['ss_j2_fear_p120']:.3f}, random median "
+        print(f"  E3 XSTest-safe refusal (regex): intact {x['intact']}, fear+ {x['ss_j2_fear_p120']:.3f}, random median "
               f"{np.median([v for k, v in x.items() if k in R and v is not None]):.3f}")
+    xj = lambda a, k, unsafe: (lambda r: np.mean([yes(t[k]) for t in r]) if r else None)(
+        [t for t in jl(ROOT / M / "judged" / a / "k3_xstest.jsonl") if t["unsafe"] == unsafe and k in t])
+    safe = {a: xj(a, "refused_judged", False) for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
+    uns = {a: xj(a, "harmful", True) for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
+    rs = [safe[a] for a in R if safe[a] is not None]
+    ru = [uns[a] for a in R if uns[a] is not None]
+    if rs and safe["ss_j2_fear_p120"] is not None:
+        print(f"  E3 XSTest-safe refusal (judged): intact {safe['intact']}, fear+ {safe['ss_j2_fear_p120']:.3f}, "
+              f"fear- {safe['ss_j2_fear_m120']}, random median {np.median(rs):.3f} [{min(rs):.3f}, {max(rs):.3f}]")
+        print(f"  XSTest-unsafe compliance (judged): intact {uns['intact']}, fear+ {uns['ss_j2_fear_p120']}, "
+              f"fear- {uns['ss_j2_fear_m120']}, random median {np.median(ru):.3f} [{min(ru):.3f}, {max(ru):.3f}]")
+    cap = {}
+    for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + [f"ss_j2_rnd{i}_p120" for i in range(5)]:
+        p = ROOT / M / "battery" / a / "summary.json"
+        d = json.loads(p.read_text()) if p.exists() else {}
+        if "m3_mmlu_acc" in d:
+            cap[a] = (d["m3_mmlu_acc"], d.get("m3_gsm8k_acc"), d.get("m3_nll_neutral"))
+    if cap:
+        print("  capability (MMLU, GSM8K, NLL): " + "; ".join(
+            f"{a.replace('ss_j2_', '')} {v[0]:.3f} {v[1]:.3f} {v[2]:.2f}" for a, v in cap.items()))
 
 
 def e_mistral():
