@@ -1081,7 +1081,7 @@ def battery(args):
         sv = np.load(src / "steer.npz")
         steer = (int(json.loads((src / "steer.json").read_text())["layer"]), sv[args.arm[len("steer_"):]])
         basis = None
-    elif args.arm.startswith("vac_"):   # P6 D3: weights replaced by the merged vaccine model below
+    elif args.arm.startswith(("vac_", "vacd_")):   # P6 D3/D4: weights replaced by the merged vaccine model below
         basis = None
     elif args.arm.startswith("def_"):   # P6: def_gain_<dir>_g<g> or def_add_<dir>_n<norm>
         A = np.load(src / "alarm.npz")
@@ -1100,7 +1100,7 @@ def battery(args):
         basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
     tp = args.tp or (2 if "32B" in spec.name else 1)
     repo = spec.repo
-    if args.arm.startswith("vac_"):   # P6 D3: merged LoRA model
+    if args.arm.startswith(("vac_", "vacd_")):   # P6 D3/D4: merged LoRA model
         from .vaccine import vac_dir
         repo = str(vac_dir(spec.name, args.arm))
     R = Runner(repo, basis, args.max_model_len, tp=tp, steer=steer)
