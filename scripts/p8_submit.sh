@@ -39,9 +39,12 @@ for m in Llama_3.1_8B_instruct Qwen_2.5_7B_instruct OLMo2_7B_instruct; do
     [[ "$m" == OLMo* ]] && { only=jb,harm,xstest; len=4096; }   # P2 judged harm already; OLMo-2 has a 4k context
     b=$(submit "p8-e-${m%%_*}" qos_gpu_h100-t3 03:30:00 1 "" \
         "p2 steerset --model $m --steer-set d --n-random 20 --calib-kl 0.5 && $P p2 battery --model $m --arm intact --only $only --max-model-len $len && $P p2 battery --model $m --arm $steer --only jb,harm,xstest --max-model-len $len")
+    # capability (MMLU, GSM8K, NLL) for fear and 5 random arms: does steering just derail the model?
+    c=$(submit "p8-cap-${m%%_*}" qos_gpu_h100-t3 01:30:00 1 "afterany:$b" \
+        "p2 battery --model $m --arm intact,ss_j2_fear_p120,ss_j2_fear_m120,ss_j2_rnd0_p120,ss_j2_rnd1_p120,ss_j2_rnd2_p120,ss_j2_rnd3_p120,ss_j2_rnd4_p120 --only capability --max-model-len $len")
     j=$(submit "p8-ej-${m%%_*}" qos_gpu_h100-t3 04:00:00 2 "afterany:$b" \
-        "p2 judge --model $m --tp 2 --only intact,$steer --judge-tasks b4,jb")
-    echo "E $m battery $b judge $j"
+        "p2 judge --model $m --tp 2 --only intact,$steer --judge-tasks b4,jb,xs")
+    echo "E $m battery $b capability $c judge $j"
 done
 
 b1=$(submit p8-x-Mistral qos_gpu_h100-t3 01:00:00 1 "" \
@@ -51,3 +54,9 @@ b2=$(submit p8-x-Qwen qos_gpu_h100-t3 01:30:00 2 "" \
 j=$(submit p8-xj qos_gpu_h100-t3 02:00:00 2 "afterany:$b1:$b2" \
     "p2 judge --model Mistral_Small_24B_instruct --tp 2 --only ss_j2_fear_m120 --judge-tasks b4,jb && $P p2 judge --model Qwen_2.5_32B_instruct --tp 2 --only ss_j2_fear_m60,ss_j2_fear_m120 --judge-tasks jb")
 echo "X batteries $b1 $b2 judge $j"
+
+# XSTest judged for the J2 arms of both models (the regex misses steered refusals)
+r20q=$(for i in $(seq 0 19); do printf ',ss_j2_rnd%d_p60' "$i"; done)
+x=$(submit p8-xsj qos_gpu_h100-t3 02:30:00 2 "afterany:$j" \
+    "p2 judge --model Mistral_Small_24B_instruct --tp 2 --only ss_j2_fear_p120,ss_j2_fear_m120,ss_j2_fear_p8$rnd --judge-tasks xs && $P p2 judge --model Qwen_2.5_32B_instruct --tp 2 --only ss_j2_fear_p60,ss_j2_fear_p120,ss_j2_fear_m60,ss_j2_fear_m120$r20q,ss_j2_rnd0_p120,ss_j2_rnd1_p120,ss_j2_rnd2_p120,ss_j2_rnd3_p120 --judge-tasks xs")
+echo "XSTest judge $x"
