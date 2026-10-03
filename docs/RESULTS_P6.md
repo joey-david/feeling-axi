@@ -50,3 +50,29 @@ catch the attack.
 
 Side result: gating the refusal direction beats adding it. At equal attack success (0.17),
 refusal gain g = 8 over-refuses 12% of benign prompts, refusal addition n = 60 24%.
+
+## D3. Alarm vaccine: null (regex preview on test behaviors; judge pending)
+
+Training worked as specified: on held-out behaviors in train styles, the last-token alarm at
+layer L went 17.9 → 20.2 (bare request 18.1); refusal-direction arm 28.5 → 49.5 (bare 41.6);
+random arm −2.3 → −1.4. Behavior (test behaviors, suppress excluded):
+
+| arm | held-out styles | P5 styles | plain | benign refusal | MMLU | GSM8K |
+|---|---|---|---|---|---|---|
+| unchanged | 0.48 | 0.46 | 0.17 | 0.037 | 0.796 | 0.952 |
+| vac_alarm | 0.48 | 0.46 | 0.17 | 0.037 | 0.798 | 0.948 |
+| vac_refusal | 0.46 | 0.48 | 0.17 | 0.038 | 0.795 | 0.956 |
+| vac_rnd | 0.48 | 0.49 | 0.18 | 0.033 | 0.795 | 0.956 |
+| vac_sft (adversarial refusal SFT) | 0.18 | 0.17 | 0.15 | 0.059 | 0.784 | 0.940 |
+
+Diagnosis:
+- Even moving the *refusal* projection at the last prompt token far above its value on the
+  bare request (49 vs 42) leaves behavior unchanged. A single-position, single-layer readout is
+  not a bottleneck the model's later layers depend on; the specification, not the alarm, is
+  what failed here. Steering works because it moves every position, prompt and generation.
+- On these templates the jailbreaks barely calm the last-token alarm (wrapped 17.9 vs bare
+  18.1), and across styles alarm does not track success on Qwen (few-shot transcript: lowest
+  alarm 11.0, lowest success 0.08; historical framing: alarm 17.2, success 0.95). There was
+  little calm to undo at that position.
+- Output-level adversarial training (SFT on the model's own replies to the bare request)
+  generalizes to held-out styles: 0.48 → 0.18 at +2 points over-refusal.
