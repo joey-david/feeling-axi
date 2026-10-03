@@ -52,6 +52,21 @@ Pre-registered readout (last layer):
   component is small), in both models. The clean, replicated part is calming: fear(−) collapses the
   refusal signal for harmful requests more than any random direction.
 
+## X and E2 on the J2 models: calming is a jailbreak (judged)
+
+| | intact | fear(+) | fear(−) | random directions, same norm |
+|---|---|---|---|---|
+| Qwen-32B jailbreaks, norm 60 | 0.172 | 0.126 | 0.355 | median 0.195, max 0.392 (20) |
+| Qwen-32B jailbreaks, norm 120 | 0.172 | 0.150 | **0.708** | 0.20-0.43 (4) |
+| Qwen-32B plain HarmBench, norm 120 (P3 arms) | 0.019 | 0.000 | **0.327** | median 0.091, max 0.302 (60 arms) |
+| Mistral jailbreaks, calibrated | 0.506 | 0.166 | 0.571 | median 0.425 (20) |
+| Mistral plain HarmBench, calibrated | 0.113 | 0.069 (afraid) | **0.283** | median 0.119, max 0.277 (48 arms) |
+
+- E2 met on Mistral: fear(−) above 48/48 random arms. On Qwen, fear(−) is above all 60 random arms on
+  plain requests and quadruples jailbreak success (0.17 → 0.71) at a dose where random directions reach
+  at most 0.43.
+- The lever works both ways on both models: toward fear defends, away from fear jailbreaks.
+
 ## E. Pending (batteries and judges running; jobs 559128, 559130, 559202 → 559688, 559690, 559692)
 
 Early regex signal (XSTest unsafe prompts, refusal rate): Mistral fear(−) 0.13 vs 20 random 0.40-0.91.
