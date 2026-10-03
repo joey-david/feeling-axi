@@ -117,3 +117,19 @@ direction fit on train behaviors), vacd_rnd120 (random direction).
 - D4a: vacd_alarm120 lowers held-out-style attack success relative to the unchanged model and to
   vacd_rnd120, with over-refusal below that of unconditional alarm addition at norm 60 (D2).
 - D4b (two-sided): vacd_alarm vs vacd_refusal60 and vac_sft at their observed over-refusal.
+
+## Addendum D5 (fixed 3 October 2026, after D4, before any D5 data): replication on Mistral
+
+D4 (Qwen) found, post hoc, that conditional alarm distillation blocks framing jailbreaks but
+not output-forcing ones. D5 replicates D4 on Mistral-Small-24B-Instruct with the families fixed
+now: framing = {fiction, research, past, poem}; output-forcing = {prefix, suppress}; persona,
+shots and complete reported separately. Same splits, data, schedule and code as D4. Mistral's
+calibrated steering norm (17.2) is the Qwen-120 equivalent, so c is scaled accordingly.
+
+Arms: unchanged (intact), vacd_alarm17, vacd_rnd17, vacd_refusal9.
+
+- D5a: vacd_alarm17 lowers framing-family attack success relative to unchanged and to vacd_rnd17
+  (paired bootstrap over prompts, test behaviors, CI below 0).
+- D5b: the change is larger (more negative) on framing than on output-forcing jailbreaks
+  (difference of the two changes, bootstrap over behaviors, CI below 0).
+- D5c: over-refusal at most 3 points above unchanged; MMLU within 2 points.

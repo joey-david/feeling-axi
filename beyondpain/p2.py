@@ -1442,8 +1442,7 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
-    ap.add_argument("--vac-arm", default="vac_alarm", choices=["vac_alarm", "vac_refusal", "vac_rnd", "vac_sft", "vacd_alarm60", "vacd_alarm120",
-                                                            "vacd_refusal60", "vacd_rnd120"])
+    ap.add_argument("--vac-arm", default="vac_alarm", help="vac_alarm|vac_refusal|vac_rnd|vac_sft|vacd_<dir><c>")
     ap.add_argument("--vac-steps", type=int, default=200)
     ap.add_argument("--calm-from", default="", help="battery calm: use this model's selection sets")
     ap.add_argument("--def-limit", type=int, default=0, help="battery def: smoke test on this many items")
