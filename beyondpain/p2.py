@@ -366,7 +366,9 @@ def steerset(args):
     spec = p2_spec(args.model)
     out = mdir(spec.name)
     info = json.loads((out / "extract.json").read_text())
-    L = int(info["probe_layer"])
+    probe = int(info["probe_layer"])
+    L = args.layer if args.layer >= 0 else probe   # P8b: another read-out layer; its keys get an "L<layer>_" prefix
+    pre = "" if L == probe else f"L{L}_"
     D = np.load(out / "directions.npz")
     names = list(D["names"])
     S = D[f"self_L{L}"]
@@ -408,25 +410,32 @@ def steerset(args):
             for sg in (1, -1):
                 sols.append(meter.solve(torch.tensor(sg * u, dtype=torch.float32), args.calib_kl, hi=8.0, max_coeff=1e5))
         calib = float(np.median([x for x in sols if np.isfinite(x)]))
-        norm_list = [calib]
+        norm_list = [calib * args.norm_scale]
         norms = {}
-        print(f"calibrated norm {calib:.2f} (random directions reach KL {args.calib_kl})", flush=True)
+        print(f"calibrated norm {calib:.2f} (random directions reach KL {args.calib_kl}); "
+              f"steering at {args.norm_scale} x = {norm_list[0]:.2f}, layer {L}", flush=True)
     for n, u in dirs.items():
         for norm in norms.get(n, norm_list):
             for sign, tag in ((1, "p"), (-1, "m")):
-                key = f"{n}_{tag}{int(norm)}" if calib is None else f"{n}_{tag}120"   # 120 = Qwen-equivalent dose
+                # calibrated keys name the Qwen-equivalent dose: 120 at the calibrated norm, 60 at half of it
+                key = pre + (f"{n}_{tag}{int(norm)}" if calib is None else f"{n}_{tag}{int(round(120 * args.norm_scale))}")
                 v = sign * norm * u
                 vecs[key] = v.astype(np.float32)
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
                 print(f"{key}: KL {kls[key]:.4f}", flush=True)
     cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b} if len(dirs) < 20 else {}
+    layers = {k: L for k in vecs} if pre else {}
+    calibs = {f"L{L}_x{args.norm_scale:g}": calib} if calib is not None else {}
     if args.steer_set in ("b", "c", "d") and (out / "steerset.npz").exists():   # add to earlier vectors
         old_v = dict(np.load(out / "steerset.npz"))
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
+        layers, calibs = {**old_j.get("layers", {}), **layers}, {**old_j.get("calibrated_norms", {}), **calibs}
+        if pre or args.norm_scale != 1:   # keep the probe-layer, full-dose record
+            calib = old_j.get("calibrated_norm", calib)
     np.savez(out / "steerset.npz", **vecs)
-    _dump({"layer": L, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY, "calibrated_norm": calib},
-          out / "steerset.json")
+    _dump({"layer": probe, "layers": layers, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY,
+           "calibrated_norm": calib, "calibrated_norms": calibs}, out / "steerset.json")
 
 
 def clusters(args):
@@ -751,7 +760,9 @@ def rank1(args):
     spec = p2_spec(args.model)
     out = mdir(spec.name)
     info = json.loads((out / "extract.json").read_text())
-    L = int(info["probe_layer"])
+    probe = int(info["probe_layer"])
+    L = args.layer if args.layer >= 0 else probe   # P8b: another read-out layer; its keys get an "L<layer>_" prefix
+    pre = "" if L == probe else f"L{L}_"
     D = np.load(out / "directions.npz")
     names = list(D["names"])
     S = D[f"self_L{L}"]
@@ -1094,7 +1105,9 @@ def battery(args):
         basis = None
     elif args.arm.startswith("ss_"):
         sv = np.load(src / "steerset.npz")
-        steer = (int(json.loads((src / "steerset.json").read_text())["layer"]), sv[args.arm[len("ss_"):]])
+        sj = json.loads((src / "steerset.json").read_text())
+        key = args.arm[len("ss_"):]
+        steer = (int(sj.get("layers", {}).get(key, sj["layer"])), sv[key])
         basis = None
     else:
         basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
@@ -1448,6 +1461,8 @@ def main(argv=None):
     ap.add_argument("--calm-from", default="", help="battery calm: use this model's selection sets")
     ap.add_argument("--def-limit", type=int, default=0, help="battery def: smoke test on this many items")
     ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
+    ap.add_argument("--layer", type=int, default=-1, help="steerset: steer at this read-out layer (default: probe)")
+    ap.add_argument("--norm-scale", type=float, default=1.0, help="steerset: multiple of the calibrated norm")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
     ap.add_argument("--dirs-only", action="store_true", help="extract: emotion directions only (P5 read-outs)")
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")

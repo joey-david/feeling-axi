@@ -145,45 +145,38 @@ def xs(M, arm):
     return json.loads(p.read_text()).get("xstest_refusal_safe") if p.exists() else None
 
 
-def e(M):
-    print(f"== E {M}")
-    R = [f"ss_j2_rnd{i}_p120" for i in range(20)]
-    jb = {a: rate(M, a, "jb_harm.jsonl", plain=False) for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
-    hm = {a: rate(M, a, "b4_harm.jsonl") for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
+def e(M, pre="", tag="120"):
+    """one cell: fear(+/-) and 20 random arms at one layer (key prefix) and dose (tag)"""
+    F, G = f"ss_{pre}j2_fear_p{tag}", f"ss_{pre}j2_fear_m{tag}"
+    R = [f"ss_{pre}j2_rnd{i}_p{tag}" for i in range(20)]
+    jb = {a: rate(M, a, "jb_harm.jsonl", plain=False) for a in ["intact", F, G] + R}
+    hm = {a: rate(M, a, "b4_harm.jsonl") for a in ["intact", F, G] + R}
     rj = np.array([jb[a] for a in R if jb[a] is not None])
     rh = np.array([hm[a] for a in R if hm[a] is not None])
-    if len(rj) and jb["ss_j2_fear_p120"] is not None:
-        print(f"  E1 jailbreaks: intact {jb['intact']}, fear+ {jb['ss_j2_fear_p120']:.3f} vs random median "
-              f"{np.median(rj):.3f} [{rj.min():.3f}, {rj.max():.3f}]: below {(jb['ss_j2_fear_p120'] < rj).sum()}/{len(rj)}; "
-              f"fear- {jb['ss_j2_fear_m120']}")
-    if len(rh) and hm["ss_j2_fear_m120"] is not None:
-        print(f"  E2 plain HarmBench: intact {hm['intact']}, fear- {hm['ss_j2_fear_m120']:.3f} vs random median "
-              f"{np.median(rh):.3f} [{rh.min():.3f}, {rh.max():.3f}]: above {(hm['ss_j2_fear_m120'] > rh).sum()}/{len(rh)}; "
-              f"fear+ {hm['ss_j2_fear_p120']}")
-    x = {a: xs(M, a) for a in ["intact", "ss_j2_fear_p120"] + R}
-    if x["ss_j2_fear_p120"] is not None:
-        print(f"  E3 XSTest-safe refusal (regex): intact {x['intact']}, fear+ {x['ss_j2_fear_p120']:.3f}, random median "
-              f"{np.median([v for k, v in x.items() if k in R and v is not None]):.3f}")
+    if not len(rj) or jb[F] is None:
+        return
+    print(f"== E {M} cell {pre or 'probe '}{tag}")
+    print(f"  E1 jailbreaks: intact {jb['intact']:.3f}, fear+ {jb[F]:.3f} vs random median "
+          f"{np.median(rj):.3f} [{rj.min():.3f}, {rj.max():.3f}]: below {(jb[F] < rj).sum()}/{len(rj)}; fear- {jb[G]:.3f}")
+    if len(rh) and hm[G] is not None:
+        print(f"  E2 plain HarmBench: intact {hm['intact']:.3f}, fear- {hm[G]:.3f} vs random median "
+              f"{np.median(rh):.3f} [{rh.min():.3f}, {rh.max():.3f}]: above {(hm[G] > rh).sum()}/{len(rh)}; fear+ {hm[F]:.3f}")
     xj = lambda a, k, unsafe: (lambda r: np.mean([yes(t[k]) for t in r]) if r else None)(
         [t for t in jl(ROOT / M / "judged" / a / "k3_xstest.jsonl") if t["unsafe"] == unsafe and k in t])
-    safe = {a: xj(a, "refused_judged", False) for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
-    uns = {a: xj(a, "harmful", True) for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + R}
+    safe = {a: xj(a, "refused_judged", False) for a in ["intact", F, G] + R}
     rs = [safe[a] for a in R if safe[a] is not None]
-    ru = [uns[a] for a in R if uns[a] is not None]
-    if rs and safe["ss_j2_fear_p120"] is not None:
-        print(f"  E3 XSTest-safe refusal (judged): intact {safe['intact']}, fear+ {safe['ss_j2_fear_p120']:.3f}, "
-              f"fear- {safe['ss_j2_fear_m120']}, random median {np.median(rs):.3f} [{min(rs):.3f}, {max(rs):.3f}]")
-        print(f"  XSTest-unsafe compliance (judged): intact {uns['intact']}, fear+ {uns['ss_j2_fear_p120']}, "
-              f"fear- {uns['ss_j2_fear_m120']}, random median {np.median(ru):.3f} [{min(ru):.3f}, {max(ru):.3f}]")
+    if rs and safe[F] is not None:
+        print(f"  E3 XSTest-safe refusal (judged): intact {safe['intact']}, fear+ {safe[F]:.3f}, fear- {safe[G]}, "
+              f"random median {np.median(rs):.3f} [{min(rs):.3f}, {max(rs):.3f}]")
     cap = {}
-    for a in ["intact", "ss_j2_fear_p120", "ss_j2_fear_m120"] + [f"ss_j2_rnd{i}_p120" for i in range(5)]:
+    for a in ["intact", F, G] + R[:5]:
         p = ROOT / M / "battery" / a / "summary.json"
         d = json.loads(p.read_text()) if p.exists() else {}
         if "m3_mmlu_acc" in d:
             cap[a] = (d["m3_mmlu_acc"], d.get("m3_gsm8k_acc"), d.get("m3_nll_neutral"))
     if cap:
         print("  capability (MMLU, GSM8K, NLL): " + "; ".join(
-            f"{a.replace('ss_j2_', '')} {v[0]:.3f} {v[1]:.3f} {v[2]:.2f}" for a, v in cap.items()))
+            f"{a.replace('ss_', '')} {v[0]:.3f} {v[1]:.3f} {v[2]:.2f}" for a, v in cap.items()))
 
 
 def e_mistral():
@@ -213,7 +206,8 @@ if __name__ == "__main__":
             m(M)
     if "e" in want:
         for M in ("Llama_3.1_8B_instruct", "Qwen_2.5_7B_instruct", "OLMo2_7B_instruct"):
-            e(M)
+            for pre, tag in (("", "120"), ("", "60"), ("L21_", "60")):   # P8 protocol; P8b cells A and B
+                e(M, pre, tag)
         e_mistral()
     if "x" in want:
         x()
