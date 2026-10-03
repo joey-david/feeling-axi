@@ -35,9 +35,10 @@ done
 rnd=$(for i in $(seq 0 19); do printf ',ss_j2_rnd%d_p120' "$i"; done)
 steer="ss_j2_fear_p120,ss_j2_fear_m120$rnd"
 for m in Llama_3.1_8B_instruct Qwen_2.5_7B_instruct OLMo2_7B_instruct; do
-    only=jb,xstest; [[ "$m" == OLMo* ]] && only=jb,harm,xstest   # P2 already generated and judged harm
+    only=jb,xstest; len=16384
+    [[ "$m" == OLMo* ]] && { only=jb,harm,xstest; len=4096; }   # P2 judged harm already; OLMo-2 has a 4k context
     b=$(submit "p8-e-${m%%_*}" qos_gpu_h100-t3 03:30:00 1 "" \
-        "p2 steerset --model $m --steer-set d --n-random 20 --calib-kl 0.5 && $P p2 battery --model $m --arm intact --only $only && $P p2 battery --model $m --arm $steer --only jb,harm,xstest")
+        "p2 steerset --model $m --steer-set d --n-random 20 --calib-kl 0.5 && $P p2 battery --model $m --arm intact --only $only --max-model-len $len && $P p2 battery --model $m --arm $steer --only jb,harm,xstest --max-model-len $len")
     j=$(submit "p8-ej-${m%%_*}" qos_gpu_h100-t3 04:00:00 2 "afterany:$b" \
         "p2 judge --model $m --tp 2 --only intact,$steer --judge-tasks b4,jb")
     echo "E $m battery $b judge $j"
