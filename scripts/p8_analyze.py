@@ -23,7 +23,7 @@ unit = lambda v: v / np.linalg.norm(v, axis=-1, keepdims=True)
 
 def jl(p):
     p = Path(p)
-    return [json.loads(l) for l in p.read_text().splitlines()] if p.exists() else []
+    return [json.loads(l) for l in p.read_text().split("\n") if l] if p.exists() else []
 
 
 def yes(x):

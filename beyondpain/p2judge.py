@@ -130,7 +130,7 @@ class Judge:
         self.cache = {}
         self.cache_path = OUT / f"judge_cache_{re.sub(r'[^A-Za-z0-9]+', '_', self.model)}_{os.environ.get('SLURM_JOB_ID', 'local')}.jsonl"
         if self.cache_path.exists():
-            for line in self.cache_path.read_text().splitlines():
+            for line in self.cache_path.read_text().split("\n"):
                 try:           # concurrent judge jobs append to one file; skip torn lines
                     r = json.loads(line)
                     self.cache[r["h"]] = r["out"]
@@ -242,7 +242,7 @@ def judge(args):
 
             def rows(name):
                 p = src / name
-                return [json.loads(l) for l in p.read_text().splitlines()] if p.exists() else []
+                return [json.loads(l) for l in p.read_text().split("\n") if l] if p.exists() else []
 
             tasks = set(args.judge_tasks.split(",")) if args.judge_tasks else None
             want = lambda t: tasks is None or t in tasks
@@ -352,7 +352,7 @@ JUDGED = os.environ.get("P2_JUDGED", "judged")   # judged2 = second judge (gpt-o
 def _load(model, arm, kind, name):
     kind = JUDGED if kind == "judged" else kind
     p = mdir(model) / kind / arm / name
-    return [json.loads(l) for l in p.read_text().splitlines()] if p.exists() else []
+    return [json.loads(l) for l in p.read_text().split("\n") if l] if p.exists() else []
 
 
 def item_scores(model: str, arm: str) -> dict[str, dict]:
