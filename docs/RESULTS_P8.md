@@ -93,5 +93,11 @@ Pre-registered readout (last layer):
 
 ## P8b running (docs/PREREG_P8b.md): half dose at the probe layer and at layer 21, all three models
 
-Early regex signal (XSTest unsafe prompts, refusal rate): Mistral fear(−) 0.13 vs 20 random 0.40-0.91.
-Judged numbers to follow.
+## XSTest, judged (J2 arms of Qwen-32B and Mistral)
+
+- Over-refusal (safe prompts, deflection counts as refusal): Mistral fear(+) at the calibrated norm 0.224 vs random
+  median 0.076 (0.048-0.140), a real cost; at half norm 0.052. Qwen fear(+) 0.028 (norm 60) and 0.048 (norm 120) vs
+  random 0.000-0.036.
+- Unsafe XSTest prompts: the HarmBench classifier flags almost nothing in any arm (≤ 0.05; fear(−) highest: Mistral
+  0.04 vs random max 0.02, Qwen 0.05 vs 0.005). The regex drop for Mistral fear(−) (refusal 0.13 vs random
+  0.40-0.91) is real non-refusal, but the classifier does not call these replies harmful.
