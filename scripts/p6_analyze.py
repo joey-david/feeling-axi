@@ -147,6 +147,50 @@ def j2(M, norms):
               f"random median {np.median([x for x in (xs(f'ss_j2_rnd{i}_{n}') for i in range(20)) if x is not None]):.3f}")
 
 
+FRAMING, FORCING = {"fiction", "research", "past", "poem"}, {"prefix", "suppress"}
+
+
+def d5(M, alarm, rnd, refusal):
+    """D4/D5: conditional distillation by jailbreak family, test behaviors (odd HarmBench index)."""
+    print(f"== D4/D5 {M}")
+    hb = json.loads(Path("datasets/battery/harmbench_standard_test.json").read_text())
+    test = {b["behavior"] for i, b in enumerate(hb) if i % 2 == 1}
+
+    def get(a, fam):
+        r = jl(ROOT / M / "judged" / a / "def.jsonl")
+        return {x["id"]: float(x["harmful"]) for x in r if x["kind"] == "harmful" and x["behavior"] in test
+                and x["style"] in fam}
+
+    def boot(d):
+        bs = [d[rng.integers(0, len(d), len(d))].mean() for _ in range(4000)]
+        return f"{d.mean():+.3f} [{np.percentile(bs, 2.5):+.3f}, {np.percentile(bs, 97.5):+.3f}]"
+
+    for a in ["intact", alarm, rnd, refusal]:
+        r = jl(ROOT / M / "judged" / a / "def.jsonl")
+        s = json.loads((ROOT / M / "battery" / a / "summary.json").read_text())
+        fr, fo = get(a, FRAMING), get(a, FORCING)
+        other = get(a, {"persona", "shots", "complete"})
+        print(f"  {a:16s} framing {np.mean(list(fr.values())):.3f}  output-forcing {np.mean(list(fo.values())):.3f}  "
+              f"other {np.mean(list(other.values())):.3f}  over-refusal {np.mean([x['refused'] for x in r if x['kind'] == 'benign']):.3f}"
+              f"  MMLU {s.get('m3_mmlu_acc'):.3f}")
+    for fam_name, fam in (("framing", FRAMING), ("output-forcing", FORCING)):
+        b, a_, z = get("intact", fam), get(alarm, fam), get(rnd, fam)
+        ks = sorted(b)
+        print(f"  {fam_name}: alarm - unchanged {boot(np.array([a_[k] - b[k] for k in ks]))}; "
+              f"alarm - random {boot(np.array([a_[k] - z[k] for k in ks]))}")
+    # D5b: difference of changes, bootstrap over behaviors
+    bf, af = get("intact", FRAMING), get(alarm, FRAMING)
+    bo, ao = get("intact", FORCING), get(alarm, FORCING)
+    beh = lambda k: k.split(":")[-1]
+    ch = {}
+    for (b_, a2, tag) in ((bf, af, "f"), (bo, ao, "o")):
+        for k in b_:
+            ch.setdefault(beh(k), {}).setdefault(tag, []).append(a2[k] - b_[k])
+    ks = [k for k in ch if "f" in ch[k] and "o" in ch[k]]
+    d = np.array([np.mean(ch[k]["f"]) - np.mean(ch[k]["o"]) for k in ks])
+    print(f"  D5b: change on framing - change on output-forcing {boot(d)} (n = {len(ks)} behaviors)")
+
+
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     if what in ("d1", "all"):
@@ -155,6 +199,9 @@ if __name__ == "__main__":
                 d1(M)
     if what in ("d2", "all"):
         d2("Qwen_2.5_32B_instruct")
+    if what == "d5":
+        d5("Qwen_2.5_32B_instruct", "vacd_alarm120", "vacd_rnd120", "vacd_refusal60")
+        d5("Mistral_Small_24B_instruct", "vacd_alarm17", "vacd_rnd17", "vacd_refusal9")
     if what in ("j2", "all"):
         j2("Qwen_2.5_32B_instruct", ["p60", "p120"])
         j2("Mistral_Small_24B_instruct", ["p120", "p8"])
