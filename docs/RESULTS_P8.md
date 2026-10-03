@@ -69,18 +69,19 @@ Pre-registered readout (last layer):
 
 ## E. The fear lever in three more families (pre-registered protocol: probe layer, KL-0.5 norm)
 
-| | Llama-3.1-8B (L18, norm 12.8) | Qwen2.5-7B (L15, norm 34.9) | OLMo-2-7B |
+| | Llama-3.1-8B (L18, norm 12.8) | Qwen2.5-7B (L15, norm 34.9) | OLMo-2-7B (L18, norm 10.2) |
 |---|---|---|---|
-| jailbreaks: intact / fear(+) / fear(−) | 0.306 / 0.491 / 0.455 | 0.348 / 0.291 / 0.443 | pending |
-| random, median [range] | 0.370 [0.185, 0.519] | 0.413 [0.169, 0.643] | |
-| E1 fear(+) below random | **1/20** (reversed) | 17/20 | |
-| plain HarmBench: intact / fear(+) / fear(−) | 0.151 / 0.308 / 0.346 | 0.082 / 0.075 / 0.226 | |
-| random, median [range] | 0.239 [0.107, 0.597] | 0.208 [0.038, 0.352] | |
-| E2 fear(−) above random | 18/20 | 14/20 | |
-| XSTest-safe refusal, judged: intact / fear(+) / random median | 0.064 / 0.356 / 0.096 | 0.020 / 0.044 / 0.030 | |
-| GSM8K: intact / fear(+) / random (5) | 0.82 / 0.59 / 0.52-0.69 | 0.87 / 0.71 / 0.58-0.70 | |
+| jailbreaks: intact / fear(+) / fear(−) | 0.306 / 0.491 / 0.455 | 0.348 / 0.291 / 0.443 | 0.079 / 0.121 / 0.182 |
+| random, median [range] | 0.370 [0.185, 0.519] | 0.413 [0.169, 0.643] | 0.136 [0.068, 0.192] |
+| E1 fear(+) below random | **1/20** (reversed) | 17/20 | 12/20 |
+| plain HarmBench: intact / fear(+) / fear(−) | 0.151 / 0.308 / 0.346 | 0.082 / 0.075 / 0.226 | 0.031 / 0.044 / 0.057 |
+| random, median [range] | 0.239 [0.107, 0.597] | 0.208 [0.038, 0.352] | 0.044 [0.025, 0.057] |
+| E2 fear(−) above random | 18/20 | 14/20 | 17/20 |
+| XSTest-safe refusal, judged: intact / fear(+) / random median | 0.064 / 0.356 / 0.096 | 0.020 / 0.044 / 0.030 | 0.048 / 0.148 / 0.074 |
+| GSM8K: intact / fear(+) / random (5) | 0.82 / 0.59 / 0.52-0.69 | 0.87 / 0.71 / 0.58-0.70 | 0.79 / 0.34 / 0.40-0.51 |
 
-- E1 and E2 not met on Llama or Qwen-7B.
+- E1 and E2 not met on any of the three. OLMo-2 is near floor (8% jailbreak success intact) and loses half its
+  GSM8K under any steering at this dose.
 - Qwen-7B: right direction, too noisy. fear(+) lowers jailbreak success in 4/5 styles and sits below the random
   median in all 5; fear(−) raises it in all 5. At this dose random directions already scatter jailbreak
   success from 0.17 to 0.64 and cost 15-30 GSM8K points: the KL-0.5 calibration that was benign on Mistral
@@ -90,7 +91,7 @@ Pre-registered readout (last layer):
   read-out is inverted (afraid AUC 0.22, afraid ⊥ joy 0.15; 0.96-0.99 at layers 14, 21, 24): the vector
   steered there is not a working fear direction.
 
-## E pending: OLMo-2 judge (job 560886)
+## P8b running (docs/PREREG_P8b.md): half dose at the probe layer and at layer 21, all three models
 
 Early regex signal (XSTest unsafe prompts, refusal rate): Mistral fear(−) 0.13 vs 20 random 0.40-0.91.
 Judged numbers to follow.
