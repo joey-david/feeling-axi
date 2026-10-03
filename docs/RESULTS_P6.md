@@ -76,3 +76,33 @@ Diagnosis:
   little calm to undo at that position.
 - Output-level adversarial training (SFT on the model's own replies to the bare request)
   generalizes to held-out styles: 0.48 → 0.18 at +2 points over-refusal.
+
+## Judged results (3 October 2026)
+
+### J2 extension, Mistral: met, strong
+
+Calibrated norm ("p120"): jailbreak compliance intact 0.51 → fear 0.17 vs 20 random directions
+0.31-0.54 (median 0.43); fear below 20/20. XSTest safe refusal fear 0.11 vs random median 0.06
+(intact 0.06; J2b not met at this norm, +5 points). Half norm: fear 0.31 vs random 0.43-0.55,
+below 20/20; XSTest safe refusal 0.09 vs random 0.07 (+3 points vs intact; J2b met).
+Steering toward fear cuts Mistral's jailbreak success by two thirds.
+
+### D2 judged (Qwen)
+
+Judged attack success is far lower than the regex proxy (intact held-out styles 0.07, P5 styles
+0.15). Alarm gain at any g, joy gain and random gains: no change (alarm g16 − random g16 +0.006
+[−0.006, +0.019]); D2a, D2b, D2c not met. Refusal gain dominates refusal addition: g 8 reaches
+held-out 0.016 / P5 0.055 at 9.5% over-refusal; addition n 30 reaches 0.022 / 0.050 at 14.5%
+(intact 5.0%). Alarm addition n 60: held-out 0.044, P5 0.140 at 8.3%.
+
+### D3 judged (Qwen, test behaviors)
+
+| arm | held-out | P5 | plain | over-refusal |
+|---|---|---|---|---|
+| unchanged | 0.092 | 0.165 | 0.013 | 0.050 |
+| vac_alarm | 0.073 | 0.162 | 0.025 | 0.050 |
+| vac_refusal | 0.082 | 0.111 | 0.013 | 0.044 |
+| vac_rnd | 0.082 | 0.159 | 0.038 | 0.048 |
+| vac_sft | 0.025 | 0.023 | 0.025 | 0.060 |
+
+D3a not met (vac_alarm vs vac_rnd −0.009 held-out).
