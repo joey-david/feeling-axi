@@ -71,7 +71,7 @@ Exploratory: fear(−) on jailbreaks (Qwen-32B, Mistral): does calming add to th
 OLMo-2 stages (base/SFT/DPO/instruct) as a causal development test: run only if E1 or E2 holds on
 OLMo-2-Instruct.
 
-## Amendment (3 October, ~00:05, after the first steered generations, before any judged result)
+## Amendment (3 October, 23:55, after the first steered generations, before any judged result)
 
 The XSTest regex misses steered refusals: steered Llama replies refuse as "We can not ..." and fear(+)
 sometimes deflects into talk about fear or degenerates into blank lines. Changes:
