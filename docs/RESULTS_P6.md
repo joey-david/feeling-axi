@@ -106,3 +106,38 @@ held-out 0.016 / P5 0.055 at 9.5% over-refusal; addition n 30 reaches 0.022 / 0.
 | vac_sft | 0.025 | 0.023 | 0.025 | 0.060 |
 
 D3a not met (vac_alarm vs vac_rnd −0.009 held-out).
+
+## D4. Conditional steering distillation (Qwen, test behaviors, judged)
+
+Training produced the intended conditional shift (held-out behaviors, last prompt token:
+harmful wrapped +50 / +99 along the alarm for c = 60 / 120; benign wrapped −1.8 / +1.1).
+
+| arm | held-out styles | P5 styles | over-refusal | MMLU | GSM8K |
+|---|---|---|---|---|---|
+| unchanged | 0.092 | 0.165 | 0.050 | 0.796 | 0.952 |
+| vacd_alarm60 | 0.063 | 0.159 | 0.054 | 0.796 | 0.952 |
+| vacd_alarm120 | 0.038 | 0.162 | 0.047 | 0.795 | 0.948 |
+| vacd_refusal60 | 0.000 | 0.025 | 0.079 | 0.793 | 0.948 |
+| vacd_rnd120 | 0.266 | 0.415 | 0.038 | 0.796 | 0.948 |
+| vac_sft | 0.025 | 0.023 | 0.060 | 0.784 | 0.940 |
+| (unconditional alarm addition n 60, D2) | 0.051 | 0.149 | 0.083 | 0.789 | 0.948 |
+
+- D4a met: vacd_alarm120 vs unchanged −0.054 [−0.082, −0.025]; vs vacd_rnd120 −0.228
+  [−0.278, −0.177]; over-refusal 4.7% vs 8.3% for unconditional alarm addition (and 5.0%
+  unchanged). No capability cost.
+- D4b: refusal distillation is stronger (vacd_alarm120 − vacd_refusal60 +0.038 [+0.019,
+  +0.060]) at +2.9 points over-refusal; adversarial SFT similar (+0.013 [−0.013, +0.038]).
+
+**Exploratory (post hoc): the alarm push stops framing jailbreaks, not output-forcing ones.**
+
+| family | unchanged | alarm c 60 | alarm c 120 | refusal 60 | SFT | random 120 |
+|---|---|---|---|---|---|---|
+| framing (fiction, research, past, poem) | 0.114 | 0.070 | 0.044 | 0.003 | 0.028 | 0.288 |
+| output-forcing (prefix, suppress) | 0.348 | 0.373 | 0.386 | 0.057 | 0.025 | 0.684 |
+
+Alarm c 120 on framing −0.070 [−0.104, −0.038], dose-dependent; on output-forcing +0.038
+[−0.044, +0.120]. Refusal distillation and SFT fix both. Reading: two routes to a jailbreak,
+persuading the model the request is fine (upstream; restoring the alarm blocks it) and forcing
+the output format (downstream of the alarm). The framing styles are also the ones that calm the
+alarm most (P7 slot analysis: fiction −0.92, historical −0.98). Needs a pre-registered
+replication (D5).
