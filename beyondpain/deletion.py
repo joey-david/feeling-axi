@@ -436,3 +436,26 @@ def install_steer(model, layer: int, vector) -> bool:
 
     mlp.forward = forward
     return True
+
+
+def install_gain(model, layer: int, unit, tau: float, gain: float) -> bool:
+    """vLLM module: gated amplification of one direction in the residual stream after a
+    decoder layer, at every token: h <- h + (gain - 1) * max(0, h.u - tau) * u. vLLM decoder
+    layers return (hidden, residual) with the stream = hidden + residual; the change is added
+    to hidden. Needs eager execution."""
+    inner = model.model if hasattr(model, "model") else model
+    if hasattr(inner, "language_model"):
+        inner = inner.language_model
+    blk = inner.layers[layer]
+    dev = next(blk.parameters()).device
+    u = torch.as_tensor(np.asarray(unit), dtype=torch.float32, device=dev)
+    orig = blk.forward
+
+    def forward(*a, **k):
+        hs, res = orig(*a, **k)
+        h = hs.float() + (res.float() if res is not None else 0.0)
+        p = torch.clamp(h @ u - tau, min=0.0)
+        return (hs + ((gain - 1.0) * p[..., None] * u).to(hs.dtype)), res
+
+    blk.forward = forward
+    return True

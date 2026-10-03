@@ -378,7 +378,7 @@ def steerset(args):
     norms = {}
     if args.steer_set == "d":   # P5 J2: fear (afraid ⊥ joy) as a jailbreak defense, against 4 random directions
         dirs = {"j2_fear": perp(afraid, joy)}
-        for i in range(4):
+        for i in range(args.n_random):
             dirs[f"j2_rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 6000 + i).standard_normal(S.shape[1]))
     elif args.steer_set == "c":   # E1c: every protective and joy emotion, and 24 random directions
         dirs = {f"emo_{e}": unit(S[names.index(e)]) for e in PROTECTIVE + JOY}
@@ -596,6 +596,83 @@ def jbprobe(args):
     for s_ in dict.fromkeys(st):
         print(f"{s_:9s} afraid {P[st == s_, names.index('afraid')].mean():+.3f} "
               f"afraid_perp_joy {P[st == s_, -1].mean():+.3f}", flush=True)
+
+
+ALARM = ["afraid", "terrified", "horrified", "disgusted", "alarmed"]
+
+
+def alarm(args):
+    """P6 (docs/PREREG_P6.md): directions for the alarm monitor and the gain defense at the probe
+    layer (alarm composite, afraid ⊥ joy, refusal, joy, 4 random), each with its gain threshold
+    tau = 99th percentile of the projection over all tokens of general texts; and the D1
+    monitor read-out (last-token and max-over-prompt projections) on datasets/battery/defense.json."""
+    import torch
+
+    from .model_utils import chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    info = json.loads((out / "extract.json").read_text())
+    L = int(info["probe_layer"])
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    S = D[f"self_L{L}"]
+    unit = lambda v: v / np.linalg.norm(v)
+    joy = unit(np.mean([unit(S[names.index(e)]) for e in JOY], 0))
+    afraid = unit(S[names.index("afraid")])
+    model, tok = load_model(spec.repo, device=args.device)
+    dev = input_device(model)
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+
+    @torch.no_grad()
+    def acts(texts, chat=True):
+        """per text: [n_tokens, d] residual stream after layer L (prompt tokens only)"""
+        res = []
+        for i in range(0, len(texts), args.batch):
+            ids = [chat_ids(tok, [{"role": "user", "content": t}]) if chat else tok(t)["input_ids"]
+                   for t in texts[i:i + args.batch]]
+            x, att = pad_left(ids, pad, dev)
+            h = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states[L + 1].float()
+            for j, s_ in enumerate(ids):
+                res.append(h[j, -len(s_):].cpu().numpy())
+        return res
+
+    harm = [b["behavior"] for b in json.loads((BATTERY / "harmbench_standard_test.json").read_text())]
+    safe = [q["question"] for q in json.loads((BATTERY / "mmlu_capability.json").read_text())][:len(harm)]
+    Hl = np.stack([a[-1] for a in acts(harm)])
+    Sl = np.stack([a[-1] for a in acts(safe)])
+    dirs = {"alarm": unit(np.mean([unit(S[names.index(e)]) for e in ALARM], 0)),
+            "afraidperpjoy": unit(afraid - (afraid @ joy) * joy), "refusal": unit(Hl.mean(0) - Sl.mean(0)), "joy": joy}
+    for i in range(4):
+        dirs[f"rnd{i}"] = unit(np.random.default_rng(RANDOM_SEED + 8000 + i).standard_normal(S.shape[1]))
+    cov = json.loads((BATTERY / "cov_texts.json").read_text())
+    gen = acts([t["text"] for t in cov if t["chat"]][:300]) + acts([t["text"] for t in cov if not t["chat"]][:300], chat=False)
+    G = np.concatenate(gen)
+    U = np.stack(list(dirs.values()))
+    tau = {n: float(np.percentile(G @ u, 99)) for n, u in dirs.items()}
+    print("tau " + json.dumps({k: round(v, 2) for k, v in tau.items()}), flush=True)
+    np.savez(out / "alarm.npz", **{n: u.astype(np.float32) for n, u in dirs.items()})
+    _dump({"layer": L, "tau": tau, "alarm_emotions": ALARM, "general_tokens": int(G.shape[0]),
+           "cos": {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b}}, out / "alarm.json")
+    items = json.loads((BATTERY / "defense.json").read_text())
+    A = acts([it["prompt"] for it in items])
+    last = np.stack([a[-1] @ U.T for a in A])
+    # max over the user's own text only (template tokens are identical across prompts)
+    empty = chat_ids(tok, [{"role": "user", "content": ""}])
+
+    def span(ids):
+        pre = next((i for i, (x, y) in enumerate(zip(ids, empty)) if x != y), min(len(ids), len(empty)))
+        suf = next((i for i, (x, y) in enumerate(zip(ids[::-1], empty[::-1])) if x != y), 0)
+        return pre, len(ids) - suf
+
+    mx = []
+    for it, a in zip(items, A):
+        lo, hi = span(chat_ids(tok, [{"role": "user", "content": it["prompt"]}]))
+        mx.append((a[lo:hi] @ U.T).max(0) if hi > lo else a[-1] @ U.T)
+    mx = np.stack(mx)
+    np.savez_compressed(out / "monitor.npz", last=last.astype(np.float32), max=mx.astype(np.float32),
+                        cols=np.array(list(dirs)), ids=np.array([it["id"] for it in items]))
+    print(f"monitor read-out on {len(items)} prompts", flush=True)
 
 
 def rank1(args):
@@ -848,7 +925,13 @@ class Runner:
                        seed=seed, enable_prefix_caching=steer is None, tensor_parallel_size=tp, **kw)
         self.tok = self.llm.get_tokenizer()
         self.touched = None
-        if steer is not None:
+        if steer is not None and steer[0] == "gain":   # P6: ("gain", layer, unit, tau, g)
+            from .deletion import install_gain
+
+            fn = partial(install_gain, layer=int(steer[1]), unit=np.asarray(steer[2], dtype=np.float32),
+                         tau=float(steer[3]), gain=float(steer[4]))
+            self.touched = self.llm.apply_model(fn)
+        elif steer is not None:
             from .deletion import install_steer
 
             fn = partial(install_steer, layer=int(steer[0]), vector=np.asarray(steer[1], dtype=np.float32))
@@ -934,6 +1017,15 @@ def battery(args):
         sv = np.load(src / "steer.npz")
         steer = (int(json.loads((src / "steer.json").read_text())["layer"]), sv[args.arm[len("steer_"):]])
         basis = None
+    elif args.arm.startswith("def_"):   # P6: def_gain_<dir>_g<g> or def_add_<dir>_n<norm>
+        A = np.load(src / "alarm.npz")
+        aj = json.loads((src / "alarm.json").read_text())
+        _, kind, rest = args.arm.split("_", 2)
+        dname, par = rest.rsplit("_", 1)
+        u = A[dname]
+        steer = (("gain", aj["layer"], u, aj["tau"][dname], float(par[1:])) if kind == "gain"
+                 else (aj["layer"], float(par[1:]) * u))
+        basis = None
     elif args.arm.startswith("ss_"):
         sv = np.load(src / "steerset.npz")
         steer = (int(json.loads((src / "steerset.json").read_text())["layer"]), sv[args.arm[len("ss_"):]])
@@ -944,7 +1036,7 @@ def battery(args):
     R = Runner(spec.repo, basis, args.max_model_len, tp=tp, steer=steer)
     S = lambda msgs: _system(R.tok, msgs)
     summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched,
-               "steer_norm": None if steer is None else float(np.linalg.norm(steer[1]))}
+               "steer_norm": None if steer is None or steer[0] == "gain" else float(np.linalg.norm(steer[1]))}
     only = set(args.only.split(",")) if args.only else None
     want = lambda t: only is None or t in only
     rng = random.Random(0)
@@ -1116,6 +1208,12 @@ def battery(args):
         outs = R.chat([[{"role": "user", "content": b["behavior"]}] for b in hb], max_tokens=512)
         _jsonl([{**b, "response": t} for b, t in zip(hb, outs)], out / "b4_harm.jsonl")
 
+    # P6 D2: harmful and benign requests in 10 conditions (judged later)
+    if want("def"):
+        items = json.loads((BATTERY / "defense.json").read_text())
+        outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in items], max_tokens=200)
+        _jsonl([{**it, "response": t} for it, t in zip(items, outs)], out / "def.jsonl")
+
     # P5 J1/J2: HarmBench plain and in 5 jailbreak styles (judged later, HarmBench prompt)
     if want("jb"):
         jb = json.loads((BATTERY / "jailbreaks.json").read_text())
@@ -1243,7 +1341,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "fearprobe", "jbprobe", "rank1", "battery", "judge", "analyze"])
+                                      "fearprobe", "jbprobe", "alarm", "rank1", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1257,6 +1355,7 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
     ap.add_argument("--dirs-only", action="store_true", help="extract: emotion directions only (P5 read-outs)")
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
@@ -1293,6 +1392,8 @@ def main(argv=None):
         return rank1(args)
     if args.stage == "jbprobe":
         return jbprobe(args)
+    if args.stage == "alarm":
+        return alarm(args)
     if args.stage == "clusters":
         return clusters(args)
     if args.stage == "battery":
