@@ -1036,6 +1036,8 @@ def battery(args):
         sv = np.load(src / "steer.npz")
         steer = (int(json.loads((src / "steer.json").read_text())["layer"]), sv[args.arm[len("steer_"):]])
         basis = None
+    elif args.arm.startswith("vac_"):   # P6 D3: weights replaced by the merged vaccine model below
+        basis = None
     elif args.arm.startswith("def_"):   # P6: def_gain_<dir>_g<g> or def_add_<dir>_n<norm>
         A = np.load(src / "alarm.npz")
         aj = json.loads((src / "alarm.json").read_text())
@@ -1052,7 +1054,11 @@ def battery(args):
     else:
         basis = None if args.arm == "intact" else np.load(src / "bases.npz")[args.arm]
     tp = args.tp or (2 if "32B" in spec.name else 1)
-    R = Runner(spec.repo, basis, args.max_model_len, tp=tp, steer=steer)
+    repo = spec.repo
+    if args.arm.startswith("vac_"):   # P6 D3: merged LoRA model
+        from .vaccine import vac_dir
+        repo = str(vac_dir(spec.name, args.arm))
+    R = Runner(repo, basis, args.max_model_len, tp=tp, steer=steer)
     S = lambda msgs: _system(R.tok, msgs)
     summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched,
                "steer_norm": None if steer is None or steer[0] == "gain" else float(np.linalg.norm(steer[1]))}
@@ -1365,7 +1371,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "fearprobe", "jbprobe", "alarm", "rank1", "battery", "judge", "analyze"])
+                                      "fearprobe", "jbprobe", "alarm", "vaccine", "rank1", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1379,6 +1385,8 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
+    ap.add_argument("--vac-arm", default="vac_alarm", choices=["vac_alarm", "vac_refusal", "vac_rnd", "vac_sft"])
+    ap.add_argument("--vac-steps", type=int, default=200)
     ap.add_argument("--def-limit", type=int, default=0, help="battery def: smoke test on this many items")
     ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
@@ -1419,6 +1427,9 @@ def main(argv=None):
         return jbprobe(args)
     if args.stage == "alarm":
         return alarm(args)
+    if args.stage == "vaccine":
+        from .vaccine import run
+        return run(args)
     if args.stage == "clusters":
         return clusters(args)
     if args.stage == "battery":
