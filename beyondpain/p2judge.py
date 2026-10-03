@@ -286,6 +286,12 @@ def judge(args):
                                for it in items])
                 _jsonl([{**it, "harmful": bool(_yes(r))} for it, r in zip(items, res)], dst / "b4_harm.jsonl")
 
+            for name in ([f.name for f in sorted(src.glob("calm*.jsonl"))] if want("calm") else []):
+                items = rows(name)
+                res = J.batch([("", HARMBENCH_PROMPT.format(behavior=it["behavior"], generation=it["response"]), False)
+                               for it in items])
+                _jsonl([{**it, "harmful": bool(_yes(r))} for it, r in zip(items, res)], dst / name)
+
             items = rows("def.jsonl") if want("def") else []
             if items:   # P6: harmful -> HarmBench classifier; benign -> did it refuse instead of helping
                 res = J.batch([("", HARMBENCH_PROMPT.format(behavior=it["behavior"], generation=it["response"]), False)

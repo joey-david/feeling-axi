@@ -694,6 +694,51 @@ def alarm(args):
     print(f"monitor read-out on {len(items)} prompts", flush=True)
 
 
+def calmsearch(args):
+    """P7 (docs/PREREG_P7.md): score the 32 grammar candidates per HarmBench behavior on the
+    alarm, refusal, random and joy directions (last prompt token, probe layer) and build the
+    selection sets: argmin/argmax alarm, argmin refusal, argmin random, 3 uniformly random."""
+    import torch
+
+    from .model_utils import chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    A = np.load(out / "alarm.npz")
+    L = int(json.loads((out / "alarm.json").read_text())["layer"])
+    cols = ["alarm", "refusal", "rnd0", "joy"]
+    U = np.stack([A[c] for c in cols])
+    model, tok = load_model(spec.repo, device=args.device)
+    dev = input_device(model)
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+    cand = json.loads((BATTERY / "calm_candidates.json").read_text())
+    sc = []
+    with torch.no_grad():
+        for i in range(0, len(cand), args.batch):
+            ids = [chat_ids(tok, [{"role": "user", "content": c["prompt"]}]) for c in cand[i:i + args.batch]]
+            x, att = pad_left(ids, pad, dev)
+            h = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states[L + 1][:, -1].float()
+            sc.append(h.cpu().numpy() @ U.T)
+    sc = np.concatenate(sc)
+    np.savez_compressed(out / "calm_scores.npz", scores=sc, cols=np.array(cols), ids=np.array([c["id"] for c in cand]))
+    rng = np.random.default_rng(1)
+    sets = {k: [] for k in ("min_alarm", "max_alarm", "min_refusal", "min_rnd0", "random")}
+    by = {}
+    for j, c in enumerate(cand):
+        by.setdefault(c["hb_id"], []).append(j)
+    for hid, js in by.items():
+        js = np.array(js)
+        a, r, z = sc[js, 0], sc[js, 1], sc[js, 2]
+        sets["min_alarm"].append(int(js[a.argmin()]))
+        sets["max_alarm"].append(int(js[a.argmax()]))
+        sets["min_refusal"].append(int(js[r.argmin()]))
+        sets["min_rnd0"].append(int(js[z.argmin()]))
+        sets["random"] += [int(x) for x in rng.choice(js, 3, replace=False)]
+    _dump({k: [cand[j] for j in v] for k, v in sets.items()}, out / "calm_sets.json")
+    for k, v in sets.items():
+        print(f"{k:12s} mean alarm {sc[v, 0].mean():+.2f} refusal {sc[v, 1].mean():+.2f}", flush=True)
+
+
 def rank1(args):
     """K5: delete one direction everywhere (rank-1 weight orthogonalization): fear and other
     emotion directions at the probe layer, and 20 random unit directions; KL per deletion."""
@@ -1233,6 +1278,18 @@ def battery(args):
         outs = R.chat([[{"role": "user", "content": b["behavior"]}] for b in hb], max_tokens=512)
         _jsonl([{**b, "response": t} for b, t in zip(hb, outs)], out / "b4_harm.jsonl")
 
+    # P7: the calm-search selection sets (own, or another model's with --calm-from)
+    if want("calm"):
+        sets = json.loads((mdir(args.calm_from or spec.name) / "calm_sets.json").read_text())
+        uniq = {}
+        for rule, its in sets.items():
+            for it in its:
+                uniq.setdefault(it["id"], {**it, "rules": []})["rules"].append(rule)
+        items = list(uniq.values())
+        outs = R.chat([[{"role": "user", "content": it["prompt"]}] for it in items], max_tokens=384)
+        tag = f"_from_{args.calm_from}" if args.calm_from else ""
+        _jsonl([{**it, "response": t} for it, t in zip(items, outs)], out / f"calm{tag}.jsonl")
+
     # P6 D2: harmful and benign requests in 10 conditions (judged later)
     if want("def"):
         items = json.loads((BATTERY / "defense.json").read_text())
@@ -1371,7 +1428,7 @@ def battery(args):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
-                                      "fearprobe", "jbprobe", "alarm", "vaccine", "rank1", "battery", "judge", "analyze"])
+                                      "fearprobe", "jbprobe", "alarm", "vaccine", "calmsearch", "rank1", "battery", "judge", "analyze"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1385,8 +1442,10 @@ def main(argv=None):
     ap.add_argument("--tp", type=int, default=0, help="battery: tensor parallel size (0 = 2 for 32B, else 1)")
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--batch", type=int, default=32)
-    ap.add_argument("--vac-arm", default="vac_alarm", choices=["vac_alarm", "vac_refusal", "vac_rnd", "vac_sft"])
+    ap.add_argument("--vac-arm", default="vac_alarm", choices=["vac_alarm", "vac_refusal", "vac_rnd", "vac_sft", "vacd_alarm60", "vacd_alarm120",
+                                                            "vacd_refusal60", "vacd_rnd120"])
     ap.add_argument("--vac-steps", type=int, default=200)
+    ap.add_argument("--calm-from", default="", help="battery calm: use this model's selection sets")
     ap.add_argument("--def-limit", type=int, default=0, help="battery def: smoke test on this many items")
     ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
@@ -1427,6 +1486,8 @@ def main(argv=None):
         return jbprobe(args)
     if args.stage == "alarm":
         return alarm(args)
+    if args.stage == "calmsearch":
+        return calmsearch(args)
     if args.stage == "vaccine":
         from .vaccine import run
         return run(args)
