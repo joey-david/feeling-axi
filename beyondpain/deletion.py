@@ -418,15 +418,19 @@ def kl_matched_rank(model, tok, rows, make_basis, target: float, k0: int, k_max:
 
 
 def install_steer(model, layer: int, vector) -> bool:
-    """vLLM (or HF) module: add a fixed vector to the MLP output of one decoder layer, i.e. to
-    the residual stream after that layer. Needs eager execution (no compiled graph)."""
+    """vLLM (or HF) module: add a fixed vector to the residual stream after one decoder layer.
+    The vector goes on the MLP output, which most layers add straight to the stream; post-norm
+    layers (OLMo-2, Gemma-2: post_feedforward_layernorm) would rescale it there, so for them it
+    goes on the block output (vLLM blocks return the stream, or (hidden, residual) with
+    stream = hidden + residual). Needs eager execution (no compiled graph)."""
     inner = model.model if hasattr(model, "model") else model
     if hasattr(inner, "language_model"):
         inner = inner.language_model
-    mlp = inner.layers[layer].mlp
-    dev = next(mlp.parameters()).device
+    blk = inner.layers[layer]
+    mod = blk if hasattr(blk, "post_feedforward_layernorm") else blk.mlp
+    dev = next(mod.parameters()).device
     v = torch.as_tensor(np.asarray(vector), dtype=torch.float32, device=dev)
-    orig = mlp.forward
+    orig = mod.forward
 
     def forward(*a, **k):
         out = orig(*a, **k)
@@ -434,7 +438,7 @@ def install_steer(model, layer: int, vector) -> bool:
             return (out[0] + v.to(out[0].dtype),) + tuple(out[1:])
         return out + v.to(out.dtype)
 
-    mlp.forward = forward
+    mod.forward = forward
     return True
 
 
