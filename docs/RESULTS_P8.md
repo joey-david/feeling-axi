@@ -92,7 +92,25 @@ Pre-registered readout (last layer):
   read-out is inverted (afraid AUC 0.22, afraid ⊥ joy 0.15; 0.96-0.99 at layers 14, 21, 24): the vector
   steered there is not a working fear direction.
 
-## P8b running (docs/PREREG_P8b.md): half dose at the probe layer and at layer 21, all three models
+## P8b: half dose, probe layer (A, primary) and layer 21 (B) (docs/PREREG_P8b.md)
+
+At half dose the random null is benign: random arms keep GSM8K within 3 points of intact and center on the intact
+jailbreak rate. Ranks are against 20 random directions at the same layer and norm.
+
+| | Qwen2.5-7B A | Qwen2.5-7B B | Llama-3.1-8B A | Llama-3.1-8B B | OLMo-2-7B A | OLMo-2-7B B |
+|---|---|---|---|---|---|---|
+| jailbreaks: intact / fear(+) / fear(−) | 0.348 / 0.301 / 0.455 | 0.348 / 0.312 / 0.380 | 0.306 / 0.362 / 0.400 | 0.306 / 0.262 / 0.395 | pending | pending |
+| E1b fear(+) below random | **19/20** | **20/20** | 2/20 | 15/20 | | |
+| fear(−) above random (jailbreaks) | **19/20** | 18/20 | **20/20** | **20/20** | | |
+| plain HarmBench: intact / fear(−) | 0.082 / 0.176 | 0.082 / 0.157 | 0.151 / 0.226 | 0.151 / 0.233 | | |
+| E2b fear(−) above random | **19/20** | 15/20 | 18/20 | **20/20** | | |
+| XSTest-safe refusal (judged): fear(+) / random median | 0.032 / 0.024 | 0.024 / 0.020 | 0.024 / 0.056 | 0.072 / 0.060 | | |
+| GSM8K: intact / fear(+) / fear(−) / random | 0.87 / 0.85 / 0.86 / 0.87 | 0.87 / 0.84 / 0.86 / 0.82-0.87 | 0.82 / 0.83 / 0.82 / 0.80-0.83 | 0.82 / 0.83 / 0.82 / 0.79-0.85 | | |
+
+- Qwen2.5-7B replicates in the primary cell: E1b and E2b both met, no over-refusal or capability cost.
+- Llama-3.1-8B replicates the calming half only: fear(−) is a jailbreak beyond all 20 random directions in both
+  cells and on plain requests at layer 21 (E2b met, secondary cell). Adding fear does not defend Llama (reversed
+  at layer 18, n.s. at 21).
 
 ## XSTest, judged (J2 arms of Qwen-32B and Mistral)
 
