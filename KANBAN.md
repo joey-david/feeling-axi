@@ -8,10 +8,12 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Ready
 
+- W1 Rewrite the paper around the causal lever (read-out claims withdrawn) — next: restructure `docs/WRITEUP_SCARED_SAFE.md` from `docs/RESULTS_P8.md`
+- D6 OLMo stages: does calming work before safety training? — next: once p5-fetch3 gets a node, P8b protocol on base/SFT/DPO
+
 
 ## Doing
 
-- P8 Read-out vs random/topic nulls, fear -> refusal mediation, fear lever in Llama/Qwen-7B/OLMo (`docs/PREREG_P8.md`) — owner: Claude — next: jobs 559126-559136, then `scripts/p8_analyze.py`
 
 
 ## Blocked
@@ -19,6 +21,8 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 - T1 OLMo SFT/DPO fear read-out — blocked: p5-fetch3 538616 waits for a node (ReqNodeNotAvail); t1-olmo-b 538617 depends on it
 
 ## Done
+
+- P8/P8b Read-out not fear-specific; calming is a jailbreak in 5/5 models (p=0.003), fear defends in 3/5; acts via the refusal direction — `docs/RESULTS_P8.md`
 
 - K5 Rank-1 fear deletion releases harm (#2 of 148; 0.17 vs random 0.03-0.07) — `docs/RESULTS_P5.md`
 

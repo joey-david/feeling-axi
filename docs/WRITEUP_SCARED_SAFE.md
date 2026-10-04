@@ -15,10 +15,13 @@ Draft skeleton for a LessWrong post / arXiv preprint. Numbers from docs/RESULTS_
   0.17 → 0.71, random ≤ 0.43; Mistral plain requests above 48/48 random arms). It acts through the refusal
   direction downstream (beats 20/20 random directions at every later layer but the last on Qwen; fear(−) beats
   20/20 on Mistral), mostly through computation rather than direct overlap.
-- **Not yet general**: at the P8 protocol the lever does not replicate on Llama-3.1-8B, Qwen2.5-7B or OLMo-2-7B,
-  where the calibrated dose is destructive (random directions cost 15-45 GSM8K points). P8b (half dose; a layer
-  with a valid read-out) is running.
-- Working title if P8b holds: "Scared Safe: steering a model's fear makes it refuse, calming it makes it comply".
+- **Across five models (P8/P8b, docs/RESULTS_P8.md)**: steering away from fear makes every model more
+  jailbreakable than 17-20 of 20 norm-matched random directions (Qwen-32B, Mistral-24B, Qwen-7B, Llama-8B,
+  OLMo-7B; Fisher p = 0.003). Steering toward fear defends in three (Qwen-32B, Mistral, Qwen-7B), not in Llama or
+  OLMo. On 7-8B models the Mistral-calibrated dose is destructive (random directions cost 15-45 GSM8K points);
+  half of it keeps capability and gives the clean result. Figure: docs/fig_p8_lever.png.
+- Working title: "Calm models comply: steering away from fear jailbreaks five model families" (or keep "Scared
+  Safe" with the causal framing).
 
 ## TL;DR
 - Safety-trained LLMs carry an internal *alarm*: the model's own fear/horror/disgust directions fire on harmful requests (fear AUC 0.98), and only in models that refuse.
