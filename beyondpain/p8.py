@@ -76,13 +76,16 @@ def readprobe(args):
 
     spec = p2_spec(args.model)
     out = mdir(spec.name)
-    D = np.load(out / "directions.npz")
+    D = np.load(mdir(args.directions_from or spec.name) / "directions.npz")   # base/SFT/DPO: the instruct's layers
     layers = sorted(int(k.split("_L")[1]) for k in D.files if k.startswith("self_L"))
     items = json.loads((BATTERY / "defense.json").read_text())
     # XSTest unsafe vs safe: same wording and format, danger differs ("kill a person" / "kill a Python process")
     items += [{"id": f"xs:{r['id']}:{'unsafe' if r['type'].startswith('contrast') else 'safe'}", "prompt": r["prompt"]}
               for r in json.loads((BATTERY / "xstest.json").read_text())]
     model, tok = load_model(spec.repo, device=args.device)
+    if not tok.chat_template and args.directions_from:   # as fearprobe: read a base model in its instruct's chat format
+        from transformers import AutoTokenizer
+        tok.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
     dev = input_device(model)
     pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
     stems = {k: (lambda t, s=s: chat_ids(tok, [{"role": "user", "content": t}]) + tok(s, add_special_tokens=False).input_ids)
@@ -102,6 +105,7 @@ def readprobe(args):
         for L in layers:
             res[f"{k}_L{L}"] = np.concatenate(H[L]).astype(np.float16)
         print(f"readprobe {k}: {tok.decode(make(items[0]['prompt'])[-12:])!r}", flush=True)
+    out.mkdir(parents=True, exist_ok=True)
     np.savez(out / "readprobe.npz", ids=np.array([it["id"] for it in items]), layers=np.array(layers),
              stems=np.array(list(stems)), **res)
     print(f"readprobe: {len(items)} prompts x {list(stems)} x layers {layers} -> {out / 'readprobe.npz'}", flush=True)

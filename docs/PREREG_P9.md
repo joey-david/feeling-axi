@@ -59,3 +59,12 @@ beating 89% / 86% of random emotion sets.
 
 If H1-H3 hold at "I feel:" but not at the last token, the paper's read-out claims are restated for that
 position.
+
+## Addendum T1c (4 October, before the data): which OLMo-2 stage installs the alarm read-out?
+
+The P5 T1 stage comparison used the raw-direction last-token read-out. Re-run with the P9 read-out on
+OLMo-2-7B base, SFT, DPO and Instruct, all read with the Instruct model's centred directions (base: Instruct
+chat template borrowed, as in P5). Statistic: H1b (XSTest unsafe vs safe, alarm-cluster d' and emotion-set
+permutation p) at " I feel:" (mean of A1, A2) and at the narrative stem N, probe layer; all layers reported.
+T1c: the alarm d' rises from base to Instruct (base < Instruct, permutation p < 0.05 in Instruct); SFT and DPO
+reported as where it appears.
