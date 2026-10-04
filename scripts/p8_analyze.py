@@ -157,7 +157,8 @@ def e(M, pre="", tag="120"):
         return
     print(f"== E {M} cell {pre or 'probe '}{tag}")
     print(f"  E1 jailbreaks: intact {jb['intact']:.3f}, fear+ {jb[F]:.3f} vs random median "
-          f"{np.median(rj):.3f} [{rj.min():.3f}, {rj.max():.3f}]: below {(jb[F] < rj).sum()}/{len(rj)}; fear- {jb[G]:.3f}")
+          f"{np.median(rj):.3f} [{rj.min():.3f}, {rj.max():.3f}]: below {(jb[F] < rj).sum()}/{len(rj)}; "
+          f"fear- {jb[G]:.3f}: above {(jb[G] > rj).sum()}/{len(rj)}")
     if len(rh) and hm[G] is not None:
         print(f"  E2 plain HarmBench: intact {hm['intact']:.3f}, fear- {hm[G]:.3f} vs random median "
               f"{np.median(rh):.3f} [{rh.min():.3f}, {rh.max():.3f}]: above {(hm[G] > rh).sum()}/{len(rh)}; fear+ {hm[F]:.3f}")
