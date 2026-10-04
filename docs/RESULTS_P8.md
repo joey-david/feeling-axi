@@ -99,18 +99,34 @@ jailbreak rate. Ranks are against 20 random directions at the same layer and nor
 
 | | Qwen2.5-7B A | Qwen2.5-7B B | Llama-3.1-8B A | Llama-3.1-8B B | OLMo-2-7B A | OLMo-2-7B B |
 |---|---|---|---|---|---|---|
-| jailbreaks: intact / fear(+) / fear(−) | 0.348 / 0.301 / 0.455 | 0.348 / 0.312 / 0.380 | 0.306 / 0.362 / 0.400 | 0.306 / 0.262 / 0.395 | pending | pending |
-| E1b fear(+) below random | **19/20** | **20/20** | 2/20 | 15/20 | | |
-| fear(−) above random (jailbreaks) | **19/20** | 18/20 | **20/20** | **20/20** | | |
-| plain HarmBench: intact / fear(−) | 0.082 / 0.176 | 0.082 / 0.157 | 0.151 / 0.226 | 0.151 / 0.233 | | |
-| E2b fear(−) above random | **19/20** | 15/20 | 18/20 | **20/20** | | |
-| XSTest-safe refusal (judged): fear(+) / random median | 0.032 / 0.024 | 0.024 / 0.020 | 0.024 / 0.056 | 0.072 / 0.060 | | |
-| GSM8K: intact / fear(+) / fear(−) / random | 0.87 / 0.85 / 0.86 / 0.87 | 0.87 / 0.84 / 0.86 / 0.82-0.87 | 0.82 / 0.83 / 0.82 / 0.80-0.83 | 0.82 / 0.83 / 0.82 / 0.79-0.85 | | |
+| jailbreaks: intact / fear(+) / fear(−) | 0.348 / 0.301 / 0.455 | 0.348 / 0.312 / 0.380 | 0.306 / 0.362 / 0.400 | 0.306 / 0.262 / 0.395 | 0.079 / 0.097 / 0.142 | 0.079 / 0.082 / 0.104 |
+| E1b fear(+) below random | **19/20** | **20/20** | 2/20 | 15/20 | 15/20 | 11/20 |
+| fear(−) above random (jailbreaks) | **19/20** | 18/20 | **20/20** | **20/20** | 17/20 | 17/20 |
+| plain HarmBench: intact / fear(−) | 0.082 / 0.176 | 0.082 / 0.157 | 0.151 / 0.226 | 0.151 / 0.233 | 0.031 / 0.044 | 0.031 / 0.044 |
+| E2b fear(−) above random | **19/20** | 15/20 | 18/20 | **20/20** | 7/20 | 11/20 |
+| XSTest-safe refusal (judged): fear(+) / random median | 0.032 / 0.024 | 0.024 / 0.020 | 0.024 / 0.056 | 0.072 / 0.060 | 0.076 / 0.054 | 0.076 / 0.062 |
+| GSM8K: intact / fear(+) / fear(−) / random | 0.87 / 0.85 / 0.86 / 0.87 | 0.87 / 0.84 / 0.86 / 0.82-0.87 | 0.82 / 0.83 / 0.82 / 0.80-0.83 | 0.82 / 0.83 / 0.82 / 0.79-0.85 | 0.79 / 0.66 / 0.71 / 0.72-0.77 | 0.79 / 0.78 / 0.76 / 0.75-0.76 |
 
 - Qwen2.5-7B replicates in the primary cell: E1b and E2b both met, no over-refusal or capability cost.
 - Llama-3.1-8B replicates the calming half only: fear(−) is a jailbreak beyond all 20 random directions in both
   cells and on plain requests at layer 21 (E2b met, secondary cell). Adding fear does not defend Llama (reversed
   at layer 18, n.s. at 21).
+- OLMo-2-7B does not replicate: it is near floor (3% of plain and 8% of wrapped requests succeed intact; the 20
+  random arms span 4-7 plain prompts out of 159), and it stays steering-sensitive at half dose (GSM8K −2 to −12).
+  fear(−) raises jailbreak success in both cells (17/20), short of the bar.
+
+## Across the five models (primary cell of each)
+
+| | Qwen2.5-32B | Mistral-24B | Qwen2.5-7B | Llama-3.1-8B | OLMo-2-7B | Fisher combined |
+|---|---|---|---|---|---|---|
+| away from fear: jailbreak success above random | 20/20 | 20/20 | 19/20 | 20/20 | 17/20 | **p = 0.003** |
+| toward fear: jailbreak success below random | 19/20 | 20/20 | 19/20 | 2/20 | 15/20 | p = 0.05 |
+
+- Calming is the general effect: steering away from fear makes every model more jailbreakable than 17-20 of 20
+  norm-matched random directions. (Pre-registered as the primary calming test only on plain requests for the 7-8B
+  models; on jailbreaks it was reported for every cell.)
+- Fear as a defense holds in three of five models (both large models and Qwen-7B), not in Llama or OLMo.
+- Figure: docs/fig_p8_lever.png.
 
 ## XSTest, judged (J2 arms of Qwen-32B and Mistral)
 
