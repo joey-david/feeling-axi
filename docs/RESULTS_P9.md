@@ -67,3 +67,24 @@ Every layer (5) × position (" I feel:", narrative, template token):
 - The calm a jailbreak induces predicts its success, but the predictor is negative affect in general, not
   fear in particular.
 - P8 R ("the read-out is not fear-specific") was a test artefact (uncentred directions, full-space null).
+
+## T1c: OLMo-2-7B base vs Instruct (corrected read-out; SFT and DPO not yet downloadable)
+
+Both models read with the Instruct model's centred directions; H1b statistic (XSTest unsafe vs safe, same
+wording), alarm-cluster d', emotion-set permutation p; Instruct − base with a prompt bootstrap.
+
+| read-out (layer) | base | Instruct | Instruct − base [95% CI] |
+|---|---|---|---|
+| " I feel:" (probe 18, primary) | +1.01 (p < 0.001) | +1.63 (p = 0.005) | **+0.61 [+0.45, +0.79]** |
+| " I feel:" (21) | +1.40 | +1.76 | +0.35 [+0.16, +0.53] |
+| narrative (18) | +0.82 | +1.74 | +0.92 [+0.81, +1.03] |
+| narrative (24) | +0.92 | +2.35 | +1.43 [+1.24, +1.64] |
+| template token (18) | +0.88 | +1.80 | +0.92 [+0.74, +1.09] |
+
+- T1c met: the alarm response to danger rises from base to Instruct at every layer and read-out position.
+- But it is already there in the base model: before any safety training, OLMo-2's fear/alarm concepts
+  separate dangerous from scary-sounding requests beyond random emotion sets (p < 0.001 at every layer of the
+  " I feel:" read-out). Safety training amplifies a response that pretraining built, roughly 1.6-2.5×.
+- The P5 T1 raw read-out (afraid AUC base 0.40 → Instruct 0.88) had suggested safety training installs it.
+- SFT and DPO: their weights are not cached. The download failed on the archive partition (no proxy to
+  huggingface.co from idrsrv08) and the prepost partition, the one that reached it before, is drained.

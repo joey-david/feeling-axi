@@ -18,9 +18,11 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Blocked
 
-- T1 OLMo stages, old and corrected (P9) read-outs — blocked: prepost nodes drained; download moved to archive (p5-fetch4 576385); t1-olmo-b 575656 runs after it — next: `scripts/p9_stages.py`
+- T1 OLMo SFT/DPO stages — blocked: weights not cached; prepost (the only partition that reached huggingface.co) is drained, archive has no proxy — next: resubmit `scripts/beyondpain_prefetch_bin.sbatch` when prepost is back, then readprobe + `scripts/p9_stages.py`
 
 ## Done
+
+- T1c OLMo base vs Instruct (corrected read-out): danger already evokes the alarm family in the base model; safety training amplifies it (+0.61 d', CI [+0.45, +0.79]) — `docs/RESULTS_P9.md`
 
 - P8/P8b Read-out not fear-specific; calming is a jailbreak in 5/5 models (p=0.003), fear defends in 3/5; acts via the refusal direction — `docs/RESULTS_P8.md`
 
