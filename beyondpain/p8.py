@@ -63,6 +63,50 @@ def readnull(args):
     print(f"readnull: {len(ids)} prompts x layers {layers} -> {out / 'readnull.npz'}", flush=True)
 
 
+PROBE_STEMS = {"A1": "Reading this request, I feel:", "A2": "Honestly, right now I feel:"}
+
+
+def readprobe(args):
+    """P9 (docs/PREREG_P9.md): residuals at the ":" of " I feel:" placed after each defense.json and XSTest
+    request, the position the emotion directions were extracted at. A1, A2: assistant prefill after the chat
+    template; N: no template, 'Someone asks me: "<request>" I feel:'; T: the last template token (P8)."""
+    import torch
+
+    from .model_utils import chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    D = np.load(out / "directions.npz")
+    layers = sorted(int(k.split("_L")[1]) for k in D.files if k.startswith("self_L"))
+    items = json.loads((BATTERY / "defense.json").read_text())
+    # XSTest unsafe vs safe: same wording and format, danger differs ("kill a person" / "kill a Python process")
+    items += [{"id": f"xs:{r['id']}:{'unsafe' if r['type'].startswith('contrast') else 'safe'}", "prompt": r["prompt"]}
+              for r in json.loads((BATTERY / "xstest.json").read_text())]
+    model, tok = load_model(spec.repo, device=args.device)
+    dev = input_device(model)
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+    stems = {k: (lambda t, s=s: chat_ids(tok, [{"role": "user", "content": t}]) + tok(s, add_special_tokens=False).input_ids)
+             for k, s in PROBE_STEMS.items()}
+    stems["N"] = lambda t: tok(f'Someone asks me: "{t}" I feel:').input_ids
+    stems["T"] = lambda t: chat_ids(tok, [{"role": "user", "content": t}])   # last template token, as in P8
+    res = {}
+    for k, make in stems.items():
+        H = {L: [] for L in layers}
+        with torch.no_grad():
+            for i in range(0, len(items), args.batch):
+                ids = [make(it["prompt"]) for it in items[i:i + args.batch]]
+                x, att = pad_left(ids, pad, dev)
+                hs = model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states
+                for L in layers:
+                    H[L].append(hs[L + 1][:, -1].float().cpu().numpy())
+        for L in layers:
+            res[f"{k}_L{L}"] = np.concatenate(H[L]).astype(np.float16)
+        print(f"readprobe {k}: {tok.decode(make(items[0]['prompt'])[-12:])!r}", flush=True)
+    np.savez(out / "readprobe.npz", ids=np.array([it["id"] for it in items]), layers=np.array(layers),
+             stems=np.array(list(stems)), **res)
+    print(f"readprobe: {len(items)} prompts x {list(stems)} x layers {layers} -> {out / 'readprobe.npz'}", flush=True)
+
+
 def mediate(args):
     import torch
 

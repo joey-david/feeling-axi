@@ -4,6 +4,10 @@
 
 ## R. Read-out against 1000 random and 60 topic directions (probe layer)
 
+**Superseded by docs/RESULTS_P9.md.** This test used the raw emotion directions, which share one large
+"emotional vs neutral scene" component, and a null of random directions in the full residual space. Centred
+across emotions and ranked within emotion space, the read-out holds on Mistral and partly on Qwen.
+
 "Beats" = share of random directions (then topic directions) the statistic beats. Pre-registered bar for
 *specific*: ≥ 99% random and ≥ 95% topics.
 

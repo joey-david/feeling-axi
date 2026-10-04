@@ -4,12 +4,14 @@ Draft skeleton for a LessWrong post / arXiv preprint. Numbers from docs/RESULTS_
 
 ## Status after P8 (4 October): read this first
 
-- **Read-out claims (§1, §2, §5) do not survive random/topic nulls** (docs/RESULTS_P8.md R). Harmful requests move
-  the last-token state so far that a median random direction separates them from safe-but-scary ones at AUC 0.72;
-  the alarm composite is mostly the component all emotions share (cos 0.87 with joy); on Mistral no emotion
-  direction beats the random null; the fear-specific component (afraid ⊥ joy) carries no read-out signal. What
-  survives: on Qwen, the drop along *afraid* under a jailbreak predicts which prompts succeed (beats 99.5% of
-  random directions, 97% of topics, as well as the refusal direction).
+- **Read-out, corrected (docs/RESULTS_P9.md)**: the raw emotion directions share one large "emotional vs
+  neutral scene" component (alarm vs joy cos 0.87), so raw read-outs mostly measure that. Centred across
+  emotions and ranked against the other emotions: on Mistral, harmful requests raise the fear/threat family
+  above the other 83 emotions and jailbreaks lower that family harmful-specifically (probe layer p = 0.008 and
+  0.04; deeper layers p < 0.001); on Qwen, harmful requests push the model toward negative valence broadly
+  (r = −0.72), the alarm cluster only marginally (p = 0.07; jailbreak drop p = 0.04). In both, the drop of the
+  alarm cluster under a jailbreak predicts which prompts succeed. A read-out at the position the directions
+  were extracted from (" I feel:") is prepared (P9) and not yet run.
 - **The causal lever holds both ways on Qwen-32B and Mistral-24B**: steering toward fear (afraid ⊥ joy, cos ≈ 0
   with the refusal direction) cuts jailbreak success; steering away from it is a jailbreak (Qwen jailbreaks
   0.17 → 0.71, random ≤ 0.43; Mistral plain requests above 48/48 random arms). It acts through the refusal

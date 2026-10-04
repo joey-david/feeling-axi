@@ -1442,7 +1442,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
                                       "fearprobe", "jbprobe", "alarm", "vaccine", "calmsearch", "rank1", "battery", "judge", "analyze",
-                                      "readnull", "mediate"])
+                                      "readnull", "mediate", "readprobe"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1503,7 +1503,7 @@ def main(argv=None):
         return alarm(args)
     if args.stage == "calmsearch":
         return calmsearch(args)
-    if args.stage in ("readnull", "mediate"):   # P8
+    if args.stage in ("readnull", "mediate", "readprobe"):   # P8, P9
         from . import p8
         return getattr(p8, args.stage)(args)
     if args.stage == "vaccine":
