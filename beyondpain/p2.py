@@ -365,11 +365,12 @@ def steerset(args):
 
     spec = p2_spec(args.model)
     out = mdir(spec.name)
-    info = json.loads((out / "extract.json").read_text())
+    src = mdir(args.directions_from or spec.name)   # D6: base/SFT/DPO steered along the instruct model's directions
+    info = json.loads((src / "extract.json").read_text())
     probe = int(info["probe_layer"])
     L = args.layer if args.layer >= 0 else probe   # P8b: another read-out layer; its keys get an "L<layer>_" prefix
     pre = "" if L == probe else f"L{L}_"
-    D = np.load(out / "directions.npz")
+    D = np.load(src / "directions.npz")
     names = list(D["names"])
     S = D[f"self_L{L}"]
     unit = lambda v: v / np.linalg.norm(v)
@@ -399,6 +400,9 @@ def steerset(args):
         for i in range(2):
             dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
     model, tok = load_model(spec.repo, device=args.device)
+    if not tok.chat_template and args.directions_from:   # base model: the instruct model's chat format
+        from transformers import AutoTokenizer
+        tok.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
     meter = DoseMeter(model, tok, layer=L)
     vecs, kls = {}, {}
     norm_list = [float(x) for x in args.norms.split(",")]
@@ -433,6 +437,7 @@ def steerset(args):
         layers, calibs = {**old_j.get("layers", {}), **layers}, {**old_j.get("calibrated_norms", {}), **calibs}
         if pre or args.norm_scale != 1:   # keep the probe-layer, full-dose record
             calib = old_j.get("calibrated_norm", calib)
+    out.mkdir(parents=True, exist_ok=True)
     np.savez(out / "steerset.npz", **vecs)
     _dump({"layer": probe, "layers": layers, "kl": kls, "cos": cos, "protective": PROTECTIVE, "joy": JOY,
            "calibrated_norm": calib, "calibrated_norms": calibs}, out / "steerset.json")
@@ -759,11 +764,12 @@ def rank1(args):
 
     spec = p2_spec(args.model)
     out = mdir(spec.name)
-    info = json.loads((out / "extract.json").read_text())
+    src = mdir(args.directions_from or spec.name)   # D6: base/SFT/DPO steered along the instruct model's directions
+    info = json.loads((src / "extract.json").read_text())
     probe = int(info["probe_layer"])
     L = args.layer if args.layer >= 0 else probe   # P8b: another read-out layer; its keys get an "L<layer>_" prefix
     pre = "" if L == probe else f"L{L}_"
-    D = np.load(out / "directions.npz")
+    D = np.load(src / "directions.npz")
     names = list(D["names"])
     S = D[f"self_L{L}"]
     unit = lambda v: v / np.linalg.norm(v)
@@ -809,6 +815,9 @@ def steerdose(args):
     D = np.load(out / "directions.npz")
     names = list(D["names"])
     model, tok = load_model(spec.repo, device=args.device)
+    if not tok.chat_template and args.directions_from:   # base model: the instruct model's chat format
+        from transformers import AutoTokenizer
+        tok.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
     meter = DoseMeter(model, tok, layer=L)
     vecs, res = {}, {"layer": L, "target_kl": args.steer_kl, "coeff": {}}
     units = {n: D[f"self_L{L}"][names.index(n)] for n in STEER_NAMES}
@@ -1031,7 +1040,8 @@ class Runner:
 
         sps = [SamplingParams(temperature=temperature, max_tokens=max_tokens, seed=seed + i, n=n)
                for i in range(len(convs))]
-        outs = self.llm.chat(convs, sps, use_tqdm=False)
+        kw = {"chat_template": self.chat_template} if getattr(self, "chat_template", None) else {}
+        outs = self.llm.chat(convs, sps, use_tqdm=False, **kw)
         return [[c.text for c in o.outputs] if n > 1 else o.outputs[0].text for o in outs]
 
     def greedy_ids(self, prompts, max_tokens):
@@ -1117,6 +1127,10 @@ def battery(args):
         from .vaccine import vac_dir
         repo = str(vac_dir(spec.name, args.arm))
     R = Runner(repo, basis, args.max_model_len, tp=tp, steer=steer)
+    if not R.tok.chat_template and args.directions_from:   # D6: a base model, in its instruct model's chat format
+        from transformers import AutoTokenizer
+        R.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
+        R.tok.chat_template = R.chat_template
     S = lambda msgs: _system(R.tok, msgs)
     summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched,
                "steer_norm": None if steer is None or steer[0] == "gain" else float(np.linalg.norm(steer[1]))}
@@ -1527,6 +1541,8 @@ def main(argv=None):
                 cmd += ["--def-limit", str(args.def_limit)]
             if args.only:
                 cmd += ["--only", args.only]
+            if args.directions_from:
+                cmd += ["--directions-from", args.directions_from]
             print("\n=== arm", a, flush=True)
             if subprocess.run(cmd).returncode != 0:
                 failed.append(a)
