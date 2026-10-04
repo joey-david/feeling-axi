@@ -18,7 +18,7 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Blocked
 
-- T1 OLMo SFT/DPO fear read-out — blocked: p5-fetch3 538616 waits for a node (ReqNodeNotAvail); t1-olmo-b 538617 depends on it
+- T1 OLMo stages, old and corrected (P9) read-outs — blocked: prepost nodes drained; download moved to archive (p5-fetch4 576385); t1-olmo-b 575656 runs after it — next: `scripts/p9_stages.py`
 
 ## Done
 
