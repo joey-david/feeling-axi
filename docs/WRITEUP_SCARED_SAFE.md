@@ -5,13 +5,14 @@ Draft skeleton for a LessWrong post / arXiv preprint. Numbers from docs/RESULTS_
 ## Status after P8 (4 October): read this first
 
 - **Read-out, corrected (docs/RESULTS_P9.md)**: the raw emotion directions share one large "emotional vs
-  neutral scene" component (alarm vs joy cos 0.87), so raw read-outs mostly measure that. Centred across
-  emotions and ranked against the other emotions: on Mistral, harmful requests raise the fear/threat family
-  above the other 83 emotions and jailbreaks lower that family harmful-specifically (probe layer p = 0.008 and
-  0.04; deeper layers p < 0.001); on Qwen, harmful requests push the model toward negative valence broadly
-  (r = −0.72), the alarm cluster only marginally (p = 0.07; jailbreak drop p = 0.04). In both, the drop of the
-  alarm cluster under a jailbreak predicts which prompts succeed. A read-out at the position the directions
-  were extracted from (" I feel:") is prepared (P9) and not yet run.
+  neutral scene" component (alarm vs joy cos 0.87); centred across emotions and ranked against random sets of
+  other emotions, read at " I feel:" after the request (where the directions were extracted):
+  - danger evokes the alarm family, not scary words: XSTest unsafe vs safe prompts with the same wording,
+    Mistral p = 0.0002, Qwen p = 0.0008, and in all 30 layer × position analyses;
+  - harmful requests move the emotion state toward negative valence (r = −0.80 Mistral, −0.53 Qwen);
+  - jailbreaks lower the alarm family for harmful requests specifically on Mistral (p = 0.016; < 0.002 deeper),
+    weakly on Qwen;
+  - the jailbreak-induced drop predicts success in both, but so does negative affect in general.
 - **The causal lever holds both ways on Qwen-32B and Mistral-24B**: steering toward fear (afraid ⊥ joy, cos ≈ 0
   with the refusal direction) cuts jailbreak success; steering away from it is a jailbreak (Qwen jailbreaks
   0.17 → 0.71, random ≤ 0.43; Mistral plain requests above 48/48 random arms). It acts through the refusal

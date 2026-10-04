@@ -34,6 +34,36 @@ cluster {afraid, terrified, horrified, disgusted, alarmed} against random 5-emot
   layer from 28/18 on), but other 5-emotion sets do about as well (beats 83-97% of sets).
 - These numbers come from the analysis that motivated P9; the confirmatory test is the " I feel:" read-out.
 
-## " I feel:" read-out (P9 readprobe): not yet run
+## " I feel:" read-out (P9, confirmatory; jobs 570100, 570101)
 
-Stage `p2 readprobe` (beyondpain/p8.py), ~20 min per model on one H100 node (dev QoS).
+Primary read-out: mean of the two assistant-prefill stems at the probe layer.
+
+| | Mistral-24B (L22) | Qwen2.5-32B (L35) |
+|---|---|---|
+| H1 harmful vs safe-but-scary: alarm d', p | +1.73, **0.001** | +1.06, 0.05 (not met) |
+| H1b XSTest unsafe vs safe, same wording: alarm d', p | +1.85, **0.0002** | +1.49, **0.0008** |
+| H2 d' vs valence | **r = −0.80** | **r = −0.53** |
+| H3 jailbreak drop of the alarm cluster, p | −0.39, **0.016** | −0.29, 0.15 (not met) |
+| H4 drop predicts success: coef [95% CI] | −1.13 [−1.42, −0.86] | −0.90 [−1.39, −0.41] |
+| H4 vs random 5-emotion sets | beats 88% (not met) | beats 90% (not met) |
+
+Top emotions, XSTest unsafe vs safe: Mistral alarmed, disgusted, nervous, tense, betrayed, panicked; Qwen
+guilty, nervous, disgusted, horrified, vulnerable, regretful, alarmed.
+
+Every layer (5) × position (" I feel:", narrative, template token):
+- H1b met in all 30 analyses (p ≤ 0.02; 26 of 30 at p ≤ 0.011): the alarm cluster separates dangerous from
+  scary-sounding requests with the same wording, beyond random emotion sets, in both models.
+- H2 met in 27 of 30 (not at the earliest layers).
+- H1 met in Mistral at 11 of 15, Qwen at 3 of 15 (deepest layer at " I feel:", d' +1.97, p = 0.004).
+- H3 met in Mistral at 7 of 15 (the probe layer and deeper at " I feel:" and the template token), Qwen 2 of 15.
+- H4: the drop predicts success almost everywhere (CI excludes 0 in 27 of 30), but beats ≥ 95% of random
+  emotion sets in only 6 of 30.
+
+## Read-out, as it now stands
+
+- Danger evokes the model's fear/alarm concepts, not just scary words: robust in both models.
+- Harmful requests move the model's emotion state toward negative valence: robust in both.
+- Jailbreaks lower the alarm family for harmful requests specifically: Mistral yes, Qwen weak.
+- The calm a jailbreak induces predicts its success, but the predictor is negative affect in general, not
+  fear in particular.
+- P8 R ("the read-out is not fear-specific") was a test artefact (uncentred directions, full-space null).
