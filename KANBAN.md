@@ -9,7 +9,7 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 ## Ready
 
 - W1 Rewrite the paper around the causal lever (read-out claims withdrawn) — next: restructure `docs/WRITEUP_SCARED_SAFE.md` from `docs/RESULTS_P8.md`
-- D6 OLMo stages: does calming work before safety training? — next: once p5-fetch3 gets a node, P8b protocol on base/SFT/DPO
+- D6 OLMo stages: does the calming lever work before safety training? — next: P8b protocol on base/SFT/DPO (weights now cached)
 
 
 ## Doing
@@ -18,11 +18,10 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 
 ## Blocked
 
-- T1 OLMo SFT/DPO stages — blocked: weights not cached; prepost (the only partition that reached huggingface.co) is drained, archive has no proxy — next: resubmit `scripts/beyondpain_prefetch_bin.sbatch` when prepost is back, then readprobe + `scripts/p9_stages.py`
 
 ## Done
 
-- T1c OLMo base vs Instruct (corrected read-out): danger already evokes the alarm family in the base model; safety training amplifies it (+0.61 d', CI [+0.45, +0.79]) — `docs/RESULTS_P9.md`
+- T1c OLMo stages (corrected read-out): danger already evokes the alarm family in the base model; SFT nearly doubles it (80-95% of the increase), DPO/RLVR add a little — `docs/RESULTS_P9.md`
 
 - P8/P8b Read-out not fear-specific; calming is a jailbreak in 5/5 models (p=0.003), fear defends in 3/5; acts via the refusal direction — `docs/RESULTS_P8.md`
 

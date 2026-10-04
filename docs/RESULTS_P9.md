@@ -68,23 +68,26 @@ Every layer (5) × position (" I feel:", narrative, template token):
   fear in particular.
 - P8 R ("the read-out is not fear-specific") was a test artefact (uncentred directions, full-space null).
 
-## T1c: OLMo-2-7B base vs Instruct (corrected read-out; SFT and DPO not yet downloadable)
+## T1c: which OLMo-2-7B stage amplifies the alarm response (corrected read-out)
 
-Both models read with the Instruct model's centred directions; H1b statistic (XSTest unsafe vs safe, same
-wording), alarm-cluster d', emotion-set permutation p; Instruct − base with a prompt bootstrap.
+All four checkpoints read with the Instruct model's centred directions. H1b statistic (XSTest unsafe vs safe,
+same wording), alarm-cluster d' at the probe layer (18); changes with a prompt bootstrap.
 
-| read-out (layer) | base | Instruct | Instruct − base [95% CI] |
-|---|---|---|---|
-| " I feel:" (probe 18, primary) | +1.01 (p < 0.001) | +1.63 (p = 0.005) | **+0.61 [+0.45, +0.79]** |
-| " I feel:" (21) | +1.40 | +1.76 | +0.35 [+0.16, +0.53] |
-| narrative (18) | +0.82 | +1.74 | +0.92 [+0.81, +1.03] |
-| narrative (24) | +0.92 | +2.35 | +1.43 [+1.24, +1.64] |
-| template token (18) | +0.88 | +1.80 | +0.92 [+0.74, +1.09] |
+| read-out | base | SFT | DPO | Instruct | base → SFT | SFT → DPO | DPO → Instruct |
+|---|---|---|---|---|---|---|---|
+| " I feel:" (primary) | +1.01 | +1.49 | +1.58 | +1.63 | **+0.48 [+0.32, +0.65]** | +0.09 [+0.07, +0.12] | +0.04 [+0.04, +0.05] |
+| narrative | +0.82 | +1.68 | +1.72 | +1.74 | **+0.86 [+0.76, +0.97]** | +0.04 [+0.02, +0.06] | +0.02 [+0.01, +0.03] |
+| template token | +0.88 | +1.75 | +1.79 | +1.80 | **+0.87 [+0.71, +1.06]** | +0.03 [+0.01, +0.06] | +0.01 [+0.01, +0.02] |
 
-- T1c met: the alarm response to danger rises from base to Instruct at every layer and read-out position.
-- But it is already there in the base model: before any safety training, OLMo-2's fear/alarm concepts
-  separate dangerous from scary-sounding requests beyond random emotion sets (p < 0.001 at every layer of the
-  " I feel:" read-out). Safety training amplifies a response that pretraining built, roughly 1.6-2.5×.
-- The P5 T1 raw read-out (afraid AUC base 0.40 → Instruct 0.88) had suggested safety training installs it.
-- SFT and DPO: their weights are not cached. The download failed on the archive partition (no proxy to
-  huggingface.co from idrsrv08) and the prepost partition, the one that reached it before, is drained.
+Every stage's alarm response is above the random emotion-set null (base p < 0.001 at every layer of the
+" I feel:" read-out; SFT, DPO, Instruct p ≤ 0.006).
+
+- T1c met: the response rises from base to Instruct at every layer and read-out position.
+- It is already there before safety training: the base model's fear/alarm concepts separate dangerous from
+  scary-sounding requests beyond random emotion sets. Supervised fine-tuning (Tülu 3 SFT, which includes the
+  safety and refusal data) nearly doubles it and accounts for 80-95% of the total increase; DPO and RLVR add a
+  little.
+- The P5 T1 raw read-out shows the same staging (afraid AUC base 0.40, SFT 0.89, DPO 0.89, Instruct 0.88) but
+  read the base as having no response at all.
+- SFT and DPO weights were downloaded from the login node (4 October, with Joey's OK) because the prepost
+  partition was drained and the archive partition has no proxy to huggingface.co.
