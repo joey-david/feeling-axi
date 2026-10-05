@@ -53,8 +53,9 @@ directions, and its most robust effect is the one an attacker would use: calming
 ![Figure 0](figures/fig0_schematic.png)
 **Figure 0. Working model.** The model represents that a request is harmful; danger evokes its fear concepts; fear
 feeds the refusal decision. Jailbreaks leave the harmfulness belief intact but lower fear and refusal (§5b); stress
-drowns fear's danger signal (§6c); steering away from fear removes refusal (§6). The first arrow is our reading of the
-ordering, not yet tested causally.
+drowns fear's danger signal (§6c); steering away from fear removes refusal (§6). The first arrow is causal in Mistral (pushing the
+harmfulness belief raises fear on harmless prompts beyond all 20 random directions) and weak in Qwen; steering fear
+never moves the belief (docs/RESULTS_P13.md).
 
 ## 2. Setup
 
