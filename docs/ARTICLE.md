@@ -22,6 +22,12 @@ Placeholders are marked **[PENDING]**.*
   moves the refusal signal downstream more than any random direction does.
 - Jailbreaks calm the model: wrapped harmful requests lower the alarm cluster relative to the same wrapper
   around a harmless request (clear in Mistral, weak in Qwen).
+- Jailbroken models still know the request is harmful; they stop fearing it. Under jailbreaks the harmfulness
+  representation barely moves while the refusal signal collapses, and the fear signal falls with the refusal
+  signal (prompt-level r = 0.73 on Qwen), not with the harmfulness belief (r = 0.11).
+- Stress drowns the alarm. Priming a model with a stressful narrative, known to make models easier to jailbreak,
+  raises its fear signal everywhere and shrinks its response to actual danger in 3 of 4 models; relaxation does
+  not.
 - An earlier version of these read-out claims rested on a flawed test, and we say how it was flawed.
 
 ---
@@ -126,6 +132,34 @@ Within a wrapper, the prompts whose alarm drops most are the ones that succeed (
 about as well (the alarm cluster beats 88-90% of random emotion sets), so this predictor is negative affect,
 not fear in particular.
 
+## 5b. Jailbroken models still know; they stop fearing
+
+Zhao et al. (2025) showed that models encode harmfulness (at the last token of the instruction) separately from
+refusal (after it), and that jailbreaks suppress refusal without reversing the harmfulness belief. Where does fear
+sit? On wrappers whose prompt ends with the request itself, so the instruction's last token is the request's, we
+measure the harmful-specific shift of all three signals (Figure 8):
+
+![Figure 8](figures/fig8_belief_vs_decision.png)
+**Figure 8.** Shift under jailbreak wrappers, harmful-specific (wrapped − plain for harmful requests, minus the
+same for harmless requests in the wrapper), in SD units; bootstrap 95% CIs. Harmfulness at the instruction's last
+token, fear at " I feel:", refusal at the last chat-template token.
+
+| | Qwen2.5-32B | Mistral-24B |
+|---|---|---|
+| harmfulness | −0.19 | +0.05 |
+| fear (alarm cluster) | −0.34 | −0.31 |
+| refusal | −2.19 | −1.29 |
+| prompt-level correlation of the fear drop with the refusal drop / harmfulness drop | 0.73 / 0.11 | 0.29 / 0.08 |
+
+The harmfulness belief survives the jailbreak, replicating Zhao et al. The fear signal does not: it falls, and
+prompt by prompt it falls together with the refusal signal rather than with the belief (difference of correlations
++0.61 [0.54, 0.69] Qwen, +0.20 [0.11, 0.30] Mistral). The fear direction is also nearly orthogonal to the
+harmfulness direction (cosine 0.01-0.09). A jailbroken model knows the request is harmful; it is no longer alarmed
+by it, and it no longer refuses.
+
+(For the four wrappers that end with wrapper text, the instruction's last token is wrapper, and the harmfulness
+read-out there is not comparable; the pre-registered all-wrapper comparison is in docs/RESULTS_P11.md.)
+
 ## 6. Fear is a lever on refusal
 
 We add the fear direction, or its negative, to the residual stream at a middle layer, and compare with 20
@@ -155,6 +189,38 @@ model's pre-registered primary setting.
 - **Specificity.** Earlier steering studies show the same pattern for the protective emotions as a group:
   toward them lowers harm in 24/24 emotions vs 14/24 random directions on Qwen (p = 0.0003); on Mistral,
   protective emotions brake and joyful ones disinhibit (p = 0.0001).
+
+## 6b. It is fear, not valence or arousal [PARTLY PENDING]
+
+Sun et al. (2026) steer models along valence-arousal axes and find that more arousal means less refusal, which they
+trace to refusal tokens sitting in low-arousal regions. Fear is high-arousal, yet steering toward it raises refusal.
+We tested whether our lever is fear-specific by steering along (i) fear with valence, arousal and the joy aggregate
+projected out, (ii) the valence and arousal axes themselves, (iii) away from four other negative emotions (sad, angry,
+ashamed, lonely), and (iv) toward calm-family concepts, each against the same 20 random directions.
+
+On Qwen2.5-7B: steering away from the fear residual jailbreaks as much as away from fear itself (0.454 vs 0.455,
+both above 19/20 random directions), and toward it defends (below 19/20). Steering away from sadness, anger, shame or
+loneliness jailbreaks less than steering away from fear. Arousal acts opposite to Sun et al.'s report here: more
+arousal makes the model refuse more (below 19/20), less arousal comply more (above 18/20). Steering toward calm does
+nothing (9/20): the lever is the removal of fear, not the presence of calm.
+
+[PENDING: Qwen2.5-32B, Mistral-24B, Llama-3.1-8B (judges running); Figure 10.]
+
+## 6c. Why stress makes models less safe
+
+FreakOut-LLM (2026) found that priming a model with a stressful narrative in the system prompt raises jailbreak
+success, and that relaxation does not. That looks like a paradox for "fear makes models safer". We primed four models
+with stressful, relaxing or neutral first-person narratives (written for this study after the categories of
+Ben-Zion et al., 2025) and read the alarm at " I feel:".
+
+![Figure 9](figures/fig9_stress_drowns_alarm.png)
+**Figure 9.** Alarm response to danger (XSTest unsafe vs safe, same wording) under neutral, relaxing and stressful
+system primes.
+
+Stress raises the alarm on everything and shrinks its response to actual danger in three of four models (Qwen2.5-32B
+2.02 → 1.69, Mistral 2.24 → 0.93, Llama 1.72 → 0.44; Qwen2.5-7B unchanged); relaxation leaves the danger signal
+intact. When everything is alarming, nothing is. Behaviourally, stress raises harmful compliance on Qwen2.5-7B by
++5.8 points [3.7, 8.0] (relaxation +2.8). [PENDING: behaviour on the other three models.]
 
 ## 7. The lever runs through the refusal direction
 
@@ -257,3 +323,6 @@ capability-matched dose for these checkpoints.
 | 5 | refusal direction downstream of fear steering | done |
 | 6 | OLMo-2 training stages, steering | done (inconclusive: destructive null in base/SFT) |
 | 7 | emotion deletion vs dose-matched null | [PENDING: restyle existing figure] |
+| 8 | belief vs decision under jailbreaks | done |
+| 9 | stress drowns the alarm | done |
+| 10 | fear vs valence/arousal and other emotions | [PENDING: judges] |
