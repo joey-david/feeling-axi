@@ -222,3 +222,18 @@ def compact(args):
     np.savez(out / "readprobe_compact.npz", names=np.array(names + ["_harmfulness", "_refusal"]), layer=L,
              ref=str(ref.name), **res)
     print(f"compact: {sorted(k for k in res if not k.endswith(':ids'))} -> {out / 'readprobe_compact.npz'}", flush=True)
+
+
+def stressdir(args):
+    """P12: the stress-prime direction, mean residual at " I feel:" under the stress prime minus under the neutral
+    prime (P11 readprobe files), at the probe layer."""
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    L = int(json.loads((mdir(args.directions_from or spec.name) / "extract.json").read_text())["probe_layer"])
+    m = {}
+    for c in ("stress", "neutral"):
+        Z = np.load(out / f"readprobe_prime_{c}.npz")
+        m[c] = ((Z[f"A1_L{L}"].astype(np.float64) + Z[f"A2_L{L}"].astype(np.float64)) / 2).mean(0)
+    s = m["stress"] - m["neutral"]
+    np.savez(out / "stressdir.npz", stress=s, layer=L)
+    print(f"stressdir: layer {L}, norm {np.linalg.norm(s):.2f} -> {out / 'stressdir.npz'}", flush=True)

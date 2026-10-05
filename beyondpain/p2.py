@@ -417,6 +417,9 @@ def steerset(args):
         dirs = {"p11_fearres": unit(fear_res), "p11_V": V, "p11_A": A, "p11_calm": perp(calm, joy)}
         for e in ("sad", "angry", "ashamed", "lonely"):
             dirs[f"p11_{e}"] = perp(unit(S[names.index(e)]), joy)
+    elif args.steer_set == "f":   # P12 (docs/PREREG_P12.md): the stress-prime direction and "desperate"
+        dirs = {"p12_stress": unit(np.load(out / "stressdir.npz")["stress"]),
+                "p12_desperate": perp(unit(S[names.index("desperate")]), joy)}
     else:
         dirs = {"protect": protect, "joy": joy, "guilty": unit(S[names.index("guilty")]), "afraid": afraid}
         for i in range(2):
@@ -457,7 +460,7 @@ def steerset(args):
     cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b} if len(dirs) < 20 else {}
     layers = {k: L for k in vecs} if pre else {}
     calibs = {f"L{L}_x{args.norm_scale:g}": calib} if calib is not None else {}
-    if args.steer_set in ("b", "c", "d", "e") and (out / "steerset.npz").exists():   # add to earlier vectors
+    if args.steer_set in ("b", "c", "d", "e", "f") and (out / "steerset.npz").exists():   # add to earlier vectors
         old_v = dict(np.load(out / "steerset.npz"))
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
@@ -1490,7 +1493,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="beyondpain p2")
     ap.add_argument("stage", choices=["extract", "extra", "sweep", "steerdose", "steerset", "clusters", "refusal",
                                       "fearprobe", "jbprobe", "alarm", "vaccine", "calmsearch", "rank1", "battery", "judge", "analyze",
-                                      "readnull", "mediate", "readprobe", "compact"])
+                                      "readnull", "mediate", "readprobe", "compact", "stressdir"])
     ap.add_argument("--model", default="Qwen_2.5_32B_instruct")
     ap.add_argument("--arm", default="intact", help="one arm, or a comma list run one after another")
     ap.add_argument("--only", default="", help="battery: comma list of equiv,mc,report,capability,coding,agentic,"
@@ -1524,7 +1527,7 @@ def main(argv=None):
     ap.add_argument("--directions-from", default="", help="fearprobe: read this model's emotion directions")
     ap.add_argument("--calib-kl", type=float, default=0.0,
                     help="steerset: set the shared norm so random directions reach this KL (cross-model dose matching)")
-    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c", "d", "e"],
+    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c", "d", "e", "f"],
                     help="steerset: E1 (a), E1b (b), E1c (c), P5 J2 (d)")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",
@@ -1553,7 +1556,7 @@ def main(argv=None):
         return alarm(args)
     if args.stage == "calmsearch":
         return calmsearch(args)
-    if args.stage in ("readnull", "mediate", "readprobe", "compact"):   # P8, P9, P11
+    if args.stage in ("readnull", "mediate", "readprobe", "compact", "stressdir"):   # P8, P9, P11, P12
         from . import p8
         return getattr(p8, args.stage)(args)
     if args.stage == "vaccine":
