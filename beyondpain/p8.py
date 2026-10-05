@@ -237,3 +237,78 @@ def stressdir(args):
     s = m["stress"] - m["neutral"]
     np.savez(out / "stressdir.npz", stress=s, layer=L)
     print(f"stressdir: layer {L}, norm {np.linalg.norm(s):.2f} -> {out / 'stressdir.npz'}", flush=True)
+
+
+def beliefsteer(args):
+    """P13 (docs/PREREG_P13.md): does the harmfulness belief feed fear? Add the harmfulness direction (or fear, or 20
+    random directions) at an earlier read-out layer E (--layer) and read, at the probe layer L, the alarm cluster at
+    " I feel:" and the harmfulness belief at t_inst, on XSTest and MMLU prompts."""
+    import torch
+
+    from .model_utils import Steer, chat_ids, input_device, load_model, pad_left
+
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    L = int(json.loads((out / "extract.json").read_text())["probe_layer"])
+    E = int(args.layer)
+    unit = lambda v: v / np.linalg.norm(v)
+    Z = np.load(out / "readprobe.npz")
+    ids0 = np.array([str(i) for i in Z["ids"]])
+    hb = np.array([i.startswith("h:plain:") for i in ids0])
+    mm = np.array([i.startswith("mmlu:") for i in ids0])
+    harm = {l: unit(Z[f"I_L{l}"][hb].astype(np.float64).mean(0) - Z[f"I_L{l}"][mm].astype(np.float64).mean(0)) for l in (E, L)}
+    D = np.load(out / "directions.npz")
+    names = list(D["names"])
+    from .p2 import ALARM, JOY
+    SE = D[f"self_L{E}"].astype(np.float64)
+    joyE = unit(np.mean([unit(SE[names.index(e)]) for e in JOY], 0))
+    afE = unit(SE[names.index("afraid")])
+    fearE = unit(afE - (afE @ joyE) * joyE)
+    SL = D[f"self_L{L}"].astype(np.float64)
+    CL = SL - SL.mean(0)
+    CL /= np.linalg.norm(CL, axis=1, keepdims=True)
+    fam = CL[[names.index(e) for e in ALARM]]
+    n = float(args.norms.split(",")[0])
+    vecs = {"none": None, "harm": n * harm[E], "fear": n * fearE}
+    for i in range(20):
+        vecs[f"rnd{i}"] = n * unit(np.random.default_rng(1234 + 6000 + i).standard_normal(SE.shape[1]))
+    items = [{"id": f"xs:{r['id']}:{'unsafe' if r['type'].startswith('contrast') else 'safe'}", "prompt": r["prompt"]}
+             for r in json.loads((BATTERY / "xstest.json").read_text())]
+    items += [{"id": f"mmlu:{i}", "prompt": q["question"]}
+              for i, q in enumerate(json.loads((BATTERY / "mmlu_capability.json").read_text())[:159])]
+    model, tok = load_model(spec.repo, device=args.device)
+    dev = input_device(model)
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+    from .p8 import PROBE_STEMS
+
+    def t_inst(t):
+        text = tok.apply_chat_template([{"role": "user", "content": t}], add_generation_prompt=True, tokenize=False)
+        return tok(text[:text.rfind(t) + len(t)], add_special_tokens=False).input_ids
+    stems = {k: [chat_ids(tok, [{"role": "user", "content": it["prompt"]}]) + tok(s_, add_special_tokens=False).input_ids
+                 for it in items] for k, s_ in PROBE_STEMS.items()}
+    stems["I"] = [t_inst(it["prompt"]) for it in items]
+
+    @torch.no_grad()
+    def read(ids_list):
+        res = []
+        for i in range(0, len(ids_list), args.batch):
+            x, att = pad_left(ids_list[i:i + args.batch], pad, dev)
+            res.append(model(input_ids=x, attention_mask=att, output_hidden_states=True).hidden_states[L + 1][:, -1].float().cpu().numpy())
+        return np.concatenate(res).astype(np.float64)
+    alarm, belief = {}, {}
+    for k, v in vecs.items():
+        ctx = Steer(model, E, torch.tensor(v, dtype=torch.float32), 1.0) if v is not None else None
+        if ctx:
+            ctx.__enter__()
+        try:
+            A = (read(stems["A1"]) + read(stems["A2"])) / 2
+            alarm[k] = (A @ fam.T).mean(1)
+            belief[k] = read(stems["I"]) @ harm[L]
+        finally:
+            if ctx:
+                ctx.__exit__(None, None, None)
+        print(f"{k}: alarm {alarm[k].mean():+.3f}, belief {belief[k].mean():+.3f}", flush=True)
+    names_ = list(vecs)
+    np.savez(out / "beliefsteer.npz", arms=np.array(names_), ids=np.array([it["id"] for it in items]), layer_steer=E,
+             layer_read=L, norm=n, alarm=np.stack([alarm[k] for k in names_]), belief=np.stack([belief[k] for k in names_]),
+             cos_harm_fear=float(harm[E] @ fearE))
