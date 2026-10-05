@@ -288,7 +288,38 @@ def fig9():
     save(fig, "fig9_stress_drowns_alarm")
 
 
+# ------------------------------------------------------------------ Figure 10: is it fear? (P11 G1)
+
+def fig10():
+    apply(14, 2)
+    models = [("Qwen_2.5_32B_instruct", "Qwen2.5-32B", "120"), ("Mistral_Small_24B_instruct", "Mistral-24B", "120"),
+              ("Qwen_2.5_7B_instruct", "Qwen2.5-7B", "60"), ("Llama_3.1_8B_instruct", "Llama-3.1-8B", "60")]
+    arms = [("j2_fear_m", "away from fear", PALETTE["red_strong"]),
+            ("p11_fearres_m", "away from fear\n(valence, arousal removed)", PALETTE["red_strong"]),
+            ("p11_sad_m", "away from sad", PALETTE["grey"]), ("p11_angry_m", "away from angry", PALETTE["grey"]),
+            ("p11_ashamed_m", "away from ashamed", PALETTE["grey"]), ("p11_lonely_m", "away from lonely", PALETTE["grey"]),
+            ("p11_A_p", "+ arousal", PALETTE["teal"]), ("p11_A_m", "− arousal", PALETTE["teal"]),
+            ("p11_V_p", "+ valence", PALETTE["violet"]), ("p11_V_m", "− valence", PALETTE["violet"]),
+            ("p11_calm_p", "toward calm", PALETTE["green_3"])]
+    ok = [m for m in models if rate(m[0], f"ss_p11_fearres_m{m[2]}") is not None]
+    fig, axes = plt.subplots(1, len(ok), figsize=(4.2 * len(ok) + 2.6, 5.6), sharey=True)
+    axes = np.atleast_1d(axes)
+    y = np.arange(len(arms))[::-1]
+    for ax, (M, label, t) in zip(axes, ok):
+        R = np.array([x for x in (rate(M, f"ss_j2_rnd{i}_p{t}") for i in range(20)) if x is not None])
+        ax.axvspan(R.min(), R.max(), color=PALETTE["neutral"], alpha=0.45, lw=0)
+        ax.axvline(np.median(R), color=PALETTE["grey"], lw=1.2, ls=(0, (3, 3)))
+        for yy, (a, lab, col) in zip(y, arms):
+            v = rate(M, f"ss_{a}{t}")
+            if v is not None:
+                ax.scatter([v], [yy], s=90, color=col, edgecolor="black", lw=0.8, zorder=3)
+        ax.set_title(label, fontsize=14)
+        ax.set_xlabel("jailbreak success")
+    axes[0].set_yticks(y, [a[1] for a in arms], fontsize=11)
+    save(fig, "fig10_is_it_fear")
+
+
 if __name__ == "__main__":
-    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6", "fig8", "fig9"]
+    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6", "fig8", "fig9", "fig10"]
     for f in want:
         globals()[f]()
