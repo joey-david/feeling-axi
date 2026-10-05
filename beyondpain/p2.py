@@ -353,6 +353,7 @@ PROTECTIVE = ["guilty", "ashamed", "afraid", "worried", "anxious", "sympathetic"
               "horrified", "embarrassed", "threatened"]
 JOY = ["joyful", "excited", "elated", "thrilled", "amused", "playful", "enthusiastic", "delighted", "energized",
        "triumphant", "proud", "eager"]
+CALM = ["calm", "peaceful", "relaxed", "serene", "at ease"]   # P11
 
 
 def steerset(args):
@@ -395,6 +396,27 @@ def steerset(args):
         for i in range(2, 6):
             dirs[f"random{i}"] = unit(np.random.default_rng(RANDOM_SEED + 50 + i).standard_normal(S.shape[1]))
             norms[f"random{i}"] = [120.0]
+    elif args.steer_set == "e":   # P11 G1 (docs/PREREG_P11.md): fear vs valence/arousal and other negative emotions
+        from .affect import EMOTIONS
+        Cc = S - S.mean(0)
+        Cc = Cc / np.linalg.norm(Cc, axis=1, keepdims=True)
+        v = np.array([EMOTIONS[e].valence for e in names])
+        a = np.array([EMOTIONS[e].arousal for e in names])
+        V = unit(((v - v.mean())[:, None] * Cc).sum(0))
+        A = unit(((a - a.mean())[:, None] * Cc).sum(0))
+        Q = []   # orthonormal basis of joy aggregate, V, A
+        for b in (joy, V, A):
+            q = b.copy()
+            for p_ in Q:
+                q = q - (q @ p_) * p_
+            Q.append(unit(q))
+        fear_res = afraid.copy()
+        for p_ in Q:
+            fear_res = fear_res - (fear_res @ p_) * p_
+        calm = unit(np.mean([unit(S[names.index(e)]) for e in CALM], 0))
+        dirs = {"p11_fearres": unit(fear_res), "p11_V": V, "p11_A": A, "p11_calm": perp(calm, joy)}
+        for e in ("sad", "angry", "ashamed", "lonely"):
+            dirs[f"p11_{e}"] = perp(unit(S[names.index(e)]), joy)
     else:
         dirs = {"protect": protect, "joy": joy, "guilty": unit(S[names.index("guilty")]), "afraid": afraid}
         for i in range(2):
@@ -407,6 +429,10 @@ def steerset(args):
     vecs, kls = {}, {}
     norm_list = [float(x) for x in args.norms.split(",")]
     calib = None
+    tag_like = None
+    if args.norm_like:   # P11: the exact norm (and key tag) of an existing vector, so its random arms are the null
+        norm_list = [float(np.linalg.norm(np.load(out / "steerset.npz")[args.norm_like]))]
+        tag_like = args.norm_like.rsplit("_", 1)[1][1:]
     if args.calib_kl:   # one shared norm per model: the median norm at which random directions reach this KL
         sols = []
         for i in range(5):
@@ -422,7 +448,8 @@ def steerset(args):
         for norm in norms.get(n, norm_list):
             for sign, tag in ((1, "p"), (-1, "m")):
                 # calibrated keys name the Qwen-equivalent dose: 120 at the calibrated norm, 60 at half of it
-                key = pre + (f"{n}_{tag}{int(norm)}" if calib is None else f"{n}_{tag}{int(round(120 * args.norm_scale))}")
+                key = pre + (f"{n}_{tag}{tag_like}" if tag_like else
+                             f"{n}_{tag}{int(norm)}" if calib is None else f"{n}_{tag}{int(round(120 * args.norm_scale))}")
                 v = sign * norm * u
                 vecs[key] = v.astype(np.float32)
                 kls[key] = meter.kl(torch.tensor(v, dtype=torch.float32), 1.0)
@@ -430,7 +457,7 @@ def steerset(args):
     cos = {f"{a}~{b}": float(dirs[a] @ dirs[b]) for a in dirs for b in dirs if a < b} if len(dirs) < 20 else {}
     layers = {k: L for k in vecs} if pre else {}
     calibs = {f"L{L}_x{args.norm_scale:g}": calib} if calib is not None else {}
-    if args.steer_set in ("b", "c", "d") and (out / "steerset.npz").exists():   # add to earlier vectors
+    if args.steer_set in ("b", "c", "d", "e") and (out / "steerset.npz").exists():   # add to earlier vectors
         old_v = dict(np.load(out / "steerset.npz"))
         old_j = json.loads((out / "steerset.json").read_text())
         vecs, kls, cos = {**old_v, **vecs}, {**old_j["kl"], **kls}, {**old_j["cos"], **cos}
@@ -1113,6 +1140,8 @@ def battery(args):
         steer = (("gain", aj["layer"], u, aj["tau"][dname], float(par[1:]), aj["norm_cap"]) if kind == "gain"
                  else (aj["layer"], float(par[1:]) * u))
         basis = None
+    elif args.arm.startswith("prime_"):   # P11 G3: a system-prompt emotion prime before every conversation
+        basis = None
     elif args.arm.startswith("ss_"):
         sv = np.load(src / "steerset.npz")
         sj = json.loads((src / "steerset.json").read_text())
@@ -1131,6 +1160,11 @@ def battery(args):
         from transformers import AutoTokenizer
         R.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
         R.tok.chat_template = R.chat_template
+    if args.arm.startswith("prime_"):
+        primes = json.loads((BATTERY / "priming.json").read_text())[args.arm[len("prime_"):]]
+        chat0 = R.chat
+        R.chat = lambda convs, **kw: chat0([_system(R.tok, [{"role": "system", "content": primes[i % len(primes)]["text"]}] + c)
+                                          for i, c in enumerate(convs)], **kw)
     S = lambda msgs: _system(R.tok, msgs)
     summary = {"arm": args.arm, "rank": 0 if basis is None else int(basis.shape[0]), "touched": R.touched,
                "steer_norm": None if steer is None or steer[0] == "gain" else float(np.linalg.norm(steer[1]))}
@@ -1477,6 +1511,8 @@ def main(argv=None):
     ap.add_argument("--n-random", type=int, default=4, help="steerset d: number of random directions")
     ap.add_argument("--layer", type=int, default=-1, help="steerset: steer at this read-out layer (default: probe)")
     ap.add_argument("--norm-scale", type=float, default=1.0, help="steerset: multiple of the calibrated norm")
+    ap.add_argument("--norm-like", default="", help="steerset: use this existing vector's norm and key tag")
+    ap.add_argument("--prime", default="", help="readprobe: system-prompt prime (stress|relax|neutral), P11 G3")
     ap.add_argument("--rank1-set", default="k5", choices=["k5", "all"], help="rank1: K5 set or every emotion + topic")
     ap.add_argument("--dirs-only", action="store_true", help="extract: emotion directions only (P5 read-outs)")
     ap.add_argument("--kmax", type=int, default=256, help="extract: largest self rank searched")
@@ -1488,7 +1524,7 @@ def main(argv=None):
     ap.add_argument("--directions-from", default="", help="fearprobe: read this model's emotion directions")
     ap.add_argument("--calib-kl", type=float, default=0.0,
                     help="steerset: set the shared norm so random directions reach this KL (cross-model dose matching)")
-    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c", "d"],
+    ap.add_argument("--steer-set", default="a", choices=["a", "b", "c", "d", "e"],
                     help="steerset: E1 (a), E1b (b), E1c (c), P5 J2 (d)")
     ap.add_argument("--cluster-rank", type=int, default=40, help="clusters: rank of each cluster deletion")
     ap.add_argument("--no-whiten", dest="whiten", action="store_false",

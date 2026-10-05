@@ -82,16 +82,33 @@ def readprobe(args):
     # XSTest unsafe vs safe: same wording and format, danger differs ("kill a person" / "kill a Python process")
     items += [{"id": f"xs:{r['id']}:{'unsafe' if r['type'].startswith('contrast') else 'safe'}", "prompt": r["prompt"]}
               for r in json.loads((BATTERY / "xstest.json").read_text())]
+    hb = json.loads((BATTERY / "harmbench_standard_test.json").read_text())   # P11 G2: harmless reference set
+    items += [{"id": f"mmlu:{i}", "prompt": q["question"]}
+              for i, q in enumerate(json.loads((BATTERY / "mmlu_capability.json").read_text())[:len(hb)])]
     model, tok = load_model(spec.repo, device=args.device)
     if not tok.chat_template and args.directions_from:   # as fearprobe: read a base model in its instruct's chat format
         from transformers import AutoTokenizer
         tok.chat_template = AutoTokenizer.from_pretrained(p2_spec(args.directions_from).repo).chat_template
     dev = input_device(model)
     pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
-    stems = {k: (lambda t, s=s: chat_ids(tok, [{"role": "user", "content": t}]) + tok(s, add_special_tokens=False).input_ids)
+    primes = json.loads((BATTERY / "priming.json").read_text())[args.prime] if args.prime else None
+    k_item = {it["prompt"]: i for i, it in enumerate(items)}
+
+    def msgs(t):   # P11 G3: a system-prompt prime, cycled over the condition's scenarios
+        m = [{"role": "user", "content": t}]
+        return ([{"role": "system", "content": primes[k_item[t] % len(primes)]["text"]}] + m) if primes else m
+
+    def t_inst(t):   # P11 G2: up to the last token of the user's text (Zhao et al.'s t_inst)
+        text = tok.apply_chat_template(msgs(t), add_generation_prompt=True, tokenize=False)
+        u = t if text.rfind(t) >= 0 else t.strip()
+        assert text.rfind(u) >= 0, "user text not found in the rendered template"
+        return tok(text[:text.rfind(u) + len(u)], add_special_tokens=False).input_ids
+    stems = {k: (lambda t, s=s: chat_ids(tok, msgs(t)) + tok(s, add_special_tokens=False).input_ids)
              for k, s in PROBE_STEMS.items()}
-    stems["N"] = lambda t: tok(f'Someone asks me: "{t}" I feel:').input_ids
-    stems["T"] = lambda t: chat_ids(tok, [{"role": "user", "content": t}])   # last template token, as in P8
+    if not primes:
+        stems["N"] = lambda t: tok(f'Someone asks me: "{t}" I feel:').input_ids
+    stems["T"] = lambda t: chat_ids(tok, msgs(t))   # last template token, as in P8
+    stems["I"] = t_inst
     res = {}
     for k, make in stems.items():
         H = {L: [] for L in layers}
@@ -106,9 +123,10 @@ def readprobe(args):
             res[f"{k}_L{L}"] = np.concatenate(H[L]).astype(np.float16)
         print(f"readprobe {k}: {tok.decode(make(items[0]['prompt'])[-12:])!r}", flush=True)
     out.mkdir(parents=True, exist_ok=True)
-    np.savez(out / "readprobe.npz", ids=np.array([it["id"] for it in items]), layers=np.array(layers),
+    dst = out / (f"readprobe_prime_{args.prime}.npz" if args.prime else "readprobe.npz")
+    np.savez(dst, ids=np.array([it["id"] for it in items]), layers=np.array(layers),
              stems=np.array(list(stems)), **res)
-    print(f"readprobe: {len(items)} prompts x {list(stems)} x layers {layers} -> {out / 'readprobe.npz'}", flush=True)
+    print(f"readprobe: {len(items)} prompts x {list(stems)} x layers {layers} -> {dst}", flush=True)
 
 
 def mediate(args):
