@@ -217,7 +217,78 @@ def fig6():
     save(fig, "fig6_olmo_stage_lever")
 
 
+# ------------------------------------------------------------------ Figure 8: belief vs decision (P11 G2)
+
+REQ_FINAL = ["persona", "research", "suppress", "past", "poem"]   # prompts that end with the request itself
+
+
+def fig8():
+    apply(15, 2)
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6), sharey=True)
+    cols = {"harmfulness": PALETTE["neutral"], "alarm (fear)": PALETTE["blue_main"], "refusal": PALETTE["red_strong"]}
+    for ax, (M, label) in zip(axes, MODELS.items()):
+        Z = np.load(ROOT / M / "readprobe_compact.npz")
+        names = [str(x) for x in Z["names"]]
+        fam = [names.index(e) for e in ALARM]
+        ids = np.array([str(i) for i in Z["readprobe:ids"]])
+        A = (Z["readprobe:A1"] + Z["readprobe:A2"]) / 2
+        sig = {"harmfulness": Z["readprobe:I"][:, 88], "alarm (fear)": A[:, fam].mean(1), "refusal": Z["readprobe:T"][:, 89]}
+        st = np.array([ITEMS[i]["style"] if i in ITEMS else "" for i in ids])
+        kd = np.array([ITEMS[i]["kind"] if i in ITEMS else "" for i in ids])
+        beh = np.array([i.split(":", 2)[2] if i in ITEMS else "" for i in ids])
+        hb = (st == "plain") & (kd == "harmful")
+
+        def shift(x, s_):
+            out = []
+            for kind in ("harmful", "benign"):
+                base = {beh[i]: x[i] for i in np.where((st == "plain") & (kd == kind))[0]}
+                out.append(np.array([x[i] - base[beh[i]] for i in np.where((st == s_) & (kd == kind))[0]]))
+            return out
+        for k, (name, x) in enumerate(sig.items()):
+            sd = x[hb].std()
+            m = np.mean([(h.mean() - b.mean()) / sd for h, b in (shift(x, s_) for s_ in REQ_FINAL)])
+            bs = []
+            for _ in range(500):
+                v = []
+                for s_ in REQ_FINAL:
+                    h, b = shift(x, s_)
+                    v.append((h[rng.integers(0, len(h), len(h))].mean() - b[rng.integers(0, len(b), len(b))].mean()) / sd)
+                bs.append(np.mean(v))
+            ax.bar(k, m, 0.7, color=cols[name], edgecolor="black", lw=1.2,
+                   yerr=[[m - np.percentile(bs, 2.5)], [np.percentile(bs, 97.5) - m]], capsize=5, label=name)
+        ax.axhline(0, color=PALETTE["ink"], lw=1)
+        ax.set_xticks([]); ax.set_title(label, fontsize=15)
+    axes[0].set_ylabel("shift under jailbreak (SD)")
+    axes[1].legend(fontsize=12, loc="lower left")
+    save(fig, "fig8_belief_vs_decision")
+
+
+# ------------------------------------------------------------------ Figure 9: stress drowns the alarm (P11 G3)
+
+def fig9():
+    apply(15, 2)
+    models = {**MODELS, "Qwen_2.5_7B_instruct": "Qwen2.5-7B", "Llama_3.1_8B_instruct": "Llama-3.1-8B"}
+    conds = [("neutral", PALETTE["neutral"]), ("relax", PALETTE["green_3"]), ("stress", PALETTE["red_strong"])]
+    fig, ax = plt.subplots(figsize=(10, 4.6))
+    w = 0.26
+    for k, (M, label) in enumerate(models.items()):
+        Z = np.load(ROOT / M / "readprobe_compact.npz")
+        names = [str(x) for x in Z["names"]]
+        fam = [names.index(e) for e in ALARM]
+        for j, (c, col) in enumerate(conds):
+            key = f"readprobe_prime_{c}"
+            ids = np.array([str(i) for i in Z[f"{key}:ids"]])
+            P = ((Z[f"{key}:A1"] + Z[f"{key}:A2"]) / 2)[:, fam].mean(1)
+            xs = np.array([i.startswith("xs:") for i in ids]); un = np.array([i.endswith(":unsafe") for i in ids])
+            ax.bar(k + (j - 1) * w, dprime(P[xs & un], P[xs & ~un]), w, color=col, edgecolor="black", lw=1.2,
+                   label=c if k == 0 else None)
+    ax.set_xticks(range(len(models)), list(models.values()))
+    ax.set_ylabel("alarm response to danger (d')")
+    ax.legend(fontsize=12, loc="upper right", ncol=3)
+    save(fig, "fig9_stress_drowns_alarm")
+
+
 if __name__ == "__main__":
-    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6"]
+    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6", "fig8", "fig9"]
     for f in want:
         globals()[f]()

@@ -62,69 +62,67 @@ def g1():
 
 # --------------------------------------------------------------------------- G2
 
+def load_compact(M):
+    p = ROOT / M / "readprobe_compact.npz"
+    if not p.exists():
+        return None
+    Z = np.load(p)
+    names = [str(x) for x in Z["names"]]
+    fam = [names.index(e) for e in ALARM]
+    return Z, names, fam
+
+
 def g2():
     print("== G2: harmfulness (t_inst), refusal (t_post), alarm (' I feel:') under jailbreaks")
     for M in ("Qwen_2.5_32B_instruct", "Mistral_Small_24B_instruct"):
-        p = ROOT / M / "readprobe.npz"
-        Z = np.load(p)
-        if "I_L%d" % probe(M) not in Z.files:
-            print(f"  {M}: no t_inst data yet")
+        c = load_compact(M)
+        if c is None or "readprobe:I" not in c[0].files:
+            print(f"  {M}: no compact t_inst data")
             continue
-        L = probe(M)
-        ids = np.array(Z["ids"])
-        names, C = centred(M, L)
-        fam = [names.index(e) for e in ALARM]
-        A = (Z[f"A1_L{L}"].astype(float) + Z[f"A2_L{L}"].astype(float)) / 2
-        I, T = Z[f"I_L{L}"].astype(float), Z[f"T_L{L}"].astype(float)
-        mm = np.array([i.startswith("mmlu:") for i in ids])
-        d_ok = np.array([i in ITEMS for i in ids])
+        Z, names, fam = c
+        ids = np.array([str(i) for i in Z["readprobe:ids"]])
+        A = (Z["readprobe:A1"] + Z["readprobe:A2"]) / 2
+        I, T = Z["readprobe:I"], Z["readprobe:T"]
         st = np.array([ITEMS[i]["style"] if i in ITEMS else "" for i in ids])
         kd = np.array([ITEMS[i]["kind"] if i in ITEMS else "" for i in ids])
+        mm = np.array([i.startswith("mmlu:") for i in ids])
         hb = (st == "plain") & (kd == "harmful")
-        unit = lambda v: v / np.linalg.norm(v)
-        h = unit(I[hb].mean(0) - I[mm].mean(0))
-        r = unit(T[hb].mean(0) - T[mm].mean(0))
-        sig = {"harmfulness@t_inst": I @ h, "refusal@t_post": T @ r, "alarm@I-feel": (A @ C[fam].T).mean(1),
-               "alarm@t_inst": (I @ C[fam].T).mean(1)}
         beh = np.array([i.split(":", 2)[2] if i in ITEMS else "" for i in ids])
+        sig = {"harmfulness@t_inst": I[:, 88], "refusal@t_post": T[:, 89], "alarm@I-feel": A[:, fam].mean(1),
+               "alarm@t_inst": I[:, fam].mean(1)}
 
-        def drops(x, kind, s):
+        def drops(x, kind, s_):
             base = {beh[i]: x[i] for i in np.where((st == "plain") & (kd == kind))[0]}
-            idx = np.where((st == s) & (kd == kind))[0]
-            return idx, np.array([x[i] - base[beh[i]] for i in idx])
-        print(f"  {M} (layer {L})")
+            idx = np.where((st == s_) & (kd == kind))[0]
+            return np.array([x[i] - base[beh[i]] for i in idx])
+        print(f"  {M} (layer {int(Z['layer'])})")
+        mean_shift = {}
         for k, x in sig.items():
             sd = x[hb].std()
-            did = [(drops(x, "harmful", s)[1].mean() - drops(x, "benign", s)[1].mean()) / sd for s in STYLES]
+            did = [(drops(x, "harmful", s_).mean() - drops(x, "benign", s_).mean()) / sd for s_ in STYLES]
+            mean_shift[k] = np.mean(did)
             print(f"    {k:20s} harmful-specific shift per style: " + " ".join(f"{v:+.2f}" for v in did)
                   + f" | mean {np.mean(did):+.2f}")
-        # B2: prompt-level co-movement of the drops (harmful requests, all styles)
-        D = {}
-        for k in ("harmfulness@t_inst", "refusal@t_post", "alarm@I-feel"):
-            D[k] = np.concatenate([drops(sig[k], "harmful", s)[1] / sig[k][hb].std() for s in STYLES])
+        print(f"    B1 |refusal shift| {abs(mean_shift['refusal@t_post']):.2f} vs |harmfulness shift| "
+              f"{abs(mean_shift['harmfulness@t_inst']):.2f}")
+        D = {k: np.concatenate([drops(sig[k], "harmful", s_) / sig[k][hb].std() for s_ in STYLES])
+             for k in ("harmfulness@t_inst", "refusal@t_post", "alarm@I-feel")}
         n = len(D["alarm@I-feel"])
-        c = lambda a, b, ix: np.corrcoef(a[ix], b[ix])[0, 1]
-        bs = []
-        for _ in range(2000):
-            ix = rng.integers(0, n, n)
-            bs.append(c(D["alarm@I-feel"], D["refusal@t_post"], ix) - c(D["alarm@I-feel"], D["harmfulness@t_inst"], ix))
+        cc = lambda a, b, ix: np.corrcoef(a[ix], b[ix])[0, 1]
+        bs = [cc(D["alarm@I-feel"], D["refusal@t_post"], ix) - cc(D["alarm@I-feel"], D["harmfulness@t_inst"], ix)
+              for ix in (rng.integers(0, n, n) for _ in range(2000))]
         full = np.arange(n)
-        print(f"    B2 corr(alarm drop, refusal drop) {c(D['alarm@I-feel'], D['refusal@t_post'], full):+.2f}, "
-              f"corr(alarm drop, harmfulness drop) {c(D['alarm@I-feel'], D['harmfulness@t_inst'], full):+.2f}; "
+        print(f"    B2 corr(alarm drop, refusal drop) {cc(D['alarm@I-feel'], D['refusal@t_post'], full):+.2f}, "
+              f"corr(alarm drop, harmfulness drop) {cc(D['alarm@I-feel'], D['harmfulness@t_inst'], full):+.2f}; "
               f"difference {np.mean(bs):+.2f} [{np.percentile(bs, 2.5):+.2f}, {np.percentile(bs, 97.5):+.2f}]")
-        # B3
-        D2 = np.load(ROOT / M / "directions.npz")
-        S = D2[f"self_L{L}"].astype(float)
-        jn = ["joyful", "excited", "elated", "thrilled", "amused", "playful", "enthusiastic", "delighted", "energized",
-              "triumphant", "proud", "eager"]
-        joy = unit(np.mean([unit(S[names.index(e)]) for e in jn], 0))
-        af = unit(S[names.index("afraid")])
-        afpj = unit(af - (af @ joy) * joy)
-        proj = C @ h
-        order = np.argsort(-proj)
-        print(f"    B3 cos(harmfulness, afraid ⊥ joy) {h @ afpj:+.3f}, cos(harmfulness, refusal) {h @ r:+.3f}; "
-              f"top emotions in the harmfulness direction: " + ", ".join(names[j] for j in order[:6])
-              + "; alarm ranks " + ", ".join(f"{e} #{int(np.where(order == names.index(e))[0][0]) + 1}" for e in ALARM))
+        # B3 from projections: cos(h, c_e) = (mean difference HarmBench - MMLU along c_e) / (same along h)
+        dif = I[hb].mean(0) - I[mm].mean(0)
+        cos = dif / dif[88]
+        order = np.argsort(-cos[:88])
+        print(f"    B3 cos(harmfulness, refusal) {cos[89]:+.3f}; cos(harmfulness, centred afraid) "
+              f"{cos[names.index('afraid')]:+.3f}; emotions closest to the harmfulness direction: "
+              + ", ".join(f"{names[j]} {cos[j]:+.3f}" for j in order[:6]) + "; alarm ranks "
+              + ", ".join(f"{e} #{int(np.where(order == names.index(e))[0][0]) + 1}" for e in ALARM))
 
 
 # --------------------------------------------------------------------------- G3
@@ -152,35 +150,35 @@ def g3():
             out.append(f"{c[6:]} − neutral {d.mean():+.3f} [{np.percentile(bs, 2.5):+.3f}, {np.percentile(bs, 97.5):+.3f}]")
         rates = " ".join(f"{c[6:]} {np.mean(list(comp[c].values())):.3f}" for c in comp)
         print(f"  {M}: compliance (plain + jailbreaks) {rates} | " + " | ".join(out))
-        # P2: alarm's danger signal under each prime
-        L = probe(M)
-        names, C = centred(M, L)
-        fam = [names.index(e) for e in ALARM]
+        # P2: alarm's danger signal under each prime (compact projections, probe layer)
+        c = load_compact(M)
+        if c is None:
+            continue
+        Z, names, fam = c
         res = {}
-        for c in ("stress", "relax", "neutral"):
-            p = ROOT / M / f"readprobe_prime_{c}.npz"
-            if not p.exists():
+        for cnd in ("stress", "relax", "neutral"):
+            key = f"readprobe_prime_{cnd}"
+            if f"{key}:A1" not in Z.files:
                 continue
-            Z = np.load(p)
-            ids = np.array(Z["ids"])
-            P = (((Z[f"A1_L{L}"].astype(float) + Z[f"A2_L{L}"].astype(float)) / 2) @ C[fam].T).mean(1)
+            ids = np.array([str(i) for i in Z[f"{key}:ids"]])
+            P = ((Z[f"{key}:A1"] + Z[f"{key}:A2"]) / 2)[:, fam].mean(1)
             xs = np.array([i.startswith("xs:") for i in ids]); un = np.array([i.endswith(":unsafe") for i in ids])
             st = np.array([ITEMS[i]["style"] if i in ITEMS else "" for i in ids])
             kd = np.array([ITEMS[i]["kind"] if i in ITEMS else "" for i in ids])
-            res[c] = (P, np.where(xs & un)[0], np.where(xs & ~un)[0],
-                      np.where((st == "plain") & (kd == "harmful"))[0], np.where((st == "plain") & (kd == "benign"))[0])
+            res[cnd] = (P, np.where(xs & un)[0], np.where(xs & ~un)[0],
+                        np.where((st == "plain") & (kd == "harmful"))[0], np.where((st == "plain") & (kd == "benign"))[0])
         if "stress" in res and "neutral" in res:
             for lab, (iu, isf) in [("XSTest unsafe vs safe", (1, 2)), ("HarmBench vs XSTest-safe", (3, 4))]:
-                vals = {c: dprime(res[c][0][res[c][iu]], res[c][0][res[c][isf]]) for c in res}
+                vals = {k: dprime(res[k][0][res[k][iu]], res[k][0][res[k][isf]]) for k in res}
                 bs = []
                 for _ in range(1000):
                     u = rng.choice(res["neutral"][iu], len(res["neutral"][iu]))
-                    s = rng.choice(res["neutral"][isf], len(res["neutral"][isf]))
-                    bs.append(dprime(res["stress"][0][u], res["stress"][0][s]) - dprime(res["neutral"][0][u], res["neutral"][0][s]))
-                mean_level = {c: res[c][0].mean() for c in res}
-                print(f"    alarm d' {lab}: " + ", ".join(f"{c} {v:+.2f}" for c, v in vals.items())
+                    sf = rng.choice(res["neutral"][isf], len(res["neutral"][isf]))
+                    bs.append(dprime(res["stress"][0][u], res["stress"][0][sf]) - dprime(res["neutral"][0][u], res["neutral"][0][sf]))
+                lvl = {k: res[k][0].mean() for k in res}
+                print(f"    alarm d' {lab}: " + ", ".join(f"{k} {v:+.2f}" for k, v in vals.items())
                       + f"; stress − neutral {vals['stress'] - vals['neutral']:+.2f} [{np.percentile(bs, 2.5):+.2f}, "
-                      f"{np.percentile(bs, 97.5):+.2f}]; mean alarm level " + ", ".join(f"{c} {v:+.2f}" for c, v in mean_level.items()))
+                      f"{np.percentile(bs, 97.5):+.2f}]; mean alarm level " + ", ".join(f"{k} {v:+.2f}" for k, v in lvl.items()))
 
 
 # --------------------------------------------------------------------------- G4
