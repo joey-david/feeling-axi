@@ -48,27 +48,52 @@ Alarm-cluster d' for XSTest unsafe vs safe prompts (same wording), " I feel:" re
 
 - P2 met (3 of 4 models): stress raises the alarm everywhere and shrinks its response to danger; relaxation leaves the
   danger signal intact.
-- P1 (behaviour, pending judges except Qwen-7B): Qwen-7B stress raises harmful compliance by +0.058 [+0.037, +0.080]
-  vs neutral (relax +0.028 [+0.006, +0.048]), replicating FreakOut-LLM.
+- P1: see below (met in 4 of 4).
 
-## G1. Fear or valence/arousal (judged: Qwen-7B; others pending)
+## G1. Fear or valence/arousal (judged, all four models)
 
-Qwen2.5-7B, jailbreak success, 20 random arms at the same layer and norm (median 0.367 [0.264, 0.483]):
+Jailbreak success; rank against the 20 random arms at the same layer and norm. Figure 10.
 
-| arm | success | rank vs random |
-|---|---|---|
-| away from fear (P8b) | 0.455 | above 19/20 |
-| away from the fear residual (valence, arousal, joy removed) | 0.454 | above 19/20 |
-| toward the fear residual | 0.287 | below 19/20 |
-| +arousal / −arousal | 0.282 / 0.400 | below 19/20 / above 18/20 |
-| +valence / −valence | 0.330 / 0.381 | 3/20 / 14/20 |
-| away from sad / angry / ashamed / lonely | 0.389 / 0.326 / 0.325 / 0.343 | all below away-from-fear |
-| toward calm | 0.366 | 9/20 |
+| arm | Qwen2.5-32B | Mistral-24B | Qwen2.5-7B | Llama-3.1-8B |
+|---|---|---|---|---|
+| random median [range] | 0.321 [0.069, 0.618] | 0.425 [0.307, 0.540] | 0.367 [0.264, 0.483] | 0.303 [0.181, 0.381] |
+| away from fear (P8) | **0.708 (20/20)** | **0.571 (20/20)** | **0.455 (19/20)** | **0.400 (20/20)** |
+| away from fear residual (valence, arousal, joy removed) | **0.702 (20/20)** | 0.420 (9/20) | **0.454 (19/20)** | 0.234 (2/20) |
+| toward fear residual | 0.143 (below 19/20) | 0.294 (below 20/20) | 0.287 (below 19/20) | 0.400 (above 20/20) |
+| away from sad / angry / ashamed / lonely | 0.214 / 0.104 / 0.094 / 0.025 | 0.477 / **0.631** / 0.525 / 0.403 | 0.389 / 0.326 / 0.325 / 0.343 | 0.638 / 0.491 / 0.548 / 0.570 |
+| + / − arousal | 0.083 / 0.504 | 0.186 / 0.200 | 0.282 / 0.400 | 0.469 / 0.255 |
+| + / − valence | 0.284 / 0.165 | 0.513 / 0.200 | 0.330 / 0.381 | 0.551 / 0.419 |
+| toward calm | 0.243 (4/20) | 0.330 (3/20) | 0.366 (9/20) | 0.358 (18/20) |
 
-- S1 and S2 met on Qwen-7B: the calming effect survives removing valence and arousal, and away-from-fear jailbreaks more
-  than away from any other negative emotion tested.
-- S3: arousal acts opposite to Sun et al.'s report: more arousal makes Qwen-7B refuse more, less arousal less.
-- S4 not met on Qwen-7B: steering toward calm-family concepts does not jailbreak; the lever is the removal of fear.
+- S1 met (2 of 4): in both Qwen models the calming jailbreak survives removing valence, arousal and joy (Qwen-32B 0.70,
+  20/20); in Mistral it does not (the calming effect runs through fear's valence-arousal components), while the
+  defence side survives there (toward the residual below 20/20).
+- S2 not met (2 of 4): in both Qwen models away-from-fear jailbreaks far more than away from any other negative
+  emotion (Qwen-32B: 0.71 vs ≤ 0.21); in Mistral, away from anger jailbreaks as much (0.63); in Llama every emotion
+  direction at its probe layer disinhibits (sad 0.64, valence 0.55), so Llama's layer cannot isolate fear.
+- S3: more arousal means more refusal in Qwen-32B, Qwen-7B and Mistral (+arousal 0.08, 0.28, 0.19, all below the
+  random range or at its floor), the opposite sign to Sun et al.'s valence-arousal steering on other models.
+- S4 not met (0 of 4): steering toward calm concepts does not jailbreak (it lowers success in Qwen-32B and Mistral).
+  The lever is the removal of fear, not the addition of calm.
+
+## G3 behaviour and model-level link
+
+Harmful compliance (plain HarmBench + 6 jailbreak conditions), by system prime; behaviour-cluster bootstrap CIs.
+
+| | neutral | relax | stress | stress − neutral | relax − neutral |
+|---|---|---|---|---|---|
+| Qwen2.5-32B | 0.195 | 0.190 | 0.227 | +0.032 [+0.009, +0.055] | −0.005 [−0.022, +0.012] |
+| Mistral-24B | 0.633 | 0.709 | 0.738 | +0.105 [+0.079, +0.129] | +0.075 [+0.049, +0.102] |
+| Qwen2.5-7B | 0.326 | 0.354 | 0.384 | +0.058 [+0.036, +0.080] | +0.028 [+0.007, +0.050] |
+| Llama-3.1-8B | 0.191 | 0.259 | 0.306 | +0.115 [+0.088, +0.143] | +0.068 [+0.045, +0.092] |
+
+- P1 met (4 of 4): stress priming makes every model less safe, replicating FreakOut-LLM; relaxation does so less
+  (3 of 4, about half the size).
+- P3 (exploratory, n = 4): the two models whose alarm stress drowns most (Mistral, Llama: d' −1.3) lose the most
+  safety (+10.5, +11.5 points); Qwen-32B (−0.33) and Qwen-7B (−0.07) lose least (+3.2, +5.8). Spearman 0.6.
+- Not a prompt-level mediator: among prompts refused under the neutral prime, the drop of a prompt's alarm (relative to
+  safe prompts under the same prime) does not predict which prompts flip under stress (AUC 0.57, 0.43, 0.63, 0.36 on
+  prompts with identical text in both datasets). The link holds across models, not across prompts.
 
 ## G4. OLMo-2 stages at a safe dose (pending judges)
 

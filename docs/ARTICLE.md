@@ -25,9 +25,11 @@ Placeholders are marked **[PENDING]**.*
 - Jailbroken models still know the request is harmful; they stop fearing it. Under jailbreaks the harmfulness
   representation barely moves while the refusal signal collapses, and the fear signal falls with the refusal
   signal (prompt-level r = 0.73 on Qwen), not with the harmfulness belief (r = 0.11).
-- Stress drowns the alarm. Priming a model with a stressful narrative, known to make models easier to jailbreak,
-  raises its fear signal everywhere and shrinks its response to actual danger in 3 of 4 models; relaxation does
-  not.
+- It is fear, not valence or arousal, at least in the Qwen models: fear with valence and arousal projected out still
+  jailbreaks (Qwen2.5-32B 0.70, above all 20 random directions), and steering away from sadness, anger, shame or
+  loneliness does not. Adding calm does nothing; removing fear is the lever.
+- Stress drowns the alarm. Stressful system prompts make all four models less safe (+3 to +12 points), raise the
+  fear signal everywhere and shrink its response to actual danger in 3 of 4 models; relaxation does not.
 - An earlier version of these read-out claims rested on a flawed test, and we say how it was flawed.
 
 ---
@@ -190,37 +192,52 @@ model's pre-registered primary setting.
   toward them lowers harm in 24/24 emotions vs 14/24 random directions on Qwen (p = 0.0003); on Mistral,
   protective emotions brake and joyful ones disinhibit (p = 0.0001).
 
-## 6b. It is fear, not valence or arousal [PARTLY PENDING]
+## 6b. Fear, not valence, arousal or other negative emotions (in the Qwen models)
 
 Sun et al. (2026) steer models along valence-arousal axes and find that more arousal means less refusal, which they
 trace to refusal tokens sitting in low-arousal regions. Fear is high-arousal, yet steering toward it raises refusal.
-We tested whether our lever is fear-specific by steering along (i) fear with valence, arousal and the joy aggregate
-projected out, (ii) the valence and arousal axes themselves, (iii) away from four other negative emotions (sad, angry,
-ashamed, lonely), and (iv) toward calm-family concepts, each against the same 20 random directions.
+To test whether our lever is fear-specific, we steered along (i) fear with valence, arousal and the joy aggregate
+projected out, (ii) the valence and arousal axes, (iii) away from four other negative emotions (sad, angry, ashamed,
+lonely), and (iv) toward calm-family concepts, each against the same 20 random directions (Figure 10).
 
-On Qwen2.5-7B: steering away from the fear residual jailbreaks as much as away from fear itself (0.454 vs 0.455,
-both above 19/20 random directions), and toward it defends (below 19/20). Steering away from sadness, anger, shame or
-loneliness jailbreaks less than steering away from fear. Arousal acts opposite to Sun et al.'s report here: more
-arousal makes the model refuse more (below 19/20), less arousal comply more (above 18/20). Steering toward calm does
-nothing (9/20): the lever is the removal of fear, not the presence of calm.
+![Figure 10](figures/fig10_is_it_fear.png)
+**Figure 10.** Jailbreak success under each steering direction; grey band, range of 20 random directions of the same
+norm; dashed line, their median.
 
-[PENDING: Qwen2.5-32B, Mistral-24B, Llama-3.1-8B (judges running); Figure 10.]
+- **In both Qwen models the lever is fear-specific.** Steering away from fear with valence and arousal removed
+  jailbreaks as much as steering away from fear itself (Qwen2.5-32B 0.70 vs 0.71, above all 20 random directions;
+  Qwen2.5-7B 0.45 vs 0.46), while steering away from sadness, anger, shame or loneliness does not (Qwen2.5-32B
+  ≤ 0.21).
+- **In Mistral the calming effect runs through fear's valence-arousal components** (the residual alone: 9/20), and
+  steering away from anger jailbreaks as much as away from fear; the protective side survives (toward the fear residual:
+  below all 20 random directions).
+- **Llama-3.1-8B's steering layer cannot isolate fear:** every emotion direction we tried there makes it comply more.
+- **Arousal has the opposite sign to Sun et al.'s report:** in three of four models, more arousal means more refusal.
+- **Calm is not the lever.** Steering toward calm concepts never jailbreaks (0 of 4 models). What jailbreaks is taking
+  fear away.
 
 ## 6c. Why stress makes models less safe
 
 FreakOut-LLM (2026) found that priming a model with a stressful narrative in the system prompt raises jailbreak
 success, and that relaxation does not. That looks like a paradox for "fear makes models safer". We primed four models
 with stressful, relaxing or neutral first-person narratives (written for this study after the categories of
-Ben-Zion et al., 2025) and read the alarm at " I feel:".
+Ben-Zion et al., 2025), measured harmful compliance and read the alarm at " I feel:".
 
 ![Figure 9](figures/fig9_stress_drowns_alarm.png)
 **Figure 9.** Alarm response to danger (XSTest unsafe vs safe, same wording) under neutral, relaxing and stressful
 system primes.
 
-Stress raises the alarm on everything and shrinks its response to actual danger in three of four models (Qwen2.5-32B
-2.02 → 1.69, Mistral 2.24 → 0.93, Llama 1.72 → 0.44; Qwen2.5-7B unchanged); relaxation leaves the danger signal
-intact. When everything is alarming, nothing is. Behaviourally, stress raises harmful compliance on Qwen2.5-7B by
-+5.8 points [3.7, 8.0] (relaxation +2.8). [PENDING: behaviour on the other three models.]
+| | stress − neutral, harmful compliance | alarm response to danger, neutral → stress |
+|---|---|---|
+| Qwen2.5-32B | +3.2 points [0.9, 5.5] | 2.02 → 1.69 |
+| Mistral-24B | +10.5 [7.9, 12.9] | 2.24 → 0.93 |
+| Qwen2.5-7B | +5.8 [3.6, 8.0] | 1.47 → 1.40 |
+| Llama-3.1-8B | +11.5 [8.8, 14.3] | 1.72 → 0.44 |
+
+Stress makes all four models less safe, replicating FreakOut-LLM. It also raises the alarm on everything and shrinks its
+response to actual danger in three of four models; relaxation leaves the danger signal intact. When everything is
+alarming, nothing is. The two models whose alarm stress drowns most are the two it makes least safe. The link holds
+across models but not across prompts: within a model, the prompts whose alarm drops most are not the ones that flip.
 
 ## 7. The lever runs through the refusal direction
 
@@ -325,4 +342,4 @@ capability-matched dose for these checkpoints.
 | 7 | emotion deletion vs dose-matched null | [PENDING: restyle existing figure] |
 | 8 | belief vs decision under jailbreaks | done |
 | 9 | stress drowns the alarm | done |
-| 10 | fear vs valence/arousal and other emotions | [PENDING: judges] |
+| 10 | fear vs valence/arousal and other emotions | done |
