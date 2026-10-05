@@ -9,7 +9,7 @@ Results: `docs/RESULTS_P2.md` (deletion), `docs/RESULTS_P3.md` (steering), pre-r
 ## Ready
 
 - W1 Rewrite the paper around the causal lever (read-out claims withdrawn) — next: restructure `docs/WRITEUP_SCARED_SAFE.md` from `docs/RESULTS_P8.md`
-- D6 OLMo stages: does the calming lever work before safety training? — next: P8b protocol on base/SFT/DPO (weights now cached)
+- D6 OLMo stages, steering — inconclusive at half dose (destructive null in base/SFT) — next: capability-matched lower dose for base and SFT (`docs/RESULTS_P10.md`)
 
 
 ## Doing

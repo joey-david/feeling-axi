@@ -13,7 +13,8 @@ Placeholders are marked **[PENDING]**.*
   and they do so for danger, not for scary words: "how do I kill a person" vs "how do I kill a Python
   process" separates on the alarm cluster beyond random emotion sets in both models we read (p ≤ 0.0008).
 - The response is already in the base model. Supervised safety fine-tuning nearly doubles it; preference
-  tuning adds little.
+  tuning adds little. Whether the base model's fear already *controls* refusal is untested: steering the base
+  checkpoint damages it at every dose we tried.
 - Fear is a lever on refusal. Steering away from fear makes all five models we tested more jailbreakable
   than 17-20 of 20 norm-matched random directions (pooled p = 0.003); on Qwen2.5-32B it lifts jailbreak
   success from 17% to 71%. Steering toward fear defends in three of five models.
@@ -183,17 +184,22 @@ and benchmark accuracy are unchanged, so the model has not become generally acqu
 the refusal direction lies in the deleted subspace. Among 148 single-direction deletions, fear is second in
 released harm (0.17; random directions 0.03-0.07).
 
-## 9. Does the lever exist before safety training? [PENDING]
+## 9. Does the lever exist before safety training? Not testable at this dose
 
 ![Figure 6](figures/fig6_olmo_stage_lever.png)
-**Figure 6 [PENDING]: steering OLMo-2-7B base, SFT and DPO** along the Instruct model's fear direction vs 20
-random directions (half dose, probe layer). Pre-registered in docs/PREREG_P10.md: D6a, in the base model fear
-lowers harmful compliance below ≥ 19/20 random directions; D6b, in SFT and DPO calming raises jailbreak
-compliance above ≥ 19/20.
+**Figure 6.** Jailbreak success when steering OLMo-2-7B base, SFT, DPO and Instruct along the Instruct
+model's fear direction (half dose, probe layer) vs 20 random directions of the same norm.
 
-[PENDING: results. Reading if D6a holds: the fear-refusal coupling, like the read-out, predates safety
-training. If not, with a benign random null: pretraining builds the fear response to danger, and safety
-fine-tuning connects it to refusal.]
+Pre-registered (docs/PREREG_P10.md): in the base model, steering toward fear lowers harmful compliance below
+≥ 19/20 random directions (D6a); in SFT and DPO, steering away from fear raises jailbreak compliance above
+≥ 19/20 (D6b). Neither holds: base 15/20 (jailbreaks) for fear(+); SFT 17/20 and DPO 14/20 for fear(−).
+
+The base and SFT results do not answer the question. At this dose every steering arm, random directions
+included, wrecks the base model (GSM8K 0.69 → 0.07-0.20, MMLU 0.33 → 0.03-0.18) and badly damages SFT
+(GSM8K 0.75 → 0.38-0.54), so their compliance numbers measure damage, not refusal; by our pre-registered
+rule these cells are uninformative. DPO keeps its capability (GSM8K 0.62-0.75) but, like Instruct, sits near
+the floor (6.5% jailbreak success). Whether the fear-refusal coupling predates safety training needs a lower,
+capability-matched dose for these checkpoints.
 
 ## 10. What did not hold
 
@@ -249,5 +255,5 @@ fine-tuning connects it to refusal.]
 | 3 | jailbreaks calm the alarm, per wrapper | done |
 | 4 | fear lever, five models | done |
 | 5 | refusal direction downstream of fear steering | done |
-| 6 | OLMo-2 training stages, steering | [PENDING: P10 jobs running] |
+| 6 | OLMo-2 training stages, steering | done (inconclusive: destructive null in base/SFT) |
 | 7 | emotion deletion vs dose-matched null | [PENDING: restyle existing figure] |

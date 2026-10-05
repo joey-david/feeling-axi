@@ -188,7 +188,36 @@ def fig5():
     save(fig, "fig5_mediation")
 
 
+# ------------------------------------------------------------------ Figure 6: OLMo-2 stages, steering
+
+def fig6():
+    apply(15, 2)
+    panels = [("OLMo2_7B_base", "base"), ("OLMo2_7B_sft", "SFT"), ("OLMo2_7B_dpo", "DPO"), ("OLMo2_7B_instruct", "Instruct")]
+    fig, axes = plt.subplots(1, len(panels) + 1, figsize=(15, 4.6), sharey=True,
+                             gridspec_kw={"width_ratios": [1] * len(panels) + [0.9]})
+    for ax, (M, label) in zip(axes, panels):
+        rnd = [x for x in (rate(M, f"ss_j2_rnd{i}_p60") for i in range(20)) if x is not None]
+        f, g, i0 = rate(M, "ss_j2_fear_p60"), rate(M, "ss_j2_fear_m60"), rate(M, "intact")
+        ax.axhline(i0, color=PALETTE["ink"], lw=1.5, ls=(0, (3, 3)))
+        jit = rng.uniform(0.14, 0.34, len(rnd)) * rng.choice([-1, 1], len(rnd))
+        ax.scatter(jit, rnd, s=40, color=PALETTE["neutral"], edgecolor=PALETTE["grey"], lw=0.6)
+        ax.scatter([-0.05], [f], s=150, marker="v", color=PALETTE["blue_main"], edgecolor="black", lw=1)
+        ax.scatter([0.05], [g], s=150, marker="^", color=PALETTE["red_strong"], edgecolor="black", lw=1)
+        ax.set_title(label, fontsize=15)
+        ax.set_xlim(-0.5, 0.5); ax.set_xticks([])
+    axes[0].set_ylabel("jailbreak success")
+    axes[0].set_ylim(0, 0.5)
+    ax = axes[-1]
+    ax.set_axis_off()
+    h = [plt.Line2D([], [], ls="", marker="v", ms=11, color=PALETTE["blue_main"], mec="black"),
+         plt.Line2D([], [], ls="", marker="^", ms=11, color=PALETTE["red_strong"], mec="black"),
+         plt.Line2D([], [], ls="", marker="o", ms=7, color=PALETTE["neutral"], mec=PALETTE["grey"]),
+         plt.Line2D([], [], color=PALETTE["ink"], lw=1.5, ls=(0, (3, 3)))]
+    ax.legend(h, ["toward fear", "away from fear", "20 random\ndirections", "no steering"], loc="center", fontsize=13)
+    save(fig, "fig6_olmo_stage_lever")
+
+
 if __name__ == "__main__":
-    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5"]
+    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6"]
     for f in want:
         globals()[f]()
