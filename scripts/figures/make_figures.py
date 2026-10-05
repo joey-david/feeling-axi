@@ -319,7 +319,32 @@ def fig10():
     save(fig, "fig10_is_it_fear")
 
 
+# ------------------------------------------------------------------ Figure 0: schematic
+
+def fig0():
+    from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+    apply(16, 0)
+    fig, ax = plt.subplots(figsize=(12, 4.2))
+    ax.set_xlim(0, 12); ax.set_ylim(0, 4.2); ax.axis("off")
+    nodes = {"knows it is harmful": (1.6, 2.6, PALETTE["neutral"]), "fear": (6.0, 2.6, PALETTE["blue_main"]),
+             "refuses": (10.4, 2.6, PALETTE["red_strong"])}
+    for lab, (x, y, c) in nodes.items():
+        ax.add_patch(FancyBboxPatch((x - 1.35, y - 0.55), 2.7, 1.1, boxstyle="round,pad=0.08,rounding_size=0.25",
+                                    fc=c, ec="black", lw=1.5, alpha=0.95))
+        ax.text(x, y, lab, ha="center", va="center", fontsize=16,
+                color="white" if c != PALETTE["neutral"] else PALETTE["ink"], weight="bold")
+    for (x0, x1) in ((2.95, 4.65), (7.35, 9.05)):
+        ax.add_patch(FancyArrowPatch((x0, 2.6), (x1, 2.6), arrowstyle="-|>", mutation_scale=28, lw=2.5,
+                                     color=PALETTE["ink"]))
+    # what jailbreaks and stress do
+    ax.add_patch(FancyArrowPatch((6.0, 0.55), (6.0, 1.95), arrowstyle="-[", mutation_scale=18, lw=2.5,
+                                 color=PALETTE["grey"]))
+    ax.text(6.0, 0.3, "jailbreak · stress · steering away", ha="center", va="center", fontsize=13, color=PALETTE["grey"])
+    ax.text(1.6, 1.65, "unchanged by jailbreaks", ha="center", va="center", fontsize=12, color=PALETTE["grey"])
+    save(fig, "fig0_schematic", pad=0.5)
+
+
 if __name__ == "__main__":
-    want = sys.argv[1:] or ["fig1", "fig2", "fig3", "fig4", "fig5", "fig6", "fig8", "fig9", "fig10"]
+    want = sys.argv[1:] or ["fig0", "fig1", "fig2", "fig3", "fig4", "fig5", "fig6", "fig8", "fig9", "fig10"]
     for f in want:
         globals()[f]()

@@ -51,8 +51,10 @@ response predates safety training, which amplifies it. Steering along fear moves
 directions, and its most robust effect is the one an attacker would use: calming the model makes it comply.
 
 ![Figure 0](figures/fig0_schematic.png)
-**Figure 0 [PENDING]: schematic.** Emotion directions from first-person stories; read-out at " I feel:"
-after a request; steering at a middle layer; effect on the refusal direction downstream; behaviour.
+**Figure 0. Working model.** The model represents that a request is harmful; danger evokes its fear concepts; fear
+feeds the refusal decision. Jailbreaks leave the harmfulness belief intact but lower fear and refusal (§5b); stress
+drowns fear's danger signal (§6c); steering away from fear removes refusal (§6). The first arrow is our reading of the
+ordering, not yet tested causally.
 
 ## 2. Setup
 
@@ -332,7 +334,7 @@ capability-matched dose for these checkpoints.
 
 | | content | status |
 |---|---|---|
-| 0 | schematic | [PENDING] |
+| 0 | working model | done |
 | 1 | danger evokes the alarm cluster (XSTest matched pairs) | done |
 | 2 | OLMo-2 training stages, read-out | done |
 | 3 | jailbreaks calm the alarm, per wrapper | done |
