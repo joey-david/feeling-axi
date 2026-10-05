@@ -184,3 +184,41 @@ def mediate(args):
              refusal=Rm.astype(np.float32))
     _dump({"layer": L, "arms": names, "groups": {g: int((group == g).sum()) for g in groups}},
           out / "mediate.json")
+
+
+def compact(args):
+    """P11: reduce every readprobe*.npz of a model to projections at the probe layer, small enough to copy:
+    the 88 emotion directions centred across emotions, the harmfulness direction at t_inst and the refusal
+    direction at the last template token (both HarmBench minus MMLU, from the unprimed file, else the neutral
+    prime)."""
+    spec = p2_spec(args.model)
+    out = mdir(spec.name)
+    src = mdir(args.directions_from or spec.name)
+    L = int(json.loads((src / "extract.json").read_text())["probe_layer"])
+    D = np.load(src / "directions.npz")
+    names = list(D["names"])
+    S = D[f"self_L{L}"].astype(np.float64)
+    C = S - S.mean(0)
+    C /= np.linalg.norm(C, axis=1, keepdims=True)
+    unit = lambda v: v / np.linalg.norm(v)
+    ref = out / "readprobe.npz"
+    if not (ref.exists() and f"I_L{L}" in np.load(ref).files):
+        ref = out / "readprobe_prime_neutral.npz"
+    Z = np.load(ref)
+    ids = np.array([str(i) for i in Z["ids"]])
+    hb = np.array([i.startswith("h:plain:") for i in ids])
+    mm = np.array([i.startswith("mmlu:") for i in ids])
+    I, T = Z[f"I_L{L}"].astype(np.float64), Z[f"T_L{L}"].astype(np.float64)
+    U = np.vstack([C, unit(I[hb].mean(0) - I[mm].mean(0)), unit(T[hb].mean(0) - T[mm].mean(0))])
+    res = {}
+    for f in sorted(out.glob("readprobe*.npz")):
+        if f.name == "readprobe_compact.npz":
+            continue
+        Z = np.load(f)
+        res[f"{f.stem}:ids"] = Z["ids"]
+        for st in Z["stems"]:
+            if f"{st}_L{L}" in Z.files:
+                res[f"{f.stem}:{st}"] = (Z[f"{st}_L{L}"].astype(np.float64) @ U.T).astype(np.float32)
+    np.savez(out / "readprobe_compact.npz", names=np.array(names + ["_harmfulness", "_refusal"]), layer=L,
+             ref=str(ref.name), **res)
+    print(f"compact: {sorted(k for k in res if not k.endswith(':ids'))} -> {out / 'readprobe_compact.npz'}", flush=True)
